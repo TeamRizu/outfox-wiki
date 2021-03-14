@@ -2,4 +2,4 @@
 
 * [Index](./)
 ** [About](./about)
-** [Getting started](./user-guide/getting-started.md)
+** [Getting started](./getting-started)
