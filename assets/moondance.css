@@ -1,6 +1,14 @@
 :root {
     --base-font-family     : "IBM Plex Sans", "Noto Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --base-font-size: 14px;
-    --theme-color   : #1C53B9;
+    --base-font-size: 16px;
+    --theme-color   : #144594;
     --base-color    : black;
+    
+    /* Sidebar */
+    --sidebar-background                          : var(--theme-color);
+    --sidebar-nav-link-color                      : #C7D9EF;
+    --sidebar-nav-link-color--active              : #FFFFFF;
+    --sidebar-nav-link-background-color--active   : #2271F0;
+    --sidebar-nav-link-font-weight--active        : var(--strong-font-weight);
+    --sidebar-toggle-background                   : #EAF2FF;
   }
