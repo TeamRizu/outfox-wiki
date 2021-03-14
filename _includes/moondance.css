@@ -1,7 +1,7 @@
 :root {
     --base-font-family     : "IBM Plex Sans", "Noto Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --base-font-size: 17px;
-    --theme-color   : #144594;
+    --theme-color   : #08357d;
     
     --link-color:   rgb(197, 73, 6);
     --heading-h1-font-weight            : var(--strong-font-weight);
