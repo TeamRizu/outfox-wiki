@@ -4,6 +4,7 @@
     --theme-color   : #144594;
     --base-color    : black;
     
+    --link-color:   rgb(197, 73, 6);
     --heading-h1-font-weight            : var(--strong-font-weight);
     --heading-h1-color				:  var(--theme-color);
     --heading-h2-font-weight            : var(--strong-font-weight);
