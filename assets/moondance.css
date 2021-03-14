@@ -4,6 +4,15 @@
     --theme-color   : #144594;
     --base-color    : black;
     
+    --heading-h1-font-weight            : var(--strong-font-weight);
+    --heading-h1-color				:  var(--theme-color);
+    --heading-h2-font-weight            : var(--strong-font-weight);
+    --heading-h2-color				: #1870bd;
+    --heading-h3-color				: #1870bd;
+    --heading-h4-color				: #1870bd;
+    --heading-h5-color				: #1870bd;
+	--heading-h6-color				: #1870bd;
+    
     /* Sidebar */
     --sidebar-background                          : var(--theme-color);
     --sidebar-nav-link-color                      : #C7D9EF;
