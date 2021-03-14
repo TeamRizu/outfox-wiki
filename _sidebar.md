@@ -2,3 +2,4 @@
 
 * [Index](./)
 ** [About](./about)
+** [Getting started](./getting-started)
