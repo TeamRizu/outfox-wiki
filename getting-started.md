@@ -57,3 +57,7 @@ As of Alpha 4.9.7, they include:
 * **gddm** - A drum mode supporting five-drum (with one bass pedal) and seven-drums (two pedals) styles, modelled upon the mechanics of the arcade rhythm game _DrumMania_.
 * **guitar** - A guitar mode supporting three-button and five-button game types, modelled upon the mechanics of the arcade rhythm game _Guitar Freaks_.
 * **kickbox** - A mode that was orignally designed for an exercise setup.
+
+### Configuring your controllers/key mappings
+
+Project OutFox supports a wide array of controllers, ranging from keyboards, to dance pads, to gamepads, and even arcade hardware.
