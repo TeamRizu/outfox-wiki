@@ -6,9 +6,9 @@
     
     --link-color:   rgb(197, 73, 6);
     --heading-h1-font-weight            : var(--strong-font-weight);
-    --heading-h1-color				:  var(--theme-color);
+    --heading-h1-color				:  #000000;
     --heading-h2-font-weight            : var(--strong-font-weight);
-    --heading-h2-color				: #1870bd;
+    --heading-h2-color				: var(--theme-color);
     --heading-h3-color				: #1870bd;
     --heading-h4-color				: #1870bd;
     --heading-h5-color				: #1870bd;
