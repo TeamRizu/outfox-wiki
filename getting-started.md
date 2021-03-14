@@ -9,8 +9,13 @@ The Windows build of Project OutFox requires Windows 7 or later. Windows XP buil
 ## Installation
 
 ### Windows
+![Screenshot of the Project OutFox installation wizard on Windows 10.](./_media/getting-started/installer.png)
 
-Windows builds use an installer; follow the instructions, and launch the game with the provided shortcuts. It is recommended that you **do not** install it to the Program Files directory, as this is known to cause problems.
+Windows builds of Project OutFox use an installer; follow the instructions, and launch the game using the provided shortcuts. 
+
+* It is recommended that you **do not** install it to the Program Files directory, as this is known to cause problems.
+* The installer offers optional components, such as the noteskins that were included with StepMania 5.0.12 and 5.1, and "Toasties" - animations that can trigger on combo milestones in-game.
+* By default, the game is installed in "Portable Mode"; save data is stored in the installation directory. If you disable portable mode, your save data will be stored in your user directory under ``%APPDATA%/StepMania 5.3``.
 
 ### Linux
 
@@ -33,6 +38,8 @@ On older builds, macOS Catalina also generated a message stating that the game w
 ### Selecting a game type
 
 The first time you launch Project OutFox, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of **game types**, which simulate different types of rhythm games. Game types are further-divided into **styles**, which include chart types such as single, double, etc.
+
+![Screenshot of the Project OutFox game selection screen.](./_media/getting-started/select-game-type)
 
 As of Alpha 4.9.7, they include:
 
