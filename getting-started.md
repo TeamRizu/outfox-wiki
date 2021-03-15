@@ -70,7 +70,7 @@ From the profile editor (highlight a profile and press Start, and then select "E
 
 While Project OutFox does include a few sample songs, you will probably want to add more. We support a number of formats, including SM, SSC, SMA, DWI, BMS, and KSF. 
 
-The Songs [folder][./folders] in Project OutFox is divided into **Groups**  (also sometimes known as "packs"). Groups, in turn, contain folders for each song.
+The Songs [folder](./folders) in Project OutFox is divided into **Groups**  (also sometimes known as "packs"). Groups, in turn, contain folders for each song.
 
 ```
 Songs
