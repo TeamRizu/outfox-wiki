@@ -93,7 +93,7 @@ I hope that this helps you to translate your favorite theme to your language so 
 
 Many folks are already helping translate the new Soundwaves theme for various languages. As requested by one of our translators, we'll mention those projects below in order to give them some visibility and encourage more people to join and help.
 
-° [Polish](https://github.com/Tiny-Foxes/OutFox-PL) - Done by [MoNeko](https://github.com/JustMoneko)
+° [Polish](https://github.com/Tiny-Foxes/OutFox-PL) - Done by [Moneko](https://github.com/JustMoneko)
 
 ° [Japanese](https://github.com/Tiny-Foxes/OutFox-ja) - Done by [はぬべき(hanubeki)](https://github.com/hanubeki)
 
