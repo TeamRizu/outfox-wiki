@@ -36,9 +36,11 @@ On older builds, macOS Catalina also generated a message stating that the game w
 
 ## First-time setup
 
+To get the best experience, there are a few things you should do the first time you install Project OutFox. Some of these instructions assume use of the default theme Soundwaves.
+
 ### Selecting a game type
 
-The first time you launch Project OutFox, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of **game types**, which simulate different types of rhythm games. Game types are further-divided into **styles**, which include chart types such as single, double, etc.
+The first time you launch Project OutFox without save data present, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of game types, which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further-divided into **styles**, which include chart types such as single, double, etc.
 
 ![Screenshot of the Project OutFox game selection screen.](./_media/getting-started/select-game-type.png)
 
@@ -58,6 +60,16 @@ As of Alpha 4.9.7, they include:
 * **guitar** - A guitar mode supporting three-button and five-button game types, modelled upon the mechanics of the arcade rhythm game _Guitar Freaks_.
 * **kickbox** - A mode that was orignally designed for an exercise setup.
 
-### Configuring your controllers/key mappings
+You can switch between them at any time using the "Select Game" button on the main menu.
 
-Project OutFox supports a wide array of controllers, ranging from keyboards, to dance pads, to gamepads, and even arcade hardware.
+### Configuring your controls
+
+Each game type has its own default keyboard configuration; dance, for example, maps the first player to the arrow keys (when playing on keyboard, this is often referred to as the "index" playstyle). To configure your button mappings, go to **Options > Input & Calibration > Config Key/Joy Mappings**. 
+
+![Navigating to the Config Key/Joy Mappings screen.](./_media/getting-started/gotoconfigjoy.jpg)
+
+Use the arrow keys to select an item to map, press Enter, and then press the button on the keyboard or controller you want to use. You can have multiple button assignments for each command.
+
+![The Config Key/Joy Mappings screen.](./_media/getting-started/config-joy.jpg)
+
+Project OutFox supports a wide variety of controllers, and even arcade hardware. By default, the game operates with an XInput-compliant input engine. 
