@@ -114,10 +114,9 @@ Many folks are already helping translate the new Soundwaves theme for various la
 ## Tools and Practices
 
 Translating can be boring and tedious. Sometimes it's hard to locate & remove lines that shouldn't be there or find missing ones. Because of that, translators themselves create tools to make our job easier and faster.
-
 ### Translation Toolkit
 
-[Translation Toolkit](https://github.com/Tiny-Foxes/Translation-Toolkit) is a tool made by [Ksempac](https://github.com/Ksempac) to help remove lines that are not needed anymore, warn about lines that are missing, check your progress, etc.
+[Translation Toolkit](https://github.com/Tiny-Foxes/Translation-Toolkit) is a tool made by [Ksempac](https://github.com/Ksempac) to help remove lines that are not needed anymore, warn about lines that are missing, check your progress, etc. It supports linux, Mac and Windows.
 
 > _This project is intended as a small application to automate some tasks for translators._
 >
@@ -127,7 +126,7 @@ Translating can be boring and tedious. Sometimes it's hard to locate & remove li
 
 ### Stepmania-TranslatorViewMaker
 
-[Stepmania-TranslatorViewMaker](https://github.com/Tiny-Foxes/Stepmania-TranslatorViewMaker) is a tool made by [Snil4](https://github.com/snil4).
+[Stepmania-TranslatorViewMaker](https://github.com/Tiny-Foxes/Stepmania-TranslatorViewMaker) is a tool made by [Snil4](https://github.com/snil4). It supports any OS that has python 3 installed.
 
 > _Have you ever tried to translate a program like OutFox and wondered "Hmm, now where can I find that line in the .ini?" Now there's no need to wonder! This program will make a translator view file for your translation .ini and make you translation job easier._
 
@@ -135,11 +134,11 @@ Translating can be boring and tedious. Sometimes it's hard to locate & remove li
 
 ### Tiny-Webini
 
-[Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini) is a tool made by [zerinho6](https://tiny-foxes.github.io/Tiny-Web/members/moruzerinho6.png) to help with translations of the [Project Moondance Website](https://projectmoon.dance/). While not used to translate OutFox (unless themes adopt HTML in the future), it uses the same translation system as OutFox. It makes less HTML code or none at all being necessary to translate the website.
+[Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini) is a tool made by [zerinho6](https://tiny-foxes.github.io/Tiny-Web/members/moruzerinho6.png) to help with translations of the [Project Moondance Website](https://projectmoon.dance/). While not used to translate OutFox (unless themes adopt HTML in the future), it uses the same translation system as OutFox. It makes less HTML code or none at all being necessary to translate the website. While the souce code might be able to run on other OS by building manually, it only supports Windows officially.
 
 > Translate Project Moondance with the same style OutFox uses for its translations.
 
-![](https://camo.githubusercontent.com/2c435db7bb075741721e592f45dd372fdaca32429826a1a1d72d47afa78f8f0b/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3638383138323738313236333630393836382f3739373533393533323635353535383636362f756e6b6e6f776e2e706e67)
+![](_media/translation/tinyWebini.png)
 
 ### Best practices
 
@@ -154,11 +153,11 @@ When doing a mention to "Steps", ask yourself: is it clear which "type of Steps"
 
 **[Soundwaves](https://github.com/Tiny-Foxes/smtheme-soundwaves-community)** does not have this issue as it says "Taps" instead of Steps and directly says the difficulty.
 
-![](https://cdn.discordapp.com/attachments/688182781263609868/815704100522950666/unknown.png)
+![](_media/translation/soundwavesMusicWheel.png)
 
 #### Reload translations
 
-![](https://cdn.discordapp.com/attachments/688182781263609868/815705955710271528/unknown.png)
+![](_media/translation/cauntionWarning.png)
 
 Imagine you're editing the Soundwaves ScreenCaution and want to see how the translated string looks. You don't need to restart the entire game to see the changes, here's what you should do instead: Exit the screen you just translated, reload the metrics (`Shift + Insert`; or `Shift + F2` on older alpha versions) and enter the screen again.
 
