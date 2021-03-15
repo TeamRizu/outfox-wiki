@@ -9,28 +9,24 @@ Project OutFox uses various folders to store content, such as songs, save data, 
 ** On Windows, these folders are located in **%APPDATA%\StepMania 5.3**
 * **Additional folders** are paths configured in the ``Save/Preferences.ini`` file; for instance, you can store your song library on a second hard drive and link to it there, or share content between multiple installations.
 
-These content folders comprise the game's Virtual File System" (VFS).
+These content folders comprise the game's "Virtual File System" (VFS). They are, in turn, divided into various subfolders for storing specific types of content. 
 
-## VFS subfolders
-
-Content folders are, in turn, divided into various subfolders for storing specific types of content. 
-
-### Announcers
+## Announcers
 Announcers are a collection of audio files that play automatically based on specific triggers, such as in-game events or navigating to specific screens.
 
-### Appearance
+## Appearance
 
-#### Avatars
+### Avatars
 
 Square images that can be used as avatars for your profile. 
 
-#### Judgments
+### Judgments
 
 If supported by the current theme, you can pick a different design for in-game judgement displays from images in this folder.
 
 Judgement fonts are divided into equally-sized sprites for each judgement. Fonts designed for specific timing modes have a modifier in their file name, such as ``[Advanced]``, ``[FAPlus]``, etc. A judgement font can also have specific versions for early and late timings.
 
-#### NoteSkins
+### NoteSkins
 
 NoteSkins affect the appearance of notes. They could be arrows, bars, circles, pawprints, etc. Project OutFox is compatible with noteskins designed for StepMania 5.
 
@@ -46,7 +42,7 @@ NoteSkins
 │       │...
 ```
 
-#### Themes
+### Themes
 
 Themes determine the look, feel, and functionality of the game.
 
@@ -58,7 +54,7 @@ Themes
 │   │   ...
 ```
 
-#### Toasties
+### Toasties
 
 Inspired by the famous _Mortal Kombat_ easter egg, a toasty is an image and sound played on specific combo milestones.
 
