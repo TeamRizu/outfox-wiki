@@ -15,7 +15,7 @@ Languages/
     ja.ini
 ```
 
-Here we can see 2 language files: **en** for English and **ja** for Japanese. It's a standard to name language files in that format (language-COUNTRY.ini). In my case, I did a Portuguese translation, but since there's also Portuguese from Portugal I had to name the file **pt-BR** (BR = Brazil).
+Here we can see 2 language files: **en** for English and **ja** for Japanese. It's a standard to name language files in that format (language-COUNTRY.ini). In my case, There's for anPortuguese translation, but since there's also Portuguese from Portugal the file had to named **pt-BR** (BR = Brazil).
 
 ### Fallback
 
@@ -23,7 +23,7 @@ You probably already noticed a `_fallback` theme in the themes folder, but if no
 
 ### Starting a translation
 
-To start our work, create a new file for your language(-COUNTRY, if needed) and don't forget to use the .ini extension. You can do this on Notepad with no problem but I would recommended using an actual editor like Notepad++.
+To start our work, create a new file for your language(-COUNTRY, if needed) and don't forget to use the .ini extension. You can do this on Notepad with no problem but it's recommended to use a editor like Visual Studio Code or Notepad++.
 
 Now open en.ini and your new language file, then copy all the content from en.ini to your language file. You can close en.ini now.
 
@@ -85,9 +85,7 @@ Here's a example in action from `_fallback/en.ini`:
 
 You might also want to translate the theme in a way that someone who has never played before will understand it, instead of expecting everyone to already know what everything is. A new player might not understand what "holds" mean if that word is translated to your language, but if it was kept as "holds" the user would know that it's the literal name of the thing and not something that should make sense in your language.
 
-Another hard example are steps: in OutFox, there are 2 kinds of steps. The ones that you press in gameplay and the steps of the chart made by the author (easy steps, hard steps...). In English, it's easy to only say steps because it makes sense for both, but that isn't the case with every language. That's why I decided to keep it named "steps" for the pt-BR translation of Soundwaves.
-
-I hope that this helps you to translate your favorite theme to your language so more people can come and play the game with it. Thank you for reading and have a nice day.
+Another hard example are steps: in OutFox, there are 2 kinds of steps. The ones that you press in gameplay and the steps of the chart made by the author (easy steps, hard steps...). In English, it's easy to only say steps because it makes sense for both, but that isn't the case with every language. That's why it was decided to keep it named "steps" for the pt-BR translation of Soundwaves.
 
 ### Community Translations for Soundwaves (OutFox default until Alpha V)
 
