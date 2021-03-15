@@ -72,4 +72,6 @@ Use the arrow keys to select an item to map, press Enter, and then press the but
 
 ![The Config Key/Joy Mappings screen.](./_media/getting-started/config-joy.png)
 
-Project OutFox supports a wide variety of controllers, and even arcade hardware. By default, the game operates with an XInput-compliant input engine. 
+Project OutFox supports a wide variety of controllers, and even arcade hardware. By default, the game operates with an XInput-compliant input engine. If your controller isn't detected correctly by the game but worked on StepMania 5.0/5.1, or doesn't perform as well, you can enable the alternate HIDAPI input mode from the **Experimental Options** menu.
+
+![The Exerimental Options screen. Input mode selector is highlighted.](./_media/getting-started/enable-hidapi.jpg)
