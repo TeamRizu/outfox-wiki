@@ -5,13 +5,14 @@ To obtain the best experience, there are a few things you should do after instal
 
 ## Selecting a game type
 
-When launching Project OutFox for the first time and without save data present, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of game types, which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into **styles**, which include chart types such as single, double, etc.
+When launching Project OutFox for the first time or without save data present, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of [game types](./game-types), which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into **styles**, which include chart types such as single, double, etc.
 
 ![Screenshot of the Project OutFox game selection screen.](./_media/getting-started/select-game-type.png)
 
-As of Alpha 4.9.7, they include:
+**dance** is the default game type. Similar to games such as _Dance Dance Revolution_ and _In the Groove_, it uses four lanes designated by cardinal directions (left, down, up, right). 
 
-* **dance** - the default game type. Similar to games such as _Dance Dance Revolution_ and _In the Groove_, it uses four lanes designated by cardinal directions (left, down, up, right).
+
+
 * **pump** - A five-lane dance game, which uses four diagional directions and the center rather than cardinal directions.
 * **kb7** - A seven-lane game type similar to games such as _O2Jam_, with six keys flanking a centre column (usually mapped by default to the SDF, JKL, and space keys by default)
 * **ez2** - A game type based on the defunct arcade game _EZ2Dancer_, which uses three foot panels and a pair of hand sensors.
@@ -64,3 +65,26 @@ You coan manage profiles from **Options > Profiles**. From here you can create a
 From the profile editor (highlight a profile and press Start, and then select "Edit profile"), you can input fitness-related information, change the layout of the optional "Detailed Stats" pane during gameplay, and add an avatar to your profile (avatars are loaded from the Appearance/Avatars directory).
 
 ![Editing a profile.](./_media/getting-started/profile-screen.jpg)
+
+## Install songs
+
+While Project OutFox does include a few sample songs, you will probably want to add more. We support a number of formats, including SM, SSC, SMA, DWI, BMS, and KSF. 
+
+The Songs folder in Project OutFox is divided into **Groups**  (also sometimes known as "packs"). Groups, in turn, contain folders for each song.
+
+```
+Songs
+│
+└───My Group
+│   │   
+│   └───My Song
+│       │   mysong.ssc
+│       │   mysong.ogg
+│       │   mysong-bg.png
+│       │   mysong-bn.png
+│       │   mysong-jk.png
+```
+
+For example, we will use a pack known as _Club Fantastic Volume 1_, which features legally-unencumbered songs with ``dance`` charts for all difficulties. Download the pack from its [website](https://wiki.clubfantastic.dance/) using the link labelled "Song Pack for StepMania players ("null offset")."
+
+
