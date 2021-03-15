@@ -75,3 +75,29 @@ Use the arrow keys to select an item to map, press Enter, and then press the but
 Project OutFox supports a wide variety of controllers, and even arcade hardware. By default, the game operates with an XInput-compliant input engine. If your controller isn't detected correctly by the game but worked on StepMania 5.0/5.1, or doesn't perform as well, you can enable the alternate HIDAPI input mode from the **Experimental Options** menu.
 
 ![The Exerimental Options screen. Input mode selector is highlighted.](./_media/getting-started/enable-hidapi.jpg)
+
+### Calibrate your audio (Autosync)
+
+In a rhythm game, timing is everything. But latency produced by your audio outputs can affect your accuracy. You can interactively adjust the audio **offset** using the **Calibrate Audio Sync** option in the **Input & Calibration** menu.
+
+![Navigating to the Calibration screen.](./_media/getting-started/calibrate-sync.jpg)
+
+A song will play with a pattern of alternating notes; in the dance game type, they will be left and right arrows. Tap them to the rhythm **based on what you hear**. Every 24 notes, your inputs will be used to calculate a new offset; watch for "Perfect" and "Flawless" judgements.
+
+![Audio calibration screen.](./_media/getting-started/sync-screen.jpg)
+
+The song will continue playing on a loop until you exit with the Back button (mapped to Escape by default), after which you will be given an opertunity to save the changes.
+
+### Create a profile
+
+While Project OutFox can save some data to a global "machine profile", it is recommended that you create a local profile so you can save personal high scores, as well as player settings (such as modifiers) that can persist between sessions.
+
+You coan manage profiles from **Options > Profiles**. From here you can create a profile, and edit existing profiles.
+
+![Navigating to the Profiles screen and selecting to create a profile.](./_media/getting-started/create-profile.jpg)
+
+From the profile editor (highlight a profile and press Start, and then select "Edit profile"), you can input fitness-related information, change the layout of the optional "Detailed Stats" pane during gameplay, and add an avatar to your profile (avatars are loaded from the Appearance/Avatars directory).
+
+
+![Editing a profile.](./_media/getting-started/profile-screen.jpg)
+
