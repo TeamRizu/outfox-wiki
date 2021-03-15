@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-* [Index](./)
+<!-- * [Index](./) -->
 * [About](./about)
 * ***Setup***
     * [Installation](./install)
