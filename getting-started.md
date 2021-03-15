@@ -70,6 +70,6 @@ Each game type has its own default keyboard configuration; dance, for example, m
 
 Use the arrow keys to select an item to map, press Enter, and then press the button on the keyboard or controller you want to use. You can have multiple button assignments for each command.
 
-![The Config Key/Joy Mappings screen.](./_media/getting-started/config-joy.jpg)
+![The Config Key/Joy Mappings screen.](./_media/getting-started/config-joy.png)
 
 Project OutFox supports a wide variety of controllers, and even arcade hardware. By default, the game operates with an XInput-compliant input engine. 
