@@ -29,9 +29,9 @@ Now open en.ini and your new language file, then copy all the content from en.in
 
 #### What you should translate
 
-_This is an code example taken from SoundWaves theme._
+_This is an code example taken from Soundwaves theme._
 
-```Ini
+```ini
 [Common]
 WindowTitle=Project OutFox
 StepMania=Project OutFox
@@ -49,7 +49,7 @@ Now, you can't just translate literally everything that you see. On ``ModelLoadE
 
 An example of that can be seen on the string ``%d Song Played`` that you'll see on the next image. 
 
-```Ini
+```ini
 [Screen]
 HelpText=&BACK; Exit &START; Select &SELECT; Options &MENULEFT;&MENURIGHT;&MENUUP;&MENUDOWN; Move
 
@@ -61,7 +61,7 @@ EventStageCounter=Song %i
 
 You'll also see lines like ``&START;``, ``&SELECT;`` etc. They're buttons that will be replaced once the game draws that string. Let's see one of those strings in action?
 
-```Ini
+```ini
 [ScreenSelectProfile]
 SingularSongPlayed=%d Song Played
 SeveralSongsPlayed=%d Songs Played
@@ -85,13 +85,13 @@ Here's a example in action from `_fallback/en.ini`:
 
 You might also want to translate the theme in a way that someone who has never played before will understand it, instead of expecting everyone to already know what everything is. A new player might not understand what "holds" mean if that word is translated to your language, but if it was kept as "holds" the user would know that it's the literal name of the thing and not something that should make sense in your language.
 
-Another hard example are steps: in OutFox, there are 2 kinds of steps. The ones that you press in gameplay and the steps of the chart made by the author (easy steps, hard steps...). In English, it's easy to only say steps because it makes sense for both, but that isn't the case with every language. That's why I decided to keep it named "steps" for the pt-BR translation of SoundWaves.
+Another hard example are steps: in OutFox, there are 2 kinds of steps. The ones that you press in gameplay and the steps of the chart made by the author (easy steps, hard steps...). In English, it's easy to only say steps because it makes sense for both, but that isn't the case with every language. That's why I decided to keep it named "steps" for the pt-BR translation of Soundwaves.
 
 I hope that this helps you to translate your favorite theme to your language so more people can come and play the game with it. Thank you for reading and have a nice day.
 
-### Community Translations for SoundWaves (OutFox default until Alpha V)
+### Community Translations for Soundwaves (OutFox default until Alpha V)
 
-Many folks are already helping translate the new SoundWaves theme for various languages. As requested by one of our translators, we'll mention those projects below in order to give them some visibility and encourage more people to join and help.
+Many folks are already helping translate the new Soundwaves theme for various languages. As requested by one of our translators, we'll mention those projects below in order to give them some visibility and encourage more people to join and help.
 
 ° [Polish](https://github.com/Tiny-Foxes/OutFox-PL) - Done by [MoNeko](https://github.com/JustMoneko)
 
@@ -154,7 +154,7 @@ When doing a mention to "Steps", ask yourself: is it clear which "type of Steps"
 * Step, which means the action of stepping in the pad or a single note.
 * StepType, which means the quantization (timing/color) of the note (e.g. 4th = red, an entire beat; 8th = blue, half a beat; etc).
 
-**[SoundWaves](https://github.com/Tiny-Foxes/smtheme-soundwaves-community)** does not have this issue as it says "Taps" instead of Steps and directly says the difficulty.
+**[Soundwaves](https://github.com/Tiny-Foxes/smtheme-soundwaves-community)** does not have this issue as it says "Taps" instead of Steps and directly says the difficulty.
 
 ![](https://cdn.discordapp.com/attachments/688182781263609868/815704100522950666/unknown.png)
 
@@ -162,7 +162,7 @@ When doing a mention to "Steps", ask yourself: is it clear which "type of Steps"
 
 ![](https://cdn.discordapp.com/attachments/688182781263609868/815705955710271528/unknown.png)
 
-Imagine you're editing the SoundWaves ScreenCaution and want to see how the translated string looks. You don't need to restart the entire game to see the changes, here's what you should do instead: Exit the screen you just translated, reload the metrics (`Shift + Insert`; or `Shift + F2` on older alpha versions) and enter the screen again.
+Imagine you're editing the Soundwaves ScreenCaution and want to see how the translated string looks. You don't need to restart the entire game to see the changes, here's what you should do instead: Exit the screen you just translated, reload the metrics (`Shift + Insert`; or `Shift + F2` on older alpha versions) and enter the screen again.
 
 Some themes might have a problem where not all strings are updated when metrics are reloaded due to how they are made. In that case, unfortunately the only option is restart the game.
 
@@ -206,7 +206,7 @@ Only the translation file is required to be inside the folders/repository.
 
 It's recommended that you include the version that the translation is targeting inside the files. Here's an example:
 
-```Ini
+```ini
 # Version: 4.9.7 Alpha
 
 [Common]
