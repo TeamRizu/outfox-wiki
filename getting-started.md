@@ -25,7 +25,7 @@ As of Alpha 4.9.7, they include:
 * **guitar** - A guitar mode supporting three-button and five-button game types, modelled upon the mechanics of the arcade rhythm game _Guitar Freaks_.
 * **kickbox** - A mode that was originally designed for an exercise setup.
 
-You can switch between them at any time using the "Select Game" button on the main menu.
+?> **Tip** You can switch between game types at any time using the "Select Game" button on the main menu.
 
 ## Configuring your controls
 
