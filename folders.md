@@ -115,3 +115,6 @@ Songs
 │       │   mysong-jk.png
 ```
 
+## SongMovies
+
+Similar in use to RandomMovies, except that they will be excluded from the RandomMovies pool.
