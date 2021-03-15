@@ -67,7 +67,7 @@ SingularSongPlayed=%d Song Played
 SeveralSongsPlayed=%d Songs Played
 PressStart=Press &START; to join.
 ```
-![](_media/profileSongsPlayed.jpeg)
+![](_media/translation/profileSongsPlayed.jpeg)
 
 Here we can see that &START; gets replaced by a green square that represents the start button, and %d gets replace by a number that's how many songs that profile played.
 
@@ -79,7 +79,7 @@ _Second Line_
 
 Here's a example in action from `_fallback/en.ini`:
 
-![](_media/cauntionWarning.png)
+![](_media/translation/cauntionWarning.png)
 
 ### Text Context
 
