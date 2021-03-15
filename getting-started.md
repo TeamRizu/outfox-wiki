@@ -70,7 +70,7 @@ From the profile editor (highlight a profile and press Start, and then select "E
 
 While Project OutFox does include a few sample songs, you will probably want to add more. We support a number of formats, including SM, SSC, SMA, DWI, BMS, and KSF. 
 
-The Songs folder in Project OutFox is divided into **Groups**  (also sometimes known as "packs"). Groups, in turn, contain folders for each song.
+The Songs [folder][./folders] in Project OutFox is divided into **Groups**  (also sometimes known as "packs"). Groups, in turn, contain folders for each song.
 
 ```
 Songs
@@ -85,6 +85,10 @@ Songs
 │       │   mysong-jk.png
 ```
 
-For example, we will use a pack known as _Club Fantastic Volume 1_, which features legally-unencumbered songs with ``dance`` charts for all difficulties. Download the pack from its [website](https://wiki.clubfantastic.dance/) using the link labelled "Song Pack for StepMania players ("null offset")."
+For example, we will use a pack known as _Club Fantastic Volume 1_, which features legally-unencumbered songs with ``dance`` charts for all difficulties. Download the pack from its [website](https://wiki.clubfantastic.dance/) using the link labelled "Song Pack for StepMania players ("null offset").", and extract it into the Songs folder. Then start the game, and it should appear on the song selection screen.
+
+![Pack appearing on song selection menu.](./_media/getting-started/songsonwheel.jpg)
+
+If the songs do not appear, be sure to check if the group folder actually containing the song folders is too deep in the folder hierarchy. 
 
 
