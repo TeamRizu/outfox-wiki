@@ -2,10 +2,11 @@
 
 * [Index](./)
 * [About](./about)
-* [Installation](./install)
-* [Getting Started](./getting-started)
-* Features & Config
+* ***Setup***
+    * [Installation](./install)
+    * [Getting Started](./getting-started)
+* ***Features & Settings***
     * [Game types](./game-types)
     * [Folders](./folders)
-* Development
+* ***Development***
     * [Translation](./translation)
