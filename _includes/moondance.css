@@ -13,4 +13,5 @@
     --sidebar-nav-link-color--active              : #FFFFFF;
     --sidebar-nav-link-background-color--active   : #2271F0;
     --sidebar-nav-link-font-weight--active        : var(--strong-font-weight);
+    --sidebar-nav-strong-color: #81b1ff;
   }
