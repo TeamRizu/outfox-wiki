@@ -1,44 +1,9 @@
-# Getting started
 
-## System requirements
-
-Project OutFox has builds for Windows, macOS, and Linux. We also have specific builds for ARM-based Linux devices and Apple M1-based computers. It should run on just about any computer from the mid-2000s onward, depending on the operating system and hardware specifications. We have had alphas running on CPUs as old as the Pentium E2180.
-
-The Windows build of Project OutFox requires Windows 7 or later. Windows XP builds are available for selected releases, which require Service Pack 3.
-
-## Installation
-
-### Windows
-
-Windows builds of Project OutFox use an installer; follow the instructions, and launch the game using the provided shortcuts. 
-
-![Screenshot of the Project OutFox installation wizard on Windows 10.](./_media/getting-started/installer.png)
-
-* It is recommended that you **do not** install it to the Program Files directory, as this is known to cause problems.
-* The installer offers optional components, such as the noteskins that were included with StepMania 5.0.12 and 5.1, and "Toasties" - animations that can trigger on combo milestones in-game.
-* By default, the game is installed in "Portable Mode"; save data is stored in the installation directory. If you disable portable mode, your save data will be stored in your user directory under ``%APPDATA%/StepMania 5.3``.
-
-### Linux
-
-On Linux, we only provide pre-compiled binaries at this time. Extract the tarball, and run ``./stepmania`` in the directory. 
-
-If you see an error mentioning that it could not find ``libOpenGL.so.0:``, install ``libopengl0`` from your distribution's package manager.
-
-### macOS
-
-Open the DMG file and drag the game to your Applications directory.
-
-Until we produce a digitally-signed build, you will have to change macOS security settings in order for Project OutFox to operate correctly. macOS prevents access to external files by unsigned apps unless given manual permission by the user.
-
-To do this, open Terminal and run the following command: ``xattr -dr com.apple.quarantine /path/to/outfox``, replacing ``/path/to/outfox`` with the path to the directory containing the OutFox executable (manually typing it out, or dragging the folder containing the game executable directly onto the window to fill it automatically).
-
-On older builds, macOS Catalina also generated a message stating that the game was requesting permission to receive keystrokes from any application. This was a side effect of previous code that has since been removed.
-
-## First-time setup
+# First-time setup
 
 To get the best experience, there are a few things you should do the first time you install Project OutFox. Some of these instructions assume use of the default theme Soundwaves.
 
-### Selecting a game type
+## Selecting a game type
 
 The first time you launch Project OutFox without save data present, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of game types, which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further-divided into **styles**, which include chart types such as single, double, etc.
 
@@ -62,7 +27,7 @@ As of Alpha 4.9.7, they include:
 
 You can switch between them at any time using the "Select Game" button on the main menu.
 
-### Configuring your controls
+## Configuring your controls
 
 Each game type has its own default keyboard configuration; dance, for example, maps the first player to the arrow keys (when playing on keyboard, this is often referred to as the "index" playstyle). To configure your button mappings, go to **Options > Input & Calibration > Config Key/Joy Mappings**. 
 
@@ -76,7 +41,7 @@ Project OutFox supports a wide variety of controllers, and even arcade hardware.
 
 ![The Exerimental Options screen. Input mode selector is highlighted.](./_media/getting-started/enable-hidapi.jpg)
 
-### Calibrate your audio (Autosync)
+## Calibrate your audio (Autosync)
 
 In a rhythm game, timing is everything. But latency produced by your audio outputs can affect your accuracy. You can interactively adjust the audio **offset** using the **Calibrate Audio Sync** option in the **Input & Calibration** menu.
 
@@ -88,7 +53,7 @@ A song will play with a pattern of alternating notes; in the dance game type, th
 
 The song will continue playing on a loop until you exit with the Back button (mapped to Escape by default), after which you will be given an opertunity to save the changes.
 
-### Create a profile
+## Create a profile
 
 While Project OutFox can save some data to a global "machine profile", it is recommended that you create a local profile so you can save personal high scores, as well as player settings (such as modifiers) that can persist between sessions.
 
@@ -98,6 +63,4 @@ You coan manage profiles from **Options > Profiles**. From here you can create a
 
 From the profile editor (highlight a profile and press Start, and then select "Edit profile"), you can input fitness-related information, change the layout of the optional "Detailed Stats" pane during gameplay, and add an avatar to your profile (avatars are loaded from the Appearance/Avatars directory).
 
-
 ![Editing a profile.](./_media/getting-started/profile-screen.jpg)
-

@@ -2,5 +2,6 @@
 
 * [Index](./)
 ** [About](./about)
-** [Getting Started/Installation](./getting-started)
+** [Installation](./install)
+** [Getting Started](./getting-started)
 ** [Translation](./translation)
