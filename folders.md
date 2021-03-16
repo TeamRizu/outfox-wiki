@@ -2,7 +2,7 @@
 
 Project OutFox uses various folders to store content, such as songs, save data, themes, noteskins, etc. Content is stored in one of the three following locations;
 
-* **Global folders** are located within the Project OutFox installation directory. If you are on a multi-user operating system, content in these folders will be accessible to all users. When _Portable Mode_ is disabled, your save data (including profiles and preference files) will be placed in the installation directory.
+* **Global folders** are located within the Project OutFox installation directory. If you are on a multi-user operating system, content in these folders will be accessible to all users. When _Portable Mode_ is enabled, your save data (including profiles and preference files) will be placed in the installation directory.
 * **User folders** are also created in your operating system's home/user directory if _Portable Mode_ is disabled. When _Portable Mode_ is disabled, this is where your save data will be stored.
 ** On macOS, these folders are located in **~/Library/Preferences/StepMania 5.3/**
 ** On Linux, these folders are located in **~/.stepmania-5.3/**
