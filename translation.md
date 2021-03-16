@@ -15,15 +15,15 @@ Languages/
     ja.ini
 ```
 
-Here we can see 2 language files: **en** for English and **ja** for Japanese. It's a standard to name language files in that format (language-COUNTRY.ini). In my case, There's for anPortuguese translation, but since there's also Portuguese from Portugal the file had to named **pt-BR** (BR = Brazil).
+Here we can see 2 language files: **en** for English and **ja** for Japanese. It's a standard to name language files in that format (language-COUNTRY.ini). For example: In this case, there's a Portuguese translation, but since there's also Portuguese from Portugal, the file was named **pt-BR** (BR = Brazil).
 
 ### Fallback
 
-You probably already noticed a `_fallback` theme in the themes folder, but if not: it's where things that are necessary for every theme gets stored, so when someone is making a theme the game doesn't blow up. The same goes for Languages: it's important to also translate the fallback for your language because the theme you're translating might not have every string that it uses on it's own folder.
+You probably already noticed a `_fallback` theme in the themes folder, but in case you didn't: it's where things that are necessary for every theme gets stored, so when someone is making a theme the game doesn't blow up. The same goes for Languages: it's important to also translate the fallback for your language because the theme you're translating might not have every string that it uses on it's own folder.
 
 ### Starting a translation
 
-To start our work, create a new file for your language(-COUNTRY, if needed) and don't forget to use the .ini extension. You can do this on Notepad with no problem but it's recommended to use a editor like Visual Studio Code or Notepad++.
+To start your work, create a new file for your language(-COUNTRY, if needed) and don't forget to use the .ini extension. You can do this on Notepad with no problem but it's recommended to use a editor like Visual Studio Code or Notepad++.
 
 Now open en.ini and your new language file, then copy all the content from en.ini to your language file. You can close en.ini now.
 
@@ -85,7 +85,7 @@ Here's a example in action from `_fallback/en.ini`:
 
 You might also want to translate the theme in a way that someone who has never played before will understand it, instead of expecting everyone to already know what everything is. A new player might not understand what "holds" mean if that word is translated to your language, but if it was kept as "holds" the user would know that it's the literal name of the thing and not something that should make sense in your language.
 
-Another hard example are steps: in OutFox, there are 2 kinds of steps. The ones that you press in gameplay and the steps of the chart made by the author (easy steps, hard steps...). In English, it's easy to only say steps because it makes sense for both, but that isn't the case with every language. That's why it was decided to keep it named "steps" for the pt-BR translation of Soundwaves.
+Another hard example are steps: in OutFox, there are 2 kinds of steps. The ones that you press in gameplay and the steps of the chart made by the author (easy steps, hard steps...). In English, it's easy to only say steps because it makes sense for both, but that isn't the case with every language. That's why it was decided to keep it named "steps" for the pt-BR translation of Soundwaves, for example.
 
 ### Community Translations for Soundwaves (OutFox default until Alpha V)
 
@@ -169,7 +169,7 @@ Some themes might have a problem where not all strings are updated when metrics 
 
 Now that you have translated the latest alpha, you need to send it to OutFox somehow. This tutorial explains how you can do it!
 
-The first thing to keep in mind is that each OutFox translation is hosted inside [Tiny-Foxes](https://github.com/Tiny-Foxes) to easily maintain and keep track of updates, so enter contact with Team Rizu on any of their available social medias to get invited into Tiny-Foxes.
+The first thing to keep in mind is that each OutFox translation is hosted inside [Tiny-Foxes](https://github.com/Tiny-Foxes) to easily maintain and keep track of updates, so contact Team Rizu through any of their available social media profiles to get invited into Tiny-Foxes.
 
 ### Repository
 
