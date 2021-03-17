@@ -171,6 +171,15 @@ Now that you have translated the latest alpha, you need to send it to OutFox som
 
 The first thing to keep in mind is that each OutFox translation is hosted inside [Tiny-Foxes](https://github.com/Tiny-Foxes) to easily maintain and keep track of updates, so contact Team Rizu through any of their available social media profiles to get invited into Tiny-Foxes.
 
+It is also required to know how [git](https://git-scm.com/) and [Github](https://github.com/) works.
+
+Exact steps are:
+
+1. Create a [Github](https://github.com/) account
+2. Download and learn basic [git](https://git-scm.com/) commands such as (git status, git push, git pull, git commit and git checkout)
+3. Learn how github organization works.
+
+Having an editor such as [Visual Studio Code](https://code.visualstudio.com/) will make git interactions way easier as those commands are available by the interface.
 ### Repository
 
 OutFox translation repositories adhere to a standard style. Repository title should be: 
@@ -191,8 +200,6 @@ OutFox-ja
 Japanese (ja) Translation for Project OutFox
 ```
 
-<!-- ![](_media/japaneseRepository.png) -->
-
 #### Repository Format
 
 The repository should have 2 folders: "_fallback" and "default". Inside the _fallback will be the _fallback translation and default translation inside the default folder.
@@ -211,9 +218,30 @@ WindowTitle=Project OutFox
 StepMania=OutFox
 ```
 
-
 ### Submitting to OutFox
 
 So you finished the translation for this alpha before the release? You can then **commit directly to master OR make a Pull Request** with your files to [OutFox-Translations](https://github.com/Tiny-Foxes/OutFox-Translations) so [Jose_Varela](https://github.com/JoseVarelaP) includes them in the next alpha release.
 
 **This all assumes you're already a member of Tiny-Foxes and member of the translator team.**
+
+## Webmaster Project
+
+Webmasters is an internal moondance project to translate the [Project Mondance Website](https://projectmoon.dance/), to be a webmaster means: 
+
+° Have partial access to the website backend to implement your translation updates.
+
+° Have closer contact with the moondance staff for quick update and help.
+
+° Have a special role in our Discord Server.
+
+Joining webmaster requires to be a known as a long-term OutFox translator, being member of our [Discord Server](https://discord.gg/cN4TjgQdcA) and getting special invitation from Moondance Staff or Team Rizu Members.
+
+If you have the given requirements, there are already tools to help you:
+
+1. [MoondanceWeb](https://github.com/Tiny-Foxes/MoondanceWeb)
+
+    Updated constantly updated to represent elements that are possible to be translated in the website. Translating those files would result in translating 80% what is possible to translate in the website already.
+
+2. [Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini)
+
+    A tool created by [zerinho6](https://github.com/moruzerinho6) to make website translation faster, easier, better and more like OutFox. Tiny-Webini removes all need to editing HTML files and uses a single .ini file like OutFox intead, it also has translator tools such as: show what can be translated by highlighting translatable elements, changing all translatable text to show its string key instead of string value and generate the HTML files needed to apply on the website backend.
