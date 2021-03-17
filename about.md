@@ -10,3 +10,23 @@ We are also working to flesh out its support for other gameplay styles beyond ju
 As Project OutFox is a continuation of the 5.0.12 and 5.1 codebase (not “5.2”), it remains compatible with almost all existing songs, themes, and noteskins that are supported on these versions (if you do encounter odd behaviour or other issues with older content, please report it to us as a bug).
 
 5.3 is unrelated to 5.1 -3 (sometimes written as 5.1-3), which was a prior build of 5.2 before it was renamed.
+
+## Teams
+
+Team Rizu | Moondance
+:------------ | :-------------
+Squirrel | Moneko
+Jousway | Gabrimax98
+Cube | RodentVienna
+MrThatKid | Hanubeki
+Jose Varela | ArcticFox
+Lirodon | SheepyChris
+Zerinho6 | SHRMP0
+
+Team Rizu is the team who is making OutFox what it is, people who are working on game features and management.
+
+Project Moondance is Team Rizu solution to create and expand community projects and organizations, such as:
+
+° The Staff of our Discord, Forum, Reddit and our Bug Hunter Repository.
+
+° [Tiny-Foxes](https://github.com/Tiny-Foxes), a community group focusing on add-ons and localizations for Project OutFox
