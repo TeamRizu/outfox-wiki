@@ -13,7 +13,7 @@ As Project OutFox is a continuation of the 5.0.12 and 5.1 codebase (not “5.2�
 
 ## Teams
 
-Team Rizu | Moondance
+Team Rizu | Moondance Staff
 :------------ | :-------------
 Squirrel | Moneko
 Jousway | Gabrimax98
@@ -23,10 +23,9 @@ Jose Varela | ArcticFox
 Lirodon | SheepyChris
 Zerinho6 | SHRMP0
 
-Team Rizu is the team who is making OutFox what it is, people who are working on game features and management.
+Team Rizu are the ones that make OutFox possible. They're the people working on the game and managing everything.
 
-Project Moondance is Team Rizu solution to create and expand community projects and organizations, such as:
+Moondance Staff assists Team Rizu by creating, maintaining and expanding community projects and organizations, such as:
 
-° The Staff of our Discord, Forum, Reddit and our Bug Hunter Repository.
-
-° [Tiny-Foxes](https://github.com/Tiny-Foxes), a community group focusing on add-ons and localizations for Project OutFox
+- Moderating the Discord Server, Forum, Subreddit and our Bug Hunter Repository;
+- Coordinating [Tiny-Foxes](https://github.com/Tiny-Foxes), a community group focusing on add-ons and localizations for Project OutFox.

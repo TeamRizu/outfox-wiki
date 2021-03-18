@@ -222,21 +222,19 @@ StepMania=OutFox
 
 So you finished the translation for this alpha before the release? You can then **commit directly to master OR make a Pull Request** with your files to [OutFox-Translations](https://github.com/Tiny-Foxes/OutFox-Translations) so [Jose_Varela](https://github.com/JoseVarelaP) includes them in the next alpha release.
 
-**This all assumes you're already a member of Tiny-Foxes and member of the translator team.**
+**This all assumes that you're already a member of Tiny-Foxes and the translator team.**
 
-## Webmaster Project
+## Webmasters Project
 
-Webmasters is an internal moondance project to translate the [Project Mondance Website](https://projectmoon.dance/), to be a webmaster means: 
+Webmasters is an internal Moondance initiative to translate the [Project Mondance Website](https://projectmoon.dance/). Being a webmaster means: 
 
-° Have partial access to the website backend to implement your translation updates.
+- Partial access to the website backend to implement your translation files;
+- Closer contact with the Moondance staff for quick updates and help;
+- Having a special role in our Discord Server.
 
-° Have closer contact with the moondance staff for quick update and help.
+The requirements to join Webmasters are having previous experience as a long-term OutFox translator, being a [Discord Server](https://discord.gg/cN4TjgQdcA) member, and receiving a special invitation from Moondance Staff or Team Rizu Members.
 
-° Have a special role in our Discord Server.
-
-Joining webmaster requires to be a known as a long-term OutFox translator, being member of our [Discord Server](https://discord.gg/cN4TjgQdcA) and getting special invitation from Moondance Staff or Team Rizu Members.
-
-If you have the given requirements, there are already tools to help you:
+If you meet those requirements, there are already tools to help you:
 
 1. [MoondanceWeb](https://github.com/Tiny-Foxes/MoondanceWeb)
 

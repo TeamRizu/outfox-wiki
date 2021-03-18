@@ -98,6 +98,10 @@ This is where data such as preferences, profiles, high scores, etc. are stored. 
 
 Screenshots taken in-game are stored here.
 
+## SongMovies
+
+Similar in use to RandomMovies, except that they will be excluded from the RandomMovies pool.
+
 ## Songs
 
 Songs that are used to play the game. They are stored in folders known as Groups.
@@ -114,7 +118,3 @@ Songs
 │       │   mysong-bn.png
 │       │   mysong-jk.png
 ```
-
-## SongMovies
-
-Similar in use to RandomMovies, except that they will be excluded from the RandomMovies pool.
