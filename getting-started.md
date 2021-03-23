@@ -9,9 +9,7 @@ When launching Project OutFox for the first time or without save data present, y
 
 ![Screenshot of the Project OutFox game selection screen.](./_media/getting-started/select-game-type.png)
 
-**dance** is the default game type. Similar to games such as _Dance Dance Revolution_ and _In the Groove_, it uses four lanes designated by cardinal directions (left, down, up, right). 
-
-
+**dance** is the default game type. Similar to games such as _Dance Dance Revolution_ and _In the Groove_, it uses four lanes designated by cardinal directions (left, down, up, right). However, that is not the only game type it supports:
 
 * **pump** - A five-lane dance game, which uses four diagional directions and the center rather than cardinal directions.
 * **kb7** - A seven-lane game type similar to games such as _O2Jam_, with six keys flanking a centre column (usually mapped by default to the SDF, JKL, and space keys by default)
@@ -91,4 +89,8 @@ For example, we will use a pack known as _Club Fantastic Volume 1_, which featur
 
 If the songs do not appear, be sure to check if the group folder actually containing the song folders is too deep in the folder hierarchy. 
 
+# Next steps
 
+The only thing left to do is have fun! If you need more help with Project OutFox, check out the other pages in our wiki documentation, and join other members of our community on our [Discord server](https://discord.gg/cN4TjgQdcA) or [forum](https://discourse.projectmoon.dance/).
+
+Thank you for supporting Project OutFox!
