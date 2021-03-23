@@ -11,6 +11,8 @@ Parts of the game are so well-optimised now that they're running too fast, and t
 
 ## How to install Project OutFox
 
+Download the installer or package for your respective operating system on [the Project OutFox website](https://projectmoon.dance/downloads).
+
 ### Windows
 
 Windows builds of Project OutFox use an installer; follow the instructions, and launch the game using the provided shortcuts. 
