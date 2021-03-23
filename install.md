@@ -22,7 +22,7 @@ Windows builds of Project OutFox use an installer; follow the instructions, and 
 * By default, the game is installed in "Portable Mode"; save data is stored in the installation directory. If you disable portable mode, your save data will be stored in your user directory under ``%APPDATA%/StepMania 5.3``.
 
 
-If your log file (Installation directory/Logs) shows WDDM1.0 or WDDM1.1 at the end of the graphics card name (i.e. ``00:00.505: Last seen video driver: Intel(R) 82945G Express Chipset Family (Microsoft Corporation - WDDM 1.0)``) or the log shows Microsoft GDI as the renderer, then you are running the OpenGL-crippled "Windows" driver that is downloaded on a fresh install. Project OutFox will not work on these drivers, as we do not support DirectX anymore (the old D3D renderer that 5.0.12/5.1 has) There is a list of drivers at [here](https://www.intel.com/content/www/us/en/support/articles/000005733/graphics.html) but for some of these cards, you need to keep your Windows 7 install disc handy!
+If your log file (Installation directory/Logs) shows WDDM1.0 or WDDM1.1 at the end of the graphics card name (i.e. "Intel(R) 82945G Express Chipset Family (Microsoft Corporation - WDDM 1.0)") or the log shows "Microsoft GDI" as the renderer, then you are running the OpenGL-crippled "Windows" driver that is downloaded on a fresh install. Project OutFox will not work on these drivers, as we do not support DirectX anymore (the old D3D renderer that 5.0.12/5.1 has) There is a list of drivers at [here](https://www.intel.com/content/www/us/en/support/articles/000005733/graphics.html) but for some of these cards, you need to keep your Windows 7 install disc handy!
 
 ### Linux
 
