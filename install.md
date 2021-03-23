@@ -6,6 +6,9 @@ Project OutFox has builds for Windows, macOS, and Linux. We also have specific b
 
 The Windows build of Project OutFox requires Windows 7 or later. Windows XP builds are available for selected releases, which require Service Pack 3.
 
+Parts of the game are so well-optimised now that they're running too fast, and the rest of the game needs to catch up. We will have a proper fix later, but increasing the amount of background activity (i.e. having other programs running in the background, etc.) is a temporary solution.
+
+
 ## How to install Project OutFox
 
 ### Windows
@@ -17,6 +20,9 @@ Windows builds of Project OutFox use an installer; follow the instructions, and 
 * It is recommended that you **do not** install it to the Program Files directory, as this is known to cause problems.
 * The installer offers optional components, such as the noteskins that were included with StepMania 5.0.12 and 5.1, and "Toasties" - animations that can trigger on combo milestones in-game.
 * By default, the game is installed in "Portable Mode"; save data is stored in the installation directory. If you disable portable mode, your save data will be stored in your user directory under ``%APPDATA%/StepMania 5.3``.
+
+
+If your log file (Installation directory/Logs) shows WDDM1.0 or WDDM1.1 at the end of the graphics card name (i.e. ``00:00.505: Last seen video driver: Intel(R) 82945G Express Chipset Family (Microsoft Corporation - WDDM 1.0)``) or the log shows Microsoft GDI as the renderer, then you are running the OpenGL-crippled "Windows" driver that is downloaded on a fresh install. Project OutFox will not work on these drivers, as we do not support DirectX anymore (the old D3D renderer that 5.0.12/5.1 has) There is a list of drivers at [here](https://www.intel.com/content/www/us/en/support/articles/000005733/graphics.html) but for some of these cards, you need to keep your Windows 7 install disc handy!
 
 ### Linux
 
