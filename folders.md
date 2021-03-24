@@ -9,7 +9,7 @@ Project OutFox uses various folders to store content, such as songs, save data, 
 ** On Windows, these folders are located in **%APPDATA%\StepMania 5.3**
 * **Additional folders** are paths configured in the ``Save/Preferences.ini`` file; for instance, you can store your song library on a second hard drive and link to it there, or share content between multiple installations.
 
-These content folders comprise the game's "Virtual File System" (VFS). They are, in turn, divided into various subfolders for storing specific types of content. 
+These content folders comprise the game's "Virtual File System" (VFS). They are, in turn, divided into various subdirectories for storing specific types of content. 
 
 ## Announcers
 Announcers are a collection of audio files that play automatically based on specific triggers, such as in-game events or navigating to specific screens.
@@ -117,4 +117,40 @@ Songs
 │       │   mysong-bg.png
 │       │   mysong-bn.png
 │       │   mysong-jk.png
+```
+
+# Additional folders
+Via the preferences file (Save/Preferences.ini), you can specify _additional_ folders. 
+
+Both of these parameters accept multiple directory paths, comma-separated.
+
+## AdditionalSongFolders
+The ``AdditionalSongFolders`` option allows you to specify other locations for where Project OutFox can search for songs. As with the installation directory's song folder, they are divided into groups. For example (assuming a location such as ``D:\AdditionalSongs``);
+
+```
+D:\AdditionalSongs
+│
+└───My Group
+│   │   
+│   └───My Song
+│       │   mysong.ssc
+│       │   mysong.ogg
+│       │   mysong-bg.png
+│       │   mysong-bn.png
+│       │   mysong-jk.png
+```
+
+## AdditionalFolders
+
+AdditionalFolders is like the above, except they can contain any of the usual content subdirectories like so;
+
+```
+D:\OutFoxExtra
+│
+└───Announcers
+│   
+└───Appearance
+│   
+└───etc.
+
 ```
