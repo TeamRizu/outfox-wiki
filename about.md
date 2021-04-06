@@ -19,7 +19,7 @@ Squirrel | Moneko
 Jousway | Gabrimax98
 Cube | RodentVienna
 MrThatKid | Hanubeki
-Jose Varela | ArcticFox
+Jose Varela | ArcticFqx
 Lirodon | SheepyChris
 Zerinho6 | SHRMP0
 
