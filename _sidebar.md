@@ -8,5 +8,6 @@
 * ***Features & Settings***
     * [Game types](./game-types)
     * [Folders](./folders)
+    * [Preferences.ini](./preferencesini)
 * ***Development***
     * [Translation](./translation)
