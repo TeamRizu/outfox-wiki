@@ -89,6 +89,8 @@ Determines scaling/cropping of song backgrounds based on resolution and aspect r
 
 ## BothAtOnce
 
+This preference controls BothAtOnce, an input mode that mirrors input across both players. This preference is 
+
 ## BreakComboToGetItem
 
 ## CelShadeModels
@@ -99,7 +101,7 @@ In single-player modes, renders the notefield in the center of the screen rather
 
 ## CenterImage
 
-CenterImageAddHeight, CenterImageAddWidth, CenterImageTranslateX, and CenterImageTranslateY are used to determine
+CenterImageAddHeight, CenterImageAddWidth, CenterImageTranslateX, and CenterImageTranslateY are used to adjust overscan.
 
 ## CoinMode
 
@@ -189,9 +191,13 @@ If enabled, you must hold the back button for 0.5 seconds to exit gameplay.
 
 ## DisabledSongs
 
-## DisplayAspectRatio=1.777778
+## DisplayAspectRatio
+
+The current aspect ratio, expressed as a decimal (i.e. 16:9 = 1.777778, or 16/9).
 
 ## DisplayColorDepth
+
+The current color depth, either 32 or 16.
 
 ## DisplayHeight and DisplayWidth 
 
@@ -322,9 +328,13 @@ If there is no dedicated ``lights`` chart, generates lighting patterns from the 
 
 ## LogFPS
 
+At intervals, the current FPS and average FPS will be appended to the log file.
+
 ## LogSkips
 
 ## LogToDisk
+
+Enabling this will write log files.
 
 ## LongVerSongSeconds
 
@@ -342,21 +352,21 @@ Determines how long a song must be for it to be classified as a "marathon" (whic
 
 ## MaxInputLatencySeconds
 
-## MaxRegenComboAfterMiss=10
+## MaxRegenComboAfterMiss
 
-MaxSongsInEditCourse=-1
+## MaxSongsInEditCourse
 
-MaxTextureResolution=1024
+## MaxTextureResolution
 
-MemoryCardDriver=USB
+## MemoryCardDriver
 
-MemoryCardOsMountPointP1=
+## MemoryCardOsMountPoint
 
-MemoryCardOsMountPointP2=
+## MemoryCardOsMountPoint
 
-MemoryCardPadmissEnabled=0
+## MemoryCardPadmissEnabled
 
-MemoryCardProfileImportSubdirs=
+## MemoryCardProfileImportSubdirs
 
 ## MemoryCardProfileSubdir
 
