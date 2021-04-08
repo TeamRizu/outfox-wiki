@@ -161,9 +161,9 @@ The maximum length in seconds for custom songs.
 
 Displays a debug overlay for lights outputs.
 
-## DefaultLocalProfileIDP1=00000000
+## DefaultLocalProfileIDP1
 
-## DefaultLocalProfileIDP2=
+## DefaultLocalProfileIDP2
 
 ## DefaultModifiers
 
@@ -283,7 +283,7 @@ Enables borderless fullscreen.
 
 ## IgnoredDialogs
 
-## ImageCache=Off
+## ImageCache
 
 ## InputBackgroundEvents
 
@@ -420,7 +420,7 @@ A deprecated input mode no longer used on Project OutFox. This is maintained for
 
 ## MusicWheelSwitchSpeed
 
-## MusicWheelUsesSections=Always
+## MusicWheelUsesSections
 
 ## MuteActions
 
@@ -452,7 +452,9 @@ If enabled and themes are aware, scores will be expressed as percentages.
 
 ## PreferredSortUsesGroups
 
-## Premium=DoubleFor1Credit
+## Premium
+
+Pay Mode-specific setting, allowing styles requiring two controllers (such as Double) to be played without requiring 2 credits.
 
 ## ProductID
 
