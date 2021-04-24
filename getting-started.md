@@ -24,7 +24,7 @@ When launching Project OutFox for the first time or without save data present, y
 * **guitar** - A guitar mode supporting three-button and five-button game types, modelled upon the mechanics of the arcade rhythm game _Guitar Freaks_.
 * **kickbox** - A mode that was originally designed for an exercise setup.
 
-?> **Tip** You can switch between game types at any time using the "Select Game" button on the main menu.
+?> **Tip:** You can switch between game types at any time using the "Select Game" button on the main menu.
 
 ## Configuring your controls
 
@@ -41,6 +41,8 @@ Project OutFox supports a wide variety of controllers and even arcade hardware. 
 ![The Exerimental Options screen. Input mode selector is highlighted.](./_media/getting-started/enable-hidapi.jpg)
 
 ## Calibrate your audio sync
+
+?> **Notice:** Interactive calibration only works under the ``dance`` game type. If you are using a differtent game type, temporarily switch to ``dance``, and switch back when you are done.
 
 In a rhythm game, timing is everything. But latency produced by your audio outputs can affect your accuracy. You can interactively adjust the audio **offset** using the **Calibrate Audio Sync** option in the **Input & Calibration** menu.
 
