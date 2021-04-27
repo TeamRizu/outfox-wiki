@@ -238,8 +238,8 @@ If you meet those requirements, there are already tools to help you:
 
 1. [MoondanceWeb](https://github.com/Tiny-Foxes/MoondanceWeb)
 
-    Updated constantly updated to represent elements that are possible to be translated in the website. Translating those files would result in translating 80% what is possible to translate in the website already.
+    Constantly updated to represent elements that are possible to be translated in the website. Translating those files would result in translating 80% what is possible to translate in the website already.
 
 2. [Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini)
 
-    A tool created by [zerinho6](https://github.com/moruzerinho6) to make website translation faster, easier, better and more like OutFox. Tiny-Webini removes all need to editing HTML files and uses a single .ini file like OutFox intead, it also has translator tools such as: show what can be translated by highlighting translatable elements, changing all translatable text to show its string key instead of string value and generate the HTML files needed to apply on the website backend.
+    A tool created by [zerinho6](https://github.com/moruzerinho6) to make website translation faster, easier, better and more like OutFox. Tiny-Webini removes all need to editing HTML files and uses a single .ini file like OutFox instead, it also has translator tools such as: show what can be translated by highlighting translatable elements, changing all translatable text to show its string key instead of string value and generate the HTML files needed to apply on the website backend.
