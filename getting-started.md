@@ -9,20 +9,20 @@ When launching Project OutFox for the first time or without save data present, y
 
 ![Screenshot of the Project OutFox game selection screen.](./_media/getting-started/select-game-type.png)
 
-**dance** is the default game type. Similar to games such as _Dance Dance Revolution_ and _In the Groove_, it uses four lanes designated by cardinal directions (left, down, up, right). However, that is not the only game type it supports:
-
-* **pump** - A five-lane dance game, which uses four diagional directions and the center rather than cardinal directions.
-* **kb7** - A seven-lane game type similar to games such as _O2Jam_, with six keys flanking a centre column (usually mapped by default to the SDF, JKL, and space keys by default)
-* **ez2** - A game type based on the defunct arcade game _EZ2Dancer_, which uses three foot panels and a pair of hand sensors.
-* **para** - A dance game designed for _para para_ routines, which is typically played with five infrared hand sensors in a semicircular layout, and uses a considerably looser scoring system.
+* **dance** - The default game type. Similar to games such as _Dance Dance Revolution_ and _In the Groove_, it uses four lanes in the cardinal directions (left, down, up, right). It also contains a 6-lane style (solo) adding up-left and up-right directions, and a 3-lane style using only up-left, down, and up-right.
+* **pump** - A five-lane dance game, which uses four diagional directions and the center rather than cardinal directions. In terms of functionality and behavior it is in line with  _Pro_/StepMania 4 CVS.
+* **kb7** - A seven-lane game type designed primarily for keyboard play, with two sets of three keys flanking a centre column (usually mapped by default to the SDF, JKL, and space keys). This is a StepMania-specific game type that does not emulate any specific game.
+* **ez2** - A game type based on the defunct arcade dance game _EZ2Dancer_, which uses three foot panels and a pair of hand sensors.
+* **para** - A dance game designed for _para para_ routines, which is typically played with five infrared hand sensors in a semicircular layout, and uses a considerably looser scoring system. It is modelled upon the mechanics of the defunct arcade dance game _Para Para Paradise_.
 * **ds3ddx** - A dance game whose format is common among Chinese arcade dance games, which uses four diagional foot panels, and four hand sensors around the pad in the cardinal directions.
-* **beat** - A BMS player mode, supporting 5-key and 7-key styles, and the ability to load BMS files.
-* **maniax** - A game type based on the defunct arcade game _Dance Maniax_, which uses four hand sensors arranged into two columns (upper and lower).
-* **techno** - Similar to ``dance``, except supporting up to eight panels (cardinal and diagional directions)
-* **popn** - A PMS player mode, supporting 5-button and 9-button styles, and the ability to load PMS files.
-* **gddm** - A drum mode supporting five-drum (with one bass pedal) and seven-drums (two pedals) styles, modelled upon the mechanics of the arcade rhythm game _DrumMania_.
-* **guitar** - A guitar mode supporting three-button and five-button game types, modelled upon the mechanics of the arcade rhythm game _Guitar Freaks_.
-* **kickbox** - A mode that was originally designed for an exercise setup.
+* **beat** - Supports 5-key and 7-key styles, and the ability to load BMS files. Full BME/BML support is coming soon.
+* **maniax** - A game type based on the defunct arcade dance game _Dance Maniax_, which uses four hand sensors arranged into two columns (upper and lower).
+* **techno** - A dance game type designed for pads with nine panels, including 4-lane (similar to dance), 5-lane (similar to pump), 8-lane (using all but the center panel), and 9-lane styles in single and double versions.
+* **popn** - A PMS player mode, supporting 3, 4, 5, 7, and 9-button styles, and the ability to load PMS files.
+* **gddm** - A drum mode supporting six-part (five drums and one pedal) and nine-part (seven drums, bass pedal, hi-hat pedal) styles, modelled upon the mechanics of the arcade rhythm game _DrumMania_. 5 and 10-part with full DTX file support coming soon.
+* **gdgf** (formerly **guitar** prior to 5.3.0-alpha-4.9.8) - A guitar mode supporting three-fret and five-fret styles, modelled upon the mechanics of the arcade rhythm game _Guitar Freaks_.
+* **gh** - A five-fret guitar mode modelled upon the mechanics of once-popular console games originating from North America.
+* **kickbox** - Obscure lash-a-soft dance pad-to-a-punching-bag mode (four, six, and eight-sensor modes).
 
 ?> **Tip:** You can switch between game types at any time using the "Select Game" button on the main menu.
 
