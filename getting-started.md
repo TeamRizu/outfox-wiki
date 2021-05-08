@@ -42,7 +42,7 @@ Project OutFox supports a wide variety of controllers and even arcade hardware. 
 
 ## Calibrate your audio sync
 
-?> **Notice:** Interactive calibration only works under the ``dance`` game type. If you are using a differtent game type, temporarily switch to ``dance``, and switch back when you are done.
+!> **Notice:** Interactive calibration only works under the ``dance`` game type. If you are using a differtent game type, temporarily switch to ``dance``, and switch back when you are done.
 
 In a rhythm game, timing is everything. But latency produced by your audio outputs can affect your accuracy. You can interactively adjust the audio **offset** using the **Calibrate Audio Sync** option in the **Input & Calibration** menu.
 
@@ -89,7 +89,9 @@ For example, we will use a pack known as _Club Fantastic Volume 1_, which featur
 
 ![Pack appearing on song selection menu.](./_media/getting-started/songsonwheel.jpg)
 
-If the songs do not appear, be sure to check if the group folder actually containing the song folders is too deep in the folder hierarchy. 
+?> **Note:** If the songs do not appear, be sure to check if the group folder actually containing the song folders is too deep in the folder hierarchy.
+
+?> **Note:** If a song is not contained inside a group folder, but instead on the root Songs directory, the game will stop loading to let you know of the Song folder in question.
 
 # Next steps
 
