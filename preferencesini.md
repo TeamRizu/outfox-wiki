@@ -43,6 +43,10 @@ Allows the legacy toasty animation to play multiple times in a single song.
 
 ## AllowSongDeletion
 
+Allows the hability to delete a song on the Music Wheel by performing the following combination on the selected song:
+
+`CTRL + Backspace`
+
 ## AllowUnacceleratedRenderer
 
 ## AllowW1
@@ -94,6 +98,8 @@ This preference controls BothAtOnce, an input mode that mirrors input across bot
 ## BreakComboToGetItem
 
 ## CelShadeModels
+
+Currently only used on Legacy Dancing Characters, which makes the characters have a toon-styled shade applied.
 
 ## Center1Player
 
@@ -173,6 +179,8 @@ Comma-seperated list of modifiers used by players with no profile, or a new prof
 
 ## DefaultTheme
 
+Sets the theme that will be loaded as a backup if the current theme cannot be loaded. If ``theme`` cannot also be found, then it will look back for ``"default"`` as the theme to load.
+
 ## DelayedBack
 
 If enabled, you must hold the back button for 0.5 seconds to exit gameplay.
@@ -190,6 +198,13 @@ If enabled, you must hold the back button for 0.5 seconds to exit gameplay.
 ## DisableUploadDir
 
 ## DisabledSongs
+
+Defines songs that will be disabled (by not making them visible or selectable) from selection.
+Formatting for this follows the structure of _[folder](./folders)_, and must be a path to the song.
+
+```ìni
+DisabledSongs=MyGroup/MySong,MyGroup2/MyOtherSong
+```
 
 ## DisplayAspectRatio
 
@@ -635,6 +650,8 @@ These settings are used for the lifebar in battle mode.
 Toggles between HIDAPI and XInput modes.
 
 ## UsePointsandBlending
+
+Enable or disable the use of points between each section of an ActorMultiVertex and use blending modes into it.
 
 ## UseUnlockSystem
 
