@@ -43,7 +43,7 @@ Allows the legacy toasty animation to play multiple times in a single song.
 
 ## AllowSongDeletion
 
-Allows the hability to delete a song on the Music Wheel by performing the following combination on the selected song:
+Allows the ability to delete a song on the Music Wheel by performing the following combination on the selected song:
 
 `CTRL + Backspace`
 
