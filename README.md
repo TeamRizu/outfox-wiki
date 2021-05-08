@@ -1,6 +1,6 @@
 # Project OutFox wiki documentation
 
-Welcome to the documentation wiki for [Project OutFox 5.3](https://projectmoon.dance)!
+Welcome to the [documentation wiki](https://outfox.wiki/#/) for [Project OutFox 5.3](https://projectmoon.dance)!
 
 ## Contributing
 This wiki is edited via a Git repository. Commit access is limited to the development team, but you can always perform pull requests too.
