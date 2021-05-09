@@ -134,4 +134,6 @@ for pn=1,2 do
 end
 ```
 
-Video Example (Shows only the z and rotz splines): https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/modspline.webm
+Video Example (Shows only the z and rotz splines):
+
+<video src="/vid/modspline.webm" controls="">ModSpline video example</video>

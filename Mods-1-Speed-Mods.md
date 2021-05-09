@@ -84,7 +84,7 @@ Modstring format: *\<approach rate> \<magnitude\> randomspeed
 
 Example: `*0.125 100% randomspeed`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/randomspeed.webm
+![RandomSpeed video example](/vid/randomspeed.webm ':include :type=video')
 
 # Speed Modifier Controllers
 These modifiers control the internal parts of the speed modifiers above, and usually shouldn't be used unless there's a good reason to. Like the speed mods above, these aren't column-specific either, but can support negative numbers like how the modstrings do. Unlike the speed modifiers listed above, there is no modstring form for any of these.

@@ -22,7 +22,7 @@ Modstring format: *\<approach rate\> \<magnitude\> hallway
 
 Example: `*1 150% hallway`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/hallway.webm
+![Hallway video example](/vid/hallway.webm ':include :type=video')
 
 ## Distant
 Desc: The notefield is tilted towards the player, so that notes start close to the screen and go away. Very noticable with 3D noteskins.
@@ -43,7 +43,7 @@ Modstring format: *\<approach rate\> \<magnitude\> distant
 
 Example: `*2 200% distant`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/distant.webm
+<video src="/vid/distant.webm" controls="">Distant video example</video>
 
 ## Incoming
 Desc: The notefield is tilted away from the player, like Hallway, but the notefield is also skewed so that notes approach from the middle of the screen.
@@ -62,7 +62,7 @@ Modstring format: *\<approach rate\> \<magnitude\> incoming
 
 Example: `*1 150 incoming`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/incoming.webm
+<video src="/vid/incoming.webm" controls="">Incoming video example</video>
 
 ## Space
 Desc: The notefield is tilted away from the player, like Distant, but the notefield is also skewed so that notes approach from the sides of the screen.
@@ -81,7 +81,7 @@ Modstring format: *\<approach rate\> \<magnitude\> space
 
 Example: `*3 100% space`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/space.webm
+<video src="/vid/space.webm" controls="">Space video example</video>
 
 ## Overhead
 Desc: The notefield is parallel to the screen, and appears directly flat. Returns whether both tilt and skew are at zero before the function was called.
@@ -98,7 +98,6 @@ Modstring format: *\<approach rate\> overhead
 
 Example: `*0.2 overhead`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/overhead.webm
 
 # Perspective Modifier Controllers
 These modifiers control the internal parts of the modifiers above, and generally shouldn't be used unless finer control is desired. Like the perspective modifiers, these aren't column-specific either. Unlike the perspective modifiers, there is no modstring form for any of these, and the standard current/previous magnitude & approach rate are returned.
@@ -114,7 +113,7 @@ PlayerOptions format: Skew(\<magnitude\>, \<approach rate\>)
 
 Example: `Skew(10, 3)`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/skew.webm
+<video src="/vid/skew.webm" controls="">Skew video example</video>
 
 ## Tilt
 Desc: Rotates the notefield on the x axis near the receptors so the arrows get closer or farther from the player when they initially appear. Positive values tilt the notefield away from the player, while negative values point it towards the player.

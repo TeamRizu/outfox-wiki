@@ -27,7 +27,7 @@ Modstring format: *\<approach rate\> \<magnitude\> mini
 
 Example: *0.2 100% mini
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/mini.webm
+<video src="/vid/mini.webm" controls="">Mini video example</video>
 
 ## Tiny
 Desc: Tiny scales down the notes and receptors instead of the entire field. Variants for all three axis are available, as are column-specific variants. These are multiplied onto the whole field variants.
@@ -60,7 +60,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Examples: `*0.5 -200% tinyy` `*1 100% tinyx1, *0.5 -200% tinyy2, *10 -400% tinyz3, *0.2 300% holdtinyx4`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/tiny.webm
+<video src="/vid/tiny.webm" controls="">Tiny video example</video>
 
 ### Available sub modifiers:
 ## TinyUsesMiniCalc
@@ -92,7 +92,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Examples: `*0.5 100% pulseinner, *0.5 100% pulseouter`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/pulse.webm
+<video src="/vid/pulse.webm" controls="">Pulse video example</video>
 
 ### Available sub modifiers:
 ## PulseOffset
@@ -143,7 +143,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Examples: `*1 50% shrinklinear`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/shrinklinear.webm
+<video src="/vid/shrinklinear.webm" controls="">Shrinklinear video example</video>
 
 ## ShrinkMult
 Desc: ShrinkMult has notes that start zoomed out and decelerate to normal zoom. There are also separate variants for all three axis.
@@ -164,4 +164,4 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Examples: `*2 100% shrinkmult`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/shrinkmult.webm
+<video src="/vid/shrinkmult.webm" controls="">Shrinkmult video example</video>

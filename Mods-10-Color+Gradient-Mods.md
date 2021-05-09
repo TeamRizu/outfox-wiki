@@ -20,7 +20,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*1 100% stealthred`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/stealthcolor.webm
+<video src="/vid/stealthcolor.webm" controls="">StealthColor video example</video>
 
 ## SuddenColor
 Desc: The color channel starts turned off, and turns on at the middle of the field.
@@ -37,7 +37,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*1 100% suddengreen`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/suddencolor.webm
+<video src="/vid/suddencolor.webm" controls="">SuddenColor video example</video>
 
 ### Available sub modifiers:
 ## SuddenOffsetColor
@@ -63,7 +63,7 @@ Example: `HiddenColor('ColorType_Blue',1,1)`
 Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 Example: `*1 100% hiddenblue`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/hiddencolor.webm
+<video src="/vid/hiddencolor.webm" controls="">HiddenColor video example</video>
 
 ### Available sub modifiers:
 ## HiddenOffsetColor
@@ -91,7 +91,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*1 100% blinkred`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/blinkcolor.webm
+<video src="/vid/blinkcolor.webm" controls="">BlinkColor video example</video>
 
 ## StealthGlowColor
 Desc: Allows one to modify the color used for the glow effect of the Visibility mods.
@@ -112,7 +112,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*1 0% stealthglowred, *1 0% stealthglowgreen, *1 25% stealth` `*1 0% stealthglowgreen1, *1 0% stealthglowblue1, *1 0% stealthglowred2, *1 0% stealthglowblue2, *1 0% stealthglowred3, *1 0% stealthglowgreen3, *1 0% stealthglowblue4, 25% stealth`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/stealthglowcolor.webm
+<video src="/vid/stealthglowcolor.webm" controls="">StealthGlowColor video example</video>
 
 # Gradient Modifiers
 Gradient modifiers allow for arbitrary color pathing, and are not compatible with the color modifiers.
@@ -216,4 +216,6 @@ for pn = 1,2 do -- Do this for both players
 end
 ```
 
-Video Example (Shows colors set for Player 2): https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/gradient.webm
+Video Example (Shows colors set for Player 2):
+
+<video src="/vid/gradient.webm" controls="">Gradient video example</video>

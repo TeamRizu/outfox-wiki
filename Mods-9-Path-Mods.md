@@ -20,7 +20,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*2 300% drunk`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/drunk.webm
+<video src="/vid/drunk.webm" controls="">Drunk video example</video>
 
 ### Available sub modifiers:
 ## DrunkOffset
@@ -87,7 +87,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*0.25 100% bounce`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/bounce.webm
+<video src="/vid/bounce.webm" controls="">Bounce video example</video>
 
 ### Available sub modifiers:
 ## BouncePeriod
@@ -132,7 +132,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*0.2 100% tornado`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/tornado.webm
+<video src="/vid/tornado.webm" controls="">Tornado video example</video>
 
 ### Available sub modifiers:
 ## TornadoOffset
@@ -182,7 +182,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*0.5 300% Bumpy`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/bumpy.webm
+<video src="/vid/bumpy.webm" controls="">Bumpy video example</video>
 
 ### Available sub modifiers:
 ## BumpyOffset
@@ -235,7 +235,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*0.2 150% Beat`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/beat.webm
+<video src="/vid/beat.webm" controls="">Beat video example</video>
 
 ### Available sub modifiers:
 ## BeatMult
@@ -299,7 +299,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*2 200% zigzag`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/zigzag.webm
+<video src="/vid/zigzag.webm" controls="">Zigzag video example</video>
 
 ### Available sub modifiers:
 ## ZigzagOffset
@@ -344,7 +344,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*1 200% sawtooth`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/sawtooth.webm
+<video src="/vid/sawtooth.webm" controls="">Sawtooth video example</video>
 
 ### Available sub modifiers:
 ## SawtoothOffset (NotITG only)
@@ -385,7 +385,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*1 -50% square`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/square.webm
+<video src="/vid/square.webm" controls="">Square video example</video>
 
 ### Available sub modifiers:
 ## SquareOffset
@@ -429,7 +429,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*3 -150% digital`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/digital.webm
+<video src="/vid/digital.webm" controls="">Digital video example</video>
 
 ### Available sub modifiers:
 ## DigitalSteps
@@ -485,7 +485,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*1 100% spiralx, *1 100% spiraly, *1 -99% spiralxperiod, *1 -99% spiralyperiod`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/spiral.webm
+<video src="/vid/spiral.webm" controls="">Spiral video example</video>
 
 ### Available sub modifiers:
 ## SpiralOffset
@@ -535,7 +535,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*1 100% asymptote`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/asymptote.webm
+<video src="/vid/asymptote.webm" controls="">Asymptote video example</video>
 
 ### Available sub modifiers:
 ## AsymptoteOffset
@@ -572,7 +572,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*0.125 200% parabolax`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/parabola.webm
+<video src="/vid/parabola.webm" controls="">Parabola video example</video>
 
 ### Available sub modifiers:
 ## ParabolaOffset
@@ -606,7 +606,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*10 300% cubicz`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/cubic.webm
+<video src="/vid/cubic.webm" controls="">Cubic video example</video>
 
 ### Available sub modifiers:
 ## CubicOffset
@@ -636,7 +636,7 @@ Modstring format: *\<approach rate\> \<magnitude\> xmode
 
 Example: `*1 100% xmode`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/xmode.webm
+<video src="/vid/xmode.webm" controls="">Xmode video example</video>
 
 ## Attenuate
 Desc: Emphasises the note position the further a note gets away from the receptor. Has variants for all axis. NotITG V3 and later does not have the Y axis variant.
@@ -657,7 +657,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*4 200% attenuatex`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/attenuate.webm
+<video src="/vid/attenuate.webm" controls="">Attenuate video example</video>
 
 ### Available sub modifiers:
 ## AttenuateOffset
