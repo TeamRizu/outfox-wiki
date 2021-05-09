@@ -22,7 +22,7 @@ Modstring format: *\<approach rate\> \<magnitude\> dizzy
 
 Example: `*2 314% dizzy`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/dizzy.webm
+<video src="/vid/dizzy.webm" controls="">Dizzy video example</video>
 
 ### Available sub modifiers:
 ## DizzyHolds
@@ -48,7 +48,7 @@ Modstring format: *\<approach rate\> \<magnitude\> twirl
 
 Example: `*3 220% twirl`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/twirl.webm
+<video src="/vid/twirl.webm" controls="">Twirl video example</video>
 
 ## Roll
 Desc: Notes roll as they reach the receptor, with more rotationx added the farther away from the receptor a note is.
@@ -65,7 +65,7 @@ Modstring format: *\<approach rate\> \<magnitude\> roll
 
 Example: `*3.4 170% roll`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/roll.webm
+<video src="/vid/roll.webm" controls="">Roll video example</video>
 
 ## Confusion
 Desc: The notes and receptors spin constantly. Has X, Y and Z variants available.
@@ -86,7 +86,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*2 50% confusion`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/confusion.webm
+<video src="/vid/confusion.webm" controls="">Confusion video example</video>
 
 ### Available sub modifiers:
 ## ConfusionOffset
@@ -122,4 +122,4 @@ Modstring format: *\<approach rate\> \<magnitude\> orient
 
 Example: `*0.25 100% orient`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/orient.webm
+<video src="/vid/orient.webm" controls="">Orient video example</video>

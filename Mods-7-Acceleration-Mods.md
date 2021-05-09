@@ -16,7 +16,7 @@ Modstring format: *\<approach rate\> \<magnitude\> boomerang
 
 Example: `*1 100% boomerang`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/boomerang.webm
+<video src="/vid/boomerang.webm" controls="">Boomerang video example</video>
 
 ### Available sub modifiers:
 ## VariableBoomerang
@@ -44,7 +44,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*5 200% brake`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/brake.webm
+<video src="/vid/brake.webm" controls="">Brake video example</video>
 
 ## Boost
 Desc: Notes start slow at the bottom, but speed up as they approach the receptors.
@@ -61,7 +61,7 @@ Modstring format: *\<approach rate\> \<magnitude\> boost
 
 Example: `*3 150% boost`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/boost.webm
+<video src="/vid/boost.webm" controls="">Boost video example</video>
 
 ## Expand
 Desc: the visual speed of the field's notes oscilates back and forth, as if the notefield is expanding and contracting. Also has a tangent variant.
@@ -82,7 +82,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*0.25 120% Expand`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/expand.webm
+<video src="/vid/expand.webm" controls="">Expand video example</video>
 
 ### Available sub modifiers:
 ## ExpandPeriod
@@ -117,7 +117,7 @@ Example: `WaveCol(1, -2, 10, true):WaveCol(2, -1, 5, true):WaveCol(3, 1, 5, true
 Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 Example: `*0.5 200% wave` `*10 -200 wave1, *5 -100% wave2, *5 100% wave3, *10 200% wave4`
 
-Video Example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/wave.webm
+<video src="/vid/wave.webm" controls="">Wave video example</video>
 
 ### Available sub modifiers:
 ## WavePeriod

@@ -123,11 +123,15 @@ Next up is to play around with Modifiers! Experiment with what effects you can g
 
 ---
 
+### What Mods Can I Use?
+
+Lots, actually!
+
+> **[Check out the Guide to Mods](./Mods-0-Overview.md)** in the sidebar for **a list of mods** you can use!
+
+---
+
 ### Mods Resources
-
-In the future, we'll better document what mods you can use on this wiki. For now:
-
- * In Outfox, go to the **player options** menu after picking a song (press the start button twice). Scroll to the bottom, pick **Modifiers** and then **Exit**. Most Modifiers in this list (namely in the **Acceleration, Effects, Appearance, and Scroll** categories) work well as Mods in Attacks!
  
  * **[FMS Cat's Flip-Invert site](http://fms-cat.com/flip-invert/)** helps give you combinations of various mods to move the note columns across the screen. Just drag the receptors where you want them on-screen!
     * (You can alternatively use the `MoveX/Y/Zn` mods to move single note columns, like `MoveX1`, `MoveX2`, etc)

@@ -114,7 +114,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*0.125 100% dark` `*1 25% dark1, *1 50% dark2, *1 75% dark3, *1 90% dark4`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/dark.webm
+<video src="/vid/dark.webm" controls="">Dark video example</video>
 
 ## Stealth
 Desc: Stealth hides the notes. When activating, notes start glowing white (0 to 50%), and then the glow fades away to an invisible note (50 to 100%). There's a column-specific version. All variants add onto eachother, so it's possible to have one variant at 100%, and undo it for another type with a different variant at -100%.
@@ -143,7 +143,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*1 90% stealth, *1 -40% stealthmines` `*1 25% stealth1, *1 50% stealth2, *1 75% stealth3, *1 90% stealth4`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/stealth.webm
+<video src="/vid/stealth.webm" controls="">Stealth video example</video>
 
 ### Available sub modifiers:
 ## StealthType
@@ -176,7 +176,7 @@ Modstring format: *\<approach rate\> \<magnitude\> sudden
 
 Example: `*1 100% sudden`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/sudden.webm
+<video src="/vid/sudden.webm" controls="">Sudden video example</video>
 
 ### Available sub modifiers:
 ### SuddenOffset
@@ -202,7 +202,7 @@ Modstring format: *\<approach rate\> \<magnitude\> hidden
 
 Example: `*1 75% hidden`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/hidden.webm
+<video src="/vid/hidden.webm" controls="">Hidden video example</video>
 
 ### Available sub modifiers:
 ## HiddenOffset
@@ -228,7 +228,7 @@ Modstring format: *\<approach rate\> \<magnitude\> blink
 
 Example: `*1 100% blink`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/blink.webm
+<video src="/vid/blink.webm" controls="">Blink video example</video>
 
 ## RandomVanish
 Desc: The notes disappear, then reappear in a different/random column. NotITG supposedly has an offset sub modifier. NotITG also split this modifier into separate "Randomize" and "Vanish" modifiers.
@@ -245,4 +245,4 @@ Modstring format: *\<approach rate\> \<magnitude\> randomvanish
 
 Example: `*1 100% randomvanish`
 
-Video example: https://github.com/TeamRizu/OutFoxDocumentation/blob/master/vid/randomvanish.webm
+<video src="/vid/randomvanish.webm" controls="">RandomVanish video example</video>
