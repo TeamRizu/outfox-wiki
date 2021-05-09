@@ -6,7 +6,7 @@
     * [Installation](./install)
     * [Getting Started](./getting-started)
 * ***Making Simfiles***
-    * [Mods and Attacks](./making-simfiles-mods-attacks.md)
+    * [Mods and Attacks](./making-simfiles-mods-attacks)
 * ***Features & Settings***
     * [Game types](./game-types)
     * [Folders](./folders)

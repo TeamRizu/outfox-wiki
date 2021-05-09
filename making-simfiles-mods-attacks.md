@@ -50,6 +50,7 @@ First off:
 Attacks only last a few seconds by default - to **make it last longer** you'll need to **edit the attack's length**.
 
 ### Edit an Attack
+
 1. In the editor, go to the beat where the Attack you want to edit is, and press **Enter**.
 
 
@@ -67,6 +68,7 @@ Attacks only last a few seconds by default - to **make it last longer** you'll n
 ![The Attack edit menu](/_media/making-simfiles/mods-attacks-attack-edit-menu.png)
 
 ### Remove an Attack
+
 1. In the editor, go to the beat the Attack is on and press **Enter**.
 
 2. Pick the attack you want to remove and press **Enter**.
@@ -75,7 +77,7 @@ Attacks only last a few seconds by default - to **make it last longer** you'll n
    * When all Mods in an attack are removed, the Attack is auto-removed.
 
 
-## Mod Strength/Speed
+## Mod Strength/Approach Rate
 
 ### Mod Strength
 
@@ -90,17 +92,17 @@ Percentages **above 100%** are a-ok if you want *really* strong mods! **Negative
 
 Finally: `No` means the same thing as `0%`. Say, if you have a `Beat` attack earlier in the song, you can turn it off with `0% Beat` or `No Beat` - either works!
 
-![The difference between 50% Beat and 100% Beat](/_media/making-simfiles/mods-attacks-beat-strength.m4v ':include :type=video')
+<video src="/_media/making-simfiles/mods-attacks-beat-strength.m4v" controls="">The difference between 50% Beat and 100% Beat</video>
 
-> In the above video - **Left = 25% Beat, Right = 125% Beat**
+> In the above video - **Left = 40% Beat, Right = 125% Beat**
 
 ---
 
-### Mod Apply Speed
+### Mod Approach Rate
 
 Want a mod to **slowly fade in** over time, or **instantly** go to max strength? You can change that too!
 
-> To change how fast/slow a Mod is applied, add a **`*`** and a **number** before the mod, like **\*2 Beat**
+> To change how fast/slow a mod is applied, add a **`*`** and a **number** before the mod, like **\*2 Beat**
 
 Higher numbers apply mods faster, lower numbers (decimals included!) make mods apply slower.
 
@@ -109,9 +111,9 @@ Higher numbers apply mods faster, lower numbers (decimals included!) make mods a
 (The default `*1` applies at a rate of 100% of a mod over 1 second)
 
 
-> Mod apply speed works for **any strength**, including **0%**! If you want to get rid of a mod really fast, you can use an attack like `*50 0% Beat`.
+> Mod approach rate can also combine with **any strength**, including **0%**! If you want to get rid of a mod really fast, you can use an attack like `*50 0% Beat`.
 
-![The difference between *0.5 Beat and *10 Beat](/_media/making-simfiles/mods-attacks-beat-speed.m4v ':include :type=video')
+<video src="/_media/making-simfiles/mods-attacks-beat-speed.m4v" controls="">The difference between \*0.5 Beat and \*10 Beat</video>
 
 > In the above video - **Left = \*0.5 Beat** (fades in half as fast), **Right = \*10 Beat** (fades in 10x as fast!). They both get to the **same strength** at the end, but the **left side takes longer** to do so.
 
@@ -144,13 +146,15 @@ In the future, we'll better document what mods you can use on this wiki. For now
 
 ---
 
-### Mod Strengths Across Different Themes
+### Mod Behaviors Across Different Themes
 
-The mods you add will change strength depending on the internal resolution of whatever theme you're currently using.
+Some mods you add (like Drunk, Tornado, Boomerang) *may* change behavior depending on the theme you're currently using.
 
-If you switch between an HD theme (like the Outfox or SM5.1 default themes) and a non-HD theme (like SM5.0.12's default theme or PIU Infinity), you'll find **Mods will be stronger** on **non-HD themes**.
+In older versions (like Stepmania 5.0/5.1), the theme's internal resolution (HD vs non-HD themes, specifically `SCREEN_HEIGHT`) is used in calculations for certain mods. On these versions, these mods will behave differently on themes with different internal resolutions.
 
-Plan accordingly if you plan on playing your simfiles/chart edits on different themes!
+In Outfox, [these calculations are performed based on a completely separate theme metric instead](https://github.com/TeamRizu/outfox-wiki/pull/7#discussion_r628777504), `ModifierHeight`. If the theme changes this value, it will affect those calculations (and therefore mod behaviors, and is noted as doing so).
+
+Plan accordingly if you plan on playing your simfiles/chart edits on different versions/themes!
 
 ---
 
