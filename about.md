@@ -15,13 +15,14 @@ As Project OutFox is a continuation of the 5.0.12 and 5.1 codebase (not â€œ5.2â€
 
 Team Rizu | Moondance Staff
 :------------ | :-------------
-Squirrel | Moneko
-Jousway | Gabrimax98
-Cube | RodentVienna
-MrThatKid | Hanubeki
-Jose Varela | ArcticFqx
-Lirodon | SheepyChris
-Zerinho6 | SHRMP0
+[Squirrel](https://github.com/Scraticus) | [Moneko](https://github.com/JustMoneko)
+[Jousway](https://github.com/Jousway) | [Gabrimax98](https://github.com/Gabrimax98)
+[Cube](https://github.com/concubidated) | RodentVienna
+[MrThatKid](https://github.com/MrThatKid) | [Hanubeki](https://github.com/hanubeki)
+[Jose Varela](https://github.com/JoseVarelaP) | [ArcticFqx](https://github.com/ArcticFqx)
+[Lirodon](https://github.com/ListenerJubatus) | [SheepyChris](https://github.com/SheepyChris)
+[Moru Zerinho6](https://github.com/moruzerinho6) | [SHRMP0](https://github.com/SHRMP0)
+N/A | [Sudospective](https://github.com/Sudospective)
 
 Team Rizu are the ones that make OutFox possible. They're the people working on the game and managing everything.
 
