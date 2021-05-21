@@ -1,115 +1,120 @@
 # Preferences.ini
-**Preferences.ini** is located in the Save directory where Project OutFox is installed, and contains many of the system preferences. Some of them are accessible within Project OutFox's settings menu, but some of them are only accessible by editing the file.
 
-## AdditionalCourseFolders
+**Preferences.ini** is a file that contains many of the system preferences. Some of them are accessible within Project OutFox's settings menu, but some of them are only accessible by editing the file. Manual edits to Preferences.ini must be performed when the game is closed, or else they may be automatically overwritten.
+
+It is located in the Save [folder](./folders).
+
+## List of parameters
+
+### AdditionalCourseFolders
 
 Takes a comma-separated list of directories where additional course (.crs) files are stored.
 
 _See [folder](./folders)_
 
-## AdditionalFolders
+### AdditionalFolders
 
 Takes a comma-separated list of directories where additional content folders are stored.
 
 _See [folder](./folders)_
 
-## AdditionalSongFolders
+### AdditionalSongFolders
 
 Takes a comma-separated list of directories where additional song groups are stored.
 
 _See [folder](./folders)_
 
-## AllowExtraStage
+### AllowExtraStage
 
 When event mode is off, allow the player to qualify for an extra stage.
 
-## AllowHoldForOptions
+### AllowHoldForOptions
 
 Allow the user to enter the player options menu by holding the start button when selecting a song. If set to 0, the user must press the start button twice instead.
 
-## AllowMultipleHighScoreWithSameName
+### AllowMultipleHighScoreWithSameName
 
 Allows multiple high score entries by the same user.
 
-## AllowMultipleInstances
+### AllowMultipleInstances
 
 Allows multiple instances of Project OutFox to be opened.
 
-## AllowMultipleToasties
+### AllowMultipleToasties
 
 Allows the legacy toasty animation to play multiple times in a single song.
 
-## AllowMultiTexture
+### AllowMultiTexture
 
-## AllowSongDeletion
+### AllowSongDeletion
 
 Allows the ability to delete a song on the Music Wheel by performing the following combination on the selected song:
 
 `CTRL + Backspace`
 
-## AllowUnacceleratedRenderer
+### AllowUnacceleratedRenderer
 
-## AllowW1
+### AllowW1
 
 Enables the W1 judgement ("Flawless", "Marevelous", "Fantastic" depending on theme) in regular gameplay. 
 
-## AnisotropicFiltering
+### AnisotropicFiltering
 
-## Announcer
+### Announcer
 
 Specifies the name of the current announcer.
 
-## ArcadeOptionsNavigation
+### ArcadeOptionsNavigation
 
-## AttractSoundFrequency
+### AttractSoundFrequency
 
 Determines how often sound is enabled during the attract mode loop in arcade mode.
 
-## AutoJoin
+### AutoJoin
 
-## AutoMapOnJoyChange
+### AutoMapOnJoyChange
 
-## AutoPlay
+### AutoPlay
 
-## AutogenGroupCourses
+### AutogenGroupCourses
 
 Automatically generates nonstop courses based on installed songs.
 
-## AutogenSteps
+### AutogenSteps
 
 Allows charts to be generated for other [game types](./game-types) and styles that a song does not have its own charts for.
 
-## BGBrightness
+### BGBrightness
 
 Sets the brightness of background visuals in gameplay.
 
-## BackUpAllSongSaves
+### BackUpAllSongSaves
 
-## BackgroundFitMode
+### BackgroundFitMode
 
 Determines scaling/cropping of song backgrounds based on resolution and aspect ratio.
 
-## BlinkGameplayButtonLightsOnNote
+### BlinkGameplayButtonLightsOnNote
 
-## BothAtOnce
+### BothAtOnce
 
 This preference controls BothAtOnce, an input mode that mirrors input across both players. This preference is 
 
-## BreakComboToGetItem
+### BreakComboToGetItem
 
-## CelShadeModels
+### CelShadeModels
 
 Currently only used on Legacy Dancing Characters, which makes the characters have a toon-styled shade applied.
 
-## Center1Player
+### Center1Player
 
 In single-player modes, renders the notefield in the center of the screen rather than to the left or right.
 
-## CenterImage
+### CenterImage
 
 CenterImageAddHeight, CenterImageAddWidth, CenterImageTranslateX, and CenterImageTranslateY are used to adjust overscan.
 
-## CoinMode
+### CoinMode
 
 This setting determines whether Project OutFox will behave as an arcade game or not;
 
@@ -117,87 +122,87 @@ This setting determines whether Project OutFox will behave as an arcade game or 
 * If set to  ``Free Play``, the game will behave similarly to Pay mode, except credits are not required to play.
 * If set to ``Home``, Project OutFox's arcade workflows will be disabled. The game will use its default user experience, including access to the main menu.
 
-## CoinRecoveryExpirationHours
+### CoinRecoveryExpirationHours
 
-## CoinsPerCredit
+### CoinsPerCredit
 
 Specifies the number of coins that must be inserted for each credit.
 
-## ComboContinuesBetweenSongs
+### ComboContinuesBetweenSongs
 
 If enabled, the player's combo will carry over between songs rather than start from 0.
 
-## ConstantUpdateDeltaSeconds
+### ConstantUpdateDeltaSeconds
 
-## Cookie
+### Cookie
 
 ~~Cookies are delicious delicacies.~~
 
-## CourseSortOrder
+### CourseSortOrder
 
-## CoursesToShowRanking
+### CoursesToShowRanking
 
-## CurrentGame
+### CurrentGame
 
 Determines the current [game types](./game-types).
 
-## CustomSongsEnable
+### CustomSongsEnable
 
 If set to 1, players may load their own songs from a folder in their profile on a USB media (similar to the "r21" patch from _In the Groove 2_).
 
-## CustomSongsLoadTimeout
+### CustomSongsLoadTimeout
 
-## CustomSongsMaxCount
+### CustomSongsMaxCount
 
 The maximum number of songs that can be loaded as custom songs.
 
-## CustomSongsMaxMegabytes 
+### CustomSongsMaxMegabytes 
 
 The maximum file size for audio files of custom songs.
 
-## CustomSongsMaxSeconds
+### CustomSongsMaxSeconds
 
 The maximum length in seconds for custom songs.
 
-## DDRStyleRandom
+### DDRStyleRandom
 
-## DebounceCoinInputTime
+### DebounceCoinInputTime
 
-## DebugLights
+### DebugLights
 
 Displays a debug overlay for lights outputs.
 
-## DefaultLocalProfileIDP1
+### DefaultLocalProfileIDP1
 
-## DefaultLocalProfileIDP2
+### DefaultLocalProfileIDP2
 
-## DefaultModifiers
+### DefaultModifiers
 
 Comma-seperated list of modifiers used by players with no profile, or a new profile with no personal settings.
 
-## DefaultRecordLength
+### DefaultRecordLength
 
-## DefaultTheme
+### DefaultTheme
 
 Sets the theme that will be loaded as a backup if the current theme cannot be loaded. If ``theme`` cannot also be found, then it will look back for ``"default"`` as the theme to load.
 
-## DelayedBack
+### DelayedBack
 
 If enabled, you must hold the back button for 0.5 seconds to exit gameplay.
 
-## DelayedCreditsReconcile
+### DelayedCreditsReconcile
 
-## DelayedModelDelete
+### DelayedModelDelete
 
-## DelayedScreenLoad
+### DelayedScreenLoad
 
-## DelayedTextureDelete
+### DelayedTextureDelete
 
-## DisableScreenSaver
+### DisableScreenSaver
 
-## DisableUploadDir
+### DisableUploadDir
 
-## DisabledSongs
+### DisabledSongs
 
 Defines songs that will be disabled (by not making them visible or selectable) from selection.
 Formatting for this follows the structure of _[folder](./folders)_, and must be a path to the song.
@@ -206,465 +211,465 @@ Formatting for this follows the structure of _[folder](./folders)_, and must be 
 DisabledSongs=MyGroup/MySong,MyGroup2/MyOtherSong
 ```
 
-## DisplayAspectRatio
+### DisplayAspectRatio
 
 The current aspect ratio, expressed as a decimal (i.e. 16:9 = 1.777778, or 16/9).
 
-## DisplayColorDepth
+### DisplayColorDepth
 
 The current color depth, either 32 or 16.
 
-## DisplayHeight and DisplayWidth 
+### DisplayHeight and DisplayWidth 
 
 Determines the resolution.
 
-## DisplayId
+### DisplayId
 
-## Disqualification
+### Disqualification
 
 If enabled, scores will not be saved if specific modifiers (such as constant BPM) is used.
 
-## EXTIOComPort
+### EXTIOComPort
 
-## EasterEggs
+### EasterEggs
 
 Enables or disables easter eggs, if a theme is aware of and uses this preference.
 
-## EditClearPromptThreshold
+### EditClearPromptThreshold
 
-## EditRecordModeLeadIn
+### EditRecordModeLeadIn
 
-## EditorMemoryCardOsMountPoint
+### EditorMemoryCardOsMountPoint
 
-## EditorNoteSkinP1 and EditorNoteSkinP2
+### EditorNoteSkinP1 and EditorNoteSkinP2
 
-## EditorShowBGChangesPlay
+### EditorShowBGChangesPlay
 
 Enables background scripts to be previewed when playing back a song in the editor.
 
-## EnableAttackSounds
+### EnableAttackSounds
 
-## EnableBeginnerHelperBackgrounds
+### EnableBeginnerHelperBackgrounds
 
-## EnableMineHitSound
+### EnableMineHitSound
 
 Plays an explosion sound if you hit a mine note.
 
-## EnableScoreboard
+### EnableScoreboard
 
-## EventMode
+### EventMode
 
 Also known as "Free Mode"; if disabled, each game session is divided into a maximum number of stages (arcade-style).
 
-## ExtendedChineseGlyphs
+### ExtendedChineseGlyphs
 
-## ExtendedJapaneseGlyphs
+### ExtendedJapaneseGlyphs
 
-## ExtendedKoreanGlyphs
+### ExtendedKoreanGlyphs
 
-## FailOffForFirstStageEasy
+### FailOffForFirstStageEasy
 
-## FailOffInBeginner
+### FailOffInBeginner
 
-## FastLoad
+### FastLoad
 
-## FastLoadAdditionalSongs
+### FastLoadAdditionalSongs
 
-## FastNoteRendering
+### FastNoteRendering
 
-## ForceLogFlush
+### ForceLogFlush
 
-## ForceMipMaps
+### ForceMipMaps
 
-## FrameLimitPercent
+### FrameLimitPercent
 
-## FullscreenIsBorderlessWindow
+### FullscreenIsBorderlessWindow
 
 Enables borderless fullscreen.
 
-## GetRankingName
+### GetRankingName
 
-## GlobalOffsetSeconds
+### GlobalOffsetSeconds
 
-## HarshHotLifePenalty
+### HarshHotLifePenalty
 
-## HiddenSongs
+### HiddenSongs
 
-## HideIncompleteCourses
+### HideIncompleteCourses
 
-## HighResolutionTextures
+### HighResolutionTextures
 
-## HighresScreenshotsBydefault
+### HighresScreenshotsBydefault
 
-## IgnoredDialogs
+### IgnoredDialogs
 
-## ImageCache
+### ImageCache
 
-## InputBackgroundEvents
+### InputBackgroundEvents
 
-## InputDebounceTime
+### InputDebounceTime
 
-## InputDrivers
+### InputDrivers
 
-## Interlaced
+### Interlaced
 
-## Language
+### Language
 
-## LastConnectedServer
+### LastConnectedServer
 
 
-## LastSeenInputDevices
+### LastSeenInputDevices
 
-## LastSeenVideoDriver
+### LastSeenVideoDriver
 
 Identifies the video card last used with the game. Automatically generated.
 
-## LastSeenMemory
+### LastSeenMemory
 
 Automatically generated.
 
-## LifeDifficultyScale
+### LifeDifficultyScale
 
-## LightsAheadSeconds
+### LightsAheadSeconds
 
-## LightsComPort
+### LightsComPort
 
-## LightsDriver
+### LightsDriver
 
-## LightsFalloffSeconds
+### LightsFalloffSeconds
 
-## LightsStepsDifficulty
+### LightsStepsDifficulty
 
 If there is no dedicated ``lights`` chart, generates lighting patterns from the existing charts on the specified difficul(ties).
 
-## LockCourseDifficulties
+### LockCourseDifficulties
 
-## LogCheckpoints
+### LogCheckpoints
 
-## LogFPS
+### LogFPS
 
 At intervals, the current FPS and average FPS will be appended to the log file.
 
-## LogSkips
+### LogSkips
 
-## LogToDisk
+### LogToDisk
 
 Enabling this will write log files.
 
-## LongVerSongSeconds
+### LongVerSongSeconds
 
 Determines how long a song must be for it to be classified as "long" (which costs two stages outside of Event Mode).
 
-## MarathonVerSongSeconds
+### MarathonVerSongSeconds
 
 Determines how long a song must be for it to be classified as a "marathon" (which costs three stages outside of Event Mode).
 
-## MachineName
+### MachineName
 
-## MaxHighScoresPerListForMachine
+### MaxHighScoresPerListForMachine
 
-## MaxHighScoresPerListForPlayer
+### MaxHighScoresPerListForPlayer
 
-## MaxInputLatencySeconds
+### MaxInputLatencySeconds
 
-## MaxRegenComboAfterMiss
+### MaxRegenComboAfterMiss
 
-## MaxSongsInEditCourse
+### MaxSongsInEditCourse
 
-## MaxTextureResolution
+### MaxTextureResolution
 
-## MemoryCardDriver
+### MemoryCardDriver
 
-## MemoryCardOsMountPoint
+### MemoryCardOsMountPoint
 
-## MemoryCardOsMountPoint
+### MemoryCardOsMountPoint
 
-## MemoryCardPadmissEnabled
+### MemoryCardPadmissEnabled
 
-## MemoryCardProfileImportSubdirs
+### MemoryCardProfileImportSubdirs
 
-## MemoryCardProfileSubdir
+### MemoryCardProfileSubdir
 
 The name of the subfolder used to store profile data on a USB device.
 
-## MemoryCardProfiles
+### MemoryCardProfiles
 
-## MemoryCardUsbBusP1
+### MemoryCardUsbBusP1
 
-## MemoryCardUsbBusP2
+### MemoryCardUsbBusP2
 
-## MemoryCardUsbLevelP1
+### MemoryCardUsbLevelP1
 
-## MemoryCardUsbLevelP2
+### MemoryCardUsbLevelP2
 
-## MemoryCardUsbPortP1
+### MemoryCardUsbPortP1
 
-## MemoryCardUsbPortP2
+### MemoryCardUsbPortP2
 
-## MemoryCards
+### MemoryCards
 
-## MenuTimer
+### MenuTimer
 
 If enabled, a timer is used in gameplay menus. Usually used in arcade or event settings.
 
-## MercifulBeginner
+### MercifulBeginner
 
-## MercifulDrain
+### MercifulDrain
 
-## MercifulSuperMeter
+### MercifulSuperMeter
 
-## MinPercentageForMachineCourseHighScore
+### MinPercentageForMachineCourseHighScore
 
-## MinPercentageForMachineSongHighScore
+### MinPercentageForMachineSongHighScore
 
-## MinTNSToHideNotes
+### MinTNSToHideNotes
 
 The minimum judgement window needed for notes to disappear after hitting them.
 
 Minimum1FullSongInCourses
 
-## MonkeyInput
+### MonkeyInput
 
 A deprecated input mode no longer used on Project OutFox. This is maintained for compatibility only.
 
-## MoveRandomToEnd
+### MoveRandomToEnd
 
-## MovieColorDepth
+### MovieColorDepth
 
-## MovieDrivers
+### MovieDrivers
 
-## MusicWheelSwitchSpeed
+### MusicWheelSwitchSpeed
 
-## MusicWheelUsesSections
+### MusicWheelUsesSections
 
-## MuteActions
+### MuteActions
 
 Mutes sound effects in menus.
 
-## NetworkStartOffset
+### NetworkStartOffset
 
-## NeverBoostAppPriority
+### NeverBoostAppPriority
 
-## NeverCacheList
+### NeverCacheList
 
-## NumBackgrounds
+### NumBackgrounds
 
-## OnlyDedicatedMenuButtons
+### OnlyDedicatedMenuButtons
 
-## OnlyPreferredDifficulties
+### OnlyPreferredDifficulties
 
-## PAL
+### PAL
 
-## PacDriveLightOrdering
+### PacDriveLightOrdering
 
-## PadStickSeconds
+### PadStickSeconds
 
-## PercentageScoring
+### PercentageScoring
 
 If enabled and themes are aware, scores will be expressed as percentages.
 
-## PreCacheAllWheelSorts
+### PreCacheAllWheelSorts
 
-## PreferredSortUsesGroups
+### PreferredSortUsesGroups
 
-## Premium
+### Premium
 
 Pay Mode-specific setting, allowing styles requiring two controllers (such as Double) to be played without requiring 2 credits.
 
-## ProductID
+### ProductID
 
-## ProfileCourseEdits
+### ProfileCourseEdits
 
-## ProfileDataCompress
+### ProfileDataCompress
 
-## ProfileStepEdits
+### ProfileStepEdits
 
-## ProgressiveLifebar
+### ProgressiveLifebar
 
-## ProgressiveNonstopLifebar=
+### ProgressiveNonstopLifebar=
 
-## ProgressiveStageLifeba
+### ProgressiveStageLifeba
 
-## PruneFonts
+### PruneFonts
 
-## PseudoLocaliz
+### PseudoLocaliz
 
-## Python23IO_HDXB_DEV_ID
+### Python23IO_HDXB_DEV_ID
 
-## Python23IO_HDXB_PORT
+### Python23IO_HDXB_PORT
 
-## Python23IO_Mode
+### Python23IO_Mode
 
-## Python23IO_P2IO_EXTIO
+### Python23IO_P2IO_EXTIO
 
-## QuirksMode
+### QuirksMode
 
-## RageSoundSampleCountClamp
+### RageSoundSampleCountClamp
 
-## RandomBackgroundMode
+### RandomBackgroundMode
 
-## RateModsAffectFGChanges
+### RateModsAffectFGChanges
 
-## RefreshRate
+### RefreshRate
 
-## RegenComboAfterMiss
+### RegenComboAfterMiss
 
-## ReverseMouseButtons
+### ReverseMouseButtons
 
-## SatelliteComPort
+### SatelliteComPort
 
-## ScoreBroadcastURL
+### ScoreBroadcastURL
 
-## SextetStreamOutputFilename
+### SextetStreamOutputFilename
 
-## ShowBanners
+### ShowBanners
 
-## ShowBeginnerHelper
+### ShowBeginnerHelper
 
-## ShowCaution
+### ShowCaution
 
 Displays a caution screen before gameplay begins.
 
-## ShowDancingCharacters
+### ShowDancingCharacters
 
-## ShowDanger
+### ShowDanger
 
 If the theme is aware, this can toggle visual effects used to signify low health.
 
-## ShowInstructions
+### ShowInstructions
 
 If the theme is aware, this can toggle additional tutorial screens shown in-game.
 
-## ShowLoadingWindow
+### ShowLoadingWindow
 
 Toggles the splash screen.
 
-## ShowLogOutput
+### ShowLogOutput
 
 On Windows, this will open a ``cmd.exe`` window to display log output when the game is running.
 
-## ShowLyrics
+### ShowLyrics
 
 Shows lyrics from a .crs file in-game in present.
 
-## ShowMasks
+### ShowMasks
 
-## ShowMouseCursor
+### ShowMouseCursor
 
 Determines whether the OS mouse cursor will disappear if hovered over the game window.
 
-## ShowNativeLanguage
+### ShowNativeLanguage
 
 Toggles whether song titles are displayed in their native language (1), or in a transliterated or translated form as determined in their metadata (0)
 
-## ShowSongOptions
+### ShowSongOptions
 
 Toggles whether the game will ask players if they wish to view the Song Options menu when exiting the player options menu, whether the screen will always be displayed, or if song options will not be accessible.
 
-## ShowStats
+### ShowStats
 
 Shows an overlay in the top corner of the screen for information such as frame rate and memory usage.
 
-## ShowThemeErrors
+### ShowThemeErrors
 
 If enabled, Lua errors will be displayed in an overlay at the top of the screen.
 
-## SignProfileData
+### SignProfileData
 
-## SmoothLines
+### SmoothLines
 
-## SongBackgrounds
+### SongBackgrounds
 
-## SongBroadcastURL
+### SongBroadcastURL
 
-## SongMinTNSToHideNotes
+### SongMinTNSToHideNotes
 
-## SongNoteskins
+### SongNoteskins
 
-## SongsPerPlay
+### SongsPerPlay
 
 Number of songs per-session (excluding extra stages) if ``EventMode`` is disabled.
 
-## SoundDevice
+### SoundDevice
 
-## SoundDrivers
+### SoundDrivers
 
-## SoundPreferredSampleRate
+### SoundPreferredSampleRate
 
-## SoundPreload16bit
+### SoundPreload16bit
 
-## SoundPreloadMaxSamples
+### SoundPreloadMaxSamples
 
-## SoundVolume
+### SoundVolume
 
 System sound volume
 
-## SoundVolumeAttract
+### SoundVolumeAttract
 
 Volume used in arcade attract mode.
 
-## SoundWriteAhead
+### SoundWriteAhead
 
-## StretchBackgrounds
+### StretchBackgrounds
 
-## SubSortByNumSteps
+### SubSortByNumSteps
 
-## SuperMeterPercentChange**
+### SuperMeterPercentChange**
 
-## TestInitialScreen
+### TestInitialScreen
 
-## TextureColorDepth
+### TextureColorDepth
 
-## Theme
+### Theme
 
-## ThreadedInput
+### ThreadedInput
 
-## ThreadedMovieDecode
+### ThreadedMovieDecode
 
-## ThreeKeyNavigation
+### ThreeKeyNavigation
 
-## TimeMeterSecondsChange*
+### TimeMeterSecondsChange*
 
-## TimingWindowAdd
+### TimingWindowAdd
 
-## TimingWindowJump
+### TimingWindowJump
 
-## TimingWindowScale
+### TimingWindowScale
 
-## TimingWindowSeconds*
+### TimingWindowSeconds*
 
 These settings define the timing windows used in themes that do not use the Project OutFox LuaTiming system. These settings are provided for backwards compatibility purposes.
 
-## TrilinearFiltering
+### TrilinearFiltering
 
-## TugMeterPercentChange*
+### TugMeterPercentChange*
 
 These settings are used for the lifebar in battle mode.
 
-## UpdateCheckEnable
+### UpdateCheckEnable
 
-## UseEGLonLinux
+### UseEGLonLinux
 
-## UseOldJoystickMapping
+### UseOldJoystickMapping
 
 Toggles between HIDAPI and XInput modes.
 
-## UsePointsandBlending
+### UsePointsandBlending
 
 Enable or disable the use of points between each section of an ActorMultiVertex and use blending modes into it.
 
-## UseUnlockSystem
+### UseUnlockSystem
 
-## VideoRenderers
+### VideoRenderers
 
 Determines the renderer used by Project OutFox.
 
-## VisualDelaySeconds
+### VisualDelaySeconds
 
-## Vsync
+### Vsync
 
 Enables vertical sync (Vsync)
 
-## Windowed
+### Windowed
 
 Enables windowed mode.
