@@ -37,6 +37,6 @@
     - [Ch 08: Visibility](./Mods-8-Visibility-Mods.md)
     - [Ch 09: Path](./Mods-9-Path-Mods.md)
     - [Ch 10: Colour & Gradient](./Mods-10-Color+Gradient-Mods.md)
-    - [Ch 11: ModSplines](./Mods-11-Modsplines.md)
+    - [Ch 11: ModSplines](./Mods-11-ModSplines.md)
     - [Ch 12: Chart](./Mods-12-Chart-Mods.md)
     - [Ch 13: Miscellaneous](./Mods-13-Miscelaneous-Mods.md)
