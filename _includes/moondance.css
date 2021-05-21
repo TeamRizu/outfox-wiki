@@ -25,8 +25,9 @@
   --sidebar-nav-link-color--active              : #FFFFFF;
   --sidebar-nav-link-background-color--active   : #86b5ff;
   --sidebar-nav-link-font-weight--active        : var(--strong-font-weight);
+  --sidebar-nav-strong-font-size                : 1.0em;
   --sidebar-nav-strong-color 				  	  : #FFFFFF;
-  --sidebar-nav-strong-margin                   : 0.6em 0 0em;
+  --sidebar-nav-strong-margin                   : 0.2em 0 0em;
   --sidebar-nav-margin                          : 0,5rem 0 0;
   --sidebar-nav-strong-border-width				: 0;
 }
@@ -38,3 +39,29 @@ li.level-1 strong {
 li.level-1 strong:hover {
 	text-decoration: underline;
 }
+
+/* Front page quick links */
+ul#quick-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0
+}
+
+#quick-links li {
+	margin-bottom: 0.5rem;
+}
+
+.ql-title {
+	font-weight: var(--strong-font-weight);
+	font-style: italic;
+	font-size: 1.7rem;
+	}
+
+.ql-title:link {
+	text-decoration: none;
+	}
+	
+.ql-desc {
+	font-weight: var(--strong-font-weight);
+	font-size: 1rem;
+	}
