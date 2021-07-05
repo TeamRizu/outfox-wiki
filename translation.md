@@ -134,9 +134,9 @@ Translating can be boring and tedious. Sometimes it's hard to locate & remove li
 
 ### Tiny-Webini
 
-[Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini) is a tool made by [zerinho6](https://tiny-foxes.github.io/Tiny-Web/members/moruzerinho6.png) to help with translations of the [Project Moondance Website](https://projectmoon.dance/). While not used to translate OutFox (unless themes adopt HTML in the future), it uses the same translation system as OutFox. It makes less HTML code or none at all being necessary to translate the website. While the souce code might be able to run on other OS by building manually, it only supports Windows officially.
+[Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini) is a tool made by [zerinho6](https://tiny-foxes.github.io/Tiny-Web/members/moruzerinho6.png) to help with translations of [OutFox Website](https://projectmoon.dance/). While not used to translate OutFox (unless themes adopt HTML in the future), it uses the same translation system as OutFox. It makes less HTML code or none at all being necessary to translate the website. While the souce code might be able to run on other OS by building manually, it only supports Windows officially.
 
-> Translate Project Moondance with the same style OutFox uses for its translations.
+> Translate OutFox website with the same style OutFox uses for its translations.
 
 ![](_media/translation/tinyWebini.png)
 
@@ -226,17 +226,17 @@ So you finished the translation for this alpha before the release? You can then 
 
 ## Webmasters Project
 
-Webmasters is an internal Moondance initiative to translate the [Project Mondance Website](https://projectmoon.dance/). Being a webmaster means: 
+Webmasters is an internal OutFox initiative to translate [OutFox Website](https://projectmoon.dance/). Being a webmaster means: 
 
 - Partial access to the website backend to implement your translation files;
-- Closer contact with the Moondance staff for quick updates and help;
+- Closer contact with the OutFox Commmunity team for quick updates and help;
 - Having a special role in our Discord Server.
 
-The requirements to join Webmasters are having previous experience as a long-term OutFox translator, being a [Discord Server](https://discord.gg/cN4TjgQdcA) member, and receiving a special invitation from Moondance Staff or Team Rizu Members.
+The requirements to join Webmasters are having previous experience as a long-term OutFox translator, being a [Discord Server](https://discord.gg/cN4TjgQdcA) member, and receiving a special invitation from the OutFox Team.
 
 If you meet those requirements, there are already tools to help you:
 
-1. [MoondanceWeb](https://github.com/Tiny-Foxes/MoondanceWeb)
+1. [OutFoxWeb](https://github.com/Tiny-Foxes/OutFoxWeb)
 
     Constantly updated to represent elements that are possible to be translated in the website. Translating those files would result in translating 80% what is possible to translate in the website already.
 
