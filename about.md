@@ -11,22 +11,24 @@ As Project OutFox is a continuation of the 5.0.12 and 5.1 codebase (not â€œ5.2â€
 
 5.3 is unrelated to 5.1 -3 (sometimes written as 5.1-3), which was a prior build of 5.2 before it was renamed.
 
-## Teams
+## Project OutFox Teams
 
-Team Rizu | Moondance Staff
-:------------ | :-------------
-[Squirrel](https://github.com/Scraticus) | [Moneko](https://github.com/JustMoneko)
-[Jousway](https://github.com/Jousway) | [Gabrimax98](https://github.com/Gabrimax98)
-[Cube](https://github.com/concubidated) | RodentVienna
-[MrThatKid](https://github.com/MrThatKid) | [Hanubeki](https://github.com/hanubeki)
-[Jose Varela](https://github.com/JoseVarelaP) | [ArcticFqx](https://github.com/ArcticFqx)
-[Lirodon](https://github.com/ListenerJubatus) | [SheepyChris](https://github.com/SheepyChris)
-[Moru Zerinho6](https://github.com/moruzerinho6) | [SHRMP0](https://github.com/SHRMP0)
-N/A | [Sudospective](https://github.com/Sudospective)
+Development | Design | Community
+:------------ | :------------- | :------------
+[Squirrel](https://github.com/Scraticus) | [Jose Varela](https://github.com/JoseVarelaP) | [Moru Zerinho6](https://github.com/moruzerinho6)
+[Jousway](https://github.com/Jousway) | [Lirodon](https://github.com/ListenerJubatus) | [SHRMP0](https://github.com/SHRMP0)
+[Cube](https://github.com/concubidated) | [SheepyChris](https://github.com/SheepyChris) | [Moneko](https://github.com/JustMoneko)
+[MrThatKid](https://github.com/MrThatKid) | N/A | [Hanubeki](https://github.com/hanubeki)
+[ArcticFqx](https://github.com/ArcticFqx) | N/A | [Gabrimax98](https://github.com/Gabrimax98)
+N/A | N/A | [Sudospective](https://github.com/Sudospective)
+N/A | N/A | RodentVienna
+N/A | N/A | N/A
 
-Team Rizu are the ones that make OutFox possible. They're the people working on the game and managing everything.
+The development members are the ones that make OutFox possible. They're the people working on the game engine.
 
-Moondance Staff assists Team Rizu by creating, maintaining and expanding community projects and organizations, such as:
+The design members are the ones who work on assets, themes and frontend.
+
+The community members assists by creating, maintaining and expanding community projects and organizations, such as:
 
 - Moderating the Discord Server, Forum, Subreddit and our Bug Hunter Repository;
 - Coordinating [Tiny-Foxes](https://github.com/Tiny-Foxes), a community group focusing on add-ons and localizations for Project OutFox.
