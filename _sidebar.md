@@ -3,9 +3,11 @@
 <!-- - [Index](./) -->
 - ***Introduction***
 	- [About Project OutFox](./about)
+    - [FAQ](./faq)
 - ***Setup***
     - [Installation](./install)
     - [Getting Started](./getting-started)
+    - [Controller Guide](./controllers)
 - ***Features & Settings***
     - [Game types](./game-types)
     - [Folders](./folders)
