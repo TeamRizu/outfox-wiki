@@ -9,7 +9,7 @@ To obtain the best experience, there are a few things you should do after instal
 
 ## Selecting a game type
 
-When launching Project OutFox for the first time or without save data present, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of [game types](./game-types), which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into **styles**, which include chart types such as single, double, etc.
+When launching Project OutFox for the first time or without save data present, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of [game types](/user-guide/config/game-types/), which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into **styles**, which include chart types such as single, double, etc.
 
 ![Screenshot of the Project OutFox game selection screen.](/getting-started/select-game-type.png)
 
@@ -76,7 +76,7 @@ From the profile editor (highlight a profile and press Start, and then select "E
 
 While Project OutFox does include a few sample songs, you will probably want to add more. We support a number of formats, including SM, SSC, SMA, DWI, BMS, and KSF. 
 
-The Songs [folder](./folders) in Project OutFox is divided into **Groups**  (also sometimes known as "packs"). Groups, in turn, contain folders for each song.
+The Songs [folder](/user-guide/config/folders/) in Project OutFox is divided into **Groups**  (also sometimes known as "packs"). Groups, in turn, contain folders for each song.
 
 ```
 Songs
@@ -91,7 +91,7 @@ Songs
 │       │   mysong-jk.png
 ```
 
-For example, we will use a pack known as _Club Fantastic Volume 1_, which features legally-unencumbered songs with ``dance`` charts for all difficulties. Download the pack from its [website](https://wiki.clubfantastic.dance/) using the link labelled "Song Pack for StepMania players ("null offset").", and extract it into the Songs folder. Then start the game, and it should appear on the song selection screen.
+Packs are typically distributed as ZIP files. Extract the archive with your preferred software, and copy the group folder containing the song directories to the Songs folder like so.
 
 ![Pack appearing on song selection menu.](/getting-started/songsonwheel.jpg)
 

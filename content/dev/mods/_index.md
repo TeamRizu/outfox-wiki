@@ -131,7 +131,7 @@ Next up is to play around with Modifiers! Experiment with what effects you can g
 
 Lots, actually!
 
-> **[Check out the Guide to Mods](./Mods-0-Overview.md)** in the sidebar for **a list of mods** you can use!
+> **[Check out the Guide to Mods](/dev/mods/)** in the sidebar for **a list of mods** you can use!
 
 ---
 

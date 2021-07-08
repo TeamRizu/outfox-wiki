@@ -13,19 +13,19 @@ It is located in the Save [folder](/user-guide/config/folders).
 
 Takes a comma-separated list of directories where additional course (.crs) files are stored.
 
-_See [folder](./folders)_
+_See [folder](/user-guide/config/folders)._
 
 ### AdditionalFolders
 
 Takes a comma-separated list of directories where additional content folders are stored.
 
-_See [folder](./folders)_
+_See [folder](/user-guide/config/folders)._
 
 ### AdditionalSongFolders
 
 Takes a comma-separated list of directories where additional song groups are stored.
 
-_See [folder](./folders)_
+_See [folder](/user-guide/config/folders)._
 
 ### AllowExtraStage
 
@@ -85,7 +85,7 @@ Automatically generates nonstop courses based on installed songs.
 
 ### AutogenSteps
 
-Allows charts to be generated for other [game types](./game-types) and styles that a song does not have its own charts for.
+Allows charts to be generated for other [game types](/user-guide/config/game-types/) and styles that a song does not have its own charts for.
 
 ### BGBrightness
 
@@ -147,7 +147,7 @@ If enabled, the player's combo will carry over between songs rather than start f
 
 ### CurrentGame
 
-Determines the current [game types](./game-types).
+Determines the current [game types](/user-guide/config/game-types/).
 
 ### CustomSongsEnable
 
@@ -208,7 +208,7 @@ If enabled, you must hold the back button for 0.5 seconds to exit gameplay.
 ### DisabledSongs
 
 Defines songs that will be disabled (by not making them visible or selectable) from selection.
-Formatting for this follows the structure of _[folder](./folders)_, and must be a path to the song.
+Formatting for this follows the structure of _[folder](/user-guide/config/folders)._, and must be a path to the song.
 
 ```ìni
 DisabledSongs=MyGroup/MySong,MyGroup2/MyOtherSong

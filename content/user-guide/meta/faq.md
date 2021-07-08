@@ -135,7 +135,7 @@ https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1
 
 ## Q: How can I know who works on OutFox and who to trust?
 
-Everyone on this list is part of OutFox Team and works on OutFox: [see list](./about?id=project-outfox-teams)
+Everyone on this list is part of OutFox Team and works on OutFox: [see list](/user-guide/meta/about/#project-outfox-teams)
 
 International Moderators/Translators/Alpha Testers/Tiny-Foxes indirectly helps OutFox development but they aren't part of the OutFox Team.
 

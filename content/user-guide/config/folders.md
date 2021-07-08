@@ -33,7 +33,7 @@ Judgement fonts are divided into equally-sized sprites for each judgement. Fonts
 
 NoteSkins affect the appearance of notes. They could be arrows, bars, circles, pawprints, etc. Project OutFox is compatible with noteskins designed for StepMania 5.
 
-The NoteSkins folder is divided into subfolders for specific [game types](./game-types). A _global noteskin_ appears in all game types.
+The NoteSkins folder is divided into subfolders for specific [game types](/user-guide/config/game-types/). A _global noteskin_ appears in all game types.
 
 ```
 NoteSkins
