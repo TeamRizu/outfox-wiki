@@ -1,4 +1,7 @@
-# Installation
+---
+title: Installation
+weight: 1
+---
 
 ## System requirements
 
@@ -17,7 +20,7 @@ Download the installer or package for your respective operating system on [the P
 
 Windows builds of Project OutFox use an installer; follow the instructions, and launch the game using the provided shortcuts. 
 
-![Screenshot of the Project OutFox installation wizard on Windows 10.](./_media/getting-started/installer.png)
+![Screenshot of the Project OutFox installation wizard on Windows 10.](/getting-started/installer.png)
 
 * It is recommended that you **do not** install it to the Program Files directory, as this is known to cause problems.
 * The installer offers optional components, such as the noteskins that were included with StepMania 5.0.12 and 5.1, and "Toasties" - animations that can trigger on combo milestones in-game.
@@ -36,7 +39,7 @@ If you see an error mentioning that it could not find ``libOpenGL.so.0:``, insta
 
 Open the DMG file and drag the game to your Applications directory.
 
-![Screenshot of the OutFox DMG image on MacOS Big Sur.](./_media/getting-started/mac-dmg.png)
+![Screenshot of the OutFox DMG image on MacOS Big Sur.](/getting-started/mac-dmg.png)
 
 Until we produce a digitally-signed build, you will have to change macOS security settings in order for Project OutFox to operate correctly. macOS prevents access to external files by unsigned apps unless given manual permission by the user.
 

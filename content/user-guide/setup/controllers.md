@@ -1,3 +1,8 @@
+---
+title: Configure controllers
+weight: 3
+---
+
 On Alpha 4.5 and newer, we switched to using an XInput-compliant input system.
 
 Due to these changes, not all controllers (such as gamepads, dance pads, and other rhythm game-specific controllers) are guaranteed to function with 5.3 out of the box (even if they were supported on earlier versions), unless a controller mapping profile has been created for that specific controller.
@@ -16,11 +21,11 @@ Test your input, see if your keys are mapped and if so which ones. By pushing th
 
 So on to the good stuff; 5.3 has a built in gamepad tool that will automatically take care of most of this for you
 
-![](./_media/controller-guide/guide_1.png)
+![](/controller-guide/guide_1.png)
 
 You push “Enter” on the keyboard and push the appropriate button on the dance pad/etc. to map the buttons to the button you want.
 
-![](./_media/controller-guide/guide_2.png)
+![](//controller-guide/guide_2.png)
 
 I would recommend using this screen for most controllers on pc, it takes a lot of the guess work out of the whole thing. After setting this up repeat Step 1 if your keys show up as “Unmapped” that’s great go to the “Config Key/Joy Mappings” and do your thing, you’re done with the guide!
 
@@ -30,7 +35,7 @@ If it still doesn't work...
 
 There is a nifty tool around called [SDL2 Gamepad Tool](http://www.generalarcade.com/gamepadtool/). You connect your controller (via USB or Bluetooth or however you desire to connect your controller to the PC), and it’ll show up on the top drop down menu.
 
-![](./_media/controller-guide/guide_3.png)
+![](/controller-guide/guide_3.png)
 
 1.  Click "Create a New Mapping"
 2.  Step/Press the input you want for those buttons much like you would on Step 2 of this procedure.
@@ -41,7 +46,7 @@ There is a nifty tool around called [SDL2 Gamepad Tool](http://www.generalarcade
 
 ### A note
 
-![](./_media/controller-guide/guide_4.png)
+![](/controller-guide/guide_4.png)
 
 The “#” is useful for when you want to have different Mapping Strings for the same gamepad, it basically hides the mapping string from the program reading it. I made 3 different mapping for testing the the program would only recognize one, then I hid the mapping string with a hashtag (pound symbol for you oldies around) and the one not hidden was now seen by the program.
 
@@ -57,7 +62,7 @@ Try configuring the directions to the analog stick instead and then mapping them
 
 If you have an axis pad which is showing two sets of buttons, or simply just cancelling out, and you cannot seem to map it in game, this is what you need to do to fix it. The pad showing two buttons will look like this:
 
-![](./_media/controller-guide/guide_5.png)
+![](/controller-guide/guide_5.png)
 
 I am pressing the left Arrow, but getting two sets of inputs. On Linux and MacOS, this can be due to an installed xbox360 driver, or the xpad module intercepting the events, and reporting an axis anyway. The next patch of OutFox mitigates this issue a little bit, but it still is a pain.
 
@@ -70,7 +75,7 @@ Up=Joy1_Button 3</pre>
 
 Make sure that you close the game. You can now navigate to your save folder, and look for your keymaps.ini file and set the buttons manually, so you can basically ignore the axis values given by the xpad driver. you need to add the mapping before the ::: as shown below:
 
-![](./_media/controller-guide/guide_6.png)
+![](/controller-guide/guide_6.png)
 
 You can save this, and then start the game again, and your pad will be mapped.
 
@@ -79,6 +84,6 @@ Left=Joy1_Button 1
 Right=Joy1_Button 4  
 Up=Joy1_Button 3</pre>
 
-Make sure that you close the game. You can now navigate to your save folder, and look for your keymaps.ini file and set the buttons manually, so you can basically ignore the axis values given by the xpad driver. you need to add the mapping before the ::: as shown below: ![](./_media/controller-guide/guide_6.png)
+Make sure that you close the game. You can now navigate to your save folder, and look for your keymaps.ini file and set the buttons manually, so you can basically ignore the axis values given by the xpad driver. you need to add the mapping before the ::: as shown below: ![](/media/controller-guide/guide_6.png)
 
 You can save this, and then start the game again, and your pad will be mapped.
