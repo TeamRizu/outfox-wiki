@@ -4,7 +4,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 
 ## Editing this wiki
 
-The site is implemented using the[Hugo](https://gohugo.io/) framework and the [Geekdocs](https://geekdocs.de/) theme. All of the wiki pages (usually stored as markdown or HTML files) are stored in the ``content`` directory, with subfolders for each category. Each category and page must have an ``_index.md`` file to define titles and determine their order in the table of contents sidebar. These are configured using Hugo _front matter_;
+The site is implemented using the [Hugo](https://gohugo.io/) framework and the [Geekdocs](https://geekdocs.de/) theme. All of the wiki pages (usually stored as markdown or HTML files) are stored in the ``content`` directory, with subfolders for each category. Each category folder ``_index.md`` file to define titles and determine their order in the table of contents sidebar. These are configured using Hugo _front matter_;
 
 On categories, they are written like this;
 
@@ -18,7 +18,7 @@ geekdocCollapseSection: true
 
 The ``weight`` parameter determines the order, and ``geekdocCollapseSection`` ensures they will not default to being expanded on.
 
-Article pages also contain front matter.
+Article pages must also contain front matter for best results.
 
 ```md
 ---
