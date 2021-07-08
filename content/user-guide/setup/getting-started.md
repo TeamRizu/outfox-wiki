@@ -66,11 +66,9 @@ While Project OutFox can save some data to a global "machine profile", it is rec
 
 You coan manage profiles from **Options > Profiles**. From here you can create a profile, and edit existing profiles.
 
-![Navigating to the Profiles screen and selecting to create a profile.](/getting-started/create-profile.jpg)
-
 From the profile editor (highlight a profile and press Start, and then select "Edit profile"), you can input fitness-related information, change the layout of the optional "Detailed Stats" pane during gameplay, and add an avatar to your profile (avatars are loaded from the Appearance/Avatars directory).
 
-![Editing a profile.](/getting-started/profile-screen.jpg)
+![Navigating to the Profiles screen and selecting to create a profile.](/getting-started/create-profile.jpg)
 
 ## Install songs
 
