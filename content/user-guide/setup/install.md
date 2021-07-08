@@ -50,4 +50,4 @@ On older builds, macOS Catalina also generated a message stating that the game w
 
 ## Next steps
 
-Once Project OutFox is installed, you can move on to [setting the game up](./getting-started).
+Once Project OutFox is installed, you can move on to [setting the game up](/user-guide/setup/getting-started).
