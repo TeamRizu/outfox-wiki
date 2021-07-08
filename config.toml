@@ -1,6 +1,7 @@
 baseURL = "https://outfox.wiki"
 title = "Project OutFox Wiki"
 theme = "hugo-geekdoc"
+relativeurls = true
 
 pluralizeListTitles = false
 
