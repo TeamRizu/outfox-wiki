@@ -1,9 +1,8 @@
 ---
 title: Getting started
+description: First-time setup tasks for Project OutFox.
 weight: 2
 ---
-
-# First-time setup
 
 To obtain the best experience, there are a few things you should do after installing Project OutFox. Some of these instructions assume usage of the included default theme (Soundwaves).
 

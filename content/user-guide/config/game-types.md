@@ -1,5 +1,6 @@
 ---
 title: Game types
+description: Details on game types supported by Project OutFox.
 weight: 1
 ---
 

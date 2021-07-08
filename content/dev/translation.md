@@ -1,6 +1,7 @@
 ---
 title: Translation
 description: Guide on translating themes on Project OutFox.
+weight: 4
 ---
 
 
