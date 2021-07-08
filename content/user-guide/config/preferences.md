@@ -1,8 +1,11 @@
-# Preferences.ini
+---
+title: Preferences.ini
+weight: 3
+---
 
 **Preferences.ini** is a file that contains many of the system preferences. Some of them are accessible within Project OutFox's settings menu, but some of them are only accessible by editing the file. Manual edits to Preferences.ini must be performed when the game is closed, or else they may be automatically overwritten.
 
-It is located in the Save [folder](./folders).
+It is located in the Save [folder](/user-guide/config/folders).
 
 ## List of parameters
 

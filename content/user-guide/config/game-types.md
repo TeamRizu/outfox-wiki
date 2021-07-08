@@ -1,8 +1,11 @@
+---
+title: Game types
+weight: 1
+---
 
-# Game types
 Project OutFox supports a variety of game types, which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into **styles**, which define chart types such as single, double, etc.
 
-![Screenshot of the Project OutFox game selection screen.](./_media/getting-started/select-game-type.png)
+![Screenshot of the Project OutFox game selection screen.](/getting-started/select-game-type.png)
 
 As of 5.3.0-alpha-4.9.8, they include:
 
