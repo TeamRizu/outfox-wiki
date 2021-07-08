@@ -1,3 +1,8 @@
+---
+title: FAQ
+weight: 2
+---
+
 ## Q: Where should I report Bugs, request features and post game crashes?
 
 If you can, do those in our [Issue Tracker Repository](https://github.com/TeamRizu/OutFox), by creating an issue it'll give you those exact options that I mentioned in the question.

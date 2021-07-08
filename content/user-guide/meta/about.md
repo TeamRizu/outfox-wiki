@@ -1,4 +1,8 @@
-# About the project
+---
+title: About Project OutFox
+weight: 1
+---
+
 Project OutFox 5.3 is an effort to modernize and revitalize the open source rhythm gaming engine StepMania. It is led by Team Rizu, a development team led by community veteran Squirrel, as well as many other prominent members of the current community.
 
 ## What is different?
