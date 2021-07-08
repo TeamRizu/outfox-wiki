@@ -7,7 +7,9 @@ geekdocAnchor: false
 geekdocBreadcrumb: false
 ---
 
-Pardon our dust! We have rebuilt the wiki using a new framework to make things nicer and more organized! All of the existing content has been migrated, but be sure to report any issues you encounter, and we'll get them fixed ASAP.
+Pardon our dust! We have rebuilt the wiki using a new framework to make things nicer and more organized.
+
+All of the existing content has been migrated, but be sure to report any issues you encounter, and we'll get them fixed ASAP.
 
 ----
 
