@@ -1,4 +1,8 @@
-# ModSplines
+---
+title: "ModSplines"
+weight: 2
+---
+
 ModSplines is a system that allows for arbitrary note pathing through modifiers. This system is based off the spline system used in NotITG, which means it is usable alongside the pre-existing SM5 spline system and other modifiers, too.
 
 Points are positioned like they are for Gradient modifiers, meaning in multiples of ARROW_SIZE away from the receptor.
@@ -136,4 +140,4 @@ end
 
 Video Example (Shows only the z and rotz splines):
 
-<video src="/vid/modspline.webm" controls="">ModSpline video example</video>
+<video src="/mods/vid/modspline.webm" controls="">ModSpline video example</video>

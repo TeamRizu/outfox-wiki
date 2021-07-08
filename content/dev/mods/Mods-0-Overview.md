@@ -1,3 +1,8 @@
+---
+title: "Overview of modifiers"
+weight: -10
+---
+
 # Modifiers
 Modifiers often change or affect some aspect of the gameplay, usually by messing with the game's notefield. Some modifiers can be selected through the options menu before starting a song, but there are also simfiles with scripted modifiers that tend to have a wildly different experience than just a regular simfile. (Generally, they're known as "modfiles")
 

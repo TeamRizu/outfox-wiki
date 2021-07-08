@@ -1,4 +1,8 @@
-# Column movement Modifiers
+---
+title: "Column movement"
+weight: -7
+---
+
 Column movement modifiers allow one to move the columns in any direction. Usually, these are used to create "column swaps", which alter the visual order of the columns in gameplay.
 
 ## Flip
@@ -20,7 +24,7 @@ Modstring format: *\<approach rate\> \<magnitude\> flip
 
 Example: `*10 125% flip`
 
-<video src="/vid/flip.webm" controls="">Flip video example</video>
+<video src="/mods/vid/flip.webm" controls="">Flip video example</video>
 
 ## Invert
 Desc: Invert flips each half of the notefield. When doubles charts are being played, the two "players" are inverted separately.
@@ -39,7 +43,7 @@ Modstring format: *\<approach rate\> \<magnitude\> invert
 
 Example: `*0.3 100% invert`
 
-<video src="/vid/invert.webm" controls="">Invert video example</video>
+<video src="/mods/vid/invert.webm" controls="">Invert video example</video>
 
 ## Move
 Desc: Move is a set of modifiers that are column-specific by nature and has variants for the X,Y, and Z axis. 100% moves a column forward on an axis by one dance mode column width. This can allow for column swaps that can't be achieved through just Flip and Invert, but can take more time to set up.
@@ -58,7 +62,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>\<column
 
 Examples: `*4 -50 movex1, *0.5 100 movey2, *1 500 movez3`
 
-<video src="/vid/move.webm" controls="">Move video example</video>
+<video src="/mods/vid/move.webm" controls="">Move video example</video>
 
 ## Tipsy
 Desc: Tipsy makes the columns bob up and down in a sinusoidal pattern. There is a tangent-based variant as well.
@@ -79,7 +83,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*3 150% tipsy` `*3 150% tantipsy`
 
-<video src="/vid/tipsy.webm" controls="">Tipsy video example</video>
+<video src="/mods/vid/tipsy.webm" controls="">Tipsy video example</video>
 
 ### Available sub modifiers:
 ## TipsyOffset
@@ -124,8 +128,8 @@ Flip and invert, when paired together, allow for unusual column ordering. Here's
     <td>66.666667&percnt; (AKA 2/3) flip + 133.333333&percnt; (AKA 4/3) invert</td>
   </tr>
   <tr>
-    <td><img src="./img/75f+75i_dance.png"></td>
-    <td><img src="./img/75f+75i_pump.png"></td>
+    <td><img src="/mods/75f+75i_dance.png"></td>
+    <td><img src="/mods/75f+75i_pump.png"></td>
   </tr>
 
   <tr>
@@ -133,8 +137,8 @@ Flip and invert, when paired together, allow for unusual column ordering. Here's
     <td>33.333333&percnt; (AKA 1/3) flip + -133.333333&percnt; (AKA -4/3) invert</td>
   </tr>
   <tr>
-    <td><img src="./img/25f-75i_dance.png"></td>
-    <td><img src="./img/25f-75i_pump.png"></td>
+    <td><img src="/mods/25f-75i_dance.png"></td>
+    <td><img src="/mods/25f-75i_pump.png"></td>
   </tr>
 
   <tr>
@@ -142,8 +146,8 @@ Flip and invert, when paired together, allow for unusual column ordering. Here's
     <td>100&percnt; flip + -100&percnt; invert</td>
   </tr>
   <tr>
-    <td><img src="./img/100f-100i_dance.png"></td>
-    <td><img src="./img/100f-100i_pump.png"></td>
+    <td><img src="/mods/100f-100i_dance.png"></td>
+    <td><img src="/mods/100f-100i_pump.png"></td>
   </tr>
 
   <tr>
@@ -151,8 +155,8 @@ Flip and invert, when paired together, allow for unusual column ordering. Here's
     <td>33.333333&percnt; (AKA 1/3) flip +  166.666666&percnt; (AKA 5/3) invert</td>
   </tr>
   <tr>
-    <td><img src="./img/25f+125i_dance.png"></td>
-    <td><img src="./img/25f+125i_pump.png"></td>
+    <td><img src="/mods/25f+125i_dance.png"></td>
+    <td><img src="/mods/25f+125i_pump.png"></td>
   </tr>
 
   <tr>
@@ -160,8 +164,8 @@ Flip and invert, when paired together, allow for unusual column ordering. Here's
     <td>66.666666&percnt; (AKA 2/3) flip + -166.666666&percnt; (AKA -5/3) invert</td>
   </tr>
   <tr>
-    <td><img src="./img/75f-125i_dance.png"></td>
-    <td><img src="./img/75f-125i_pump.png"></td>
+    <td><img src="/mods/75f-125i_dance.png"></td>
+    <td><img src="/mods/75f-125i_pump.png"></td>
   </tr>
 
   <tr>
@@ -169,7 +173,7 @@ Flip and invert, when paired together, allow for unusual column ordering. Here's
     <td>33.333333&percnt; (AKA 1/3) flip + -33.333333&percnt; (AKA -1/3) invert</td>
   </tr>
   <tr>
-    <td><img src="./img/25f-25i_dance.png"></td>
-    <td><img src="./img/25f-25i_pump.png"></td>
+    <td><img src="/mods/25f-25i_dance.png"></td>
+    <td><img src="/mods/25f-25i_pump.png"></td>
   </tr>
 </table>

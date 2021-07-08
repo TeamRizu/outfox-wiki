@@ -1,4 +1,7 @@
-# Zoom modifiers
+---
+title: "Zoom"
+weight: -4
+---
 Zoom modifiers affect the size of the notefield or notes & receptors.
 Zoom works a bit differently in SM5 in that it also affects the z axis unlike in ITG/SM3.95, which only affect x & y.
 
@@ -27,7 +30,7 @@ Modstring format: *\<approach rate\> \<magnitude\> mini
 
 Example: *0.2 100% mini
 
-<video src="/vid/mini.webm" controls="">Mini video example</video>
+<video src="/mods/vid/mini.webm" controls="">Mini video example</video>
 
 ## Tiny
 Desc: Tiny scales down the notes and receptors instead of the entire field. Variants for all three axis are available, as are column-specific variants. These are multiplied onto the whole field variants.
@@ -60,7 +63,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Examples: `*0.5 -200% tinyy` `*1 100% tinyx1, *0.5 -200% tinyy2, *10 -400% tinyz3, *0.2 300% holdtinyx4`
 
-<video src="/vid/tiny.webm" controls="">Tiny video example</video>
+<video src="/mods/vid/tiny.webm" controls="">Tiny video example</video>
 
 ### Available sub modifiers:
 ## TinyUsesMiniCalc
@@ -92,7 +95,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Examples: `*0.5 100% pulseinner, *0.5 100% pulseouter`
 
-<video src="/vid/pulse.webm" controls="">Pulse video example</video>
+<video src="/mods/vid/pulse.webm" controls="">Pulse video example</video>
 
 ### Available sub modifiers:
 ## PulseOffset
@@ -143,7 +146,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Examples: `*1 50% shrinklinear`
 
-<video src="/vid/shrinklinear.webm" controls="">Shrinklinear video example</video>
+<video src="/mods/vid/shrinklinear.webm" controls="">Shrinklinear video example</video>
 
 ## ShrinkMult
 Desc: ShrinkMult has notes that start zoomed out and decelerate to normal zoom. There are also separate variants for all three axis.
@@ -164,4 +167,4 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Examples: `*2 100% shrinkmult`
 
-<video src="/vid/shrinkmult.webm" controls="">Shrinkmult video example</video>
+<video src="/mods/vid/shrinkmult.webm" controls="">Shrinkmult video example</video>

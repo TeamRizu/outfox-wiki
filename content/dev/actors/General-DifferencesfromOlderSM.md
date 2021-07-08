@@ -1,7 +1,11 @@
-<!-- TODO: This is likely far from done. Add anything that's found that could be useful here if you'd like. -->
-# Behavioral differences from SM3.95/ITG
+---
+title: Behavioral differences from SM 3.95/ITG
+weight: 2
+---
 
-OpenITG, NotITG and SM3.95 are popular engines based on older versions of StepMania that have communities that continue to support by making new content.
+<!-- TODO: This is likely far from done. Add anything that's found that could be useful here if you'd like. -->
+
+OpenITG, NotITG and SM 3.95 are popular engines based on older versions of StepMania that have communities that continue to support by making new content.
 
 SM5.3 contains a similar feature set as the previous revisions of the game, but with some notable differences. This document aims to provide help with porting content to and from the different versions of the game.
 

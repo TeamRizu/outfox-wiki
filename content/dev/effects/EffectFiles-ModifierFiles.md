@@ -1,4 +1,7 @@
-# Modifier Files
+---
+title: Modifier Files
+weight: 3
+---
 
 These simfiles have modifiers that are scripted to happen at various points of the song. The difficulty can range between "trivial to read" to "may as well memorize the chart".
 

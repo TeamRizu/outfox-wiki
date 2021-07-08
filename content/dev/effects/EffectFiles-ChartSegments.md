@@ -1,4 +1,7 @@
-# Chart Segments
+---
+title: Chart segments
+weight: 2
+---
 
 Gimmick charts often involve a large amount of BPM changes or stops to create various effects like stutters, wave-type scrolling or switching notes with other types of notes (ex: notes become mines).
 

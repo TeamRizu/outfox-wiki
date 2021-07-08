@@ -1,4 +1,9 @@
-# Actors
+---
+title: Lua and Actors
+weight: 0
+geekdocCollapseSection: true
+---
+
 
 StepMania (and it's many forks) use what's known as the [Actor model](https://en.wikipedia.org/wiki/Actor_model). OutFox inherits this behaviour. Everything in the engine is an Actor at its' very core.
 

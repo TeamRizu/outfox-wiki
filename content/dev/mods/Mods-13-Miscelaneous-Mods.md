@@ -1,3 +1,8 @@
+---
+title: "Miscelaneous modifiers"
+weight: 4
+---
+
 # Miscelaneous Modifiers
 These modifiers don't really fit into any of the above categories, so they're here instead.
 
@@ -25,7 +30,7 @@ Modstring format: *\<approach rate\> \<magnitude\> holdgrainmult
 
 Example: `*2 400% holdgrainmult`
 
-<video src="/vid/holdgrainmult.webm" controls="">HoldGrainMult video example</video>
+<video src="/mods/vid/holdgrainmult.webm" controls="">HoldGrainMult video example</video>
 
 ## ExtendHolds
 Desc: Adds a multiplier to the visual length of holds. In NotITG, this is known as "longholds", "longboy" (alias) or "longboys" (alias).
@@ -42,7 +47,7 @@ Modstring format: *\<approach rate\> \<magnitude\> extendholds
 
 Example: `*1 50% extendholds`
 
-<video src="/vid/extendholds.webm" controls="">ExtendHolds video example</video>
+<video src="/mods/vid/extendholds.webm" controls="">ExtendHolds video example</video>
 
 ## StraightHolds
 Desc: Makes holds react less to mods, similar to what holds do in "Pump It Up". NotITG has an alias called "gayholds", which applies negative straightholds (so 100% gayholds = -100% straightholds). There is also a column-specific variant.
@@ -65,7 +70,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*0.2 100% straightholds` `*0.5 200% straightholds3`
 
-<video src="/vid/straightholds.webm" controls="">StraightHolds video example</video>
+<video src="/mods/vid/straightholds.webm" controls="">StraightHolds video example</video>
 
 ## NotePath
 Desc: Draws a line that shows the path a note takes to the receptor and beyond, which means it depends on all position mods that are in the game. Known as "arrowpath" in NotITG. Effectively a 'hold' that lasts the whole notefield, so it could hurt performance depending on what mods are being used. Has a column-specific variant available which is additive like Stealth & Dark.
@@ -88,7 +93,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*0.4 100% notepath` `*0.4 100% notepath4`
 
-<video src="/vid/notepath.webm" controls="">NotePath video example</video>
+<video src="/mods/vid/notepath.webm" controls="">NotePath video example</video>
 
 ### Available sub modifiers:
 ## NotePathBlendMode
@@ -203,7 +208,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*4 70% noteskewx` `*0.25 25% noteskewx1, *0.5 50% noteskewx2, *0.75 75% noteskewx3, *1 100% noteskewx4`
 
-<video src="/vid/noteskewx.webm" controls="">NoteSkewX video example</video>
+<video src="/mods/vid/noteskewx.webm" controls="">NoteSkewX video example</video>
 
 ### Available sub modifiers:
 ## noteskewtype (NotITG only)
@@ -234,7 +239,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*0.5 50% cosclip`
 
-<video src="/vid/cosclip.webm" controls="">CosClip video example</video>
+<video src="/mods/vid/cosclip.webm" controls="">CosClip video example</video>
 
 ## DisableMines
 Desc: When active, stepping on mines will not have any effect. Useful if you want to place mines for aesthetic purposes, but don't want to penalize players for ghost-tapping.
@@ -275,7 +280,7 @@ Modstring format: \<enable\> cosecant
 
 Example: `cosecant`
 
-<video src="/vid/cosecant.webm" controls="">Cosecant video example</video>
+<video src="/mods/vid/cosecant.webm" controls="">Cosecant video example</video>
 
 ## WireFrame
 Desc: A Column-specific modifier that allows setting the column to use wireframe mode for notes and holds. NotITG has a modstring alias that hits all columns.
@@ -292,7 +297,7 @@ Modstring format: \<enable\> \<modstring variant\>
 
 Example: `wireframe2`
 
-<video src="/vid/wireframe.webm" controls="">WireFrame video example</video>
+<video src="/mods/vid/wireframe.webm" controls="">WireFrame video example</video>
 
 ### Available sub modifiers:
 ## WireFrameWidth
@@ -335,7 +340,7 @@ Modstring format: \<noteskin name\> noteskin\<column\> (ommitting column will hi
 
 Example: `lambda noteskin`
 
-<video src="/vid/noteskincol.webm" controls="">NoteSkinCol video example</video>
+<video src="/mods/vid/noteskincol.webm" controls="">NoteSkinCol video example</video>
 
 ## LifeSetting
 Desc: Set the lifebar type to be used. There are three types (denoted as `<type>`):

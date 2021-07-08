@@ -1,3 +1,8 @@
+---
+title: Converting XML files to Lua
+weight: 6
+---
+
 <!-- There's probably a lot that I'm missing in here. If you've got something, please contribute! -->
 # Converting xml files into lua files.
 

@@ -1,4 +1,11 @@
+---
+title: Converting INI files to Lua
+weight: 5
+---
+
+
 <!-- There's probably a lot that I'm missing in here. If you've got something, please contribute! -->
+
 # Converting BGAnimation INI files into lua files.
 
 StepMania 3.9 & ITG are capable of using BGAnimation.ini files to define actors in place of xml files.

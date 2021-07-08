@@ -1,4 +1,7 @@
-# Speed modifiers
+---
+title: "Speed"
+weight: -9
+---
 These modifiers are used to control the scroll speed of notes in gameplay. These modifiers are not column-specific, unlike later mods described elsewhere.
 
 Negative speed modifiers cannot be selected from the Player Options menu, nor can it be set through the lua functions PlayerOptions provides, but it can become negative through the use of mod strings (and some modfiles have taken advantage of that).
@@ -84,7 +87,7 @@ Modstring format: *\<approach rate> \<magnitude\> randomspeed
 
 Example: `*0.125 100% randomspeed`
 
-![RandomSpeed video example](/vid/randomspeed.webm ':include :type=video')
+![RandomSpeed video example](/mods/vid/randomspeed.webm ':include :type=video')
 
 # Speed Modifier Controllers
 These modifiers control the internal parts of the speed modifiers above, and usually shouldn't be used unless there's a good reason to. Like the speed mods above, these aren't column-specific either, but can support negative numbers like how the modstrings do. Unlike the speed modifiers listed above, there is no modstring form for any of these.

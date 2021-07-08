@@ -1,3 +1,8 @@
+---
+title: "Chart modifiers"
+weight: 3
+---
+
 # Chart Modifiers
 Chart modifiers affect the chart itself, meaning what has to be stepped changes. These cannot be called during gameplay, but can be called through attacks & course files. All of these are boolean modifiers. At the moment, some of these aren't properly set up for any game other than dance.
 

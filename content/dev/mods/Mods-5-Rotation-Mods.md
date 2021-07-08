@@ -1,4 +1,7 @@
-# Rotation Modifiers
+---
+title: "Rotation"
+weight: -5
+---
 Rotation modifiers rotate the notes on the x, y or z axis, and can also rotate the receptors in some cases.
 
 Some noteskins may affect how the effect looks due to how rotation and zoom interact in the notefield.
@@ -22,7 +25,7 @@ Modstring format: *\<approach rate\> \<magnitude\> dizzy
 
 Example: `*2 314% dizzy`
 
-<video src="/vid/dizzy.webm" controls="">Dizzy video example</video>
+<video src="/mods/vid/dizzy.webm" controls="">Dizzy video example</video>
 
 ### Available sub modifiers:
 ## DizzyHolds
@@ -48,7 +51,7 @@ Modstring format: *\<approach rate\> \<magnitude\> twirl
 
 Example: `*3 220% twirl`
 
-<video src="/vid/twirl.webm" controls="">Twirl video example</video>
+<video src="/mods/vid/twirl.webm" controls="">Twirl video example</video>
 
 ## Roll
 Desc: Notes roll as they reach the receptor, with more rotationx added the farther away from the receptor a note is.
@@ -65,7 +68,7 @@ Modstring format: *\<approach rate\> \<magnitude\> roll
 
 Example: `*3.4 170% roll`
 
-<video src="/vid/roll.webm" controls="">Roll video example</video>
+<video src="/mods/vid/roll.webm" controls="">Roll video example</video>
 
 ## Confusion
 Desc: The notes and receptors spin constantly. Has X, Y and Z variants available.
@@ -86,7 +89,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 Example: `*2 50% confusion`
 
-<video src="/vid/confusion.webm" controls="">Confusion video example</video>
+<video src="/mods/vid/confusion.webm" controls="">Confusion video example</video>
 
 ### Available sub modifiers:
 ## ConfusionOffset
@@ -122,4 +125,4 @@ Modstring format: *\<approach rate\> \<magnitude\> orient
 
 Example: `*0.25 100% orient`
 
-<video src="/vid/orient.webm" controls="">Orient video example</video>
+<video src="/mods/vid/orient.webm" controls="">Orient video example</video>

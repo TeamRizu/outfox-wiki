@@ -1,4 +1,7 @@
-# Tweens
+---
+title: Tweening
+weight: 4
+---
 
 Actors have the ability to transition from point A to point B using [Tweening](https://en.wikipedia.org/wiki/Inbetweening).
 
@@ -36,31 +39,31 @@ These tweens are what most people would be familiar to those who work with ITG a
 
 The actor transitions at a constant rate.
 
-<img src="./img/tweens/linear.png">
+![linear](/mods/tweens/linear.png)
 
 ### accelerate
 
-<img src="./img/tweens/accelerate.png">
+![accelerate](/mods/tweens/accelerate.png)
 
 ### decelerate
 
-<img src="./img/tweens/decelerate.png">
+![accelerate](/mods/tweens/decelerate.png)
 
 ### bouncebegin
 
-It's done in lua in SM5 for some reason.
+It's done in Lua in SM5 for some reason.
 
-<img src="./img/tweens/bouncebegin.png">
+![bouncebegin](/mods/tweens/bouncebegin.png)
 
 ### bounceend
 
-It's done in lua in SM5 for some reason.
+It's done in Lua in SM5 for some reason.
 
-<img src="./img/tweens/bounceend.png">
+![bounceend](/mods/tweens/bounceend.png)
 
 ### spring
 
-<img src="./img/tweens/spring.png">
+![spring](/mods/tweens/spring.png)
 
 ### tween (NotITG only)
 
@@ -76,11 +79,11 @@ These tween functions were added in SM5.
 
 ### smooth
 
-<img src="./img/tweens/smooth.png">
+![smooth](/mods/tweens/smooth.png)
 
 ### drop
 
-<img src="./img/tweens/drop.png">
+![drop](/mods/tweens/drop.png)
 
 ### bezier
 

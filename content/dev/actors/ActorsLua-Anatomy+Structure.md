@@ -1,5 +1,9 @@
+---
+title: Anatomy of a Lua actor
+weight: 3
+---
+
 <!-- TODO: This is just getting started. If you've got ideas for this, please help out! -->
-# Anatomy of a Lua Actor
 
 Every actor in SM5 follows a standart general structure, with ActorFrames being more flexible in how they're constructed.
 
