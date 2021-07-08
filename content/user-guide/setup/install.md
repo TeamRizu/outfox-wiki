@@ -1,5 +1,6 @@
 ---
 title: Installation
+description: Installation guide for Project OutFox.
 weight: 1
 ---
 

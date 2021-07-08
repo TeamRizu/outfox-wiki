@@ -1,5 +1,6 @@
 ---
 title: Configure controllers
+description: Controller configuration guide for Project OutFox.
 weight: 3
 ---
 
@@ -84,6 +85,6 @@ Left=Joy1_Button 1
 Right=Joy1_Button 4  
 Up=Joy1_Button 3</pre>
 
-Make sure that you close the game. You can now navigate to your save folder, and look for your keymaps.ini file and set the buttons manually, so you can basically ignore the axis values given by the xpad driver. you need to add the mapping before the ::: as shown below: ![](/media/controller-guide/guide_6.png)
+Make sure that you close the game. You can now navigate to your save folder, and look for your keymaps.ini file and set the buttons manually, so you can basically ignore the axis values given by the xpad driver. you need to add the mapping before the ::: as shown below: ![](/controller-guide/guide_6.png)
 
 You can save this, and then start the game again, and your pad will be mapped.

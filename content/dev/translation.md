@@ -1,11 +1,12 @@
-# Translation
+---
+title: Translation
+description: Guide on translating themes on Project OutFox.
+---
 
-
-## Translating themes
 
 Are you translating a theme to another language? Reading this might help you.
 
-### Where are language files stored
+## Where are language files stored
 
 Inside every theme there'll be a `Languages` folder. Inside that folder is where language files are stored. Example:
 
@@ -21,13 +22,13 @@ Here we can see 2 language files: **en** for English and **ja** for Japanese. It
 
 You probably already noticed a `_fallback` theme in the themes folder, but in case you didn't: it's where things that are necessary for every theme gets stored, so when someone is making a theme the game doesn't blow up. The same goes for Languages: it's important to also translate the fallback for your language because the theme you're translating might not have every string that it uses on it's own folder.
 
-### Starting a translation
+## Starting a translation
 
 To start your work, create a new file for your language(-COUNTRY, if needed) and don't forget to use the .ini extension. You can do this on Notepad with no problem but it's recommended to use a editor like Visual Studio Code or Notepad++.
 
 Now open en.ini and your new language file, then copy all the content from en.ini to your language file. You can close en.ini now.
 
-#### What you should translate
+### What you should translate
 
 _This is an code example taken from Soundwaves theme._
 
@@ -67,7 +68,7 @@ SingularSongPlayed=%d Song Played
 SeveralSongsPlayed=%d Songs Played
 PressStart=Press &START; to join.
 ```
-![](_media/translation/profileSongsPlayed.jpeg)
+![](/translation/profileSongsPlayed.jpeg)
 
 Here we can see that &START; gets replaced by a green square that represents the start button, and %d gets replace by a number that's how many songs that profile played.
 
@@ -79,7 +80,7 @@ _Second Line_
 
 Here's a example in action from `_fallback/en.ini`:
 
-![](_media/translation/cauntionWarning.png)
+![](/translation/cauntionWarning.png)
 
 ### Text Context
 
@@ -138,7 +139,7 @@ Translating can be boring and tedious. Sometimes it's hard to locate & remove li
 
 > Translate OutFox website with the same style OutFox uses for its translations.
 
-![](_media/translation/tinyWebini.png)
+![](/translation/tinyWebini.png)
 
 ### Best practices
 
@@ -153,11 +154,11 @@ When doing a mention to "Steps", ask yourself: is it clear which "type of Steps"
 
 **[Soundwaves](https://github.com/Tiny-Foxes/smtheme-soundwaves-community)** does not have this issue as it says "Taps" instead of Steps and directly says the difficulty.
 
-![](_media/translation/soundwavesMusicWheel.png)
+![](/translation/soundwavesMusicWheel.png)
 
 #### Reload translations
 
-![](_media/translation/cauntionWarning.png)
+![](/translation/cauntionWarning.png)
 
 Imagine you're editing the Soundwaves ScreenCaution and want to see how the translated string looks. You don't need to restart the entire game to see the changes, here's what you should do instead: Exit the screen you just translated, reload the metrics (`Shift + Insert`; or `Shift + F2` on older alpha versions) and enter the screen again.
 
@@ -236,10 +237,10 @@ The requirements to join Webmasters are having previous experience as a long-ter
 
 If you meet those requirements, there are already tools to help you:
 
-1. [OutFoxWeb](https://github.com/Tiny-Foxes/OutFoxWeb)
+- [OutFoxWeb](https://github.com/Tiny-Foxes/OutFoxWeb)
 
-    Constantly updated to represent elements that are possible to be translated in the website. Translating those files would result in translating 80% what is possible to translate in the website already.
+    - Constantly updated to represent elements that are possible to be translated in the website. Translating those files would result in translating 80% what is possible to translate in the website already.
 
-2. [Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini)
+- [Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini)
 
-    A tool created by [zerinho6](https://github.com/moruzerinho6) to make website translation faster, easier, better and more like OutFox. Tiny-Webini removes all need to editing HTML files and uses a single .ini file like OutFox instead, it also has translator tools such as: show what can be translated by highlighting translatable elements, changing all translatable text to show its string key instead of string value and generate the HTML files needed to apply on the website backend.
+    - A tool created by [zerinho6](https://github.com/moruzerinho6) to make website translation faster, easier, better and more like OutFox. Tiny-Webini removes all need to editing HTML files and uses a single .ini file like OutFox instead, it also has translator tools such as: show what can be translated by highlighting translatable elements, changing all translatable text to show its string key instead of string value and generate the HTML files needed to apply on the website backend.

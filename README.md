@@ -16,7 +16,7 @@ geekdocCollapseSection: true
 ---
 ```
 
-The ``weight`` parameter determines the order, and ``geekdocCollapseSection`` ensures they will not default to being expanded on the table of contents sidebar. A category's ``index.md`` can also contain content to act as an index page for its subject.
+The ``weight`` parameter determines the order, and ``geekdocCollapseSection`` ensures they will not default to being expanded on the table of contents sidebar. A category's ``_index.md`` can also contain content to act as an index page for its subject.
 
 Article pages must also contain front matter for best results.
 
@@ -26,6 +26,8 @@ title: Installation
 weight: 1
 ---
 ```
+
+Other parameters are avaliable, such as ``description``.
 
 Media such as images are stored in the ``static`` directory. When writing pages, you can link to media from the folder like so.
 
