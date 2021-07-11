@@ -16,13 +16,13 @@ You can also use [our forum](https://discourse.projectmoon.dance/)
 
 ## Q: How do I get logs?
 
-Go into your game folder and check if there's a file called `portable.ini` (or just `portable` if your system doesn't display file extensions.). If there's no `portable.ini` in your game folder, then you need to go into a specific path based on your OS:
+Go into your game folder and check if there's a file called `portable.ini` (or just `portable` if your system doesn't display file extensions). If there's a `portable.ini` in your game folder then all you need to do is open the `Logs` folder and you'll find all logs, the most important one being `log.txt`. (Try to do this after closing the game)
+
+If there's no `portable.ini` in your game folder, then you need to go into a specific path based on your OS:
 
 - Windows: `appdata/roaming/stepmania 5.3`
 - Mac: `~/Library/Logs/Stepmania 5.3/`
 - Linux: `/home/user/.stepmania-5.3`
-
-Now you just need to open the Logs folder and grab `log.txt`.
 
 ## Q: Why do I have to configure my pad while older versions of StepMania could work with no problem?
 
