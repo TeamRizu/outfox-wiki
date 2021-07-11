@@ -17,15 +17,38 @@ As Project OutFox is a continuation of the 5.0.12 and 5.1 codebase (not “5.2�
 
 ## Project OutFox Teams
 
-Development | Design | Community
-:------------ | :------------- | :------------
-[Squirrel](https://github.com/Scraticus) | [Jose Varela](https://github.com/JoseVarelaP) | [Moru Zerinho6](https://github.com/moruzerinho6)
-[Jousway](https://github.com/Jousway) | [Lirodon](https://github.com/ListenerJubatus) | [SHRMP0](https://github.com/SHRMP0)
-[Cube](https://github.com/concubidated) | [SheepyChris](https://github.com/SheepyChris) | [Moneko](https://github.com/JustMoneko)
-[MrThatKid](https://github.com/MrThatKid) | — | [Hanubeki](https://github.com/hanubeki)
-[ArcticFqx](https://github.com/ArcticFqx) | — | [Gabrimax98](https://github.com/Gabrimax98)
-[Jose Varela](https://github.com/JoseVarelaP) | — | [Sudospective](https://github.com/Sudospective)
-— | — | RodentVienna
+{{< columns >}} <!-- begin columns block -->
+
+Development |
+:------------ |
+[Squirrel](https://github.com/Scraticus)
+[Jousway](https://github.com/Jousway)
+[Cube](https://github.com/concubidated)
+[MrThatKid](https://github.com/MrThatKid)
+[ArcticFqx](https://github.com/ArcticFqx)
+[Jose Varela](https://github.com/JoseVarelaP)
+
+<---> <!-- magic sparator, between columns -->
+
+Design |
+:------------ |
+[Jose Varela](https://github.com/JoseVarelaP)
+[Lirodon](https://github.com/ListenerJubatus)
+[SheepyChris](https://github.com/SheepyChris)
+
+<---> <!-- magic sparator, between columns -->
+
+Community |
+:------------ |
+[Moru Zerinho6](https://github.com/moruzerinho6)
+[SHRMP0](https://github.com/SHRMP0)
+[Moneko](https://github.com/JustMoneko)
+[Hanubeki](https://github.com/hanubeki)
+[Gabrimax98](https://github.com/Gabrimax98)
+[Sudospective](https://github.com/Sudospective)
+RodentVienna
+
+{{< /columns >}}
 
 The development members are the ones that make OutFox possible. They're the people working on the game engine.
 
