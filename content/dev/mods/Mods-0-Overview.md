@@ -52,7 +52,9 @@ When passed nothing in the parameters, the function returns two values: the curr
 However, when passed in parameters, the previous values for magnitude and rate are returned.
 
 You can grab a player's PlayerOptions for scripting purposes by doing the following:
-`local po = {GAMESTATE:GetPlayerState('PlayerNumber_P1'):GetPlayerOptions('ModsLevel_Song'),GAMESTATE:GetPlayerState('PlayerNumber_P2'):GetPlayerOptions('ModsLevel_Song')}`
+```Lua
+local po = {GAMESTATE:GetPlayerState('PlayerNumber_P1'):GetPlayerOptions('ModsLevel_Song'),GAMESTATE:GetPlayerState('PlayerNumber_P2'):GetPlayerOptions('ModsLevel_Song')}
+```
 
 This stores them into a table for easy access at any point during the song. `po[1]` is what you'd use to affect Player 1, while `po[2]` affects Player 2. Both will need to be used to affect both players with the same mods.
 
