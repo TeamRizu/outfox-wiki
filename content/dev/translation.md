@@ -116,31 +116,32 @@ Many folks are already helping translate the new Soundwaves theme for various la
 ## Tools and Practices
 
 Translating can be boring and tedious. Sometimes it's hard to locate & remove lines that shouldn't be there or find missing ones. Because of that, translators themselves create tools to make our job easier and faster.
-### Translation Toolkit
+
+{{< tabs "toolsandpractices" >}}
+{{< tab "Translation Toolkit" >}}
 
 [Translation Toolkit](https://github.com/Tiny-Foxes/Translation-Toolkit) is a tool made by [Ksempac](https://github.com/Ksempac) to help remove lines that are not needed anymore, warn about lines that are missing, check your progress, etc. It supports linux, Mac and Windows.
 
 > _This project is intended as a small application to automate some tasks for translators._
 >
 >_It is able to parse, analyze and fix the OutFox translation files._
-
-<!--Place image showing the tool in action here-->
-
-### Stepmania-TranslatorViewMaker
-
+![](/translation/translationToolkit.png)
+{{< /tab >}}
+{{< tab "Stepmania-TranslatorViewMaker" >}}
 [Stepmania-TranslatorViewMaker](https://github.com/Tiny-Foxes/Stepmania-TranslatorViewMaker) is a tool made by [Snil4](https://github.com/snil4). It supports any OS that has python 3 installed.
 
 > _Have you ever tried to translate a program like OutFox and wondered "Hmm, now where can I find that line in the .ini?" Now there's no need to wonder! This program will make a translator view file for your translation .ini and make you translation job easier._
 
-<!--Place image showing the tool in action here-->
-
-### Tiny-Webini
-
+![](/translation/translatorView.jpg)
+{{< /tab >}}
+{{< tab "Tiny-Webini" >}}
 [Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini) is a tool made by [zerinho6](https://tiny-foxes.github.io/Tiny-Web/members/moruzerinho6.png) to help with translations of [OutFox Website](https://projectmoon.dance/). While not used to translate OutFox (unless themes adopt HTML in the future), it uses the same translation system as OutFox. It makes less HTML code or none at all being necessary to translate the website. While the souce code might be able to run on other OS by building manually, it only supports Windows officially.
 
 > Translate OutFox website with the same style OutFox uses for its translations.
 
 ![](/translation/tinyWebini.png)
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Best practices
 
