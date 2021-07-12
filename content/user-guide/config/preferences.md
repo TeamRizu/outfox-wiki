@@ -17,13 +17,49 @@ _See [folder](/user-guide/config/folders)._
 
 ### AdditionalFolders
 
-Takes a comma-separated list of directories where additional content folders are stored.
+Takes a comma-separated list of directories where additional content folders are stored. Those additional folders could have all folders your OutFox installation root has.
+
+What's the usage of this? Simple, share themes/noteskins/avatars..etc with any other installation of OutFox you have.
+
+Value Example:
+
+`AdditionalFolders=C:\AdditionalFolder`
+
+```
+C:\AdditionalFolder
+│
+└───Apperance
+│   │   
+│   └───Themes
+│       │Infinitesimal
+│       │SoundWaves Community Edition
+```
 
 _See [folder](/user-guide/config/folders)._
 
 ### AdditionalSongFolders
 
-Takes a comma-separated list of directories where additional song groups are stored.
+Takes a comma-separated list of directories where additional song groups are stored. Those additional **song** folders are expect to have **Group folders** inside.
+
+What's the usage of this? The best usage of this preference would be to have songs on another disk with maybe more space or faster so your main drive doesn't get filled with songs.
+
+Value Example:
+
+`AdditionalSongFolders=C:\AdditionalSongs`
+
+Where C:\AdditionalSongs should look like this
+
+```
+C:\AdditionalSongs
+│
+└───PackName
+│   │   
+│   └───SongName
+│       │Music.ogg
+│       │Chart.sm
+```
+
+AdditionalSongFolders can point to any valid path and doesn't have to be on the same disk as OutFox.
 
 _See [folder](/user-guide/config/folders)._
 
@@ -42,6 +78,10 @@ Allows multiple high score entries by the same user.
 ### AllowMultipleInstances
 
 Allows multiple instances of Project OutFox to be opened.
+
+Possible values: `0` or `1`. `0` being disabled and `1` being enabled.
+
+Default value: `0`
 
 ### AllowMultipleToasties
 

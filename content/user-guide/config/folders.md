@@ -47,7 +47,7 @@ NoteSkins
 
 ### Themes
 
-Themes determine the look, feel, and functionality of the game.
+Themes determine the look, feel, and functionality of the game. Themes compatible with StepMania 5.0.12 and 5.1 are also compatible with OutFox, while themes from older versions or StepMania 5.2 won't.
 
 ```
 Themes
