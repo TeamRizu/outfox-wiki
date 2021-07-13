@@ -51,19 +51,43 @@ hidden-mobile" itemprop=breadcrumb><div><svg class="icon gdoc_path hidden-mobile
 </code></pre></div><div class=gdoc-page__anchorwrap><h2 id=commands>Commands
 <a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Anatomy+Structure/#commands class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Commands" href=#commands><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Commands come in two variants: &ldquo;Commands&rdquo; and &ldquo;Messages&rdquo;.</p><p>Commands are usually isolated to a single actor, with a few exceptions. Messages are commands that are meant to be in multiple actors and can be invoked at around the same time on all actors with a &ldquo;Broadcast&rdquo;.</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>MESSAGEMAN</span><span class=p>:</span><span class=n>Broadcast</span><span class=p>(</span><span class=s2>&#34;SpecialMove&#34;</span><span class=p>,</span> <span class=p>{</span><span class=n>funnymove</span> <span class=o>=</span> <span class=mi>10</span><span class=p>,</span> <span class=n>absolute</span> <span class=o>=</span> <span class=kc>false</span><span class=p>})</span>
 </code></pre></div><p><em>(ex: this would run &ldquo;SpecialMoveMessageCommand&rdquo; on all actors that have this command defined, with a parameter table being passed in. Not all actors might use this table, even though they might have the command defined.)</em></p><p>If one needs to manually queue a command or message, the <code>queuecommand</code> or <code>queuemessage</code> functions can be used.</p><p>These queued commands run only after all previous tweens have finished.</p><p>If a command has to run instantly, <code>playcommand</code> can be used for that.</p><p>If one wants to pass custom parameters into the command, a single table has to be used to wrap every parameter passed.</p><p>These command functions generally take two paramters: The actor calling the function (often called <code>self</code>), and the parameters table passed into the command. The paramters table is optional.</p><div class=gdoc-page__anchorwrap><h2 id=obtaining-childs-and-actorframe-levels>Obtaining Childs and ActorFrame Levels
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Anatomy+Structure/#obtaining-childs-and-actorframe-levels class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Obtaining Childs and ActorFrame Levels" href=#obtaining-childs-and-actorframe-levels><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>When using Actors, you can use <code>self:GetParent()</code> and <code>self:GetChild()</code> to get elements from other ActorFrames or actors.
-<strong>(Note: <code>GetChild</code> can only be used by ActorFrames.)</strong></p><p>You can think of an ActorFrame as a tree of objects.
-This is the original table. And now you&rsquo;ve called GetParent on the ActorProxy.</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>Def.ActorFrame</span><span class=p>{</span>
-	<span class=n>Def.BitmapText</span><span class=p>{},</span>
-	<span class=o>*</span> <span class=n>Def.ActorProxy</span><span class=p>{},</span>
+<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Anatomy+Structure/#obtaining-childs-and-actorframe-levels class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Obtaining Childs and ActorFrame Levels" href=#obtaining-childs-and-actorframe-levels><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>When using Actors, you can use <code>self:GetParent()</code> and <code>self:GetChild()</code> to get elements from other ActorFrames or actors.<blockquote class="gdoc-hint warning"><code>self:GetChild()</code> can only be used by ActorFrames.</blockquote></p><p>You can think of an ActorFrame as a tree of objects.
+This is the original table. And now you&rsquo;ve called GetParent on the ActorProxy.<div class="gdoc-columns flex flex-wrap"><div class="gdoc-columns__content gdoc-markdown--nested flex-even"><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>Def.ActorFrame</span><span class=p>{</span>
+	<span class=n>Def.BitmapText</span><span class=p>{</span> <span class=n>Name</span><span class=o>=</span><span class=s2>&#34;MyText&#34;</span> <span class=p>},</span>
+	<span class=o>*</span> <span class=n>Def.ActorProxy</span><span class=p>{</span>
+		<span class=n>OnCommand</span><span class=o>=</span><span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span>
+			<span class=n>self</span><span class=p>:</span><span class=n>GetParent</span><span class=p>()</span>
+		<span class=kr>end</span>
+	<span class=p>},</span>
 <span class=p>}</span>
-</code></pre></div><p>When calling it, you go back up a level, which in this case,
-it will become ActorFrame.</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=o>*</span> <span class=n>Def.ActorFrame</span><span class=p>{</span>
-	<span class=n>Def.BitmapText</span><span class=p>{},</span>
-	<span class=p>[]</span> <span class=n>Def.ActorProxy</span><span class=p>{},</span>
+</code></pre></div></div><div class="gdoc-columns__content gdoc-markdown--nested flex-even"><script defer src=../../../js/mermaid-c745d8dd41.min.js></script><script defer src=../../../js/mermaid-loader-1bd1515cbf.min.js></script><pre class="gdoc-mermaid mermaid text-center">
+graph LR
+    AF[Def.ActorFrame] --- BT(Def.BitmapText) & AP(Def.ActorProxy)
+	style AF stroke-width:4px
+	style BT stroke-width:4px
+	style AP fill:#585,color:#fff,stroke-width:4px
+</pre></div></div><div class="gdoc-columns flex flex-wrap"><div class="gdoc-columns__content gdoc-markdown--nested flex-even"><div class=text-center>When calling it, you go back up a level, which in this case,
+it will become ActorFrame.</div></div><div class="gdoc-columns__content gdoc-markdown--nested flex-even"><pre class="gdoc-mermaid mermaid text-center">
+graph LR
+    AF(Def.ActorFrame) --- BT(Def.BitmapText) & AP(Def.ActorProxy);
+	style AF fill:#585,color:#fff,stroke-width:4px
+	style BT stroke-width:4px
+	style AP stroke-width:4px
+</pre></div></div></p><p>In this new location, we get the MyText actor, which can be achieved by calling the GetChild command, and can also return back to the ActorProxy, as we&rsquo;re now in a level that can get both actors.<div class="gdoc-columns flex flex-wrap"><div class="gdoc-columns__content gdoc-markdown--nested flex-even"><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>Def.ActorFrame</span><span class=p>{</span>
+	<span class=o>*</span> <span class=n>Def.BitmapText</span><span class=p>{</span> <span class=n>Name</span><span class=o>=</span><span class=s2>&#34;MyText&#34;</span> <span class=p>},</span>
+	<span class=n>Def.ActorProxy</span><span class=p>{</span>
+		<span class=n>OnCommand</span><span class=o>=</span><span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span>
+			<span class=n>self</span><span class=p>:</span><span class=n>GetParent</span><span class=p>():</span><span class=n>GetChild</span><span class=p>(</span><span class=s2>&#34;MyText&#34;</span><span class=p>):</span><span class=n>spin</span><span class=p>()</span>
+		<span class=kr>end</span>
+	<span class=p>},</span>
 <span class=p>}</span>
-</code></pre></div><p>In this new location, we get the MyText actor, which can be achieved by calling the GetChild command.
-The command uses a String argument, but can also grab from nested tables in case of an ActorFrame not having
+</code></pre></div></div><div class="gdoc-columns__content gdoc-markdown--nested flex-even"><pre class="gdoc-mermaid mermaid text-center">
+graph LR
+    AF(Def.ActorFrame ) --> BT(Def.BitmapText) & AP(Def.ActorProxy);
+	style AF fill:#f85,color:#fff,stroke-width:4px
+	style BT fill:#585,color:#fff,stroke-width:4px
+	style AP fill:#585,color:#fff,stroke-width:4px
+</pre></div></div>The command uses a String argument, but can also grab from nested tables in case of an ActorFrame not having
 actors with names assigned. On those cases, actors are just indexed on that ActorFrame set.</p><div class=gdoc-page__anchorwrap><h3 id=example-without-names>Example Without Names
 <a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Anatomy+Structure/#example-without-names class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example Without Names" href=#example-without-names><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>Def.ActorFrame</span><span class=p>{</span>
 	<span class=n>OnCommand</span><span class=o>=</span><span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span>

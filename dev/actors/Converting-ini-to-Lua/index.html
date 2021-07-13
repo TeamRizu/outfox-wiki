@@ -66,6 +66,9 @@ hidden-mobile" itemprop=breadcrumb><div><svg class="icon gdoc_path hidden-mobile
 	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>1</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
 	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>3</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
 <span class=p>}</span>
+</code></pre></div><blockquote class="gdoc-hint info">If all frames from the animation are the same and in order, you can use the <code>Sprite.LinearFrames</code> function helper to alieviate the ammount of lines.</blockquote><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=c1>-- This will tell the function to create a frame table that goes through</span>
+<span class=c1>-- 5 frames within 1 second.</span>
+<span class=n>Frames</span> <span class=o>=</span> <span class=n>Sprite.LinearFrames</span><span class=p>(</span> <span class=mi>5</span><span class=p>,</span> <span class=mi>1</span> <span class=p>)</span>
 </code></pre></div><p>.model files have extra attributes to define bones, meshes and materials. These translate almost-1:1 into lua.</p><div class=highlight><pre class=chroma><code class=language-ini data-lang=ini><span class=k>[Model]</span>
 <span class=na>Meshes</span><span class=o>=</span><span class=s>arrowmesh.txt</span>
 <span class=na>Materials</span><span class=o>=</span><span class=s>4th.txt</span>
