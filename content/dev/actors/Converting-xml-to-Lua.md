@@ -63,7 +63,7 @@ The result isn't going to always work, but should do a good amount of the grunt-
 
 Here, layers can have a name as well as a tag or Type. Either the tag name or the Type attribute defines what type of actor it is. If neither of these are given, the game would have to infer the actor type by itself.
 
-ActorFrames have a `children` tag for holding their inner actors.
+[ActorFrames](../ActorsLua-Anatomy+Structure/#actorframes-and-how-to-build-them) have a `children` tag for holding their inner actors.
 
 Unlike .ini files, layers can have practically any name in the tag, instead of a required `Layer` prefix.
 
@@ -95,7 +95,7 @@ return Def.ActorFrame{
 }
 ```
 
-Often, the main xml file is an ActorFrame, with the inner actors matching the layout of the xml after sorting.
+Often, the main xml file is an [ActorFrame](../ActorsLua-Anatomy+Structure/#actorframes-and-how-to-build-them), with the inner actors matching the layout of the xml after sorting.
 
 Conditions can be turned into ternary expressions, though they now run at different times compared to the original xml file.
 

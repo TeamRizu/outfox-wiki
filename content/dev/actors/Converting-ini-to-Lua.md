@@ -102,6 +102,15 @@ Frames= {
 }
 ```
 
+{{< hint info >}}
+If all frames from the animation are the same and in order, you can use the `Sprite.LinearFrames` function helper to alieviate the ammount of lines.
+{{< /hint >}}
+```lua
+-- This will tell the function to create a frame table that goes through
+-- 5 frames within 1 second.
+Frames = Sprite.LinearFrames( 5, 1 )
+```
+
 .model files have extra attributes to define bones, meshes and materials. These translate almost-1:1 into lua.
 ```ini
 [Model]
