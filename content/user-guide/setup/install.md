@@ -33,7 +33,10 @@ On older builds, macOS Catalina also generated a message stating that the game w
 {{< tab "Linux" >}}
 On Linux, we only provide pre-compiled binaries at this time. Extract the tarball, and run ``./stepmania`` in the directory. 
 
-If you see an error mentioning that it could not find ``libOpenGL.so.0:``, install ``libopengl0`` from your distribution's package manager.
+If you see an error mentioning that it could not find ``libOpenGL.so.0:``, you need to install ``libglvnd`` and/or ``libopengl0`` based on your distro. On Debian/Ubuntu-based distros, run ``sudo apt install libopengl0``. On Fedora, the package is known as ``libglvnd-opengl`` (``sudo dnf install libglvnd-opengl``).
+
+
+install ``libopengl0`` from your distribution's package manager.
 {{< /tab >}}
 {{< tab "Windows" >}}
 Windows builds of Project OutFox use an installer; follow the instructions, and launch the game using the provided shortcuts. 
