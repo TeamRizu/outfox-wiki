@@ -55,6 +55,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 ## For Developers
 
 {{< button size="large" relref="dev/translation/" >}}Translation{{< /button >}}
+{{< button size="large" relref="dev/theming/" >}}Theming{{< /button >}}
 
 {{< /columns >}}
 
