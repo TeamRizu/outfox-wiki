@@ -140,7 +140,7 @@ border-bottom: 4px solid #FFA147;
 }
 
 @media screen and (min-width:39rem) {
-.gdoc-site-title {
+.gdoc-brand__title {
 	display: none;
 	}
 }
