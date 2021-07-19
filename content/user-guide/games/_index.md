@@ -1,7 +1,7 @@
 ---
 title: Game types
 description: Details on game types supported by Project OutFox.
-weight: 1
+weight: 2
 ---
 
 Project OutFox supports a variety of game types, which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into **styles**, which define chart types such as single, double, etc.
@@ -34,5 +34,3 @@ These are proposed and are scheduled on the roadmap. Limitations or code problem
 * **jam** - A mode properly supporting _o2Jam_ and its modes, with full .OJM loader support.
 * **piu** - A major refactoring to make it more accurate to the mainline series.
 * **taitai** - A "don da don" styled mode, supporting .TJA files.
-
-

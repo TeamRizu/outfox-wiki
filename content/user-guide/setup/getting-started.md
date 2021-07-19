@@ -8,7 +8,7 @@ To obtain the best experience, there are a few things you should do after instal
 
 ## Selecting a game type
 
-When launching Project OutFox for the first time or without save data present, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of game types, which you can learn about [here](/user-guide/config/game-types/), which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into **styles**, which include chart types such as single, double, etc.
+When launching Project OutFox for the first time or without save data present, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of game types, which you can learn about [here](/user-guide/games/), which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into **styles**, which include chart types such as single, double, etc.
 
 ![Screenshot of the Project OutFox game selection screen.](/getting-started/select-game-type.png)
 
