@@ -58,6 +58,33 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 
 {{< /columns >}}
 
+{{< columns >}}
+
+## Supported Modes and Styles
+
+{{< button size="large" relref="modes/dance/" >}}dance{{< /button >}}
+{{< button size="large" relref="modes/piu/" >}}pump{{< /button >}}
+{{< button size="large" relref="modes/techno/" >}}techno{{< /button >}}
+{{< button size="large" relref="modes/BMS/" >}}beat{{< /button >}}
+{{< button size="large" relref="modes/PMS/" >}}popn{{< /button >}}
+{{< button size="large" relref="modes/gddm/" >}}gddm{{< /button >}}
+{{< button size="large" relref="modes/gdgf/" >}}gdgf{{< /button >}}
+{{< button size="large" relref="modes/gh/" >}}gh{{< /button >}}
+{{< button size="large" relref="modes/taiko/" >}}taitai{{< /button >}}
+{{< button size="large" relref="modes/para/" >}}para{{< /button >}}
+{{< button size="large" relref="modes/kb7/" >}}kb7{{< /button >}}
+{{< button size="large" relref="modes/ez2dance/" >}}ez2dance{{< /button >}}
+{{< button size="large" relref="modes/ds3ddx/" >}}ds3ddx{{< /button >}}
+{{< button size="large" relref="modes/kickbox/" >}}kickbox{{< /button >}}
+
+<--->
+
+## Report an Issue
+
+{{< button size="large" relref="dev/reportbug/" >}}OutFox GitHub{{< /button >}}
+
+{{< /columns >}}
+
 ----
 
 ## Credits and license
