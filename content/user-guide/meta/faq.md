@@ -155,14 +155,11 @@ https://github.com/pal1000/mesa-dist-win/releases/latest
 Download Mesa3d for Windows: mesa3d-xxxx-release-msvc.exe
 
 - Extract it (either with a double-click or right-click 7-zip)
-
 - In the extraction folder of Mesa, go to x64, select and copy opengl32.dll
-
 - In the extraction folder of Project OutFox, go to /program and paste opengl32.dll
-
 - it may now use the proper dll
 
-Also, See https://fdossena.com/?p=mesa/index.frag for a windows working solution.
+Also see https://fdossena.com/?p=mesa/index.frag for a windows working solution.
 
 And for a detailed guide for intel users:  (Some computer literacy needed)
 https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1
@@ -175,13 +172,11 @@ International Moderators/Translators/Alpha Testers/Tiny-Foxes indirectly helps O
 
 If you see anyone else saying they work on OutFox then do not trust and please report to us. You can always ask at our [Discord Server](https://discord.gg/cN4TjgQdcA)
 
-## Linux - I get the error "error while loading shared libraries: libOpenGL.so.0:" on Ubuntu 20.04-based distributions
+## Linux
 
-Install either libglvnd and/or libopengl0 based on your distro.
+### I get the error "error while loading shared libraries: libOpenGL.so.0:"
 
-On Debian-based distros, install the ``libopengl0`` package. (``sudo apt install libopengl0``)
-
-On Fedora-based distros, install ``libglvnd-opengl`` (``sudo dnf install libglvnd-opengl``)
+Install either ``libglvnd`` and/or ``libopengl0`` based on your distro. On some distros the package is known as ``libglvnd-opengl``.
 
 ## Mac
 
@@ -191,7 +186,7 @@ If you receive errors such as "No noteskins found" or other unusual behavior, yo
 
 To do this, open Terminal and run the following command: ``xattr -dr com.apple.quarantine /path/to/StepMania``, replacing ``/path/to/StepMania`` with the path to the directory containing the StepMania executable (manually typing it out, or dragging the folder containing the game executable directly onto the window to fill it automatically).
 
-![Quarantine example](/faq/vid/quarantine.webm ':include :type=video')
+<video src="/faq/vid/randomspeed.webm" controls="">Quarantine video example</video>
 
 On older builds, macOS Catalina also generated a message stating that the game was requesting permission to  receive keystrokes from any application. This was a side effect of previous code that has since been removed.
 
