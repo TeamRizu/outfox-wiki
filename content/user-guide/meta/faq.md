@@ -191,7 +191,7 @@ If you receive errors such as "No noteskins found" or other unusual behavior, yo
 
 To do this, open Terminal and run the following command: ``xattr -dr com.apple.quarantine /path/to/StepMania``, replacing ``/path/to/StepMania`` with the path to the directory containing the StepMania executable (manually typing it out, or dragging the folder containing the game executable directly onto the window to fill it automatically).
 
-![Quarantine example](/faq/vid/quarantine.mp4 ':include :type=video')
+![Quarantine example](/faq/vid/quarantine.webm ':include :type=video')
 
 On older builds, macOS Catalina also generated a message stating that the game was requesting permission to  receive keystrokes from any application. This was a side effect of previous code that has since been removed.
 
