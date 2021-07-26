@@ -545,20 +545,12 @@ If you accidentally updated your windows to beyond the support given to you by I
 <p><strong>HOW TO USE?</strong></p>
 <p>Download Mesa3d for Windows: mesa3d-xxxx-release-msvc.exe</p>
 <ul>
-<li>
-<p>Extract it (either with a double-click or right-click 7-zip)</p>
-</li>
-<li>
-<p>In the extraction folder of Mesa, go to x64, select and copy opengl32.dll</p>
-</li>
-<li>
-<p>In the extraction folder of Project OutFox, go to /program and paste opengl32.dll</p>
-</li>
-<li>
-<p>it may now use the proper dll</p>
-</li>
+<li>Extract it (either with a double-click or right-click 7-zip)</li>
+<li>In the extraction folder of Mesa, go to x64, select and copy opengl32.dll</li>
+<li>In the extraction folder of Project OutFox, go to /program and paste opengl32.dll</li>
+<li>it may now use the proper dll</li>
 </ul>
-<p>Also, See <a class=gdoc-markdown__link href="https://fdossena.com/?p=mesa/index.frag">https://fdossena.com/?p=mesa/index.frag</a> for a windows working solution.</p>
+<p>Also see <a class=gdoc-markdown__link href="https://fdossena.com/?p=mesa/index.frag">https://fdossena.com/?p=mesa/index.frag</a> for a windows working solution.</p>
 <p>And for a detailed guide for intel users: (Some computer literacy needed)
 <a class=gdoc-markdown__link href=https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1>https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1</a></p>
 <div class=gdoc-page__anchorwrap>
@@ -571,14 +563,18 @@ Q: How can I know who works on OutFox and who to trust?
 <p>International Moderators/Translators/Alpha Testers/Tiny-Foxes indirectly helps OutFox development but they aren&rsquo;t part of the OutFox Team.</p>
 <p>If you see anyone else saying they work on OutFox then do not trust and please report to us. You can always ask at our <a class=gdoc-markdown__link href=https://discord.gg/cN4TjgQdcA>Discord Server</a></p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=linux---i-get-the-error-error-while-loading-shared-libraries-libopenglso0-on-ubuntu-2004-based-distributions>
-Linux - I get the error &ldquo;error while loading shared libraries: libOpenGL.so.0:&rdquo; on Ubuntu 20.04-based distributions
-<a data-clipboard-text=https://outfox.wiki/user-guide/meta/faq/#linux---i-get-the-error-error-while-loading-shared-libraries-libopenglso0-on-ubuntu-2004-based-distributions class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Linux - I get the error &ldquo;error while loading shared libraries: libOpenGL.so.0:&rdquo; on Ubuntu 20.04-based distributions" href=#linux---i-get-the-error-error-while-loading-shared-libraries-libopenglso0-on-ubuntu-2004-based-distributions><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=linux>
+Linux
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/faq/#linux class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Linux" href=#linux><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>Install either libglvnd and/or libopengl0 based on your distro.</p>
-<p>On Debian-based distros, install the <code>libopengl0</code> package. (<code>sudo apt install libopengl0</code>)</p>
-<p>On Fedora-based distros, install <code>libglvnd-opengl</code> (<code>sudo dnf install libglvnd-opengl</code>)</p>
+</div><div class=gdoc-page__anchorwrap>
+<h3 id=i-get-the-error-error-while-loading-shared-libraries-libopenglso0>
+I get the error &ldquo;error while loading shared libraries: libOpenGL.so.0:&rdquo;
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/faq/#i-get-the-error-error-while-loading-shared-libraries-libopenglso0 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor I get the error &ldquo;error while loading shared libraries: libOpenGL.so.0:&rdquo;" href=#i-get-the-error-error-while-loading-shared-libraries-libopenglso0><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p>Install either <code>libglvnd</code> and/or <code>libopengl0</code> based on your distro. On some distros the package is known as <code>libglvnd-opengl</code>.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=mac>
 Mac
@@ -593,7 +589,7 @@ I&rsquo;m having issues launching the game.
 </h3>
 </div><p>If you receive errors such as &ldquo;No noteskins found&rdquo; or other unusual behavior, you will have to change macOS security settings in order for Project OutFox to operate correctly. MacOS performs a process every time a new program has been downloaded called quarantine, which will require Gatekeeper (The OS&rsquo;s security manager) to verify its signature. The OS does not trust unsigned applications, and prevents access to external files unless given manual permission by the user.</p>
 <p>To do this, open Terminal and run the following command: <code>xattr -dr com.apple.quarantine /path/to/StepMania</code>, replacing <code>/path/to/StepMania</code> with the path to the directory containing the StepMania executable (manually typing it out, or dragging the folder containing the game executable directly onto the window to fill it automatically).</p>
-<p><img src=../../../faq/vid/quarantine.webm alt="Quarantine example" title=":include :type=video"></p>
+<p><video src=../../../faq/vid/randomspeed.webm controls>Quarantine video example</video></p>
 <p>On older builds, macOS Catalina also generated a message stating that the game was requesting permission to receive keystrokes from any application. This was a side effect of previous code that has since been removed.</p>
 <div class=gdoc-page__anchorwrap>
 <h3 id=the-game-is-rendering-small-in-the-bottom-corner-of-the-window>
