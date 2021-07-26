@@ -1,76 +1,1030 @@
-<!doctype html><html lang=en class=color-toggle-hidden><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="Path modifiers affect the path a note takes to the receptor, often curving it in some way or creating a type of wave in the movement.
+<!doctype html><html lang=en class=color-toggle-hidden>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=color-scheme content="light dark">
+<meta name=description content="Path modifiers affect the path a note takes to the receptor, often curving it in some way or creating a type of wave in the movement.
 Drunk    Desc: Drunk makes the notes and receptors move left and right in a constantly shifting sinusoidal wave. There are extra variants for the Y and Z axis, as well as tangent variants.
-Common values can be practically any value, due to its' wide use in modfiles."><title>Path modifiers | Project OutFox Wiki</title><link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon><script src=../../../js/darkmode-ce906ea916.min.js></script><link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous><link rel=preload as=font href=../../../fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous><link rel=preload href=../../../main-cc3cbe901b.min.css as=style><link rel=stylesheet href=../../../main-cc3cbe901b.min.css media=all><link rel=preload href=../../../mobile-249b801e7d.min.css as=style><link rel=stylesheet href=../../../mobile-249b801e7d.min.css media="screen and (max-width: 45rem)"><link rel=preload href=../../../print-f79fc3e5d7.min.css as=style><link rel=stylesheet href=../../../print-f79fc3e5d7.min.css media=print><link rel=preload href=../../../custom.css as=style><link rel=stylesheet href=../../../custom.css media=all></head><body itemscope itemtype=https://schema.org/WebPage><svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.526v2.947H5.755l8.351 8.421-2.105 2.105-12-12 12-12 2.105 2.105-8.351 8.421H24z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M5.965 10.526V6.035L0 12l5.965 5.965v-4.491H24v-2.947H5.965z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M18.035 10.526V6.035L24 12l-5.965 5.965v-4.491H0v-2.947h18.035z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_bitbucket" xmlns="http://www.w3.org/2000/svg"><path d="M15.905 13.355c.189 1.444-1.564 2.578-2.784 1.839-1.375-.602-1.375-2.784-.034-3.403 1.151-.705 2.818.223 2.818 1.564zm1.907-.361c-.309-2.44-3.076-4.056-5.328-3.042-1.426.636-2.389 2.148-2.32 3.747.086 2.097 2.08 3.815 4.176 3.626s3.729-2.234 3.472-4.331zm4.108-9.315c-.756-.997-2.045-1.169-3.179-1.358-3.214-.516-6.513-.533-9.727.034-1.066.172-2.269.361-2.939 1.323 1.1 1.031 2.664 1.186 4.073 1.358 2.544.327 5.156.344 7.699.017 1.426-.172 3.008-.309 4.073-1.375zm.979 17.788c-.481 1.684-.206 3.953-1.994 4.932-3.076 1.701-6.806 1.89-10.191 1.289-1.787-.327-3.884-.894-4.864-2.578-.43-1.65-.705-3.334-.98-5.018l.103-.275.309-.155c5.121 3.386 12.288 3.386 17.427.0.808.241.206 1.22.189 1.805zM26.01 4.951c-.584 3.764-1.255 7.51-1.908 11.257-.189 1.1-1.255 1.719-2.148 2.183-3.214 1.615-6.96 1.89-10.483 1.512-2.389-.258-4.829-.894-6.771-2.389-.911-.705-.911-1.908-1.083-2.922-.602-3.523-1.289-7.046-1.719-10.604.206-1.547 1.942-2.217 3.231-2.698C6.848.654 8.686.362 10.508.19c3.884-.378 7.854-.241 11.618.859 1.341.395 2.784.945 3.695 2.097.412.533.275 1.203.189 1.805z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15.268 4.392q.868.0 1.532.638t.664 1.506v17.463l-7.659-3.268-7.608 3.268V6.536q0-.868.664-1.506t1.532-.638h10.876zm4.34 14.144V4.392q0-.868-.638-1.532t-1.506-.664H6.537q0-.868.664-1.532T8.733.0h10.876q.868.0 1.532.664t.664 1.532v17.412z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_auto" xmlns="http://www.w3.org/2000/svg"><path d="M16.846 18.938h2.382L15.22 7.785h-2.44L8.772 18.938h2.382l.871-2.44h3.95zm7.087-9.062L27.999 14l-4.066 4.124v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809zm-11.385 4.937L14 10.282l1.452 4.531h-2.904z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_dark" xmlns="http://www.w3.org/2000/svg"><path d="M14 21.435q3.079.0 5.257-2.178T21.435 14t-2.178-5.257T14 6.565q-1.51.0-3.079.697 1.917.871 3.108 2.701T15.22 14t-1.191 4.037-3.108 2.701q1.568.697 3.079.697zm9.933-11.559L27.999 14l-4.066 4.124v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_light" xmlns="http://www.w3.org/2000/svg"><path d="M14 21.435q3.079.0 5.257-2.178T21.435 14t-2.178-5.257T14 6.565 8.743 8.743 6.565 14t2.178 5.257T14 21.435zm9.933-3.311v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809L27.999 14z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_cloud_off" xmlns="http://www.w3.org/2000/svg"><path d="M9.023 10.5H7q-1.914.0-3.281 1.395t-1.367 3.309 1.367 3.281T7 19.852h11.375zM3.5 4.976l1.477-1.477L24.5 23.022l-1.477 1.477-2.352-2.297H6.999q-2.898.0-4.949-2.051t-2.051-4.949q0-2.844 1.969-4.867t4.758-2.133zm19.086 5.578q2.242.164 3.828 1.832T28 16.351q0 3.008-2.461 4.758l-1.695-1.695q1.805-.984 1.805-3.063.0-1.422-1.039-2.461t-2.461-1.039h-1.75v-.602q0-2.68-1.859-4.539t-4.539-1.859q-1.531.0-2.953.711l-1.75-1.695Q11.431 3.5 14.001 3.5q2.953.0 5.496 2.078t3.09 4.977z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_code" xmlns="http://www.w3.org/2000/svg"><path d="M9.917 24.5a1.75 1.75.0 10-3.501.001 1.75 1.75.0 003.501-.001zm0-21a1.75 1.75.0 10-3.501.001A1.75 1.75.0 009.917 3.5zm11.666 2.333a1.75 1.75.0 10-3.501.001 1.75 1.75.0 003.501-.001zm1.75.0a3.502 3.502.0 01-1.75 3.026c-.055 6.581-4.721 8.039-7.82 9.023-2.898.911-3.846 1.349-3.846 3.117v.474a3.502 3.502.0 011.75 3.026c0 1.932-1.568 3.5-3.5 3.5s-3.5-1.568-3.5-3.5c0-1.294.711-2.424 1.75-3.026V6.526A3.502 3.502.0 014.667 3.5c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5a3.502 3.502.0 01-1.75 3.026v9.06c.93-.456 1.914-.766 2.807-1.039 3.391-1.075 5.323-1.878 5.359-5.687a3.502 3.502.0 01-1.75-3.026c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_date" xmlns="http://www.w3.org/2000/svg"><path d="M27.192 28.844V11.192H4.808v17.652h22.384zm0-25.689q1.277.0 2.253.976t.976 2.253v22.459q0 1.277-.976 2.216t-2.253.939H4.808q-1.352.0-2.291-.901t-.939-2.253V6.385q0-1.277.939-2.253t2.291-.976h1.577V.001h3.23v3.155h12.769V.001h3.23v3.155h1.577zm-3.155 11.267v3.155h-3.23v-3.155h3.23zm-6.46.0v3.155h-3.155v-3.155h3.155zm-6.384.0v3.155h-3.23v-3.155h3.23z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_download" xmlns="http://www.w3.org/2000/svg"><path d="M2.866 28.209h26.269v3.79H2.866v-3.79zm26.268-16.925L16 24.418 2.866 11.284h7.493V.001h11.283v11.283h7.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_email" xmlns="http://www.w3.org/2000/svg"><path d="M28.845 9.615v-3.23L16 14.422 3.155 6.385v3.23L16 17.577zm0-6.46q1.277.0 2.216.977T32 6.385v19.23q0 1.277-.939 2.253t-2.216.977H3.155q-1.277.0-2.216-.977T0 25.615V6.385q0-1.277.939-2.253t2.216-.977h25.69z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_git" xmlns="http://www.w3.org/2000/svg"><path d="M27.472 12.753 15.247.529a1.803 1.803.0 00-2.55.0l-2.84 2.84 2.137 2.137a2.625 2.625.0 013.501 3.501l3.499 3.499a2.625 2.625.0 11-1.237 1.237l-3.499-3.499c-.083.04-.169.075-.257.106v7.3a2.626 2.626.0 11-1.75.0v-7.3a2.626 2.626.0 01-1.494-3.607L8.62 4.606l-8.09 8.09a1.805 1.805.0 000 2.551l12.225 12.224a1.803 1.803.0 002.55.0l12.168-12.168a1.805 1.805.0 000-2.551z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_github" xmlns="http://www.w3.org/2000/svg"><path d="M16 .394c8.833.0 15.999 7.166 15.999 15.999.0 7.062-4.583 13.062-10.937 15.187-.813.146-1.104-.354-1.104-.771.0-.521.021-2.25.021-4.396.0-1.5-.5-2.458-1.083-2.958 3.562-.396 7.312-1.75 7.312-7.896.0-1.75-.625-3.167-1.646-4.291.167-.417.708-2.042-.167-4.25-1.333-.417-4.396 1.646-4.396 1.646a15.032 15.032.0 00-8 0S8.937 6.602 7.603 7.018c-.875 2.208-.333 3.833-.167 4.25-1.021 1.125-1.646 2.542-1.646 4.291.0 6.125 3.729 7.5 7.291 7.896-.458.417-.875 1.125-1.021 2.146-.917.417-3.25 1.125-4.646-1.333-.875-1.521-2.458-1.646-2.458-1.646-1.562-.021-.104.979-.104.979 1.042.479 1.771 2.333 1.771 2.333.938 2.854 5.396 1.896 5.396 1.896.0 1.333.021 2.583.021 2.979.0.417-.292.917-1.104.771C4.582 29.455-.001 23.455-.001 16.393-.001 7.56 7.165.394 15.998.394zM6.063 23.372c.042-.083-.021-.187-.146-.25-.125-.042-.229-.021-.271.042-.042.083.021.187.146.25.104.062.229.042.271-.042zm.646.709c.083-.062.062-.208-.042-.333-.104-.104-.25-.146-.333-.062-.083.062-.062.208.042.333.104.104.25.146.333.062zm.625.937c.104-.083.104-.25.0-.396-.083-.146-.25-.208-.354-.125-.104.062-.104.229.0.375s.271.208.354.146zm.875.875c.083-.083.042-.271-.083-.396-.146-.146-.333-.167-.417-.062-.104.083-.062.271.083.396.146.146.333.167.417.062zm1.187.521c.042-.125-.083-.271-.271-.333-.167-.042-.354.021-.396.146s.083.271.271.312c.167.062.354.0.396-.125zm1.313.104c0-.146-.167-.25-.354-.229-.187.0-.333.104-.333.229.0.146.146.25.354.229.187.0.333-.104.333-.229zm1.208-.208c-.021-.125-.187-.208-.375-.187-.187.042-.312.167-.292.312.021.125.187.208.375.167s.312-.167.292-.292z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_gitlab" xmlns="http://www.w3.org/2000/svg"><path d="M1.629 11.034 14 26.888.442 17.048a1.09 1.09.0 01-.39-1.203l1.578-4.811zm7.217.0h10.309l-5.154 15.854zM5.753 1.475l3.093 9.559H1.63l3.093-9.559a.548.548.0 011.031.0zm20.618 9.559 1.578 4.811c.141.437-.016.922-.39 1.203l-13.558 9.84 12.371-15.854zm0 0h-7.216l3.093-9.559a.548.548.0 011.031.0z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_heart" xmlns="http://www.w3.org/2000/svg"><path d="M16 29.714a1.11 1.11.0 01-.786-.321L4.072 18.643c-.143-.125-4.071-3.714-4.071-8 0-5.232 3.196-8.357 8.535-8.357 3.125.0 6.053 2.464 7.464 3.857 1.411-1.393 4.339-3.857 7.464-3.857 5.339.0 8.535 3.125 8.535 8.357.0 4.286-3.928 7.875-4.089 8.035L16.785 29.392c-.214.214-.5.321-.786.321z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_keyborad_arrow_down" xmlns="http://www.w3.org/2000/svg"><path d="M3.281 5.36 14 16.079 24.719 5.36 28 8.641l-14 14-14-14z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_keyborad_arrow_left" xmlns="http://www.w3.org/2000/svg"><path d="M25.875 28.25 22.125 32 6.126 16.001 22.125.002l3.75 3.75-12.25 12.25z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_keyborad_arrow_right" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 28.25 18.375 16 6.125 3.75 9.875.0l15.999 15.999L9.875 31.998z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_link" xmlns="http://www.w3.org/2000/svg"><path d="M24.037 7.963q3.305.0 5.634 2.366T32 16t-2.329 5.671-5.634 2.366h-6.46v-3.08h6.46q2.028.0 3.493-1.465t1.465-3.493-1.465-3.493-3.493-1.465h-6.46v-3.08h6.46zM9.615 17.578v-3.155h12.77v3.155H9.615zM3.005 16q0 2.028 1.465 3.493t3.493 1.465h6.46v3.08h-6.46q-3.305.0-5.634-2.366T0 16.001t2.329-5.671 5.634-2.366h6.46v3.08h-6.46q-2.028.0-3.493 1.465t-1.465 3.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_menu" xmlns="http://www.w3.org/2000/svg"><path d="M.001 5.334h31.998v3.583H.001V5.334zm0 12.416v-3.5h31.998v3.5H.001zm0 8.916v-3.583h31.998v3.583H.001z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_notification" xmlns="http://www.w3.org/2000/svg"><path d="M22.615 19.384l2.894 2.894v1.413H2.49v-1.413l2.894-2.894V12.25q0-3.365 1.716-5.856t4.745-3.231v-1.01q0-.875.606-1.514T13.999.0t1.548.639.606 1.514v1.01q3.029.74 4.745 3.231t1.716 5.856v7.134zM14 27.999q-1.211.0-2.053-.808t-.841-2.019h5.788q0 1.144-.875 1.986T14 27.999z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_path" xmlns="http://www.w3.org/2000/svg"><path d="M28 12.62h-9.793V8.414h-2.826v11.173h2.826v-4.206H28V26.62h-9.793v-4.206H12.62v-14H9.794v4.206H.001V1.381h9.793v4.206h8.413V1.381H28V12.62z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_person" xmlns="http://www.w3.org/2000/svg"><path d="M16 20.023q5.052.0 10.526 2.199t5.473 5.754v4.023H0v-4.023q0-3.555 5.473-5.754t10.526-2.199zM16 16q-3.275.0-5.614-2.339T8.047 8.047t2.339-5.661T16 0t5.614 2.386 2.339 5.661-2.339 5.614T16 16z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_search" xmlns="http://www.w3.org/2000/svg"><path d="M11.925 20.161q3.432.0 5.834-2.402t2.402-5.834-2.402-5.834-5.834-2.402-5.834 2.402-2.402 5.834 2.402 5.834 5.834 2.402zm10.981.0L32 29.255 29.255 32l-9.094-9.094v-1.458l-.515-.515q-3.26 2.831-7.721 2.831-4.976.0-8.45-3.432T.001 11.925t3.474-8.45 8.45-3.474 8.407 3.474 3.432 8.45q0 1.802-.858 4.075t-1.973 3.646l.515.515h1.458z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_shield" xmlns="http://www.w3.org/2000/svg"><path d="M22.167 15.166V3.5h-8.166v20.726c.93-.492 2.424-1.349 3.883-2.497 1.95-1.531 4.284-3.919 4.284-6.562zm3.499-13.999v14c0 7.674-10.737 12.523-11.192 12.724-.146.073-.31.109-.474.109s-.328-.036-.474-.109c-.456-.201-11.192-5.049-11.192-12.724v-14C2.334.529 2.863.0 3.501.0H24.5c.638.0 1.167.529 1.167 1.167z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_tags" xmlns="http://www.w3.org/2000/svg"><path d="M6.606 7.549c0-1.047-.84-1.887-1.887-1.887s-1.887.84-1.887 1.887.84 1.887 1.887 1.887 1.887-.84 1.887-1.887zm15.732 8.493c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546s-.988-.206-1.327-.546L1.342 14.066C.59 13.329.0 11.899.0 10.852V4.718a1.9 1.9.0 011.887-1.887h6.134c1.047.0 2.477.59 3.229 1.342L21.792 14.7c.339.354.546.84.546 1.342zm5.661.0c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546-.767.0-1.15-.354-1.651-.87l6.93-6.93c.339-.339.546-.826.546-1.327s-.206-.988-.546-1.342L13.609 4.173c-.752-.752-2.182-1.342-3.229-1.342h3.303c1.047.0 2.477.59 3.229 1.342L27.454 14.7c.339.354.546.84.546 1.342z"/></symbol></svg><div class=wrapper><input type=checkbox class=hidden id=menu-control><header class=gdoc-header><div class="container flex align-center justify-between"><label for=menu-control class=gdoc-nav__control><svg class="icon gdoc_menu"><use xlink:href="#gdoc_menu"/></svg><svg class="icon gdoc_arrow_back"><use xlink:href="#gdoc_arrow_back"/></svg></label><a class=gdoc-header__link href=https://outfox.wiki><span class="gdoc-brand flex align-center"><img class=gdoc-brand__img src=../../../logo.png alt>
-<span class=gdoc-brand__title>Project OutFox Wiki</span></span></a>
-<span id=gdoc-dark-mode><svg class="icon gdoc_brightness_dark"><use xlink:href="#gdoc_brightness_dark"/></svg><svg class="icon gdoc_brightness_light"><use xlink:href="#gdoc_brightness_light"/></svg><svg class="icon gdoc_brightness_auto"><use xlink:href="#gdoc_brightness_auto"/></svg></span></div></header><main class="container flex flex-even"><aside class=gdoc-nav><nav><div class=gdoc-search><svg class="icon gdoc_search"><use xlink:href="#gdoc_search"/></svg><input type=text id=gdoc-search-input class=gdoc-search__input placeholder=Search... aria-label=Search maxlength=64><div class="gdoc-search__spinner spinner hidden"></div><ul id=gdoc-search-results class=gdoc-search__list></ul></div><section class=gdoc-nav--main><h2>Navigation</h2><ul class=gdoc-nav__list><li><input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
-<label for=navtree-4d9830bf class="flex justify-between"><span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex>Front Matter</span><ul class=gdoc-nav__list><li><span class=flex><a href=../../../user-guide/meta/about/ class=gdoc-nav__entry>About Project OutFox</a></span></li><li><span class=flex><a href=../../../user-guide/meta/faq/ class=gdoc-nav__entry>FAQ</a></span></li></ul></li><li><span class=flex>Setup</span><ul class=gdoc-nav__list><li><span class=flex><a href=../../../user-guide/setup/install/ class=gdoc-nav__entry>Installation</a></span></li><li><span class=flex><a href=../../../user-guide/setup/getting-started/ class=gdoc-nav__entry>Getting started</a></span></li><li><span class=flex><a href=../../../user-guide/setup/controllers/ class=gdoc-nav__entry>Configure controllers</a></span></li></ul></li><li><span class=flex>Features & Config</span><ul class=gdoc-nav__list><li><span class=flex><a href=../../../user-guide/config/folders/ class=gdoc-nav__entry>Content folders</a></span></li><li><span class=flex><a href=../../../user-guide/config/preferences/ class=gdoc-nav__entry>Preferences.ini</a></span></li></ul></li><li><span class=flex><a href=../../../user-guide/games/ class=gdoc-nav__entry>Game types</a></span></li></ul></li><li><input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
-<label for=navtree-6821e290 class="flex justify-between"><span class=flex>Developers and Creators</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle>
-<label for=navtree-e7ea7745 class="flex justify-between"><span class=flex><a href=../../../dev/actors/ class=gdoc-nav__entry>Lua and Actors</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/actors/General-DifferencesfromOlderSM/ class=gdoc-nav__entry>Behavioral differences from SM 3.95/ITG</a></span></li><li><span class=flex><a href=../../../dev/actors/ActorsLua-Anatomy+Structure/ class=gdoc-nav__entry>Anatomy of a Lua actor</a></span></li><li><span class=flex><a href=../../../dev/actors/ActorsLua-CommandList/ class=gdoc-nav__entry>Command List</a></span></li><li><span class=flex><a href=../../../dev/actors/ActorsLua-Tweening/ class=gdoc-nav__entry>Tweening</a></span></li><li><span class=flex><a href=../../../dev/actors/Converting-ini-to-Lua/ class=gdoc-nav__entry>Converting INI files to Lua</a></span></li><li><span class=flex><a href=../../../dev/actors/Converting-xml-to-Lua/ class=gdoc-nav__entry>Converting XML files to Lua</a></span></li></ul></li><li><input type=checkbox id=navtree-07f3f85e class=gdoc-nav__toggle>
-<label for=navtree-07f3f85e class="flex justify-between"><span class=flex><a href=../../../dev/effects/ class=gdoc-nav__entry>Effect Simfiles</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/effects/EffectFiles-ChartSegments/ class=gdoc-nav__entry>Chart segments</a></span></li><li><span class=flex><a href=../../../dev/effects/EffectFiles-ModifierFiles/ class=gdoc-nav__entry>Modifier Files</a></span></li></ul></li><li><input type=checkbox id=navtree-fb0e8f07 class=gdoc-nav__toggle checked>
-<label for=navtree-fb0e8f07 class="flex justify-between"><span class=flex><a href=../../../dev/mods/ class=gdoc-nav__entry>Guide to Modifiers</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/mods/Mods-0-Overview/ class=gdoc-nav__entry>Overview of modifiers</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-1-Speed-Mods/ class=gdoc-nav__entry>Speed</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-2-Perspective-Mods/ class=gdoc-nav__entry>Perspective</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-3-Column-Movement-Mods/ class=gdoc-nav__entry>Column movement</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-4-Scroll-Mods/ class=gdoc-nav__entry>Scroll</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-5-Rotation-Mods/ class=gdoc-nav__entry>Rotation</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-6-Zoom-Mods/ class=gdoc-nav__entry>Zoom</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-7-Acceleration-Mods/ class=gdoc-nav__entry>Acceleration</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-8-Visibility-Mods/ class=gdoc-nav__entry>Visibility</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-9-Path-Mods/ class="gdoc-nav__entry is-active">Path modifiers</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-10-Color+Gradient-Mods/ class=gdoc-nav__entry>Color modifiers</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-11-ModSplines/ class=gdoc-nav__entry>ModSplines</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-12-Chart-Mods/ class=gdoc-nav__entry>Chart modifiers</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-13-Miscelaneous-Mods/ class=gdoc-nav__entry>Miscelaneous modifiers</a></span></li></ul></li><li><span class=flex><a href=../../../dev/translation/ class=gdoc-nav__entry>Translation</a></span></li></ul></li></ul></section><section class=gdoc-nav--more></section></nav></aside><div class=gdoc-page><div class="gdoc-page__header flex flex-wrap
+Common values can be practically any value, due to its' wide use in modfiles.">
+<title>Path modifiers | Project OutFox Wiki</title>
+<link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
+<script src=../../../js/darkmode-ce906ea916.min.js></script>
+<link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
+<link rel=preload as=font href=../../../fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=../../../main-cc3cbe901b.min.css as=style>
+<link rel=stylesheet href=../../../main-cc3cbe901b.min.css media=all>
+<link rel=preload href=../../../mobile-249b801e7d.min.css as=style>
+<link rel=stylesheet href=../../../mobile-249b801e7d.min.css media="screen and (max-width: 45rem)">
+<link rel=preload href=../../../print-f79fc3e5d7.min.css as=style>
+<link rel=stylesheet href=../../../print-f79fc3e5d7.min.css media=print>
+<link rel=preload href=../../../custom.css as=style>
+<link rel=stylesheet href=../../../custom.css media=all>
+</head>
+<body itemscope itemtype=https://schema.org/WebPage><svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.526v2.947H5.755l8.351 8.421-2.105 2.105-12-12 12-12 2.105 2.105-8.351 8.421H24z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M5.965 10.526V6.035L0 12l5.965 5.965v-4.491H24v-2.947H5.965z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M18.035 10.526V6.035L24 12l-5.965 5.965v-4.491H0v-2.947h18.035z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_bitbucket" xmlns="http://www.w3.org/2000/svg"><path d="M15.905 13.355c.189 1.444-1.564 2.578-2.784 1.839-1.375-.602-1.375-2.784-.034-3.403 1.151-.705 2.818.223 2.818 1.564zm1.907-.361c-.309-2.44-3.076-4.056-5.328-3.042-1.426.636-2.389 2.148-2.32 3.747.086 2.097 2.08 3.815 4.176 3.626s3.729-2.234 3.472-4.331zm4.108-9.315c-.756-.997-2.045-1.169-3.179-1.358-3.214-.516-6.513-.533-9.727.034-1.066.172-2.269.361-2.939 1.323 1.1 1.031 2.664 1.186 4.073 1.358 2.544.327 5.156.344 7.699.017 1.426-.172 3.008-.309 4.073-1.375zm.979 17.788c-.481 1.684-.206 3.953-1.994 4.932-3.076 1.701-6.806 1.89-10.191 1.289-1.787-.327-3.884-.894-4.864-2.578-.43-1.65-.705-3.334-.98-5.018l.103-.275.309-.155c5.121 3.386 12.288 3.386 17.427.0.808.241.206 1.22.189 1.805zM26.01 4.951c-.584 3.764-1.255 7.51-1.908 11.257-.189 1.1-1.255 1.719-2.148 2.183-3.214 1.615-6.96 1.89-10.483 1.512-2.389-.258-4.829-.894-6.771-2.389-.911-.705-.911-1.908-1.083-2.922-.602-3.523-1.289-7.046-1.719-10.604.206-1.547 1.942-2.217 3.231-2.698C6.848.654 8.686.362 10.508.19c3.884-.378 7.854-.241 11.618.859 1.341.395 2.784.945 3.695 2.097.412.533.275 1.203.189 1.805z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15.268 4.392q.868.0 1.532.638t.664 1.506v17.463l-7.659-3.268-7.608 3.268V6.536q0-.868.664-1.506t1.532-.638h10.876zm4.34 14.144V4.392q0-.868-.638-1.532t-1.506-.664H6.537q0-.868.664-1.532T8.733.0h10.876q.868.0 1.532.664t.664 1.532v17.412z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_auto" xmlns="http://www.w3.org/2000/svg"><path d="M16.846 18.938h2.382L15.22 7.785h-2.44L8.772 18.938h2.382l.871-2.44h3.95zm7.087-9.062L27.999 14l-4.066 4.124v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809zm-11.385 4.937L14 10.282l1.452 4.531h-2.904z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_dark" xmlns="http://www.w3.org/2000/svg"><path d="M14 21.435q3.079.0 5.257-2.178T21.435 14t-2.178-5.257T14 6.565q-1.51.0-3.079.697 1.917.871 3.108 2.701T15.22 14t-1.191 4.037-3.108 2.701q1.568.697 3.079.697zm9.933-11.559L27.999 14l-4.066 4.124v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_light" xmlns="http://www.w3.org/2000/svg"><path d="M14 21.435q3.079.0 5.257-2.178T21.435 14t-2.178-5.257T14 6.565 8.743 8.743 6.565 14t2.178 5.257T14 21.435zm9.933-3.311v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809L27.999 14z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_cloud_off" xmlns="http://www.w3.org/2000/svg"><path d="M9.023 10.5H7q-1.914.0-3.281 1.395t-1.367 3.309 1.367 3.281T7 19.852h11.375zM3.5 4.976l1.477-1.477L24.5 23.022l-1.477 1.477-2.352-2.297H6.999q-2.898.0-4.949-2.051t-2.051-4.949q0-2.844 1.969-4.867t4.758-2.133zm19.086 5.578q2.242.164 3.828 1.832T28 16.351q0 3.008-2.461 4.758l-1.695-1.695q1.805-.984 1.805-3.063.0-1.422-1.039-2.461t-2.461-1.039h-1.75v-.602q0-2.68-1.859-4.539t-4.539-1.859q-1.531.0-2.953.711l-1.75-1.695Q11.431 3.5 14.001 3.5q2.953.0 5.496 2.078t3.09 4.977z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_code" xmlns="http://www.w3.org/2000/svg"><path d="M9.917 24.5a1.75 1.75.0 10-3.501.001 1.75 1.75.0 003.501-.001zm0-21a1.75 1.75.0 10-3.501.001A1.75 1.75.0 009.917 3.5zm11.666 2.333a1.75 1.75.0 10-3.501.001 1.75 1.75.0 003.501-.001zm1.75.0a3.502 3.502.0 01-1.75 3.026c-.055 6.581-4.721 8.039-7.82 9.023-2.898.911-3.846 1.349-3.846 3.117v.474a3.502 3.502.0 011.75 3.026c0 1.932-1.568 3.5-3.5 3.5s-3.5-1.568-3.5-3.5c0-1.294.711-2.424 1.75-3.026V6.526A3.502 3.502.0 014.667 3.5c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5a3.502 3.502.0 01-1.75 3.026v9.06c.93-.456 1.914-.766 2.807-1.039 3.391-1.075 5.323-1.878 5.359-5.687a3.502 3.502.0 01-1.75-3.026c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_date" xmlns="http://www.w3.org/2000/svg"><path d="M27.192 28.844V11.192H4.808v17.652h22.384zm0-25.689q1.277.0 2.253.976t.976 2.253v22.459q0 1.277-.976 2.216t-2.253.939H4.808q-1.352.0-2.291-.901t-.939-2.253V6.385q0-1.277.939-2.253t2.291-.976h1.577V.001h3.23v3.155h12.769V.001h3.23v3.155h1.577zm-3.155 11.267v3.155h-3.23v-3.155h3.23zm-6.46.0v3.155h-3.155v-3.155h3.155zm-6.384.0v3.155h-3.23v-3.155h3.23z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_download" xmlns="http://www.w3.org/2000/svg"><path d="M2.866 28.209h26.269v3.79H2.866v-3.79zm26.268-16.925L16 24.418 2.866 11.284h7.493V.001h11.283v11.283h7.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_email" xmlns="http://www.w3.org/2000/svg"><path d="M28.845 9.615v-3.23L16 14.422 3.155 6.385v3.23L16 17.577zm0-6.46q1.277.0 2.216.977T32 6.385v19.23q0 1.277-.939 2.253t-2.216.977H3.155q-1.277.0-2.216-.977T0 25.615V6.385q0-1.277.939-2.253t2.216-.977h25.69z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_git" xmlns="http://www.w3.org/2000/svg"><path d="M27.472 12.753 15.247.529a1.803 1.803.0 00-2.55.0l-2.84 2.84 2.137 2.137a2.625 2.625.0 013.501 3.501l3.499 3.499a2.625 2.625.0 11-1.237 1.237l-3.499-3.499c-.083.04-.169.075-.257.106v7.3a2.626 2.626.0 11-1.75.0v-7.3a2.626 2.626.0 01-1.494-3.607L8.62 4.606l-8.09 8.09a1.805 1.805.0 000 2.551l12.225 12.224a1.803 1.803.0 002.55.0l12.168-12.168a1.805 1.805.0 000-2.551z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_github" xmlns="http://www.w3.org/2000/svg"><path d="M16 .394c8.833.0 15.999 7.166 15.999 15.999.0 7.062-4.583 13.062-10.937 15.187-.813.146-1.104-.354-1.104-.771.0-.521.021-2.25.021-4.396.0-1.5-.5-2.458-1.083-2.958 3.562-.396 7.312-1.75 7.312-7.896.0-1.75-.625-3.167-1.646-4.291.167-.417.708-2.042-.167-4.25-1.333-.417-4.396 1.646-4.396 1.646a15.032 15.032.0 00-8 0S8.937 6.602 7.603 7.018c-.875 2.208-.333 3.833-.167 4.25-1.021 1.125-1.646 2.542-1.646 4.291.0 6.125 3.729 7.5 7.291 7.896-.458.417-.875 1.125-1.021 2.146-.917.417-3.25 1.125-4.646-1.333-.875-1.521-2.458-1.646-2.458-1.646-1.562-.021-.104.979-.104.979 1.042.479 1.771 2.333 1.771 2.333.938 2.854 5.396 1.896 5.396 1.896.0 1.333.021 2.583.021 2.979.0.417-.292.917-1.104.771C4.582 29.455-.001 23.455-.001 16.393-.001 7.56 7.165.394 15.998.394zM6.063 23.372c.042-.083-.021-.187-.146-.25-.125-.042-.229-.021-.271.042-.042.083.021.187.146.25.104.062.229.042.271-.042zm.646.709c.083-.062.062-.208-.042-.333-.104-.104-.25-.146-.333-.062-.083.062-.062.208.042.333.104.104.25.146.333.062zm.625.937c.104-.083.104-.25.0-.396-.083-.146-.25-.208-.354-.125-.104.062-.104.229.0.375s.271.208.354.146zm.875.875c.083-.083.042-.271-.083-.396-.146-.146-.333-.167-.417-.062-.104.083-.062.271.083.396.146.146.333.167.417.062zm1.187.521c.042-.125-.083-.271-.271-.333-.167-.042-.354.021-.396.146s.083.271.271.312c.167.062.354.0.396-.125zm1.313.104c0-.146-.167-.25-.354-.229-.187.0-.333.104-.333.229.0.146.146.25.354.229.187.0.333-.104.333-.229zm1.208-.208c-.021-.125-.187-.208-.375-.187-.187.042-.312.167-.292.312.021.125.187.208.375.167s.312-.167.292-.292z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_gitlab" xmlns="http://www.w3.org/2000/svg"><path d="M1.629 11.034 14 26.888.442 17.048a1.09 1.09.0 01-.39-1.203l1.578-4.811zm7.217.0h10.309l-5.154 15.854zM5.753 1.475l3.093 9.559H1.63l3.093-9.559a.548.548.0 011.031.0zm20.618 9.559 1.578 4.811c.141.437-.016.922-.39 1.203l-13.558 9.84 12.371-15.854zm0 0h-7.216l3.093-9.559a.548.548.0 011.031.0z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_heart" xmlns="http://www.w3.org/2000/svg"><path d="M16 29.714a1.11 1.11.0 01-.786-.321L4.072 18.643c-.143-.125-4.071-3.714-4.071-8 0-5.232 3.196-8.357 8.535-8.357 3.125.0 6.053 2.464 7.464 3.857 1.411-1.393 4.339-3.857 7.464-3.857 5.339.0 8.535 3.125 8.535 8.357.0 4.286-3.928 7.875-4.089 8.035L16.785 29.392c-.214.214-.5.321-.786.321z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_keyborad_arrow_down" xmlns="http://www.w3.org/2000/svg"><path d="M3.281 5.36 14 16.079 24.719 5.36 28 8.641l-14 14-14-14z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_keyborad_arrow_left" xmlns="http://www.w3.org/2000/svg"><path d="M25.875 28.25 22.125 32 6.126 16.001 22.125.002l3.75 3.75-12.25 12.25z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_keyborad_arrow_right" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 28.25 18.375 16 6.125 3.75 9.875.0l15.999 15.999L9.875 31.998z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_link" xmlns="http://www.w3.org/2000/svg"><path d="M24.037 7.963q3.305.0 5.634 2.366T32 16t-2.329 5.671-5.634 2.366h-6.46v-3.08h6.46q2.028.0 3.493-1.465t1.465-3.493-1.465-3.493-3.493-1.465h-6.46v-3.08h6.46zM9.615 17.578v-3.155h12.77v3.155H9.615zM3.005 16q0 2.028 1.465 3.493t3.493 1.465h6.46v3.08h-6.46q-3.305.0-5.634-2.366T0 16.001t2.329-5.671 5.634-2.366h6.46v3.08h-6.46q-2.028.0-3.493 1.465t-1.465 3.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_menu" xmlns="http://www.w3.org/2000/svg"><path d="M.001 5.334h31.998v3.583H.001V5.334zm0 12.416v-3.5h31.998v3.5H.001zm0 8.916v-3.583h31.998v3.583H.001z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_notification" xmlns="http://www.w3.org/2000/svg"><path d="M22.615 19.384l2.894 2.894v1.413H2.49v-1.413l2.894-2.894V12.25q0-3.365 1.716-5.856t4.745-3.231v-1.01q0-.875.606-1.514T13.999.0t1.548.639.606 1.514v1.01q3.029.74 4.745 3.231t1.716 5.856v7.134zM14 27.999q-1.211.0-2.053-.808t-.841-2.019h5.788q0 1.144-.875 1.986T14 27.999z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_path" xmlns="http://www.w3.org/2000/svg"><path d="M28 12.62h-9.793V8.414h-2.826v11.173h2.826v-4.206H28V26.62h-9.793v-4.206H12.62v-14H9.794v4.206H.001V1.381h9.793v4.206h8.413V1.381H28V12.62z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_person" xmlns="http://www.w3.org/2000/svg"><path d="M16 20.023q5.052.0 10.526 2.199t5.473 5.754v4.023H0v-4.023q0-3.555 5.473-5.754t10.526-2.199zM16 16q-3.275.0-5.614-2.339T8.047 8.047t2.339-5.661T16 0t5.614 2.386 2.339 5.661-2.339 5.614T16 16z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_search" xmlns="http://www.w3.org/2000/svg"><path d="M11.925 20.161q3.432.0 5.834-2.402t2.402-5.834-2.402-5.834-5.834-2.402-5.834 2.402-2.402 5.834 2.402 5.834 5.834 2.402zm10.981.0L32 29.255 29.255 32l-9.094-9.094v-1.458l-.515-.515q-3.26 2.831-7.721 2.831-4.976.0-8.45-3.432T.001 11.925t3.474-8.45 8.45-3.474 8.407 3.474 3.432 8.45q0 1.802-.858 4.075t-1.973 3.646l.515.515h1.458z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_shield" xmlns="http://www.w3.org/2000/svg"><path d="M22.167 15.166V3.5h-8.166v20.726c.93-.492 2.424-1.349 3.883-2.497 1.95-1.531 4.284-3.919 4.284-6.562zm3.499-13.999v14c0 7.674-10.737 12.523-11.192 12.724-.146.073-.31.109-.474.109s-.328-.036-.474-.109c-.456-.201-11.192-5.049-11.192-12.724v-14C2.334.529 2.863.0 3.501.0H24.5c.638.0 1.167.529 1.167 1.167z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_tags" xmlns="http://www.w3.org/2000/svg"><path d="M6.606 7.549c0-1.047-.84-1.887-1.887-1.887s-1.887.84-1.887 1.887.84 1.887 1.887 1.887 1.887-.84 1.887-1.887zm15.732 8.493c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546s-.988-.206-1.327-.546L1.342 14.066C.59 13.329.0 11.899.0 10.852V4.718a1.9 1.9.0 011.887-1.887h6.134c1.047.0 2.477.59 3.229 1.342L21.792 14.7c.339.354.546.84.546 1.342zm5.661.0c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546-.767.0-1.15-.354-1.651-.87l6.93-6.93c.339-.339.546-.826.546-1.327s-.206-.988-.546-1.342L13.609 4.173c-.752-.752-2.182-1.342-3.229-1.342h3.303c1.047.0 2.477.59 3.229 1.342L27.454 14.7c.339.354.546.84.546 1.342z"/></symbol></svg>
+<div class=wrapper>
+<input type=checkbox class=hidden id=menu-control>
+<header class=gdoc-header>
+<div class="container flex align-center justify-between">
+<label for=menu-control class=gdoc-nav__control><svg class="icon gdoc_menu"><use xlink:href="#gdoc_menu"/></svg><svg class="icon gdoc_arrow_back"><use xlink:href="#gdoc_arrow_back"/></svg>
+</label>
+<a class=gdoc-header__link href=https://outfox.wiki>
+<span class="gdoc-brand flex align-center">
+<img class=gdoc-brand__img src=../../../logo.png alt>
+<span class=gdoc-brand__title>Project OutFox Wiki</span>
+</span>
+</a>
+<span id=gdoc-dark-mode><svg class="icon gdoc_brightness_dark"><use xlink:href="#gdoc_brightness_dark"/></svg><svg class="icon gdoc_brightness_light"><use xlink:href="#gdoc_brightness_light"/></svg><svg class="icon gdoc_brightness_auto"><use xlink:href="#gdoc_brightness_auto"/></svg>
+</span>
+</div>
+</header>
+<main class="container flex flex-even">
+<aside class=gdoc-nav>
+<nav>
+<div class=gdoc-search><svg class="icon gdoc_search"><use xlink:href="#gdoc_search"/></svg>
+<input type=text id=gdoc-search-input class=gdoc-search__input placeholder=Search... aria-label=Search maxlength=64>
+<div class="gdoc-search__spinner spinner hidden"></div>
+<ul id=gdoc-search-results class=gdoc-search__list></ul>
+</div>
+<section class=gdoc-nav--main>
+<h2>Navigation</h2>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
+<label for=navtree-4d9830bf class="flex justify-between">
+<span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>Front Matter</span>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../user-guide/meta/about/ class=gdoc-nav__entry>
+About Project OutFox
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../user-guide/meta/faq/ class=gdoc-nav__entry>
+FAQ
+</a>
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span class=flex>Setup</span>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../user-guide/setup/install/ class=gdoc-nav__entry>
+Installation
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../user-guide/setup/getting-started/ class=gdoc-nav__entry>
+Getting started
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../user-guide/setup/controllers/ class=gdoc-nav__entry>
+Configure controllers
+</a>
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span class=flex>Features & Config</span>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../user-guide/config/folders/ class=gdoc-nav__entry>
+Content folders
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../user-guide/config/preferences/ class=gdoc-nav__entry>
+Preferences.ini
+</a>
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span class=flex>
+<a href=../../../user-guide/games/ class=gdoc-nav__entry>
+Game types
+</a>
+</span>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
+<label for=navtree-6821e290 class="flex justify-between">
+<span class=flex>Developers and Creators</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle>
+<label for=navtree-e7ea7745 class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/actors/ class=gdoc-nav__entry>
+Lua and Actors
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/actors/General-DifferencesfromOlderSM/ class=gdoc-nav__entry>
+Behavioral differences from SM 3.95/ITG
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/actors/ActorsLua-Anatomy+Structure/ class=gdoc-nav__entry>
+Anatomy of a Lua actor
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/actors/ActorsLua-CommandList/ class=gdoc-nav__entry>
+Command List
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/actors/ActorsLua-Tweening/ class=gdoc-nav__entry>
+Tweening
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/actors/Converting-ini-to-Lua/ class=gdoc-nav__entry>
+Converting INI files to Lua
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/actors/Converting-xml-to-Lua/ class=gdoc-nav__entry>
+Converting XML files to Lua
+</a>
+</span>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=navtree-07f3f85e class=gdoc-nav__toggle>
+<label for=navtree-07f3f85e class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/effects/ class=gdoc-nav__entry>
+Effect Simfiles
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/effects/EffectFiles-ChartSegments/ class=gdoc-nav__entry>
+Chart segments
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/effects/EffectFiles-ModifierFiles/ class=gdoc-nav__entry>
+Modifier Files
+</a>
+</span>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=navtree-fb0e8f07 class=gdoc-nav__toggle checked>
+<label for=navtree-fb0e8f07 class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/mods/ class=gdoc-nav__entry>
+Guide to Modifiers
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-0-Overview/ class=gdoc-nav__entry>
+Overview of modifiers
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-1-Speed-Mods/ class=gdoc-nav__entry>
+Speed
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-2-Perspective-Mods/ class=gdoc-nav__entry>
+Perspective
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-3-Column-Movement-Mods/ class=gdoc-nav__entry>
+Column movement
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-4-Scroll-Mods/ class=gdoc-nav__entry>
+Scroll
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-5-Rotation-Mods/ class=gdoc-nav__entry>
+Rotation
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-6-Zoom-Mods/ class=gdoc-nav__entry>
+Zoom
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-7-Acceleration-Mods/ class=gdoc-nav__entry>
+Acceleration
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-8-Visibility-Mods/ class=gdoc-nav__entry>
+Visibility
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-9-Path-Mods/ class="gdoc-nav__entry is-active">
+Path modifiers
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-10-Color+Gradient-Mods/ class=gdoc-nav__entry>
+Color modifiers
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-11-ModSplines/ class=gdoc-nav__entry>
+ModSplines
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-12-Chart-Mods/ class=gdoc-nav__entry>
+Chart modifiers
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-13-Miscelaneous-Mods/ class=gdoc-nav__entry>
+Miscelaneous modifiers
+</a>
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/translation/ class=gdoc-nav__entry>
+Translation
+</a>
+</span>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class=gdoc-nav--more>
+</section>
+</nav>
+</aside>
+<div class=gdoc-page>
+<div class="gdoc-page__header flex flex-wrap
 justify-between
-hidden-mobile" itemprop=breadcrumb><div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg><ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li>/</li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li>/</li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mods/ href=../../../dev/mods/><span itemprop=name>Guide to Modifiers</span></a><meta itemprop=position content="3"></li><li>/</li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Path modifiers</span><meta itemprop=position content="4"></li></ol></div></div><article class="gdoc-markdown gdoc-markdown__align--left"><h1>Path modifiers</h1><p>Path modifiers affect the path a note takes to the receptor, often curving it in some way or creating a type of wave in the movement.</p><div class=gdoc-page__anchorwrap><h2 id=drunk>Drunk
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#drunk class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Drunk" href=#drunk><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Drunk makes the notes and receptors move left and right in a constantly shifting sinusoidal wave. There are extra variants for the Y and Z axis, as well as tangent variants.</p><p>Common values can be practically any value, due to its' wide use in modfiles. Try starting with -200 to 200% for an initial effect.</p><p>Quirks: When combined with Tipsy in SM5.1 and earlier, hold bodies may detatch from the hold head. The phase of the sinusoidal wave depends on game uptime unless the mod timer is changed.</p><p>Available variants: Drunk, DrunkY, DrunkZ, TanDrunk, TanDrunkY, TanDrunkZ</p><p>Available variants (modstring): drunk, drunky, drunkz, tandrunk, tandrunky, tandrunkz</p><p>PlayerOptions format: &lt;Drunk variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Drunk(3, 2)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*2 300% drunk</code></p><p><video src=../../../mods/vid/drunk.webm controls>Drunk video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=drunkoffset>DrunkOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#drunkoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrunkOffset" href=#drunkoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offsets the phase of the sinusoidal wave, which is added onto the offset caused by time.</p><p>Available variants: DrunkOffset, DrunkYOffset, DrunkZOffset, TanDrunkOffset, TanDrunkYOffset, TanDrunkZOffset</p><p>Available variants (modstring): drunkoffset, drunkyoffset, drunkzoffset, tandrunkoffset, tandrunkyoffset, tandrunkzoffset</p><p>PlayerOptions format: &lt;DrunkOffset variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=drunkperiod>DrunkPeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#drunkperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrunkPeriod" href=#drunkperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Alters the period of the sinusoidal wave. Positive values decrease the period, negative values increase the period. -100% just results in the columns moving, but the notes won&rsquo;t go back and forth.</p><p>Available variants: DrunkPeriod, DrunkYPeriod, DrunkZPeriod, TanDrunkPeriod, TanDrunkYPeriod, TanDrunkZPeriod</p><p>Available variants (modstring): drunkperiod, drunksize (NotITG alias for drunkperiod), drunkyperiod, drunkysize (NotITG alias for drunkyperiod), drunkzperiod, drunkzsize (NotITG alias for drunkzperiod), tandrunkperiod, tandrunksize (NotITG alias for tandrunkperiod), tandrunkyperiod, tandrunkysize (NotITG alias for tandrunkyperiod), tandrunkzperiod, tandrunkzsize (NotITG alias for tandrunkzperiod)</p><p>PlayerOptions format: &lt;DrunkPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=drunkspacing>DrunkSpacing
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#drunkspacing class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrunkSpacing" href=#drunkspacing><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Alters the amount of space between the columns, and is cyclical like DrunkOffset. Used to be called &ldquo;DrunkOffset&rdquo; before SM5.3 and NotITG v4.</p><p>Available variants: DrunkSpacing, DrunkYSpacing, DrunkZSpacing, TanDrunkSpacing, TanDrunkYSpacing, TanDrunkZSpacing</p><p>Available variants (modstring): drunkspacing, drunkyspacing, drunkzspacing, tandrunkspacing, tandrunkyspacing, tandrunkzspacing</p><p>PlayerOptions format: &lt;DrunkSpacing variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=drunkspeed>DrunkSpeed
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#drunkspeed class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrunkSpeed" href=#drunkspeed><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects the speed of Drunk through a multiplier. Positive numbers speed it up, negative numbers slow it down, -100% freezes the effect. Will look really jittery when using game uptime as the mod timer.</p><p>Available variants: DrunkSpeed, DrunkYSpeed, DrunkZSpeed, TanDrunkSpeed, TanDrunkYSpeed, TanDrunkZSpeed</p><p>Available variants (modstring): drunkspeed, drunkyspeed, drunkzspeed, tandrunkspeed, tandrunkyspeed, tandrunkzspeed</p><p>PlayerOptions format: &lt;DrunkSpeed variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=bounce>Bounce
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bounce class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Bounce" href=#bounce><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Notes bounce to the right. There&rsquo;s also a Z axis variant that has notes bounce towards the player.</p><p>100% is good enough to give a good idea for the effect.</p><p>Quirks: N/A</p><p>Available variants: Bounce, BounceZ</p><p>Available variants (modstring): bounce, bouncez</p><p>PlayerOptions format: &lt;Bounce variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Bounce(1, 0.25)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*0.25 100% bounce</code></p><p><video src=../../../mods/vid/bounce.webm controls>Bounce video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-1>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=bounceperiod>BouncePeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bounceperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BouncePeriod" href=#bounceperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects the period of the bouncing. Positive numbers increase the period, while negative numbers decrease the period. -100% moves the columns to the highest point of the bounce.</p><p>Available variants: BouncePeriod, BounceZPeriod</p><p>Available variants (modstring): bounceperiod, bouncezperiod</p><p>PlayerOptions format: &lt;BouncePeriod variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=bounceoffset>BounceOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bounceoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BounceOffset" href=#bounceoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offsets the phase of the bounce.</p><p>Available variants: BounceOffset, BounceZOffset</p><p>Available variants (modstring): bounceoffset, bouncezoffset</p><p>PlayerOptions format: &lt;BounceOffset variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=tornado>Tornado
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#tornado class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Tornado" href=#tornado><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Notes swirl around as they go to the receptor. Has a Z axis variant, as well as tangent variants.</p><p>Common values range from -200 to 200%</p><p>Quirks: N/A</p><p>Available variants: Tornado, TornadoZ, TanTornado, TanTornadoZ</p><p>Available variants (modstring): tornado, tornadoz, tantornado, tantornadoz</p><p>PlayerOptions format: &lt;Tornado variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Tornado(1, 0.2)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*0.2 100% tornado</code></p><p><video src=../../../mods/vid/tornado.webm controls>Tornado video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-2>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-2 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-2><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=tornadooffset>TornadoOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#tornadooffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TornadoOffset" href=#tornadooffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offsets the phase of the sinusoidal curves for each column. Large values are needed for noticable effects.</p><p>Available variants: TornadoOffset, TornadoZOffset, TanTornadoOffset, TanTornadoZOffset</p><p>Available variants (modstring): tornadooffset, tornadozoffset, tantornadooffset, tantornadozoffset</p><p>PlayerOptions format: &lt;TornadoOffset variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=tornadoperiod>TornadoPeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#tornadoperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TornadoPeriod" href=#tornadoperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects the period of the sinusoidal curves for each column. Positive values decrease the period, while negative values increase the period. -100% visually removes the effect.</p><p>Available variants:</p><p>Available variants (modstring):</p><p>PlayerOptions format: &lt;TornadoPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=bumpy>Bumpy
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bumpy class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Bumpy" href=#bumpy><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Notes go back and forth on the z axis as they go towards the receptor. Has variants for all axis as well as tangent variants and column-specific variants. Unlike the variants for Stealth and Dark, this does not add onto the values for normal Bumpy.</p><p>Common values could be practically anywhere due to its' wide use in modfiles. Try starting with -300 to 300% for an initial amount.</p><p>Quirks: N/A</p><p>Available variants: Bumpy, BumpyX, BumpyY, TanBumpy, TanBumpyY, TanBumpyZ</p><p>Available variants (column-specific): BumpyCol, BumpyXCol, BumpyYCol, TanBumpyCol, TanBumpyXCol, TanBumpyYCol</p><p>Available variants (modstring): bumpy, bumpyx, bumpyy, bumpyz (NotITG alias for bumpy), bumpy&lt;column>, bumpyx&lt;column>, bumpyy&lt;column>, bumpyz&lt;column> (NotITG alias for bumpy&lt;column>), tanbumpy, tanbumpyx, tanbumpyy, tanbumpyz (NotITG alias for tanbumpy), tanbumpy&lt;column>, tanbumpyx&lt;column>, tanbumpyy&lt;column>, tanbumpyz&lt;column> (NotITG alias for tanbumpy&lt;column>)</p><p>PlayerOptions format: &lt;Bumpy variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Bumpy(3, 0.5)</code></p><p>Column-specific format: &lt;Column-specific variant>(&lt;column>, &lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>BumpyCol(1, -3, 3, true):BumpyCol(2, -1, 1, true):BumpyCol(3, 1, 1, true):BumpyCol(4, 3, 3)</code>
-Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*0.5 300% Bumpy</code></p><p><video src=../../../mods/vid/bumpy.webm controls>Bumpy video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-3>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-3 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-3><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=bumpyoffset>BumpyOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bumpyoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BumpyOffset" href=#bumpyoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offsets the phase of the back and forth wave. The min/max and middle points are reachable through increments of 25%.</p><p>Available variants: BumpyOffset, BumpyXOffset, BumpyYOffset, TanBumpyOffset, TanBumpyXOffset, TanBumpyYOffset</p><p>Available variants (column-specific): BumpyOffsetCol, BumpyXOffsetCol, BumpyYOffsetCol, TanBumpyOffsetCol, TanBumpyXOffsetCol, TanBumpyYOffsetCol</p><p>Available variants (modstring): bumpyoffset, bumpyxoffset, bumpyyoffset, bumpyzoffset (NotITG alias for bumpyoffset), bumpyoffset&lt;column>, bumpyxoffset&lt;column>, bumpyyoffset&lt;column>, bumpyzoffset&lt;column> (NotITG alias for bumpyoffset&lt;column>), tanbumpyoffset, tanbumpyxoffset, tanbumpyyoffset, tanbumpyoffset&lt;column>, tanbumpyxoffset&lt;column>, tanbumpyyoffset&lt;column></p><p>PlayerOptions format: &lt;BumpyOffset variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Column-specific format: &lt;Column-specific variant>(&lt;column>, &lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=bumpyperiod>BumpyPeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bumpyperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BumpyPeriod" href=#bumpyperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects the period of the back and forth wave. Positive values increase the period, while negative values decrease the period. -100% stops the effect and moves the columns to the negative-most value.</p><p>Available variants: BumpyPeriod, BumpyXPeriod, BumpyYPeriod, TanBumpyPeriod, TanBumpyXPeriod, TanBumpyYPeriod</p><p>Available variants (column-specific): BumpyPeriodCol, BumpyXPeriodCol, BumpyYPeriodCol, TanBumpyPeriodCol, TanBumpyXPeriodCol, TanBumpyYPeriodCol</p><p>Available variants (modstring): bumpyperiod, bumpyxperiod, bumpyyperiod, bumpyzperiod (NotITG alias for bumpyperiod), bumpysize (NotITG alias for bumpyperiod), bumpyxsize (NotITG alias for bumpyxperiod), bumpyysize (NotITG alias for bumpyyperiod), bumpyzsize (NotITG alias for bumpyperiod), bumpyperiod&lt;column>, bumpyxperiod&lt;column>, bumpyyperiod&lt;column>, bumpyzperiod&lt;column> (NotITG alias for bumpyperiod&lt;column>), tanbumpyperiod, tanbumpyxperiod, tanbumpyyperiod, tanbumpyzperiod (NotITG alias for tanbumpyperiod), tanbumpysize (NotITG alias for tanbumpyperiod), tanbumpyxsize (NotITG alias for tanbumpyxperiod), tanbumpyysize (NotITG alias for tanbumpyyperiod), tanbumpyzsize (NotITG alias for tanbumpyperiod), tanbumpyperiod&lt;column>, tanbumpyxperiod&lt;column>, tanbumpyyperiod&lt;column></p><p>PlayerOptions format: &lt;BumpyPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Column-specific format: &lt;Column-specific variant>(&lt;column>, &lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=beat>Beat
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#beat class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Beat" href=#beat><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Notes & receptors pulse to the left and right to the beat. Contrary to popular belief, it is not the only mod. There are variants for each axis.</p><p>Common values range from -250% to 200%, but could be practically anything because of its' wide use in modfiles.</p><p>Quirks: Beat in OpenITG & NotITG does not respond well to very high BPMs.</p><p>Available variants: Beat, BeatY, BeatZ</p><p>Available variants (modstring): beat, beaty, beatz</p><p>PlayerOptions format: &lt;Beat variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Beat(1.5, 0.2)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*0.2 150% Beat</code></p><p><video src=../../../mods/vid/beat.webm controls>Beat video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-4>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-4 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-4><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=beatmult>BeatMult
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#beatmult class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BeatMult" href=#beatmult><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Multiply the BPM that Beat is reacting to. Negative values slow down, while positive values speed up. -50% is half, while 100% is double.</p><p>Available variants: BeatMult, BeatYMult, BeatZMult</p><p>Available variants (modstring): beatmult, beatymult, beatzmult</p><p>PlayerOptions format: &lt;BeatMult variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=beatoffset>BeatOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#beatoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BeatOffset" href=#beatoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offset the beat that the effect is going off of. 50% makes the effect act on the half beat instead of on the beat.</p><p>Available variants: BeatOffset, BeatYOffset, BeatZOffset</p><p>Available variants (modstring): beatoffset, beatyoffset, beatzoffset</p><p>PlayerOptions format: &lt;BeatOffset variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=beatperiod>BeatPeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#beatperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BeatPeriod" href=#beatperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects the period of the wave used. Positive values increase the period, negative values reduce the period. -100% makes the field shift back and forth to the beat.</p><p>Available variants: BeatPeriod, BeatYPeriod, BeatZPeriod</p><p>Available variants (modstring): beatperiod, beatyperiod, beatzperiod, beatsize (NotITG alias for beatperiod), beatysize (NotITG alias for beatyperiod), beatzsize (NotITG alias for beatzperiod)</p><p>PlayerOptions format: &lt;BeatPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=beatcap-notitg-only>BeatCap (NotITG only)
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#beatcap-notitg-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BeatCap (NotITG only)" href=#beatcap-notitg-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: When active (any nonzero magnitude), Beat acts like it does in SM5, being able to properly react to high BPMs.</p><p>Available variants (modstring): beatcap, beatcapy, beatcapz</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=zigzag>Zigzag
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#zigzag class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Zigzag" href=#zigzag><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Notes move left and right on a triangle wave. There is also a Z axis variant.</p><p>Common values range from -400 to 400%</p><p>Quirks: N/A</p><p>Available variants: Zigzag, ZigzagZ</p><p>Available variants (modstring): zigzag, zigzagz</p><p>PlayerOptions format: &lt;Zigzag variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Zigzag(2, 2)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*2 200% zigzag</code></p><p><video src=../../../mods/vid/zigzag.webm controls>Zigzag video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-5>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-5 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-5><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=zigzagoffset>ZigzagOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#zigzagoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ZigzagOffset" href=#zigzagoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offsets the phase of the triangle wave used.</p><p>Available variants: ZigzagOffset, ZigzagZOffset</p><p>Available variants (modstring): zigzagoffset, zigzagzoffset</p><p>PlayerOptions format: &lt;ZigzagOffset variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=zigzagperiod>ZigzagPeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#zigzagperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ZigzagPeriod" href=#zigzagperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects the period of the triangle wave. Positive values increase the period, negative values decrease the period, -100% shifts the field to the negative extrema.</p><p>Available variants: ZigzagPeriod, ZigzagZPeriod</p><p>Available variants (modstring): zigzagperiod, zigzagzperiod, zigzagsize (NotITG alias for zigzagperiod), zigzagzsize (NotITG alias for zigzagzperiod)</p><p>PlayerOptions format: &lt;ZigzagPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=sawtooth>Sawtooth
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#sawtooth class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Sawtooth" href=#sawtooth><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Notes move left and right on a sawtooth wave. There is also a Z axis variant.</p><p>Common values range from -200 to 200%.</p><p>Quirks: N/A</p><p>Available variants: Sawtooth, SawtoothZ</p><p>Available variants (modstring): sawtooth, sawtoothz</p><p>PlayerOptions format: &lt;Sawtooth variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Sawtooth(2, 1)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*1 200% sawtooth</code></p><p><video src=../../../mods/vid/sawtooth.webm controls>Sawtooth video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-6>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-6 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-6><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=sawtoothoffset-notitg-only>SawtoothOffset (NotITG only)
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#sawtoothoffset-notitg-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SawtoothOffset (NotITG only)" href=#sawtoothoffset-notitg-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offsets the sawtooth wave.</p><p>Available variants (modstring): sawtoothoffset, sawtoothzoffset</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=sawtoothperiod>SawtoothPeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#sawtoothperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SawtoothPeriod" href=#sawtoothperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects the period of the sawtooth wave. Positive values increase the period, negative values decrease the period. -100% makes the notefield disappear.</p><p>Available variants: SawtoothPeriod, SawtoothZPeriod</p><p>Available variants (modstring): sawtoothperiod, sawtoothzperiod, sawtoothsize (NotITG alias for sawtoothperiod), sawtoothzsize (NotITG alias for sawtoothzperiod)</p><p>PlayerOptions format: &lt;SawtoothPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=square>Square
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#square class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Square" href=#square><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Notes & receptors are placed onto a (mostly) square wave. There is also a Z axis variant.</p><p>Common values range from -150 to 150%</p><p>Quirks: The wave period is different from NotITG. Refer to <a href=https://gist.github.com/MrThatKid/2a8525a1abe1cb95073ef4eb64590b00>https://gist.github.com/MrThatKid/2a8525a1abe1cb95073ef4eb64590b00</a></p><p>Available variants: Square, SquareZ</p><p>Available variants (modstring): square, squarez</p><p>PlayerOptions format: &lt;Square variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Square(-0.5, 1)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*1 -50% square</code></p><p><video src=../../../mods/vid/square.webm controls>Square video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-7>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-7 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-7><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=squareoffset>SquareOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#squareoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SquareOffset" href=#squareoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offsets the square wave used.</p><p>Available variants: SquareOffset, SquareZOffset</p><p>Available variants (modstring): squareoffset, squarezoffset</p><p>PlayerOptions format: &lt;SquareOffset variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=squareperiod>SquarePeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#squareperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SquarePeriod" href=#squareperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Alters the period of the square wave. Positive values increase the period, negative values decrease the period. -100% shifts the field to the positive extrema.</p><p>Available variants: SquarePeriod, SquareZPeriod</p><p>Available variants (modstring): squareperiod, sqaurezperiod</p><p>PlayerOptions format: &lt;SquarePeriod variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=digital>Digital
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#digital class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Digital" href=#digital><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Notes are placed onto a &lsquo;digital&rsquo; sine wave. (Think of a sine wave, but more blocky looking). There is a variant for the Z axis, as well as tangent variants.
-Common values range from -400 to 400%</p><p>Quirks: The wave period is different from NotITG. Refer to <a href=https://gist.github.com/MrThatKid/2a8525a1abe1cb95073ef4eb64590b00>https://gist.github.com/MrThatKid/2a8525a1abe1cb95073ef4eb64590b00</a></p><p>Available variants: Digital, DigitalZ, TanDigital, TanDigitalZ</p><p>Available variants (modstring): Digital, DigitalZ, TanDigital, TanDigitalZ</p><p>PlayerOptions format: &lt;Digital variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Digital(-1.5, 3)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*3 -150% digital</code></p><p><video src=../../../mods/vid/digital.webm controls>Digital video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-8>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-8 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-8><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=digitalsteps>DigitalSteps
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#digitalsteps class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DigitalSteps" href=#digitalsteps><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects how many &lsquo;levels&rsquo; the digital sine wave has. Positive values make the wave smoother, while negative values make the wave more blocky. -50% visually removes the effect, -100% hides the notefield.</p><p>Available variants: DigitalSteps, DigitalZSteps, TanDigitalSteps, TanDigitalZSteps</p><p>Available variants (modstring): digitalsteps, digitalzsteps, tandigitalsteps, tandigitalzsteps</p><p>PlayerOptions format: &lt;DigitalSteps variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=digitaloffset>DigitalOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#digitaloffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DigitalOffset" href=#digitaloffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offsets the sine wave used in Digital. It&rsquo;s really granular, so large amounts and large approach rates may be needed.</p><p>Available variants: DigitalOffset, DigitalZOffset, TanDigitalOffset, TanDigitalZOffset</p><p>Available variants (modstring): digitaloffset, digitalzoffset, tandigitaloffset, tandigitalzoffset</p><p>PlayerOptions format: &lt;DigitalOffset variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=digitalperiod>DigitalPeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#digitalperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DigitalPeriod" href=#digitalperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects the period of the sine wave. Positive values increase the period, negative values decrease the period. -100% shifts the field to the negative extrema.</p><p>Available variants: DigitalPeriod, DigitalZPeriod, TanDigitalPeriod, TanDigitalZPeriod</p><p>Available variants (modstring): digitalperiod, digitalzperiod, tandigitalperiod, tandigitalzperiod</p><p>PlayerOptions format: &lt;DigitalPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=spiral>Spiral
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#spiral class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Spiral" href=#spiral><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Spiral is a set of modifiers that move notes in a spiral towards the receptors. There are three axis variants that are usually combined to make the full spiral effect (X + Y, Y + Z, X + Z)</p><p>Common values range from -200 to 200%, with a period of -99% as a starting point.</p><p>Quirks: When at 50% Reverse, the spiral effect looks much more like a full spiral. SpiralY does not affect holds in SM5.3 unless some NoteField functions are used (Refer to the SpiralHolds sub modifier for more details. The video example uses <code>NoteField:set_holds_use_nonstandard_y_pos</code> only.)</p><p>Available variants: SpiralX, SpiralY, SpiralZ</p><p>Available variants (modstring): spiralx, spiraly, spiralz</p><p>PlayerOptions format: &lt;Spiral variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>SpiralX(1,1,true):SpiralY(1,1,true):SpiralXPeriod(-0.99,1,true):SpiralYPeriod(-0.99,1,true)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*1 100% spiralx, *1 100% spiraly, *1 -99% spiralxperiod, *1 -99% spiralyperiod</code></p><p><video src=../../../mods/vid/spiral.webm controls>Spiral video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-9>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-9 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-9><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=spiraloffset>SpiralOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#spiraloffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SpiralOffset" href=#spiraloffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offsets the waves used for the spiral.</p><p>Available variants: SpiralXOffset, SpiralYOffset, SpiralZOffset</p><p>Available variants (modstring): spiralxoffset, spiralyoffset, spiralzoffset</p><p>PlayerOptions format: &lt;SpiralOffset variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=spiralperiod>SpiralPeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#spiralperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SpiralPeriod" href=#spiralperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects the period of the waves used in spiral. Positive values decrease the period, negative values increase the period, -100% just has notes come in at a diagonal line.</p><p>Available variants: SpiralXPeriod, SpiralYPeriod, SpiralZPeriod</p><p>Available variants (modstring): spiralxperiod, spiralyperiod, spiralzperiod</p><p>PlayerOptions format: &lt;SpiralPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=spiralholds-notitg-only>SpiralHolds (NotITG only)
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#spiralholds-notitg-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SpiralHolds (NotITG only)" href=#spiralholds-notitg-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: When at a positive amount, the hold renderer is switched out for one that can handle spirals better with proper uv scaling. When at -100%, the hold render uses unscaled uvs for the holds, emulating old spiralholds behavior.</p><p>The old behavior can be mostly replicated in SM5 by combining <code>NoteField:set_holds_orient_to_travel_dir</code> with <code>NoteField:set_holds_use_nonstandard_y_pos</code> (works for most cases) or <code>NoteField:set_hold_length_uses_beats</code> (when dealing with ~50% reverse, holds become much more smooth)</p><p>Available variants (modstring): spiralholds, holdtype (alias)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=asymptote>Asymptote
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#asymptote class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Asymptote" href=#asymptote><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: The receptors become the zero point of an asymptote on the x axis, while notes get closer to it on the x axis.</p><p>There aren&rsquo;t any real common values because this modifier isn&rsquo;t used that much.</p><p>Quirks: N/A</p><p>PlayerOptions format: &lt;Asymptote variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Asymptote(1, 1)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*1 100% asymptote</code></p><p><video src=../../../mods/vid/asymptote.webm controls>Asymptote video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-10>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-10 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-10><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=asymptoteoffset>AsymptoteOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#asymptoteoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AsymptoteOffset" href=#asymptoteoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Moves the asymptote line. Negative values move it down.</p><p>PlayerOptions format: AsymptoteOffset(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> asymptoteoffset</p><div class=gdoc-page__anchorwrap><h2 id=asymptotescale>AsymptoteScale
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#asymptotescale class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AsymptoteScale" href=#asymptotescale><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Affects the curve before veering off towards the asymptote. Negative values make the curve more noticable. Going past -100% flips the curve. Being at -100% hides the notefield. (Has an alias of &ldquo;asymptotesize&rdquo; in NotITG)</p><p>PlayerOptions format: AsymptoteScale(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> asymptotescale</p><div class=gdoc-page__anchorwrap><h2 id=parabola>Parabola
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#parabola class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Parabola" href=#parabola><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: A set of modifiers that turn the path into a parabola, with the zero point being the receptors. There are variants for all axis.</p><p>Common values range from -500 to 500%</p><p>Quirks: N/A</p><p>Available variants: ParabolaX, ParabolaY, ParabolaZ</p><p>Available variants (modstring): parabolax, parabolay, parabolaz</p><p>PlayerOptions format: &lt;Parabola variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>ParabolaX(2, 0.125)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*0.125 200% parabolax</code></p><p><video src=../../../mods/vid/parabola.webm controls>Parabola video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-11>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-11 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-11><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=parabolaoffset>ParabolaOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#parabolaoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ParabolaOffset" href=#parabolaoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Moves the zero point of the parabola.</p><p>Available variants: ParabolaXOffset, ParabolaYOffset, ParabolaZOffset</p><p>Available variants (modstring): parabolaxoffset, parabolayoffset, parabolazoffset</p><p>PlayerOptions format: &lt; variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=cubic>Cubic
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#cubic class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Cubic" href=#cubic><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: A set of modifiers that turn the path into a cubic graph, with the zero point being the receptors. There are variants for all axis.</p><p>Common values range from -200% to 200%</p><p>Quirks: N/A</p><p>Available variants: CubicX, CubicY, CubicZ</p><p>Available variants (modstring): cubicx, cubicy, cubicz</p><p>PlayerOptions format: &lt;Cubic variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>CubicZ(3, 10)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*10 300% cubicz</code></p><p><video src=../../../mods/vid/cubic.webm controls>Cubic video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-12>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-12 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-12><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=cubicoffset>CubicOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#cubicoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor CubicOffset" href=#cubicoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Moves the zero point of the cubic graph. This modifier is really granular, so use large amounts.</p><p>Available variants: CubicXOffset, CubicYOffset, CubicZOffset</p><p>Available variants (modstring): cubicxoffset, cubicyoffset, cubiczoffset</p><p>PlayerOptions format: &lt;CubicOffset variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><div class=gdoc-page__anchorwrap><h2 id=xmode-sm5-only>Xmode (SM5 only)
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#xmode-sm5-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Xmode (SM5 only)" href=#xmode-sm5-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: A replication of Pump It Up&rsquo;s X scroll mode.</p><p>This is rarely used, so 100% should work fine.</p><p>Quirks: The effect is reversed on player 2 in singles mode and is reversed on the second half of the notefield if doubles modes are used. (The video example shows player 1)</p><p>PlayerOptions format: Xmode(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>Xmode(1, 1)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> xmode</p><p>Example: <code>*1 100% xmode</code></p><p><video src=../../../mods/vid/xmode.webm controls>Xmode video example</video></p><div class=gdoc-page__anchorwrap><h2 id=attenuate>Attenuate
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#attenuate class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Attenuate" href=#attenuate><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Emphasises the note position the further a note gets away from the receptor. Has variants for all axis. NotITG V3 and later does not have the Y axis variant.</p><p>Common values range from -300 to 300%</p><p>Quirks: This modifier is applied after every other modifier has run, so all path modifiers are taken into account for this.</p><p>Available variants: AttenuateX, AttenuateY, AttenuateZ</p><p>Available variants (modstring): attenuatex, attenuate (NotITG name), attenuatey, attenuatez</p><p>PlayerOptions format: &lt;Attenuate variant>(&lt;magnitude>, &lt;approach rate>)</p><p>Example: <code>AttenuateX(2, 4)</code></p><p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p><p>Example: <code>*4 200% attenuatex</code></p><p><video src=../../../mods/vid/attenuate.webm controls>Attenuate video example</video></p><div class=gdoc-page__anchorwrap><h3 id=available-sub-modifiers-13>Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-13 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-13><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=gdoc-page__anchorwrap><h2 id=attenuateoffset>AttenuateOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#attenuateoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AttenuateOffset" href=#attenuateoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Desc: Offset the position emphasis used in Attenuate.
-Available variants: AttenuateXOffset, AttenuateYOffset, AttenuateZOffset</p><p>Available variants (modstring): attenuatexoffset, attenuateoffset (NotITG name), attenuateyoffset, attenuatezoffset</p><p>PlayerOptions format: &lt;AttenuateOffset variant>(&lt;magnitude>, &lt;approach rate>)
-Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p></article><div class="gdoc-page__footer flex flex-wrap justify-between"></div></div></main><footer class=gdoc-footer><div class="container flex flex-wrap"><span class=gdoc-footer__item>Built with <a href=https://gohugo.io/ class=gdoc-footer__link>Hugo</a> and<svg class="icon gdoc_heart"><use xlink:href="#gdoc_heart"/></svg></span></div></footer></div><script defer src=../../../js/en.search.min.f02212bf45f44408c9296299252ed0a593eb2fa2f0e43c0e53bcc1a9d1e89a4d.js></script><script defer src=../../../js/clipboard-27784b7376.min.js></script><script defer src=../../../js/clipboard-loader-f0b5fbd5f6.min.js></script></body></html>
+hidden-mobile" itemprop=breadcrumb>
+<div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
+<ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mods/ href=../../../dev/mods/><span itemprop=name>Guide to Modifiers</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Path modifiers</span><meta itemprop=position content="4"></li>
+</ol>
+</div>
+</div>
+<article class="gdoc-markdown gdoc-markdown__align--left">
+<h1>Path modifiers</h1>
+<p>Path modifiers affect the path a note takes to the receptor, often curving it in some way or creating a type of wave in the movement.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=drunk>
+Drunk
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#drunk class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Drunk" href=#drunk><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Drunk makes the notes and receptors move left and right in a constantly shifting sinusoidal wave. There are extra variants for the Y and Z axis, as well as tangent variants.</p>
+<p>Common values can be practically any value, due to its' wide use in modfiles. Try starting with -200 to 200% for an initial effect.</p>
+<p>Quirks: When combined with Tipsy in SM5.1 and earlier, hold bodies may detatch from the hold head. The phase of the sinusoidal wave depends on game uptime unless the mod timer is changed.</p>
+<p>Available variants: Drunk, DrunkY, DrunkZ, TanDrunk, TanDrunkY, TanDrunkZ</p>
+<p>Available variants (modstring): drunk, drunky, drunkz, tandrunk, tandrunky, tandrunkz</p>
+<p>PlayerOptions format: &lt;Drunk variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Drunk(3, 2)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*2 300% drunk</code></p>
+<p><video src=../../../mods/vid/drunk.webm controls>Drunk video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=drunkoffset>
+DrunkOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#drunkoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrunkOffset" href=#drunkoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offsets the phase of the sinusoidal wave, which is added onto the offset caused by time.</p>
+<p>Available variants: DrunkOffset, DrunkYOffset, DrunkZOffset, TanDrunkOffset, TanDrunkYOffset, TanDrunkZOffset</p>
+<p>Available variants (modstring): drunkoffset, drunkyoffset, drunkzoffset, tandrunkoffset, tandrunkyoffset, tandrunkzoffset</p>
+<p>PlayerOptions format: &lt;DrunkOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=drunkperiod>
+DrunkPeriod
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#drunkperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrunkPeriod" href=#drunkperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Alters the period of the sinusoidal wave. Positive values decrease the period, negative values increase the period. -100% just results in the columns moving, but the notes won&rsquo;t go back and forth.</p>
+<p>Available variants: DrunkPeriod, DrunkYPeriod, DrunkZPeriod, TanDrunkPeriod, TanDrunkYPeriod, TanDrunkZPeriod</p>
+<p>Available variants (modstring): drunkperiod, drunksize (NotITG alias for drunkperiod), drunkyperiod, drunkysize (NotITG alias for drunkyperiod), drunkzperiod, drunkzsize (NotITG alias for drunkzperiod), tandrunkperiod, tandrunksize (NotITG alias for tandrunkperiod), tandrunkyperiod, tandrunkysize (NotITG alias for tandrunkyperiod), tandrunkzperiod, tandrunkzsize (NotITG alias for tandrunkzperiod)</p>
+<p>PlayerOptions format: &lt;DrunkPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=drunkspacing>
+DrunkSpacing
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#drunkspacing class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrunkSpacing" href=#drunkspacing><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Alters the amount of space between the columns, and is cyclical like DrunkOffset. Used to be called &ldquo;DrunkOffset&rdquo; before SM5.3 and NotITG v4.</p>
+<p>Available variants: DrunkSpacing, DrunkYSpacing, DrunkZSpacing, TanDrunkSpacing, TanDrunkYSpacing, TanDrunkZSpacing</p>
+<p>Available variants (modstring): drunkspacing, drunkyspacing, drunkzspacing, tandrunkspacing, tandrunkyspacing, tandrunkzspacing</p>
+<p>PlayerOptions format: &lt;DrunkSpacing variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=drunkspeed>
+DrunkSpeed
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#drunkspeed class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrunkSpeed" href=#drunkspeed><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects the speed of Drunk through a multiplier. Positive numbers speed it up, negative numbers slow it down, -100% freezes the effect. Will look really jittery when using game uptime as the mod timer.</p>
+<p>Available variants: DrunkSpeed, DrunkYSpeed, DrunkZSpeed, TanDrunkSpeed, TanDrunkYSpeed, TanDrunkZSpeed</p>
+<p>Available variants (modstring): drunkspeed, drunkyspeed, drunkzspeed, tandrunkspeed, tandrunkyspeed, tandrunkzspeed</p>
+<p>PlayerOptions format: &lt;DrunkSpeed variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=bounce>
+Bounce
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bounce class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Bounce" href=#bounce><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Notes bounce to the right. There&rsquo;s also a Z axis variant that has notes bounce towards the player.</p>
+<p>100% is good enough to give a good idea for the effect.</p>
+<p>Quirks: N/A</p>
+<p>Available variants: Bounce, BounceZ</p>
+<p>Available variants (modstring): bounce, bouncez</p>
+<p>PlayerOptions format: &lt;Bounce variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Bounce(1, 0.25)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*0.25 100% bounce</code></p>
+<p><video src=../../../mods/vid/bounce.webm controls>Bounce video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-1>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=bounceperiod>
+BouncePeriod
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bounceperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BouncePeriod" href=#bounceperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects the period of the bouncing. Positive numbers increase the period, while negative numbers decrease the period. -100% moves the columns to the highest point of the bounce.</p>
+<p>Available variants: BouncePeriod, BounceZPeriod</p>
+<p>Available variants (modstring): bounceperiod, bouncezperiod</p>
+<p>PlayerOptions format: &lt;BouncePeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=bounceoffset>
+BounceOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bounceoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BounceOffset" href=#bounceoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offsets the phase of the bounce.</p>
+<p>Available variants: BounceOffset, BounceZOffset</p>
+<p>Available variants (modstring): bounceoffset, bouncezoffset</p>
+<p>PlayerOptions format: &lt;BounceOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=tornado>
+Tornado
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#tornado class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Tornado" href=#tornado><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Notes swirl around as they go to the receptor. Has a Z axis variant, as well as tangent variants.</p>
+<p>Common values range from -200 to 200%</p>
+<p>Quirks: N/A</p>
+<p>Available variants: Tornado, TornadoZ, TanTornado, TanTornadoZ</p>
+<p>Available variants (modstring): tornado, tornadoz, tantornado, tantornadoz</p>
+<p>PlayerOptions format: &lt;Tornado variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Tornado(1, 0.2)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*0.2 100% tornado</code></p>
+<p><video src=../../../mods/vid/tornado.webm controls>Tornado video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-2>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-2 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-2><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=tornadooffset>
+TornadoOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#tornadooffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TornadoOffset" href=#tornadooffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offsets the phase of the sinusoidal curves for each column. Large values are needed for noticable effects.</p>
+<p>Available variants: TornadoOffset, TornadoZOffset, TanTornadoOffset, TanTornadoZOffset</p>
+<p>Available variants (modstring): tornadooffset, tornadozoffset, tantornadooffset, tantornadozoffset</p>
+<p>PlayerOptions format: &lt;TornadoOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=tornadoperiod>
+TornadoPeriod
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#tornadoperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TornadoPeriod" href=#tornadoperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects the period of the sinusoidal curves for each column. Positive values decrease the period, while negative values increase the period. -100% visually removes the effect.</p>
+<p>Available variants:</p>
+<p>Available variants (modstring):</p>
+<p>PlayerOptions format: &lt;TornadoPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=bumpy>
+Bumpy
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bumpy class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Bumpy" href=#bumpy><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Notes go back and forth on the z axis as they go towards the receptor. Has variants for all axis as well as tangent variants and column-specific variants. Unlike the variants for Stealth and Dark, this does not add onto the values for normal Bumpy.</p>
+<p>Common values could be practically anywhere due to its' wide use in modfiles. Try starting with -300 to 300% for an initial amount.</p>
+<p>Quirks: N/A</p>
+<p>Available variants: Bumpy, BumpyX, BumpyY, TanBumpy, TanBumpyY, TanBumpyZ</p>
+<p>Available variants (column-specific): BumpyCol, BumpyXCol, BumpyYCol, TanBumpyCol, TanBumpyXCol, TanBumpyYCol</p>
+<p>Available variants (modstring): bumpy, bumpyx, bumpyy, bumpyz (NotITG alias for bumpy), bumpy&lt;column>, bumpyx&lt;column>, bumpyy&lt;column>, bumpyz&lt;column> (NotITG alias for bumpy&lt;column>), tanbumpy, tanbumpyx, tanbumpyy, tanbumpyz (NotITG alias for tanbumpy), tanbumpy&lt;column>, tanbumpyx&lt;column>, tanbumpyy&lt;column>, tanbumpyz&lt;column> (NotITG alias for tanbumpy&lt;column>)</p>
+<p>PlayerOptions format: &lt;Bumpy variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Bumpy(3, 0.5)</code></p>
+<p>Column-specific format: &lt;Column-specific variant>(&lt;column>, &lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>BumpyCol(1, -3, 3, true):BumpyCol(2, -1, 1, true):BumpyCol(3, 1, 1, true):BumpyCol(4, 3, 3)</code>
+Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*0.5 300% Bumpy</code></p>
+<p><video src=../../../mods/vid/bumpy.webm controls>Bumpy video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-3>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-3 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-3><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=bumpyoffset>
+BumpyOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bumpyoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BumpyOffset" href=#bumpyoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offsets the phase of the back and forth wave. The min/max and middle points are reachable through increments of 25%.</p>
+<p>Available variants: BumpyOffset, BumpyXOffset, BumpyYOffset, TanBumpyOffset, TanBumpyXOffset, TanBumpyYOffset</p>
+<p>Available variants (column-specific): BumpyOffsetCol, BumpyXOffsetCol, BumpyYOffsetCol, TanBumpyOffsetCol, TanBumpyXOffsetCol, TanBumpyYOffsetCol</p>
+<p>Available variants (modstring): bumpyoffset, bumpyxoffset, bumpyyoffset, bumpyzoffset (NotITG alias for bumpyoffset), bumpyoffset&lt;column>, bumpyxoffset&lt;column>, bumpyyoffset&lt;column>, bumpyzoffset&lt;column> (NotITG alias for bumpyoffset&lt;column>), tanbumpyoffset, tanbumpyxoffset, tanbumpyyoffset, tanbumpyoffset&lt;column>, tanbumpyxoffset&lt;column>, tanbumpyyoffset&lt;column></p>
+<p>PlayerOptions format: &lt;BumpyOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Column-specific format: &lt;Column-specific variant>(&lt;column>, &lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=bumpyperiod>
+BumpyPeriod
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#bumpyperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BumpyPeriod" href=#bumpyperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects the period of the back and forth wave. Positive values increase the period, while negative values decrease the period. -100% stops the effect and moves the columns to the negative-most value.</p>
+<p>Available variants: BumpyPeriod, BumpyXPeriod, BumpyYPeriod, TanBumpyPeriod, TanBumpyXPeriod, TanBumpyYPeriod</p>
+<p>Available variants (column-specific): BumpyPeriodCol, BumpyXPeriodCol, BumpyYPeriodCol, TanBumpyPeriodCol, TanBumpyXPeriodCol, TanBumpyYPeriodCol</p>
+<p>Available variants (modstring): bumpyperiod, bumpyxperiod, bumpyyperiod, bumpyzperiod (NotITG alias for bumpyperiod), bumpysize (NotITG alias for bumpyperiod), bumpyxsize (NotITG alias for bumpyxperiod), bumpyysize (NotITG alias for bumpyyperiod), bumpyzsize (NotITG alias for bumpyperiod), bumpyperiod&lt;column>, bumpyxperiod&lt;column>, bumpyyperiod&lt;column>, bumpyzperiod&lt;column> (NotITG alias for bumpyperiod&lt;column>), tanbumpyperiod, tanbumpyxperiod, tanbumpyyperiod, tanbumpyzperiod (NotITG alias for tanbumpyperiod), tanbumpysize (NotITG alias for tanbumpyperiod), tanbumpyxsize (NotITG alias for tanbumpyxperiod), tanbumpyysize (NotITG alias for tanbumpyyperiod), tanbumpyzsize (NotITG alias for tanbumpyperiod), tanbumpyperiod&lt;column>, tanbumpyxperiod&lt;column>, tanbumpyyperiod&lt;column></p>
+<p>PlayerOptions format: &lt;BumpyPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Column-specific format: &lt;Column-specific variant>(&lt;column>, &lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=beat>
+Beat
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#beat class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Beat" href=#beat><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Notes & receptors pulse to the left and right to the beat. Contrary to popular belief, it is not the only mod. There are variants for each axis.</p>
+<p>Common values range from -250% to 200%, but could be practically anything because of its' wide use in modfiles.</p>
+<p>Quirks: Beat in OpenITG & NotITG does not respond well to very high BPMs.</p>
+<p>Available variants: Beat, BeatY, BeatZ</p>
+<p>Available variants (modstring): beat, beaty, beatz</p>
+<p>PlayerOptions format: &lt;Beat variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Beat(1.5, 0.2)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*0.2 150% Beat</code></p>
+<p><video src=../../../mods/vid/beat.webm controls>Beat video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-4>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-4 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-4><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=beatmult>
+BeatMult
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#beatmult class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BeatMult" href=#beatmult><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Multiply the BPM that Beat is reacting to. Negative values slow down, while positive values speed up. -50% is half, while 100% is double.</p>
+<p>Available variants: BeatMult, BeatYMult, BeatZMult</p>
+<p>Available variants (modstring): beatmult, beatymult, beatzmult</p>
+<p>PlayerOptions format: &lt;BeatMult variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=beatoffset>
+BeatOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#beatoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BeatOffset" href=#beatoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offset the beat that the effect is going off of. 50% makes the effect act on the half beat instead of on the beat.</p>
+<p>Available variants: BeatOffset, BeatYOffset, BeatZOffset</p>
+<p>Available variants (modstring): beatoffset, beatyoffset, beatzoffset</p>
+<p>PlayerOptions format: &lt;BeatOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=beatperiod>
+BeatPeriod
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#beatperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BeatPeriod" href=#beatperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects the period of the wave used. Positive values increase the period, negative values reduce the period. -100% makes the field shift back and forth to the beat.</p>
+<p>Available variants: BeatPeriod, BeatYPeriod, BeatZPeriod</p>
+<p>Available variants (modstring): beatperiod, beatyperiod, beatzperiod, beatsize (NotITG alias for beatperiod), beatysize (NotITG alias for beatyperiod), beatzsize (NotITG alias for beatzperiod)</p>
+<p>PlayerOptions format: &lt;BeatPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=beatcap-notitg-only>
+BeatCap (NotITG only)
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#beatcap-notitg-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BeatCap (NotITG only)" href=#beatcap-notitg-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: When active (any nonzero magnitude), Beat acts like it does in SM5, being able to properly react to high BPMs.</p>
+<p>Available variants (modstring): beatcap, beatcapy, beatcapz</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=zigzag>
+Zigzag
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#zigzag class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Zigzag" href=#zigzag><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Notes move left and right on a triangle wave. There is also a Z axis variant.</p>
+<p>Common values range from -400 to 400%</p>
+<p>Quirks: N/A</p>
+<p>Available variants: Zigzag, ZigzagZ</p>
+<p>Available variants (modstring): zigzag, zigzagz</p>
+<p>PlayerOptions format: &lt;Zigzag variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Zigzag(2, 2)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*2 200% zigzag</code></p>
+<p><video src=../../../mods/vid/zigzag.webm controls>Zigzag video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-5>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-5 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-5><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=zigzagoffset>
+ZigzagOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#zigzagoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ZigzagOffset" href=#zigzagoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offsets the phase of the triangle wave used.</p>
+<p>Available variants: ZigzagOffset, ZigzagZOffset</p>
+<p>Available variants (modstring): zigzagoffset, zigzagzoffset</p>
+<p>PlayerOptions format: &lt;ZigzagOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=zigzagperiod>
+ZigzagPeriod
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#zigzagperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ZigzagPeriod" href=#zigzagperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects the period of the triangle wave. Positive values increase the period, negative values decrease the period, -100% shifts the field to the negative extrema.</p>
+<p>Available variants: ZigzagPeriod, ZigzagZPeriod</p>
+<p>Available variants (modstring): zigzagperiod, zigzagzperiod, zigzagsize (NotITG alias for zigzagperiod), zigzagzsize (NotITG alias for zigzagzperiod)</p>
+<p>PlayerOptions format: &lt;ZigzagPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=sawtooth>
+Sawtooth
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#sawtooth class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Sawtooth" href=#sawtooth><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Notes move left and right on a sawtooth wave. There is also a Z axis variant.</p>
+<p>Common values range from -200 to 200%.</p>
+<p>Quirks: N/A</p>
+<p>Available variants: Sawtooth, SawtoothZ</p>
+<p>Available variants (modstring): sawtooth, sawtoothz</p>
+<p>PlayerOptions format: &lt;Sawtooth variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Sawtooth(2, 1)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*1 200% sawtooth</code></p>
+<p><video src=../../../mods/vid/sawtooth.webm controls>Sawtooth video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-6>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-6 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-6><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=sawtoothoffset-notitg-only>
+SawtoothOffset (NotITG only)
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#sawtoothoffset-notitg-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SawtoothOffset (NotITG only)" href=#sawtoothoffset-notitg-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offsets the sawtooth wave.</p>
+<p>Available variants (modstring): sawtoothoffset, sawtoothzoffset</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=sawtoothperiod>
+SawtoothPeriod
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#sawtoothperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SawtoothPeriod" href=#sawtoothperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects the period of the sawtooth wave. Positive values increase the period, negative values decrease the period. -100% makes the notefield disappear.</p>
+<p>Available variants: SawtoothPeriod, SawtoothZPeriod</p>
+<p>Available variants (modstring): sawtoothperiod, sawtoothzperiod, sawtoothsize (NotITG alias for sawtoothperiod), sawtoothzsize (NotITG alias for sawtoothzperiod)</p>
+<p>PlayerOptions format: &lt;SawtoothPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=square>
+Square
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#square class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Square" href=#square><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Notes & receptors are placed onto a (mostly) square wave. There is also a Z axis variant.</p>
+<p>Common values range from -150 to 150%</p>
+<p>Quirks: The wave period is different from NotITG. Refer to <a class=gdoc-markdown__link href=https://gist.github.com/MrThatKid/2a8525a1abe1cb95073ef4eb64590b00>https://gist.github.com/MrThatKid/2a8525a1abe1cb95073ef4eb64590b00</a></p>
+<p>Available variants: Square, SquareZ</p>
+<p>Available variants (modstring): square, squarez</p>
+<p>PlayerOptions format: &lt;Square variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Square(-0.5, 1)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*1 -50% square</code></p>
+<p><video src=../../../mods/vid/square.webm controls>Square video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-7>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-7 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-7><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=squareoffset>
+SquareOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#squareoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SquareOffset" href=#squareoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offsets the square wave used.</p>
+<p>Available variants: SquareOffset, SquareZOffset</p>
+<p>Available variants (modstring): squareoffset, squarezoffset</p>
+<p>PlayerOptions format: &lt;SquareOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=squareperiod>
+SquarePeriod
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#squareperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SquarePeriod" href=#squareperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Alters the period of the square wave. Positive values increase the period, negative values decrease the period. -100% shifts the field to the positive extrema.</p>
+<p>Available variants: SquarePeriod, SquareZPeriod</p>
+<p>Available variants (modstring): squareperiod, sqaurezperiod</p>
+<p>PlayerOptions format: &lt;SquarePeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=digital>
+Digital
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#digital class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Digital" href=#digital><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Notes are placed onto a &lsquo;digital&rsquo; sine wave. (Think of a sine wave, but more blocky looking). There is a variant for the Z axis, as well as tangent variants.
+Common values range from -400 to 400%</p>
+<p>Quirks: The wave period is different from NotITG. Refer to <a class=gdoc-markdown__link href=https://gist.github.com/MrThatKid/2a8525a1abe1cb95073ef4eb64590b00>https://gist.github.com/MrThatKid/2a8525a1abe1cb95073ef4eb64590b00</a></p>
+<p>Available variants: Digital, DigitalZ, TanDigital, TanDigitalZ</p>
+<p>Available variants (modstring): Digital, DigitalZ, TanDigital, TanDigitalZ</p>
+<p>PlayerOptions format: &lt;Digital variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Digital(-1.5, 3)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*3 -150% digital</code></p>
+<p><video src=../../../mods/vid/digital.webm controls>Digital video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-8>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-8 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-8><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=digitalsteps>
+DigitalSteps
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#digitalsteps class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DigitalSteps" href=#digitalsteps><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects how many &lsquo;levels&rsquo; the digital sine wave has. Positive values make the wave smoother, while negative values make the wave more blocky. -50% visually removes the effect, -100% hides the notefield.</p>
+<p>Available variants: DigitalSteps, DigitalZSteps, TanDigitalSteps, TanDigitalZSteps</p>
+<p>Available variants (modstring): digitalsteps, digitalzsteps, tandigitalsteps, tandigitalzsteps</p>
+<p>PlayerOptions format: &lt;DigitalSteps variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=digitaloffset>
+DigitalOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#digitaloffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DigitalOffset" href=#digitaloffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offsets the sine wave used in Digital. It&rsquo;s really granular, so large amounts and large approach rates may be needed.</p>
+<p>Available variants: DigitalOffset, DigitalZOffset, TanDigitalOffset, TanDigitalZOffset</p>
+<p>Available variants (modstring): digitaloffset, digitalzoffset, tandigitaloffset, tandigitalzoffset</p>
+<p>PlayerOptions format: &lt;DigitalOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=digitalperiod>
+DigitalPeriod
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#digitalperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DigitalPeriod" href=#digitalperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects the period of the sine wave. Positive values increase the period, negative values decrease the period. -100% shifts the field to the negative extrema.</p>
+<p>Available variants: DigitalPeriod, DigitalZPeriod, TanDigitalPeriod, TanDigitalZPeriod</p>
+<p>Available variants (modstring): digitalperiod, digitalzperiod, tandigitalperiod, tandigitalzperiod</p>
+<p>PlayerOptions format: &lt;DigitalPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=spiral>
+Spiral
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#spiral class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Spiral" href=#spiral><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Spiral is a set of modifiers that move notes in a spiral towards the receptors. There are three axis variants that are usually combined to make the full spiral effect (X + Y, Y + Z, X + Z)</p>
+<p>Common values range from -200 to 200%, with a period of -99% as a starting point.</p>
+<p>Quirks: When at 50% Reverse, the spiral effect looks much more like a full spiral. SpiralY does not affect holds in SM5.3 unless some NoteField functions are used (Refer to the SpiralHolds sub modifier for more details. The video example uses <code>NoteField:set_holds_use_nonstandard_y_pos</code> only.)</p>
+<p>Available variants: SpiralX, SpiralY, SpiralZ</p>
+<p>Available variants (modstring): spiralx, spiraly, spiralz</p>
+<p>PlayerOptions format: &lt;Spiral variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>SpiralX(1,1,true):SpiralY(1,1,true):SpiralXPeriod(-0.99,1,true):SpiralYPeriod(-0.99,1,true)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*1 100% spiralx, *1 100% spiraly, *1 -99% spiralxperiod, *1 -99% spiralyperiod</code></p>
+<p><video src=../../../mods/vid/spiral.webm controls>Spiral video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-9>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-9 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-9><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=spiraloffset>
+SpiralOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#spiraloffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SpiralOffset" href=#spiraloffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offsets the waves used for the spiral.</p>
+<p>Available variants: SpiralXOffset, SpiralYOffset, SpiralZOffset</p>
+<p>Available variants (modstring): spiralxoffset, spiralyoffset, spiralzoffset</p>
+<p>PlayerOptions format: &lt;SpiralOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=spiralperiod>
+SpiralPeriod
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#spiralperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SpiralPeriod" href=#spiralperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects the period of the waves used in spiral. Positive values decrease the period, negative values increase the period, -100% just has notes come in at a diagonal line.</p>
+<p>Available variants: SpiralXPeriod, SpiralYPeriod, SpiralZPeriod</p>
+<p>Available variants (modstring): spiralxperiod, spiralyperiod, spiralzperiod</p>
+<p>PlayerOptions format: &lt;SpiralPeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=spiralholds-notitg-only>
+SpiralHolds (NotITG only)
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#spiralholds-notitg-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SpiralHolds (NotITG only)" href=#spiralholds-notitg-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: When at a positive amount, the hold renderer is switched out for one that can handle spirals better with proper uv scaling. When at -100%, the hold render uses unscaled uvs for the holds, emulating old spiralholds behavior.</p>
+<p>The old behavior can be mostly replicated in SM5 by combining <code>NoteField:set_holds_orient_to_travel_dir</code> with <code>NoteField:set_holds_use_nonstandard_y_pos</code> (works for most cases) or <code>NoteField:set_hold_length_uses_beats</code> (when dealing with ~50% reverse, holds become much more smooth)</p>
+<p>Available variants (modstring): spiralholds, holdtype (alias)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=asymptote>
+Asymptote
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#asymptote class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Asymptote" href=#asymptote><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: The receptors become the zero point of an asymptote on the x axis, while notes get closer to it on the x axis.</p>
+<p>There aren&rsquo;t any real common values because this modifier isn&rsquo;t used that much.</p>
+<p>Quirks: N/A</p>
+<p>PlayerOptions format: &lt;Asymptote variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Asymptote(1, 1)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*1 100% asymptote</code></p>
+<p><video src=../../../mods/vid/asymptote.webm controls>Asymptote video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-10>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-10 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-10><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=asymptoteoffset>
+AsymptoteOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#asymptoteoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AsymptoteOffset" href=#asymptoteoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Moves the asymptote line. Negative values move it down.</p>
+<p>PlayerOptions format: AsymptoteOffset(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> asymptoteoffset</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=asymptotescale>
+AsymptoteScale
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#asymptotescale class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AsymptoteScale" href=#asymptotescale><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Affects the curve before veering off towards the asymptote. Negative values make the curve more noticable. Going past -100% flips the curve. Being at -100% hides the notefield. (Has an alias of &ldquo;asymptotesize&rdquo; in NotITG)</p>
+<p>PlayerOptions format: AsymptoteScale(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> asymptotescale</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=parabola>
+Parabola
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#parabola class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Parabola" href=#parabola><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: A set of modifiers that turn the path into a parabola, with the zero point being the receptors. There are variants for all axis.</p>
+<p>Common values range from -500 to 500%</p>
+<p>Quirks: N/A</p>
+<p>Available variants: ParabolaX, ParabolaY, ParabolaZ</p>
+<p>Available variants (modstring): parabolax, parabolay, parabolaz</p>
+<p>PlayerOptions format: &lt;Parabola variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>ParabolaX(2, 0.125)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*0.125 200% parabolax</code></p>
+<p><video src=../../../mods/vid/parabola.webm controls>Parabola video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-11>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-11 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-11><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=parabolaoffset>
+ParabolaOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#parabolaoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ParabolaOffset" href=#parabolaoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Moves the zero point of the parabola.</p>
+<p>Available variants: ParabolaXOffset, ParabolaYOffset, ParabolaZOffset</p>
+<p>Available variants (modstring): parabolaxoffset, parabolayoffset, parabolazoffset</p>
+<p>PlayerOptions format: &lt; variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=cubic>
+Cubic
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#cubic class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Cubic" href=#cubic><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: A set of modifiers that turn the path into a cubic graph, with the zero point being the receptors. There are variants for all axis.</p>
+<p>Common values range from -200% to 200%</p>
+<p>Quirks: N/A</p>
+<p>Available variants: CubicX, CubicY, CubicZ</p>
+<p>Available variants (modstring): cubicx, cubicy, cubicz</p>
+<p>PlayerOptions format: &lt;Cubic variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>CubicZ(3, 10)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*10 300% cubicz</code></p>
+<p><video src=../../../mods/vid/cubic.webm controls>Cubic video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-12>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-12 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-12><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=cubicoffset>
+CubicOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#cubicoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor CubicOffset" href=#cubicoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Moves the zero point of the cubic graph. This modifier is really granular, so use large amounts.</p>
+<p>Available variants: CubicXOffset, CubicYOffset, CubicZOffset</p>
+<p>Available variants (modstring): cubicxoffset, cubicyoffset, cubiczoffset</p>
+<p>PlayerOptions format: &lt;CubicOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=xmode-sm5-only>
+Xmode (SM5 only)
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#xmode-sm5-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Xmode (SM5 only)" href=#xmode-sm5-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: A replication of Pump It Up&rsquo;s X scroll mode.</p>
+<p>This is rarely used, so 100% should work fine.</p>
+<p>Quirks: The effect is reversed on player 2 in singles mode and is reversed on the second half of the notefield if doubles modes are used. (The video example shows player 1)</p>
+<p>PlayerOptions format: Xmode(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>Xmode(1, 1)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> xmode</p>
+<p>Example: <code>*1 100% xmode</code></p>
+<p><video src=../../../mods/vid/xmode.webm controls>Xmode video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=attenuate>
+Attenuate
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#attenuate class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Attenuate" href=#attenuate><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Emphasises the note position the further a note gets away from the receptor. Has variants for all axis. NotITG V3 and later does not have the Y axis variant.</p>
+<p>Common values range from -300 to 300%</p>
+<p>Quirks: This modifier is applied after every other modifier has run, so all path modifiers are taken into account for this.</p>
+<p>Available variants: AttenuateX, AttenuateY, AttenuateZ</p>
+<p>Available variants (modstring): attenuatex, attenuate (NotITG name), attenuatey, attenuatez</p>
+<p>PlayerOptions format: &lt;Attenuate variant>(&lt;magnitude>, &lt;approach rate>)</p>
+<p>Example: <code>AttenuateX(2, 4)</code></p>
+<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+<p>Example: <code>*4 200% attenuatex</code></p>
+<p><video src=../../../mods/vid/attenuate.webm controls>Attenuate video example</video></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=available-sub-modifiers-13>
+Available sub modifiers:
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#available-sub-modifiers-13 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-13><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=attenuateoffset>
+AttenuateOffset
+<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-9-Path-Mods/#attenuateoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AttenuateOffset" href=#attenuateoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Desc: Offset the position emphasis used in Attenuate.
+Available variants: AttenuateXOffset, AttenuateYOffset, AttenuateZOffset</p>
+<p>Available variants (modstring): attenuatexoffset, attenuateoffset (NotITG name), attenuateyoffset, attenuatezoffset</p>
+<p>PlayerOptions format: &lt;AttenuateOffset variant>(&lt;magnitude>, &lt;approach rate>)
+Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
+</article>
+<div class="gdoc-page__footer flex flex-wrap justify-between">
+</div>
+</div>
+</main>
+<footer class=gdoc-footer>
+<div class="container flex flex-wrap">
+<span class=gdoc-footer__item>
+Built with <a href=https://gohugo.io/ class=gdoc-footer__link>Hugo</a> and<svg class="icon gdoc_heart"><use xlink:href="#gdoc_heart"/></svg>
+</span>
+</div>
+</footer>
+</div>
+<script defer src=../../../js/en.search.min.f02212bf45f44408c9296299252ed0a593eb2fa2f0e43c0e53bcc1a9d1e89a4d.js></script>
+<script defer src=../../../js/clipboard-27784b7376.min.js></script>
+<script defer src=../../../js/clipboard-loader-f0b5fbd5f6.min.js></script>
+</body>
+</html>
