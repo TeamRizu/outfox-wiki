@@ -11,11 +11,9 @@ A project to modernize the StepMania 5.0.12/5.1 codebase to improve its performa
 
 Project OutFox builds upon the existing StepMania 5.0.12/5.1 beta codebase, and maintaining backwards compatibility with older content is one of our main priorities (in fact, this is one of the reasons why the internal version number is 5.3 rather than skipping to a higher number like 6.0). Content that worked on StepMania 5.0.12/5.1 (including songs, themes, and noteskins) should still work on OutFox. If you experience any issues/weirdness, please report it to us.
 
-{{% notice warning %}}
 Side note for developers
 
 Please note that we are deprecating the use of semicolon-separated ``cmd()`` blocks (i.e.  ``OnCommand=cmd(linear,1.5;diffusealpha,1);`` ) as a means of placing commands on actors in Lua scripts, as this method is a non-standard Lua function that was created for StepMania, and OutFox is not optimized with this coding style in mind (themes may experience performance penalties if they use this method). It is strongly recommended that function chaining (i.e. code such as ``OnCommand=function(self) self:linear(1.5):diffusealpha(1) end,`` ) be used instead.
-{{% /notice %}}
 
 
 ## Can I install it alongside existing versions?
