@@ -1,5 +1,5 @@
 ---
-title: Drum controller mapping
+title: Drums Mapping
 description: Drum controller mapping recommendations guide for Project OutFox.
 weight: 3
 ---
