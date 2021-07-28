@@ -1,6 +1,6 @@
 ---
-title: Recommended controller mapping
-description: Controller mapping recommendations guide for Project OutFox.
+title: Drum controller mapping
+description: Drum controller mapping recommendations guide for Project OutFox.
 weight: 3
 ---
 
