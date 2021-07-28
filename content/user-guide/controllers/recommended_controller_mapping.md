@@ -3,7 +3,7 @@ title: Recommended controller mapping
 description: Controller mapping recommendations guide for Project OutFox.
 weight: 3
 ---
-
+## Madcatz Rock Band 4 Drum Kit (Playstation 4, Bluetooth)
 | Outfox Joypad Button | Physical Device Name |     popn     |
 |:--------------------:|:--------------------:|:------------:|
 |                      |                      |              |
