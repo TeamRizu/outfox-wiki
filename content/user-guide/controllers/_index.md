@@ -1,5 +1,5 @@
 ---
 title: Controllers and Peripherals
-weight: -1
+weight: 0
 geekdocCollapseSection: true
 ---
