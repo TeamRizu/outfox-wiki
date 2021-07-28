@@ -3,12 +3,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Actors have the ability to transition from point A to point B using Tweening.
-It allows for queueing up movements & transitions on position, size, color and other attributes as well as commands and messages.
-Queueing-style tweens    These help with queueing actions after a certain amount of time.
-Sleep    The actor waits for a given amount of seconds before performing the next command.
-hibernate    Like sleep, but the actor is also hidden for the duration of the hibernate.">
-<title>Tweening | Project OutFox Wiki</title>
+<meta name=description content="Drum controller mapping recommendations guide for Project OutFox.">
+<title>Drums Mapping | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -51,7 +47,7 @@ hibernate    Like sleep, but the actor is also hidden for the duration of the hi
 <h2>Navigation</h2>
 <ul class=gdoc-nav__list>
 <li>
-<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
+<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle checked>
 <label for=navtree-4d9830bf class="flex justify-between">
 <span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -102,14 +98,14 @@ Configure controllers
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-a4bf1acb class=gdoc-nav__toggle>
+<input type=checkbox id=navtree-a4bf1acb class=gdoc-nav__toggle checked>
 <label for=navtree-a4bf1acb class="flex justify-between">
 <span class=flex>Controllers and Peripherals</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
 <span class=flex>
-<a href=../../../user-guide/controllers/controller_mapping_drums/ class=gdoc-nav__entry>
+<a href=../../../user-guide/controllers/controller_mapping_drums/ class="gdoc-nav__entry is-active">
 Drums Mapping
 </a>
 </span>
@@ -145,13 +141,13 @@ Game types
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle>
 <label for=navtree-6821e290 class="flex justify-between">
 <span class=flex>Developers and Creators</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
-<input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle>
 <label for=navtree-e7ea7745 class="flex justify-between">
 <span class=flex>
 <a href=../../../dev/actors/ class=gdoc-nav__entry>
@@ -183,7 +179,7 @@ Command List
 </li>
 <li>
 <span class=flex>
-<a href=../../../dev/actors/ActorsLua-Tweening/ class="gdoc-nav__entry is-active">
+<a href=../../../dev/actors/ActorsLua-Tweening/ class=gdoc-nav__entry>
 Tweening
 </a>
 </span>
@@ -361,230 +357,67 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/ href=../../../dev/actors/><span itemprop=name>Lua and Actors</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Tweening</span><meta itemprop=position content="4"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/ href=../../../user-guide/><span itemprop=name>User Guide</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/controllers/ href=../../../user-guide/controllers/><span itemprop=name>Controllers and Peripherals</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Drums Mapping</span><meta itemprop=position content="4"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Tweening</h1>
-<p>Actors have the ability to transition from point A to point B using <a class=gdoc-markdown__link href=https://en.wikipedia.org/wiki/Inbetweening>Tweening</a>.</p>
-<p>It allows for queueing up movements & transitions on position, size, color and other attributes as well as commands and messages.</p>
+<h1>Drums Mapping</h1>
+<div class="gdoc-toc gdoc-toc__level--5"><nav id=TableOfContents><ul>
+<li><a href=#madcatz-rock-band-4-drum-kit-playstation-4-bluetooth>Madcatz Rock Band 4 Drum Kit (Playstation 4, Bluetooth)</a></li>
+</ul></nav><hr></div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=queueing-style-tweens>
-Queueing-style tweens
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#queueing-style-tweens class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Queueing-style tweens" href=#queueing-style-tweens><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=madcatz-rock-band-4-drum-kit-playstation-4-bluetooth>
+Madcatz Rock Band 4 Drum Kit (Playstation 4, Bluetooth)
+<a data-clipboard-text=https://outfox.wiki/user-guide/controllers/controller_mapping_drums/#madcatz-rock-band-4-drum-kit-playstation-4-bluetooth class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Madcatz Rock Band 4 Drum Kit (Playstation 4, Bluetooth)" href=#madcatz-rock-band-4-drum-kit-playstation-4-bluetooth><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>These help with queueing actions after a certain amount of time.</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=sleep>
-Sleep
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#sleep class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Sleep" href=#sleep><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>The actor waits for a given amount of seconds before performing the next command.</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=hibernate>
-hibernate
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#hibernate class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor hibernate" href=#hibernate><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>Like sleep, but the actor is also hidden for the duration of the hibernate.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=tween-manipulation>
-Tween manipulation
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#tween-manipulation class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Tween manipulation" href=#tween-manipulation><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>These functions manipulate the flow of the tweening</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=stoptweening>
-stoptweening
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#stoptweening class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor stoptweening" href=#stoptweening><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><div class=gdoc-page__anchorwrap>
-<h3 id=finishtweening>
-finishtweening
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#finishtweening class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor finishtweening" href=#finishtweening><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><div class=gdoc-page__anchorwrap>
-<h3 id=hurrytweening>
-hurrytweening
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#hurrytweening class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor hurrytweening" href=#hurrytweening><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><div class=gdoc-page__anchorwrap>
-<h2 id=sm395-era-tweens>
-SM3.95-era tweens
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#sm395-era-tweens class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SM3.95-era tweens" href=#sm395-era-tweens><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>These tweens are what most people would be familiar to those who work with ITG and SM3.95</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=linear>
-linear
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#linear class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor linear" href=#linear><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>The actor transitions at a constant rate.</p>
-<p><img src=../../../mods/tweens/linear.png alt=linear></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=accelerate>
-accelerate
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#accelerate class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor accelerate" href=#accelerate><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p><img src=../../../mods/tweens/accelerate.png alt=accelerate></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=decelerate>
-decelerate
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#decelerate class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor decelerate" href=#decelerate><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p><img src=../../../mods/tweens/decelerate.png alt=accelerate></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=bouncebegin>
-bouncebegin
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#bouncebegin class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor bouncebegin" href=#bouncebegin><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>It&rsquo;s done in Lua in SM5 for some reason.</p>
-<p><img src=../../../mods/tweens/bouncebegin.png alt=bouncebegin></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=bounceend>
-bounceend
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#bounceend class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor bounceend" href=#bounceend><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>It&rsquo;s done in Lua in SM5 for some reason.</p>
-<p><img src=../../../mods/tweens/bounceend.png alt=bounceend></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=spring>
-spring
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#spring class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor spring" href=#spring><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p><img src=../../../mods/tweens/spring.png alt=spring></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=tween-notitg-only>
-tween (NotITG only)
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#tween-notitg-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor tween (NotITG only)" href=#tween-notitg-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>Takes a string that references a global function</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=sm5-era-tweens>
-SM5-era tweens
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#sm5-era-tweens class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SM5-era tweens" href=#sm5-era-tweens><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>These tween functions were added in SM5.</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=ease>
-&ldquo;ease&rdquo;
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#ease class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor &ldquo;ease&rdquo;" href=#ease><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><div class=gdoc-page__anchorwrap>
-<h3 id=smooth>
-smooth
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#smooth class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor smooth" href=#smooth><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p><img src=../../../mods/tweens/smooth.png alt=smooth></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=drop>
-drop
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#drop class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor drop" href=#drop><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p><img src=../../../mods/tweens/drop.png alt=drop></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=bezier>
-bezier
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#bezier class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor bezier" href=#bezier><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>A 2D or 3D bezier curve can be passed into the function to allow for extra tweening options.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=sm53-era-tweens>
-SM5.3-era tweens
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#sm53-era-tweens class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SM5.3-era tweens" href=#sm53-era-tweens><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>SM5.3 added all of the standard easing functions. All of these are prefixed with <code>ease</code> and <code>in</code>/<code>out</code>/<code>inout</code></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=sine>
-sine
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#sine class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor sine" href=#sine><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>in: easeinsine, out: easeoutsine, inOut: easeinoutsine</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=quad>
-quad
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#quad class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor quad" href=#quad><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>in: easeinquad, out: easeoutquad, inOut: easeinoutquad</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=cubic>
-cubic
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#cubic class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor cubic" href=#cubic><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>in: easeincubic, out: easeoutcubic, inOut: easeinoutcubic</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=quart>
-quart
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#quart class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor quart" href=#quart><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>in: easeinquart, out: easeoutquart, inOut: easeinoutquart</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=quint>
-quint
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#quint class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor quint" href=#quint><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>in: easeinquint, out: easeoutquint, inOut: easeinoutquint</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=expo>
-expo
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#expo class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor expo" href=#expo><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>in: easeinexpo, out: easeoutexpo, inOut: easeinoutexpo</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=back>
-back
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#back class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor back" href=#back><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>in: easeinback, out: easeoutback, inOut: easeinoutback</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=circle>
-circle
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#circle class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor circle" href=#circle><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>in: easeincircle, out: easeoutcircle, inOut: easeinoutcircle</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=elastic>
-elastic
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#elastic class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor elastic" href=#elastic><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>in: easeinelastic, out: easeoutelastic, inOut: easeinoutelastic</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=bounce>
-bounce
-<a data-clipboard-text=https://outfox.wiki/dev/actors/ActorsLua-Tweening/#bounce class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor bounce" href=#bounce><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>in: easeinbounce, out: easeoutbounce, inOut: easeinoutbounce</p>
+</div><table>
+<thead>
+<tr>
+<th style=text-align:center>Outfox Joypad Button</th>
+<th style=text-align:center>Physical Device Name</th>
+<th style=text-align:center>popn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center></td>
+<td style=text-align:center></td>
+<td style=text-align:center></td>
+</tr>
+<tr>
+<td style=text-align:center>Button 1</td>
+<td style=text-align:center>Blue Pad and Cym</td>
+<td style=text-align:center>Right Yellow</td>
+</tr>
+<tr>
+<td style=text-align:center>Button 2</td>
+<td style=text-align:center>Green Pad and Cym</td>
+<td style=text-align:center>Right Green</td>
+</tr>
+<tr>
+<td style=text-align:center>Button 3</td>
+<td style=text-align:center>Red Pad</td>
+<td style=text-align:center>Red</td>
+</tr>
+<tr>
+<td style=text-align:center>Button 4</td>
+<td style=text-align:center>Yellow Pad and Cym</td>
+<td style=text-align:center>Right Blue</td>
+</tr>
+<tr>
+<td style=text-align:center>Button 5</td>
+<td style=text-align:center>Right Pedal</td>
+<td style=text-align:center></td>
+</tr>
+<tr>
+<td style=text-align:center>Button 6</td>
+<td style=text-align:center>Left Pedal</td>
+<td style=text-align:center></td>
+</tr>
+</tbody>
+</table>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
