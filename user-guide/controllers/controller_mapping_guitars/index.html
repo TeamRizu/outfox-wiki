@@ -3,11 +3,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Zoom modifiers affect the size of the notefield or notes & receptors. Zoom works a bit differently in SM5 in that it also affects the z axis unlike in ITG/SM3.95, which only affect x & y.
-Extra scaling may be required if recreating effects between ITG and SM5.
-Mods that work on the note and column-level may make holds look a bit weird due to how hold scaling works.
-Mini    Desc: Mini scales down the entire notefield, while maintaining the receptor position.">
-<title>Zoom | Project OutFox Wiki</title>
+<meta name=description content="Guitar controller mapping recommendations guide for Project OutFox.">
+<title>Guitars Mapping | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -50,7 +47,7 @@ Mini    Desc: Mini scales down the entire notefield, while maintaining the recep
 <h2>Navigation</h2>
 <ul class=gdoc-nav__list>
 <li>
-<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
+<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle checked>
 <label for=navtree-4d9830bf class="flex justify-between">
 <span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -101,7 +98,7 @@ Configure controllers
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-a4bf1acb class=gdoc-nav__toggle>
+<input type=checkbox id=navtree-a4bf1acb class=gdoc-nav__toggle checked>
 <label for=navtree-a4bf1acb class="flex justify-between">
 <span class=flex>Controllers and Peripherals</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -115,7 +112,7 @@ Drums Mapping
 </li>
 <li>
 <span class=flex>
-<a href=../../../user-guide/controllers/controller_mapping_guitars/ class=gdoc-nav__entry>
+<a href=../../../user-guide/controllers/controller_mapping_guitars/ class="gdoc-nav__entry is-active">
 Guitars Mapping
 </a>
 </span>
@@ -151,7 +148,7 @@ Game types
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle>
 <label for=navtree-6821e290 class="flex justify-between">
 <span class=flex>Developers and Creators</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -237,7 +234,7 @@ Modifier Files
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-fb0e8f07 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-fb0e8f07 class=gdoc-nav__toggle>
 <label for=navtree-fb0e8f07 class="flex justify-between">
 <span class=flex>
 <a href=../../../dev/mods/ class=gdoc-nav__entry>
@@ -290,7 +287,7 @@ Rotation
 </li>
 <li>
 <span class=flex>
-<a href=../../../dev/mods/Mods-6-Zoom-Mods/ class="gdoc-nav__entry is-active">
+<a href=../../../dev/mods/Mods-6-Zoom-Mods/ class=gdoc-nav__entry>
 Zoom
 </a>
 </span>
@@ -367,150 +364,99 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mods/ href=../../../dev/mods/><span itemprop=name>Guide to Modifiers</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Zoom</span><meta itemprop=position content="4"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/ href=../../../user-guide/><span itemprop=name>User Guide</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/controllers/ href=../../../user-guide/controllers/><span itemprop=name>Controllers and Peripherals</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Guitars Mapping</span><meta itemprop=position content="4"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Zoom</h1>
-<p>Zoom modifiers affect the size of the notefield or notes & receptors.
-Zoom works a bit differently in SM5 in that it also affects the z axis unlike in ITG/SM3.95, which only affect x & y.</p>
-<p>Extra scaling may be required if recreating effects between ITG and SM5.</p>
-<p>Mods that work on the note and column-level may make holds look a bit weird due to how hold scaling works.</p>
+<h1>Guitars Mapping</h1>
+<div class="gdoc-toc gdoc-toc__level--5"><nav id=TableOfContents><ul>
+<li><a href=#madcatz-rock-band-4-guitar-playstation-4-bluetooth>Madcatz Rock Band 4 Guitar (Playstation 4, Bluetooth)</a></li>
+</ul></nav><hr></div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=mini>
-Mini
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/#mini class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Mini" href=#mini><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=madcatz-rock-band-4-guitar-playstation-4-bluetooth>
+Madcatz Rock Band 4 Guitar (Playstation 4, Bluetooth)
+<a data-clipboard-text=https://outfox.wiki/user-guide/controllers/controller_mapping_guitars/#madcatz-rock-band-4-guitar-playstation-4-bluetooth class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Madcatz Rock Band 4 Guitar (Playstation 4, Bluetooth)" href=#madcatz-rock-band-4-guitar-playstation-4-bluetooth><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>Desc: Mini scales down the entire notefield, while maintaining the receptor position.</p>
-<p>The following equation for calculating the zoom is this:</p>
-<p><code>1 - (0.5*mini)</code>, with <code>mini</code> being the magnitude as input into the PlayerOptions function.</p>
-<p>100% is half-size, and 200% is zero zoom.</p>
-<p>Negative values make the notefield bigger.</p>
-<p>Quirks: Positive and negative values increase how far down the notefield draws, Judgment & combo scale down with Mini, but will not scale up when Mini is negative (Unlike OpenITG/NotITG, where the judgment scales down or up and the combo is unaffected). Going beyond 200% will result in the notefield having a negative zoom, which might look weird.</p>
-<p>PlayerOptions format: Mini(&lt;magnitude>, &lt;approach rate>)</p>
-<p>Example: <code>Mini(1,0.2)</code></p>
-<p>Modstring format: *&lt;approach rate> &lt;magnitude> mini</p>
-<p>Example: *0.2 100% mini</p>
-<p><video src=../../../mods/vid/mini.webm controls>Mini video example</video></p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=tiny>
-Tiny
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/#tiny class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Tiny" href=#tiny><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Desc: Tiny scales down the notes and receptors instead of the entire field. Variants for all three axis are available, as are column-specific variants. These are multiplied onto the whole field variants.</p>
-<p>The following equation for calculating the zoom is this:</p>
-<p><code>0.5^tiny</code>, with <code>tiny</code> being the magnitude as input into the PlayerOptions function.</p>
-<p>NotITG uses the equation from Mini instead of this one for the zoom.</p>
-<p>Common values can be from -100 to 100%.</p>
-<p>Quirks: Judgment & combo scale down with Tiny, but will not scale up when Tiny is negative. Positive values bring the columns closer to simulate what Mini does, unlike NotITG. (Use the column-specific version if that effect is desired.)</p>
-<p>Available Variants: Tiny, TinyX, TinyY, TinyZ</p>
-<p>Available Variants (Column-Specific): TinyCol, TinyXCol, TinyYCol, TinyZCol, HoldTinyXCol (Hold bodies only, HoldTinyCol is an alias)</p>
-<p>Available Variants (modstring): tiny, tiny&lt;column>, tinyx, tinyx&lt;column>, tinyy, tinyy&lt;column>, tinyz, tinyz&lt;column>, holdtiny (NotITG alias that hits all columns, Hold bodies only, holdgirth is also an alias), holdtinyx&lt;column> (Hold bodies only, holdtiny&lt;column> is an alias (NotITG uses this name instead), holdgirth&lt;column> is a NotITG alias)</p>
-<p>PlayerOptions format: &lt;Tiny variant>(&lt;magnitude>, &lt;approach rate>)</p>
-<p>Examples: <code>Tiny(2, 0.5)</code></p>
-<p>Column-specific format: &lt;Column-specific variant>(&lt;column>, &lt;magnitude>, &lt;approach rate>)</p>
-<p>Examples: <code>TinyXCol(1, 1, 1, true):TinyYCol(2, -2, 0.5, true):TinyZCol(3, -4, 10, true):HoldTinyXCol(4, 3, 0.2)</code></p>
-<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
-<p>Examples: <code>*0.5 -200% tinyy</code> <code>*1 100% tinyx1, *0.5 -200% tinyy2, *10 -400% tinyz3, *0.2 300% holdtinyx4</code></p>
-<p><video src=../../../mods/vid/tiny.webm controls>Tiny video example</video></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=available-sub-modifiers>
-Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/#available-sub-modifiers class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><div class=gdoc-page__anchorwrap>
-<h2 id=tinyusesminicalc>
-TinyUsesMiniCalc
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/#tinyusesminicalc class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TinyUsesMiniCalc" href=#tinyusesminicalc><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Desc: When active, all Tiny mods use the zoom equation from Mini instead of the normal one. This allows for negative zooms and is useful for replicating NotITG effects that expect this behavior.</p>
-<p>PlayerOptions format: TinyUsesMiniCalc(&lt;enable>)</p>
-<p>Modstring format: &lt;enable> tinyusesminicalc</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=pulse>
-Pulse
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/#pulse class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Pulse" href=#pulse><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Desc: Pulse is a set of mods that make the notes zoom in and out as they approach the receptors.</p>
-<p>PulseOuter affects the main pulsing effect, while PulseInner offsets the maximum & minumum zoom. Also has a tangent-based variant.</p>
-<p>PulseOuter is noticable at 100%, and 100% PulseInner offsets the zoom to between 2x and 1x zoom.</p>
-<p>Quirks: N/A</p>
-<p>Available Variants: PulseInner, PulseOuter, TanPulseInner, TanPulseOuter</p>
-<p>Available Variants (modstring): pulseinner, pulseouter, pulse (NotITG alias that hits both inner & outer), tanpulseinner, tanpulseouter, tanpulse (NotITG alias that hits both inner & outer)</p>
-<p>PlayerOptions format: &lt;Pulse variant>(&lt;magnitude>, &lt;approach rate>)</p>
-<p>Examples: <code>PulseInner(1, 0.5, true):PulseOuter(1, 0.5)</code></p>
-<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
-<p>Examples: <code>*0.5 100% pulseinner, *0.5 100% pulseouter</code></p>
-<p><video src=../../../mods/vid/pulse.webm controls>Pulse video example</video></p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=available-sub-modifiers-1>
-Available sub modifiers:
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/#available-sub-modifiers-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Available sub modifiers:" href=#available-sub-modifiers-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><div class=gdoc-page__anchorwrap>
-<h2 id=pulseoffset>
-PulseOffset
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/#pulseoffset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PulseOffset" href=#pulseoffset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Desc: Affects the phase of the sinusoidal pattern used for Pulse.</p>
-<p>Available Variants: PulseOffset, TanPulseOffset</p>
-<p>Available Variants (modstring): pulseoffset, tanpulseoffset</p>
-<p>PlayerOptions format: &lt;PulseOffset variant>(&lt;magnitude>, &lt;approach rate>)</p>
-<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=pulseperiod>
-PulsePeriod
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/#pulseperiod class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PulsePeriod" href=#pulseperiod><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Desc: Affects the speed of the pulsing with a multiplier (1 + magnitude).</p>
-<p>Positive magnitudes slow down the pulsing, negative magnitudes speed it up.</p>
-<p>-100% freezes the effect at the minumum.</p>
-<p>Available Variants: PulsePeriod, TanPulsePeriod</p>
-<p>Available Variants (modstring): pulseperiod, tanpulseperiod</p>
-<p>PlayerOptions format: &lt;PulsePeriod variant>(&lt;magnitude>, &lt;approach rate>)</p>
-<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=shrinklinear>
-ShrinkLinear
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/#shrinklinear class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ShrinkLinear" href=#shrinklinear><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Desc: ShrinkLinear has notes start out zoomed in, and linearly go down to normal size based on how far away the note is from hitting the receptor. There are also separate variants for all three axis.</p>
-<p>50% is still readable in normal circumstances.</p>
-<p>Negative amounts may result in notes starting backwards and ending normally.</p>
-<p>Quirks: N/A</p>
-<p>Available Variants: ShrinkLinear, ShrinkLinearX, ShrinkLinearY, ShrinkLinearZ</p>
-<p>Available Variants (modstring): shrinklinear, shrinklinearx, shrinklineary, shrinklinearz</p>
-<p>PlayerOptions format: &lt;ShrinkLinear variant>(&lt;magnitude>, &lt;approach rate>)</p>
-<p>Examples: <code>ShrinkLinear(0.5,1)</code></p>
-<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
-<p>Examples: <code>*1 50% shrinklinear</code></p>
-<p><video src=../../../mods/vid/shrinklinear.webm controls>Shrinklinear video example</video></p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=shrinkmult>
-ShrinkMult
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/#shrinkmult class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ShrinkMult" href=#shrinkmult><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Desc: ShrinkMult has notes that start zoomed out and decelerate to normal zoom. There are also separate variants for all three axis.</p>
-<p>100% is a decent amount.</p>
-<p>Quirks: Using negative amounts will result in notes going to negative infinity zoom before going back to normal.</p>
-<p>Available Variants: ShrinkMult, ShrinkMultX, ShrinkMultY, ShrinkMultZ</p>
-<p>Available Variants (modstring): shrinkmult, shrinkmultx, shrinkmulty, shrinkmultz</p>
-<p>PlayerOptions format: &lt;ShrinkMult variant>(&lt;magnitude>, &lt;approach rate>)</p>
-<p>Examples: <code>ShrinkMult(1, 2)</code></p>
-<p>Modstring format: *&lt;approach rate> &lt;magnitude> &lt;modstring variant></p>
-<p>Examples: <code>*2 100% shrinkmult</code></p>
-<p><video src=../../../mods/vid/shrinkmult.webm controls>Shrinkmult video example</video></p>
+</div><table>
+<thead>
+<tr>
+<th style=text-align:center>Outfox Joypad Button</th>
+<th style=text-align:center>Physical Device Name</th>
+<th style=text-align:center>gh</th>
+<th style=text-align:center>gdgm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center></td>
+<td style=text-align:center></td>
+<td style=text-align:center></td>
+<td style=text-align:center></td>
+</tr>
+<tr>
+<td style=text-align:center>Button 1</td>
+<td style=text-align:center>Blue Fret</td>
+<td style=text-align:center>Fret 4</td>
+<td style=text-align:center>Fret 4</td>
+</tr>
+<tr>
+<td style=text-align:center>Button 2</td>
+<td style=text-align:center>Green Fret</td>
+<td style=text-align:center>Fret 1</td>
+<td style=text-align:center>Fret 1</td>
+</tr>
+<tr>
+<td style=text-align:center>Button 3</td>
+<td style=text-align:center>Red Fret</td>
+<td style=text-align:center>Fret 2</td>
+<td style=text-align:center>Fret 2</td>
+</tr>
+<tr>
+<td style=text-align:center>Button 4</td>
+<td style=text-align:center>Yellow Fret</td>
+<td style=text-align:center>Fret 3</td>
+<td style=text-align:center>Fret 3</td>
+</tr>
+<tr>
+<td style=text-align:center>Button 5</td>
+<td style=text-align:center>Orange Fret</td>
+<td style=text-align:center>Fret 5</td>
+<td style=text-align:center>Fret 5</td>
+</tr>
+<tr>
+<td style=text-align:center>Button 9</td>
+<td style=text-align:center>Share</td>
+<td style=text-align:center></td>
+<td style=text-align:center></td>
+</tr>
+<tr>
+<td style=text-align:center>Button 10</td>
+<td style=text-align:center>Options</td>
+<td style=text-align:center>Whammy</td>
+<td style=text-align:center></td>
+</tr>
+<tr>
+<td style=text-align:center>Button 11</td>
+<td style=text-align:center>Solo Buttons (Any)</td>
+<td style=text-align:center></td>
+<td style=text-align:center></td>
+</tr>
+<tr>
+<td style=text-align:center>H-Up</td>
+<td style=text-align:center>Strum Up</td>
+<td style=text-align:center>Strum Up</td>
+<td style=text-align:center></td>
+</tr>
+<tr>
+<td style=text-align:center>H-Down</td>
+<td style=text-align:center>Strum Down</td>
+<td style=text-align:center>Strum Down</td>
+<td style=text-align:center></td>
+</tr>
+</tbody>
+</table>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
