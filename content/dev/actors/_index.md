@@ -34,6 +34,7 @@ Def.Actor{
 ## ActorFrame
 
 An Actor that can contain one or more Actors. Think of it as a box that can hold as many objects as it can.
+For more information on how to build them, visit [ActorFrames and how to build them](/dev/actors/ActorsLua-Anatomy+Structure/#actorframes-and-how-to-build-them).
 
 Example:
 ```lua

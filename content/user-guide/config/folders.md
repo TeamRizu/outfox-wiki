@@ -10,7 +10,7 @@ Project OutFox uses various folders to store content, such as songs, save data, 
     * On macOS, these folders are located in **~/Library/Preferences/StepMania 5.3/**
     * On Linux, these folders are located in **~/.stepmania-5.3/**
     * On Windows, these folders are located in **%APPDATA%\StepMania 5.3**
-* **Additional folders** are paths configured in the [Preferences.ini file](/user-guide/config/preferences/); for instance, you can store your song library on a second hard drive and link to it there, or share content between multiple installations.
+* **Additional folders** are paths configured in the [Preferences.ini file](/user-guide/config/preferences/#additionalfolders); for instance, you can store your song library on a second hard drive and link to it there, or share content between multiple installations.
 
 These content folders comprise the game's "Virtual File System" (VFS). They are, in turn, divided into various subdirectories for storing specific types of content. 
 
@@ -33,7 +33,7 @@ Judgement fonts are divided into equally-sized sprites for each judgement. Fonts
 
 NoteSkins affect the appearance of notes. They could be arrows, bars, circles, pawprints, etc. Project OutFox is compatible with noteskins designed for StepMania 5.
 
-The NoteSkins folder is divided into subfolders for specific [game types](/user-guide/config/game-types/). A _global noteskin_ appears in all game types.
+The NoteSkins folder is divided into subfolders for specific [game types](/user-guide/games/). A _global noteskin_ appears in all game types.
 
 ```
 NoteSkins
