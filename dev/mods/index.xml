@@ -10,7 +10,7 @@ Reverse Desc: Reverse flips the scroll of the whole notefield from upscroll to d
 Commonly, 50% or 100% is used on its' own.
 Quirks: When going over 100%, the effect goes backwards, with 200% being normal upscroll again.</description></item><item><title>Rotation</title><link>https://outfox.wiki/dev/mods/Mods-5-Rotation-Mods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://outfox.wiki/dev/mods/Mods-5-Rotation-Mods/</guid><description>Rotation modifiers rotate the notes on the x, y or z axis, and can also rotate the receptors in some cases.
 Some noteskins may affect how the effect looks due to how rotation and zoom interact in the notefield.
-SM5.3 and Open/NotITG act the same way, while earlier versions of SM5 may act differently.
+OutFox and Open/NotITG act the same way, while earlier versions of SM5 may act differently.
 Dizzy Desc: Notes spin as they reach the receptor, with more rotationz added the farther away from the receptor a note is.</description></item><item><title>Zoom</title><link>https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://outfox.wiki/dev/mods/Mods-6-Zoom-Mods/</guid><description>Zoom modifiers affect the size of the notefield or notes &amp;amp; receptors. Zoom works a bit differently in SM5 in that it also affects the z axis unlike in ITG/SM3.95, which only affect x &amp;amp; y.
 Extra scaling may be required if recreating effects between ITG and SM5.
 Mods that work on the note and column-level may make holds look a bit weird due to how hold scaling works.

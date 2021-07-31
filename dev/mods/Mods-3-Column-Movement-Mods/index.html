@@ -585,7 +585,7 @@ Invert
 </div><p>Desc: Invert flips each half of the notefield. When doubles charts are being played, the two &ldquo;players&rdquo; are inverted separately.</p>
 <p>Commonly, 100% is used, but different amounts could be used in combination with Flip.</p>
 <p>Quirks: If used in 5.2 and earlier, Invert may act in unexpected ways on modes with an odd number of columns (eg. Pump).</p>
-<p>In 5.3, Invert will have no visual effect if the mode has three columns per side or less (eg. Pump halfdoubles).</p>
+<p>In OutFox, Invert will have no visual effect if the mode has three columns per side or less (eg. Pump halfdoubles).</p>
 <p>PlayerOptions format: Invert(&lt;magnitude>, &lt;approach rate>)</p>
 <p>Example: <code>Invert(1, 0.3)</code></p>
 <p>Modstring format: *&lt;approach rate> &lt;magnitude> invert</p>
@@ -598,7 +598,7 @@ Move
 </a>
 </h2>
 </div><p>Desc: Move is a set of modifiers that are column-specific by nature and has variants for the X,Y, and Z axis. 100% moves a column forward on an axis by one dance mode column width. This can allow for column swaps that can&rsquo;t be achieved through just Flip and Invert, but can take more time to set up.</p>
-<p>Quirks: Since alpha 4.8.3, all columns can&rsquo;t be hit from the modstring (possible in NotITG), but can be done through the lua function. Right now (as of SM5.3 alpha 4.7), Pump mode&rsquo;s column-spacing is 48 pixels instead of 64, so use multiples of 0.75 instead when working with Pump mode. It&rsquo;s also the only way to move the center panel with any of the column-movement mods.</p>
+<p>Quirks: Since alpha 4.8.3, all columns can&rsquo;t be hit from the modstring (possible in NotITG), but can be done through the lua function. Right now (as of Project OutFox alpha 4.7), Pump mode&rsquo;s column-spacing is 48 pixels instead of 64, so use multiples of 0.75 instead when working with Pump mode. It&rsquo;s also the only way to move the center panel with any of the column-movement mods.</p>
 <p>Available Variants: MoveXCol, MoveYCol, MoveZCol</p>
 <p>Available Variants (modstring): movex, movey, movez</p>
 <p>PlayerOptions format: &lt;Move variant>(&lt;column>, &lt;magnitude>, &lt;approach rate>)</p>

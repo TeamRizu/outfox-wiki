@@ -571,7 +571,7 @@ Will it still work with my old songs/themes/etc..?
 <a data-clipboard-text=https://outfox.wiki/user-guide/meta/faq/#will-it-still-work-with-my-old-songsthemesetc class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Will it still work with my old songs/themes/etc..?" href=#will-it-still-work-with-my-old-songsthemesetc><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>Project OutFox builds upon the existing StepMania 5.0.12/5.1 beta codebase, and maintaining backwards compatibility with older content is one of our main priorities (in fact, this is one of the reasons why the internal version number is 5.3 rather than skipping to a higher number like 6.0). Content that worked on StepMania 5.0.12/5.1 (including songs, themes, and noteskins) should still work on OutFox. If you experience any issues/weirdness, please report it to us.</p>
+</div><p>Project OutFox builds upon the existing StepMania 5.0.12/5.1 beta codebase, and maintaining backwards compatibility with older content is one of our main priorities. Content that worked on StepMania 5.0.12/5.1 (including songs, themes, and noteskins) should still work on OutFox. If you experience any issues/weirdness, please report it to us.</p>
 <p>Side note for developers</p>
 <p>Please note that we are deprecating the use of semicolon-separated <code>cmd()</code> blocks (i.e. <code>OnCommand=cmd(linear,1.5;diffusealpha,1);</code> ) as a means of placing commands on actors in Lua scripts, as this method is a non-standard Lua function that was created for StepMania, and OutFox is not optimized with this coding style in mind (themes may experience performance penalties if they use this method). It is strongly recommended that function chaining (i.e. code such as <code>OnCommand=function(self) self:linear(1.5):diffusealpha(1) end,</code> ) be used instead.</p>
 <div class=gdoc-page__anchorwrap>
@@ -659,9 +659,9 @@ Q: I&rsquo;m new to this community and I don&rsquo;t understand many terms, coul
 <li>Lifts: Note that you have to stop holding the moment they reach the playfield.</li>
 </ul>
 <div class=gdoc-page__anchorwrap>
-<h2 id=q-will-53-go-open-source>
-Q: Will 5.3 go open source?
-<a data-clipboard-text=https://outfox.wiki/user-guide/meta/faq/#q-will-53-go-open-source class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Q: Will 5.3 go open source?" href=#q-will-53-go-open-source><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=q-will-project-outfox-go-open-source>
+Q: Will Project OutFox go open source?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/faq/#q-will-project-outfox-go-open-source class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Q: Will Project OutFox go open source?" href=#q-will-project-outfox-go-open-source><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p><em>Yes</em>. Here&rsquo;s a quote from Squirrel if you want to know more:</p>

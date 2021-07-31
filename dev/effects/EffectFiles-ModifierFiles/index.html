@@ -579,7 +579,7 @@ ApplyGameCommand (SM3.95/oITG/nITG)
 </h3>
 </div><p>ApplyGameCommand is a GameState function that provides a way to send modifiers among other commands. The first paramter is the command type followed by the parameters. (In this case, a modstring) The second parameter is what player to apply the command (1 = player 1). If not specified, it applies to all players.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=n>GAMESTATE</span><span class=p>:</span><span class=n>ApplyGameCommand</span><span class=p>(</span><span class=s2>&#34;mod, *0.5 420 beat&#34;</span><span class=p>,</span> <span class=mi>1</span><span class=p>)</span>
-</code></pre></div><p>While it&rsquo;s still available in SM5 (including SM5.3), it&rsquo;s not recommended because it applies mods to the &ldquo;Preferred&rdquo; ModsLevel, which means modifiers apply instantly (no transition), and they persist outside of the simfile. SM5.2 Doesn&rsquo;t even have this function available.</p>
+</code></pre></div><p>While it&rsquo;s still available in SM5 (including OutFox), it&rsquo;s not recommended because it applies mods to the &ldquo;Preferred&rdquo; ModsLevel, which means modifiers apply instantly (no transition), and they persist outside of the simfile. SM5.2 Doesn&rsquo;t even have this function available.</p>
 <div class=gdoc-page__anchorwrap>
 <h3 id=mods-course-files-sm395oitgnitgsm5>
 #MODS (Course files, SM3.95/oITG/nITG/SM5)
@@ -648,14 +648,14 @@ Modfile templates
 <p>Ones made for Open/NotITG and SM3.95 are usually done with .xml files, and some rare .lua files.</p>
 <p>Ones made for SM5 are almost always .lua files.</p>
 <div class=gdoc-page__anchorwrap>
-<h3 id=stepmania-5-templates>
-StepMania 5 templates
-<a data-clipboard-text=https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/#stepmania-5-templates class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor StepMania 5 templates" href=#stepmania-5-templates><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=stepmania-5-based-templates>
+StepMania 5-Based templates
+<a data-clipboard-text=https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/#stepmania-5-based-templates class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor StepMania 5-Based templates" href=#stepmania-5-based-templates><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><ul>
 <li>
-<p>MTK&rsquo;s SM5.3 port of Exschwasion&rsquo;s easing template</p>
+<p>MTK&rsquo;s OutFox port of Exschwasion&rsquo;s easing template</p>
 <ul>
 <li><a class=gdoc-markdown__link href="https://drive.google.com/open?id=1HfCFvTHZUI4dO_eAk4iN5mO3H61caHzE">https://drive.google.com/open?id=1HfCFvTHZUI4dO_eAk4iN5mO3H61caHzE</a></li>
 <li>Lost of local variables used up in the main scope to preserve syntax.</li>

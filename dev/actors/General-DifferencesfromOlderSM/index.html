@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=description content="OpenITG, NotITG and SM 3.95 are popular engines based on older versions of StepMania that have communities that continue to support by making new content.
-SM5.3 contains a similar feature set as the previous revisions of the game, but with some notable differences. This document aims to provide help with porting content to and from the different versions of the game.
+OutFox contains a similar feature set as the previous revisions of the game, but with some notable differences. This document aims to provide help with porting content to and from the different versions of the game.
 &ldquo;Command&rdquo; format vs &ldquo;Function&rdquo; format    Converting commands to the newer function format is generally recommended when porting content to SM5.">
 <title>Behavioral differences from SM 3.95/ITG | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
@@ -560,7 +560,7 @@ hidden-mobile" itemprop=breadcrumb>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>Behavioral differences from SM 3.95/ITG</h1>
 <p>OpenITG, NotITG and SM 3.95 are popular engines based on older versions of StepMania that have communities that continue to support by making new content.</p>
-<p>SM5.3 contains a similar feature set as the previous revisions of the game, but with some notable differences. This document aims to provide help with porting content to and from the different versions of the game.</p>
+<p>OutFox contains a similar feature set as the previous revisions of the game, but with some notable differences. This document aims to provide help with porting content to and from the different versions of the game.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=command-format-vs-function-format>
 &ldquo;Command&rdquo; format vs &ldquo;Function&rdquo; format
@@ -611,9 +611,9 @@ Zoom and rotation order
 <li>SM3.95 (and as a result, OpenITG & NotITG) apply the rotation, then apply the zoom.</li>
 </ul>
 <p>SM5 applies the zoom and then applies the rotation.</p>
-<p>In SM5.3, this can be worked around by setting the <code>rotafterzoom</code> attribute to false, returning the SM3.95 behavior.</p>
+<p>In Project OutFox, this can be worked around by setting the <code>rotafterzoom</code> attribute to false, returning the SM3.95 behavior.</p>
 <p>The notes & receptors already have this active to help with easilly replicating modifier effects from the other engines.</p>
-<p>In SM5.2 and earlier, this has to be done with wrapper states or actorframes. This is done by having the wrapper do the positioning and zooming, while the main actor gets everything else. (This is still doable in SM5.3 if you&rsquo;re aiming to write content for multiple SM5s)</p>
+<p>In SM5.2 and earlier, this has to be done with wrapper states or actorframes. This is done by having the wrapper do the positioning and zooming, while the main actor gets everything else. (This is still doable in Project OutFox if you&rsquo;re aiming to write content for multiple SM5s)</p>
 <div class=gdoc-page__anchorwrap>
 <h3 id=zooms-effect-on-the-axis>
 Zoom&rsquo;s effect on the axis
@@ -688,7 +688,7 @@ Tiny
 <li>The zoom equation is different. SM5 uses this equation: <code>0.5^strength</code>, while NotITG uses this one: <code>1 - 0.5*strength</code>. (100% == 1.0 for the strength)</li>
 </ul>
 <p>It just so happens that NotITG&rsquo;s equation is the exact same one Mini uses for notefield zoom.</p>
-<p>In SM5.3, this can be altered with the <code>TinyUsesMiniCalc</code> sub-modifier. When active, it switches to NotITG&rsquo;s equation, which allows for a wider range of zooms.</p>
+<p>In OutFox, this can be altered with the <code>TinyUsesMiniCalc</code> sub-modifier. When active, it switches to NotITG&rsquo;s equation, which allows for a wider range of zooms.</p>
 <p>In SM5.2 and earlier, this can be somewhat replicated by taking the two equations and solving for the equivalent strength. (Doesn&rsquo;t work for negative strengths in NotITG, through)</p>
 <p>This affects every variant of Tiny.</p>
 <div class=gdoc-page__anchorwrap>
@@ -697,7 +697,7 @@ Differences from older SM5 builds
 <a data-clipboard-text=https://outfox.wiki/dev/actors/General-DifferencesfromOlderSM/#differences-from-older-sm5-builds class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Differences from older SM5 builds" href=#differences-from-older-sm5-builds><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
-</div><p>SM5.3 changes the default behavior from the older SM5 builds. This section documents those changes.</p>
+</div><p>Project OutFox changes the default behavior from the older SM5 builds. This section documents those changes.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=column-specific-function-changes>
 Column-specific function changes
@@ -711,7 +711,7 @@ Player vanish point
 <a data-clipboard-text=https://outfox.wiki/dev/actors/General-DifferencesfromOlderSM/#player-vanish-point class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Player vanish point" href=#player-vanish-point><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>In SM5.2 and earlier (due to a math error), the player&rsquo;s vanish point at the x axis is skewed towards their side of the screen instead of being directly at the center of the notefield. This is not an issue in SM5.0.7 and earlier or in SM5.3 and later.</p>
+</div><p>In SM5.2 and earlier (due to a math error), the player&rsquo;s vanish point at the x axis is skewed towards their side of the screen instead of being directly at the center of the notefield. This is not an issue in SM5.0.7 and earlier or in OutFox and later.</p>
 <p>For example: P1 is at the left half of the screen, so its' vanish point is slightly skewed towards the left edge of the screen.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=vibrate-now-takes-the-current-zoom-into-account>
@@ -723,14 +723,14 @@ vibrate() now takes the current zoom into account
 <p>SM5.1 and earlier take the endpoint zoom and use that for vibrate.</p>
 <p>For example:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=n>actor</span><span class=p>:</span><span class=n>vibrate</span><span class=p>():</span><span class=n>zoom</span><span class=p>(</span><span class=mi>20</span><span class=p>):</span><span class=n>linear</span><span class=p>(</span><span class=mi>2</span><span class=p>):</span><span class=n>zoom</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span>
-</code></pre></div><p>Would result in no visible vibration because the end point is 0, while in SM5.3 and SM3.95, one would see the vibration start at 20 and go down as the zoom reaches 0.</p>
+</code></pre></div><p>Would result in no visible vibration because the end point is 0, while in OutFox and SM3.95, one would see the vibration start at 20 and go down as the zoom reaches 0.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=lua-is-more-strict-with-escape-sequences>
 Lua is more strict with escape sequences.
 <a data-clipboard-text=https://outfox.wiki/dev/actors/General-DifferencesfromOlderSM/#lua-is-more-strict-with-escape-sequences class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Lua is more strict with escape sequences." href=#lua-is-more-strict-with-escape-sequences><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>In older builds of SM, an invalid escape sequence is ignored, with the offending \ removed. In lua 5.3 (and consequentally, SM5.3), this now causes a lua error, which may result in themes or effect files not running correctly or at all.</p>
+</div><p>In older builds of SM, an invalid escape sequence is ignored, with the offending \ removed. In Lua 5.3 (and consequentally, Project OutFox), this now causes a lua error, which may result in themes or effect files not running correctly or at all.</p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
