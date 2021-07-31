@@ -28,6 +28,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 {{< button size="large" relref="user-guide/meta/about" >}}About{{< /button >}}
 {{< button size="large" relref="user-guide/meta/FAQ" >}}FAQ{{< /button >}}
 {{< button size="large" relref="user-guide/meta/about/#project-outfox-teams" >}}The Team{{< /button >}}
+{{< button size="large" relref="releases/" >}}Release History{{< /button >}}
 
 <--->
 
