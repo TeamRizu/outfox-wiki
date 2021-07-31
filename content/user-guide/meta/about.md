@@ -3,7 +3,7 @@ title: About Project OutFox
 weight: 1
 ---
 
-Project OutFox 5.3 is an effort to modernize and revitalize the open source rhythm gaming engine StepMania. It is led by Team Rizu, a development team led by community veteran Squirrel, as well as many other prominent members of the current community.
+Project OutFox is an effort to modernize and revitalize the open source rhythm gaming engine StepMania. It is led by Team Rizu, a development team led by community veteran Squirrel, as well as many other prominent members of the current community.
 
 ## What is different?
 
@@ -13,7 +13,7 @@ We are also working to flesh out its support for other gameplay styles beyond ju
 
 As Project OutFox is a continuation of the 5.0.12 and 5.1 codebase (not “5.2”), it remains compatible with almost all existing songs, themes, and noteskins that are supported on these versions (if you do encounter odd behaviour or other issues with older content, please report it to us as a bug).
 
-5.3 is unrelated to 5.1 -3 (sometimes written as 5.1-3), which was a prior build of 5.2 before it was renamed.
+Project OutFox is unrelated to 5.1 -3 (sometimes written as 5.1-3), which was a prior build of 5.2 before it was renamed.
 
 ## Project OutFox Teams
 

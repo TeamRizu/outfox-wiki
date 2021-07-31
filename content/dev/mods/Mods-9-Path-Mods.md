@@ -49,7 +49,7 @@ PlayerOptions format: \<DrunkPeriod variant\>(\<magnitude\>, \<approach rate\>)
 Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 
 ## DrunkSpacing
-Desc: Alters the amount of space between the columns, and is cyclical like DrunkOffset. Used to be called "DrunkOffset" before SM5.3 and NotITG v4.
+Desc: Alters the amount of space between the columns, and is cyclical like DrunkOffset. Used to be called "DrunkOffset" before OutFox and NotITG v4.
 
 Available variants: DrunkSpacing, DrunkYSpacing, DrunkZSpacing, TanDrunkSpacing, TanDrunkYSpacing, TanDrunkZSpacing
 
@@ -474,7 +474,7 @@ Desc: Spiral is a set of modifiers that move notes in a spiral towards the recep
 
 Common values range from -200 to 200%, with a period of -99% as a starting point.
 
-Quirks: When at 50% Reverse, the spiral effect looks much more like a full spiral. SpiralY does not affect holds in SM5.3 unless some NoteField functions are used (Refer to the SpiralHolds sub modifier for more details. The video example uses `NoteField:set_holds_use_nonstandard_y_pos` only.)
+Quirks: When at 50% Reverse, the spiral effect looks much more like a full spiral. SpiralY does not affect holds in OutFox unless some NoteField functions are used (Refer to the SpiralHolds sub modifier for more details. The video example uses `NoteField:set_holds_use_nonstandard_y_pos` only.)
 
 Available variants: SpiralX, SpiralY, SpiralZ
 

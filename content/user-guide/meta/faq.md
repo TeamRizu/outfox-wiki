@@ -9,7 +9,7 @@ A project to modernize the StepMania 5.0.12/5.1 codebase to improve its performa
 
 ## Will it still work with my old songs/themes/etc..?
 
-Project OutFox builds upon the existing StepMania 5.0.12/5.1 beta codebase, and maintaining backwards compatibility with older content is one of our main priorities (in fact, this is one of the reasons why the internal version number is 5.3 rather than skipping to a higher number like 6.0). Content that worked on StepMania 5.0.12/5.1 (including songs, themes, and noteskins) should still work on OutFox. If you experience any issues/weirdness, please report it to us.
+Project OutFox builds upon the existing StepMania 5.0.12/5.1 beta codebase, and maintaining backwards compatibility with older content is one of our main priorities. Content that worked on StepMania 5.0.12/5.1 (including songs, themes, and noteskins) should still work on OutFox. If you experience any issues/weirdness, please report it to us.
 
 Side note for developers
 
@@ -78,7 +78,7 @@ The game doesn't even try to automap things yet, there's a [tutorial step-by-ste
 - Playfield/Notefield/Receptors/PlayerBoards: The targets that notes are going to reach. In dance, the 4 notes that are always at the top. In pump, the 5 notes that are always at the top.
 - Lifts: Note that you have to stop holding the moment they reach the playfield.
 
-## Q: Will 5.3 go open source?
+## Q: Will Project OutFox go open source?
 
 _Yes_. Here's a quote from Squirrel if you want to know more:
 

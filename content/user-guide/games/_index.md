@@ -8,7 +8,7 @@ Project OutFox supports a variety of game types, which simulate different types 
 
 ![Screenshot of the Project OutFox game selection screen.](/getting-started/select-game-type.png)
 
-As of 5.3.0-alpha-4.9.8, they include:
+As of OutFox-alpha-4.9.8, they include:
 
 * **dance** - The default game type. Similar to games such as _Dance Dance Revolution_ and _In the Groove_, it uses four lanes in the cardinal directions (left, down, up, right). It also contains a 6-lane style (solo) adding up-left and up-right directions, and a 3-lane style using only up-left, down, and up-right.
 * **pump** - A five-lane dance game, which uses four diagional directions and the center rather than cardinal directions. In terms of functionality and behavior it is in line with  _Pro_/StepMania 4 CVS.
@@ -21,7 +21,7 @@ As of 5.3.0-alpha-4.9.8, they include:
 * **techno** - A dance game type designed for pads with nine panels, including 4-lane (similar to dance), 5-lane (similar to pump), 8-lane (using all but the center panel), and 9-lane styles in single and double versions.
 * **popn** - A PMS player mode, supporting 3, 4, 5, 7, and 9-button styles, and the ability to load PMS files.
 * **gddm** - A drum mode supporting six-part (five drums and one pedal) and nine-part (seven drums, bass pedal, hi-hat pedal) styles, modelled upon the mechanics of the arcade rhythm game _DrumMania_. 5 and 10-part with full DTX file support coming soon.
-* **gdgf** (formerly **guitar** prior to 5.3.0-alpha-4.9.8) - A guitar mode supporting three-fret and five-fret styles, modelled upon the mechanics of the arcade rhythm game _Guitar Freaks_.
+* **gdgf** (formerly **guitar** prior to OutFox-alpha-4.9.8) - A guitar mode supporting three-fret and five-fret styles, modelled upon the mechanics of the arcade rhythm game _Guitar Freaks_.
 * **gh** - A five-fret guitar mode modelled upon the mechanics of once-popular console games originating from North America.
 * **kickbox** - Obscure lash-a-soft dance pad-to-a-punching-bag mode (four, six, and eight-sensor modes).
 

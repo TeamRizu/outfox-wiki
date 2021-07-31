@@ -6,7 +6,7 @@ Rotation modifiers rotate the notes on the x, y or z axis, and can also rotate t
 
 Some noteskins may affect how the effect looks due to how rotation and zoom interact in the notefield.
 
-SM5.3 and Open/NotITG act the same way, while earlier versions of SM5 may act differently.
+OutFox and Open/NotITG act the same way, while earlier versions of SM5 may act differently.
 
 ## Dizzy
 Desc: Notes spin as they reach the receptor, with more rotationz added the farther away from the receptor a note is.

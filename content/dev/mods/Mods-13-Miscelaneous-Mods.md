@@ -146,7 +146,7 @@ Modstring format: *\<approach rate\> \<magnitude\> \<modstring variant\>
 Desc: Allows one to set the timer used by many modifiers.
 
 These are the following types (denoted as \<type\>):
-- 'ModTimerType_Default' just go with the game's default timer type (5.2 defaults to song, 5.1 & 5.3 default to game)
+- 'ModTimerType_Default' just go with the game's default timer type (5.2 defaults to song, 5.1 & OutFox default to game)
 - 'ModTimerType_Game' (Use the game's current uptime in seconds.)
 - 'ModTimerType_Song' (Use the song's current time in seconds.)
 - 'ModTimerType_Beat' (Use the song's current beat.)

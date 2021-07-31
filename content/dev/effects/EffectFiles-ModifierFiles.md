@@ -23,7 +23,7 @@ ApplyGameCommand is a GameState function that provides a way to send modifiers a
 GAMESTATE:ApplyGameCommand("mod, *0.5 420 beat", 1)
 ```
 
-While it's still available in SM5 (including SM5.3), it's not recommended because it applies mods to the "Preferred" ModsLevel, which means modifiers apply instantly (no transition), and they persist outside of the simfile. SM5.2 Doesn't even have this function available.
+While it's still available in SM5 (including OutFox), it's not recommended because it applies mods to the "Preferred" ModsLevel, which means modifiers apply instantly (no transition), and they persist outside of the simfile. SM5.2 Doesn't even have this function available.
 
 ### #MODS (Course files, SM3.95/oITG/nITG/SM5)
 
@@ -102,9 +102,9 @@ TODO: I'm gonna need everyone else's help from the mods community when we start 
 
 -->
 
-### StepMania 5 templates
+### StepMania 5-Based templates
 
-- MTK's SM5.3 port of Exschwasion's easing template
+- MTK's OutFox port of Exschwasion's easing template
 	- https://drive.google.com/open?id=1HfCFvTHZUI4dO_eAk4iN5mO3H61caHzE
 	- Lost of local variables used up in the main scope to preserve syntax.
 	- The place to put the actual calls is a little different.
