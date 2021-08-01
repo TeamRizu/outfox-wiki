@@ -39,7 +39,7 @@ First off:
 5. Here, you'll enter a Modifier to get applied:
    * Many modifiers from the Player Options menu will work (Beat, Drunk, etc), for now just type `Beat` and press **Enter**.
    * Any attacks you add will show up to the right of the notes, both when editing and playing a simfile in the editor.
-![Prompting to enter an attack's modifier](/mods-attacks-mod-prompt.png)
+![Prompting to enter an attack's modifier](/making-simfiles/mods-attacks-mod-prompt.png)
 
 6. Press **P** to play your song - you should see the attack you added scroll up the screen with the notes.
    * When the attack with your `Beat` modifier scrolls to the top of the screen, the arrows will start bouncing to the beat!
