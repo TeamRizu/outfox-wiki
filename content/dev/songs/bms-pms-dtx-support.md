@@ -29,10 +29,10 @@ BMS / PMS / DTX Channel|BMS Name|OutFox BMS Support|PMS Name|OutFox PMS Support|
 8|Extended BPM|✅|Set BPM|✅|Supported - Changes bpm to value|Extended BPM|✅|✅|Supported - Changes bpm to value
 9|Stop|✅|Stop|✓|Supported|Not Used|✓|~|Supported
 0A|BGA Layer 2|✅|BGA Layer 2|✅|Supported|Not Used|✓|~|Supported
-0B|BGA Base Opacity|❌|BGA Base Opacity|❌|Not Supported|Not Used|~|~|Not Supported
-0C|BGA Layer Opacity|❌|Not Used|~|Not Supported|Not Used|~|~|Not Supported
-0D|BGA Layer 2 Opacity|❌|Not Used|~|Not Supported|Not Used|~|~|Not Supported
-0E|BGA Poor Opacity|❌|BGA Poor Opacity|❌|Not Supported|Not Used|~|~|Not Supported
+0B|BGA Base Opacity|❌|BGA Base Opacity|❌|Not Supported|Not Used|~|~|Not Used
+0C|BGA Layer Opacity|❌|Not Used|~|Not Supported|Not Used|~|~|Not Used
+0D|BGA Layer 2 Opacity|❌|Not Used|~|Not Supported|Not Used|~|~|Not Used
+0E|BGA Poor Opacity|❌|BGA Poor Opacity|❌|Not Supported|Not Used|~|~|Not Used
 0F|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
 
 ---
@@ -49,12 +49,12 @@ BMS / PMS / DTX Channel|BMS Name|OutFox BMS Support|PMS Name|OutFox PMS Support|
 17|P1 FootPedal|❌|Not Used|~|Supported|Floor Tom|✅|✅|Supported
 18|P1 Key 6|✅|Not Used|~|Supported|High Hat Open|✅|✅|Supported
 19|P1 Key 7|✅|Not Used|~|Supported|Ride Cymbal|✅|✅|Supported
-1A|Not Used|~|Not Used|~|Supported|Left Cymbal|✅|✅|Supported
-1B|Not Used|~|Not Used|~|Supported|Left Pedal|✅|✅|Supported
-1C|Not Used|~|Not Used|~|Supported|Left Bass Drum|✅|✅|Supported
-1D|Not Used|~|Not Used|~|Supported|Not Used|~|~|Supported
-1E|Not Used|~|Not Used|~|Supported|Not Used|~|~|Supported
-1F|Not Used|~|Not Used|~|Supported|Drums Fill in Sound|✅|✅|Supported
+1A|Not Used|~|Not Used|~|Not Used|Left Cymbal|✅|✅|Supported
+1B|Not Used|~|Not Used|~|Not Used|Left Pedal|✅|✅|Supported
+1C|Not Used|~|Not Used|~|Not Used|Left Bass Drum|✅|✅|Supported
+1D|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
+1E|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
+1F|Not Used|~|Not Used|~|Not Used|Drums Fill in Sound|✅|✅|Supported
 
 ---
 
@@ -69,12 +69,12 @@ BMS / PMS / DTX Channel|BMS Name|OutFox BMS Support|PMS Name|OutFox PMS Support|
 26|P2 Turn/Scratch|✅|Not Used|~|Supported|Guitar RGxxx|❌|✅|Not Supported yet on DTX
 27|P2 FootPedal|❌|Not Used|~|Not Supported yet|Guitar RGBxx|❌|✅|Not Supported yet on DTX
 28|P2 Key 6|✅|Not Used|~|Supported|Guitar Wail|❌|✅|Not Supported yet on DTX
-29|P2 Key 7|✅|Not Used|~|Supported|Not Supported|~|~|Supported
-2A|Not Used|~|Not Used|~|Not Used|Not Supported|~|~|Not Used
+29|P2 Key 7|✅|Not Used|~|Supported|Not Supported|~|~|Not Supported
+2A|Not Used|~|Not Used|~|Not Used|Not Supported|~|~|Not Supported
 2B|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
-2C|Not Used|~|Not Used|~|Not Used|Guitar Long Note Start/End Point|~|~ AL|Not Supported
-2D|Not Used|~|Not Used|~|Not Used|Bass Long Note Start/End Point|~|~ AL|Not Supported
-2E|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Supported
+2C|Not Used|~|Not Used|~|Not Used|Guitar Long Note Start/End Point|❌|✅ AL|Not Supported
+2D|Not Used|~|Not Used|~|Not Used|Bass Long Note Start/End Point|❌|✅ AL|Not Supported
+2E|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
 2F|Not Used|~|Not Used|~|Not Used|Guitar Wailing Sound|❌|✅|Not Supported yet on DTX
 
 ---
@@ -91,9 +91,9 @@ BMS / PMS / DTX Channel|BMS Name|OutFox BMS Support|PMS Name|OutFox PMS Support|
 37|P1 FootPedal Hidden|❌|Not Used|~|BMS in 4.9.10|Floor Tom Hidden Note|✅|✅|Supported
 38|P1 Key 6 Hidden|❌|Not Used|~|BMS in 4.9.10|High Hat Open Hidden Note|✅|✅|Supported
 39|P1 Key 7 Hidden|❌|Not Used|~|BMS in 4.9.10|Ride Cymbal Hidden Note|✅|✅|Supported
-3A|Not Used|~|Not Used|~|Supported|Left Cymbal Hidden Note|✅|✅|Supported
-3B|Not Used|~|Not Used|~|Supported|Left Pedal Hidden Note|✅|✅|Supported
-3C|Not Used|~|Not Used|~|Supported|Left Bass Drum Hidden Note|✅|✅|Supported
+3A|Not Used|~|Not Used|~|Not Used|Left Cymbal Hidden Note|✅|✅|Supported
+3B|Not Used|~|Not Used|~|Not Used|Left Pedal Hidden Note|✅|✅|Supported
+3C|Not Used|~|Not Used|~|Not Used|Left Bass Drum Hidden Note|✅|✅|Supported
 3D|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
 3E|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
 3F|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
@@ -103,7 +103,7 @@ BMS / PMS / DTX Channel|BMS Name|OutFox BMS Support|PMS Name|OutFox PMS Support|
 BMS / PMS / DTX Channel|BMS Name|OutFox BMS Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|------------|-------------|-------------|-------------
 40|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
-41|P2 Key 1 Hidden|❌|Not Used|❌|BMS/PMS in 4.9.10|Not Used|~|~|Not Used
+41|P2 Key 1 Hidden|❌|Not Used|~|BMS/PMS in 4.9.10|Not Used|~|~|Not Used
 42|P2 Key 2 Hidden|❌|P1 Right Blue Hidden|❌|BMS/PMS in 4.9.10|Not Used|~|~|Not Used
 43|P2 Key 3 Hidden|❌|P1 Right Green Hidden|❌|BMS/PMS in 4.9.10|Not Used|~|~|Not Used
 44|P2 Key 4 Hidden|❌|P1 Right Yellow Hidden|❌|BMS/PMS in 4.9.10|Not Used|~|~|Not Used
@@ -129,16 +129,16 @@ I have kept them here mainly due to the fact they exist, and whether or not ther
 
 BMS / PMS / DTX Channel|BMS Name|OutFox BMS Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|------------|-------------|-------------|-------------
-50|Not Used|~|Not Used|~|Not Supported|Bar Line|❌|✅|Not Supported
+50|Not Used|~|Not Used|~|Not Supported|Bar Line|❌|✅|Not Used
 51|P1 Key 1 LongNote|📝?|P1 Left While LongNote|📝?|Not Supported|Beat Line|❌|✅|Not Supported
 52|P1 Key 2 LongNote|📝?|P1 Left Yellow LongNote|📝?|Not Supported|MIDI Drum Chorus|❌|✅|Not Supported
 53|P1 Key 3 LongNote|📝?|P1 Left Green LongNote|📝?|Not Supported|Fill In|~|~|Not Supported
 54|P1 Key 4 LongNote|📝?|P1 Left Blue LongNote|📝?|Not Supported|Video Playback|❌|✅|Not Supported
 55|P1 Key 5 LongNote|📝?|P1 Red LongNote|📝?|Not Supported|BGA Layer 3|❌|✅|Not Supported
-56|P1 Turn/Scratch LongNote|📝?|Not Used|~|Not Supported|BGA Layer 4|~|~|Not Supported
-57|P1 FootPedal LongNote|📝?|Not Used|~|Not Supported|BGA Layer 5|~|~|Not Supported
-58|P1 Key 6 LongNote|📝?|Not Used|~|Not Supported|BGA Layer 6|~|~|Not Supported
-59|P1 Key 7 LongNote|📝?|Not Used|~|Not Supported|BGA Layer 7|~|~|Not Supported
+56|P1 Turn/Scratch LongNote|📝?|Not Used|~|Not Supported|BGA Layer 4|❌|✅|Not Supported
+57|P1 FootPedal LongNote|📝?|Not Used|~|Not Supported|BGA Layer 5|❌|✅|Not Supported
+58|P1 Key 6 LongNote|📝?|Not Used|~|Not Supported|BGA Layer 6|❌|✅|Not Supported
+59|P1 Key 7 LongNote|📝?|Not Used|~|Not Supported|BGA Layer 7|❌|✅|Not Supported
 5A|Not Used|~|Not Used|~|Not Used|Background Video Playback|~|~|Not Used
 5B|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
 5C|Not Used|~|Not Used|~|Not Used|Not Used|~|~|Not Used
@@ -240,7 +240,7 @@ A2|Not Used|~|Not Used|~|Not Used|Bass xGxxx|❌|✅|Not Supported
 A3|Not Used|~|Not Used|~|Not Used|Bass xGBxx|❌|✅|Not Supported
 A4|Not Used|~|Not Used|~|Not Used|Bass Rxxxx|❌|✅|Not Supported
 A5|Not Used|~|Not Used|~|Not Used|Bass RxBxx|❌|✅|Not Supported
-A6|Change Option|❌|Change Optoion|❌|This was the mod system for BMS|Bass RGxxx|❌|✅|Not Supported
+A6|Change Option|❌|Change Option|❌|This was the mod system for BMS and PMS.|Bass RGxxx|❌|✅|Not Supported
 A7|Not Used|~|Not Used|~|Not Used|Bass RGBxx|❌|✅|Not Supported
 A8|Not Used|~|Not Used|~|Not Used|Bass Wail |❌|✅|Not Supported
 A9|Not Used|~|Not Used|~|Not Used|Guitar RxBxP|❌|✅|Not Supported
@@ -319,10 +319,10 @@ DF|Not Used|~|Not Used|~|Not Used|Bass RGBxP|❌|✅|Not Supported
 BMS / PMS / DTX Channel|BMS Name|OutFox BMS Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|------------|-------------|-------------|-------------
 E0|Not Used|~|Not Used|~|Not Used|Replacing BGA Layer 8|❌|✅|Not Supported
-E1|P2 Key 2 LandMine|📝?|Not Used|~|Not Used|Bass xxxYP|❌|✅|Not Supported
+E1|P2 Key 1 LandMine|📝?|Not Used|~|Not Used|Bass xxxYP|❌|✅|Not Supported
 E2|P2 Key 2 LandMine|📝?|P1 Right Blue LandMine|📝?|Not Used|Bass xxBYP|❌|✅|Not Supported
 E3|P2 Key 3 LandMine|📝?|P1 Right Green LandMine|📝?|Not Used|Bass xGxYP|❌|✅|Not Supported
-E4|P2 Key 4 LandMine|📝?|P1 Right Yellow LandMine|📝?|~|Not Used|Bass xGBYP|❌|❌|Not Used
+E4|P2 Key 4 LandMine|📝?|P1 Right Yellow LandMine|📝?|Not Used|Bass xGBYP|❌|❌|Not Used
 E5|P2 Key 5 LandMine|📝?|P1 Right White LandMine|📝?|Not Used|Bass RxxYP|❌|✅|Not Supported
 E6|P2 Turn/Scratch LandMine|📝?|Not Used|~|Not Used|Bass RxBYP|❌|✅|Not Supported
 E7|P2 FootPedal LandMine|📝?|Not Used|~|Not Used|Bass RGxYP|❌|✅|Not Supported
