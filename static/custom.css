@@ -8,6 +8,11 @@ body {
   font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+/* This is way too narrow. */
+.container {
+    max-width: 95%;
+}
+
 /* Light mode theming */
 :root,
 :root[color-mode="light"] {
