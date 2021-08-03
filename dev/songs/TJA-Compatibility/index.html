@@ -709,7 +709,15 @@ Headers
 </a>
 </h1>
 </div><p>The level entry sets the amount of stars that the player will see and this will signify the difficulty of the chart. It is set from a scale of 1 to 10, and will set the difficulty in the game.
-Some simulators can also take the <code>COURSE</code> name to set the difficulty. It is similar to how the <code>PLAYLEVEL</code> works in BMS.</p>
+Some simulators can also take the <code>COURSE</code> name to set the difficulty. It is similar to how the <code>PLAYLEVEL</code> works in BMS. Bear in mind that maximum star ratings aren&rsquo;t the same between difficulties:</p>
+<blockquote>
+<ul>
+<li>1-5 <code>kantan</code> (<code>Easy</code>)</li>
+<li>1-7 <code>futsuu</code> (<code>Normal</code>)</li>
+<li>1-8 <code>muzu</code> (<code>Hard</code>)</li>
+<li>1-10 <code>oni</code>/<code>ura</code> (<code>Extreme</code>)</li>
+</ul>
+</blockquote>
 <p>Example</p>
 <pre><code>LEVEL:4
 </code></pre><hr>
@@ -722,7 +730,7 @@ Some simulators can also take the <code>COURSE</code> name to set the difficulty
 </div><p>This header is somewhat misleading. It is in fact the difficulty of the chart, and it can be set either as a number, or by a name.</p>
 <blockquote>
 <ul>
-<li><code>easy</code> or <code>0</code></li>
+<li><code>Easy</code> or <code>0</code></li>
 <li><code>Normal</code> or <code>1</code></li>
 <li><code>Hard</code> or <code>2</code></li>
 <li><code>Oni</code> or <code>3</code></li>
@@ -731,7 +739,9 @@ Some simulators can also take the <code>COURSE</code> name to set the difficulty
 <li><code>Dan</code> or <code>6</code></li>
 </ul>
 </blockquote>
-<p>Due to the competitive nature of the PC based simulators this normally defaults to <code>oni</code> or <code>3</code>, so be warned if your chart is easier than this difficulty, and make sure you add the correct name in the course setting.</p>
+<p>Due to the competitive nature of the PC based simulators this normally defaults to <code>oni</code> or <code>3</code>, so be warned if your chart is easier than this difficulty, and make sure you add the correct name in the course setting. It is named <code>Extreme</code> so this should give you an idea of the difficulty! <code>Edit</code> refers to <code>Ura Oni</code>, and doesn&rsquo;t have any impact alone on the genre of the song.</p>
+<p><code>Ura Oni</code> is an alternative to the <code>Oni</code> charts, which are not necessarily harder, but can include 2 player or gimmicks. Remember OutFox&rsquo;s Mod system is quite varied, and try to keep these out of your files if you wish to make them compatible with other simulators.</p>
+<p><code>Tower</code> is based on the style from the PS2 era of the game.</p>
 <p>This setting is similar to how <code>PLAYLEVEL</code> works in BMS, but gives a finer set of controls.</p>
 <p>Example</p>
 <pre><code>COURSE:4
@@ -768,7 +778,7 @@ This genre is not used that much in modern versions of the game, as it is the &l
 <blockquote>
 <ul>
 <li><code>バラエティ</code>
-This genre is &lsquo;variety&rsquo;. It is the genre where you can put charts that do not really &lsquo;fit&rsquo; in anything else. In most simulators, a lot of the edit charts go into variety.</li>
+This genre is &lsquo;variety&rsquo;. It is the genre where you can put charts that do not really &lsquo;fit&rsquo; in anything else. In most simulators, a lot of the edit charts go into variety. A lot of songs from BMS and Touhou fit in this category.</li>
 </ul>
 </blockquote>
 <blockquote>
@@ -829,17 +839,23 @@ So if the player scored 184 combo in a song which had 184 notes: it would be 184
 Scoring Formula: 1000 * COMBO (when COMBO &lt; 200) + (2000 * COMBO (when COMBO &gt; 200))
 </code></pre><blockquote>
 <ul>
-<li><code>1</code> This sets Arcade Version 8 to 16 scoring:
+<li><code>1</code> This sets Arcade Version 8 to 14 scoring:
 With this arcade version, we use the <code>SCOREDIFF</code> variable. The combo multiplier rises by <code>SCOREDIFF</code> with each 10 combo until it hits 100, then it doesn&rsquo;t change unless there is a break.</li>
 </ul>
 </blockquote>
 <pre><code>Scoring Formula: SCOREINIT + max(0, SCOREDIFF * floor((min(COMBO, 100) - 1) / 10))
 </code></pre><blockquote>
 <ul>
-<li><code>2</code> This sets the Arcade version to 0, which is similar to how <code>1</code> works, but with some different combo multipliers. This scoring system is not commonly used, but it&rsquo;s included here for completeness. There are a lot more Japanese charts with this setting.</li>
+<li><code>2</code> This sets the Arcade version to 0, which is similar to how <code>1</code> works, but with some different combo multipliers. This scoring system is not commonly used, but it&rsquo;s included here for completeness. There are a lot more Japanese charts with this setting. This scoring system refers to the always-online HD cabinet versions between 2011 and 2020 (normally named after colours &ndash; kimidori, murasaki, red, blue, green, etc)</li>
 </ul>
 </blockquote>
 <pre><code>Scoring Formula: SCOREINIT + SCOREDIFF * (if combo over 100; 8) (if combo over 50; 4) (if combo over 30; 2) (if combo over 10; 1)
+</code></pre><blockquote>
+<ul>
+<li><code>3</code>This sets the scoring to the newest taiko arcade (nijiiro) mathematically calculates score to mean all-good (dfc, =mfc/AJ/perfect) is equal to at least 1 million with combo no longer being a factor, with much more precision than AC0 (where scores of 1.2 million were possible on note-heavy charts and scores of 800k were possible on less note-heavy charts, all oni). It&rsquo;s comparable to the shin-uchi/true hit mode (other than it not accounting for big notes anymore)</li>
+</ul>
+</blockquote>
+<pre><code>Scoring Formula: ((1000000-(time of balloon (sec)*100*16.6 OR hit count of balloon×100)-time of drumroll (sec)*100*16.6)/total note count/10)then unconditional carry to single digit * 10
 </code></pre><p>Example</p>
 <pre><code>SCOREMODE:1
 </code></pre><hr>
@@ -900,7 +916,7 @@ Taiko Note Types
 <li><code>F</code> = Adlib; hidden note that will increase combo if spotted, but won&rsquo;t give bad/miss when not</li>
 </ul>
 </blockquote>
-<p><em>Written and Maintained by Squirrel, with thanks to Taiko-web, and members of the TJDB community</em></p>
+<p><em>Written and Maintained by Squirrel, with thanks to Taiko-web, and members of the TJADB community</em></p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
