@@ -120,7 +120,12 @@ DEMOSTART:22.65
 ---
 # ``LEVEL``
 The level entry sets the amount of stars that the player will see and this will signify the difficulty of the chart. It is set from a scale of 1 to 10, and will set the difficulty in the game.
-Some simulators can also take the ``COURSE`` name to set the difficulty. It is similar to how the ``PLAYLEVEL`` works in BMS.
+Some simulators can also take the ``COURSE`` name to set the difficulty. It is similar to how the ``PLAYLEVEL`` works in BMS. Bear in mind that maximum star ratings aren't the same between difficulties:
+
+>* 1-5 ``kantan`` (``Easy``)
+>* 1-7 ``futsuu`` (``Normal``)
+>* 1-8 ``muzu`` (``Hard``)
+>* 1-10 ``oni``/``ura`` (``Extreme``)
 
 Example
 ```
@@ -129,7 +134,7 @@ LEVEL:4
 ---
 # ``COURSE``
 This header is somewhat misleading. It is in fact the difficulty of the chart, and it can be set either as a number, or by a name.
->* ``easy`` or ``0``
+>* ``Easy`` or ``0``
 >* ``Normal`` or ``1``
 >* ``Hard`` or ``2``
 >* ``Oni`` or ``3``
@@ -137,7 +142,11 @@ This header is somewhat misleading. It is in fact the difficulty of the chart, a
 >* ``Tower`` or ``5``
 >* ``Dan`` or ``6``
 
-Due to the competitive nature of the PC based simulators this normally defaults to ``oni`` or ``3``, so be warned if your chart is easier than this difficulty, and make sure you add the correct name in the course setting.
+Due to the competitive nature of the PC based simulators this normally defaults to ``oni`` or ``3``, so be warned if your chart is easier than this difficulty, and make sure you add the correct name in the course setting. It is named ``Extreme`` so this should give you an idea of the difficulty! ``Edit`` refers to ``Ura Oni``, and doesn't have any impact alone on the genre of the song.
+
+``Ura Oni`` is an alternative to the ``Oni`` charts, which are not necessarily harder, but can include 2 player or gimmicks. Remember OutFox's Mod system is quite varied, and try to keep these out of your files if you wish to make them compatible with other simulators.
+
+``Tower`` is based on the style from the PS2 era of the game. 
 
 This setting is similar to how ``PLAYLEVEL`` works in BMS, but gives a finer set of controls.
 
@@ -168,7 +177,7 @@ This is the anime genre, used for anime based songs, opening/closing credit song
 This genre is not used that much in modern versions of the game, as it is the 'nursery rhymes' genre. If you are being true to the historical versions of the game then use this genre, but most now have moved into variety and classical. They tend to be more biased towards the easier side of difficulty, as it was meant to open up the game to a younger audience.
 
 >* ``バラエティ``
-This genre is 'variety'. It is the genre where you can put charts that do not really 'fit' in anything else. In most simulators, a lot of the edit charts go into variety. 
+This genre is 'variety'. It is the genre where you can put charts that do not really 'fit' in anything else. In most simulators, a lot of the edit charts go into variety. A lot of songs from BMS and Touhou fit in this category.
 
 >* ``ボーカロイド`` or ``VOCALOID``
 The vocaloid genre has two possible entries to the genre tag, and you can use either of them. This genre is for music made using the vocaloid based virtual idol singers, including IA, Miku, Luka, Gumi etc.
@@ -206,14 +215,19 @@ Scoring Formula: SCOREINIT * COMBO (when COMBO < 200) + (SCORINIT + SCOREDIFF * 
 
 Scoring Formula: 1000 * COMBO (when COMBO < 200) + (2000 * COMBO (when COMBO > 200))
 ```
->* ``1`` This sets Arcade Version 8 to 16 scoring:
+>* ``1`` This sets Arcade Version 8 to 14 scoring:
 With this arcade version, we use the ``SCOREDIFF`` variable. The combo multiplier rises by ``SCOREDIFF`` with each 10 combo until it hits 100, then it doesn't change unless there is a break.
 ```
 Scoring Formula: SCOREINIT + max(0, SCOREDIFF * floor((min(COMBO, 100) - 1) / 10))
 ```
->* ``2`` This sets the Arcade version to 0, which is similar to how ``1`` works, but with some different combo multipliers. This scoring system is not commonly used, but it's included here for completeness. There are a lot more Japanese charts with this setting.
+>* ``2`` This sets the Arcade version to 0, which is similar to how ``1`` works, but with some different combo multipliers. This scoring system is not commonly used, but it's included here for completeness. There are a lot more Japanese charts with this setting. This scoring system refers to the always-online HD cabinet versions between 2011 and 2020 (normally named after colours -- kimidori, murasaki, red, blue, green, etc)
 ```
 Scoring Formula: SCOREINIT + SCOREDIFF * (if combo over 100; 8) (if combo over 50; 4) (if combo over 30; 2) (if combo over 10; 1)
+```
+
+>* ``3``This sets the scoring to the newest taiko arcade (nijiiro) mathematically calculates score to mean all-good (dfc, =mfc/AJ/perfect) is equal to at least 1 million with combo no longer being a factor, with much more precision than AC0 (where scores of 1.2 million were possible on note-heavy charts and scores of 800k were possible on less note-heavy charts, all oni). It's comparable to the shin-uchi/true hit mode (other than it not accounting for big notes anymore)
+```
+Scoring Formula: ((1000000-(time of balloon (sec)*100*16.6 OR hit count of balloon×100)-time of drumroll (sec)*100*16.6)/total note count/10)then unconditional carry to single digit * 10
 ```
 
 Example
@@ -270,4 +284,4 @@ MAKER:Squirrel
 
 
 
-_Written and Maintained by Squirrel, with thanks to Taiko-web, and members of the TJDB community_
+_Written and Maintained by Squirrel, with thanks to Taiko-web, and members of the TJADB community_
