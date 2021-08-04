@@ -30,7 +30,7 @@ TITLE:My Favourite Song
 # ``SUBTITLE`` 
 This header replaces the ``#ARTIST`` tag that BMS/PMS uses, so remember to use it in this way. It again used to be written in SHIFT-JIS on older files, but please use UTF-8, as this is the standard now.
 
-Subtitles can be hidden on the evaluation screen by adding ``--`` before the title begins. If you wish to show the subtitle on the evaluation screen (the default) you can add ``++``. It is not actually necessary to use this notation on OutFox, but for compatibility with other simulators, it is best to set this to either visible or hide.
+Subtitles can be hidden on the evaluation screen by adding ``--`` before the title begins. If you wish to show the subtitle on the evaluation screen (the default) you can add ``++``. It is not actually necessary to use this notation on OutFox, but for compatibility with other simulators, it is best to set this to either visible or hide. Be aware, only ``--`` works on other simulations, so if you want to keep compatibility, do not use the other two options.
 
 Example:
 
@@ -244,7 +244,7 @@ SCOREINIT:380
 ```
 ---
 # ``SCOREDIFF``
-This tag sets the score DIFFerenc for the scoring method. This is commonly set to 140 on Japanese charts, but many other values are seen as well. See ``#SCOREMODE`` above.
+This tag sets the score DIFFerence for the scoring method. This is commonly set to 140 on Japanese charts, but many other values are seen as well. See ``#SCOREMODE`` above.
 
 Example
 ```
@@ -274,8 +274,8 @@ MAKER:Squirrel
 >* ``6`` = Large Drum Roll Start Point (Yellow Roll) - Ends with an ``8``
 >* ``7`` = Where the 'Balloon' (Long) Note Begin - Ends with an ``8``
 >* ``8`` = Where the Drum Roll / Balloon Long Notes End
->* ``9`` = Where the 'Kusudama, yam, oimo, or big balloon' (Long) Note Begins - Ends with an ``8`` or ``9``
->* ``A`` = Large Don Partner, Multiplayer, with the hands
+>* ``9`` = Where the 'Kusudama, yam, oimo, or big balloon' (Long) Note Begins - Ends with an ``8``
+>* ``A`` = Large Don Partner, Multiplayer, with the hands 
 >* ``B`` = Large Kat Partner, Multiplayer, with the hands
 >* ``C`` = Not Used?
 >* ``D`` = Not Used?
