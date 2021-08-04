@@ -398,6 +398,13 @@ OutFox Alpha 4.9.9 Build
 </li>
 <li>
 <span class=flex>
+<a href=../../../releases/A4.9.9HF/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.9HF Build
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
 <a href=../../../releases/A4.9.8/ class=gdoc-nav__entry>
 OutFox Alpha 4.9.8 Build
 </a>
@@ -620,7 +627,7 @@ Headers
 </a>
 </h1>
 </div><p>This header replaces the <code>#ARTIST</code> tag that BMS/PMS uses, so remember to use it in this way. It again used to be written in SHIFT-JIS on older files, but please use UTF-8, as this is the standard now.</p>
-<p>Subtitles can be hidden on the evaluation screen by adding <code>--</code> before the title begins. If you wish to show the subtitle on the evaluation screen (the default) you can add <code>++</code>. It is not actually necessary to use this notation on OutFox, but for compatibility with other simulators, it is best to set this to either visible or hide.</p>
+<p>Subtitles can be hidden on the evaluation screen by adding <code>--</code> before the title begins. If you wish to show the subtitle on the evaluation screen (the default) you can add <code>++</code>. It is not actually necessary to use this notation on OutFox, but for compatibility with other simulators, it is best to set this to either visible or hide. Be aware, only <code>--</code> works on other simulations, so if you want to keep compatibility, do not use the other two options.</p>
 <p>Example:</p>
 <pre><code>SUBTITLE:My Favourite Artists
 </code></pre><p>To hide on evaluation:</p>
@@ -879,7 +886,7 @@ With this arcade version, we use the <code>SCOREDIFF</code> variable. The combo 
 <a data-clipboard-text=https://outfox.wiki/dev/songs/tja-support/#scorediff class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SCOREDIFF" href=#scorediff><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
-</div><p>This tag sets the score DIFFerenc for the scoring method. This is commonly set to 140 on Japanese charts, but many other values are seen as well. See <code>#SCOREMODE</code> above.</p>
+</div><p>This tag sets the score DIFFerence for the scoring method. This is commonly set to 140 on Japanese charts, but many other values are seen as well. See <code>#SCOREMODE</code> above.</p>
 <p>Example</p>
 <pre><code>SCOREDIFF:90
 </code></pre><hr>
@@ -911,7 +918,7 @@ Taiko Note Types
 <li><code>6</code> = Large Drum Roll Start Point (Yellow Roll) - Ends with an <code>8</code></li>
 <li><code>7</code> = Where the &lsquo;Balloon&rsquo; (Long) Note Begin - Ends with an <code>8</code></li>
 <li><code>8</code> = Where the Drum Roll / Balloon Long Notes End</li>
-<li><code>9</code> = Where the &lsquo;Kusudama, yam, oimo, or big balloon&rsquo; (Long) Note Begins - Ends with an <code>8</code> or <code>9</code></li>
+<li><code>9</code> = Where the &lsquo;Kusudama, yam, oimo, or big balloon&rsquo; (Long) Note Begins - Ends with an <code>8</code></li>
 <li><code>A</code> = Large Don Partner, Multiplayer, with the hands</li>
 <li><code>B</code> = Large Kat Partner, Multiplayer, with the hands</li>
 <li><code>C</code> = Not Used?</li>

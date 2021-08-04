@@ -3,10 +3,11 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Release Date: 31st July 2021    &ldquo;Hey! Why don&rsquo;t you just get up and dance, man?&#34;    (Incorporates Internal Builds 4.9.8.1 to 4.9.8.6BE)
-(Incorporates Internal Builds 4.9.9-rc0 to 4.9.9-rc8)
-Alpha Statistics       Commits Changed files Additions Deletions     433 2079 185,205 29,552    In Memorium of SHIKI, a long running well known game music musician, who gave us over two decades of music spanning dance, vocaloid and techno, most of which was charted into BMS, SM and others, sadly passed away this month.">
-<title>OutFox Alpha 4.9.9 Build | Project OutFox Wiki</title>
+<meta name=description content="Release Date: 4th August 2021    &ldquo;How&rsquo;s that new feature coming along?&#34;    (Incorporates Internal Builds 4.9.9HF-rc0 to 4.9.9HF-rc4)
+This build fixes several of the reported bugs, as we had to pull the previous release due to operating system updates between release dates. Sometimes having a monthly release schedule is awesome, but it does tire us out!
+Anyways&mldr; Lets get back to the update.
+This mini hotfix includes a few things we were going to leave to the next release, but as we had to fix bugs in them anyway, it was easier to apply.">
+<title>OutFox Alpha 4.9.9HF Build | Project OutFox Wiki</title>
 <link rel=icon href=../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -392,14 +393,14 @@ Release History
 <ul class=gdoc-nav__list>
 <li>
 <span class=flex>
-<a href=../../releases/A4.9.9/ class="gdoc-nav__entry is-active">
+<a href=../../releases/A4.9.9/ class=gdoc-nav__entry>
 OutFox Alpha 4.9.9 Build
 </a>
 </span>
 </li>
 <li>
 <span class=flex>
-<a href=../../releases/A4.9.9HF/ class=gdoc-nav__entry>
+<a href=../../releases/A4.9.9HF/ class="gdoc-nav__entry is-active">
 OutFox Alpha 4.9.9HF Build
 </a>
 </span>
@@ -586,31 +587,156 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/releases/ href=../../releases/><span itemprop=name>Release History</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>OutFox Alpha 4.9.9 Build</span><meta itemprop=position content="3"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/releases/ href=../../releases/><span itemprop=name>Release History</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>OutFox Alpha 4.9.9HF Build</span><meta itemprop=position content="3"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>OutFox Alpha 4.9.9 Build</h1><!--### Release Date: tba -->
+<h1>OutFox Alpha 4.9.9HF Build</h1>
+<div class=gdoc-page__anchorwrap>
+<h3 id=release-date-4th-august-2021>
+Release Date: 4th August 2021
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#release-date-4th-august-2021 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Release Date: 4th August 2021" href=#release-date-4th-august-2021><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=gdoc-page__anchorwrap>
+<h1 id=hows-that-new-feature-coming-along>
+&ldquo;How&rsquo;s that new feature coming along?"
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#hows-that-new-feature-coming-along class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label='Anchor &ldquo;How&rsquo;s that new feature coming along?"' href=#hows-that-new-feature-coming-along><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div><p><img src=https://user-images.githubusercontent.com/11047768/128260941-a55ffd0a-6869-4d31-ada4-fecf8ea89de0.png alt="New Game!">
+(Incorporates Internal Builds 4.9.9HF-rc0 to 4.9.9HF-rc4)</p>
+<p>This build fixes several of the reported bugs, as we had to pull the previous release due to operating system updates between release dates. Sometimes having a monthly release schedule is awesome, but it does tire us out!</p>
+<p>Anyways&mldr; Lets get back to the update.</p>
+<p>This mini hotfix includes a few things we were going to leave to the next release, but as we had to fix bugs in them anyway, it was easier to apply.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=signed-mac-builds-update>
+Signed Mac builds update!
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#signed-mac-builds-update class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Signed Mac builds update!" href=#signed-mac-builds-update><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>The big news is we (now finally!) have passed the prerequisites for GateKeeper on Mac, so this hotfix should behave and work fine, without any issues. Do remember to just drag and drop as the dmg lets you know how to do so, and it will run as other applications. Thanks to Jose and Squirrel for their efforts, and Jose for puzzling through, and Jousway for fixing one of the bugs in <code>gh</code> mode which was causing issuess as well.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=notes-loading>
+Notes Loading
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#notes-loading class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Notes Loading" href=#notes-loading><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>There were several issues with the notes loaders and how antivirus/software protection apps were seeing OutFox when we were loading simfiles. This alpha hotfix now has addressed this by allowing you all to add more than one simfile in a song folder, cutting down on the folder rabbit hole. As we move to a more multi-game engine, this will also allow you to keep things tidy on your drive, and ensure it is a seamless experience for you all. Of course, please check the audio files are the same for the chart you are going to add to the folder, as you may find you have a nasty sync issue, but we also now support multidifficulty setups, as this is required for <code>pump</code> and <code>taiko</code> specifically.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=difficulty-system-revamp>
+Difficulty System Revamp
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#difficulty-system-revamp class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Difficulty System Revamp" href=#difficulty-system-revamp><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>This hotfix also sees a tweak to the difficulty system used in OutFox. In the past it was tied to the DDR paradigm and then left to rot as one of those &lsquo;StepMania Things&rsquo;. This however really stifled what we could do within the engine, especially with modes with different names/brackets etc. With the release of <code>gddm</code> and <code>taiko</code> we needed more difficulties than the game offered, so this has now been resolved. Themes which are based off of 5.1/5.0.x will still work due to the numbers being the same as before. If there are any issues with your theme, do let us know, but we have tested several with no issues.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=new-volume-and-pan>
+New <code>#VOLUME</code> and <code>#PAN</code>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#new-volume-and-pan class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New #VOLUME and #PAN" href=#new-volume-and-pan><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>These features have been missing from our keysound support since 2002, and we are proud to say that we have them in this hotfix! They are completely supported in <code>gddm</code> from the parser, (do reset your cache of course!) and they also work in <code>beat</code>/<code>popn</code>. <code>taiko</code> will need the support as well, so shout out to Jous for putting up with my waaaahh-luigi on getting it added to the game. This build also supports the hidden chips/keysounds for <code>gddm</code> and we&rsquo;ll work on getting the final compatibility added in due course.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=new-gh-modernisation>
+New <code>gh</code> Modernisation
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#new-gh-modernisation class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New gh Modernisation" href=#new-gh-modernisation><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Due to the need to run with a slightly more secure runtime on <em>Mac OS Catalina/Big Sur/Monterey</em> on the Intel based macs there were some functions in our <code>gh</code> mode which gatekeeper did not approve of. The way the notes were cast have been fixed, fever/star power has been sorted to be more gh3 like, and taps and open strums are also tweaked to be better. Please give them a try and let us know! A theme for this mode is in the works, so apologies for the barebone approach we have at the moment. It&rsquo;s also why we are an alpha after all&mldr;</p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=all>
+<strong>ALL:</strong>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#all class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ALL:" href=#all><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p><strong>Mode Specific</strong></p>
+<ul>
+<li>❕✅ Fixed SM/SSC Noteloader corruption with some Japanese and Korean Titles/Artists on <code>dance</code> notesloaders</li>
+<li>❕✅ Fixed DTX Noteloader memory leak</li>
+<li>❕✅ Fixed DTX Parser missing some drums in <code>gddm</code> mode</li>
+<li>❕✅ Fixed BMS Keysounds not seeking/reading correctly</li>
+<li>❕✅ Fixed PMS Keysounds not buffering correctly</li>
+<li>❕✅ Modernise Keysound system to prevent buffer under-runs</li>
+<li>❕✅ Fix BMS/PMS missing channels, Hidden notes will come next Alpha</li>
+<li>❕✅ Fix <code>beat</code> crash with charts that had more than 866 keysounds</li>
+<li>❕✅ Fix <code>popn</code> crash with charts that had more than 1022 keysounds</li>
+<li>❕✅ Fix <code>#VOLUME</code> not being applied correctly to <code>beat</code> and <code>gddm</code> keysounds</li>
+<li>❕✅ Fix <code>#PAN</code> not being applied to <code>beat</code> and <code>popn</code> keysounds</li>
+<li>❕✅ Fix <code>gh</code> loading crash with some older charts.</li>
+<li>❕✅ Fixed RageSound preload causing missing chips in <code>gddm</code> and notes in <code>beat</code></li>
+<li>❕✅ Fixed <code>gh</code> crash due to an overzealous lightsman double update</li>
+<li>❕✅ Fixed crash in DTX/BMS/PMS due to strings being over optimised on Mac Intel/Linux</li>
+<li>❕✅ Fixed <code>gh</code> note types to please the Mac OS gatekeeper gods</li>
+<li>❕✅ Fixed <code>gh</code> open strum notes</li>
+<li>❕✅ Fixed <code>gh</code> fever to be closer to gh3</li>
+<li>❕✅ <strong>New</strong> <code>gh</code> HOPO notes system</li>
+<li>❕✅ Fixed <code>gh</code> tap notes not showing up sometimes on older CHART files</li>
+</ul>
+<p><strong>Engine</strong></p>
+<ul>
+<li>❕✅ Fixed OptionsPrefs issue - Closes #375</li>
+<li>❕✅ Fixed editor scrolling issue</li>
+<li>❕✅ Fixed editor buffer overflow when using >496 keysounds</li>
+<li>❕✅ Fixed editor input being sent garbage</li>
+<li>❕✅ Fixed editor input parser arrays</li>
+<li>❕✅ Fixed crash in practice mode</li>
+<li>❕✅ Fixed endless loop with some older BMS/PMS charts in practice mode - Thanks EDMSPack</li>
+<li>❕✅ Fixed potential buffer overflow exploit in soundreader</li>
+<li>❕✅ Fixed keysounds being stopped when they didn&rsquo;t need to be, forcing a reload of the sound</li>
+<li>❕✅ Fixed Keysound index system</li>
+<li>❕✅ <strong>New</strong> Added save on exit theme metrics for option screens</li>
+<li>❕✅ Fixed freeze on game select screen due to missing module - Thanks Kaede!</li>
+<li>❕✅ Modernised the notesloader system in preparation for more loaders</li>
+<li>❕✅ Fixed some types of charts being erroroneously skipped during the parse load</li>
+<li>❕✅ <strong>NEW Multi Sim File Loading from 1 directory</strong></li>
+<li>❕✅ <strong>NEW Non DDR difficulty system so we can properly support other modes</strong></li>
+</ul>
+<p><strong>Linux</strong></p>
+<ul>
+<li>❕✅ Fixed crash on linux versions that do not support the new Neutral Vendor libraries</li>
+<li>❕✅ Fixed crash on Debian/Ubuntu/Fedora/Arch with inifile due to a race condition</li>
+<li>❕✅ Fixed edge case crash on Clear/Fedora preventing the game booting on some 4.x / &lt; 5.1 Kernels</li>
+</ul>
+<p><strong>ARM32/ARM64: (Raspberry Pi etc)</strong></p>
+<ul>
+<li>❕✅ Fixed edge case crash on Twister/Raspbian preventing the game booting on some 4.x Kernels</li>
+<li>❕✅ Fixed crash on Raspbian with inifile due to a race condition</li>
+<li>❕✅ Fixed crash on RockPi 4B/4C when not using the first HDMI port/Audio</li>
+</ul>
+<p><strong>Mac OS</strong></p>
+<ul>
+<li>❕✅ Fixed input with guitar hero based controllers</li>
+<li>❕✅ Rewrote internal <code>gh</code> mode to fix overly harsh input restrictions</li>
+<li>❕✅ Fixed internal system to be signed compliant</li>
+<li>❕✅ <strong>New</strong> enhanced build pipeline to ensure signing passes on Mac OS Intel</li>
+<li>❕✅ <strong>New</strong> streamlined and optimised code for Mac M1 now we are properly signed</li>
+</ul>
+<hr><!--### Release Date: tba -->
 <div class=gdoc-page__anchorwrap>
 <h3 id=release-date-31st-july-2021>
 Release Date: 31st July 2021
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#release-date-31st-july-2021 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Release Date: 31st July 2021" href=#release-date-31st-july-2021><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#release-date-31st-july-2021 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Release Date: 31st July 2021" href=#release-date-31st-july-2021><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><div class=gdoc-page__anchorwrap>
 <h1 id=hey-why-dont-you-just-get-up-and-dance-man>
 &ldquo;Hey! Why don&rsquo;t you just get up and dance, man?"
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#hey-why-dont-you-just-get-up-and-dance-man class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label='Anchor &ldquo;Hey! Why don&rsquo;t you just get up and dance, man?"' href=#hey-why-dont-you-just-get-up-and-dance-man><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#hey-why-dont-you-just-get-up-and-dance-man class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label='Anchor &ldquo;Hey! Why don&rsquo;t you just get up and dance, man?"' href=#hey-why-dont-you-just-get-up-and-dance-man><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
-</div>
-<p>(Incorporates Internal Builds 4.9.8.1 to 4.9.8.6BE)</p>
-<p>(Incorporates Internal Builds 4.9.9-rc0 to 4.9.9-rc8)</p>
+</div><p>(Incorporates Internal Builds 4.9.8.1 to 4.9.8.6BE)
+(Incorporates Internal Builds 4.9.9-rc0 to 4.9.9-rc8)</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=alpha-statistics>
 Alpha Statistics
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#alpha-statistics class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Alpha Statistics" href=#alpha-statistics><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#alpha-statistics class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Alpha Statistics" href=#alpha-statistics><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><div class=table-wrap> <table>
@@ -634,7 +760,7 @@ Alpha Statistics
 <div class=gdoc-page__anchorwrap>
 <h2 id=in-memorium-of-shiki-a-long-running-well-known-game-music-musician-who-gave-us-over-two-decades-of-music-spanning-dance-vocaloid-and-techno-most-of-which-was-charted-into-bms-sm-and-others-sadly-passed-away-this-month>
 In Memorium of SHIKI, a long running well known game music musician, who gave us over two decades of music spanning dance, vocaloid and techno, most of which was charted into BMS, SM and others, sadly passed away this month.
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#in-memorium-of-shiki-a-long-running-well-known-game-music-musician-who-gave-us-over-two-decades-of-music-spanning-dance-vocaloid-and-techno-most-of-which-was-charted-into-bms-sm-and-others-sadly-passed-away-this-month class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor In Memorium of SHIKI, a long running well known game music musician, who gave us over two decades of music spanning dance, vocaloid and techno, most of which was charted into BMS, SM and others, sadly passed away this month." href=#in-memorium-of-shiki-a-long-running-well-known-game-music-musician-who-gave-us-over-two-decades-of-music-spanning-dance-vocaloid-and-techno-most-of-which-was-charted-into-bms-sm-and-others-sadly-passed-away-this-month><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#in-memorium-of-shiki-a-long-running-well-known-game-music-musician-who-gave-us-over-two-decades-of-music-spanning-dance-vocaloid-and-techno-most-of-which-was-charted-into-bms-sm-and-others-sadly-passed-away-this-month class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor In Memorium of SHIKI, a long running well known game music musician, who gave us over two decades of music spanning dance, vocaloid and techno, most of which was charted into BMS, SM and others, sadly passed away this month." href=#in-memorium-of-shiki-a-long-running-well-known-game-music-musician-who-gave-us-over-two-decades-of-music-spanning-dance-vocaloid-and-techno-most-of-which-was-charted-into-bms-sm-and-others-sadly-passed-away-this-month><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p>This alpha, our loading screen is in memory of one of his more famous StepMania Based Charts, Air.</p>
@@ -645,20 +771,20 @@ In Memorium of SHIKI, a long running well known game music musician, who gave us
 <div class=gdoc-page__anchorwrap>
 <h2 id=rest-in-peace>
 Rest In Peace.
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#rest-in-peace class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Rest In Peace." href=#rest-in-peace><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#rest-in-peace class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Rest In Peace." href=#rest-in-peace><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><div class=gdoc-page__anchorwrap>
 <h2 id=shiki----6th-july-2021>
 SHIKI ?? - 6th July 2021.
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#shiki----6th-july-2021 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SHIKI ?? - 6th July 2021." href=#shiki----6th-july-2021><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#shiki----6th-july-2021 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SHIKI ?? - 6th July 2021." href=#shiki----6th-july-2021><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=texture-font-generator-v034httpsgithubcomteamrizutexture-font-generator-2020-squirrel>
 <a class=gdoc-markdown__link href=https://github.com/teamrizu/texture-font-generator-2020-squirrel>TEXTURE FONT GENERATOR V0.34</a>
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#texture-font-generator-v034httpsgithubcomteamrizutexture-font-generator-2020-squirrel class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TEXTURE FONT GENERATOR V0.34" href=#texture-font-generator-v034httpsgithubcomteamrizutexture-font-generator-2020-squirrel><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#texture-font-generator-v034httpsgithubcomteamrizutexture-font-generator-2020-squirrel class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TEXTURE FONT GENERATOR V0.34" href=#texture-font-generator-v034httpsgithubcomteamrizutexture-font-generator-2020-squirrel><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><ul>
@@ -673,7 +799,7 @@ SHIKI ?? - 6th July 2021.
 <div class=gdoc-page__anchorwrap>
 <h2 id=new-and-some-old-modes-update-version-2>
 New (and some Old!) Modes Update Version 2
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#new-and-some-old-modes-update-version-2 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New (and some Old!) Modes Update Version 2" href=#new-and-some-old-modes-update-version-2><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#new-and-some-old-modes-update-version-2 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New (and some Old!) Modes Update Version 2" href=#new-and-some-old-modes-update-version-2><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p>Following on from the last release, we have continued to improve and revamp the note system for the new modes, with Jousway taking the time to make available new types and styles available that were never before. This month fixes some omissions we made from the last release, which slipped through the testing teams.</p>
@@ -681,7 +807,7 @@ New (and some Old!) Modes Update Version 2
 <div class=gdoc-page__anchorwrap>
 <h1 id=pump>
 <code>pump</code>
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#pump class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor pump" href=#pump><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#pump class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor pump" href=#pump><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div><p><img src=https://user-images.githubusercontent.com/11047768/126882998-af475dc4-2c01-4620-af1d-867ba7c255f3.jpg alt=2021-07-24_180342></p>
@@ -698,7 +824,7 @@ New (and some Old!) Modes Update Version 2
 <div class=gdoc-page__anchorwrap>
 <h1 id=popn>
 <code>popn</code>
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#popn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor popn" href=#popn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#popn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor popn" href=#popn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div><p>There was also a reported issue where some of the channels (lanes) of the PMS 7 button mode were not parsing correctly, or were actually being missed completely, resulting in a chart &lsquo;misplacing&rsquo; green and blue lanes. This was due to Squirrel misreading the spec on how BMS98/PMS was transcribed and set up the function wrong. It is fixed in this release.</p>
@@ -715,14 +841,14 @@ This was not available on the original client, but it did always irk us how ther
 <div class=gdoc-page__anchorwrap>
 <h2 id=beat-will-be-getting-some-attention-this-next-quarter>
 <strong><code>beat</code> will be getting some attention this next quarter!</strong>
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#beat-will-be-getting-some-attention-this-next-quarter class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor beat will be getting some attention this next quarter!" href=#beat-will-be-getting-some-attention-this-next-quarter><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#beat-will-be-getting-some-attention-this-next-quarter class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor beat will be getting some attention this next quarter!" href=#beat-will-be-getting-some-attention-this-next-quarter><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><hr>
 <div class=gdoc-page__anchorwrap>
 <h1 id=para>
 <code>para</code>
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#para class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor para" href=#para><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#para class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor para" href=#para><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div><p>We have given this mode a polish (and for those with an arcade cab, with 3 sensors doing nothing!) we added the &lsquo;fabled&rsquo; 360, or 8 sensor mode. This mode was designed for in the arcade for when the player twirls or turns, but was never actioned. The sensors for the back are actually there! This mode adds that, and for those who feel adventurous, we will be publishing some information on how to make your own 360 8 sensor panel controller in due course.</p>
@@ -731,7 +857,7 @@ This was not available on the original client, but it did always irk us how ther
 <div class=gdoc-page__anchorwrap>
 <h1 id=taitai>
 <code>taitai</code>
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#taitai class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor taitai" href=#taitai><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#taitai class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor taitai" href=#taitai><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div><p>Announcing our 15th mode!</p>
@@ -747,7 +873,7 @@ This was not available on the original client, but it did always irk us how ther
 <div class=gdoc-page__anchorwrap>
 <h1 id=gddm>
 <code>gddm</code>
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#gddm class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor gddm" href=#gddm><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#gddm class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor gddm" href=#gddm><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div><p>This release sees the long awaited updates to our gddm mode!</p>
@@ -761,26 +887,17 @@ This was not available on the original client, but it did always irk us how ther
 <blockquote class="gdoc-hint danger">
 <strong>We do not support XA file decoding at this time, we are looking into options. If you have a dtx file with XA files contained, they will just be played as silence, but won&rsquo;t crash the game.</strong>
 </blockquote>
-<blockquote class="gdoc-hint info">
-<div class=gdoc-page__anchorwrap>
-<h3 id=we-do-support-the-pan-and-volume-tags-shoutout-to-jous-we-managed-to-get-this-in-before-the-release>
-We do support the #PAN and #VOLUME tags, (shoutout to Jous!) we managed to get this in before the release.
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#we-do-support-the-pan-and-volume-tags-shoutout-to-jous-we-managed-to-get-this-in-before-the-release class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor We do support the #PAN and #VOLUME tags, (shoutout to Jous!) we managed to get this in before the release." href=#we-do-support-the-pan-and-volume-tags-shoutout-to-jous-we-managed-to-get-this-in-before-the-release><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div>
-</blockquote>
 <hr>
 <div class=gdoc-page__anchorwrap>
 <h1 id=current-bmspmsdtx-notedata-support-as-of-499>
 Current BMS/PMS/DTX Notedata support as of 4.9.9
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#current-bmspmsdtx-notedata-support-as-of-499 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Current BMS/PMS/DTX Notedata support as of 4.9.9" href=#current-bmspmsdtx-notedata-support-as-of-499><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#current-bmspmsdtx-notedata-support-as-of-499 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Current BMS/PMS/DTX Notedata support as of 4.9.9" href=#current-bmspmsdtx-notedata-support-as-of-499><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div><div class=gdoc-page__anchorwrap>
 <h2 id=key>
 Key:
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#key class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Key:" href=#key><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#key class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Key:" href=#key><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><ul>
@@ -793,7 +910,7 @@ Key:
 <div class=gdoc-page__anchorwrap>
 <h3 id=channel-support-table>
 Channel Support Table
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#channel-support-table class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Channel Support Table" href=#channel-support-table><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#channel-support-table class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Channel Support Table" href=#channel-support-table><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><div class=table-wrap> <table>
@@ -1760,7 +1877,7 @@ Channel Support Table
 <div class=gdoc-page__anchorwrap>
 <h1 id=reordered-game-mode-select-screen>
 Reordered Game Mode Select Screen
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#reordered-game-mode-select-screen class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Reordered Game Mode Select Screen" href=#reordered-game-mode-select-screen><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#reordered-game-mode-select-screen class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Reordered Game Mode Select Screen" href=#reordered-game-mode-select-screen><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div><p>This alpha with the fact we have begun to introduce new modes and features, we have reordered the game modes based on some player/community feedback, with the &lsquo;lesser&rsquo; or &lsquo;niche&rsquo; modes moving down a bit in the order. Makes it easier to find things you need, and please give us feedback if you feel a mode needs more representing/love!</p>
@@ -1769,7 +1886,7 @@ Reordered Game Mode Select Screen
 <div class=gdoc-page__anchorwrap>
 <h2 id=mac-os-builds-are-now-signed>
 Mac OS builds are now signed!
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#mac-os-builds-are-now-signed class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Mac OS builds are now signed!" href=#mac-os-builds-are-now-signed><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#mac-os-builds-are-now-signed class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Mac OS builds are now signed!" href=#mac-os-builds-are-now-signed><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p>We have finally passed all the requirements to be able to sign the binary, so this means no more <code>xattr</code> stuff anymore! we just act like any other application.</p>
@@ -1778,7 +1895,7 @@ Mac OS builds are now signed!
 <div class=gdoc-page__anchorwrap>
 <h2 id=mode-status>
 Mode Status:
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#mode-status class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Mode Status:" href=#mode-status><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#mode-status class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Mode Status:" href=#mode-status><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p><img src=https://user-images.githubusercontent.com/11047768/127721223-558db542-b0a9-44cd-bb88-c1e8b365af88.png alt=image></p>
@@ -1786,7 +1903,7 @@ Mode Status:
 <div class=gdoc-page__anchorwrap>
 <h1 id=new-cross-platform-midi-driver>
 New Cross Platform MIDI Driver!
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#new-cross-platform-midi-driver class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New Cross Platform MIDI Driver!" href=#new-cross-platform-midi-driver><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#new-cross-platform-midi-driver class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New Cross Platform MIDI Driver!" href=#new-cross-platform-midi-driver><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div><p>Due to the interest we had been getting from the past two alpha releases in the form of gddm and techno, several players that were not on windows did enquire about the possibility of there being a new MIDI driver available for Mac and Linux users to make use of for their midi fighters, e-drums, etc and we decided as a team to move forward and produce one.</p>
@@ -1798,7 +1915,7 @@ New Cross Platform MIDI Driver!
 <div class=gdoc-page__anchorwrap>
 <h2 id=this-driver-works-on-windows-linux-rpi-mac-os-intel--mac-os-m1-and-rockchip-aarch64-socs>
 This driver works on Windows, Linux, RPi, Mac OS (intel) / Mac OS (M1) and Rockchip aarch64 SoCs
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#this-driver-works-on-windows-linux-rpi-mac-os-intel--mac-os-m1-and-rockchip-aarch64-socs class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor This driver works on Windows, Linux, RPi, Mac OS (intel) / Mac OS (M1) and Rockchip aarch64 SoCs" href=#this-driver-works-on-windows-linux-rpi-mac-os-intel--mac-os-m1-and-rockchip-aarch64-socs><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#this-driver-works-on-windows-linux-rpi-mac-os-intel--mac-os-m1-and-rockchip-aarch64-socs class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor This driver works on Windows, Linux, RPi, Mac OS (intel) / Mac OS (M1) and Rockchip aarch64 SoCs" href=#this-driver-works-on-windows-linux-rpi-mac-os-intel--mac-os-m1-and-rockchip-aarch64-socs><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p>We are still working on latency and control, so let us know if you find anything quirky!</p>
@@ -1806,7 +1923,7 @@ This driver works on Windows, Linux, RPi, Mac OS (intel) / Mac OS (M1) and Rockc
 <div class=gdoc-page__anchorwrap>
 <h2 id=windows-legacy-input-driver>
 Windows legacy input driver
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#windows-legacy-input-driver class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Windows legacy input driver" href=#windows-legacy-input-driver><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#windows-legacy-input-driver class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Windows legacy input driver" href=#windows-legacy-input-driver><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p>There has also been work done on a small side part of the game, while we have been waiting for a fix from upstream in regards to the &lsquo;polling/framerate&rsquo; issue that a lot of folks have helping us diagnose for some time. The long and the short of the issue, it meant on some songs, the input would skew towards the update loop rather than honouring it&rsquo;s timestamp, thus producing &lsquo;spikes&rsquo; on the scoring graph at the end of the song, and make a odd looking &lsquo;stair&rsquo; display on the scatter plot of the steps and judgements taken.</p>
@@ -1820,7 +1937,7 @@ Windows legacy input driver
 <div class=gdoc-page__anchorwrap>
 <h2 id=rate-and-pitch-changes>
 Rate and Pitch Changes:
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#rate-and-pitch-changes class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Rate and Pitch Changes:" href=#rate-and-pitch-changes><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#rate-and-pitch-changes class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Rate and Pitch Changes:" href=#rate-and-pitch-changes><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p>Due to an overwhelming set of requests, we have taken time to fix and modernise the rate/haste system which had been broken for a bit since this project began.</p>
@@ -1835,7 +1952,7 @@ Rate and Pitch Changes:
 <div class=gdoc-page__anchorwrap>
 <h2 id=known-issues-alpha-499>
 <strong>KNOWN ISSUES: Alpha 4.9.9</strong>
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#known-issues-alpha-499 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor KNOWN ISSUES: Alpha 4.9.9" href=#known-issues-alpha-499><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#known-issues-alpha-499 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor KNOWN ISSUES: Alpha 4.9.9" href=#known-issues-alpha-499><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><ul>
@@ -1848,14 +1965,14 @@ Rate and Pitch Changes:
 <div class=gdoc-page__anchorwrap>
 <h2 id=full-changelog-follows>
 Full Changelog Follows:
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#full-changelog-follows class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Full Changelog Follows:" href=#full-changelog-follows><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#full-changelog-follows class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Full Changelog Follows:" href=#full-changelog-follows><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h3 id=all>
+<h3 id=all-1>
 <strong>ALL:</strong>
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#all class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ALL:" href=#all><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#all-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ALL:" href=#all-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><p><strong>Mode Specific</strong></p>
@@ -2066,13 +2183,13 @@ Full Changelog Follows:
 <div class=gdoc-page__anchorwrap>
 <h2 id=community-content>
 Community content
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#community-content class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Community content" href=#community-content><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#community-content class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Community content" href=#community-content><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><div class=gdoc-page__anchorwrap>
 <h3 id=noteskins>
 Noteskins
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#noteskins class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Noteskins" href=#noteskins><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#noteskins class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Noteskins" href=#noteskins><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><ul>
@@ -2086,7 +2203,7 @@ Noteskins
 <div class=gdoc-page__anchorwrap>
 <h3 id=theme>
 Theme
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#theme class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Theme" href=#theme><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#theme class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Theme" href=#theme><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><ul>
@@ -2097,7 +2214,7 @@ Theme
 <div class=gdoc-page__anchorwrap>
 <h3 id=translations>
 Translations
-<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9/#translations class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Translations" href=#translations><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF/#translations class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Translations" href=#translations><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><ul>
