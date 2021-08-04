@@ -1,9 +1,9 @@
 ---
-title: "Miscelaneous modifiers"
+title: "Miscellaneous modifiers"
 weight: 4
 ---
 
-# Miscelaneous Modifiers
+# Miscellaneous Modifiers
 These modifiers don't really fit into any of the above categories, so they're here instead.
 
 ## "clearall"
