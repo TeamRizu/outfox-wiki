@@ -1,5 +1,5 @@
 ---
-title: "Miscellaneous modifiers"
+title: "Miscellaneous Modifiers"
 weight: 4
 ---
 
