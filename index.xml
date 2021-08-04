@@ -72,7 +72,7 @@ BeginCommand
 EndCommand
 SetAttackCommand Called on the noteskin actor before drawing an Attack-type TapNote
 Parameters:
-Modifiers (string, The attack associated with the tap note.</description></item><item><title>Miscellaneous modifiers</title><link>https://outfox.wiki/dev/mods/Mods-13-Miscellaneous-Mods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://outfox.wiki/dev/mods/Mods-13-Miscellaneous-Mods/</guid><description>Miscellaneous Modifiers These modifiers don&amp;rsquo;t really fit into any of the above categories, so they&amp;rsquo;re here instead.
+Modifiers (string, The attack associated with the tap note.</description></item><item><title>Miscellaneous Modifiers</title><link>https://outfox.wiki/dev/mods/Mods-13-Miscellaneous-Mods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://outfox.wiki/dev/mods/Mods-13-Miscellaneous-Mods/</guid><description>Miscellaneous Modifiers These modifiers don&amp;rsquo;t really fit into any of the above categories, so they&amp;rsquo;re here instead.
 &amp;ldquo;clearall&amp;rdquo; Desc: Tells PlayerOptions to do a reset. Often used in modfiles to mimic crs-style resetting. Only available in modstring form right now.
 Quirks: N/A
 Modstring format: clearall
