@@ -6,5 +6,5 @@ geekdocCollapseSection: true
 
 This section contains details for specific feature and mode support for simfiles in Project OutFox.
 
-- [BMS/TJA/DTX support](/dev/songs/bms-pms-dtx-support/)
-- [TJA support](/dev/songs/tja-support/)
+- [BMS/TJA/DTX support](/dev/mode-support/bms-pms-dtx-support/)
+- [TJA support](/dev/mode-support/tja-support/)
