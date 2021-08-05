@@ -41,21 +41,14 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 {{< button size="large" relref="user-guide/config/folders/" >}}Content folders{{< /button >}}
 {{< button size="large" relref="user-guide/config/preferences/" >}}Preferences file{{< /button >}}
 
-{{< /columns >}}
+<--->
 
-{{< columns >}}
-
-## For Creators
+## For Developers and Creators
 
 {{< button size="large" relref="dev/songs/" >}}Simfiles{{< /button >}}
 {{< button size="large" relref="dev/actors/" >}}Lua and Actors{{< /button >}}
 {{< button size="large" relref="dev/effects/" >}}Effects and Gimmicks{{< /button >}}
 {{< button size="large" relref="dev/mods/" >}}Modifiers{{< /button >}}
-
-<--->
-
-## For Developers
-
 {{< button size="large" relref="dev/translation/" >}}Translation{{< /button >}}
 
 {{< /columns >}}
