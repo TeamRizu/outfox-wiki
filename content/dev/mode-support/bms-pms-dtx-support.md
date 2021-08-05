@@ -1,5 +1,5 @@
 ---
-title: BMS/PMS/DTX compatibility
+title: BMS/PMS/DTX
 weight: 1
 geekdocCollapseSection: true
 ---

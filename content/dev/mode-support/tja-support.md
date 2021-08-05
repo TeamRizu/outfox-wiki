@@ -1,5 +1,5 @@
 ---
-title: TJA Compatibility
+title: TJA
 weight: 1
 geekdocCollapseSection: true
 ---

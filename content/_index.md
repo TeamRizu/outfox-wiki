@@ -45,7 +45,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 
 ## For Developers and Creators
 
-{{< button size="large" relref="dev/songs/" >}}Simfiles{{< /button >}}
+{{< button size="large" relref="dev/mode-support/" >}}Mode support{{< /button >}}
 {{< button size="large" relref="dev/actors/" >}}Lua and Actors{{< /button >}}
 {{< button size="large" relref="dev/effects/" >}}Effects and Gimmicks{{< /button >}}
 {{< button size="large" relref="dev/mods/" >}}Modifiers{{< /button >}}
