@@ -3,7 +3,7 @@ title: Inline-Text manipulation
 weight: 1
 ---
 
-Starting from SM5 Beta 4, BitmapText actors can include special instructions to manipulate separate glyphs with things like color. Operations from this use the `AddAttribute` function to insert these instructions.
+Starting from SM5 Preview 1, BitmapText actors can include special instructions to manipulate separate glyphs with things like color. Operations from this use the `AddAttribute` function to insert these instructions.
 
 ```lua
 -- This adds an attribute to the BitmapText. These are stacked.
@@ -32,7 +32,6 @@ The following example converts a string that includes square brackets into red c
 ```lua
 local function ConvertText( child )
 	local str = child:GetText()
-	local start,length = 0,0
 
 	-- This will contain all possible changes to change the color method.
 	local charindex = 0
