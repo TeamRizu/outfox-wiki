@@ -89,9 +89,9 @@ These tween functions were added in SM5.
 
 A 2D or 3D bezier curve can be passed into the function to allow for extra tweening options.
 
-## SM5.3-era tweens
+## OutFox-era tweens
 
-SM5.3 added all of the standard easing functions. All of these are prefixed with `ease` and `in`/`out`/`inout`
+OutFox added all of the standard easing functions. All of these are prefixed with `ease` and `in`/`out`/`inout`
 
 <!-- We should probably create images for each variant... -->
 

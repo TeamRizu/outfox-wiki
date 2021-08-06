@@ -13,7 +13,7 @@ All of the existing content has been migrated, but be sure to report any issues 
 
 ----
 
-Welcome to the documentation wiki for [Project OutFox 5.3](https://projectmoon.dance)! **Project OutFox** is a fork of StepMania with a focus on internal modernization to its code, as well as refurbishing and extending its ability to support various types of rhythm games.
+Welcome to the documentation wiki for [Project OutFox](https://projectmoon.dance)! **Project OutFox** is a fork of StepMania with a focus on internal modernization to its code, as well as refurbishing and extending its ability to support various types of rhythm games.
 
 This wiki is still a work in progress, so keep checking back for updates on new content! It is edited via a [Git repository](https://github.com/TeamRizu/outfox-wiki); commit access is limited to the development team, but you can always perform pull requests too.
 
@@ -28,6 +28,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 {{< button size="large" relref="user-guide/meta/about" >}}About{{< /button >}}
 {{< button size="large" relref="user-guide/meta/FAQ" >}}FAQ{{< /button >}}
 {{< button size="large" relref="user-guide/meta/about/#project-outfox-teams" >}}The Team{{< /button >}}
+{{< button size="large" relref="releases/" >}}Release History{{< /button >}}
 
 <--->
 
@@ -40,20 +41,14 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 {{< button size="large" relref="user-guide/config/folders/" >}}Content folders{{< /button >}}
 {{< button size="large" relref="user-guide/config/preferences/" >}}Preferences file{{< /button >}}
 
-{{< /columns >}}
+<--->
 
-{{< columns >}}
+## For Developers and Creators
 
-## For Creators
-
+{{< button size="large" relref="dev/mode-support/" >}}Mode support{{< /button >}}
 {{< button size="large" relref="dev/actors/" >}}Lua and Actors{{< /button >}}
 {{< button size="large" relref="dev/effects/" >}}Effects and Gimmicks{{< /button >}}
 {{< button size="large" relref="dev/mods/" >}}Modifiers{{< /button >}}
-
-<--->
-
-## For Developers
-
 {{< button size="large" relref="dev/translation/" >}}Translation{{< /button >}}
 {{< button size="large" relref="dev/theming/" >}}Theming{{< /button >}}
 

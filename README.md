@@ -1,4 +1,4 @@
-Welcome to the documentation wiki for [Project OutFox 5.3](https://projectmoon.dance)! **Project OutFox** is a fork of StepMania with a focus on internal modernization to its code, as well as refurbishing and extending its ability to support various types of rhythm games.
+Welcome to the documentation wiki for [Project OutFox](https://projectmoon.dance)! **Project OutFox** is a fork of StepMania with a focus on internal modernization to its code, as well as refurbishing and extending its ability to support various types of rhythm games.
 
 This wiki is still a work in progress, so keep checking back for updates on new content. Commit access is limited to the development team, but you can always perform pull requests too!
 

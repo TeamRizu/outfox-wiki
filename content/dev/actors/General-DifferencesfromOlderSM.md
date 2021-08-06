@@ -7,7 +7,7 @@ weight: 2
 
 OpenITG, NotITG and SM 3.95 are popular engines based on older versions of StepMania that have communities that continue to support by making new content.
 
-SM5.3 contains a similar feature set as the previous revisions of the game, but with some notable differences. This document aims to provide help with porting content to and from the different versions of the game.
+OutFox contains a similar feature set as the previous revisions of the game, but with some notable differences. This document aims to provide help with porting content to and from the different versions of the game.
 
 ## "Command" format vs "Function" format
 
@@ -53,11 +53,11 @@ Because the internals of the engines are different, actors may work differently 
 
 SM5 applies the zoom and then applies the rotation.
 
-In SM5.3, this can be worked around by setting the `rotafterzoom` attribute to false, returning the SM3.95 behavior.
+In Project OutFox, this can be worked around by setting the `rotafterzoom` attribute to false, returning the SM3.95 behavior.
 
 The notes & receptors already have this active to help with easilly replicating modifier effects from the other engines.
 
-In SM5.2 and earlier, this has to be done with wrapper states or actorframes. This is done by having the wrapper do the positioning and zooming, while the main actor gets everything else. (This is still doable in SM5.3 if you're aiming to write content for multiple SM5s)
+In SM5.2 and earlier, this has to be done with wrapper states or actorframes. This is done by having the wrapper do the positioning and zooming, while the main actor gets everything else. (This is still doable in Project OutFox if you're aiming to write content for multiple SM5s)
 
 ### Zoom's effect on the axis
 
@@ -120,7 +120,7 @@ This only affects the original Tiny modifier, and not its' variants.
 
 It just so happens that NotITG's equation is the exact same one Mini uses for notefield zoom.
 
-In SM5.3, this can be altered with the `TinyUsesMiniCalc` sub-modifier. When active, it switches to NotITG's equation, which allows for a wider range of zooms.
+In OutFox, this can be altered with the `TinyUsesMiniCalc` sub-modifier. When active, it switches to NotITG's equation, which allows for a wider range of zooms.
 
 In SM5.2 and earlier, this can be somewhat replicated by taking the two equations and solving for the equivalent strength. (Doesn't work for negative strengths in NotITG, through)
 
@@ -128,7 +128,7 @@ This affects every variant of Tiny.
 
 # Differences from older SM5 builds
 
-SM5.3 changes the default behavior from the older SM5 builds. This section documents those changes.
+Project OutFox changes the default behavior from the older SM5 builds. This section documents those changes.
 
 ## Column-specific function changes
 
@@ -136,7 +136,7 @@ Instead of typing \<mod name\><\column number\> (As in SM5.1), you now type \<Mo
 
 ## Player vanish point
 
-In SM5.2 and earlier (due to a math error), the player's vanish point at the x axis is skewed towards their side of the screen instead of being directly at the center of the notefield. This is not an issue in SM5.0.7 and earlier or in SM5.3 and later.
+In SM5.2 and earlier (due to a math error), the player's vanish point at the x axis is skewed towards their side of the screen instead of being directly at the center of the notefield. This is not an issue in SM5.0.7 and earlier or in OutFox and later.
 
 For example: P1 is at the left half of the screen, so its' vanish point is slightly skewed towards the left edge of the screen.
 
@@ -150,9 +150,9 @@ For example:
 ```lua
 actor:vibrate():zoom(20):linear(2):zoom(0)
 ```
-Would result in no visible vibration because the end point is 0, while in SM5.3 and SM3.95, one would see the vibration start at 20 and go down as the zoom reaches 0.
+Would result in no visible vibration because the end point is 0, while in OutFox and SM3.95, one would see the vibration start at 20 and go down as the zoom reaches 0.
 
 ## Lua is more strict with escape sequences.
 
-In older builds of SM, an invalid escape sequence is ignored, with the offending \\ removed. In lua 5.3 (and consequentally, SM5.3), this now causes a lua error, which may result in themes or effect files not running correctly or at all.
+In older builds of SM, an invalid escape sequence is ignored, with the offending \\ removed. In Lua 5.3 (and consequentally, Project OutFox), this now causes a lua error, which may result in themes or effect files not running correctly or at all.
 <!-- Is there any way we can stop this in the lua parser itself? And if there is, should we do it or do we enforce rules? -->

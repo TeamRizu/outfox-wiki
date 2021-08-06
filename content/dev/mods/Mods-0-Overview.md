@@ -13,15 +13,15 @@ When not specified, an approach rate of 1 is used, which means 100% per second.
 So, if you have a modifier that goes from 0 to 200%, it will take 2 seconds, while 200% to -150% would take 3.5 seconds.
 The approach rate can be a floating point number, so values like 0.24523 or 3.7 are valid.
 
-Approach rates cannot be negative in SM5.3 alpha 4.8.2 or earlier, or it will crash.
+Approach rates cannot be negative in OutFox alpha 4.8.2 or earlier, or it will crash.
 
-In "NotITG" & SM5.3 alpha 4.8.3 and later, negative approach rates (specifically -1 in NotITG, but in general on SM5) are used to signify "instant" rates. in older versions of SM5, you can use large approach rate numbers (such as 10000 or 9e9) to achieve this.
+In "NotITG" & OutFox alpha 4.8.3 and later, negative approach rates (specifically -1 in NotITG, but in general on SM5) are used to signify "instant" rates. in older versions of SM5, you can use large approach rate numbers (such as 10000 or 9e9) to achieve this.
 
 Magnitude is usually shown in the form of percentages for modifiers, and are capable of being negative, unless otherwise noted.
 
 There are also column-specific modifiers. This affect a single column instead of the whole notefield. In NotITG, column numbering starts at 0, while it starts at 1 in SM5.
 
-For the column-specific lua functions (except for gradients, mentioned later), `nil` can be given as the column to affect all columns of a player. (Does not work in alpha 4.8.2 of SM5.3 or earlier)
+For the column-specific lua functions (except for gradients, mentioned later), `nil` can be given as the column to affect all columns of a player. (Does not work in alpha 4.8.2 of OutFox or earlier)
 
 ## Modstrings
 Normally these modifiers will have a modstring form that follows this general format: `*<approach rate> <percentage>% <mod name>` but some modifiers, like speed mods, may not follow that format.

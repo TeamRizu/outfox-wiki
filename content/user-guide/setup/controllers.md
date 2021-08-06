@@ -6,9 +6,9 @@ weight: 3
 
 On Alpha 4.5 and newer, we switched to using an XInput-compliant input system.
 
-Due to these changes, not all controllers (such as gamepads, dance pads, and other rhythm game-specific controllers) are guaranteed to function with 5.3 out of the box (even if they were supported on earlier versions), unless a controller mapping profile has been created for that specific controller.
+Due to these changes, not all controllers (such as gamepads, dance pads, and other rhythm game-specific controllers) are guaranteed to function with OutFox out of the box (even if they were supported on earlier versions), unless a controller mapping profile has been created for that specific controller.
 
-We would like to thank Josen Tiamat for writing these new instructions for how to configure your controllers for use on 5.3.
+We would like to thank Josen Tiamat for writing these new instructions for how to configure your controllers for use on OutFox.
 
 ## Step 1: Things to check for first
 
@@ -20,7 +20,7 @@ Test your input, see if your keys are mapped and if so which ones. By pushing th
 
 ## Step 2: The Easy Way
 
-So on to the good stuff; 5.3 has a built in gamepad tool that will automatically take care of most of this for you
+So on to the good stuff; OutFox has a built in gamepad tool that will automatically take care of most of this for you
 
 ![](/controller-guide/guide_1.png)
 

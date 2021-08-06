@@ -33,7 +33,7 @@ Commonly, 100% is used, but different amounts could be used in combination with 
 
 Quirks: If used in 5.2 and earlier, Invert may act in unexpected ways on modes with an odd number of columns (eg. Pump).
 
-In 5.3, Invert will have no visual effect if the mode has three columns per side or less (eg. Pump halfdoubles).
+In OutFox, Invert will have no visual effect if the mode has three columns per side or less (eg. Pump halfdoubles).
 
 PlayerOptions format: Invert(\<magnitude\>, \<approach rate\>)
 
@@ -48,7 +48,7 @@ Example: `*0.3 100% invert`
 ## Move
 Desc: Move is a set of modifiers that are column-specific by nature and has variants for the X,Y, and Z axis. 100% moves a column forward on an axis by one dance mode column width. This can allow for column swaps that can't be achieved through just Flip and Invert, but can take more time to set up.
 
-Quirks: Since alpha 4.8.3, all columns can't be hit from the modstring (possible in NotITG), but can be done through the lua function. Right now (as of SM5.3 alpha 4.7), Pump mode's column-spacing is 48 pixels instead of 64, so use multiples of 0.75 instead when working with Pump mode. It's also the only way to move the center panel with any of the column-movement mods.
+Quirks: Since alpha 4.8.3, all columns can't be hit from the modstring (possible in NotITG), but can be done through the lua function. Right now (as of Project OutFox alpha 4.7), Pump mode's column-spacing is 48 pixels instead of 64, so use multiples of 0.75 instead when working with Pump mode. It's also the only way to move the center panel with any of the column-movement mods.
 
 Available Variants: MoveXCol, MoveYCol, MoveZCol
 
