@@ -1,5 +1,5 @@
 ---
-title: Working with BitmapText
+title: BitmapText
 weight: 3
 geekdocCollapseSection: true
 ---
