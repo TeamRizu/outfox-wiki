@@ -277,7 +277,7 @@ A song or course banner, meant for use with custom music wheels or any other pla
 
 A background animation that can be used during gameplay Can either be loaded from a BGAnimation.ini file (Only if Quirks Mode is enabled), or constructed like an ActorFrame would.
 
-## BitmapText
+## [BitmapText](bitmaptext)
 
 Used to display text on screen.
 
