@@ -3,9 +3,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Project OutFox uses various folders to store content, such as songs, save data, themes, noteskins, etc. Content is stored in one of the three following locations;
- Global folders are located within the Project OutFox installation directory. If you are on a multi-user operating system, content in these folders will be accessible to all users. When Portable Mode is enabled, your save data (including profiles and preference files) will be placed in the installation directory.">
-<title>Content folders | Project OutFox Wiki</title>
+<meta name=description content="Project OutFox contains a parser for the KSF chart format, which is used for Kick It Up and &lsquo;Pump it Up&rsquo;-style charts. This has been supported as early as StepMania 3.9, so everything listed here is what OutFox supports. At this point, most everyone has moved away from the KSF format in favor of SM or SSC. Like SM and SSC, sections follow this format: #SECTION:DATA;, which means #, : and ; shouldn&rsquo;t be used in the data segment.">
+<title>KSF | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -48,7 +47,7 @@
 <h2>Navigation</h2>
 <ul class=gdoc-nav__list>
 <li>
-<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
 <label for=navtree-4d9830bf class="flex justify-between">
 <span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -125,7 +124,7 @@ Guitars Mapping
 <ul class=gdoc-nav__list>
 <li>
 <span class=flex>
-<a href=../../../user-guide/config/folders/ class="gdoc-nav__entry is-active">
+<a href=../../../user-guide/config/folders/ class=gdoc-nav__entry>
 Content folders
 </a>
 </span>
@@ -149,13 +148,13 @@ Game types
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle>
+<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
 <label for=navtree-6821e290 class="flex justify-between">
 <span class=flex>Developers and Creators</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
-<input type=checkbox id=navtree-4e04bb11 class=gdoc-nav__toggle>
+<input type=checkbox id=navtree-4e04bb11 class=gdoc-nav__toggle checked>
 <label for=navtree-4e04bb11 class="flex justify-between">
 <span class=flex>
 <a href=../../../dev/mode-support/ class=gdoc-nav__entry>
@@ -173,7 +172,7 @@ BMS/PMS/DTX
 </li>
 <li>
 <span class=flex>
-<a href=../../../dev/mode-support/ksf-support/ class=gdoc-nav__entry>
+<a href=../../../dev/mode-support/ksf-support/ class="gdoc-nav__entry is-active">
 KSF
 </a>
 </span>
@@ -592,222 +591,436 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/ href=../../../user-guide/><span itemprop=name>User Guide</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/config/ href=../../../user-guide/config/><span itemprop=name>Features & Config</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Content folders</span><meta itemprop=position content="4"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mode-support/ href=../../../dev/mode-support/><span itemprop=name>Mode support</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>KSF</span><meta itemprop=position content="4"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Content folders</h1>
-<p>Project OutFox uses various folders to store content, such as songs, save data, themes, noteskins, etc. Content is stored in one of the three following locations;</p>
-<ul>
-<li><strong>Global folders</strong> are located within the Project OutFox installation directory. If you are on a multi-user operating system, content in these folders will be accessible to all users. When <em>Portable Mode</em> is enabled, your save data (including profiles and preference files) will be placed in the installation directory.</li>
-<li><strong>User folders</strong> are also created in your operating system&rsquo;s home/user directory if <em>Portable Mode</em> is disabled. When <em>Portable Mode</em> is disabled, this is where your save data will be stored.
-<ul>
-<li>On macOS, these folders are located in <strong>~/Library/Preferences/StepMania 5.3/</strong></li>
-<li>On Linux, these folders are located in <strong>~/.stepmania-5.3/</strong></li>
-<li>On Windows, these folders are located in <strong>%APPDATA%\StepMania 5.3</strong></li>
-</ul>
-</li>
-<li><strong>Additional folders</strong> are paths configured in the <a class=gdoc-markdown__link href=../../../user-guide/config/preferences/>Preferences.ini file</a>; for instance, you can store your song library on a second hard drive and link to it there, or share content between multiple installations.</li>
-</ul>
-<p>These content folders comprise the game&rsquo;s &ldquo;Virtual File System&rdquo; (VFS). They are, in turn, divided into various subdirectories for storing specific types of content.</p>
+<h1>KSF</h1>
+<p>Project OutFox contains a parser for the KSF chart format, which is used for Kick It Up and &lsquo;Pump it Up&rsquo;-style charts. This has been supported as early as StepMania 3.9, so everything listed here is what OutFox supports. At this point, most everyone has moved away from the KSF format in favor of SM or SSC. Like SM and SSC, sections follow this format: <code>#SECTION:DATA;</code>, which means <code>#</code>, <code>:</code> and <code>;</code> shouldn&rsquo;t be used in the data segment.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=announcers>
-Announcers
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#announcers class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Announcers" href=#announcers><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Announcers are a collection of audio files that play automatically based on specific triggers, such as in-game events or navigating to specific screens.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=appearance>
-Appearance
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#appearance class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Appearance" href=#appearance><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><div class=gdoc-page__anchorwrap>
-<h3 id=avatars>
-Avatars
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#avatars class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Avatars" href=#avatars><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>Square images that can be used as avatars for your profile.</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=judgments>
-Judgments
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#judgments class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Judgments" href=#judgments><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>If supported by the current theme, you can pick a different design for in-game judgement displays from images in this folder.</p>
-<p>Judgement fonts are divided into equally-sized sprites for each judgement. Fonts designed for specific timing modes have a modifier in their file name, such as <code>[Advanced]</code>, <code>[FAPlus]</code>, etc. A judgement font can also have specific versions for early and late timings.</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=noteskins>
-NoteSkins
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#noteskins class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NoteSkins" href=#noteskins><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>NoteSkins affect the appearance of notes. They could be arrows, bars, circles, pawprints, etc. Project OutFox is compatible with noteskins designed for StepMania 5.</p>
-<p>The NoteSkins folder is divided into subfolders for specific <a class=gdoc-markdown__link href=../../../user-guide/config/game-types/>game types</a>. A <em>global noteskin</em> appears in all game types.</p>
-<pre><code>NoteSkins
-│
-└───dance
-│   │   
-│   └───metal
-│       │NoteSkin.lua
-│       │...
-</code></pre><div class=gdoc-page__anchorwrap>
-<h3 id=themes>
-Themes
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#themes class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Themes" href=#themes><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>Themes determine the look, feel, and functionality of the game. Themes compatible with StepMania 5.0.12 and 5.1 are also compatible with OutFox, while themes from older versions or StepMania 5.2 won&rsquo;t.</p>
-<pre><code>Themes
-│
-└───My Theme
-│   │   Metrics.ini
-│   │   ...
-</code></pre><div class=gdoc-page__anchorwrap>
-<h3 id=toasties>
-Toasties
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#toasties class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Toasties" href=#toasties><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>Inspired by the famous <em>Mortal Kombat</em> easter egg, a toasty is an image and sound played on specific combo milestones.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=backgroundeffects>
-BackgroundEffects
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#backgroundeffects class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BackgroundEffects" href=#backgroundeffects><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Visual effects used for background script sequences in songs.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=backgroundtransitions>
-BackgroundTransitions
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#backgroundtransitions class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BackgroundTransitions" href=#backgroundtransitions><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Visual effects used for background script sequences in songs.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=bganimations>
-BGAnimations
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#bganimations class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BGAnimations" href=#bganimations><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Actor-based animations that can be played in the background in-game. They can also be used as part of background script sequences in songs.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=cache>
-Cache
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#cache class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Cache" href=#cache><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>The cache generated by Project OutFox when loading songs. Delete this folder to force the game to reload all songs.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=characters>
-Characters
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#characters class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Characters" href=#characters><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>3D character models that can be displayed in-game.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=courses>
-Courses
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#courses class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Courses" href=#courses><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Playlists of songs used in course modes (such as Extended).</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=logs>
-Logs
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#logs class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Logs" href=#logs><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>When Project OutFox is running, it generates various log files to record diagnostic information and errors. If you are having issues with the game, the log file is a good place to begin.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=randommovies>
-RandomMovies
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#randommovies class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor RandomMovies" href=#randommovies><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Video clips that can be played in the background in-game. They can also be used as part of background script sequences in songs.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=save>
-Save
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#save class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Save" href=#save><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>This is where data such as preferences, profiles, high scores, etc. are stored. If portable mode is enabled, the game will load the Save folder from your installation directory. It is otherwise located in your user folders.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=screenshots>
-Screenshots
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#screenshots class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Screenshots" href=#screenshots><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Screenshots taken in-game are stored here.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=songmovies>
-SongMovies
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#songmovies class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SongMovies" href=#songmovies><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Similar in use to RandomMovies, except that they will be excluded from the RandomMovies pool.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=songs>
-Songs
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#songs class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Songs" href=#songs><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Songs that are used to play the game. They are stored in folders known as Groups.</p>
-<pre><code>Songs
-│
-└───My Group
-│   │   
-│   └───My Song
-│       │   mysong.ssc
-│       │   mysong.ogg
-│       │   mysong-bg.png
-│       │   mysong-bn.png
-│       │   mysong-jk.png
-</code></pre><div class=gdoc-page__anchorwrap>
-<h1 id=additional-folders>
-Additional folders
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#additional-folders class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Additional folders" href=#additional-folders><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h1 id=file-naming>
+File Naming
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#file-naming class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor File Naming" href=#file-naming><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
-</div><p>Via the preferences file (Save/Preferences.ini), you can specify <em>additional</em> folders.</p>
-<p>Both of these parameters accept multiple directory paths, comma-separated.</p>
+</div><p>Most KSF files have the difficulty and chart type as its' file name. The following tables show what names translate to which difficulty, default rating and chart type</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=additionalsongfolders>
-AdditionalSongFolders
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#additionalsongfolders class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AdditionalSongFolders" href=#additionalsongfolders><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=difficulty>
+Difficulty
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#difficulty class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Difficulty" href=#difficulty><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>The <code>AdditionalSongFolders</code> option allows you to specify other locations for where Project OutFox can search for songs. As with the installation directory&rsquo;s song folder, they are divided into groups. For example (assuming a location such as <code>D:\AdditionalSongs</code>);</p>
-<pre><code>D:\AdditionalSongs
-│
-└───My Group
-│   │   
-│   └───My Song
-│       │   mysong.ssc
-│       │   mysong.ogg
-│       │   mysong-bg.png
-│       │   mysong-bn.png
-│       │   mysong-jk.png
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>File Name</th>
+<th>Chart Rating</th>
+<th>StepMania 5.1 and older</th>
+<th>Project OutFox alpha 4.9.9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>another</td>
+<td>25</td>
+<td>Edit</td>
+<td>D6</td>
+</tr>
+<tr>
+<td>wild / wd / hardcore</td>
+<td>20</td>
+<td>Challenge</td>
+<td>D5</td>
+</tr>
+<tr>
+<td>crazy+ / cz+</td>
+<td>20</td>
+<td>Challenge</td>
+<td>D5</td>
+</tr>
+<tr>
+<td>crazy / cz / crazydouble</td>
+<td>14</td>
+<td>Hard</td>
+<td>D4</td>
+</tr>
+<tr>
+<td>nightmare / nm</td>
+<td>14</td>
+<td>Hard</td>
+<td>D4</td>
+</tr>
+<tr>
+<td>hard / hd / double</td>
+<td>8</td>
+<td>Medium</td>
+<td>D3</td>
+</tr>
+<tr>
+<td>freestyle / fs</td>
+<td>8</td>
+<td>Medium</td>
+<td>D3</td>
+</tr>
+<tr>
+<td>easy / ez / normal</td>
+<td>4</td>
+<td>Easy</td>
+<td>D2</td>
+</tr>
+<tr>
+<td>Beginner / practice</td>
+<td>4</td>
+<td>Beginner</td>
+<td>D1</td>
+</tr>
+</tbody>
+</table> </div>
+<p>If not specified, it gets set to Hard/D4 and is given a rating of 10.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=chart-type>
+Chart Type
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#chart-type class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Chart Type" href=#chart-type><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>File Name</th>
+<th>Resulting Steps Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>halfdouble / half-double / h_double / hdb</td>
+<td>halfdouble</td>
+</tr>
+<tr>
+<td>double / db</td>
+<td>double</td>
+</tr>
+<tr>
+<td>freestyle / fs</td>
+<td>double</td>
+</tr>
+<tr>
+<td>nm</td>
+<td>double</td>
+</tr>
+<tr>
+<td>_1</td>
+<td>single</td>
+</tr>
+<tr>
+<td>_2</td>
+<td>couple</td>
+</tr>
+</tbody>
+</table> </div>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h1 id=sections>
+Sections
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#sections class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Sections" href=#sections><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=title>
+<code>TITLE</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#title class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TITLE" href=#title><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>This gives both the song name and artist.
+There are three acceptable formats for this section:</p>
+<blockquote>
+<ul>
+<li><code>song name</code>
+This just gives a song name only.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><code>artist name - song name</code>
+This gives both a song name and artist name, separated by a <code>-</code></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><code>artist name - song name - difficulty</code>
+This gives both a song name, artist name and difficulty, separated by a <code>-</code>.
+In this case, the difficulty is ignored, since it&rsquo;s read from the file name instead.</li>
+</ul>
+</blockquote>
+<p>Example:</p>
+<pre><code>#TITLE:L.F.O;
+</code></pre><p>With artist & title:</p>
+<pre><code>#TITLE:aran - L.F.O;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=tickcount>
+<code>TICKCOUNT</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#tickcount class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TICKCOUNT" href=#tickcount><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Sets the starting tick count for the file. This specifies how many lines of notes is needed to pass one beat.</p>
+<p>For example: a tick count of 4 means 4 lines of notes are needed for a whole beat, allowing for 16ths.</p>
+<p>Example:</p>
+<pre><code>#TICKCOUNT:4;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=bpm>
+<code>BPM</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bpm class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BPM" href=#bpm><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>This defines the starting BPM.</p>
+<p>Example:</p>
+<pre><code>#BPM:135.01;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=bpm2--bpm3>
+<code>BPM2</code> / <code>BPM3</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bpm2--bpm3 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BPM2 / BPM3" href=#bpm2--bpm3><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Kick It Up uses these to define the BPMs to change to. You can have up to two BPM changes.</p>
+<p>Example:</p>
+<pre><code>#BPM2:164;
+#BPM3:174;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=bunki--bunki2>
+<code>BUNKI</code> / <code>BUNKI2</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bunki--bunki2 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BUNKI / BUNKI2" href=#bunki--bunki2><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Kick It Up uses these to handle the positioning of BPM changes. You can have up to two BPM changes.</p>
+<p>This is specified in centiseconds in SM.</p>
+<p>Example:</p>
+<pre><code>#BUNKI:2000;
+#BUNKI2:6500;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=difficulty-1>
+<code>DIFFICULTY</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#difficulty-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DIFFICULTY" href=#difficulty-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Sets the rating of the chart. Otherwise, values from the Difficulty secion above are used.</p>
+<p>Example:</p>
+<pre><code>#DIFFICULTY:7;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=starttime>
+<code>STARTTIME</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#starttime class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor STARTTIME" href=#starttime><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Sets the beat 0 offset of the chart. SM interprets this in centiseconds.</p>
+<p>Example:</p>
+<pre><code>#STARTTIME:829;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=starttime2--starttime3>
+<code>STARTTIME2</code> / <code>STARTTIME3</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#starttime2--starttime3 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor STARTTIME2 / STARTTIME3" href=#starttime2--starttime3><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Kick It Up uses these to help ensure more accurate BPM changes. STARTTIME3 is ignored in SM.</p>
+<p>Example:</p>
+<pre><code>#STARTTIME2:9;
+#STARTTIME3:0;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=player>
+<code>PLAYER</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#player class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PLAYER" href=#player><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p>
+<p>If &ldquo;double&rdquo; is found, the file is marked as a doubles chart.</p>
+<p>Example:</p>
+<pre><code>#PLAYER:DOUBLE;
+</code></pre><p>or</p>
+<pre><code>#PLAYER:SINGLE;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=musicintro--intro>
+<code>MUSICINTRO</code> / <code>INTRO</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#musicintro--intro class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor MUSICINTRO / INTRO" href=#musicintro--intro><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p>
+<p>Sets the start point of the music sample. It&rsquo;s parsed in HH:MM:SS format</p>
+<p>Example:</p>
+<pre><code>#MUSICINTRO:1:20;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=titlefile>
+<code>TITLEFILE</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#titlefile class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TITLEFILE" href=#titlefile><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p>
+<p>Sets the background location of the song.</p>
+<p>Example:</p>
+<pre><code>#TITLEFILE:CoolTitle.png;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=discfile>
+<code>DISCFILE</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#discfile class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DISCFILE" href=#discfile><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p>
+<p>Sets the banner location of the song.</p>
+<p>Example:</p>
+<pre><code>#DISCFILE:FunnyDisc.png;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=songfile>
+<code>SONGFILE</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#songfile class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SONGFILE" href=#songfile><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p>
+<p>Sets the file name of the song&rsquo;s audio.</p>
+<p>If not specified, the game looks for an audio file named &ldquo;song&rdquo; in the same folder as the KSF.</p>
+<p>Example:</p>
+<pre><code>#SONGFILE:SweetTunes.mp3;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=step>
+<code>#STEP:</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#step class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #STEP:" href=#step><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>This is the notedata of the file.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=notedata-specs>
+Notedata specs
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#notedata-specs class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Notedata specs" href=#notedata-specs><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p>Each row of notes is 13 characters long, with all <code>2</code>s marking the end of the chart.</p>
+<p>If any holds are unfinished at that point, they automatically capped off at the end of the chart.</p>
+<p>For half-doubles, the first two columns are always 0.</p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=note-types>
+Note types
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#note-types class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Note types" href=#note-types><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Note Type</th>
+<th>Quirks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>empty</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Tap Note</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Hold Note</td>
+<td>The hold finishes upon the first non-<code>4</code> character in the column.</td>
+</tr>
+<tr>
+<td>M / m</td>
+<td>Mines</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>F / f</td>
+<td>Fake Note</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>L / l</td>
+<td>Lift Note</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table> </div>
+<p>Example:</p>
+<pre><code>#STEP:
+1000010000000
+0010000400000
+0000000400000
+0000000400000
+2222222222222
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=additionalfolders>
-AdditionalFolders
-<a data-clipboard-text=https://outfox.wiki/user-guide/config/folders/#additionalfolders class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AdditionalFolders" href=#additionalfolders><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=segment-types>
+Segment types
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#segment-types class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Segment types" href=#segment-types><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2>
-</div><p>AdditionalFolders is like the above, except they can contain any of the usual content subdirectories like so;</p>
-<pre><code>D:\OutFoxExtra
-│
-└───Announcers
-│   
-└───Appearance
-│   
-└───etc.
-
-</code></pre>
+</h3>
+</div><p>Direct Move 0.5 had segment definitions to allow for more extendable charting.</p>
+<div class=gdoc-page__anchorwrap>
+<h4 id=tn>
+<code>|Tn|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#tn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Tn|" href=#tn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4>
+</div><p>Sets the tick count at the current beat.</p>
+<p>Example: <code>|T512|</code> sets the tick count to 512.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=bn>
+<code>|Bn|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Bn|" href=#bn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4>
+</div><p>Sets the BPM at the current beat.</p>
+<p>Example: <code>|B128.5|</code> sets the BPM to 128.5.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=en>
+<code>|En|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#en class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |En|" href=#en><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4>
+</div><p>Sets a delay segment at the given beat for n beats</p>
+<p>Example: <code>|E12|</code> Makes a 12 beat delay segment.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=dn>
+<code>|Dn|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#dn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Dn|" href=#dn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4>
+</div><p>Sets a delay segment at the given beat for n miliseconds</p>
+<p>Example: <code>|D1000|</code> Makes a 1000 milisecond (1 second) delay segment.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=mn--cn>
+<code>|Mn|</code> / <code>|Cn|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#mn--cn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Mn| / |Cn|" href=#mn--cn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4>
+</div><p>Sets the combo multiplier at the given beat</p>
+<p>Example: <code>|M2|</code> sets the combo multiplier to 2.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=xn>
+<code>|Xn|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#xn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Xn|" href=#xn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4>
+</div><p>Sets the scroll segment at the current beat.</p>
+<p>Example: <code>|X3|</code> sets the scroll to 3x.</p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
