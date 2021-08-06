@@ -8,7 +8,7 @@ A screen generarly consists of 4 separate elements, and 3 special transitional e
 From draw on top to last (Marked red are the transition-specific layers):
 {{< mermaid class="text-center">}}
 graph LR
-    In:::Transition --> Out:::Transition --> Cancel:::Transition --> Decorations --> Overlay --> Underlay --> Background;
+    In:::Transition --> Out:::Transition --> Cancel:::Transition --> Decorations --> Overlay --> Underlay --> Background;
 	classDef Transition fill:#f55
 {{< /mermaid >}}
 

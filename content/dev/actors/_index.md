@@ -236,7 +236,7 @@ t[#t+1] = Def.BitmapText{
 	end
 }
 
-t[#t+1] = Def.ActorProxy{
+t[#t+1] = Def.ActorProxy{
 	BeginCommand=function(self)
 		-- With mytext generated, using a later command in the pipeline, like [On/Begin]Command, we call SetTarget to get mytext,
 		-- and clone the actor that's in it.
@@ -245,7 +245,7 @@ t[#t+1] = Def.ActorProxy{
 }
 
 -- You can also grab from nested ActorFrames, and even outside of the scope.
-t[#t+1] = Def.ActorFrame{
+t[#t+1] = Def.ActorFrame{
 	Def.BitmapText{
 		Font="Common Normal",
 		Text="Hello There!",

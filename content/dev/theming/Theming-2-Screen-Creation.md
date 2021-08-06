@@ -32,7 +32,7 @@ This method will make the screen be the first one loaded as soon as the engine i
 For this, the following needs to be added to the [metrics.ini](yes.md) file.
 ```ini
 [Common]
-# Replace the string with the name of your new screen.
+# Replace the string with the name of your new screen.
 InitialScreen="YourScreenName"
 ```
 
@@ -44,11 +44,11 @@ This makes use of an existing ScreenSelectMaster object to use one of its Choice
 [ScreenTitleMenu]
 # ChoiceNames will deal with what are options to create on the scroller.
 # Notice that some of the options here are not present below, and that's because
-# _fallback will take care of filling that information in as a fail-safe.
+# _fallback will take care of filling that information in as a fail-safe.
 ChoiceNames="GameStart,Options,Edit,Jukebox,GameSelect,Exit"
 
-# The actual choices. Notice the applydefaultoptions segment in the string.
-# This is used to reset the player's options back to default given some arcade settings.
+# The actual choices. Notice the applydefaultoptions segment in the string.
+# This is used to reset the player's options back to default given some arcade settings.
 ChoiceGameStart="applydefaultoptions;text,Game Start;screen,"..Branch.AfterTitleMenu()
 ChoiceOptions="screen,ScreenOptionsService;text,Options"
 ChoiceEdit="text,Edit/Share;screen,"..Branch.OptionsEdit()
