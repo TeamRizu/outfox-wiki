@@ -193,3 +193,74 @@ On older builds, macOS Catalina also generated a message stating that the game w
 ### The game is rendering small in the bottom corner of the window.
 
 This is due to the renderer not supporting scaled screens yet. To fix this, right-click the game executable and select "Get info" (or highlight the file and press Command (⌘)+I, and toggle the "Open in Low Resolution" option under General.
+
+### What modes does OutFox currently support?
+
+The modes as of **Alpha 4.9.8 (April 2021)** are as follows:
+
+```
+Name    | Description
+--------|------------
+dance   | Dance Dance Revolution + Solo (3, 4, 6 and 8 (Double) Panels)
+pump    | Pump It Up (5, 6 (HalfDouble), 10 (Double)) based off of the pro era (SM4)
+kb7     | 7 Keys
+ez2     | Ez2Dancer (3 Panels with 2 Sensors, 3 Panels with 4 Sensors and 6 Panels with 4 Sensors (Double))
+para    | Para Para Paradise (5, 8, and 10 Sensor)
+ds3ddx  | Dance Station 3DDX (4 Panels with 4 Sensors)
+beat    | Bemani style via BMS (5, 7, 10 (Double) and 14 (double) Keys + Scratch)
+maniax  | Dance Maniax (4 and 8 (Double) Sensors)
+techno  | TechnoMotion (4, 5, 8. 9, 8 (Double), 10 (Double), 16 (Double) and 18 (Double) Panels)
+taitai  | A 'don da don' styled mode
+popn    | Pop'n Music via PMS (3, 4, 5, 7, 9 and 18 Keys)
+gddm    | GitaDora Drummania style (5, 9 and 10 part!)
+gdgf    | GitaDora Guitar freaks style (5 Guitar/Bass, 3 Guitar/Bass) (6 Guitar support Coming soon!)
+gh      | Guitar style (5 Solo/Backup, 6 Solo/Backup)
+kickbox | Obscure lash a soft dance pad to a punching bag mode (4, 6, 8 sensor Mode)
+```
+
+The Modes we can talk about are as follows: 
+**PLEASE NOTE: These are proposed and are scheduled on the road map, limitations or code problems may delay or change these modes, so it is why there is no date or ETA given.**
+
+```
+Name      | Description
+----------|------------
+piu       | A major refactoring to a more accurate mode, to update it to closer to mainline style
+djh       | A Hero isn't always needed, neither are the DJs
+drum      | A midi based drum mode with 20 parts simulating a full yamaha DTX drum kit
+karaoke   | A (.. do i need to explain this?) singing mode. Will happen if squirrel gets off his butt
+jam       | A mode properly supporting O2Jam and it's modes, with full .OJM loader support
+d86.4     | Feet dance Station Radio 3 panel
+???       | ???
+```
+
+### What NotesLoaders Does OutFox Support?
+
+The OutFox Supported Notes Loaders and their level of completeness to the specifications:
+
+```
+Name  | Notes:
+------|------------
+BMS   | 75% See Wiki for more details
+BME   | 80% (beat loader for extended/PMS)
+BML   | 80% (beat loader for long notes)
+CHART | 100% (gh loader)
+DTX   | 40% (gddm 90% / gdgf 15%)
+DWI   | 100% (as we know)
+KSF   | 100% (as we know)
+MID   | 90% (gh loader)
+PMS   | 100% BMS98 / 85% BME 2004
+SM    | 100% (+ OF fixes)
+SSC   | 100% (+ OF fixes v0.84 proposed)
+```
+
+PLEASE NOTE: These are proposed and are scheduled on the road map, limitations or code problems may delay or change these modes, so it is why there is no date or ETA given.
+
+```
+Name  | Notes:
+------|------------
+BMSON | 0%
+TJA   | 0%
+???   | 0%
+???   | 0%
+???   | 0%
+```
