@@ -645,6 +645,17 @@ Release Date: 8th August 2021
 </div><p>Right, we finally fixed the annoying RageFile glitch that was affecting the hash system to be different to 5.1/5.0.12. Sorry about all this hassle, we fixed a wedge of bugs in the loading system, but did not expect everyone to have built massive amounts of stuff on top of these bugs being there, so we have adjusted the system so backward compatible themes / API / ScoreShare / Groovestats etc once more work again.</p>
 <p>Thanks for being so patient while we ironed this out! it has been a pain!</p>
 <div class=gdoc-page__anchorwrap>
+<h2 id=why-the-hotfix-rush>
+Why the hotfix rush?!
+<a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF3/#why-the-hotfix-rush class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Why the hotfix rush?!" href=#why-the-hotfix-rush><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>For those curious about the flurry of hotfix patches, we fixed the way the game sees a lot of non-ASCII based file names and folder names. This allowed for us to support accented characters as well as glyphs and japanese characters, alongside with what we found before. This allowed for us to finally fix the bug of &lsquo;one file per folder&rsquo; which was done for DWI way back in 2002, so as we move to a more mode agnostic (we support more than one game mode) we can allow users to have simfiles for different modes/games in the same folder. This was perfect on OutFox specific things - but broke most stuff on 5.1/5.0.12 horribly.</p>
+<p>What we had not realised was that a lot of things had been built up on this old bugged behaviour over the years, and that for some reason, there was a hash of the path of the simfile which was being picked up by all these systems. This completely changed the reported hash, and thus score reporting things or sharing things suddenly didn&rsquo;t know their hash and it also didn&rsquo;t help with DWI being so jank it broke even how SM saw some of the charts.</p>
+<p>We have kept the multiloading system in place. We need this for other modes, however we have adjusted carefully the loading system for SM/SSC/DWI so it matches back to how past versions work, so all of these things can remain intact and working.</p>
+<p>We&rsquo;ll need to think hard on how to apply the fixes in the future, as we don&rsquo;t really want all of this all over again!</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
 <h3 id=all>
 <strong>ALL:</strong>
 <a data-clipboard-text=https://outfox.wiki/releases/A4.9.9HF3/#all class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ALL:" href=#all><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
