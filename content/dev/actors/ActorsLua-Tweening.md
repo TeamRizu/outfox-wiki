@@ -93,6 +93,8 @@ A 2D or 3D bezier curve can be passed into the function to allow for extra tween
 
 OutFox added all of the standard easing functions. All of these are prefixed with `ease` and `in`/`out`/`inout`
 
+![linear](/mods/tweens/of-tweens.png)
+
 <!-- We should probably create images for each variant... -->
 
 ### sine

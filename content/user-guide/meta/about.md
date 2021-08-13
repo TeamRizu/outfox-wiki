@@ -35,6 +35,7 @@ Design |
 [Jose Varela](https://github.com/JoseVarelaP)
 [Lirodon](https://github.com/ListenerJubatus)
 [SheepyChris](https://github.com/SheepyChris)
+[Sudospective](https://github.com/Sudospective)
 
 <---> <!-- magic sparator, between columns -->
 
@@ -45,7 +46,6 @@ Community |
 [Moneko](https://github.com/JustMoneko)
 [Hanubeki](https://github.com/hanubeki)
 [Gabrimax98](https://github.com/Gabrimax98)
-[Sudospective](https://github.com/Sudospective)
 RodentVienna
 
 {{< /columns >}}
@@ -56,5 +56,6 @@ The design members are the ones who work on assets, themes and frontend.
 
 The community members assists by creating, maintaining and expanding community projects and organizations, such as:
 
-- Moderating the Discord Server, Forum, Subreddit and our Bug Hunter Repository;
+- Moderating the [Discord Server](https://discord.gg/cN4TjgQdcA), [Forum](https://discourse.projectmoon.dance/), [Subreddit](https://www.reddit.com/r/OutFox/) and our [Bug Hunter Repository](https://github.com/TeamRizu/OutFox);
 - Coordinating [Tiny-Foxes](https://github.com/Tiny-Foxes), a community group focusing on add-ons and localizations for Project OutFox.
+- Creation and organization of [OutFox Community Pack](https://projectmoon.dance/outfox-community-pack).
