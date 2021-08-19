@@ -626,24 +626,40 @@ hidden-mobile" itemprop=breadcrumb>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>Game types</h1>
-<p>Project OutFox supports a variety of game types, which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into <strong>styles</strong>, which define chart types such as single, double, etc.</p>
+<p>Project OutFox supports a variety of game types, which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into <strong>styles</strong>, which defines chart types (such as the number of columns used, single or double, etc.)</p>
 <p><img src=../../getting-started/select-game-type.png alt="Screenshot of the Project OutFox game selection screen."></p>
-<p>As of OutFox-alpha-4.9.8, they include:</p>
+<p>As of OutFox-alpha-4.9.9, they include:</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=inherited-from-stepmania>
+Inherited from StepMania
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/#inherited-from-stepmania class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Inherited from StepMania" href=#inherited-from-stepmania><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>These game types were already avaliable in StepMania as of version 5.1 (the beta from which OutFox is forked), but are undergoing improvements to their file support, mechanics, and user experiences.</p>
 <ul>
 <li><strong>dance</strong> - The default game type. Similar to games such as <em>Dance Dance Revolution</em> and <em>In the Groove</em>, it uses four lanes in the cardinal directions (left, down, up, right). It also contains a 6-lane style (solo) adding up-left and up-right directions, and a 3-lane style using only up-left, down, and up-right.</li>
 <li><strong>pump</strong> - A five-lane dance game, which uses four diagional directions and the center rather than cardinal directions. In terms of functionality and behavior it is in line with <em>Pro</em>/StepMania 4 CVS.</li>
+<li><strong>popn</strong> - A PMS player mode, supporting 3, 4, 5, 7, and 9-button styles, and the ability to load PMS files.</li>
+<li><strong>beat</strong> - Supports 5-key and 7-key styles, and the ability to load BMS files. Full BME/BML support is coming soon.</li>
+<li><strong>para</strong> - A dance game designed for <em>para para</em> routines, which is typically played with five infrared hand sensors in a semicircular layout, and uses a considerably looser scoring system. It is modelled upon the mechanics of the defunct arcade dance game <em>Para Para Paradise</em>.</li>
+<li><strong>techno</strong> - A dance game type designed for pads with nine panels, including 4-lane (similar to dance), 5-lane (similar to pump), 8-lane (using all but the center panel), and 9-lane styles in single and double versions.</li>
 <li><strong>kb7</strong> - A seven-lane game type designed primarily for keyboard play, with two sets of three keys flanking a centre column (usually mapped by default to the SDF, JKL, and space keys). This is a StepMania-specific game type that does not emulate any specific game.</li>
 <li><strong>ez2</strong> - A game type based on the defunct arcade dance game <em>EZ2Dancer</em>, which uses three foot panels and a pair of hand sensors.</li>
-<li><strong>para</strong> - A dance game designed for <em>para para</em> routines, which is typically played with five infrared hand sensors in a semicircular layout, and uses a considerably looser scoring system. It is modelled upon the mechanics of the defunct arcade dance game <em>Para Para Paradise</em>.</li>
-<li><strong>ds3ddx</strong> - A dance game whose format is common among Chinese arcade dance games, which uses four diagional foot panels, and four hand sensors around the pad in the cardinal directions.</li>
-<li><strong>beat</strong> - Supports 5-key and 7-key styles, and the ability to load BMS files. Full BME/BML support is coming soon.</li>
 <li><strong>maniax</strong> - A game type based on the defunct arcade dance game <em>Dance Maniax</em>, which uses four hand sensors arranged into two columns (upper and lower).</li>
-<li><strong>techno</strong> - A dance game type designed for pads with nine panels, including 4-lane (similar to dance), 5-lane (similar to pump), 8-lane (using all but the center panel), and 9-lane styles in single and double versions.</li>
-<li><strong>popn</strong> - A PMS player mode, supporting 3, 4, 5, 7, and 9-button styles, and the ability to load PMS files.</li>
-<li><strong>gddm</strong> - A drum mode supporting six-part (five drums and one pedal) and nine-part (seven drums, bass pedal, hi-hat pedal) styles, modelled upon the mechanics of the arcade rhythm game <em>DrumMania</em>. 5 and 10-part with full DTX file support coming soon.</li>
-<li><strong>gdgf</strong> (formerly <strong>guitar</strong> prior to OutFox-alpha-4.9.8) - A guitar mode supporting three-fret and five-fret styles, modelled upon the mechanics of the arcade rhythm game <em>Guitar Freaks</em>.</li>
-<li><strong>gh</strong> - A five-fret guitar mode modelled upon the mechanics of once-popular console games originating from North America.</li>
+<li><strong>ds3ddx</strong> - A dance game whose format is common among Chinese arcade dance games, which uses four diagional foot panels, and four hand sensors around the pad in the cardinal directions.</li>
 <li><strong>kickbox</strong> - Obscure lash-a-soft dance pad-to-a-punching-bag mode (four, six, and eight-sensor modes).</li>
+</ul>
+<div class=gdoc-page__anchorwrap>
+<h2 id=new-to-outfox>
+New to OutFox
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/#new-to-outfox class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New to OutFox" href=#new-to-outfox><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><ul>
+<li><strong>gddm</strong> - A drum mode supporting six-part (five drums and one pedal), nine-part (seven drums, bass pedal, hi-hat pedal), and 10-part (&ldquo;Real&rdquo;) styles, modelled upon the mechanics of the arcade rhythm game <em>Drummania</em>). We support the DTX file format, which is used with simulators for the game such as DTXMania.</li>
+<li><strong>gdgf</strong> (formerly <strong>guitar</strong> prior to OutFox-alpha-4.9.8) - A guitar mode supporting three-fret and five-fret styles, modelled upon the mechanics of the arcade rhythm game <em>GuitarFreaks</em>.</li>
+<li><strong>gh</strong> - A five-fret guitar mode modelled upon the mechanics of once-popular console games originating from North America.</li>
+<li><strong>taiko</strong> - A &ldquo;don da don&rdquo; styled mode. Support for .TJA files will added in the future.</li>
 </ul>
 <div class=gdoc-page__anchorwrap>
 <h2 id=future-game-types>
@@ -657,7 +673,6 @@ Future game types
 <li><strong>karaoke</strong> - A <em>(&mldr;do i need to explain this?)</em> singing mode. Will happen if Squirrel gets off his butt.</li>
 <li><strong>jam</strong> - A mode properly supporting <em>o2Jam</em> and its modes, with full .OJM loader support.</li>
 <li><strong>piu</strong> - A major refactoring to make it more accurate to the mainline series.</li>
-<li><strong>taitai</strong> - A &ldquo;don da don&rdquo; styled mode, supporting .TJA files.</li>
 </ul>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
