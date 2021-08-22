@@ -1,12 +1,90 @@
 ---
-title: BMS/BME/PMS Support List
+title: BMS/BME/PMS Support
 weight: 1
 geekdocCollapseSection: true
 ---
 
-Project OutFox contains parsers for the BMS and PMS chart formats, which are the standard formats used in conjunction with the ``beat``, ``popn`` game types. The following table contains details on the BMS/PMS channels that Project OutFox currently supports.
+Project OutFox contains parsers for the ``BMS`` and ``PMS`` chart formats, which are the standard formats used in conjunction with mostly the ``beat`` and ``popn`` game types. The following page contains details on the ``BMS``/``PMS`` channels that _Project OutFox_ currently supports. This is a living document, and will be updated as progress is made to expand the work to support as much of these as possible.
 
-## BMS/BME/PMS Notedata support as of Alpha 4.9.9
+---
+## Introduction
+---
+The ``BMS`` file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game _Beatmania_ by Konami. There have been several interations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.
+
+_Project OutFox_ uses mostly BM98 (1998 to 2003) era definitions for this file standard, though it is improving all the time. The format is used to simulate most of the _'Down Scroll Rhythm Game Systems'_ and is known by several other derivatives which we are also slowly building support for. 
+
+``BMS`` charts are mostly composed by artists from Asia, so reading them in non-asian locales can be difficult. _OutFox_ will be overcoming this limitation in a future update, so do not delete all your charts which just show ``??????????`` just yet!
+
+The other two file types on this page, ``PMS`` and ``BME`` were born from this format and are used for other types of games. ``PMS`` was originally designed to simulate _Keyboardmania_ and had a very different channel layout than ``BMS``, but it's use moved towards _po-mu_ / _feeling po-mu_ (po-mu is short for _Pop'n Music_). This had a unique layout for 9 key/button charts, and also were used in the actual arcade games (Though they used ``BME``) for a few years. _Project OutFox_ recently fixed a lot of support for this parser, along with adding several of the missing modes often charted by simfile authors.
+
+``BME`` is an Extension of ``BMS`` and offers newer features that were not offered in raw simulators of BM98. The other system we support is ``BML`` files, which ``PMS`` incorporated by default in 2002. ``BML`` adds ``Long Note`` (known as _holds_ in StepMania), which again extends the ``BMS`` specification. We will support both ``BME`` and ``BML`` fully in an upcoming release and update these documents in the future.
+
+---
+## Basic Format
+---
+The ``BMS`` file format describes how notes are arranged and how the game is meant to behave if/when a player takes a specific action. It is usually a simple plain text file with the command lines starting with the ``#`` character. 
+
+The file consists of a _HEADER FIELD_ section and a _MAIN DATA FIELD_ section. We will be going through in detail on the most commonly used commands and channels so you have the information here. A lot of the available commands ever offered to BMS/PMS over the years have faded into deprecation/not being used, but the ones we have seen in actual files include what we will be supporting. 
+
+
+If you find a file that is not showing up in _OutFox_ you may need to switch the encoding options of the chart, or just wait until the new string system is added in the future.
+
+### Commands are in the header formatted as the following:
+
+```#[Command] [Value]```
+
+For these commands, a space between the command and value is _required_ or you will have offset issues in most simulators. A Simple Example of some common commands used in the header field are:
+
+```
+*---------------------- HEADER FIELD
+#PLAYER 3
+#GENRE Dance
+#TITLE My Dance Classics
+#ARTIST DJ Superstar
+#BPM 128
+#PLAYLEVEL 5
+#TOTAL 100
+#RANK 2
+
+#bmp00 miss.bmp
+#bmp01 01.bmp
+#wav01 01.wav
+
+*---------------------- MAIN DATA FIELD
+#00111:01010101
+#00211:0101010001010100
+```
+
+---
+## Common HEADER FIELD commands
+---
+
+## ``#PLAYER n [1 - 4]``
+
+Usage Example:
+```
+#PLAYER 3 
+```
+This command defines the play style that the chart is set for. In the earlier versions of ``BMS`` they also specified the _number_ of players.
+
+>* ``1`` = 1 Player or Single Play, with 1 life gauge. 
+
+>* ``2`` = 1 + 2 Player or Couples Play, with 2 life gauges. Mostly deprecated and not used. _OutFox_ mostly supports these and can parse them under the old _``iidx-*``_ styles from SM3.x
+
+>* ``3`` = 1 Player on 2 sides, or Double play. Modern sims use this value the most, or just ignore the ``PLAYER`` setting completely. Often a lot of ``PMS`` files have value of 3, though I have not been able to find out why. _OutFox_ supports the odd use of this command but again most simulators post 2015 ignore this value.
+
+>* ``4`` = 1 vs 2 Player, or Battle Play, with two life gauges, which was removed in iidx19, has fallen out of favour in use. I have actually only found ``PMS`` battle mode files with 3 key vs 3 key chart styles from _portable 2_. _OutFox_ currently can parse these files, but has no battle mode support.
+
+_Project OutFox_ also supports 'duet' or normal 2 player mode without needing to be set in the file itself, by joining a second player on the select music screen. As of Alpha 4.9.8 this was extended to ``PMS`` offering new modes with a 2 player option of po-mu for the first time. All ``popn`` styles (3k, 4k, 5k, 7k, 9k) have 2 player support now, with battle mode planned in the future. 
+
+
+
+
+
+
+---
+
+---
 
 ### Key:
 - ✅ Fully supported and used in Mode
@@ -359,4 +437,4 @@ FF|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 ---
 
-
+_Written and Maintained with ♡ by Squirrel, with thanks to the feeling-po-mu, BMS command memo, and Japanese BMS/PMS community_

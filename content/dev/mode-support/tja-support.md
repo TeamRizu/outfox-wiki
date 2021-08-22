@@ -8,7 +8,7 @@ Project OutFox is working on support on the parser for the TJA (Taikojiro) chart
 
 ## TJA Notedata support as of Alpha 4.9.9 - ``NOT YET`` We are still designing the parser!
 ---
-# Headers
+## Headers
 ---
 The mode uses a selection of headers to set up the playfield/notefield, which appear to be based off of the old BMS style loading mechanisms. We'll list the known ones and whether or not Project OutFox supports them.
 
@@ -18,7 +18,7 @@ Something important to note, There are no spaces after the ``:`` in the headers.
 
 ---
 
-# ``TITLE``
+## ``TITLE``
 This header is self explanatory, and it sets the title of the song/chart that will be played. It is very often done in SHIFT-JIS encoding on older files, however on more modern charts, this is using UTF-8 / UTF-8 BOM. 
 
 Example:
@@ -27,7 +27,7 @@ Example:
 TITLE:My Favourite Song
 ```
 ---
-# ``SUBTITLE`` 
+## ``SUBTITLE`` 
 This header replaces the ``#ARTIST`` tag that BMS/PMS uses, so remember to use it in this way. It again used to be written in SHIFT-JIS on older files, but please use UTF-8, as this is the standard now.
 
 Subtitles can be hidden on the evaluation screen by adding ``--`` before the title begins. If you wish to show the subtitle on the evaluation screen (the default) you can add ``++``. It is not actually necessary to use this notation on OutFox, but for compatibility with other simulators, it is best to set this to either visible or hide. Be aware, only ``--`` works on other simulations, so if you want to keep compatibility, do not use the other two options.
@@ -46,7 +46,7 @@ To show on evaluation
 SUBTITLE:++My Favourite Artists
 ```
 ---
-# ``BPM``
+## ``BPM``
 This header specifies the beginning or 'starting' BPM (Beats Per Minute) of a song. This is the same as the ``#BPM`` used in BMS. It is usually a whole number, but floating point/decimal point is also permitted, though these are not completely in the specification.
 
 Example:
@@ -59,7 +59,7 @@ or
 BPM:128.35
 ```
 ---
-# ``OFFSET``
+## ``OFFSET``
 The offset of a song, or where you want the song to begin, is set using seconds. In Taiko mode, this will correspond to the first 'beat bar' you see, then the metronome system will continue from that. If you do not use an editor that allows you to see the waveform, this can be trial and error until it is synched up. You can use negative values, to start before the song starts, or positive values, which is after the song starts. Either of these are supported.
 
 Example
@@ -71,7 +71,7 @@ or
 OFFSET:3.32
 ```
 ---
-# ``WAVE``
+## ``WAVE``
 This header sets the file name of the song you wish to play. You do need to bear in mind, this is case sensitive. On Linux and Mac OS specifically, you must ensure that this entry matches the file name on the disc EXACTLY, or you will be greeted with silence when in game. For OutFox, you have the choice of the following supported file formats:
 
 >* ``OGG``     
@@ -92,7 +92,7 @@ or
 WAVE:HitMeinmyFace.flac
 ```
 ---
-# ``SONGVOL``
+## ``SONGVOL``
 This header sets the play volume of the song when screen gameplay starts. It is independent of the game volume, or the volume you set with the F3 option. Use this sparingly! You can make the sound of your chart be bad for players if you set it too quietly for example. It defaults to 100, which is the normal setting for a sound in the game, and in other simulators as well. It is not recommended to use values _over_ 100, as this will cause distortion and clipping in the output, and will potentially sound awful.
 
 Example
@@ -100,7 +100,7 @@ Example
 SONGVOL:100
 ```
 ---
-# ``SEVOL``
+## ``SEVOL``
 This header sets the play volume of the sound effects used when screen gameplay starts. It is independent of the game volume, or the volume you set with the F3 option. Use this sparingly! You can make the sound of your chart be bad for players if you set it too quietly for example. It defaults to 100, which is the normal setting for a sound in the game, and in other simulators as well. It is not recommended to use values _over_ 100, as this will cause distortion and clipping in the output, and will potentially sound awful.
 
 Example
@@ -108,7 +108,7 @@ Example
 SEVOL:100
 ```
 ---
-# ``DEMOSTART``
+## ``DEMOSTART``
 This allows for the preview of the song file set in ``WAVE``. It is set to play when in screen select music, (The music wheel) and will play from the point chosen here. This system mimicks the ``#PREVIEW`` system in BMS, but does not require you to load two files. It simply uses the one song file, and will play from the point selected.
 
 You need to set a time within the file, or this can cause issues with some simulators. If your song file was 93 seconds long, and you set ``DEMOSTART:99``, this can cause undesirable behaviour in other simulators. If the number is invalid in OutFox, it will just play from the beginning, so do set this right!
@@ -118,7 +118,7 @@ Example
 DEMOSTART:22.65
 ```
 ---
-# ``LEVEL``
+## ``LEVEL``
 The level entry sets the amount of stars that the player will see and this will signify the difficulty of the chart. It is set from a scale of 1 to 10, and will set the difficulty in the game.
 Some simulators can also take the ``COURSE`` name to set the difficulty. It is similar to how the ``PLAYLEVEL`` works in BMS. Bear in mind that maximum star ratings aren't the same between difficulties:
 
@@ -132,7 +132,7 @@ Example
 LEVEL:4
 ```
 ---
-# ``COURSE``
+## ``COURSE``
 This header is somewhat misleading. It is in fact the difficulty of the chart, and it can be set either as a number, or by a name.
 >* ``Easy`` or ``0``
 >* ``Normal`` or ``1``
@@ -159,7 +159,7 @@ or
 COURSE:hard
 ```
 ---
-# ``GENRE``
+## ``GENRE``
 This header works very differently to the ``BMS`` equivalent with the same name. In Taiko, you have a choice of 8 different Genres. These will then be 'set' into groups depending on this value. Use UTF-8 when setting these, to ensure full compatibility across the board. 
 
 These names will override any settings in box.def, the configuration file.
@@ -204,7 +204,7 @@ or
 Genre:アニメ
 ```
 ---
-# ``SCOREMODE``
+## ``SCOREMODE``
 This tag allows the chart maker to set the game version used when it comes to setting and sorting out the final score of the song. There have been 17 Arcade versions of Taiko and this tag can specify the scoring method. Some simulators do not support score methods other than ``1``. However, OutFox will support the full range. On most simulators, the default is ``1``.
 
 >* ``0`` This sets Arcade Version 1 to 7 scoring:
@@ -235,7 +235,7 @@ Example
 SCOREMODE:1
 ```
 ---
-# ``SCOREINIT``
+## ``SCOREINIT``
 This tag sets the INITial score for the scoring method. This is commonly set to 610 on Japanese charts, but many other values are seen as well. See ``#SCOREMODE`` above.
 
 Example
@@ -243,7 +243,7 @@ Example
 SCOREINIT:380
 ```
 ---
-# ``SCOREDIFF``
+## ``SCOREDIFF``
 This tag sets the score DIFFerence for the scoring method. This is commonly set to 140 on Japanese charts, but many other values are seen as well. See ``#SCOREMODE`` above.
 
 Example
@@ -251,7 +251,7 @@ Example
 SCOREDIFF:90
 ```
 ---
-# ``MAKER``
+## ``MAKER``
 This tag is used for the name of the chart artist. It is not often seen in the simulators options, but the tag is available for credit. Works as per ``#MAKER`` in BMS.
 
 Example
@@ -260,12 +260,12 @@ MAKER:Squirrel
 ```
 ---
 
-# ``MAKER``
+## ``MAKER``
 This tag is used for the name of the chart artist. It is not often seen in the simulators options, but the tag is available for credit. Works as per ``#MAKER`` in BMS.
 
 
 ---
-# Taiko Note Types
+## Taiko Note Types
 
 >* ``0`` = No Notes
 >* ``1`` = Small Don (Orange Note)
@@ -286,4 +286,4 @@ This tag is used for the name of the chart artist. It is not often seen in the s
 
 
 
-_Written and Maintained by Squirrel, with thanks to Taiko-web, and members of the TJADB community_
+_Written and Maintained with ♡ by Squirrel, with thanks to Taiko-web, and members of the TJADB and Taiko international community_

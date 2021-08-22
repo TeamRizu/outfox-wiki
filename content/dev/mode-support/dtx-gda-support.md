@@ -345,3 +345,6 @@ FD|Start Sound|❌|Start Sound|❌|✅|Not Supported
 FE|Not Used|~|Not Used|❌|❌|Not Used
 FF|Not Used|~|Not Used|❌|❌|Not Used
 
+----
+
+_Written and Maintained with ♡ by Squirrel, with thanks to the BMS command memo, and Japanese DTX and BandJAM community, and thanks to dridi for the GDA help_
