@@ -1,5 +1,5 @@
 ---
-title: TJA
+title: TJA Compatibility
 weight: 1
 geekdocCollapseSection: true
 ---
@@ -260,6 +260,8 @@ MAKER:Squirrel
 ```
 ---
 
+# ``MAKER``
+This tag is used for the name of the chart artist. It is not often seen in the simulators options, but the tag is available for credit. Works as per ``#MAKER`` in BMS.
 
 
 ---
@@ -275,10 +277,10 @@ MAKER:Squirrel
 >* ``7`` = Where the 'Balloon' (Long) Note Begin - Ends with an ``8``
 >* ``8`` = Where the Drum Roll / Balloon Long Notes End
 >* ``9`` = Where the 'Kusudama, yam, oimo, or big balloon' (Long) Note Begins - Ends with an ``8``
->* ``A`` = Large Don Partner, Multiplayer, with the hands 
->* ``B`` = Large Kat Partner, Multiplayer, with the hands
->* ``C`` = Not Used?
->* ``D`` = Not Used?
+>* ``A`` = Large Don Partner, Multiplayer, with the hands (This does not work on most sims)
+>* ``B`` = Large Kat Partner, Multiplayer, with the hands (This does not work on most sims)
+>* ``C`` = Mine or Bomb (OutFox specific)
+>* ``D`` = Not Used? (Potential Fuse Roll OutFox Specific)
 >* ``E`` = Not Used?
 >* ``F`` = Adlib; hidden note that will increase combo if spotted, but won't give bad/miss when not
 
