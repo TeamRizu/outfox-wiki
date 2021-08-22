@@ -3,9 +3,9 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Project OutFox contains parsers for the BMS, PMS, and DTX chart formats, which are the standard formats used in conjunction with the beat, popn, and gddm game types. The following table contains details on the BMS/PMS/DTX channels that Project OutFox currently supports.
-BMS/PMS/DTX Notedata support as of Alpha 4.9.9    Key:     ✅ Fully supported and used in Mode ✓ Fully supported and not used in Mode 📝?">
-<title>BMS/PMS/DTX | Project OutFox Wiki</title>
+<meta name=description content="Project OutFox contains parsers for the BMS and PMS chart formats, which are the standard formats used in conjunction with the beat, popn game types. The following table contains details on the BMS/PMS channels that Project OutFox currently supports.
+BMS/BME/PMS Notedata support as of Alpha 4.9.9    Key:     ✅ Fully supported and used in Mode ✓ Fully supported and not used in Mode 📝? No Documentation on this channel&rsquo;s support ❌ Not Supported / Not Available ~ Not Used  Channel Support Table       BMS / BME / PMS Channel BMS Name OutFox BMS Support BME Name OutFox BME Support PMS Name OutFox PMS Support OutFox BMS/PMS Status Comments     1 Background Music ✅ Background Music ✅ Background Music ✅ Supported   2 Measure Length ✅ Measure Length ✅ Measure length ✅ Supported   3 Set Initial BPM ✅ Set Initial BPM ✅ Set Initial BPM ✅ Supported   4 BGA Base ✅ BGA Base ✅ BG Base ✅ Supported - needs enabling   5 eXtended Object ✅ eXtended Object ✅ eXtended Object ✅ Supported   6 BGA Layer Miss ✅ BGA Layer Miss ✅ BGA Poor ✅ Supported - needs enabling   7 BGA Layer ✅ BGA Layer ✅ BG Layer ✅ Supported - needs enabling sits above channel 4   8 Extended BPM ✅ Extended BPM ✅ Set BPM ✅ Supported - Changes bpm to value   9 Stop ✅ Stop ✅ Stop ✓ Supported   0A BGA Layer 2 ✅ BGA Layer 2 ✅ BGA Layer 2 ✅ Supported   0B BGA Base Opacity ❌ BGA Base Opacity ❌ BGA Base Opacity ❌ Not Supported   0C BGA Layer Opacity ❌ BGA Layer Opacity ❌ Not Used ~ Not Supported   0D BGA Layer 2 Opacity ❌ BGA Layer 2 Opacity ❌ Not Used ~ Not Supported   0E BGA Poor Opacity ❌ BGA Poor Opacity ❌ BGA Poor Opacity ❌ Not Supported   0F Not Used ~ Not Used ~ Not Used ~ Not Used        BMS / BME / PMS Channel BMS Name OutFox BMS Support BME Name OutFox BME Support PMS Name OutFox PMS Support OutFox BMS/PMS Status Comments     10 Not Used ~ Not Used ~ Not Used ~ Not Used   11 P1 Key 1 ✅ P1 Key 1 ✅ P1 Left White ✅ Supported   12 P1 Key 2 ✅ P1 Key 2 ✅ P1 Left Yellow ✅ Supported   13 P1 Key 3 ✅ P1 Key 3 ✅ P1 Left Green ✅ Supported   14 P1 Key 4 ✅ P1 Key 4 ✅ P1 Left Blue ✅ Supported   15 P1 Key 5 ✅ P1 Key 5 ✅ P1 Red ✅ Supported   16 P1 Turn/Scratch ✅ P1 Turn/Scratch ✅ Not Used ~ Supported   17 P1 FootPedal ❌ P1 FootPedal ❌ Not Used ~ Supported   18 P1 Key 6 ✅ P1 Key 6 ✅ Not Used ~ Supported   19 P1 Key 7 ✅ P1 Key 7 ✅ Not Used ~ Supported   1A Not Used ~ Not Used ~ Not Used ~ Not Used   1B Not Used ~ Not Used ~ Not Used ~ Not Used   1C Not Used ~ Not Used ~ Not Used ~ Not Used   1D Not Used ~ Not Used ~ Not Used ~ Not Used   1E Not Used ~ Not Used ~ Not Used ~ Not Used   1F Not Used ~ Not Used ~ Not Used ~ Not Used        BMS / BME / PMS Channel BMS Name OutFox BMS Support BME Name OutFox BME Support PMS Name OutFox PMS Support OutFox BMS/PMS Status Comments     20 Not Used ~ Not Used ~ Not Used ~ Not Used   21 P2 Key 1 ✅ P2 Key 1 ✅ Not Used ✅ Supported   22 P2 Key 2 ✅ P2 Key 2 ✅ P1 Right Blue ✅ Supported   23 P2 Key 3 ✅ P2 Key 3 ✅ P1 Right Green ✅ Supported   24 P2 Key 4 ✅ P2 Key 4 ✅ P1 Right Yellow ✅ Supported   25 P2 Key 5 ✅ P2 Key 5 ✅ P1 Right White ✅ Supported   26 P2 Turn/Scratch ✅ P2 Turn/Scratch ✅ Not Used ~ Supported   27 P2 FootPedal ❌ P2 FootPedal ❌ Not Used ~ Not Supported yet   28 P2 Key 6 ✅ P2 Key 6 ✅ Not Used ~ Supported   29 P2 Key 7 ✅ P2 Key 7 ✅ Not Used ~ Supported   2A Not Used ~ Not Used ~ Not Used ~ Not Used   2B Not Used ~ Not Used ~ Not Used ~ Not Used   2C Not Used ~ Not Used ~ Not Used ~ Not Used   2D Not Used ~ Not Used ~ Not Used ~ Not Used   2E Not Used ~ Not Used ~ Not Used ~ Not Used   2F Not Used ~ Not Used ~ Not Used ~ Not Used        BMS / BME / PMS Channel BMS Name OutFox BMS Support BME Name OutFox BME Support PMS Name OutFox PMS Support OutFox BMS/PMS Status Comments     30 Not Used ~ Not Used ~ Not Used ~ Not Used   31 P1 Key 1 Hidden ❌ P1 Key 1 Hidden ❌ P1 Left White Hidden ❌ BMS/PMS in 4.">
+<title>BMS/BME/PMS Support List | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -176,8 +176,15 @@ Mode support
 <ul class=gdoc-nav__list>
 <li>
 <span class=flex>
-<a href=../../../dev/mode-support/bms-pms-dtx-support/ class="gdoc-nav__entry is-active">
-BMS/PMS/DTX
+<a href=../../../dev/mode-support/bms-pms-support/ class="gdoc-nav__entry is-active">
+BMS/BME/PMS Support List
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mode-support/dtx-gda-support/ class=gdoc-nav__entry>
+DTX & GDA/G2D Support
 </a>
 </span>
 </li>
@@ -198,7 +205,7 @@ SM
 <li>
 <span class=flex>
 <a href=../../../dev/mode-support/tja-support/ class=gdoc-nav__entry>
-TJA
+TJA Compatibility
 </a>
 </span>
 </li>
@@ -623,23 +630,23 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mode-support/ href=../../../dev/mode-support/><span itemprop=name>Mode support</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>BMS/PMS/DTX</span><meta itemprop=position content="4"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mode-support/ href=../../../dev/mode-support/><span itemprop=name>Mode support</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>BMS/BME/PMS Support List</span><meta itemprop=position content="4"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>BMS/PMS/DTX</h1>
-<p>Project OutFox contains parsers for the BMS, PMS, and DTX chart formats, which are the standard formats used in conjunction with the <code>beat</code>, <code>popn</code>, and <code>gddm</code> game types. The following table contains details on the BMS/PMS/DTX channels that Project OutFox currently supports.</p>
+<h1>BMS/BME/PMS Support List</h1>
+<p>Project OutFox contains parsers for the BMS and PMS chart formats, which are the standard formats used in conjunction with the <code>beat</code>, <code>popn</code> game types. The following table contains details on the BMS/PMS channels that Project OutFox currently supports.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=bmspmsdtx-notedata-support-as-of-alpha-499>
-BMS/PMS/DTX Notedata support as of Alpha 4.9.9
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-dtx-support/#bmspmsdtx-notedata-support-as-of-alpha-499 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BMS/PMS/DTX Notedata support as of Alpha 4.9.9" href=#bmspmsdtx-notedata-support-as-of-alpha-499><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=bmsbmepms-notedata-support-as-of-alpha-499>
+BMS/BME/PMS Notedata support as of Alpha 4.9.9
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#bmsbmepms-notedata-support-as-of-alpha-499 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BMS/BME/PMS Notedata support as of Alpha 4.9.9" href=#bmsbmepms-notedata-support-as-of-alpha-499><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><div class=gdoc-page__anchorwrap>
 <h3 id=key>
 Key:
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-dtx-support/#key class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Key:" href=#key><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#key class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Key:" href=#key><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><ul>
@@ -652,22 +659,20 @@ Key:
 <div class=gdoc-page__anchorwrap>
 <h3 id=channel-support-table>
 Channel Support Table
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-dtx-support/#channel-support-table class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Channel Support Table" href=#channel-support-table><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#channel-support-table class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Channel Support Table" href=#channel-support-table><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -677,9 +682,7 @@ Channel Support Table
 <td>✅</td>
 <td>Background Music</td>
 <td>✅</td>
-<td>Supported</td>
 <td>Background Music</td>
-<td>✅</td>
 <td>✅</td>
 <td>Supported</td>
 </tr>
@@ -687,13 +690,11 @@ Channel Support Table
 <td>2</td>
 <td>Measure Length</td>
 <td>✅</td>
+<td>Measure Length</td>
+<td>✅</td>
 <td>Measure length</td>
 <td>✅</td>
-<td>Supported / OutFox Channel 2 lasts a measure on DTX</td>
-<td>Measure Multiplication factor</td>
-<td>❌</td>
-<td>✅</td>
-<td>Supported / OutFox Channel 2 lasts a measure on DTX</td>
+<td>Supported</td>
 </tr>
 <tr>
 <td>3</td>
@@ -701,9 +702,7 @@ Channel Support Table
 <td>✅</td>
 <td>Set Initial BPM</td>
 <td>✅</td>
-<td>Supported</td>
 <td>Set Initial BPM</td>
-<td>✅</td>
 <td>✅</td>
 <td>Supported</td>
 </tr>
@@ -711,11 +710,9 @@ Channel Support Table
 <td>4</td>
 <td>BGA Base</td>
 <td>✅</td>
+<td>BGA Base</td>
+<td>✅</td>
 <td>BG Base</td>
-<td>✅</td>
-<td>Supported - needs enabling</td>
-<td>BG Layer 1</td>
-<td>✅</td>
 <td>✅</td>
 <td>Supported - needs enabling</td>
 </tr>
@@ -725,33 +722,27 @@ Channel Support Table
 <td>✅</td>
 <td>eXtended Object</td>
 <td>✅</td>
-<td>Supported</td>
 <td>eXtended Object</td>
 <td>✅</td>
-<td>📝?</td>
 <td>Supported</td>
 </tr>
 <tr>
 <td>6</td>
 <td>BGA Layer Miss</td>
 <td>✅</td>
+<td>BGA Layer Miss</td>
+<td>✅</td>
 <td>BGA Poor</td>
 <td>✅</td>
-<td>Supported - needs enabling</td>
-<td>Not Used</td>
-<td>✓</td>
-<td>~</td>
 <td>Supported - needs enabling</td>
 </tr>
 <tr>
 <td>7</td>
 <td>BGA Layer</td>
 <td>✅</td>
+<td>BGA Layer</td>
+<td>✅</td>
 <td>BG Layer</td>
-<td>✅</td>
-<td>Supported - needs enabling sits above channel 4</td>
-<td>BG Layer 2</td>
-<td>✅</td>
 <td>✅</td>
 <td>Supported - needs enabling sits above channel 4</td>
 </tr>
@@ -759,11 +750,9 @@ Channel Support Table
 <td>8</td>
 <td>Extended BPM</td>
 <td>✅</td>
-<td>Set BPM</td>
-<td>✅</td>
-<td>Supported - Changes bpm to value</td>
 <td>Extended BPM</td>
 <td>✅</td>
+<td>Set BPM</td>
 <td>✅</td>
 <td>Supported - Changes bpm to value</td>
 </tr>
@@ -772,11 +761,9 @@ Channel Support Table
 <td>Stop</td>
 <td>✅</td>
 <td>Stop</td>
+<td>✅</td>
+<td>Stop</td>
 <td>✓</td>
-<td>Supported</td>
-<td>Not Used</td>
-<td>✓</td>
-<td>~</td>
 <td>Supported</td>
 </tr>
 <tr>
@@ -785,10 +772,8 @@ Channel Support Table
 <td>✅</td>
 <td>BGA Layer 2</td>
 <td>✅</td>
-<td>Supported</td>
-<td>Not Used</td>
-<td>✓</td>
-<td>~</td>
+<td>BGA Layer 2</td>
+<td>✅</td>
 <td>Supported</td>
 </tr>
 <tr>
@@ -797,35 +782,29 @@ Channel Support Table
 <td>❌</td>
 <td>BGA Base Opacity</td>
 <td>❌</td>
+<td>BGA Base Opacity</td>
+<td>❌</td>
 <td>Not Supported</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>0C</td>
 <td>BGA Layer Opacity</td>
 <td>❌</td>
+<td>BGA Layer Opacity</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Supported</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>0D</td>
 <td>BGA Layer 2 Opacity</td>
 <td>❌</td>
+<td>BGA Layer 2 Opacity</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Supported</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>0E</td>
@@ -833,11 +812,9 @@ Channel Support Table
 <td>❌</td>
 <td>BGA Poor Opacity</td>
 <td>❌</td>
+<td>BGA Poor Opacity</td>
+<td>❌</td>
 <td>Not Supported</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>0F</td>
@@ -846,8 +823,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -857,16 +832,14 @@ Channel Support Table
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -877,8 +850,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -886,11 +857,9 @@ Channel Support Table
 <td>11</td>
 <td>P1 Key 1</td>
 <td>✅</td>
+<td>P1 Key 1</td>
+<td>✅</td>
 <td>P1 Left White</td>
-<td>✅</td>
-<td>Supported</td>
-<td>HiHatClose</td>
-<td>✅</td>
 <td>✅</td>
 <td>Supported</td>
 </tr>
@@ -898,11 +867,9 @@ Channel Support Table
 <td>12</td>
 <td>P1 Key 2</td>
 <td>✅</td>
+<td>P1 Key 2</td>
+<td>✅</td>
 <td>P1 Left Yellow</td>
-<td>✅</td>
-<td>Supported</td>
-<td>Snare</td>
-<td>✅</td>
 <td>✅</td>
 <td>Supported</td>
 </tr>
@@ -910,11 +877,9 @@ Channel Support Table
 <td>13</td>
 <td>P1 Key 3</td>
 <td>✅</td>
+<td>P1 Key 3</td>
+<td>✅</td>
 <td>P1 Left Green</td>
-<td>✅</td>
-<td>Supported</td>
-<td>Bass Drum</td>
-<td>✅</td>
 <td>✅</td>
 <td>Supported</td>
 </tr>
@@ -922,11 +887,9 @@ Channel Support Table
 <td>14</td>
 <td>P1 Key 4</td>
 <td>✅</td>
+<td>P1 Key 4</td>
+<td>✅</td>
 <td>P1 Left Blue</td>
-<td>✅</td>
-<td>Supported</td>
-<td>High Tom</td>
-<td>✅</td>
 <td>✅</td>
 <td>Supported</td>
 </tr>
@@ -934,11 +897,9 @@ Channel Support Table
 <td>15</td>
 <td>P1 Key 5</td>
 <td>✅</td>
+<td>P1 Key 5</td>
+<td>✅</td>
 <td>P1 Red</td>
-<td>✅</td>
-<td>Supported</td>
-<td>Low Tom</td>
-<td>✅</td>
 <td>✅</td>
 <td>Supported</td>
 </tr>
@@ -946,48 +907,40 @@ Channel Support Table
 <td>16</td>
 <td>P1 Turn/Scratch</td>
 <td>✅</td>
+<td>P1 Turn/Scratch</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Supported</td>
-<td>Cymbal</td>
-<td>✅</td>
-<td>✅</td>
 <td>Supported</td>
 </tr>
 <tr>
 <td>17</td>
 <td>P1 FootPedal</td>
 <td>❌</td>
+<td>P1 FootPedal</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Supported</td>
-<td>Floor Tom</td>
-<td>✅</td>
-<td>✅</td>
 <td>Supported</td>
 </tr>
 <tr>
 <td>18</td>
 <td>P1 Key 6</td>
 <td>✅</td>
+<td>P1 Key 6</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Supported</td>
-<td>High Hat Open</td>
-<td>✅</td>
-<td>✅</td>
 <td>Supported</td>
 </tr>
 <tr>
 <td>19</td>
 <td>P1 Key 7</td>
 <td>✅</td>
+<td>P1 Key 7</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Supported</td>
-<td>Ride Cymbal</td>
-<td>✅</td>
-<td>✅</td>
 <td>Supported</td>
 </tr>
 <tr>
@@ -997,10 +950,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Left Cymbal</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>1B</td>
@@ -1009,10 +960,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Left Pedal</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>1C</td>
@@ -1021,10 +970,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Left Bass Drum</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>1D</td>
@@ -1033,8 +980,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1045,8 +990,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1057,10 +1000,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Drums Fill in Sound</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 </tbody>
 </table> </div>
@@ -1068,16 +1009,14 @@ Channel Support Table
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -1088,118 +1027,98 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar OPEN</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>21</td>
 <td>P2 Key 1</td>
 <td>✅</td>
+<td>P2 Key 1</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>✅</td>
 <td>Supported</td>
-<td>Guitar xxBxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported yet on DTX</td>
 </tr>
 <tr>
 <td>22</td>
 <td>P2 Key 2</td>
 <td>✅</td>
+<td>P2 Key 2</td>
+<td>✅</td>
 <td>P1 Right Blue</td>
 <td>✅</td>
 <td>Supported</td>
-<td>Guitar xGxxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported yet on DTX</td>
 </tr>
 <tr>
 <td>23</td>
 <td>P2 Key 3</td>
 <td>✅</td>
+<td>P2 Key 3</td>
+<td>✅</td>
 <td>P1 Right Green</td>
 <td>✅</td>
 <td>Supported</td>
-<td>Guitar xGBxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported yet on DTX</td>
 </tr>
 <tr>
 <td>24</td>
 <td>P2 Key 4</td>
 <td>✅</td>
+<td>P2 Key 4</td>
+<td>✅</td>
 <td>P1 Right Yellow</td>
 <td>✅</td>
 <td>Supported</td>
-<td>Guitar Rxxxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported yet on DTX</td>
 </tr>
 <tr>
 <td>25</td>
 <td>P2 Key 5</td>
 <td>✅</td>
+<td>P2 Key 5</td>
+<td>✅</td>
 <td>P1 Right White</td>
 <td>✅</td>
 <td>Supported</td>
-<td>Guitar RxBxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported yet on DTX</td>
 </tr>
 <tr>
 <td>26</td>
 <td>P2 Turn/Scratch</td>
 <td>✅</td>
+<td>P2 Turn/Scratch</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Supported</td>
-<td>Guitar RGxxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported yet on DTX</td>
 </tr>
 <tr>
 <td>27</td>
 <td>P2 FootPedal</td>
 <td>❌</td>
+<td>P2 FootPedal</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Supported yet</td>
-<td>Guitar RGBxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported yet on DTX</td>
 </tr>
 <tr>
 <td>28</td>
 <td>P2 Key 6</td>
 <td>✅</td>
+<td>P2 Key 6</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Supported</td>
-<td>Guitar Wail</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported yet on DTX</td>
 </tr>
 <tr>
 <td>29</td>
 <td>P2 Key 7</td>
 <td>✅</td>
+<td>P2 Key 7</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Supported</td>
-<td>Not Supported</td>
-<td>~</td>
-<td>~</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>2A</td>
@@ -1208,10 +1127,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Supported</td>
 <td>~</td>
-<td>~</td>
-<td>Not Supported</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>2B</td>
@@ -1220,8 +1137,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1232,10 +1147,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar Long Note Start/End Point</td>
-<td>❌</td>
-<td>✅ AL</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>2D</td>
@@ -1244,10 +1157,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass Long Note Start/End Point</td>
-<td>❌</td>
-<td>✅ AL</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>2E</td>
@@ -1256,8 +1167,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1268,10 +1177,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar Wailing Sound</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 </tbody>
 </table> </div>
@@ -1279,16 +1186,14 @@ Channel Support Table
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -1299,8 +1204,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Rate Speed</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1308,109 +1211,91 @@ Channel Support Table
 <td>31</td>
 <td>P1 Key 1 Hidden</td>
 <td>❌</td>
+<td>P1 Key 1 Hidden</td>
+<td>❌</td>
 <td>P1 Left White Hidden</td>
 <td>❌</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>HiHatClose Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>32</td>
 <td>P1 Key 2 Hidden</td>
 <td>❌</td>
+<td>P1 Key 2 Hidden</td>
+<td>❌</td>
 <td>P1 Left Yellow Hidden</td>
 <td>❌</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Snare Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>33</td>
 <td>P1 Key 3 Hidden</td>
 <td>❌</td>
+<td>P1 Key 3 Hidden</td>
+<td>❌</td>
 <td>P1 Left Green Hidden</td>
 <td>❌</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Bass Drum Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>34</td>
 <td>P1 Key 4 Hidden</td>
 <td>❌</td>
+<td>P1 Key 4 Hidden</td>
+<td>❌</td>
 <td>P1 Left Blue Hidden</td>
 <td>❌</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>High Tom Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>35</td>
 <td>P1 Key 5 Hidden</td>
 <td>❌</td>
+<td>P1 Key 5 Hidden</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>BMS in 4.9.10</td>
-<td>Low Tom Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>36</td>
 <td>P1 Turn/Scratch Hidden</td>
 <td>❌</td>
+<td>P1 Turn/Scratch Hidden</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>BMS in 4.9.10</td>
-<td>Cymbal Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>37</td>
 <td>P1 FootPedal Hidden</td>
 <td>❌</td>
+<td>P1 FootPedal Hidden</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>BMS in 4.9.10</td>
-<td>Floor Tom Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>38</td>
 <td>P1 Key 6 Hidden</td>
 <td>❌</td>
+<td>P1 Key 6 Hidden</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>BMS in 4.9.10</td>
-<td>High Hat Open Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>39</td>
 <td>P1 Key 7 Hidden</td>
 <td>❌</td>
+<td>P1 Key 7 Hidden</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>BMS in 4.9.10</td>
-<td>Ride Cymbal Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>3A</td>
@@ -1419,10 +1304,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Left Cymbal Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>3B</td>
@@ -1431,10 +1314,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Left Pedal Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>3C</td>
@@ -1443,10 +1324,8 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Left Bass Drum Hidden Note</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>3D</td>
@@ -1455,8 +1334,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1467,8 +1344,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1479,8 +1354,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1490,16 +1363,14 @@ Channel Support Table
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -1510,8 +1381,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1519,109 +1388,91 @@ Channel Support Table
 <td>41</td>
 <td>P2 Key 1 Hidden</td>
 <td>❌</td>
+<td>P2 Key 1 Hidden</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>42</td>
 <td>P2 Key 2 Hidden</td>
 <td>❌</td>
+<td>P2 Key 2 Hidden</td>
+<td>❌</td>
 <td>P1 Right Blue Hidden</td>
 <td>❌</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>43</td>
 <td>P2 Key 3 Hidden</td>
 <td>❌</td>
+<td>P2 Key 3 Hidden</td>
+<td>❌</td>
 <td>P1 Right Green Hidden</td>
 <td>❌</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>44</td>
 <td>P2 Key 4 Hidden</td>
 <td>❌</td>
+<td>P2 Key 4 Hidden</td>
+<td>❌</td>
 <td>P1 Right Yellow Hidden</td>
 <td>❌</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>45</td>
 <td>P2 Key 5 Hidden</td>
 <td>❌</td>
+<td>P2 Key 5 Hidden</td>
+<td>❌</td>
 <td>P1 Right White Hidden</td>
 <td>❌</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>46</td>
 <td>P2 Turn/Scratch Hidden</td>
 <td>❌</td>
+<td>P2 Turn/Scratch Hidden</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>47</td>
 <td>P2 FootPedal Hidden</td>
 <td>❌</td>
+<td>P2 FootPedal Hidden</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>48</td>
 <td>P2 Key 6 Hidden</td>
 <td>❌</td>
+<td>P2 Key 6 Hidden</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>49</td>
 <td>P2 Key 7 Hidden</td>
 <td>❌</td>
+<td>P2 Key 7 Hidden</td>
+<td>❌</td>
 <td>Not Used</td>
 <td>~</td>
 <td>BMS/PMS in 4.9.10</td>
-<td>Not Used</td>
-<td>~</td>
-<td>~</td>
-<td>Not Used</td>
 </tr>
 <tr>
 <td>4A</td>
@@ -1630,8 +1481,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1642,8 +1491,6 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1653,10 +1500,8 @@ Channel Support Table
 <td>~</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
-<td>Bonus 04</td>
-<td>❌</td>
-<td>✅</td>
+<td>Not Used</td>
+<td>~</td>
 <td>Not Supported</td>
 </tr>
 <tr>
@@ -1665,10 +1510,8 @@ Channel Support Table
 <td>~</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
-<td>Bonus 03</td>
-<td>❌</td>
-<td>✅</td>
+<td>Not Used</td>
+<td>~</td>
 <td>Not Supported</td>
 </tr>
 <tr>
@@ -1677,10 +1520,8 @@ Channel Support Table
 <td>~</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
-<td>Bonus 02</td>
-<td>❌</td>
-<td>✅</td>
+<td>Not Used</td>
+<td>~</td>
 <td>Not Supported</td>
 </tr>
 <tr>
@@ -1689,10 +1530,8 @@ Channel Support Table
 <td>~</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
-<td>Bonus 01</td>
-<td>❌</td>
-<td>✅</td>
+<td>Not Used</td>
+<td>~</td>
 <td>Not Supported</td>
 </tr>
 </tbody>
@@ -1701,7 +1540,7 @@ Channel Support Table
 <div class=gdoc-page__anchorwrap>
 <h2 id=long-note-sections-xxx51-69---lntype1-lntype2-bmspms>
 Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-dtx-support/#long-note-sections-xxx51-69---lntype1-lntype2-bmspms class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)" href=#long-note-sections-xxx51-69---lntype1-lntype2-bmspms><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#long-note-sections-xxx51-69---lntype1-lntype2-bmspms class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)" href=#long-note-sections-xxx51-69---lntype1-lntype2-bmspms><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p>The original Long Note Implementation is currently not supported in OutFox, though we do support <code>#LNTYPE 1</code>, but the others need to be added to the game. These sections seem to be for BMS specific extensions, however I have not been able to find any modern documented use of them outside of 2005-2009.</p>
@@ -1709,16 +1548,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -1728,118 +1565,98 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>~</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
-<td>Bar Line</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Used</td>
+<td>~</td>
+<td>Not Supported</td>
 </tr>
 <tr>
 <td>51</td>
 <td>P1 Key 1 LongNote</td>
 <td>📝?</td>
+<td>P1 Key 1 LongNote</td>
+<td>📝?</td>
 <td>P1 Left While LongNote</td>
 <td>📝?</td>
-<td>Not Supported</td>
-<td>Beat Line</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
 <td>52</td>
 <td>P1 Key 2 LongNote</td>
 <td>📝?</td>
+<td>P1 Key 2 LongNote</td>
+<td>📝?</td>
 <td>P1 Left Yellow LongNote</td>
 <td>📝?</td>
-<td>Not Supported</td>
-<td>MIDI Drum Chorus</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
 <td>53</td>
 <td>P1 Key 3 LongNote</td>
 <td>📝?</td>
+<td>P1 Key 3 LongNote</td>
+<td>📝?</td>
 <td>P1 Left Green LongNote</td>
 <td>📝?</td>
-<td>Not Supported</td>
-<td>Fill In</td>
-<td>~</td>
-<td>~</td>
 <td>Not Supported</td>
 </tr>
 <tr>
 <td>54</td>
 <td>P1 Key 4 LongNote</td>
 <td>📝?</td>
+<td>P1 Key 4 LongNote</td>
+<td>📝?</td>
 <td>P1 Left Blue LongNote</td>
 <td>📝?</td>
-<td>Not Supported</td>
-<td>Video Playback</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
 <td>55</td>
 <td>P1 Key 5 LongNote</td>
 <td>📝?</td>
+<td>P1 Key 5 LongNote</td>
+<td>📝?</td>
 <td>P1 Red LongNote</td>
 <td>📝?</td>
-<td>Not Supported</td>
-<td>BGA Layer 3</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
 <td>56</td>
 <td>P1 Turn/Scratch LongNote</td>
 <td>📝?</td>
+<td>P1 Turn/Scratch LongNote</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
-<td>BGA Layer 4</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
 <td>57</td>
 <td>P1 FootPedal LongNote</td>
 <td>📝?</td>
+<td>P1 FootPedal LongNote</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
-<td>BGA Layer 5</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
 <td>58</td>
 <td>P1 Key 6 LongNote</td>
 <td>📝?</td>
+<td>P1 Key 6 LongNote</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
-<td>BGA Layer 6</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
 <td>59</td>
 <td>P1 Key 7 LongNote</td>
 <td>📝?</td>
+<td>P1 Key 7 LongNote</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
-<td>BGA Layer 7</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
@@ -1849,8 +1666,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Background Video Playback</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1861,8 +1676,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1873,8 +1686,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1885,8 +1696,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1897,8 +1706,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1909,8 +1716,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -1920,16 +1725,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -1940,118 +1743,98 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>BGA Layer 8</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>61</td>
 <td>P2 Key 1 LongNote</td>
 <td>📝?</td>
+<td>P2 Key 1 LongNote</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Supported</td>
-<td>Sound Effect 01</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>62</td>
 <td>P2 Key 2 LongNote</td>
 <td>📝?</td>
+<td>P2 Key 2 LongNote</td>
+<td>📝?</td>
 <td>P1 Right Blue LongNote</td>
 <td>📝?</td>
 <td>Not Supported</td>
-<td>Sound Effect 02</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>63</td>
 <td>P2 Key 3 LongNote</td>
 <td>📝?</td>
+<td>P2 Key 3 LongNote</td>
+<td>📝?</td>
 <td>P1 Right Green LongNote</td>
 <td>📝?</td>
 <td>Not Supported</td>
-<td>Sound Effect 03</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>64</td>
 <td>P2 Key 4 LongNote</td>
 <td>📝?</td>
+<td>P2 Key 4 LongNote</td>
+<td>📝?</td>
 <td>P1 Right Yellow LongNote</td>
 <td>📝?</td>
 <td>Not Supported</td>
-<td>Sound Effect 04</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>65</td>
 <td>P2 Key 5 LongNote</td>
 <td>📝?</td>
+<td>P2 Key 5 LongNote</td>
+<td>📝?</td>
 <td>P1 Right White LongNote</td>
 <td>📝?</td>
 <td>Not Supported</td>
-<td>Sound Effect 05</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>66</td>
 <td>P2 Turn/Scratch LongNote</td>
 <td>📝?</td>
+<td>P2 Turn/Scratch LongNote</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Supported</td>
-<td>Sound Effect 06</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>67</td>
 <td>P2 FootPedal LongNote</td>
 <td>📝?</td>
+<td>P2 FootPedal LongNote</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Supported</td>
-<td>Sound Effect 07</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>68</td>
 <td>P2 Key 6 LongNote</td>
 <td>📝?</td>
+<td>P2 Key 6 LongNote</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Supported</td>
-<td>Sound Effect 08</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>69</td>
 <td>P2 Key 7 LongNote</td>
 <td>📝?</td>
+<td>P2 Key 7 LongNote</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Supported</td>
-<td>Sound Effect 09</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
 </tr>
 <tr>
 <td>6A</td>
@@ -2060,8 +1843,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2072,8 +1853,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2084,8 +1863,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2096,8 +1873,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2108,8 +1883,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2120,8 +1893,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2131,16 +1902,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -2151,10 +1920,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 10</td>
-<td>✅</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>71</td>
@@ -2163,10 +1930,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 11</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>72</td>
@@ -2175,10 +1940,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 12</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>73</td>
@@ -2187,10 +1950,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 13</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>74</td>
@@ -2199,10 +1960,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 14</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>75</td>
@@ -2211,10 +1970,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 15</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>76</td>
@@ -2223,10 +1980,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 16</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>77</td>
@@ -2235,10 +1990,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 17</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>78</td>
@@ -2247,10 +2000,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 18</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>79</td>
@@ -2259,10 +2010,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 19</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>7A</td>
@@ -2271,8 +2020,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2283,8 +2030,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2295,8 +2040,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2307,8 +2050,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2319,8 +2060,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2331,8 +2070,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2342,16 +2079,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -2362,10 +2097,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 20</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>81</td>
@@ -2374,10 +2107,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 21</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>82</td>
@@ -2386,10 +2117,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 22</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>83</td>
@@ -2398,10 +2127,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 23</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>84</td>
@@ -2410,10 +2137,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 24</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>85</td>
@@ -2422,10 +2147,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 25</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>86</td>
@@ -2434,10 +2157,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 26</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>87</td>
@@ -2446,10 +2167,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 27</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>88</td>
@@ -2458,10 +2177,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 28</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>89</td>
@@ -2470,10 +2187,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 29</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>8A</td>
@@ -2482,8 +2197,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2494,8 +2207,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2506,8 +2217,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2518,8 +2227,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2530,8 +2237,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2542,8 +2247,6 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>~</td>
 <td>~</td>
 <td>Not Used</td>
 </tr>
@@ -2553,16 +2256,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -2573,10 +2274,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 30</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>91</td>
@@ -2585,10 +2284,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 31</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>92</td>
@@ -2597,10 +2294,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Sound Effect 32</td>
-<td>✅</td>
-<td>✅</td>
-<td>Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>93</td>
@@ -2609,10 +2304,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xxxYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>94</td>
@@ -2621,10 +2314,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xxBYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>95</td>
@@ -2633,10 +2324,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xGxYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>96</td>
@@ -2645,45 +2334,37 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xGBYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>97</td>
 <td>Not Used</td>
 <td>~</td>
+<td>Not Used</td>
+<td>~</td>
 <td>BGM Volume</td>
 <td>❌</td>
-<td>Not Supported</td>
-<td>Guitar RxxYx</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
 <td>98</td>
 <td>Not Used</td>
 <td>~</td>
+<td>Not Used</td>
+<td>~</td>
 <td>KeySound Volume</td>
 <td>❌</td>
-<td>Not Supported</td>
-<td>Guitar RxBYx</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
 <td>99</td>
 <td>Not Used</td>
 <td>~</td>
+<td>Not Used</td>
+<td>~</td>
 <td>TEXT String</td>
 <td>❌</td>
-<td>Not Supported</td>
-<td>Guitar RGxYx</td>
-<td>❌</td>
-<td>✅</td>
 <td>Not Supported</td>
 </tr>
 <tr>
@@ -2693,10 +2374,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar RGBYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>9B</td>
@@ -2705,10 +2384,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xxxxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>9C</td>
@@ -2717,10 +2394,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xxBxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>9D</td>
@@ -2729,10 +2404,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xGxxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>9E</td>
@@ -2741,10 +2414,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xGBxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>9F</td>
@@ -2753,10 +2424,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar RxxxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2764,16 +2433,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -2784,10 +2451,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass OPEN</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>A1</td>
@@ -2796,10 +2461,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xxBxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>A2</td>
@@ -2808,10 +2471,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xGxxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>A3</td>
@@ -2820,10 +2481,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xGBxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>A4</td>
@@ -2832,10 +2491,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass Rxxxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>A5</td>
@@ -2844,10 +2501,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RxBxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>A6</td>
@@ -2855,11 +2510,9 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>❌</td>
 <td>Change Option</td>
 <td>❌</td>
-<td>This was the mod system for BMS and PMS.</td>
-<td>Bass RGxxx</td>
+<td>Change Option</td>
 <td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>This was the mod system for BMS and PMS.</td>
 </tr>
 <tr>
 <td>A7</td>
@@ -2868,10 +2521,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RGBxx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>A8</td>
@@ -2880,10 +2531,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass Wail</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>A9</td>
@@ -2892,10 +2541,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar RxBxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>AA</td>
@@ -2904,10 +2551,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar RGxxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>AB</td>
@@ -2916,10 +2561,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar RGBxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>AC</td>
@@ -2928,10 +2571,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xxxYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>AD</td>
@@ -2940,10 +2581,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xxBYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>AE</td>
@@ -2952,10 +2591,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xGxYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>AF</td>
@@ -2964,10 +2601,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar xGBYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2975,16 +2610,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -2995,9 +2628,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3007,10 +2638,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>HiHatClose Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>B2</td>
@@ -3019,10 +2648,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Snare Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>B3</td>
@@ -3031,10 +2658,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass Drum Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>B4</td>
@@ -3043,10 +2668,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>High Tom Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>B5</td>
@@ -3055,10 +2678,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Low Tom Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>B6</td>
@@ -3067,10 +2688,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Cymbal Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>B7</td>
@@ -3079,10 +2698,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Floor Tom Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>B8</td>
@@ -3091,10 +2708,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>High Hat Open Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>B9</td>
@@ -3103,10 +2718,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Ride Cymbal Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>BA</td>
@@ -3115,10 +2728,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>BB</td>
@@ -3127,10 +2738,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>BC</td>
@@ -3139,10 +2748,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>LeftCymbal Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>BD</td>
@@ -3151,10 +2758,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>LeftPedal Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>BE</td>
@@ -3163,10 +2768,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>LeftBassDrum Empty</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>BF</td>
@@ -3175,9 +2778,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 </tbody>
@@ -3186,16 +2787,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -3206,9 +2805,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3218,10 +2815,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Beat Bar Offset</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>C2</td>
@@ -3230,10 +2825,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Hide Beat/Measure bar</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>C3</td>
@@ -3242,9 +2835,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3254,10 +2845,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Replacing BGA Layer 1</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>C5</td>
@@ -3266,10 +2855,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xxxYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>C6</td>
@@ -3278,10 +2865,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xxBYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>C7</td>
@@ -3290,10 +2875,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Replacing BGA Layer 2</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>C8</td>
@@ -3302,10 +2885,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xGxYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>C9</td>
@@ -3314,10 +2895,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xGBYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>CA</td>
@@ -3326,10 +2905,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RxxYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>CB</td>
@@ -3338,10 +2915,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RxBYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>CC</td>
@@ -3350,10 +2925,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RGxYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>CD</td>
@@ -3362,10 +2935,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RGBYx</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>CE</td>
@@ -3374,10 +2945,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xxxxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>CF</td>
@@ -3386,10 +2955,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xxBxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 </tbody>
 </table> </div>
@@ -3397,16 +2964,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -3417,118 +2982,98 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Guitar RxxYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>D1</td>
 <td>P1 Key 1 LandMine</td>
 <td>📝?</td>
-<td>P1 Left While LandMine</td>
+<td>P1 Key 1 LandMine</td>
+<td>📝?</td>
+<td>P1 Left White LandMine</td>
 <td>📝?</td>
 <td>Not Used</td>
-<td>Guitar RxBYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>D2</td>
 <td>P1 Key 2 LandMine</td>
 <td>📝?</td>
+<td>P1 Key 2 LandMine</td>
+<td>📝?</td>
 <td>P1 Left Yellow LandMine</td>
 <td>📝?</td>
 <td>Not Used</td>
-<td>Guitar RGxYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>D3</td>
 <td>P1 Key 3 LandMine</td>
 <td>📝?</td>
+<td>P1 Key 3 LandMine</td>
+<td>📝?</td>
 <td>P1 Left Green LandMine</td>
 <td>📝?</td>
 <td>Not Used</td>
-<td>Guitar RGBYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>D4</td>
 <td>P1 Key 4 LandMine</td>
 <td>📝?</td>
+<td>P1 Key 4 LandMine</td>
+<td>📝?</td>
 <td>P1 Left Blue LandMine</td>
 <td>📝?</td>
-<td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
 <td>Not Used</td>
 </tr>
 <tr>
 <td>D5</td>
 <td>P1 Key 5 LandMine</td>
 <td>📝?</td>
+<td>P1 Key 5 LandMine</td>
+<td>📝?</td>
 <td>P1 Red LandMine</td>
 <td>📝?</td>
 <td>Not Used</td>
-<td>Replacing BGA Layer 3</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>D6</td>
 <td>P1 Turn/Scratch LandMine</td>
 <td>📝?</td>
+<td>P1 Turn/Scratch LandMine</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Replacing BGA Layer 4</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>D7</td>
 <td>P1 FootPedal LandMine</td>
 <td>📝?</td>
+<td>P1 FootPedal LandMine</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Replacing BGA Layer 5</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>D8</td>
 <td>P1 Key 6 LandMine</td>
 <td>📝?</td>
+<td>P1 Key 6 LandMine</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Replacing BGA Layer 6</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>D9</td>
 <td>P1 Key 7 LandMine</td>
 <td>📝?</td>
+<td>P1 Key 7 LandMine</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Replacing BGA Layer 7</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>DA</td>
@@ -3537,10 +3082,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xGxxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>DB</td>
@@ -3549,10 +3092,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xGBxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>DC</td>
@@ -3561,10 +3102,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RxxxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>DD</td>
@@ -3573,10 +3112,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RxBxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>DE</td>
@@ -3585,10 +3122,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RGxxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>DF</td>
@@ -3597,10 +3132,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RGBxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 </tbody>
 </table> </div>
@@ -3608,16 +3141,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -3628,117 +3159,97 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Replacing BGA Layer 8</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>E1</td>
 <td>P2 Key 1 LandMine</td>
 <td>📝?</td>
+<td>P2 Key 1 LandMine</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass xxxYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>E2</td>
 <td>P2 Key 2 LandMine</td>
 <td>📝?</td>
+<td>P2 Key 2 LandMine</td>
+<td>📝?</td>
 <td>P1 Right Blue LandMine</td>
 <td>📝?</td>
 <td>Not Used</td>
-<td>Bass xxBYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>E3</td>
 <td>P2 Key 3 LandMine</td>
 <td>📝?</td>
+<td>P2 Key 3 LandMine</td>
+<td>📝?</td>
 <td>P1 Right Green LandMine</td>
 <td>📝?</td>
 <td>Not Used</td>
-<td>Bass xGxYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>E4</td>
 <td>P2 Key 4 LandMine</td>
 <td>📝?</td>
+<td>P2 Key 4 LandMine</td>
+<td>📝?</td>
 <td>P1 Right Yellow LandMine</td>
 <td>📝?</td>
-<td>Not Used</td>
-<td>Bass xGBYP</td>
-<td>❌</td>
-<td>❌</td>
 <td>Not Used</td>
 </tr>
 <tr>
 <td>E5</td>
 <td>P2 Key 5 LandMine</td>
 <td>📝?</td>
+<td>P2 Key 5 LandMine</td>
+<td>📝?</td>
 <td>P1 Right White LandMine</td>
 <td>📝?</td>
 <td>Not Used</td>
-<td>Bass RxxYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>E6</td>
 <td>P2 Turn/Scratch LandMine</td>
 <td>📝?</td>
+<td>P2 Turn/Scratch LandMine</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RxBYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>E7</td>
 <td>P2 FootPedal LandMine</td>
 <td>📝?</td>
+<td>P2 FootPedal LandMine</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RGxYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>E8</td>
 <td>P2 Key 6 LandMine</td>
 <td>📝?</td>
+<td>P2 Key 6 LandMine</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RGBYP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
 </tr>
 <tr>
 <td>E9</td>
 <td>P2 Key 7 LandMine</td>
 <td>📝?</td>
+<td>P2 Key 7 LandMine</td>
+<td>📝?</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3748,9 +3259,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3760,9 +3269,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3772,10 +3279,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Metronome</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>ED</td>
@@ -3784,10 +3289,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Start Sound</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>EE</td>
@@ -3796,10 +3299,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RGxxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>EF</td>
@@ -3808,10 +3309,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Bass RGBxP</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 </tbody>
 </table> </div>
@@ -3819,16 +3318,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>BMS / PMS / DTX Channel</th>
+<th>BMS / BME / PMS Channel</th>
 <th>BMS Name</th>
 <th>OutFox BMS Support</th>
+<th>BME Name</th>
+<th>OutFox BME Support</th>
 <th>PMS Name</th>
 <th>OutFox PMS Support</th>
 <th>OutFox BMS/PMS Status Comments</th>
-<th>DTX Name</th>
-<th>OutFox DTX Support</th>
-<th>NX/Ver. K Support</th>
-<th>OutFox DTX Status Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -3839,9 +3336,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3851,9 +3346,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3863,9 +3356,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3875,9 +3366,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3887,9 +3376,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3899,9 +3386,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3911,9 +3396,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3923,9 +3406,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3935,9 +3416,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3947,9 +3426,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3959,9 +3436,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3971,9 +3446,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -3983,10 +3456,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Metronome</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>FD</td>
@@ -3995,10 +3466,8 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Start Sound</td>
-<td>❌</td>
-<td>✅</td>
-<td>Not Supported</td>
+<td>~</td>
+<td>Not Used</td>
 </tr>
 <tr>
 <td>FE</td>
@@ -4007,9 +3476,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 <tr>
@@ -4019,13 +3486,12 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
-<td>Not Used</td>
-<td>❌</td>
-<td>❌</td>
+<td>~</td>
 <td>Not Used</td>
 </tr>
 </tbody>
 </table> </div>
+<hr>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>

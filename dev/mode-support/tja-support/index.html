@@ -5,7 +5,7 @@
 <meta name=color-scheme content="light dark">
 <meta name=description content="Project OutFox is working on support on the parser for the TJA (Taikojiro) chart format, which is the standard format used in conjunction with the taiko game types. The following page contains details on the Taiko parsing options that Project OutFox currently supports. This is a living document - it will be incomplete as Squirrel finds time to update and confirm/clarify items that are missing or unknown.
 TJA Notedata support as of Alpha 4.">
-<title>TJA | Project OutFox Wiki</title>
+<title>TJA Compatibility | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -176,8 +176,15 @@ Mode support
 <ul class=gdoc-nav__list>
 <li>
 <span class=flex>
-<a href=../../../dev/mode-support/bms-pms-dtx-support/ class=gdoc-nav__entry>
-BMS/PMS/DTX
+<a href=../../../dev/mode-support/bms-pms-support/ class=gdoc-nav__entry>
+BMS/BME/PMS Support List
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../dev/mode-support/dtx-gda-support/ class=gdoc-nav__entry>
+DTX & GDA/G2D Support
 </a>
 </span>
 </li>
@@ -198,7 +205,7 @@ SM
 <li>
 <span class=flex>
 <a href=../../../dev/mode-support/tja-support/ class="gdoc-nav__entry is-active">
-TJA
+TJA Compatibility
 </a>
 </span>
 </li>
@@ -623,12 +630,12 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mode-support/ href=../../../dev/mode-support/><span itemprop=name>Mode support</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>TJA</span><meta itemprop=position content="4"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mode-support/ href=../../../dev/mode-support/><span itemprop=name>Mode support</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>TJA Compatibility</span><meta itemprop=position content="4"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>TJA</h1>
+<h1>TJA Compatibility</h1>
 <p>Project OutFox is working on support on the parser for the TJA (Taikojiro) chart format, which is the standard format used in conjunction with the <code>taiko</code> game types. The following page contains details on the Taiko parsing options that Project OutFox currently supports. This is a living document - it will be incomplete as Squirrel finds time to update and confirm/clarify items that are missing or unknown.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=tja-notedata-support-as-of-alpha-499---not-yet-we-are-still-designing-the-parser>
@@ -938,6 +945,13 @@ With this arcade version, we use the <code>SCOREDIFF</code> variable. The combo 
 <p>Example</p>
 <pre><code>MAKER:Squirrel
 </code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h1 id=maker-1>
+<code>MAKER</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#maker-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor MAKER" href=#maker-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div><p>This tag is used for the name of the chart artist. It is not often seen in the simulators options, but the tag is available for credit. Works as per <code>#MAKER</code> in BMS.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
 <h1 id=taiko-note-types>
@@ -957,10 +971,10 @@ Taiko Note Types
 <li><code>7</code> = Where the &lsquo;Balloon&rsquo; (Long) Note Begin - Ends with an <code>8</code></li>
 <li><code>8</code> = Where the Drum Roll / Balloon Long Notes End</li>
 <li><code>9</code> = Where the &lsquo;Kusudama, yam, oimo, or big balloon&rsquo; (Long) Note Begins - Ends with an <code>8</code></li>
-<li><code>A</code> = Large Don Partner, Multiplayer, with the hands</li>
-<li><code>B</code> = Large Kat Partner, Multiplayer, with the hands</li>
-<li><code>C</code> = Not Used?</li>
-<li><code>D</code> = Not Used?</li>
+<li><code>A</code> = Large Don Partner, Multiplayer, with the hands (This does not work on most sims)</li>
+<li><code>B</code> = Large Kat Partner, Multiplayer, with the hands (This does not work on most sims)</li>
+<li><code>C</code> = Mine or Bomb (OutFox specific)</li>
+<li><code>D</code> = Not Used? (Potential Fuse Roll OutFox Specific)</li>
 <li><code>E</code> = Not Used?</li>
 <li><code>F</code> = Adlib; hidden note that will increase combo if spotted, but won&rsquo;t give bad/miss when not</li>
 </ul>
