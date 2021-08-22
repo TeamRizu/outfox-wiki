@@ -177,7 +177,7 @@ Mode support
 <li>
 <span class=flex>
 <a href=../../../dev/mode-support/bms-pms-support/ class=gdoc-nav__entry>
-BMS/BME/PMS Support List
+BMS/BME/PMS Support
 </a>
 </span>
 </li>
@@ -645,32 +645,32 @@ TJA Notedata support as of Alpha 4.9.9 - <code>NOT YET</code> We are still desig
 </h2>
 </div><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=headers>
+<h2 id=headers>
 Headers
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#headers class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Headers" href=#headers><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><hr>
 <p>The mode uses a selection of headers to set up the playfield/notefield, which appear to be based off of the old BMS style loading mechanisms. We&rsquo;ll list the known ones and whether or not Project OutFox supports them.</p>
 <p>Unlike it&rsquo;s BMS History, TJA files do not use the <code>#</code> delimiter to begin a line. In BMS to note the title of a song, it would be <code>#TITLE</code>, and in TJA, it uses just <code>TITLE</code>. Bear this in mind if you are converting from BMS/PMS files that the parsers for other simulators will not expect the <code>#</code> to be used. We will list them as per what we can find out about the TJA Specification, so do check back regularly, as this information <em>will</em> change from time to time as we get more familiar with this game mode and the format nuances it uses.</p>
 <p>Something important to note, There are no spaces after the <code>:</code> in the headers. If you are using a known editor, this won&rsquo;t be a problem. However if you are converting from BMS/PMS, these will not have a <code>:</code> at all and this can lead to information being missed in the way the game parses your chart. It will also make your <code>.tja</code> incompatible with other taikojiro simulators.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=title>
+<h2 id=title>
 <code>TITLE</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#title class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TITLE" href=#title><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This header is self explanatory, and it sets the title of the song/chart that will be played. It is very often done in SHIFT-JIS encoding on older files, however on more modern charts, this is using UTF-8 / UTF-8 BOM.</p>
 <p>Example:</p>
 <pre><code>TITLE:My Favourite Song
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=subtitle>
+<h2 id=subtitle>
 <code>SUBTITLE</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#subtitle class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SUBTITLE" href=#subtitle><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This header replaces the <code>#ARTIST</code> tag that BMS/PMS uses, so remember to use it in this way. It again used to be written in SHIFT-JIS on older files, but please use UTF-8, as this is the standard now.</p>
 <p>Subtitles can be hidden on the evaluation screen by adding <code>--</code> before the title begins. If you wish to show the subtitle on the evaluation screen (the default) you can add <code>++</code>. It is not actually necessary to use this notation on OutFox, but for compatibility with other simulators, it is best to set this to either visible or hide. Be aware, only <code>--</code> works on other simulations, so if you want to keep compatibility, do not use the other two options.</p>
 <p>Example:</p>
@@ -681,11 +681,11 @@ Headers
 <pre><code>SUBTITLE:++My Favourite Artists
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=bpm>
+<h2 id=bpm>
 <code>BPM</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#bpm class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BPM" href=#bpm><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This header specifies the beginning or &lsquo;starting&rsquo; BPM (Beats Per Minute) of a song. This is the same as the <code>#BPM</code> used in BMS. It is usually a whole number, but floating point/decimal point is also permitted, though these are not completely in the specification.</p>
 <p>Example:</p>
 <pre><code>BPM:145
@@ -693,11 +693,11 @@ Headers
 <pre><code>BPM:128.35
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=offset>
+<h2 id=offset>
 <code>OFFSET</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#offset class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor OFFSET" href=#offset><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>The offset of a song, or where you want the song to begin, is set using seconds. In Taiko mode, this will correspond to the first &lsquo;beat bar&rsquo; you see, then the metronome system will continue from that. If you do not use an editor that allows you to see the waveform, this can be trial and error until it is synched up. You can use negative values, to start before the song starts, or positive values, which is after the song starts. Either of these are supported.</p>
 <p>Example</p>
 <pre><code>OFFSET:-1.785
@@ -705,11 +705,11 @@ Headers
 <pre><code>OFFSET:3.32
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=wave>
+<h2 id=wave>
 <code>WAVE</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#wave class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor WAVE" href=#wave><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This header sets the file name of the song you wish to play. You do need to bear in mind, this is case sensitive. On Linux and Mac OS specifically, you must ensure that this entry matches the file name on the disc EXACTLY, or you will be greeted with silence when in game. For OutFox, you have the choice of the following supported file formats:</p>
 <blockquote>
 <ul>
@@ -728,42 +728,42 @@ Headers
 <pre><code>WAVE:HitMeinmyFace.flac
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=songvol>
+<h2 id=songvol>
 <code>SONGVOL</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#songvol class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SONGVOL" href=#songvol><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This header sets the play volume of the song when screen gameplay starts. It is independent of the game volume, or the volume you set with the F3 option. Use this sparingly! You can make the sound of your chart be bad for players if you set it too quietly for example. It defaults to 100, which is the normal setting for a sound in the game, and in other simulators as well. It is not recommended to use values <em>over</em> 100, as this will cause distortion and clipping in the output, and will potentially sound awful.</p>
 <p>Example</p>
 <pre><code>SONGVOL:100
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=sevol>
+<h2 id=sevol>
 <code>SEVOL</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#sevol class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SEVOL" href=#sevol><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This header sets the play volume of the sound effects used when screen gameplay starts. It is independent of the game volume, or the volume you set with the F3 option. Use this sparingly! You can make the sound of your chart be bad for players if you set it too quietly for example. It defaults to 100, which is the normal setting for a sound in the game, and in other simulators as well. It is not recommended to use values <em>over</em> 100, as this will cause distortion and clipping in the output, and will potentially sound awful.</p>
 <p>Example</p>
 <pre><code>SEVOL:100
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=demostart>
+<h2 id=demostart>
 <code>DEMOSTART</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#demostart class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DEMOSTART" href=#demostart><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This allows for the preview of the song file set in <code>WAVE</code>. It is set to play when in screen select music, (The music wheel) and will play from the point chosen here. This system mimicks the <code>#PREVIEW</code> system in BMS, but does not require you to load two files. It simply uses the one song file, and will play from the point selected.</p>
 <p>You need to set a time within the file, or this can cause issues with some simulators. If your song file was 93 seconds long, and you set <code>DEMOSTART:99</code>, this can cause undesirable behaviour in other simulators. If the number is invalid in OutFox, it will just play from the beginning, so do set this right!</p>
 <p>Example</p>
 <pre><code>DEMOSTART:22.65
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=level>
+<h2 id=level>
 <code>LEVEL</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#level class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor LEVEL" href=#level><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>The level entry sets the amount of stars that the player will see and this will signify the difficulty of the chart. It is set from a scale of 1 to 10, and will set the difficulty in the game.
 Some simulators can also take the <code>COURSE</code> name to set the difficulty. It is similar to how the <code>PLAYLEVEL</code> works in BMS. Bear in mind that maximum star ratings aren&rsquo;t the same between difficulties:</p>
 <blockquote>
@@ -778,11 +778,11 @@ Some simulators can also take the <code>COURSE</code> name to set the difficulty
 <pre><code>LEVEL:4
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=course>
+<h2 id=course>
 <code>COURSE</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#course class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor COURSE" href=#course><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This header is somewhat misleading. It is in fact the difficulty of the chart, and it can be set either as a number, or by a name.</p>
 <blockquote>
 <ul>
@@ -805,11 +805,11 @@ Some simulators can also take the <code>COURSE</code> name to set the difficulty
 <pre><code>COURSE:hard
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=genre>
+<h2 id=genre>
 <code>GENRE</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#genre class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor GENRE" href=#genre><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This header works very differently to the <code>BMS</code> equivalent with the same name. In Taiko, you have a choice of 8 different Genres. These will then be &lsquo;set&rsquo; into groups depending on this value. Use UTF-8 when setting these, to ensure full compatibility across the board.</p>
 <p>These names will override any settings in box.def, the configuration file.</p>
 <p>Several of the older clients need SHIFT-JIS, but if you are targeting newer simulators (and OutFox!) then the following genre names should be used:</p>
@@ -877,11 +877,11 @@ This genre is for the &lsquo;Namco Original&rsquo; based songs and remixes.</li>
 <pre><code>Genre:アニメ
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=scoremode>
+<h2 id=scoremode>
 <code>SCOREMODE</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#scoremode class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SCOREMODE" href=#scoremode><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This tag allows the chart maker to set the game version used when it comes to setting and sorting out the final score of the song. There have been 17 Arcade versions of Taiko and this tag can specify the scoring method. Some simulators do not support score methods other than <code>1</code>. However, OutFox will support the full range. On most simulators, the default is <code>1</code>.</p>
 <blockquote>
 <ul>
@@ -916,49 +916,49 @@ With this arcade version, we use the <code>SCOREDIFF</code> variable. The combo 
 <pre><code>SCOREMODE:1
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=scoreinit>
+<h2 id=scoreinit>
 <code>SCOREINIT</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#scoreinit class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SCOREINIT" href=#scoreinit><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This tag sets the INITial score for the scoring method. This is commonly set to 610 on Japanese charts, but many other values are seen as well. See <code>#SCOREMODE</code> above.</p>
 <p>Example</p>
 <pre><code>SCOREINIT:380
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=scorediff>
+<h2 id=scorediff>
 <code>SCOREDIFF</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#scorediff class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SCOREDIFF" href=#scorediff><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This tag sets the score DIFFerence for the scoring method. This is commonly set to 140 on Japanese charts, but many other values are seen as well. See <code>#SCOREMODE</code> above.</p>
 <p>Example</p>
 <pre><code>SCOREDIFF:90
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=maker>
+<h2 id=maker>
 <code>MAKER</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#maker class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor MAKER" href=#maker><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This tag is used for the name of the chart artist. It is not often seen in the simulators options, but the tag is available for credit. Works as per <code>#MAKER</code> in BMS.</p>
 <p>Example</p>
 <pre><code>MAKER:Squirrel
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=maker-1>
+<h2 id=maker-1>
 <code>MAKER</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#maker-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor MAKER" href=#maker-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><p>This tag is used for the name of the chart artist. It is not often seen in the simulators options, but the tag is available for credit. Works as per <code>#MAKER</code> in BMS.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
-<h1 id=taiko-note-types>
+<h2 id=taiko-note-types>
 Taiko Note Types
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#taiko-note-types class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Taiko Note Types" href=#taiko-note-types><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1>
+</h2>
 </div><blockquote>
 <ul>
 <li><code>0</code> = No Notes</li>
@@ -979,7 +979,7 @@ Taiko Note Types
 <li><code>F</code> = Adlib; hidden note that will increase combo if spotted, but won&rsquo;t give bad/miss when not</li>
 </ul>
 </blockquote>
-<p><em>Written and Maintained by Squirrel, with thanks to Taiko-web, and members of the TJADB community</em></p>
+<p><em>Written and Maintained with ♡ by Squirrel, with thanks to Taiko-web, and members of the TJADB and Taiko international community</em></p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
