@@ -112,9 +112,36 @@ Usage Example:
 ```
 The artist command sets the SongArtist and this is usually displayed on the song wheel when selected and on the evaluation screen. The artist information is usually recorded in high scores and on your profile. Older charts used SHIFT-JIS.
 
+---
+
+## ``#BPM n [0.0-1400.00]``
+``Status: ✅ Supported``
+
+Usage Example:
+```
+#BPM 140.35
+```
+This setting allows the chart to specify the beginning (or starting) BPM of a song. This value will also be shown in the music wheel, and will be setting the speed that will be used as part of the modifiers / scrolling of the notes. This value used to require a whole number. _Project OutFox_ allows for floats here - you are limited to 6 decimal places - so ``143.000290`` as an example.
+
+This value also can (and will!) be overwritten by channel commands/settings later on in the chart.
 
 ---
 
+## ``#PLAYLEVEL n [0-6]/[0-9]/[1-49]``
+``Status: ✅ Supported``
+
+Usage Example:
+```
+#PLAYLEVEL 5
+```
+
+The playlevel sets the number of 'stars' (from the old games) or the difficulty specified. In ``BMS`` files this difficulty ranges normally from 0 to 6 - 6 being the hardest. The older scale from 0 to 9 was from the BM98 spec, which was never really used much or supported. 
+
+In some ``BME`` and most ``PMS`` files, the playlevel can be from 1 to 49. This reflects the style from other games with the wider difficulty ranges, and po-mu has had a wider difficulty rating for some years.
+
+In older versions of StepMania, this difficulty used to be squished into a 5 tier difficulty system and sometimes didn't really work that well. It needed to use a hint from the file name to ensure it didn't make everything an EDIT. This also meant that a lot of charts disappeared/were not parsed correctly and was generally not that suitable for use. _OutFox_ has remedied this by fixing how the parser sees difficulties, and also widens the difficulty arc to out of 10 fields.
+
+---
 ---
 
 ### Key:
