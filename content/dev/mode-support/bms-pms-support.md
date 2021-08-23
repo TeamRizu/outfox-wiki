@@ -60,11 +60,13 @@ For these commands, a space between the command and value is _required_ or you w
 ---
 
 ## ``#PLAYER n [1 - 4]``
+``Status: ✅ Supported``
 
 Usage Example:
 ```
 #PLAYER 3 
 ```
+
 This command defines the play style that the chart is set for. In the earlier versions of ``BMS`` they also specified the _number_ of players.
 
 >* ``1`` = 1 Player or Single Play, with 1 life gauge. 
@@ -77,9 +79,38 @@ This command defines the play style that the chart is set for. In the earlier ve
 
 _Project OutFox_ also supports 'duet' or normal 2 player mode without needing to be set in the file itself, by joining a second player on the select music screen. As of Alpha 4.9.8 this was extended to ``PMS`` offering new modes with a 2 player option of po-mu for the first time. All ``popn`` styles (3k, 4k, 5k, 7k, 9k) have 2 player support now, with battle mode planned in the future. 
 
+---
 
+## ``#GENRE genre [string]``
+``Status: ✅ Supported``
 
+Usage Example:
+```
+#GENRE Blues 
+```
+This command sets the _genre_ or _type_ of music that the chart is going to play. It could be used by the simulator for sorting or grouping charts, or to allow for just more information to be displayed on the song select screen. The genre is usually written in SHIFT-JIS on older charts, but UTF8/UTF16 are becoming a lot more common, so do check.
 
+---
+
+## ``#TITLE title [string]``
+``Status: ✅ Supported``
+
+Usage Example:
+```
+#TITLE Take (Bamboo) 
+```
+The title command sets the SongTitle and this will be displayed on the song wheel to be selected, as well on the screen gameplay and evaluation screen. It will also be recorded in high scores and on your profile etc. Older charts used SHIFT-JIS. 
+
+---
+
+## ``#ARTIST artist [string]``
+``Status: ✅ Supported``
+
+Usage Example:
+```
+#ARTIST 立秋 feat.ちょこ
+```
+The artist command sets the SongArtist and this is usually displayed on the song wheel when selected and on the evaluation screen. The artist information is usually recorded in high scores and on your profile. Older charts used SHIFT-JIS.
 
 
 ---

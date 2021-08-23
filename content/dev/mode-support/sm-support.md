@@ -27,7 +27,7 @@ Example:
 ## ``SUBTITLE``
 This gives the subtitle of the song. It's often shown underneath the song title.
 
-If ``TITLE` wasn't defined, the game falls back on the simfile directory name for this as well.
+If ``TITLE`` wasn't defined, the game falls back on the simfile directory name for this as well.
 
 Example:
 

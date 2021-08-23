@@ -30,7 +30,7 @@ TITLE:My Favourite Song
 ## ``SUBTITLE`` 
 This header replaces the ``#ARTIST`` tag that BMS/PMS uses, so remember to use it in this way. It again used to be written in SHIFT-JIS on older files, but please use UTF-8, as this is the standard now.
 
-Subtitles can be hidden on the evaluation screen by adding ``--`` before the title begins. If you wish to show the subtitle on the evaluation screen (the default) you can add ``++``. It is not actually necessary to use this notation on OutFox, but for compatibility with other simulators, it is best to set this to either visible or hide. Be aware, only ``--`` works on other simulations, so if you want to keep compatibility, do not use the other two options.
+Subtitles can be hidden on the evaluation screen by adding ``--`` before the title begins. If you wish to show the subtitle on the evaluation screen (the default) you can add ``++``. It is not actually necessary to use this notation on OutFox, but for compatibility with other simulators, it is best to set this to either visible or hide. Be aware, only ``--`` works on other simulations, so if you want to keep compatibility, do not use the other two options (``++SUBTITLE``/``SUBTITLE``).
 
 Example:
 
