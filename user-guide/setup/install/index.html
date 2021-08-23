@@ -86,6 +86,27 @@ Installation
 </li>
 <li>
 <span class=flex>
+<a href=../../../user-guide/setup/install-linux/ class=gdoc-nav__entry>
+Installation on Linux & Raspberry Pi
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../user-guide/setup/install-mac/ class=gdoc-nav__entry>
+Installation on Mac OS
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
+<a href=../../../user-guide/setup/install-windows/ class=gdoc-nav__entry>
+Installation on Windows
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
 <a href=../../../user-guide/setup/key_shortcuts/ class=gdoc-nav__entry>
 Keyboard Shortcuts
 </a>
@@ -651,43 +672,27 @@ How to install Project OutFox
 </a>
 </h2>
 </div><p>Download the installer or package for your respective operating system on <a class=gdoc-markdown__link href=https://projectmoon.dance/downloads>the Project OutFox website</a>.</p>
-<div class=gdoc-tabs>
-<input type=radio class="gdoc-tabs__control hidden" name=tabs-installing id=tabs-installing-0 checked>
-<label for=tabs-installing-0 class=gdoc-tabs__label>
-macOS
-</label>
-<div class="gdoc-markdown--nested gdoc-tabs__content">
-<p>Open the DMG file and drag the game to your Applications directory.</p>
-<p><img src=../../../getting-started/mac-dmg.png alt="Screenshot of the OutFox DMG image on MacOS Big Sur."></p>
-<p>Until we produce a digitally-signed build, you will have to change macOS security settings in order for Project OutFox to operate correctly. macOS prevents access to external files by unsigned apps unless given manual permission by the user.</p>
-<p>To do this, open Terminal and run the following command: <code>xattr -dr com.apple.quarantine /path/to/outfox</code>, replacing <code>/path/to/outfox</code> with the path to the directory containing the OutFox executable (manually typing it out, or dragging the folder containing the game executable directly onto the window to fill it automatically).
-If no errors show up after pressing enter, then you&rsquo;re ready to start the game.</p>
-<p>On older builds, macOS Catalina also generated a message stating that the game was requesting permission to receive keystrokes from any application. This was a side effect of previous code that has since been removed.</p>
-</div>
-<input type=radio class="gdoc-tabs__control hidden" name=tabs-installing id=tabs-installing-1>
-<label for=tabs-installing-1 class=gdoc-tabs__label>
-Linux
-</label>
-<div class="gdoc-markdown--nested gdoc-tabs__content">
-<p>On Linux, we only provide pre-compiled binaries at this time. Extract the tarball, and run <code>./stepmania</code> in the directory.</p>
-<p>If you see an error mentioning that it could not find <code>libOpenGL.so.0:</code>, you need to install <code>libglvnd</code> and/or <code>libopengl0</code> based on your distro. On Debian/Ubuntu-based distros, run <code>sudo apt install libopengl0</code>. On Fedora, the package is known as <code>libglvnd-opengl</code> (<code>sudo dnf install libglvnd-opengl</code>).</p>
-<p>install <code>libopengl0</code> from your distribution&rsquo;s package manager.</p>
-</div>
-<input type=radio class="gdoc-tabs__control hidden" name=tabs-installing id=tabs-installing-2>
-<label for=tabs-installing-2 class=gdoc-tabs__label>
+<center>
+<div class="gdoc-columns flex flex-wrap">
+<div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+<span class="gdoc-button gdoc-button--large">
+<a href=../../../user-guide/setup/install-linux/ class=gdoc-button__link>
+Linux & Raspberry Pi
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
+<a href=../../../user-guide/setup/install-mac/ class=gdoc-button__link>
+Mac OS
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
+<a href=../../../user-guide/setup/install-windows/ class=gdoc-button__link>
 Windows
-</label>
-<div class="gdoc-markdown--nested gdoc-tabs__content">
-<p>Windows builds of Project OutFox use an installer; follow the instructions, and launch the game using the provided shortcuts.</p>
-<p><img src=../../../getting-started/installer.png alt="Screenshot of the Project OutFox installation wizard on Windows 10."></p>
-<ul>
-<li>It is recommended that you <strong>do not</strong> install it to the Program Files directory, as this is known to cause problems.</li>
-<li>The installer offers optional components, such as the noteskins that were included with StepMania 5.0.12 and 5.1, and &ldquo;Toasties&rdquo; - animations that can trigger on combo milestones in-game.</li>
-<li>By default, the game is installed in &ldquo;Portable Mode&rdquo;; save data is stored in the installation directory. If you disable portable mode, your save data will be stored in your user directory under <code>%APPDATA%/StepMania 5.3</code>.</li>
-</ul>
-<p>If your log file (Installation directory/Logs) shows WDDM1.0 or WDDM1.1 at the end of the graphics card name (i.e. &ldquo;Intel(R) 82945G Express Chipset Family (Microsoft Corporation - WDDM 1.0)") or the log shows &ldquo;Microsoft GDI&rdquo; as the renderer, then you are running the OpenGL-crippled &ldquo;Windows&rdquo; driver that is downloaded on a fresh install. Project OutFox will not work on these drivers, as we do not support DirectX anymore (the old D3D renderer that 5.0.12/5.1 has) There is a list of drivers at <a class=gdoc-markdown__link href=https://www.intel.com/content/www/us/en/support/articles/000005733/graphics.html>here</a> but for some of these cards, you need to keep your Windows 7 install disc handy!</p>
+</a>
+</span>
 </div>
 </div>
+</center>
 <div class=gdoc-page__anchorwrap>
 <h2 id=next-steps>
 Next steps

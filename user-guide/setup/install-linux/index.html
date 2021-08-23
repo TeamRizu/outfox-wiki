@@ -3,10 +3,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Converting BGAnimation INI files into lua files.    StepMania 3.9 & ITG are capable of using BGAnimation.ini files to define actors in place of xml files.
-In StepMania 5, these have to be converted into .lua files instead.
-General Layout of a BGAnimation.ini file.    [BGAnimation] [Layer2] File=path/to/a/different_file.png InitCommand=zoomx,3;zoomy,4;diffuse,1,0,0,0 OnCommand=diffusealpha,0;linear,3;diffusealpha,1 CommandRepeatSeconds=20 [Layer3] File=Common Normal Text=Help Me InitCommand=diffusealpha,0.5 OnCommand=spin;effectmagnitude,0,0,-100 [Layer1] File=path/to/a/file InitCommand=diffusealpha,0.5 OnCommand=spin;effectmagnitude,0,0,100 Here, layers are defined with the section name of Layer, followed by numbers or letters.">
-<title>Converting INI files to Lua | Project OutFox Wiki</title>
+<meta name=description content="Installation guide for Project OutFox on Linux & Raspberry Pi systems.">
+<title>Installation on Linux & Raspberry Pi | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -52,7 +50,7 @@ General Layout of a BGAnimation.ini file.    [BGAnimation] [Layer2] File=path/to
 <h2>Navigation</h2>
 <ul class=gdoc-nav__list>
 <li>
-<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
+<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle checked>
 <label for=navtree-4d9830bf class="flex justify-between">
 <span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -88,7 +86,7 @@ Installation
 </li>
 <li>
 <span class=flex>
-<a href=../../../user-guide/setup/install-linux/ class=gdoc-nav__entry>
+<a href=../../../user-guide/setup/install-linux/ class="gdoc-nav__entry is-active">
 Installation on Linux & Raspberry Pi
 </a>
 </span>
@@ -181,7 +179,7 @@ Game types
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle>
 <label for=navtree-6821e290 class="flex justify-between">
 <span class=flex>Developers and Creators</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -234,7 +232,7 @@ TJA Compatibility
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle>
 <label for=navtree-e7ea7745 class="flex justify-between">
 <span class=flex>
 <a href=../../../dev/actors/ class=gdoc-nav__entry>
@@ -273,7 +271,7 @@ Tweening
 </li>
 <li>
 <span class=flex>
-<a href=../../../dev/actors/Converting-ini-to-Lua/ class="gdoc-nav__entry is-active">
+<a href=../../../dev/actors/Converting-ini-to-Lua/ class=gdoc-nav__entry>
 Converting INI files to Lua
 </a>
 </span>
@@ -652,119 +650,278 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/ href=../../../dev/actors/><span itemprop=name>Lua and Actors</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Converting INI files to Lua</span><meta itemprop=position content="4"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/ href=../../../user-guide/><span itemprop=name>User Guide</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/setup/ href=../../../user-guide/setup/><span itemprop=name>Setup</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Installation on Linux & Raspberry Pi</span><meta itemprop=position content="4"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Converting INI files to Lua</h1>
+<h1>Installation on Linux & Raspberry Pi</h1>
+<div class="gdoc-toc gdoc-toc__level--5"><nav id=TableOfContents><ul>
+<li><a href=#important-note>Important note</a></li>
+<li><a href=#determining-what-version-to-download>Determining what version to download</a></li>
+<li><a href=#installing-the-game>Installing the game</a></li>
+<li><a href=#portable-vs-non-portable-mode>Portable vs Non-portable mode</a></li>
+<li><a href=#running-the-game>Running the game</a></li>
+<li><a href=#extra-noteskins>Extra NoteSkins</a></li>
+<li><a href=#common-problems>Common problems</a>
+<ul>
+<li><a href=#missing-libraries>Missing libraries</a></li>
+<li><a href=#audio-not-playing--going-to-the-wrong-device>Audio not playing / going to the wrong device</a></li>
+<li><a href=#needing-to-force-alsa-instead-of-pulseaudio>Needing to force ALSA instead of PulseAudio.</a></li>
+<li><a href=#needing-to-force-a-different-audio-driver>Needing to force a different audio driver</a></li>
+</ul>
+</li>
+</ul></nav><hr></div>
 <div class=gdoc-page__anchorwrap>
-<h1 id=converting-bganimation-ini-files-into-lua-files>
-Converting BGAnimation INI files into lua files.
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-ini-to-Lua/#converting-bganimation-ini-files-into-lua-files class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Converting BGAnimation INI files into lua files." href=#converting-bganimation-ini-files-into-lua-files><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h1>
-</div><p>StepMania 3.9 & ITG are capable of using BGAnimation.ini files to define actors in place of xml files.</p>
-<p>In StepMania 5, these have to be converted into .lua files instead.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=general-layout-of-a-bganimationini-file>
-General Layout of a BGAnimation.ini file.
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-ini-to-Lua/#general-layout-of-a-bganimationini-file class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor General Layout of a BGAnimation.ini file." href=#general-layout-of-a-bganimationini-file><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=important-note>
+Important note
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#important-note class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Important note" href=#important-note><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><div class=highlight><pre tabindex=0 class=chroma><code class=language-ini data-lang=ini><span class=k>[BGAnimation]</span>
-<span class=k>[Layer2]</span>
-<span class=na>File</span><span class=o>=</span><span class=s>path/to/a/different_file.png</span>
-<span class=na>InitCommand</span><span class=o>=</span><span class=s>zoomx,3;zoomy,4;diffuse,1,0,0,0</span>
-<span class=na>OnCommand</span><span class=o>=</span><span class=s>diffusealpha,0;linear,3;diffusealpha,1</span>
-<span class=na>CommandRepeatSeconds</span><span class=o>=</span><span class=s>20</span>
-
-<span class=k>[Layer3]</span>
-<span class=na>File</span><span class=o>=</span><span class=s>Common Normal</span>
-<span class=na>Text</span><span class=o>=</span><span class=s>Help Me</span>
-<span class=na>InitCommand</span><span class=o>=</span><span class=s>diffusealpha,0.5</span>
-<span class=na>OnCommand</span><span class=o>=</span><span class=s>spin;effectmagnitude,0,0,-100</span>
-
-<span class=k>[Layer1]</span>
-<span class=na>File</span><span class=o>=</span><span class=s>path/to/a/file</span>
-<span class=na>InitCommand</span><span class=o>=</span><span class=s>diffusealpha,0.5</span>
-<span class=na>OnCommand</span><span class=o>=</span><span class=s>spin;effectmagnitude,0,0,100</span>
-
-</code></pre></div><p>Here, layers are defined with the section name of <code>Layer</code>, followed by numbers or letters.</p>
-<p>They are sorted by the characters used after <code>Layer</code> (so Layer1 comes before Layer2, even if Layer2 was placed first.)</p>
-<p>The actual actor type has to be inferred from the path given in <code>File</code>. (Often, it&rsquo;s a Sprite)</p>
-<p>Commands are done in command format.</p>
+</div><p>Do not extract or run the game as the <code>root</code> user. It&rsquo;s considered very unsafe, and you will have permission issues.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=creating-the-lua-equivalent>
-Creating the .lua equivalent.
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-ini-to-Lua/#creating-the-lua-equivalent class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Creating the .lua equivalent." href=#creating-the-lua-equivalent><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=determining-what-version-to-download>
+Determining what version to download
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#determining-what-version-to-download class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Determining what version to download" href=#determining-what-version-to-download><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>The entire ini can be expressed as a single ActorFrame. In this example, both are sprites, and they have to be sorted manually.</p>
-<p>CommandRepeatSeconds isn&rsquo;t a feature in lua actors, so it has to be replicated with queuecommand and sleep. (It would loop the OnCommand every given amount of seconds)</p>
-<p>The commands have to be converted into function format as well.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=kr>return</span> <span class=n>Def.ActorFrame</span><span class=p>{</span>
-	<span class=n>Def.Sprite</span><span class=p>{</span>
-		<span class=n>Name</span><span class=o>=</span><span class=s2>&#34;Layer1&#34;</span><span class=p>,</span>
-		<span class=n>InitCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>diffusealpha</span><span class=p>(</span><span class=mf>0.5</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-		<span class=n>OnCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>spin</span><span class=p>():</span><span class=n>effectmagnitude</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>100</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-	<span class=p>},</span>
-	<span class=n>Def.Sprite</span><span class=p>{</span>
-		<span class=n>Name</span><span class=o>=</span><span class=s2>&#34;Layer2&#34;</span><span class=p>,</span>
-		<span class=n>InitCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>zoomx</span><span class=p>(</span><span class=mi>3</span><span class=p>):</span><span class=n>zoomy</span><span class=p>(</span><span class=mi>4</span><span class=p>):</span><span class=n>diffuse</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-		<span class=n>OnCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>diffusealpha</span><span class=p>(</span><span class=mi>0</span><span class=p>):</span><span class=n>linear</span><span class=p>(</span><span class=mi>3</span><span class=p>):</span><span class=n>diffusealpha</span><span class=p>(</span><span class=mi>1</span><span class=p>):</span><span class=n>sleep</span><span class=p>(</span><span class=mi>20</span><span class=o>-</span><span class=mi>3</span><span class=p>):</span><span class=n>queuecommand</span><span class=p>(</span><span class=s2>&#34;On&#34;</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-	<span class=p>},</span>
-	<span class=n>Def.BitmapText</span><span class=p>{</span>
-		<span class=n>File</span><span class=o>=</span><span class=s2>&#34;Common Normal&#34;</span><span class=p>,</span>
-		<span class=n>Text</span><span class=o>=</span><span class=s2>&#34;Help Me&#34;</span><span class=p>.</span>
-		<span class=n>InitCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>diffusealpha</span><span class=p>(</span><span class=mf>0.5</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-		<span class=n>OnCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>spin</span><span class=p>():</span><span class=n>effectmagnitude</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=o>-</span><span class=mi>100</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-	<span class=p>},</span>
-<span class=p>}</span>
-</code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=other-ini-style-files-sprite-model>
-Other ini-style files (.sprite, .model)
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-ini-to-Lua/#other-ini-style-files-sprite-model class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Other ini-style files (.sprite, .model)" href=#other-ini-style-files-sprite-model><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</div><p>There are multiple versions for linux setups. Use <code>uname -a</code> in a terminal to find out what to download.</p>
+<p><img src=../../../getting-started/linuxinstall-uname.png alt="Screenshot of potential output from uname, with the architecture highlighted."></p>
+<p>For example, the above output says <code>x86_64</code>, so the amd64 download would be used. (amd64 legacy would be used on older systems/linux distributions)</p>
+<p>Raspberry Pi users would use arm64v8 if uname shows &ldquo;aarch64&rdquo;, while arm32v7 would be used if uname has &ldquo;armv7&rdquo; in it.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=installing-the-game>
+Installing the game
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#installing-the-game class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Installing the game" href=#installing-the-game><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>Older SM also has alternate files that follow the ini format to define other actor types.</p>
-<p>.sprite files have an extra set of attributes for defining frames.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-ini data-lang=ini><span class=na>Frame0000</span><span class=o>=</span><span class=s>0</span>
-<span class=na>Delay0000</span><span class=o>=</span><span class=s>0.25</span>
-<span class=na>Frame0001</span><span class=o>=</span><span class=s>4</span>
-<span class=na>Delay0001</span><span class=o>=</span><span class=s>0.25</span>
-<span class=na>Frame0002</span><span class=o>=</span><span class=s>2</span>
-<span class=na>Delay0002</span><span class=o>=</span><span class=s>0.25</span>
-<span class=na>Frame0003</span><span class=o>=</span><span class=s>1</span>
-<span class=na>Delay0003</span><span class=o>=</span><span class=s>0.25</span>
-<span class=na>Frame0004</span><span class=o>=</span><span class=s>3</span>
-<span class=na>Delay0004</span><span class=o>=</span><span class=s>0.25</span>
-</code></pre></div><p>These can be turned into <code>Frames</code> tables for a Def.Sprite.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=n>Frames</span><span class=o>=</span> <span class=p>{</span>
-	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>0</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
-	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>4</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
-	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>2</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
-	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>1</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
-	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>3</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
-<span class=p>}</span>
-</code></pre></div><blockquote class="gdoc-hint info">
-If all frames from the animation are the same and in order, you can use the <code>Sprite.LinearFrames</code> function helper to alieviate the ammount of lines.
-</blockquote>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=c1>-- This will tell the function to create a frame table that goes through</span>
-<span class=c1>-- 5 frames within 1 second.</span>
-<span class=n>Frames</span> <span class=o>=</span> <span class=n>Sprite.LinearFrames</span><span class=p>(</span> <span class=mi>5</span><span class=p>,</span> <span class=mi>1</span> <span class=p>)</span>
-</code></pre></div><p>.model files have extra attributes to define bones, meshes and materials. These translate almost-1:1 into lua.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-ini data-lang=ini><span class=k>[Model]</span>
-<span class=na>Meshes</span><span class=o>=</span><span class=s>arrowmesh.txt</span>
-<span class=na>Materials</span><span class=o>=</span><span class=s>4th.txt</span>
-<span class=na>Bones</span><span class=o>=</span><span class=s>arrowmesh.txt</span>
-</code></pre></div><p>becomes</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=n>Def.Model</span><span class=p>{</span>
-	<span class=n>Meshes</span><span class=o>=</span><span class=s2>&#34;arrowmesh.txt&#34;</span><span class=p>,</span>
-	<span class=n>Materials</span><span class=o>=</span><span class=s2>&#34;4th.txt&#34;</span><span class=p>,</span>
-	<span class=n>Bones</span><span class=o>=</span><span class=s2>&#34;arrowmesh.txt&#34;</span>
-<span class=p>}</span>
-</code></pre></div>
+</div><p><em>Project OutFox</em> is currently distributed as .tar.gz files for linux distributions.
+<div class=gdoc-tabs>
+<input type=radio class="gdoc-tabs__control hidden" name="tabs-Installing the game" id="tabs-Installing the game-0" checked>
+<label for="tabs-Installing the game-0" class=gdoc-tabs__label>
+Through a GUI
+</label>
+<div class="gdoc-markdown--nested gdoc-tabs__content">
+<p>Most distributions have a right click item in their file manager for extracting archives.</p>
+<p><img src=../../../getting-started/linuxinstall-rightclick.png alt="Screenshot of a right-click menu on the archive."></p>
+<p>If the menu doesn&rsquo;t have an option to extract the archive, open the file in your archive manager and extract it to somewhere convenient. (ex: the user&rsquo;s home or Desktop directory)</p>
+</div>
+<input type=radio class="gdoc-tabs__control hidden" name="tabs-Installing the game" id="tabs-Installing the game-1">
+<label for="tabs-Installing the game-1" class=gdoc-tabs__label>
+Using 'tar'
+</label>
+<div class="gdoc-markdown--nested gdoc-tabs__content">
+<p>Open a terminal and get to the directory the archive is in.</p>
+<p>Run this in your terminal, replacing the name of the archive file with what you named it.</p>
+<pre><code>tar -xvf OutFox-5.3.0-alpha-4.9.9HF3b-amd64-legacy-date-20210809.tar.gz
+</code></pre><p>This should create a directory that holds the install of <em>Project OutFox</em>.</p>
+</div>
+</div>
+</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=portable-vs-non-portable-mode>
+Portable vs Non-portable mode
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#portable-vs-non-portable-mode class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Portable vs Non-portable mode" href=#portable-vs-non-portable-mode><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>When booting, the game looks for a file in its' root directory called <code>portable.ini</code>. If this file is found, the game switches to &ldquo;portable&rdquo; mode, which has all save data placed in the program&rsquo;s root directory.</p>
+<p>Otherwise, the save data will be placed in <code>.stepmania-5.3</code> in the user&rsquo;s home directory.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=running-the-game>
+Running the game
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#running-the-game class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Running the game" href=#running-the-game><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<div class=gdoc-tabs>
+<input type=radio class="gdoc-tabs__control hidden" name="tabs-Running the game" id="tabs-Running the game-0" checked>
+<label for="tabs-Running the game-0" class=gdoc-tabs__label>
+Through a Launcher
+</label>
+<div class="gdoc-markdown--nested gdoc-tabs__content">
+<p>The following is an example launcher file named &ldquo;Project OutFox.desktop&rdquo;.</p>
+<p>Create a file on the desktop with this name and base the contents on the section below.</p>
+<pre><code>#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Type=Application
+Name=Project OutFox
+Icon=/home/mtk/Desktop/Icons/dance_icon.png
+Exec=/home/mtk/Desktop/OutFox/stepmania
+</code></pre><p>Note that the Exec line is a full path to the <em>OutFox</em> executable, while the Icon line can be a full path to any png on the system.</p>
+<p>Once created, the launcher can be double-clicked to run the game.</p>
+</div>
+<input type=radio class="gdoc-tabs__control hidden" name="tabs-Running the game" id="tabs-Running the game-1">
+<label for="tabs-Running the game-1" class=gdoc-tabs__label>
+Through the terminal
+</label>
+<div class="gdoc-markdown--nested gdoc-tabs__content">
+<p>In the game&rsquo;s root directory, type this into the terminal and press enter:</p>
+<pre><code>./stepmania
+</code></pre><p>This will start the game and have some extra output in the terminal that is usually seen in the logs.</p>
+<p>To force a theme, run the following, replacing the theme name with the desired theme&rsquo;s directory name.</p>
+<pre><code>./stepmania --theme=SM5-GrooveNights
+</code></pre>
+</div>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h2 id=extra-noteskins>
+Extra NoteSkins
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#extra-noteskins class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Extra NoteSkins" href=#extra-noteskins><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>The NoteSkinsSM5 directory in Appearance contains the noteskins that came with StepMania 5.1/5.0.12. The contents can be dragged into the NoteSkins directory if one wants to use the old noteskins.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=common-problems>
+Common problems
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#common-problems class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Common problems" href=#common-problems><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><div class=gdoc-page__anchorwrap>
+<h3 id=missing-libraries>
+Missing libraries
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#missing-libraries class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Missing libraries" href=#missing-libraries><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p>The game might not launch if libraries are missing. <code>ldd</code> can be used to help determine what packages need to be installed without having to run the game multiple times.</p>
+<p>Run this in the game&rsquo;s directory from a terminal to find what libraries are missing:</p>
+<pre><code>ldd stepmania
+</code></pre><p>Here is example output from ldd:</p>
+<p><img src=../../../getting-started/linuxinstall-ldd.png alt="Screenshot of output from ldd."></p>
+<p>In this example, <code>libbz2.so.1.0</code> is missing.</p>
+<p>Here&rsquo;s a list of what libraries it looks for and what Debian/Ubuntu/Fedora package it corresponds to. Most systems should have most of these already.</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>Library name</th>
+<th>Debian/Ubuntu pacakge</th>
+<th>Fedora package</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>libOpenGL.so.0</td>
+<td>libopengl0</td>
+<td>libglvnd-opengl</td>
+</tr>
+<tr>
+<td>libGLX.so.0</td>
+<td>libglx0</td>
+<td>libglvnd-glx</td>
+</tr>
+<tr>
+<td>libasound.so.2</td>
+<td>libasound2</td>
+<td>alsa-lib</td>
+</tr>
+<tr>
+<td>libjack.so.0</td>
+<td>libjack-jackd2-0</td>
+<td>jack-audio-connection-kit or pipewire-jack-audio-connection-kit</td>
+</tr>
+<tr>
+<td>libpulse.so.0</td>
+<td>libpulse0</td>
+<td>pulseaudio-libs</td>
+</tr>
+<tr>
+<td>libbz2.so.1.0</td>
+<td>libbz2-1.0</td>
+<td>bzip2-libs</td>
+</tr>
+<tr>
+<td>libusb-1.0.so.0</td>
+<td>libusb-1.0-0</td>
+<td>libusb1 or libusbx</td>
+</tr>
+<tr>
+<td>liblzma.so.5</td>
+<td>liblzma5</td>
+<td>xz-libs</td>
+</tr>
+<tr>
+<td>liblz4.so.1</td>
+<td>liblz4-1</td>
+<td>lz4-libs</td>
+</tr>
+<tr>
+<td>libFLAC.so.8</td>
+<td>libflac8</td>
+<td>flac-libs</td>
+</tr>
+<tr>
+<td>libogg.so.0</td>
+<td>libogg0</td>
+<td>libogg</td>
+</tr>
+<tr>
+<td>libvorbis.so.0</td>
+<td>libvorbis0a</td>
+<td>libvorbis</td>
+</tr>
+<tr>
+<td>libvorbisenc.so.2</td>
+<td>libvorbisenc2</td>
+<td>libvorbis</td>
+</tr>
+</tbody>
+</table> </div>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=audio-not-playing--going-to-the-wrong-device>
+Audio not playing / going to the wrong device
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#audio-not-playing--going-to-the-wrong-device class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Audio not playing / going to the wrong device" href=#audio-not-playing--going-to-the-wrong-device><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p>Be sure to check the <code>SoundDevice</code> preference.</p>
+<p>When the game boots, it writes the available audio devices into the logs and terminal output.</p>
+<p><img src=../../../getting-started/linuxinstall-alsadev.png alt="Screenshot of an audio device list from the game."></p>
+<p>Assuming the third device is where the audio should be, the whole line for SoundDevice should be <code>SoundDevice=plughw:1,3</code>.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=needing-to-force-alsa-instead-of-pulseaudio>
+Needing to force ALSA instead of PulseAudio.
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#needing-to-force-alsa-instead-of-pulseaudio class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Needing to force ALSA instead of PulseAudio." href=#needing-to-force-alsa-instead-of-pulseaudio><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p>A wrapper program called <code>pasuspender</code> can be used to temporarilly disable pulseaudio and make OutFox use the ALSA drivers.</p>
+<p>In the terminal, it would be used like this:</p>
+<pre><code>pasuspender ./stepmania
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=needing-to-force-a-different-audio-driver>
+Needing to force a different audio driver
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#needing-to-force-a-different-audio-driver class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Needing to force a different audio driver" href=#needing-to-force-a-different-audio-driver><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p>Be sure to check the <code>SoundDriver</code> preference for forcing the audio driver.</p>
+<p>Here&rsquo;s what can be put into the preference, and what it means</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>Preference setting</th>
+<th>Audio Driver</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pulse</td>
+<td>PulseAudio</td>
+</tr>
+<tr>
+<td>ALSA-sw</td>
+<td>ALSA, software renderer.</td>
+</tr>
+<tr>
+<td>JACK</td>
+<td>JACK</td>
+</tr>
+<tr>
+<td>Null</td>
+<td>No audio</td>
+</tr>
+</tbody>
+</table> </div>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>

@@ -3,10 +3,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Converting BGAnimation INI files into lua files.    StepMania 3.9 & ITG are capable of using BGAnimation.ini files to define actors in place of xml files.
-In StepMania 5, these have to be converted into .lua files instead.
-General Layout of a BGAnimation.ini file.    [BGAnimation] [Layer2] File=path/to/a/different_file.png InitCommand=zoomx,3;zoomy,4;diffuse,1,0,0,0 OnCommand=diffusealpha,0;linear,3;diffusealpha,1 CommandRepeatSeconds=20 [Layer3] File=Common Normal Text=Help Me InitCommand=diffusealpha,0.5 OnCommand=spin;effectmagnitude,0,0,-100 [Layer1] File=path/to/a/file InitCommand=diffusealpha,0.5 OnCommand=spin;effectmagnitude,0,0,100 Here, layers are defined with the section name of Layer, followed by numbers or letters.">
-<title>Converting INI files to Lua | Project OutFox Wiki</title>
+<meta name=description content="Installation guide for Project OutFox on Windows systems.">
+<title>Installation on Windows | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -52,7 +50,7 @@ General Layout of a BGAnimation.ini file.    [BGAnimation] [Layer2] File=path/to
 <h2>Navigation</h2>
 <ul class=gdoc-nav__list>
 <li>
-<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
+<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle checked>
 <label for=navtree-4d9830bf class="flex justify-between">
 <span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -102,7 +100,7 @@ Installation on Mac OS
 </li>
 <li>
 <span class=flex>
-<a href=../../../user-guide/setup/install-windows/ class=gdoc-nav__entry>
+<a href=../../../user-guide/setup/install-windows/ class="gdoc-nav__entry is-active">
 Installation on Windows
 </a>
 </span>
@@ -181,7 +179,7 @@ Game types
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle>
 <label for=navtree-6821e290 class="flex justify-between">
 <span class=flex>Developers and Creators</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -234,7 +232,7 @@ TJA Compatibility
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle>
 <label for=navtree-e7ea7745 class="flex justify-between">
 <span class=flex>
 <a href=../../../dev/actors/ class=gdoc-nav__entry>
@@ -273,7 +271,7 @@ Tweening
 </li>
 <li>
 <span class=flex>
-<a href=../../../dev/actors/Converting-ini-to-Lua/ class="gdoc-nav__entry is-active">
+<a href=../../../dev/actors/Converting-ini-to-Lua/ class=gdoc-nav__entry>
 Converting INI files to Lua
 </a>
 </span>
@@ -652,119 +650,20 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/ href=../../../dev/actors/><span itemprop=name>Lua and Actors</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Converting INI files to Lua</span><meta itemprop=position content="4"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/ href=../../../user-guide/><span itemprop=name>User Guide</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/setup/ href=../../../user-guide/setup/><span itemprop=name>Setup</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Installation on Windows</span><meta itemprop=position content="4"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Converting INI files to Lua</h1>
-<div class=gdoc-page__anchorwrap>
-<h1 id=converting-bganimation-ini-files-into-lua-files>
-Converting BGAnimation INI files into lua files.
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-ini-to-Lua/#converting-bganimation-ini-files-into-lua-files class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Converting BGAnimation INI files into lua files." href=#converting-bganimation-ini-files-into-lua-files><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h1>
-</div><p>StepMania 3.9 & ITG are capable of using BGAnimation.ini files to define actors in place of xml files.</p>
-<p>In StepMania 5, these have to be converted into .lua files instead.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=general-layout-of-a-bganimationini-file>
-General Layout of a BGAnimation.ini file.
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-ini-to-Lua/#general-layout-of-a-bganimationini-file class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor General Layout of a BGAnimation.ini file." href=#general-layout-of-a-bganimationini-file><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><div class=highlight><pre tabindex=0 class=chroma><code class=language-ini data-lang=ini><span class=k>[BGAnimation]</span>
-<span class=k>[Layer2]</span>
-<span class=na>File</span><span class=o>=</span><span class=s>path/to/a/different_file.png</span>
-<span class=na>InitCommand</span><span class=o>=</span><span class=s>zoomx,3;zoomy,4;diffuse,1,0,0,0</span>
-<span class=na>OnCommand</span><span class=o>=</span><span class=s>diffusealpha,0;linear,3;diffusealpha,1</span>
-<span class=na>CommandRepeatSeconds</span><span class=o>=</span><span class=s>20</span>
-
-<span class=k>[Layer3]</span>
-<span class=na>File</span><span class=o>=</span><span class=s>Common Normal</span>
-<span class=na>Text</span><span class=o>=</span><span class=s>Help Me</span>
-<span class=na>InitCommand</span><span class=o>=</span><span class=s>diffusealpha,0.5</span>
-<span class=na>OnCommand</span><span class=o>=</span><span class=s>spin;effectmagnitude,0,0,-100</span>
-
-<span class=k>[Layer1]</span>
-<span class=na>File</span><span class=o>=</span><span class=s>path/to/a/file</span>
-<span class=na>InitCommand</span><span class=o>=</span><span class=s>diffusealpha,0.5</span>
-<span class=na>OnCommand</span><span class=o>=</span><span class=s>spin;effectmagnitude,0,0,100</span>
-
-</code></pre></div><p>Here, layers are defined with the section name of <code>Layer</code>, followed by numbers or letters.</p>
-<p>They are sorted by the characters used after <code>Layer</code> (so Layer1 comes before Layer2, even if Layer2 was placed first.)</p>
-<p>The actual actor type has to be inferred from the path given in <code>File</code>. (Often, it&rsquo;s a Sprite)</p>
-<p>Commands are done in command format.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=creating-the-lua-equivalent>
-Creating the .lua equivalent.
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-ini-to-Lua/#creating-the-lua-equivalent class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Creating the .lua equivalent." href=#creating-the-lua-equivalent><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>The entire ini can be expressed as a single ActorFrame. In this example, both are sprites, and they have to be sorted manually.</p>
-<p>CommandRepeatSeconds isn&rsquo;t a feature in lua actors, so it has to be replicated with queuecommand and sleep. (It would loop the OnCommand every given amount of seconds)</p>
-<p>The commands have to be converted into function format as well.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=kr>return</span> <span class=n>Def.ActorFrame</span><span class=p>{</span>
-	<span class=n>Def.Sprite</span><span class=p>{</span>
-		<span class=n>Name</span><span class=o>=</span><span class=s2>&#34;Layer1&#34;</span><span class=p>,</span>
-		<span class=n>InitCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>diffusealpha</span><span class=p>(</span><span class=mf>0.5</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-		<span class=n>OnCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>spin</span><span class=p>():</span><span class=n>effectmagnitude</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>100</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-	<span class=p>},</span>
-	<span class=n>Def.Sprite</span><span class=p>{</span>
-		<span class=n>Name</span><span class=o>=</span><span class=s2>&#34;Layer2&#34;</span><span class=p>,</span>
-		<span class=n>InitCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>zoomx</span><span class=p>(</span><span class=mi>3</span><span class=p>):</span><span class=n>zoomy</span><span class=p>(</span><span class=mi>4</span><span class=p>):</span><span class=n>diffuse</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-		<span class=n>OnCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>diffusealpha</span><span class=p>(</span><span class=mi>0</span><span class=p>):</span><span class=n>linear</span><span class=p>(</span><span class=mi>3</span><span class=p>):</span><span class=n>diffusealpha</span><span class=p>(</span><span class=mi>1</span><span class=p>):</span><span class=n>sleep</span><span class=p>(</span><span class=mi>20</span><span class=o>-</span><span class=mi>3</span><span class=p>):</span><span class=n>queuecommand</span><span class=p>(</span><span class=s2>&#34;On&#34;</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-	<span class=p>},</span>
-	<span class=n>Def.BitmapText</span><span class=p>{</span>
-		<span class=n>File</span><span class=o>=</span><span class=s2>&#34;Common Normal&#34;</span><span class=p>,</span>
-		<span class=n>Text</span><span class=o>=</span><span class=s2>&#34;Help Me&#34;</span><span class=p>.</span>
-		<span class=n>InitCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>diffusealpha</span><span class=p>(</span><span class=mf>0.5</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-		<span class=n>OnCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>spin</span><span class=p>():</span><span class=n>effectmagnitude</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=o>-</span><span class=mi>100</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-	<span class=p>},</span>
-<span class=p>}</span>
-</code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=other-ini-style-files-sprite-model>
-Other ini-style files (.sprite, .model)
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-ini-to-Lua/#other-ini-style-files-sprite-model class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Other ini-style files (.sprite, .model)" href=#other-ini-style-files-sprite-model><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div><p>Older SM also has alternate files that follow the ini format to define other actor types.</p>
-<p>.sprite files have an extra set of attributes for defining frames.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-ini data-lang=ini><span class=na>Frame0000</span><span class=o>=</span><span class=s>0</span>
-<span class=na>Delay0000</span><span class=o>=</span><span class=s>0.25</span>
-<span class=na>Frame0001</span><span class=o>=</span><span class=s>4</span>
-<span class=na>Delay0001</span><span class=o>=</span><span class=s>0.25</span>
-<span class=na>Frame0002</span><span class=o>=</span><span class=s>2</span>
-<span class=na>Delay0002</span><span class=o>=</span><span class=s>0.25</span>
-<span class=na>Frame0003</span><span class=o>=</span><span class=s>1</span>
-<span class=na>Delay0003</span><span class=o>=</span><span class=s>0.25</span>
-<span class=na>Frame0004</span><span class=o>=</span><span class=s>3</span>
-<span class=na>Delay0004</span><span class=o>=</span><span class=s>0.25</span>
-</code></pre></div><p>These can be turned into <code>Frames</code> tables for a Def.Sprite.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=n>Frames</span><span class=o>=</span> <span class=p>{</span>
-	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>0</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
-	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>4</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
-	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>2</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
-	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>1</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
-	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>3</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
-<span class=p>}</span>
-</code></pre></div><blockquote class="gdoc-hint info">
-If all frames from the animation are the same and in order, you can use the <code>Sprite.LinearFrames</code> function helper to alieviate the ammount of lines.
-</blockquote>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=c1>-- This will tell the function to create a frame table that goes through</span>
-<span class=c1>-- 5 frames within 1 second.</span>
-<span class=n>Frames</span> <span class=o>=</span> <span class=n>Sprite.LinearFrames</span><span class=p>(</span> <span class=mi>5</span><span class=p>,</span> <span class=mi>1</span> <span class=p>)</span>
-</code></pre></div><p>.model files have extra attributes to define bones, meshes and materials. These translate almost-1:1 into lua.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-ini data-lang=ini><span class=k>[Model]</span>
-<span class=na>Meshes</span><span class=o>=</span><span class=s>arrowmesh.txt</span>
-<span class=na>Materials</span><span class=o>=</span><span class=s>4th.txt</span>
-<span class=na>Bones</span><span class=o>=</span><span class=s>arrowmesh.txt</span>
-</code></pre></div><p>becomes</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=n>Def.Model</span><span class=p>{</span>
-	<span class=n>Meshes</span><span class=o>=</span><span class=s2>&#34;arrowmesh.txt&#34;</span><span class=p>,</span>
-	<span class=n>Materials</span><span class=o>=</span><span class=s2>&#34;4th.txt&#34;</span><span class=p>,</span>
-	<span class=n>Bones</span><span class=o>=</span><span class=s2>&#34;arrowmesh.txt&#34;</span>
-<span class=p>}</span>
-</code></pre></div>
+<h1>Installation on Windows</h1>
+<p>Windows builds of Project OutFox use an installer; follow the instructions, and launch the game using the provided shortcuts.</p>
+<p><img src=../../../getting-started/installer.png alt="Screenshot of the Project OutFox installation wizard on Windows 10."></p>
+<ul>
+<li>It is recommended that you <strong>do not</strong> install it to the Program Files directory, as this is known to cause problems.</li>
+<li>The installer offers optional components, such as the noteskins that were included with StepMania 5.0.12 and 5.1, and &ldquo;Toasties&rdquo; - animations that can trigger on combo milestones in-game.</li>
+<li>By default, the game is installed in &ldquo;Portable Mode&rdquo;; save data is stored in the installation directory. If you disable portable mode, your save data will be stored in your user directory under <code>%APPDATA%/StepMania 5.3</code>.</li>
+</ul>
+<p>If your log file (Installation directory/Logs) shows WDDM1.0 or WDDM1.1 at the end of the graphics card name (i.e. &ldquo;Intel(R) 82945G Express Chipset Family (Microsoft Corporation - WDDM 1.0)") or the log shows &ldquo;Microsoft GDI&rdquo; as the renderer, then you are running the OpenGL-crippled &ldquo;Windows&rdquo; driver that is downloaded on a fresh install. Project OutFox will not work on these drivers, as we do not support DirectX anymore (the old D3D renderer that 5.0.12/5.1 has) There is a list of drivers at <a class=gdoc-markdown__link href=https://www.intel.com/content/www/us/en/support/articles/000005733/graphics.html>here</a> but for some of these cards, you need to keep your Windows 7 install disc handy!</p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
