@@ -11,7 +11,7 @@ OutFox allows custom input to be managed by the theme itself. This allows you fu
 
 # Implementing Input
 
-There are a few ways to implement input, but the general action is to call `Screen:AddInputCallback( input function )` to the [ActorFrame](/dev/actors/#actorframe) responsible for the input. This can be either a function or a module that will deal with listening and sending instructions back to the engine, that actors can then pick up to provide feedback.
+There are a few ways to implement input, but the general action is to call `Screen:AddInputCallback( input function )` to the [ActorFrame](/dev/actors/actortypes/actorframe) responsible for the input. This can be either a function or a module that will deal with listening and sending instructions back to the engine, that actors can then pick up to provide feedback.
 
 ## Module method (OutFox Alpha 4 and onwards)
 ```lua

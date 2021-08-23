@@ -7,7 +7,7 @@ When applying text on a BitmapText actor, depending on the font, some glyphs mig
 
 {{<columns>}}
 ![](/theming/bitmap/textBrokenGlyph.png)
-In this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show `?` symbols instead, to indicate the missing element.
+In this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show `?` symbols instead (from the `Common default` glyph image list), to indicate the missing element.
 <--->
 ![](/theming/bitmap/textProperGlyph.png)
 All glyphs are available on this font, so the text is properly shown.
@@ -22,4 +22,7 @@ self:settext( "H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶", "Headgrinder" )
 
 With the code above, the case will be that the first image on the left will default to the second variable, given the missing glyphs from its sheet.
 
+<center>
+
 ![](/theming/bitmap/textAltText.png)
+</center>

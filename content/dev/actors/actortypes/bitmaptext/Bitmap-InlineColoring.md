@@ -31,9 +31,11 @@ The following example converts a string that includes square brackets into red c
 
 {{< include file="/static/actors/bitmaptext/ConvertText.lua" language="lua" options="linenos=table" >}}
 
+{{<columns>}}
 The result of this example, makes the `Text` segment of the BitmapText's Text attribute red.
-
+<--->
 ![](/theming/bitmap/colorAttrExample.png)
+{{</columns>}}
 
 ## Utilizing the Diffuses attribute
 
@@ -54,6 +56,8 @@ OnCommand = function(self)
 end
 ```
 
+{{<columns>}}
 The result ends up being that each glyph has red on the top left and bottom right corner, while having blue on the top right and bottom left corners.
-
+<--->
 ![](/theming/bitmap/colorDiffusesExample.png)
+{{</columns>}}

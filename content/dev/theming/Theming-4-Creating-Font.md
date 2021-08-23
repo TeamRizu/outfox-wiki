@@ -41,8 +41,8 @@ This actor becomes
 
 To create these fonts, we have a tool called [Texture Font Generator](https://github.com/TeamRizu/Texture-Font-Generator-2020-Squirrel/releases), which can create the font bitmaps. Keep in mind that this software currently is Windows only.
 
-{{<hint>}}
-The Texture Font Generator's more recent versions export glyphs that are only compatible with OutFox. If you'd like to use the tool to generate fonts for earlier StepMania releases, [use the Legacy version of the tool](https://github.com/TeamRizu/Texture-Font-Generator-2020-Squirrel/releases/download/buildv0.34/Texture_Font_Generator-Legacy.7z).
+{{<hint info>}}
+The Texture Font Generator's more recent versions export glyphs that are only compatible with OutFox. If you'd like to use the tool to generate fonts for earlier _StepMania_ releases, [use the Legacy version of the tool](https://github.com/TeamRizu/Texture-Font-Generator-2020-Squirrel/releases/download/buildv0.34/Texture_Font_Generator-Legacy.7z).
 {{</hint>}}
 
 Open the program and a window will pop up with a font preview and selections.

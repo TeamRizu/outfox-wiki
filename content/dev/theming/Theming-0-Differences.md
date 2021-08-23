@@ -8,9 +8,9 @@ It is important to note the following aspects when starting to make your theme, 
 
 ## There are no things such as "header", "help" and "footer" by default
 
-> Date of change: starting on SM-SSC
+> Date of change: starting on _SM-SSC_
 
-You may have noticed themes even in SM5 and later that include header and footer, while techincally they exist on those theme's scopes, they are not created by the engine. It is usually created on ScreenWithMenuElements decorations in a conditional Actor type called `StandardDecorationFromFileOptional`, which looks for a metric on the current screen (or `ScreenWithMenuElements` as a fallback), to determine if it should be created or not.
+You may have noticed themes even in _SM5_ and later that include header and footer, while technically they exist on those theme's scopes, they are not created by the engine. It is usually created on ScreenWithMenuElements decorations in a conditional function called `StandardDecorationFromFileOptional`, which looks for a metric on the current screen (or `ScreenWithMenuElements` as a fallback), to determine if it should be created or not.
 
 Here's an implementation of such thing in Soundwaves.
 ```lua
@@ -32,19 +32,19 @@ ShowFooter=false
 ```
 ## Numbers folder does not exist
 
-> Date of change: starting on SM-SSC
+> Date of change: starting on _SM-SSC_
 
-Starting in SM-SSC, fonts that were only number implemented now reside alongside the standard font glyphs in the Fonts folder (and are indicated with the `[numbers]` tag on their filename).
+Starting in _SM-SSC_, fonts that were only number implemented now reside alongside the standard font glyphs in the Fonts folder (and are indicated with the `[numbers]` tag on their filename).
 
 ## XML loading of files is not applicable
 
-> Date of change: SM4 Beta 5
+> Date of change: _SM4 Beta 5_
 
-Lua is the scripting language for modern StepMania builds. If any kind of XML loading is needed, you will need to instruct the user to enable ["Quirks Mode"](../../../user-guide/config/preferences/#quirksmode), an option on the Preferences.ini file that allows loading of XML files in a compatibility layer.
+Lua is the scripting language for modern _StepMania_ builds. If any kind of XML loading is needed, you will need to instruct the user to enable ["Quirks Mode"](../../../user-guide/config/preferences/#quirksmode), an option on the Preferences.ini file that allows loading of XML files in a compatibility layer.
 
 ## CMD is deprecated
 
-> Date of change: OutFox Alpha 3
+> Date of change: _OutFox Alpha 3_
 
 `cmd()` is a string-like command that allows application of commands without performing the entire syntax in plain Lua. However, it is not recommended to use this for commands, as it can bring bugs which will be mentioned below, but also introduces loading overhead as it has to convert the string back into actual Lua.
 

@@ -13,7 +13,7 @@ There are specific elements that are loaded by the engine to perform sound playb
 
 ## Conditional Music
 
-Originally introduced on SM-SSC, this feature allows for music to be defined by lua rather than a fixed audio file. This can be particuraly useful on situations where you want a screen to play different music files based on performance.
+Originally introduced on SM-SSC, this feature allows for music to be defined by lua rather than a fixed audio file. This can be useful on situations where you want a screen to play different music files based on performance.
 
 ```lua
 -- Lets say that my fallback sound (the one that will play if anything fails) will be Sound1.

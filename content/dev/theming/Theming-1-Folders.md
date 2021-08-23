@@ -15,7 +15,7 @@ and then accessing the data that you need, but for the purposes of this guide, w
 Contains the lua scripts that control the visual elements of screens.
 <--->
 ## Fonts
-Text and images that have the fonts.
+Text and images containing individual glyphs, or graphical representations of each character on a font.
 {{</columns>}}
 {{<columns>}}
 ## Graphics
@@ -30,7 +30,7 @@ An optional folder that contains Lua files with simple functions or tables that 
 storing the file on memory all the time.
 <--->
 ## Other
-Contains special files, but also can contain other kinds of files that don't have a particular folder to reside in.
+An optional folder that contains special files, but also can contain other kinds of files that don't have a particular folder to reside in.
 {{</columns>}}
 {{<columns>}}
 ## Scripts

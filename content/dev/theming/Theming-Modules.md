@@ -8,22 +8,43 @@ These can be loaded by using the `LoadModule` function. Depending on the return 
 
 If the module gives a table:
 ```lua
+return {
+	"objects!"
+}
+
+-- Load it by doing:
 LoadModule( "MyModule.lua" )
 ```
 
 If the module gives a function:
 ```lua
+return function(arguments)
+	print( arguments )
+end
+
+-- Load it by doing:
 LoadModule( "MyModule.lua" )( arguments )
 ```
 
 If the module needs a table:
 ```lua
+local function(requiredtable)
+	for i = 1,#requiredtable do
+		print( requiredtable[i] )
+	end
+end
+
+-- Load it by doing:
 LoadModule( "MyModule.lua" ){ arguments }
 ```
 
 If the module needs a string:
 ```lua
-LoadModule( "MyModule.lua" )"a string"
+return function(theString)
+	print( "i'm printing ".. theString )
+end
+
+LoadModule( "MyModule.lua" )"a string" -- This is technically valid syntax, but it's not great for readability.
 -- Or
 LoadModule( "MyModule.lua" )( "a string" )
 ```
