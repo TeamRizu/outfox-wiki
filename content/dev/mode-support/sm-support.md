@@ -89,7 +89,7 @@ Example:
 ``` 
 ---
 ## ``CREDIT``
-This field is for crediting someone.
+This field is for crediting someone, usually the author of the chart
 
 Example:
 
