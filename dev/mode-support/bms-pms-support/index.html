@@ -666,11 +666,12 @@ Introduction
 </a>
 </h2>
 </div><hr>
-<p>The <code>BMS</code> file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game <em>Beatmania</em> by Konami. There have been several interations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.</p>
+<p>The <code>BMS</code> file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game <em>Beatmania</em> by Konami. There have been several dozen interations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.</p>
 <p><em>Project OutFox</em> uses mostly BM98 (1998 to 2003) era definitions for this file standard, though it is improving all the time. The format is used to simulate most of the <em>&lsquo;Down Scroll Rhythm Game Systems&rsquo;</em> and is known by several other derivatives which we are also slowly building support for.</p>
 <p><code>BMS</code> charts are mostly composed by artists from Asia, so reading them in non-asian locales can be difficult. <em>OutFox</em> will be overcoming this limitation in a future update, so do not delete all your charts which just show <code>??????????</code> just yet!</p>
 <p>The other two file types on this page, <code>PMS</code> and <code>BME</code> were born from this format and are used for other types of games. <code>PMS</code> was originally designed to simulate <em>Keyboardmania</em> and had a very different channel layout than <code>BMS</code>, but it&rsquo;s use moved towards <em>po-mu</em> / <em>feeling po-mu</em> (po-mu is short for <em>Pop&rsquo;n Music</em>). This had a unique layout for 9 key/button charts, and also were used in the actual arcade games (Though they used <code>BME</code>) for a few years. <em>Project OutFox</em> recently fixed a lot of support for this parser, along with adding several of the missing modes often charted by simfile authors.</p>
 <p><code>BME</code> is an Extension of <code>BMS</code> and offers newer features that were not offered in raw simulators of BM98. The other system we support is <code>BML</code> files, which <code>PMS</code> incorporated by default in 2002. <code>BML</code> adds <code>Long Note</code> (known as <em>holds</em> in StepMania), which again extends the <code>BMS</code> specification. We will support both <code>BME</code> and <code>BML</code> fully in an upcoming release and update these documents in the future.</p>
+<p><strong>Again, if you feel any particular command or object should be included, do let us know. There are quite a few bits of the specification that just simply have not been considered or added at this time, I&rsquo;m documenting what we <em>do</em> have, and you are more than welcome to give suggestions for future additions. - Squirrel</strong></p>
 <hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=basic-format>
@@ -805,6 +806,107 @@ Common HEADER FIELD commands
 <p>In some <code>BME</code> and most <code>PMS</code> files, the playlevel can be from 1 to 49. This reflects the style from other games with the wider difficulty ranges, and po-mu has had a wider difficulty rating for some years.</p>
 <p>In older versions of StepMania, this difficulty used to be squished into a 5 tier difficulty system and sometimes didn&rsquo;t really work that well. It needed to use a hint from the file name to ensure it didn&rsquo;t make everything an EDIT. This also meant that a lot of charts disappeared/were not parsed correctly and was generally not that suitable for use. <em>OutFox</em> has remedied this by fixing how the parser sees difficulties, and also widens the difficulty arc to out of 10 fields.</p>
 <hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=rank-n-0-4>
+<code>#RANK n [0-4]</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#rank-n-0-4 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #RANK n [0-4]" href=#rank-n-0-4><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p><code>Status: ❌ Unsupported</code></p>
+<p>Usage Example:</p>
+<pre><code>#RANK 2
+</code></pre><p>The rank entry used in the old <code>BMS</code> specification used to allow the chart artist to select a difficulty on how the &lsquo;timing window&rsquo; would be set when playing the chart. It was designed for those simulators that didn&rsquo;t have ways of difficulty or setting different timing windows.</p>
+<p>There were 5 different ranks, the last being added by <em>nanasi</em> which was a more relaxed timing window compared to the other simulators. Almost all of the simulators that are active today set <code>2</code> as the default. The old ranking timing windows are listed below for historical purposes. They are ignored on <em>OutFox</em> as we have a custom timing window solution, but if you would like us to add this to set a timing system in the future, do let us know!</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Label</th>
+<th>COOL Time window</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>VERY HARD</td>
+<td>+/- 8ms</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>HARD</td>
+<td>+/- 15ms</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>NORMAL</td>
+<td>+/- 18ms</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>EASY</td>
+<td>+/- 21ms</td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td>VERY EASY</td>
+<td>+/- 33ms</td>
+</tr>
+</tbody>
+</table> </div>
+<p>Most of these timing windows are not really tied to any specific game or methodology of timing, so it is why we made the decision to not support any of the <code>RANK</code> commands: we also do not support the timing system used by <em>Angolmois</em> which uses 6 ranks. We do not support <code>#DEFEXRANK</code> / <code>#EXRANK</code> as they were additions by <em>nanasi</em> and it seems they did not carry over to be commonly used in other simulators. Changing timing mid song is something we could support, but we do not really see a need to add that to the engine at this time.</p>
+<p>The &lsquo;timing&rsquo; windows used in <em>Project OutFox</em> are closer to <code>RANK 2</code> to follow the standard others use.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=total-n-0-999>
+<code>#TOTAL n [0-999]</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#total-n-0-999 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #TOTAL n [0-999]" href=#total-n-0-999><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p><code>Status: ❌ Unsupported</code></p>
+<p>Usage Example:</p>
+<pre><code>#TOTAL 430
+</code></pre><p>The <code>TOTAL</code> command is to set the value of what could be considered an extension of the &lsquo;gauge&rsquo; in older simulators, before <em>life gauges</em> existed. The value of <code>TOTAL</code> is added to a normal gauge to increase it&rsquo;s length. if the value was 300, then the gauge would go from 0 to 100% in size, to the intial value (normally around 25% + 300% for a total gauge size of 325%).</p>
+<p>This only occurs when the notes are hit and combo is kept, otherwise things would return to the old gauge size. It was more of a consideration on gauge/groove/clear amounts (what you needed to reach to be considered a pass in that song). This did lead to some confusion on how <code>TOTAL</code> should affect the gameplay/level of the chart.</p>
+<p>The gauge never changed size; it was an off screen calculation on how you could &lsquo;score&rsquo; your chart. Several simulators over the years have changed this value if <code>TOTAL</code> was omitted, we at the moment do not honour the value, mainly because we do not follow the <em>iidx</em> scoring system since 2005.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=maker-maker-string-or>
+<code>#MAKER maker [string]</code> or
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#maker-maker-string-or class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #MAKER maker [string] or" href=#maker-maker-string-or><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=credit-credit-string-or>
+<code>#CREDIT credit [string]</code> or
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#credit-credit-string-or class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #CREDIT credit [string] or" href=#credit-credit-string-or><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=subartist-subartist-string>
+<code>SUBARTIST subartist [string]</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#subartist-subartist-string class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SUBARTIST subartist [string]" href=#subartist-subartist-string><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p><code>Status: ✅ Supported</code></p>
+<p>Usage Example:</p>
+<pre><code>#MAKER Ima StepChart
+</code></pre><p>or</p>
+<pre><code>#CREDIT Ima StepChart
+</code></pre><p>or</p>
+<pre><code>#SUBARTIST Ima StepChart
+</code></pre><p>The <code>MAKER</code> or <code>CREDIT</code> command simply allows the author or maker of the chart to add their credit so it will be displayed in the simulator. The main support for <code>MAKER</code> comes from around 2002 onwards. It is common in most 5 Key styles to be used, as well as being used on 10 Key (double play) styles. <code>CREDIT</code> is more recent, being seen from around 2013 in charts. I know not it&rsquo;s origin, we support both as to not ignore honouring those that take the time to make charts for us to enjoy.</p>
+<p>Since around 2017, another command, <code>SUBARTIST</code> began to be used more commonly in <code>BME</code>/<code>PMS</code> files, which was inherited from <code>DTX</code>. The sub artist is not normally displayed until the evaluation screen on earlier simulators, but in <em>OutFox</em> we treat all three of these in the same manner. If you are creating a new <code>BMS</code> chart, then <code>#MAKER</code> is usually safer to use for other simulator support.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=total-n-0-999-1>
+<code>#TOTAL n [0-999]</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#total-n-0-999-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #TOTAL n [0-999]" href=#total-n-0-999-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p><code>Status: ❌ Unsupported</code></p>
+<p>Usage Example:</p>
+<pre><code>#TOTAL 430
+</code></pre><hr>
 <hr>
 <div class=gdoc-page__anchorwrap>
 <h3 id=key>
