@@ -660,11 +660,11 @@ hidden-mobile" itemprop=breadcrumb>
 <p>Project OutFox contains parsers for the <code>BMS</code> and <code>PMS</code> chart formats, which are the standard formats used in conjunction with mostly the <code>beat</code> and <code>popn</code> game types. The following page contains details on the <code>BMS</code>/<code>PMS</code> channels that <em>Project OutFox</em> currently supports. This is a living document, and will be updated as progress is made to expand the work to support as much of these as possible.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
-<h2 id=introduction>
+<h1 id=introduction>
 Introduction
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#introduction class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Introduction" href=#introduction><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2>
+</h1>
 </div><hr>
 <p>The <code>BMS</code> file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game <em>Beatmania</em> by Konami. There have been several dozen interations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.</p>
 <p><em>Project OutFox</em> uses mostly BM98 (1998 to 2003) era definitions for this file standard, though it is improving all the time. The format is used to simulate most of the <em>&lsquo;Down Scroll Rhythm Game Systems&rsquo;</em> and is known by several other derivatives which we are also slowly building support for.</p>
@@ -674,11 +674,11 @@ Introduction
 <p><strong>Again, if you feel any particular command or object should be included, do let us know. There are quite a few bits of the specification that just simply have not been considered or added at this time, I&rsquo;m documenting what we <em>do</em> have, and you are more than welcome to give suggestions for future additions. - Squirrel</strong></p>
 <hr>
 <div class=gdoc-page__anchorwrap>
-<h2 id=basic-format>
+<h1 id=basic-format>
 Basic Format
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#basic-format class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Basic Format" href=#basic-format><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2>
+</h1>
 </div><hr>
 <p>The <code>BMS</code> file format describes how notes are arranged and how the game is meant to behave if/when a player takes a specific action. It is usually a simple plain text file with the command lines starting with the <code>#</code> character.</p>
 <p>The file consists of a <em>HEADER FIELD</em> section and a <em>MAIN DATA FIELD</em> section. We will be going through in detail on the most commonly used commands and channels so you have the information here. A lot of the available commands ever offered to BMS/PMS over the years have faded into deprecation/not being used, but the ones we have seen in actual files include what we will be supporting.</p>
@@ -782,15 +782,16 @@ Common HEADER FIELD commands
 </code></pre><p>The artist command sets the SongArtist and this is usually displayed on the song wheel when selected and on the evaluation screen. The artist information is usually recorded in high scores and on your profile. Older charts used SHIFT-JIS.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
-<h2 id=bpm-n-00-140000>
-<code>#BPM n [0.0-1400.00]</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#bpm-n-00-140000 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #BPM n [0.0-1400.00]" href=#bpm-n-00-140000><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=bpm-n-00-1400000-255>
+<code>#BPM n [0.0-1400.00]/[0-255]</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#bpm-n-00-1400000-255 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #BPM n [0.0-1400.00]/[0-255]" href=#bpm-n-00-1400000-255><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
 <pre><code>#BPM 140.35
 </code></pre><p>This setting allows the chart to specify the beginning (or starting) BPM of a song. This value will also be shown in the music wheel, and will be setting the speed that will be used as part of the modifiers / scrolling of the notes. This value used to require a whole number. <em>Project OutFox</em> allows for floats here - you are limited to 6 decimal places - so <code>143.000290</code> as an example.</p>
+<p>Older simulators do not support decimal point <code>BPM</code> values, and you cannot enter a value above <code>255</code> as it can crash the simulator in question. If you are wishing to make your chart portable to other programs, bear this in mind; not every simulator supports this!</p>
 <p>This value also can (and will!) be overwritten by channel commands/settings later on in the chart.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
@@ -898,15 +899,17 @@ Common HEADER FIELD commands
 <p>Since around 2017, another command, <code>SUBARTIST</code> began to be used more commonly in <code>BME</code>/<code>PMS</code> files, which was inherited from <code>DTX</code>. The sub artist is not normally displayed until the evaluation screen on earlier simulators, but in <em>OutFox</em> we treat all three of these in the same manner. If you are creating a new <code>BMS</code> chart, then <code>#MAKER</code> is usually safer to use for other simulator support.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
-<h2 id=total-n-0-999-1>
-<code>#TOTAL n [0-999]</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#total-n-0-999-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #TOTAL n [0-999]" href=#total-n-0-999-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=stagefile-stagefile-string>
+<code>#STAGEFILE stagefile [string]</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#stagefile-stagefile-string class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #STAGEFILE stagefile [string]" href=#stagefile-stagefile-string><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p><code>Status: ❌ Unsupported</code></p>
+</div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
-<pre><code>#TOTAL 430
-</code></pre><hr>
+<pre><code>#STAGEFILE loadingscreen.png
+</code></pre><p>The stagefile command is used to set an image to the &lsquo;loading screen&rsquo; of the simulator - when the song and options/modifiers have been set, this file is then placed as part of the loading process on the &lsquo;loading screen&rsquo;.</p>
+<p>On older simulators, this loading process could take a <em>long</em> time, so it was wise to incorporate a loading screen system into the simulator. This has also been recently done in <em>Project OutFox</em> so we do not need to freeze the game while loading these files any more. This file is read in and parsed, just no theme at the moment takes advantage of the loading screen as of yet.</p>
+<hr>
 <hr>
 <div class=gdoc-page__anchorwrap>
 <h3 id=key>
