@@ -9,7 +9,7 @@ Project OutFox contains parsers for the ``BMS`` and ``PMS`` chart formats, which
 ---
 ## Introduction
 ---
-The ``BMS`` file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game _Beatmania_ by Konami. There have been several interations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.
+The ``BMS`` file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game _Beatmania_ by Konami. There have been several dozen interations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.
 
 _Project OutFox_ uses mostly BM98 (1998 to 2003) era definitions for this file standard, though it is improving all the time. The format is used to simulate most of the _'Down Scroll Rhythm Game Systems'_ and is known by several other derivatives which we are also slowly building support for. 
 
@@ -19,13 +19,14 @@ The other two file types on this page, ``PMS`` and ``BME`` were born from this f
 
 ``BME`` is an Extension of ``BMS`` and offers newer features that were not offered in raw simulators of BM98. The other system we support is ``BML`` files, which ``PMS`` incorporated by default in 2002. ``BML`` adds ``Long Note`` (known as _holds_ in StepMania), which again extends the ``BMS`` specification. We will support both ``BME`` and ``BML`` fully in an upcoming release and update these documents in the future.
 
+**Again, if you feel any particular command or object should be included, do let us know. There are quite a few bits of the specification that just simply have not been considered or added at this time, I'm documenting what we _do_ have, and you are more than welcome to give suggestions for future additions. - Squirrel**
+
 ---
 ## Basic Format
 ---
 The ``BMS`` file format describes how notes are arranged and how the game is meant to behave if/when a player takes a specific action. It is usually a simple plain text file with the command lines starting with the ``#`` character. 
 
 The file consists of a _HEADER FIELD_ section and a _MAIN DATA FIELD_ section. We will be going through in detail on the most commonly used commands and channels so you have the information here. A lot of the available commands ever offered to BMS/PMS over the years have faded into deprecation/not being used, but the ones we have seen in actual files include what we will be supporting. 
-
 
 If you find a file that is not showing up in _OutFox_ you may need to switch the encoding options of the chart, or just wait until the new string system is added in the future.
 
@@ -134,12 +135,84 @@ Usage Example:
 ```
 #PLAYLEVEL 5
 ```
-
 The playlevel sets the number of 'stars' (from the old games) or the difficulty specified. In ``BMS`` files this difficulty ranges normally from 0 to 6 - 6 being the hardest. The older scale from 0 to 9 was from the BM98 spec, which was never really used much or supported. 
 
 In some ``BME`` and most ``PMS`` files, the playlevel can be from 1 to 49. This reflects the style from other games with the wider difficulty ranges, and po-mu has had a wider difficulty rating for some years.
 
 In older versions of StepMania, this difficulty used to be squished into a 5 tier difficulty system and sometimes didn't really work that well. It needed to use a hint from the file name to ensure it didn't make everything an EDIT. This also meant that a lot of charts disappeared/were not parsed correctly and was generally not that suitable for use. _OutFox_ has remedied this by fixing how the parser sees difficulties, and also widens the difficulty arc to out of 10 fields.
+
+---
+
+## ``#RANK n [0-4]``
+``Status: ❌ Unsupported``
+
+Usage Example:
+```
+#RANK 2
+```
+The rank entry used in the old ``BMS`` specification used to allow the chart artist to select a difficulty on how the 'timing window' would be set when playing the chart. It was designed for those simulators that didn't have ways of difficulty or setting different timing windows.
+
+There were 5 different ranks, the last being added by _nanasi_ which was a more relaxed timing window compared to the other simulators. Almost all of the simulators that are active today set ``2`` as the default. The old ranking timing windows are listed below for historical purposes. They are ignored on _OutFox_ as we have a custom timing window solution, but if you would like us to add this to set a timing system in the future, do let us know!
+
+Value|Label|COOL Time window| 
+------------|-------------|-------------|
+ ``0`` | VERY HARD | +/- 8ms|
+ ``1`` |  HARD | +/- 15ms|
+ ``2`` | NORMAL | +/- 18ms|
+ ``3`` | EASY | +/- 21ms|
+ ``4`` | VERY EASY | +/- 33ms|
+
+Most of these timing windows are not really tied to any specific game or methodology of timing, so it is why we made the decision to not support any of the ``RANK`` commands: we also do not support the timing system used by _Angolmois_ which uses 6 ranks. We do not support ``#DEFEXRANK`` / ``#EXRANK`` as they were additions by _nanasi_ and it seems they did not carry over to be commonly used in other simulators. Changing timing mid song is something we could support, but we do not really see a need to add that to the engine at this time.
+
+The 'timing' windows used in _Project OutFox_ are closer to ``RANK 2`` to follow the standard others use.
+
+---
+
+## ``#TOTAL n [0-999]``
+``Status: ❌ Unsupported``
+
+Usage Example:
+```
+#TOTAL 430
+```
+The `TOTAL` command is to set the value of what could be considered an extension of the 'gauge' in older simulators, before _life gauges_ existed. The value of `TOTAL` is added to a normal gauge to increase it's length. if the value was 300, then the gauge would go from 0 to 100% in size, to the intial value (normally around 25% + 300% for a total gauge size of 325%). 
+
+This only occurs when the notes are hit and combo is kept, otherwise things would return to the old gauge size. It was more of a consideration on gauge/groove/clear amounts (what you needed to reach to be considered a pass in that song). This did lead to some confusion on how `TOTAL` should affect the gameplay/level of the chart.
+
+The gauge never changed size; it was an off screen calculation on how you could 'score' your chart. Several simulators over the years have changed this value if `TOTAL` was omitted, we at the moment do not honour the value, mainly because we do not follow the _iidx_ scoring system since 2005.
+
+---
+
+## ``#MAKER maker [string]`` or
+## ``#CREDIT credit [string]`` or 
+## ``SUBARTIST subartist [string]``
+``Status: ✅ Supported``
+
+Usage Example:
+```
+#MAKER Ima StepChart
+```
+or
+```
+#CREDIT Ima StepChart
+```
+or
+```
+#SUBARTIST Ima StepChart
+```
+The `MAKER` or `CREDIT` command simply allows the author or maker of the chart to add their credit so it will be displayed in the simulator. The main support for `MAKER` comes from around 2002 onwards. It is common in most 5 Key styles to be used, as well as being used on 10 Key (double play) styles. ``CREDIT`` is more recent, being seen from around 2013 in charts. I know not it's origin, we support both as to not ignore honouring those that take the time to make charts for us to enjoy.
+
+Since around 2017, another command, ``SUBARTIST`` began to be used more commonly in `BME`/`PMS` files, which was inherited from `DTX`. The sub artist is not normally displayed until the evaluation screen on earlier simulators, but in _OutFox_ we treat all three of these in the same manner. If you are creating a new `BMS` chart, then `#MAKER` is usually safer to use for other simulator support.
+
+---
+
+## ``#TOTAL n [0-999]``
+``Status: ❌ Unsupported``
+
+Usage Example:
+```
+#TOTAL 430
+```
 
 ---
 ---
