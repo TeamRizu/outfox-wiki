@@ -7,7 +7,7 @@ geekdocCollapseSection: true
 Project OutFox contains parsers for the ``BMS`` and ``PMS`` chart formats, which are the standard formats used in conjunction with mostly the ``beat`` and ``popn`` game types. The following page contains details on the ``BMS``/``PMS`` channels that _Project OutFox_ currently supports. This is a living document, and will be updated as progress is made to expand the work to support as much of these as possible.
 
 ---
-## Introduction
+# Introduction
 ---
 The ``BMS`` file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game _Beatmania_ by Konami. There have been several dozen interations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.
 
@@ -22,7 +22,7 @@ The other two file types on this page, ``PMS`` and ``BME`` were born from this f
 **Again, if you feel any particular command or object should be included, do let us know. There are quite a few bits of the specification that just simply have not been considered or added at this time, I'm documenting what we _do_ have, and you are more than welcome to give suggestions for future additions. - Squirrel**
 
 ---
-## Basic Format
+# Basic Format
 ---
 The ``BMS`` file format describes how notes are arranged and how the game is meant to behave if/when a player takes a specific action. It is usually a simple plain text file with the command lines starting with the ``#`` character. 
 
@@ -115,7 +115,7 @@ The artist command sets the SongArtist and this is usually displayed on the song
 
 ---
 
-## ``#BPM n [0.0-1400.00]``
+## ``#BPM n [0.0-1400.00]/[0-255]``
 ``Status: ✅ Supported``
 
 Usage Example:
@@ -123,6 +123,8 @@ Usage Example:
 #BPM 140.35
 ```
 This setting allows the chart to specify the beginning (or starting) BPM of a song. This value will also be shown in the music wheel, and will be setting the speed that will be used as part of the modifiers / scrolling of the notes. This value used to require a whole number. _Project OutFox_ allows for floats here - you are limited to 6 decimal places - so ``143.000290`` as an example.
+
+Older simulators do not support decimal point `BPM` values, and you cannot enter a value above `255` as it can crash the simulator in question. If you are wishing to make your chart portable to other programs, bear this in mind; not every simulator supports this!
 
 This value also can (and will!) be overwritten by channel commands/settings later on in the chart.
 
@@ -206,13 +208,16 @@ Since around 2017, another command, ``SUBARTIST`` began to be used more commonly
 
 ---
 
-## ``#TOTAL n [0-999]``
-``Status: ❌ Unsupported``
+## ``#STAGEFILE stagefile [string]``
+``Status: ✅ Supported``
 
 Usage Example:
 ```
-#TOTAL 430
+#STAGEFILE loadingscreen.png
 ```
+The stagefile command is used to set an image to the 'loading screen' of the simulator - when the song and options/modifiers have been set, this file is then placed as part of the loading process on the 'loading screen'.
+
+On older simulators, this loading process could take a _long_ time, so it was wise to incorporate a loading screen system into the simulator. This has also been recently done in _Project OutFox_ so we do not need to freeze the game while loading these files any more. This file is read in and parsed, just no theme at the moment takes advantage of the loading screen as of yet.
 
 ---
 ---
