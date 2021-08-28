@@ -665,10 +665,26 @@ hidden-mobile" itemprop=breadcrumb>
 <h1>Installation on Mac OS</h1>
 <p>Open the DMG file and drag the game to your Applications directory.</p>
 <p><img src=../../../getting-started/mac-dmg.png alt="Screenshot of the OutFox DMG image on MacOS Big Sur."></p>
-<p>Until we produce a digitally-signed build, you will have to change macOS security settings in order for Project OutFox to operate correctly. macOS prevents access to external files by unsigned apps unless given manual permission by the user.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=additional-notes>
+Additional Notes
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-mac/#additional-notes class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Additional Notes" href=#additional-notes><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<div class=gdoc-expand>
+<label class="gdoc-expand__head flex justify-between" for=79782f20-0>
+<span>Dequarantine Project OutFox from macOS (4.9.9 and below)</span>
+<span>↕</span>
+</label>
+<input id=79782f20-0 type=checkbox class="gdoc-expand__control hidden">
+<div class="gdoc-markdown--nested gdoc-expand__content">
+<p>On pre-digitally-signed builds, you will have to change macOS security settings in order for Project OutFox to operate correctly. macOS prevents access to external files by unsigned apps unless given manual permission by the user.</p>
 <p>To do this, open Terminal and run the following command: <code>xattr -dr com.apple.quarantine /path/to/outfox</code>, replacing <code>/path/to/outfox</code> with the path to the directory containing the OutFox executable (manually typing it out, or dragging the folder containing the game executable directly onto the window to fill it automatically).
 If no errors show up after pressing enter, then you&rsquo;re ready to start the game.</p>
 <p>On older builds, macOS Catalina also generated a message stating that the game was requesting permission to receive keystrokes from any application. This was a side effect of previous code that has since been removed.</p>
+</div>
+</div>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
