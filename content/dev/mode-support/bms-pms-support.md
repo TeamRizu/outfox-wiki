@@ -260,7 +260,7 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 14|P1 Key 4|✅|P1 Key 4|✅|P1 Left Blue|✅|Supported
 15|P1 Key 5|✅|P1 Key 5|✅|P1 Red|✅|Supported
 16|P1 Turn/Scratch|✅|P1 Turn/Scratch|✅|Not Used|~|Supported
-17|P1 FootPedal|❌|P1 FootPedal|❌|Not Used|~|Supported
+17|P1 FootPedal|❌|P1 FootPedal|❌|Not Used|~|Not Supported
 18|P1 Key 6|✅|P1 Key 6|✅|Not Used|~|Supported
 19|P1 Key 7|✅|P1 Key 7|✅|Not Used|~|Supported
 1A|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -296,15 +296,15 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 30|Not Used|~|Not Used|~|Not Used|~|Not Used
-31|P1 Key 1 Hidden|❌|P1 Key 1 Hidden|❌|P1 Left White Hidden|❌|BMS/PMS in 4.9.10
-32|P1 Key 2 Hidden|❌|P1 Key 2 Hidden|❌|P1 Left Yellow Hidden|❌|BMS/PMS in 4.9.10
-33|P1 Key 3 Hidden|❌|P1 Key 3 Hidden|❌|P1 Left Green Hidden|❌|BMS/PMS in 4.9.10
-34|P1 Key 4 Hidden|❌|P1 Key 4 Hidden|❌|P1 Left Blue Hidden|❌|BMS/PMS in 4.9.10
-35|P1 Key 5 Hidden|❌|P1 Key 5 Hidden|❌|Not Used|~|BMS in 4.9.10
-36|P1 Turn/Scratch Hidden|❌|P1 Turn/Scratch Hidden|❌|Not Used|~|BMS in 4.9.10
-37|P1 FootPedal Hidden|❌|P1 FootPedal Hidden|❌|Not Used|~|BMS in 4.9.10
-38|P1 Key 6 Hidden|❌|P1 Key 6 Hidden|❌|Not Used|~|BMS in 4.9.10
-39|P1 Key 7 Hidden|❌|P1 Key 7 Hidden|❌|Not Used|~|BMS in 4.9.10
+31|P1 Key 1 Hidden|✅|P1 Key 1 Hidden|✅|P1 Left White Hidden|✅|Supported in 4.10.0
+32|P1 Key 2 Hidden|✅|P1 Key 2 Hidden|✅|P1 Left Yellow Hidden|✅|Supported in 4.10.0
+33|P1 Key 3 Hidden|✅|P1 Key 3 Hidden|✅|P1 Left Green Hidden|✅|Supported in 4.10.0
+34|P1 Key 4 Hidden|✅|P1 Key 4 Hidden|✅|P1 Left Blue Hidden|✅|Supported in 4.10.0
+35|P1 Key 5 Hidden|✅|P1 Key 5 Hidden|✅|P1 Left Red Hidden|✅|Supported in 4.10.0
+36|P1 Turn/Scratch Hidden|✅|P1 Turn/Scratch Hidden|✅|Not Used|~|Supported in 4.10.0
+37|P1 FootPedal Hidden|✅|P1 FootPedal Hidden|✅|Not Used|~|Supported in 4.10.0
+38|P1 Key 6 Hidden|✅|P1 Key 6 Hidden|✅|Not Used|~|Supported in 4.10.0
+39|P1 Key 7 Hidden|✅|P1 Key 7 Hidden|✅|Not Used|~|Supported in 4.10.0
 3A|Not Used|~|Not Used|~|Not Used|~|Not Used
 3B|Not Used|~|Not Used|~|Not Used|~|Not Used
 3C|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -317,15 +317,15 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 40|Not Used|~|Not Used|~|Not Used|~|Not Used
-41|P2 Key 1 Hidden|❌|P2 Key 1 Hidden|❌|Not Used|~|BMS/PMS in 4.9.10
-42|P2 Key 2 Hidden|❌|P2 Key 2 Hidden|❌|P1 Right Blue Hidden|❌|BMS/PMS in 4.9.10
-43|P2 Key 3 Hidden|❌|P2 Key 3 Hidden|❌|P1 Right Green Hidden|❌|BMS/PMS in 4.9.10
-44|P2 Key 4 Hidden|❌|P2 Key 4 Hidden|❌|P1 Right Yellow Hidden|❌|BMS/PMS in 4.9.10
-45|P2 Key 5 Hidden|❌|P2 Key 5 Hidden|❌|P1 Right White Hidden|❌|BMS/PMS in 4.9.10
-46|P2 Turn/Scratch Hidden|❌|P2 Turn/Scratch Hidden|❌|Not Used|~|BMS/PMS in 4.9.10
-47|P2 FootPedal Hidden|❌|P2 FootPedal Hidden|❌|Not Used|~|BMS/PMS in 4.9.10
-48|P2 Key 6 Hidden|❌|P2 Key 6 Hidden|❌|Not Used|~|BMS/PMS in 4.9.10
-49|P2 Key 7 Hidden|❌|P2 Key 7 Hidden|❌|Not Used|~|BMS/PMS in 4.9.10
+41|P2 Key 1 Hidden|✅|P2 Key 1 Hidden|✅|Not Used|~|Supported in 4.10.0
+42|P2 Key 2 Hidden|✅|P2 Key 2 Hidden|✅|P1 Right Blue Hidden|✅|Supported in 4.10.0
+43|P2 Key 3 Hidden|✅|P2 Key 3 Hidden|✅|P1 Right Green Hidden|✅|Supported in 4.10.0
+44|P2 Key 4 Hidden|✅|P2 Key 4 Hidden|✅|P1 Right Yellow Hidden|✅|Supported in 4.10.0
+45|P2 Key 5 Hidden|✅|P2 Key 5 Hidden|✅|P1 Right White Hidden|✅|Supported in 4.10.0
+46|P2 Turn/Scratch Hidden|✅|P2 Turn/Scratch Hidden|✅|Not Used|~|Supported in 4.10.0
+47|P2 FootPedal Hidden|✅|P2 FootPedal Hidden|✅|Not Used|~|Supported in 4.10.0
+48|P2 Key 6 Hidden|✅|P2 Key 6 Hidden|✅|Not Used|~|Supported in 4.10.0
+49|P2 Key 7 Hidden|✅|P2 Key 7 Hidden|✅|Not Used|~|Supported in 4.10.0
 4A|Not Used|~|Not Used|~|Not Used|~|Not Used
 4B|Not Used|~|Not Used|~|Not Used|~|Not Used
 4C|Not Used|~|Not Used|~|Not Used|~|Not Supported

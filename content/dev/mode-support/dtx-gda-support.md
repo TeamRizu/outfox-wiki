@@ -6,7 +6,7 @@ geekdocCollapseSection: true
 
 Project OutFox contains parsers for the DTX and GDA/G2D chart formats, which are the standard formats used in conjunction with the ``gddm`` and ``gdgf`` game types. The following table contains details on the DTX/GDA/G2D channels that Project OutFox currently supports.
 
-## DTX/GDA Notedata support as of Alpha 4.9.9
+## DTX/GDA Notedata support as of Alpha 4.10.0
 
 ### Key:
 - ✅ Fully supported and used in Mode
@@ -20,7 +20,7 @@ Project OutFox contains parsers for the DTX and GDA/G2D chart formats, which are
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
 01|Background Music|✅|Background Music|✅|✅|Supported
-02|Measure Multiplication factor|❌|Measure Multiplication factor|❌|✅|Supported / OutFox Channel 2 lasts a measure on DTX
+02|Measure Multiplication factor|✅|Measure Multiplication factor|✅|✅|Supported in 4.10.0
 03|Set Initial BPM|✅|Set Initial BPM|✅|✅|Supported
 04|BG Layer 1|✅|BG Layer 1|✅|✅|Supported - needs enabling
 05|eXtended Object|✅|eXtended Object|✅|📝?|Supported
