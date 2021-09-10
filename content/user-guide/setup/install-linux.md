@@ -144,3 +144,68 @@ ALSA-sw|ALSA, software renderer.
 JACK|JACK
 Null|No audio
 
+---
+# Arcade Machine Conversion With Pi
+
+## LITBoard/Arduino Instructions
+
+In the terminal, navigate to the `/Data` folder of your Outfox installation.
+
+example: `cd /home/pi/Desktop/OutFox/Data`
+
+Create a FIFO file that Outfox will write to:
+
+`mkfifo "StepMania-Lights-SextetStream.out"`
+
+Ensure this FIFO file has the proper read/write permissions as the same account running Outfox.
+
+Next, navigate to the Outfox save folder. In most cases, this will be in your home directory and be something like `.stepmania-5.3`:
+
+`cd /home/pi/.stepmania-5.3`
+
+Open up "Preferences.ini":
+
+`nano Preferences.ini`
+
+Scroll down to find a line that starts with `LightsDriver=` and change it to:
+
+`LightsDriver=SextetStreamToFile`
+
+Press `crtl+o` and hit `return`, then press `ctrl+x` to save the file and exit nano. We need to now make sure that something is going to use that file, otherwise you'll find your system will eventually crash as that file fills up without getting emptied.
+
+Make sure that `socat` is installed on your pi:
+
+`sudo apt install socat`
+
+Next open up cron to have socat start at reboot by typing:
+
+`crontab -e`
+
+At the end of that window, add this line (replacing the path with the path to you FIFO file):
+
+`@reboot socat "/home/pi/Desktop/OutFox/Data/StepMania-Lights-SextetStream.out" /dev/ttyUSB0,raw,echo=0,b155200 &`
+
+Press `crtl+o`, `return`, `ctrl+x` to save and exit crontab. Notice the `&` at the end of the line. That's important to let it run in the background. Otherwise your system will just sit there waiting for it to quit...
+
+Next, create a launcher file that will run on startup. In order to do this, it should reside in the autostart folder of xdg. Easy way to do this is:
+
+`nano /etc/xdg/autostart/OutFox.desktop`
+
+When nano opens, put the following into the text file:
+
+```
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Type=Application
+Name=Project OutFox
+Exec=/home/pi/Desktop/OutFox/stepmania
+```
+
+`Ctrl+o`, `return`, `ctrl+x` to save and exit the file. Make sure you also give it executable permission:
+
+`chmod a+x /etc/xdg/autostart/OutFox.desktop`
+
+Now if you reboot the pi, it should automatically load socat and OutFox for a session of great fun.
+
+_(thanks to Random Hajile for the PiCab information)_
