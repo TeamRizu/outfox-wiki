@@ -712,7 +712,7 @@ ApplyGameCommand (SM3.95/oITG/nITG)
 </a>
 </h3>
 </div><p>Old modfiles used to require going into marathon mode to play the scripted modifiers. Unlike most things, this is time-based due to charts being able to have stops.</p>
-<pre><code>#MODS:TIME=0.000:END=10.000:MODS=*0.5 420 beat;
+<pre tabindex=0><code>#MODS:TIME=0.000:END=10.000:MODS=*0.5 420 beat;
 #MODS:TIME=5.000:LEN=1.600:MODS=*2 50 stealth;
 </code></pre><p>(ex: Beat starts at 0 seconds and ends at 10. Stealth turns on at 5 seconds and ends 1.6 seconds later)</p>
 <p>Nowadays, this is considered obsolete in favor of lua-powered modifiers. It&rsquo;s still usuable in SM5.</p>
@@ -723,7 +723,7 @@ ApplyGameCommand (SM3.95/oITG/nITG)
 </a>
 </h3>
 </div><p>Allows for the application of modifiers similar to what course files have. The syntax is exactly the same, just with MODS becoming ATTACKS.</p>
-<pre><code>#ATTACKS:TIME=0.000:END=10.000:MODS=*0.5 420 beat;
+<pre tabindex=0><code>#ATTACKS:TIME=0.000:END=10.000:MODS=*0.5 420 beat;
 #ATTACKS:TIME=5.000:LEN=1.600:MODS=*2 50 stealth;
 </code></pre><p>nITG accepts #ATTACKS or #MODS inside the .sm file, while SM5 only accepts #ATTACKS in sm & ssc.</p>
 <p>These do not load in course mode, however.</p>

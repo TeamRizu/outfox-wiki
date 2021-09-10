@@ -710,7 +710,7 @@ Headers
 </h2>
 </div><p>This header is self explanatory, and it sets the title of the song/chart that will be played. It is very often done in SHIFT-JIS encoding on older files, however on more modern charts, this is using UTF-8 / UTF-8 BOM.</p>
 <p>Example:</p>
-<pre><code>TITLE:My Favourite Song
+<pre tabindex=0><code>TITLE:My Favourite Song
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=subtitle>
@@ -721,11 +721,11 @@ Headers
 </div><p>This header replaces the <code>#ARTIST</code> tag that BMS/PMS uses, so remember to use it in this way. It again used to be written in SHIFT-JIS on older files, but please use UTF-8, as this is the standard now.</p>
 <p>Subtitles can be hidden on the evaluation screen by adding <code>--</code> before the title begins. If you wish to show the subtitle on the evaluation screen (the default) you can add <code>++</code>. It is not actually necessary to use this notation on OutFox, but for compatibility with other simulators, it is best to set this to either visible or hide. Be aware, only <code>--</code> works on other simulations, so if you want to keep compatibility, do not use the other two options (<code>++SUBTITLE</code>/<code>SUBTITLE</code>).</p>
 <p>Example:</p>
-<pre><code>SUBTITLE:My Favourite Artists
+<pre tabindex=0><code>SUBTITLE:My Favourite Artists
 </code></pre><p>To hide on evaluation:</p>
-<pre><code>SUBTITLE:--My Favourite Artists
+<pre tabindex=0><code>SUBTITLE:--My Favourite Artists
 </code></pre><p>To show on evaluation</p>
-<pre><code>SUBTITLE:++My Favourite Artists
+<pre tabindex=0><code>SUBTITLE:++My Favourite Artists
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=bpm>
@@ -735,9 +735,9 @@ Headers
 </h2>
 </div><p>This header specifies the beginning or &lsquo;starting&rsquo; BPM (Beats Per Minute) of a song. This is the same as the <code>#BPM</code> used in BMS. It is usually a whole number, but floating point/decimal point is also permitted, though these are not completely in the specification.</p>
 <p>Example:</p>
-<pre><code>BPM:145
+<pre tabindex=0><code>BPM:145
 </code></pre><p>or</p>
-<pre><code>BPM:128.35
+<pre tabindex=0><code>BPM:128.35
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=offset>
@@ -747,9 +747,9 @@ Headers
 </h2>
 </div><p>The offset of a song, or where you want the song to begin, is set using seconds. In Taiko mode, this will correspond to the first &lsquo;beat bar&rsquo; you see, then the metronome system will continue from that. If you do not use an editor that allows you to see the waveform, this can be trial and error until it is synched up. You can use negative values, to start before the song starts, or positive values, which is after the song starts. Either of these are supported.</p>
 <p>Example</p>
-<pre><code>OFFSET:-1.785
+<pre tabindex=0><code>OFFSET:-1.785
 </code></pre><p>or</p>
-<pre><code>OFFSET:3.32
+<pre tabindex=0><code>OFFSET:3.32
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=wave>
@@ -770,9 +770,9 @@ Headers
 </blockquote>
 <p>This header is similar to the <code>#WAVzz</code> header used in BMS, except we&rsquo;re only calling the one for this mode. Do ensure your file is encoded to 44.1kHz (44,100) as some older OGG encoders can do weird things to your file. If you&rsquo;re ever unsure, use the program MediaInfo which is a handy little program for mediafile information. Most simulators will not play bad or slightly corrupted files, so this is something to take into consideration when creating your chart, so take a moment to check the file is good.</p>
 <p>Example</p>
-<pre><code>WAVE:Iliketodrum.ogg
+<pre tabindex=0><code>WAVE:Iliketodrum.ogg
 </code></pre><p>or</p>
-<pre><code>WAVE:HitMeinmyFace.flac
+<pre tabindex=0><code>WAVE:HitMeinmyFace.flac
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=songvol>
@@ -782,7 +782,7 @@ Headers
 </h2>
 </div><p>This header sets the play volume of the song when screen gameplay starts. It is independent of the game volume, or the volume you set with the F3 option. Use this sparingly! You can make the sound of your chart be bad for players if you set it too quietly for example. It defaults to 100, which is the normal setting for a sound in the game, and in other simulators as well. It is not recommended to use values <em>over</em> 100, as this will cause distortion and clipping in the output, and will potentially sound awful.</p>
 <p>Example</p>
-<pre><code>SONGVOL:100
+<pre tabindex=0><code>SONGVOL:100
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=sevol>
@@ -792,7 +792,7 @@ Headers
 </h2>
 </div><p>This header sets the play volume of the sound effects used when screen gameplay starts. It is independent of the game volume, or the volume you set with the F3 option. Use this sparingly! You can make the sound of your chart be bad for players if you set it too quietly for example. It defaults to 100, which is the normal setting for a sound in the game, and in other simulators as well. It is not recommended to use values <em>over</em> 100, as this will cause distortion and clipping in the output, and will potentially sound awful.</p>
 <p>Example</p>
-<pre><code>SEVOL:100
+<pre tabindex=0><code>SEVOL:100
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=demostart>
@@ -803,7 +803,7 @@ Headers
 </div><p>This allows for the preview of the song file set in <code>WAVE</code>. It is set to play when in screen select music, (The music wheel) and will play from the point chosen here. This system mimicks the <code>#PREVIEW</code> system in BMS, but does not require you to load two files. It simply uses the one song file, and will play from the point selected.</p>
 <p>You need to set a time within the file, or this can cause issues with some simulators. If your song file was 93 seconds long, and you set <code>DEMOSTART:99</code>, this can cause undesirable behaviour in other simulators. If the number is invalid in OutFox, it will just play from the beginning, so do set this right!</p>
 <p>Example</p>
-<pre><code>DEMOSTART:22.65
+<pre tabindex=0><code>DEMOSTART:22.65
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=level>
@@ -822,7 +822,7 @@ Some simulators can also take the <code>COURSE</code> name to set the difficulty
 </ul>
 </blockquote>
 <p>Example</p>
-<pre><code>LEVEL:4
+<pre tabindex=0><code>LEVEL:4
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=course>
@@ -847,9 +847,9 @@ Some simulators can also take the <code>COURSE</code> name to set the difficulty
 <p><code>Tower</code> is based on the style from the PS2 era of the game.</p>
 <p>This setting is similar to how <code>PLAYLEVEL</code> works in BMS, but gives a finer set of controls.</p>
 <p>Example</p>
-<pre><code>COURSE:4
+<pre tabindex=0><code>COURSE:4
 </code></pre><p>or</p>
-<pre><code>COURSE:hard
+<pre tabindex=0><code>COURSE:hard
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=genre>
@@ -919,9 +919,9 @@ This genre is for the &lsquo;Namco Original&rsquo; based songs and remixes.</li>
 </ul>
 </blockquote>
 <p>Example</p>
-<pre><code>GENRE:VOCALOID
+<pre tabindex=0><code>GENRE:VOCALOID
 </code></pre><p>or</p>
-<pre><code>Genre:アニメ
+<pre tabindex=0><code>Genre:アニメ
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=scoremode>
@@ -937,7 +937,7 @@ Less than 200 combo: <code>SCOREINIT</code> or 1000pts per note. When the player
 So if the player scored 184 combo in a song which had 184 notes: it would be 184x1000.</li>
 </ul>
 </blockquote>
-<pre><code>Scoring Formula: SCOREINIT * COMBO (when COMBO &lt; 200) + (SCORINIT + SCOREDIFF * COMBO (when COMBO &gt;200)
+<pre tabindex=0><code>Scoring Formula: SCOREINIT * COMBO (when COMBO &lt; 200) + (SCORINIT + SCOREDIFF * COMBO (when COMBO &gt;200)
 
 Scoring Formula: 1000 * COMBO (when COMBO &lt; 200) + (2000 * COMBO (when COMBO &gt; 200))
 </code></pre><blockquote>
@@ -946,21 +946,21 @@ Scoring Formula: 1000 * COMBO (when COMBO &lt; 200) + (2000 * COMBO (when COMBO 
 With this arcade version, we use the <code>SCOREDIFF</code> variable. The combo multiplier rises by <code>SCOREDIFF</code> with each 10 combo until it hits 100, then it doesn&rsquo;t change unless there is a break.</li>
 </ul>
 </blockquote>
-<pre><code>Scoring Formula: SCOREINIT + max(0, SCOREDIFF * floor((min(COMBO, 100) - 1) / 10))
+<pre tabindex=0><code>Scoring Formula: SCOREINIT + max(0, SCOREDIFF * floor((min(COMBO, 100) - 1) / 10))
 </code></pre><blockquote>
 <ul>
 <li><code>2</code> This sets the Arcade version to 0, which is similar to how <code>1</code> works, but with some different combo multipliers. This scoring system is not commonly used, but it&rsquo;s included here for completeness. There are a lot more Japanese charts with this setting. This scoring system refers to the always-online HD cabinet versions between 2011 and 2020 (normally named after colours &ndash; kimidori, murasaki, red, blue, green, etc)</li>
 </ul>
 </blockquote>
-<pre><code>Scoring Formula: SCOREINIT + SCOREDIFF * (if combo over 100; 8) (if combo over 50; 4) (if combo over 30; 2) (if combo over 10; 1)
+<pre tabindex=0><code>Scoring Formula: SCOREINIT + SCOREDIFF * (if combo over 100; 8) (if combo over 50; 4) (if combo over 30; 2) (if combo over 10; 1)
 </code></pre><blockquote>
 <ul>
 <li><code>3</code>This sets the scoring to the newest taiko arcade (nijiiro) mathematically calculates score to mean all-good (dfc, =mfc/AJ/perfect) is equal to at least 1 million with combo no longer being a factor, with much more precision than AC0 (where scores of 1.2 million were possible on note-heavy charts and scores of 800k were possible on less note-heavy charts, all oni). It&rsquo;s comparable to the shin-uchi/true hit mode (other than it not accounting for big notes anymore)</li>
 </ul>
 </blockquote>
-<pre><code>Scoring Formula: ((1000000-(time of balloon (sec)*100*16.6 OR hit count of balloon×100)-time of drumroll (sec)*100*16.6)/total note count/10)then unconditional carry to single digit * 10
+<pre tabindex=0><code>Scoring Formula: ((1000000-(time of balloon (sec)*100*16.6 OR hit count of balloon×100)-time of drumroll (sec)*100*16.6)/total note count/10)then unconditional carry to single digit * 10
 </code></pre><p>Example</p>
-<pre><code>SCOREMODE:1
+<pre tabindex=0><code>SCOREMODE:1
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=scoreinit>
@@ -970,7 +970,7 @@ With this arcade version, we use the <code>SCOREDIFF</code> variable. The combo 
 </h2>
 </div><p>This tag sets the INITial score for the scoring method. This is commonly set to 610 on Japanese charts, but many other values are seen as well. See <code>#SCOREMODE</code> above.</p>
 <p>Example</p>
-<pre><code>SCOREINIT:380
+<pre tabindex=0><code>SCOREINIT:380
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=scorediff>
@@ -980,7 +980,7 @@ With this arcade version, we use the <code>SCOREDIFF</code> variable. The combo 
 </h2>
 </div><p>This tag sets the score DIFFerence for the scoring method. This is commonly set to 140 on Japanese charts, but many other values are seen as well. See <code>#SCOREMODE</code> above.</p>
 <p>Example</p>
-<pre><code>SCOREDIFF:90
+<pre tabindex=0><code>SCOREDIFF:90
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=maker>
@@ -990,7 +990,7 @@ With this arcade version, we use the <code>SCOREDIFF</code> variable. The combo 
 </h2>
 </div><p>This tag is used for the name of the chart artist. It is not often seen in the simulators options, but the tag is available for credit. Works as per <code>#MAKER</code> in BMS.</p>
 <p>Example</p>
-<pre><code>MAKER:Squirrel
+<pre tabindex=0><code>MAKER:Squirrel
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=maker-1>

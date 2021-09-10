@@ -745,7 +745,7 @@ Warp segments (WARPS)
 </h3>
 </div><p>Tells the game to teleport foreward a given number of beats into a chart. Any notes that are skipped get counted as fake.</p>
 <p>In simfile, it&rsquo;s listed as the beat it happens, then how many beats foreward to teleport.</p>
-<pre><code>#WARPS:28.000=4.000;
+<pre tabindex=0><code>#WARPS:28.000=4.000;
 </code></pre><p>(ex: at beat 28, teleport foreward by 4 beats.)</p>
 <div class=gdoc-page__anchorwrap>
 <h3 id=time-signature-segments-timesignatures>
@@ -763,7 +763,7 @@ Tick Count segments (TICKCOUNTS)
 </div>
 <p>Sets how many hold ticks happen in a hold per measure. Starting value defaults to 4. Only really used in pump mode, due to other games not having hold checkpoints.</p>
 <p>In simfile, it&rsquo;s listed as the beat it happens, then the actual tickcount amount.</p>
-<pre><code>#TICKCOUNTS:0.000=4,
+<pre tabindex=0><code>#TICKCOUNTS:0.000=4,
 28.000=8
 </code></pre><p>(ex: At beat 28, a hit becomes 2 combo, and a miss becomes 4 misses.)</p>
 <div class=gdoc-page__anchorwrap>
@@ -774,7 +774,7 @@ Combo segments (COMBOS)
 </h3>
 </div><p>Sets how much combo a hit or miss adds. The default is 1/1, which means a hit gets 1 combo and a miss gets 1 miss.</p>
 <p>In simfile, it&rsquo;s listed as the beat it happens, how much combo a hit is and then how much combo a miss is. If a single number is listed, both hits and misses get the same value. Weird behavior, such as underflows can happen if negative values are used.</p>
-<pre><code>#COMBOS:0.000=1,
+<pre tabindex=0><code>#COMBOS:0.000=1,
 28.000=2=4;
 </code></pre><p>(ex: At beat 28, a hit becomes 2 combo, and a miss becomes 4 misses.)</p>
 <div class=gdoc-page__anchorwrap>
@@ -785,7 +785,7 @@ Speed segments (SPEEDS)
 </h3>
 </div><p>Sets the speed of the chart by ratio. 1 is the normal speed. If given a length of 0, the change happens instantly. The default starts with a speed of 1, applying at beat 0 instantly. Visually ignored if CMod is used.</p>
 <p>In simfile, it&rsquo;s listed as the beat it happens, the speed to go to, how long the change takes and whether it&rsquo;s in beats or seconds.</p>
-<pre><code>#SPEEDS:0.000=2.000=0.000=0,
+<pre tabindex=0><code>#SPEEDS:0.000=2.000=0.000=0,
 16.000=4.000=1.000=0,
 24.000=1.000=2.000=1;
 </code></pre><p>(ex: Chart starts at a speed of 2, on beat 16, it turns to a speed of 4 in 1 beat, and on beat 24, it turns to a speed of 1 in 2 seconds.</p>
@@ -797,7 +797,7 @@ Scroll segments (SCROLLS)
 </h3>
 </div><p>Allows one to alter the scrolling factor for a section (as opposed to the whole field). When given a factor of 0, the chart stops visibly scrollnig, but notes can still be hit. Visually ignored if CMod is used.</p>
 <p>In simfile, it&rsquo;s listed as the beat it happens, and then the factor to switch to.</p>
-<pre><code>#SCROLLS:0.000=1.000,
+<pre tabindex=0><code>#SCROLLS:0.000=1.000,
 24.000=0.000,
 28.000=2.000;
 </code></pre><p>(ex: The chart starts with a factor of 1, switches to a factor of 0 at beat 24, and switches to a factor of 2 at beat 28)</p>

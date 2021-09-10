@@ -697,6 +697,11 @@ hidden-mobile" itemprop=breadcrumb>
 <li><a href=#needing-to-force-a-different-audio-driver>Needing to force a different audio driver</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href=#arcade-machine-conversion-with-pi>Arcade Machine Conversion With Pi</a>
+<ul>
+<li><a href=#litboardarduino-instructions>LITBoard/Arduino Instructions</a></li>
 </ul></nav><hr></div>
 <div class=gdoc-page__anchorwrap>
 <h2 id=important-note>
@@ -739,7 +744,7 @@ Using 'tar'
 <div class="gdoc-markdown--nested gdoc-tabs__content">
 <p>Open a terminal and get to the directory the archive is in.</p>
 <p>Run this in your terminal, replacing the name of the archive file with what you named it.</p>
-<pre><code>tar -xvf OutFox-5.3.0-alpha-4.9.9HF3b-amd64-legacy-date-20210809.tar.gz
+<pre tabindex=0><code>tar -xvf OutFox-5.3.0-alpha-4.9.9HF3b-amd64-legacy-date-20210809.tar.gz
 </code></pre><p>This should create a directory that holds the install of <em>Project OutFox</em>.</p>
 </div>
 </div>
@@ -767,7 +772,7 @@ Through a Launcher
 <div class="gdoc-markdown--nested gdoc-tabs__content">
 <p>The following is an example launcher file named &ldquo;Project OutFox.desktop&rdquo;.</p>
 <p>Create a file on the desktop with this name and base the contents on the section below.</p>
-<pre><code>#!/usr/bin/env xdg-open
+<pre tabindex=0><code>#!/usr/bin/env xdg-open
 
 [Desktop Entry]
 Type=Application
@@ -783,10 +788,10 @@ Through the terminal
 </label>
 <div class="gdoc-markdown--nested gdoc-tabs__content">
 <p>In the game&rsquo;s root directory, type this into the terminal and press enter:</p>
-<pre><code>./stepmania
+<pre tabindex=0><code>./stepmania
 </code></pre><p>This will start the game and have some extra output in the terminal that is usually seen in the logs.</p>
 <p>To force a theme, run the following, replacing the theme name with the desired theme&rsquo;s directory name.</p>
-<pre><code>./stepmania --theme=SM5-GrooveNights
+<pre tabindex=0><code>./stepmania --theme=SM5-GrooveNights
 </code></pre>
 </div>
 </div>
@@ -811,7 +816,7 @@ Missing libraries
 </h3>
 </div><p>The game might not launch if libraries are missing. <code>ldd</code> can be used to help determine what packages need to be installed without having to run the game multiple times.</p>
 <p>Run this in the game&rsquo;s directory from a terminal to find what libraries are missing:</p>
-<pre><code>ldd stepmania
+<pre tabindex=0><code>ldd stepmania
 </code></pre><p>Here is example output from ldd:</p>
 <p><img src=../../../getting-started/linuxinstall-ldd.png alt="Screenshot of output from ldd."></p>
 <p>In this example, <code>libbz2.so.1.0</code> is missing.</p>
@@ -912,7 +917,7 @@ Needing to force ALSA instead of PulseAudio.
 </h3>
 </div><p>A wrapper program called <code>pasuspender</code> can be used to temporarilly disable pulseaudio and make OutFox use the ALSA drivers.</p>
 <p>In the terminal, it would be used like this:</p>
-<pre><code>pasuspender ./stepmania
+<pre tabindex=0><code>pasuspender ./stepmania
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h3 id=needing-to-force-a-different-audio-driver>
@@ -948,6 +953,51 @@ Needing to force a different audio driver
 </tr>
 </tbody>
 </table> </div>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h1 id=arcade-machine-conversion-with-pi>
+Arcade Machine Conversion With Pi
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#arcade-machine-conversion-with-pi class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Arcade Machine Conversion With Pi" href=#arcade-machine-conversion-with-pi><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=litboardarduino-instructions>
+LITBoard/Arduino Instructions
+<a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#litboardarduino-instructions class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor LITBoard/Arduino Instructions" href=#litboardarduino-instructions><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>In the terminal, navigate to the <code>/Data</code> folder of your Outfox installation.</p>
+<p>example: <code>cd /home/pi/Desktop/OutFox/Data</code></p>
+<p>Create a FIFO file that Outfox will write to:</p>
+<p><code>mkfifo "StepMania-Lights-SextetStream.out"</code></p>
+<p>Ensure this FIFO file has the proper read/write permissions as the same account running Outfox.</p>
+<p>Next, navigate to the Outfox save folder. In most cases, this will be in your home directory and be something like <code>.stepmania-5.3</code>:</p>
+<p><code>cd /home/pi/.stepmania-5.3</code></p>
+<p>Open up &ldquo;Preferences.ini&rdquo;:</p>
+<p><code>nano Preferences.ini</code></p>
+<p>Scroll down to find a line that starts with <code>LightsDriver=</code> and change it to:</p>
+<p><code>LightsDriver=SextetStreamToFile</code></p>
+<p>Press <code>crtl+o</code> and hit <code>return</code>, then press <code>ctrl+x</code> to save the file and exit nano. We need to now make sure that something is going to use that file, otherwise you&rsquo;ll find your system will eventually crash as that file fills up without getting emptied.</p>
+<p>Make sure that <code>socat</code> is installed on your pi:</p>
+<p><code>sudo apt install socat</code></p>
+<p>Next open up cron to have socat start at reboot by typing:</p>
+<p><code>crontab -e</code></p>
+<p>At the end of that window, add this line (replacing the path with the path to you FIFO file):</p>
+<p><code>@reboot socat "/home/pi/Desktop/OutFox/Data/StepMania-Lights-SextetStream.out" /dev/ttyUSB0,raw,echo=0,b155200 &</code></p>
+<p>Press <code>crtl+o</code>, <code>return</code>, <code>ctrl+x</code> to save and exit crontab. Notice the <code>&</code> at the end of the line. That&rsquo;s important to let it run in the background. Otherwise your system will just sit there waiting for it to quit&mldr;</p>
+<p>Next, create a launcher file that will run on startup. In order to do this, it should reside in the autostart folder of xdg. Easy way to do this is:</p>
+<p><code>nano /etc/xdg/autostart/OutFox.desktop</code></p>
+<p>When nano opens, put the following into the text file:</p>
+<pre tabindex=0><code>#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Type=Application
+Name=Project OutFox
+Exec=/home/pi/Desktop/OutFox/stepmania
+</code></pre><p><code>Ctrl+o</code>, <code>return</code>, <code>ctrl+x</code> to save and exit the file. Make sure you also give it executable permission:</p>
+<p><code>chmod a+x /etc/xdg/autostart/OutFox.desktop</code></p>
+<p>Now if you reboot the pi, it should automatically load socat and OutFox for a session of great fun.</p>
+<p><em>(thanks to Random Hajile for the PiCab information)</em></p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>

@@ -717,7 +717,7 @@ Commands are in the header formatted as the following:
 </h3>
 </div><p><code>#[Command] [Value]</code></p>
 <p>For these commands, a space between the command and value is <em>required</em> or you will have offset issues in most simulators. A Simple Example of some common commands used in the header field are:</p>
-<pre><code>*---------------------- HEADER FIELD
+<pre tabindex=0><code>*---------------------- HEADER FIELD
 #PLAYER 3
 #GENRE Dance
 #TITLE My Dance Classics
@@ -750,7 +750,7 @@ Common HEADER FIELD commands
 </h2>
 </div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
-<pre><code>#PLAYER 3 
+<pre tabindex=0><code>#PLAYER 3 
 </code></pre><p>This command defines the play style that the chart is set for. In the earlier versions of <code>BMS</code> they also specified the <em>number</em> of players.</p>
 <blockquote>
 <ul>
@@ -782,7 +782,7 @@ Common HEADER FIELD commands
 </h2>
 </div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
-<pre><code>#GENRE Blues 
+<pre tabindex=0><code>#GENRE Blues 
 </code></pre><p>This command sets the <em>genre</em> or <em>type</em> of music that the chart is going to play. It could be used by the simulator for sorting or grouping charts, or to allow for just more information to be displayed on the song select screen. The genre is usually written in SHIFT-JIS on older charts, but UTF8/UTF16 are becoming a lot more common, so do check.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
@@ -793,7 +793,7 @@ Common HEADER FIELD commands
 </h2>
 </div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
-<pre><code>#TITLE Take (Bamboo) 
+<pre tabindex=0><code>#TITLE Take (Bamboo) 
 </code></pre><p>The title command sets the SongTitle and this will be displayed on the song wheel to be selected, as well on the screen gameplay and evaluation screen. It will also be recorded in high scores and on your profile etc. Older charts used SHIFT-JIS.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
@@ -804,7 +804,7 @@ Common HEADER FIELD commands
 </h2>
 </div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
-<pre><code>#ARTIST 立秋 feat.ちょこ
+<pre tabindex=0><code>#ARTIST 立秋 feat.ちょこ
 </code></pre><p>The artist command sets the SongArtist and this is usually displayed on the song wheel when selected and on the evaluation screen. The artist information is usually recorded in high scores and on your profile. Older charts used SHIFT-JIS.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
@@ -815,7 +815,7 @@ Common HEADER FIELD commands
 </h2>
 </div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
-<pre><code>#BPM 140.35
+<pre tabindex=0><code>#BPM 140.35
 </code></pre><p>This setting allows the chart to specify the beginning (or starting) BPM of a song. This value will also be shown in the music wheel, and will be setting the speed that will be used as part of the modifiers / scrolling of the notes. This value used to require a whole number. <em>Project OutFox</em> allows for floats here - you are limited to 6 decimal places - so <code>143.000290</code> as an example.</p>
 <p>Older simulators do not support decimal point <code>BPM</code> values, and you cannot enter a value above <code>255</code> as it can crash the simulator in question. If you are wishing to make your chart portable to other programs, bear this in mind; not every simulator supports this!</p>
 <p>This value also can (and will!) be overwritten by channel commands/settings later on in the chart.</p>
@@ -828,7 +828,7 @@ Common HEADER FIELD commands
 </h2>
 </div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
-<pre><code>#PLAYLEVEL 5
+<pre tabindex=0><code>#PLAYLEVEL 5
 </code></pre><p>The playlevel sets the number of &lsquo;stars&rsquo; (from the old games) or the difficulty specified. In <code>BMS</code> files this difficulty ranges normally from 0 to 6 - 6 being the hardest. The older scale from 0 to 9 was from the BM98 spec, which was never really used much or supported.</p>
 <p>In some <code>BME</code> and most <code>PMS</code> files, the playlevel can be from 1 to 49. This reflects the style from other games with the wider difficulty ranges, and po-mu has had a wider difficulty rating for some years.</p>
 <p>In older versions of StepMania, this difficulty used to be squished into a 5 tier difficulty system and sometimes didn&rsquo;t really work that well. It needed to use a hint from the file name to ensure it didn&rsquo;t make everything an EDIT. This also meant that a lot of charts disappeared/were not parsed correctly and was generally not that suitable for use. <em>OutFox</em> has remedied this by fixing how the parser sees difficulties, and also widens the difficulty arc to out of 10 fields.</p>
@@ -841,7 +841,7 @@ Common HEADER FIELD commands
 </h2>
 </div><p><code>Status: ❌ Unsupported</code></p>
 <p>Usage Example:</p>
-<pre><code>#RANK 2
+<pre tabindex=0><code>#RANK 2
 </code></pre><p>The rank entry used in the old <code>BMS</code> specification used to allow the chart artist to select a difficulty on how the &lsquo;timing window&rsquo; would be set when playing the chart. It was designed for those simulators that didn&rsquo;t have ways of difficulty or setting different timing windows.</p>
 <p>There were 5 different ranks, the last being added by <em>nanasi</em> which was a more relaxed timing window compared to the other simulators. Almost all of the simulators that are active today set <code>2</code> as the default. The old ranking timing windows are listed below for historical purposes. They are ignored on <em>OutFox</em> as we have a custom timing window solution, but if you would like us to add this to set a timing system in the future, do let us know!</p>
 <div class=table-wrap> <table>
@@ -891,7 +891,7 @@ Common HEADER FIELD commands
 </h2>
 </div><p><code>Status: ❌ Unsupported</code></p>
 <p>Usage Example:</p>
-<pre><code>#TOTAL 430
+<pre tabindex=0><code>#TOTAL 430
 </code></pre><p>The <code>TOTAL</code> command is to set the value of what could be considered an extension of the &lsquo;gauge&rsquo; in older simulators, before <em>life gauges</em> existed. The value of <code>TOTAL</code> is added to a normal gauge to increase it&rsquo;s length. if the value was 300, then the gauge would go from 0 to 100% in size, to the intial value (normally around 25% + 300% for a total gauge size of 325%).</p>
 <p>This only occurs when the notes are hit and combo is kept, otherwise things would return to the old gauge size. It was more of a consideration on gauge/groove/clear amounts (what you needed to reach to be considered a pass in that song). This did lead to some confusion on how <code>TOTAL</code> should affect the gameplay/level of the chart.</p>
 <p>The gauge never changed size; it was an off screen calculation on how you could &lsquo;score&rsquo; your chart. Several simulators over the years have changed this value if <code>TOTAL</code> was omitted, we at the moment do not honour the value, mainly because we do not follow the <em>iidx</em> scoring system since 2005.</p>
@@ -916,11 +916,11 @@ Common HEADER FIELD commands
 </h2>
 </div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
-<pre><code>#MAKER Ima StepChart
+<pre tabindex=0><code>#MAKER Ima StepChart
 </code></pre><p>or</p>
-<pre><code>#CREDIT Ima StepChart
+<pre tabindex=0><code>#CREDIT Ima StepChart
 </code></pre><p>or</p>
-<pre><code>#SUBARTIST Ima StepChart
+<pre tabindex=0><code>#SUBARTIST Ima StepChart
 </code></pre><p>The <code>MAKER</code> or <code>CREDIT</code> command simply allows the author or maker of the chart to add their credit so it will be displayed in the simulator. The main support for <code>MAKER</code> comes from around 2002 onwards. It is common in most 5 Key styles to be used, as well as being used on 10 Key (double play) styles. <code>CREDIT</code> is more recent, being seen from around 2013 in charts. I know not it&rsquo;s origin, we support both as to not ignore honouring those that take the time to make charts for us to enjoy.</p>
 <p>Since around 2017, another command, <code>SUBARTIST</code> began to be used more commonly in <code>BME</code>/<code>PMS</code> files, which was inherited from <code>DTX</code>. The sub artist is not normally displayed until the evaluation screen on earlier simulators, but in <em>OutFox</em> we treat all three of these in the same manner. If you are creating a new <code>BMS</code> chart, then <code>#MAKER</code> is usually safer to use for other simulator support.</p>
 <hr>
@@ -932,7 +932,7 @@ Common HEADER FIELD commands
 </h2>
 </div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
-<pre><code>#STAGEFILE loadingscreen.png
+<pre tabindex=0><code>#STAGEFILE loadingscreen.png
 </code></pre><p>The stagefile command is used to set an image to the &lsquo;loading screen&rsquo; of the simulator - when the song and options/modifiers have been set, this file is then placed as part of the loading process on the &lsquo;loading screen&rsquo;.</p>
 <p>On older simulators, this loading process could take a <em>long</em> time, so it was wise to incorporate a loading screen system into the simulator. This has also been recently done in <em>Project OutFox</em> so we do not need to freeze the game while loading these files any more. This file is read in and parsed, just no theme at the moment takes advantage of the loading screen as of yet.</p>
 <hr>
@@ -1215,7 +1215,7 @@ Channel Support Table
 <td>❌</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Supported</td>
+<td>Not Supported</td>
 </tr>
 <tr>
 <td>18</td>
@@ -1504,92 +1504,92 @@ Channel Support Table
 <tr>
 <td>31</td>
 <td>P1 Key 1 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Key 1 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Left White Hidden</td>
-<td>❌</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>32</td>
 <td>P1 Key 2 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Key 2 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Left Yellow Hidden</td>
-<td>❌</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>33</td>
 <td>P1 Key 3 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Key 3 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Left Green Hidden</td>
-<td>❌</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>34</td>
 <td>P1 Key 4 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Key 4 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Left Blue Hidden</td>
-<td>❌</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>35</td>
 <td>P1 Key 5 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Key 5 Hidden</td>
-<td>❌</td>
-<td>Not Used</td>
-<td>~</td>
-<td>BMS in 4.9.10</td>
+<td>✅</td>
+<td>P1 Left Red Hidden</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>36</td>
 <td>P1 Turn/Scratch Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Turn/Scratch Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>BMS in 4.9.10</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>37</td>
 <td>P1 FootPedal Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 FootPedal Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>BMS in 4.9.10</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>38</td>
 <td>P1 Key 6 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Key 6 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>BMS in 4.9.10</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>39</td>
 <td>P1 Key 7 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Key 7 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>BMS in 4.9.10</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>3A</td>
@@ -1681,92 +1681,92 @@ Channel Support Table
 <tr>
 <td>41</td>
 <td>P2 Key 1 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P2 Key 1 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>42</td>
 <td>P2 Key 2 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P2 Key 2 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Right Blue Hidden</td>
-<td>❌</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>43</td>
 <td>P2 Key 3 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P2 Key 3 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Right Green Hidden</td>
-<td>❌</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>44</td>
 <td>P2 Key 4 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P2 Key 4 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Right Yellow Hidden</td>
-<td>❌</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>45</td>
 <td>P2 Key 5 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P2 Key 5 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P1 Right White Hidden</td>
-<td>❌</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>46</td>
 <td>P2 Turn/Scratch Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P2 Turn/Scratch Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>47</td>
 <td>P2 FootPedal Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P2 FootPedal Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>48</td>
 <td>P2 Key 6 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P2 Key 6 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>49</td>
 <td>P2 Key 7 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>P2 Key 7 Hidden</td>
-<td>❌</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>BMS/PMS in 4.9.10</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>4A</td>
