@@ -31,7 +31,7 @@ return Def.ActorFrame{
 
 ## More direct method (Works on legacy versions of SM5)
 ```lua
--- This actorframe will deal with a simple input set.
+-- This function will deal with a simple input set.
 -- Let's make the input send a message when we press the player's assignated Start button.
 -- event is sent over from InputCallback, and contains all the information needed to obtain input.
 local function myCustomInput(event)
@@ -56,7 +56,7 @@ return Def.ActorFrame{
 
 # Anatomy of the event variable
 
-When recieving input, you will be given a table by the name of `event`, which can be customized to whatever you want inside the function's arguments. It gives you a table, which contains all the information you need to determine what the user has performed to then report back to the theme.
+When recieving input, you will be given a table by the name of `event`. It gives you base elements, which contain all the information you need to determine what the user has performed to then report back to the theme.
 
 Name | Returns | Description |
 :------------ | :------ | :---------- |
