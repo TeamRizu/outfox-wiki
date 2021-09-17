@@ -335,24 +335,24 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 
 ---
 
-## Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS) 
+## Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BML/PMS) 
 
-The original Long Note Implementation is currently not supported in OutFox, though we do support ``#LNTYPE 1``, but the others need to be added to the game. These sections seem to be for BMS specific extensions, however I have not been able to find any modern documented use of them outside of 2005-2009.
+The original Long Note Implementation is now supported in OutFox, and we do parse ``#LNTYPE``. We have tested these with a lot of different charts from the mid 2000s and we are now reproduce these perfectly.
 
-I have kept them here mainly due to the fact they exist, and whether or not there is enough of a use case to include them in our support roadmap of the specification.
+BME and PMS support for these channels is to the LR2 specification, where Player 1 channels are used. The Player 2 Channel options are not included in this specification.
 
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 50|Not Used|~|Not Used|~|Not Used|~|Not Supported
-51|P1 Key 1 LongNote|📝?|P1 Key 1 LongNote|📝?|P1 Left While LongNote|📝?|Not Supported
-52|P1 Key 2 LongNote|📝?|P1 Key 2 LongNote|📝?|P1 Left Yellow LongNote|📝?|Not Supported
-53|P1 Key 3 LongNote|📝?|P1 Key 3 LongNote|📝?|P1 Left Green LongNote|📝?|Not Supported
-54|P1 Key 4 LongNote|📝?|P1 Key 4 LongNote|📝?|P1 Left Blue LongNote|📝?|Not Supported
-55|P1 Key 5 LongNote|📝?|P1 Key 5 LongNote|📝?|P1 Red LongNote|📝?|Not Supported
-56|P1 Turn/Scratch LongNote|📝?|P1 Turn/Scratch LongNote|📝?|Not Used|~|Not Supported
-57|P1 FootPedal LongNote|📝?|P1 FootPedal LongNote|📝?|Not Used|~|Not Supported
-58|P1 Key 6 LongNote|📝?|P1 Key 6 LongNote|📝?|Not Used|~|Not Supported
-59|P1 Key 7 LongNote|📝?|P1 Key 7 LongNote|📝?|Not Used|~|Not Supported
+51|P1 Key 1 LongNote|✅|P1 Key 1 LongNote|✅|P1 Left While LongNote|✅|Supported in 4.10.0
+52|P1 Key 2 LongNote|✅|P1 Key 2 LongNote|✅|P1 Left Yellow LongNote|✅|Supported in 4.10.0
+53|P1 Key 3 LongNote|✅|P1 Key 3 LongNote|✅|P1 Left Green LongNote|✅|Supported in 4.10.0
+54|P1 Key 4 LongNote|✅|P1 Key 4 LongNote|✅|P1 Left Blue LongNote|✅|Supported in 4.10.0
+55|P1 Key 5 LongNote|✅|P1 Key 5 LongNote|✅|P1 Red LongNote|✅|Supported in 4.10.0
+56|P1 Turn/Scratch LongNote|✅|P1 Turn/Scratch LongNote|✅|Not Used|~|Supported in 4.10.0
+57|P1 FootPedal LongNote|✅|P1 FootPedal LongNote|✅|Not Used|~|Supported in 4.10.0
+58|P1 Key 6 LongNote|✅|P1 Key 6 LongNote|✅|Not Used|~|Supported in 4.10.0
+59|P1 Key 7 LongNote|✅|P1 Key 7 LongNote|✅|Not Used|~|Supported in 4.10.0
 5A|Not Used|~|Not Used|~|Not Used|~|Not Used
 5B|Not Used|~|Not Used|~|Not Used|~|Not Used
 5C|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -365,15 +365,15 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 60|Not Used|~|Not Used|~|Not Used|~|Not Used
-61|P2 Key 1 LongNote|📝?|P2 Key 1 LongNote|📝?|Not Used|~|Not Supported
-62|P2 Key 2 LongNote|📝?|P2 Key 2 LongNote|📝?|P1 Right Blue LongNote|📝?|Not Supported
-63|P2 Key 3 LongNote|📝?|P2 Key 3 LongNote|📝?|P1 Right Green LongNote|📝?|Not Supported
-64|P2 Key 4 LongNote|📝?|P2 Key 4 LongNote|📝?|P1 Right Yellow LongNote|📝?|Not Supported
-65|P2 Key 5 LongNote|📝?|P2 Key 5 LongNote|📝?|P1 Right White LongNote|📝?|Not Supported
-66|P2 Turn/Scratch LongNote|📝?|P2 Turn/Scratch LongNote|📝?|Not Used|~|Not Supported
-67|P2 FootPedal LongNote|📝?|P2 FootPedal LongNote|📝?|Not Used|~|Not Supported
-68|P2 Key 6 LongNote|📝?|P2 Key 6 LongNote|📝?|Not Used|~|Not Supported
-69|P2 Key 7 LongNote|📝?|P2 Key 7 LongNote|📝?|Not Used|~|Not Supported
+61|P2 Key 1 LongNote|✅|P2 Key 1 LongNote|✅|Not Used|~|Supported in 4.10.0
+62|P2 Key 2 LongNote|✅|P2 Key 2 LongNote|✅|P1 Right Blue LongNote|✅|Supported in 4.10.0
+63|P2 Key 3 LongNote|✅|P2 Key 3 LongNote|✅|P1 Right Green LongNote|✅|Supported in 4.10.0
+64|P2 Key 4 LongNote|✅|P2 Key 4 LongNote|✅|P1 Right Yellow LongNote|✅|Supported in 4.10.0
+65|P2 Key 5 LongNote|✅|P2 Key 5 LongNote|✅|P1 Right White LongNote|✅|Supported in 4.10.0
+66|P2 Turn/Scratch LongNote|✅|P2 Turn/Scratch LongNote|✅|Not Used|~|Supported in 4.10.0
+67|P2 FootPedal LongNote|✅|P2 FootPedal LongNote|✅|Not Used|~|Supported in 4.10.0
+68|P2 Key 6 LongNote|✅|P2 Key 6 LongNote|✅|Not Used|~|Supported in 4.10.0
+69|P2 Key 7 LongNote|✅|P2 Key 7 LongNote|✅|Not Used|~|Supported in 4.10.0
 6A|Not Used|~|Not Used|~|Not Used|~|Not Used
 6B|Not Used|~|Not Used|~|Not Used|~|Not Used
 6C|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -454,7 +454,7 @@ A2|Not Used|~|Not Used|~|Not Used|~|Not Used
 A3|Not Used|~|Not Used|~|Not Used|~|Not Used
 A4|Not Used|~|Not Used|~|Not Used|~|Not Used
 A5|Not Used|~|Not Used|~|Not Used|~|Not Used
-A6|Change Option|❌|Change Option|❌|Change Option|❌|This was the mod system for BMS and PMS.
+A6|Change Option|❌|Change Option|❌|Change Option|❌|This was the deprecated mod system for BMS and PMS.
 A7|Not Used|~|Not Used|~|Not Used|~|Not Used
 A8|Not Used|~|Not Used|~|Not Used|~|Not Used
 A9|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -509,18 +509,25 @@ CF|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 ---
 
+## LandMine Sections #xxxD1-E9 - (BMS/PMS) 
+
+The original Land Mine Implementation is now supported in OutFox after some serious rewriting of the code to ensure these extended (greater than 9) channels were supported. We have tested these with a lot of different charts from the mid 2000s and we are now reproduce these perfectly with mines behaving as expected on BMS/BME and PMS files. Thanks to Bobini for the suggestion on ensuring that these channels were supported.
+
+BME and PMS support for the landmines (mines) is now 100% complete, and work as planned.
+
+
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 D0|Not Used|~|Not Used|~|Not Used|~|Not Used
-D1|P1 Key 1 LandMine|📝?|P1 Key 1 LandMine|📝?|P1 Left White LandMine|📝?|Not Used
-D2|P1 Key 2 LandMine|📝?|P1 Key 2 LandMine|📝?|P1 Left Yellow LandMine|📝?|Not Used
-D3|P1 Key 3 LandMine|📝?|P1 Key 3 LandMine|📝?|P1 Left Green LandMine|📝?|Not Used
-D4|P1 Key 4 LandMine|📝?|P1 Key 4 LandMine|📝?|P1 Left Blue LandMine|📝?|Not Used
-D5|P1 Key 5 LandMine|📝?|P1 Key 5 LandMine|📝?|P1 Red LandMine|📝?|Not Used
-D6|P1 Turn/Scratch LandMine|📝?|P1 Turn/Scratch LandMine|📝?|Not Used|~|Not Used
-D7|P1 FootPedal LandMine|📝?|P1 FootPedal LandMine|📝?|Not Used|~|Not Used
-D8|P1 Key 6 LandMine|📝?|P1 Key 6 LandMine|📝?|Not Used|~|Not Used
-D9|P1 Key 7 LandMine|📝?|P1 Key 7 LandMine|📝?|Not Used|~|Not Used
+D1|P1 Key 1 LandMine|✅|P1 Key 1 LandMine|✅|P1 Left White LandMine|✅|Supported in 4.10.0
+D2|P1 Key 2 LandMine|✅|P1 Key 2 LandMine|✅|P1 Left Yellow LandMine|✅|Supported in 4.10.0
+D3|P1 Key 3 LandMine|✅|P1 Key 3 LandMine|✅|P1 Left Green LandMine|✅|Supported in 4.10.0
+D4|P1 Key 4 LandMine|✅|P1 Key 4 LandMine|✅|P1 Left Blue LandMine|✅|Supported in 4.10.0
+D5|P1 Key 5 LandMine|✅|P1 Key 5 LandMine|✅|P1 Red LandMine|✅|Supported in 4.10.0
+D6|P1 Turn/Scratch LandMine|✅|P1 Turn/Scratch LandMine|✅|Not Used|~|Supported in 4.10.0
+D7|P1 FootPedal LandMine|✅|P1 FootPedal LandMine|✅|Not Used|~|Supported in 4.10.0
+D8|P1 Key 6 LandMine|✅|P1 Key 6 LandMine|✅|Not Used|~|Supported in 4.10.0
+D9|P1 Key 7 LandMine|✅|P1 Key 7 LandMine|✅|Not Used|~|Supported in 4.10.0
 DA|Not Used|~|Not Used|~|Not Used|~|Not Used
 DB|Not Used|~|Not Used|~|Not Used|~|Not Used
 DC|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -533,15 +540,15 @@ DF|Not Used|~|Not Used|~|Not Used|~|Not Used
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 E0|Not Used|~|Not Used|~|Not Used|~|Not Used
-E1|P2 Key 1 LandMine|📝?|P2 Key 1 LandMine|📝?|Not Used|~|Not Used
-E2|P2 Key 2 LandMine|📝?|P2 Key 2 LandMine|📝?|P1 Right Blue LandMine|📝?|Not Used
-E3|P2 Key 3 LandMine|📝?|P2 Key 3 LandMine|📝?|P1 Right Green LandMine|📝?|Not Used
-E4|P2 Key 4 LandMine|📝?|P2 Key 4 LandMine|📝?|P1 Right Yellow LandMine|📝?|Not Used
-E5|P2 Key 5 LandMine|📝?|P2 Key 5 LandMine|📝?|P1 Right White LandMine|📝?|Not Used
-E6|P2 Turn/Scratch LandMine|📝?|P2 Turn/Scratch LandMine|📝?|Not Used|~|Not Used
-E7|P2 FootPedal LandMine|📝?|P2 FootPedal LandMine|📝?|Not Used|~|Not Used
-E8|P2 Key 6 LandMine|📝?|P2 Key 6 LandMine|📝?|Not Used|~|Not Used
-E9|P2 Key 7 LandMine|📝?|P2 Key 7 LandMine|📝?|Not Used|~|Not Used
+E1|P2 Key 1 LandMine|✅|P2 Key 1 LandMine|✅|Not Used|~|Supported in 4.10.0
+E2|P2 Key 2 LandMine|✅|P2 Key 2 LandMine|✅|P1 Right Blue LandMine|✅|Supported in 4.10.0
+E3|P2 Key 3 LandMine|✅|P2 Key 3 LandMine|✅|P1 Right Green LandMine|✅|Supported in 4.10.0
+E4|P2 Key 4 LandMine|✅|P2 Key 4 LandMine|✅|P1 Right Yellow LandMine|✅|Supported in 4.10.0
+E5|P2 Key 5 LandMine|✅|P2 Key 5 LandMine|✅|P1 Right White LandMine|✅|Supported in 4.10.0
+E6|P2 Turn/Scratch LandMine|✅|P2 Turn/Scratch LandMine|✅|Not Used|~|Supported in 4.10.0
+E7|P2 FootPedal LandMine|✅|P2 FootPedal LandMine|✅|Not Used|~|Supported in 4.10.0
+E8|P2 Key 6 LandMine|✅|P2 Key 6 LandMine|✅|Not Used|~|Supported in 4.10.0
+E9|P2 Key 7 LandMine|✅|P2 Key 7 LandMine|✅|Not Used|~|Supported in 4.10.0
 EA|Not Used|~|Not Used|~|Not Used|~|Not Used
 EB|Not Used|~|Not Used|~|Not Used|~|Not Used
 EC|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -573,4 +580,4 @@ FF|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 ---
 
-_Written and Maintained with ♡ by Squirrel, with thanks to the feeling-po-mu, BMS command memo, and Japanese BMS/PMS community_
+_Written and Maintained with ♡ by Squirrel, with thanks to the feeling-po-mu, BMS command memo, BMS Discord, and Japanese BMS/PMS community_
