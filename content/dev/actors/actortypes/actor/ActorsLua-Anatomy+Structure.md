@@ -40,9 +40,42 @@ If one needs to manually queue a command or message, the `queuecommand` or `queu
 
 These queued commands run only after all previous tweens have finished.
 
+```lua
+self:queuecommand("Action"):queuecommand("AnotherOne")
+
+-- The actor itself
+ActionCommand=function(self)
+	-- an action is performed first
+end
+AnotherOneCommand=function(self)
+	-- an action is performed after 'Action'
+end
+```
+
 If a command has to run instantly, `playcommand` can be used for that.
+
+```lua
+self:playcommand("Action")
+
+-- The actor itself
+ActionCommand=function(self)
+	-- an action is performed
+end
+```
 
 If one wants to pass custom parameters into the command, a single table has to be used to wrap every parameter passed.
 
 These command functions generally take two paramters: The actor calling the function (often called `self`), and the parameters table passed into the command. The paramters table is optional.
+
+```lua
+self:playcommand("Action", { --[[Values are added here like a regular table.]] })
+
+-- example
+self:playcommand("Action", { Value = 2 })
+
+-- In the actor
+ActionCommand=function(self,param)
+	SCREENMAN:SystemMessage("I've got value which has ".. param.Value)
+end
+```
 <!-- TODO: Document the difference between the two and add more notes!-->
