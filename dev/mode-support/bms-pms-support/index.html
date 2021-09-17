@@ -1832,13 +1832,13 @@ Channel Support Table
 </table> </div>
 <hr>
 <div class=gdoc-page__anchorwrap>
-<h2 id=long-note-sections-xxx51-69---lntype1-lntype2-bmspms>
-Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#long-note-sections-xxx51-69---lntype1-lntype2-bmspms class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)" href=#long-note-sections-xxx51-69---lntype1-lntype2-bmspms><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=long-note-sections-xxx51-69---lntype1-lntype2-bmlpms>
+Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BML/PMS)
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#long-note-sections-xxx51-69---lntype1-lntype2-bmlpms class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BML/PMS)" href=#long-note-sections-xxx51-69---lntype1-lntype2-bmlpms><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>The original Long Note Implementation is currently not supported in OutFox, though we do support <code>#LNTYPE 1</code>, but the others need to be added to the game. These sections seem to be for BMS specific extensions, however I have not been able to find any modern documented use of them outside of 2005-2009.</p>
-<p>I have kept them here mainly due to the fact they exist, and whether or not there is enough of a use case to include them in our support roadmap of the specification.</p>
+</div><p>The original Long Note Implementation is now supported in OutFox, and we do parse <code>#LNTYPE</code>. We have tested these with a lot of different charts from the mid 2000s and we are now reproduce these perfectly.</p>
+<p>BME and PMS support for these channels is to the LR2 specification, where Player 1 channels are used. The Player 2 Channel options are not included in this specification.</p>
 <div class=table-wrap> <table>
 <thead>
 <tr>
@@ -1866,92 +1866,92 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <tr>
 <td>51</td>
 <td>P1 Key 1 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 1 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Left While LongNote</td>
-<td>📝?</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>52</td>
 <td>P1 Key 2 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 2 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Left Yellow LongNote</td>
-<td>📝?</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>53</td>
 <td>P1 Key 3 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 3 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Left Green LongNote</td>
-<td>📝?</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>54</td>
 <td>P1 Key 4 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 4 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Left Blue LongNote</td>
-<td>📝?</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>55</td>
 <td>P1 Key 5 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 5 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Red LongNote</td>
-<td>📝?</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>56</td>
 <td>P1 Turn/Scratch LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Turn/Scratch LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>57</td>
 <td>P1 FootPedal LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 FootPedal LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>58</td>
 <td>P1 Key 6 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 6 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>59</td>
 <td>P1 Key 7 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 7 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>5A</td>
@@ -2043,92 +2043,92 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <tr>
 <td>61</td>
 <td>P2 Key 1 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 1 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>62</td>
 <td>P2 Key 2 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 2 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Right Blue LongNote</td>
-<td>📝?</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>63</td>
 <td>P2 Key 3 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 3 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Right Green LongNote</td>
-<td>📝?</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>64</td>
 <td>P2 Key 4 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 4 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Right Yellow LongNote</td>
-<td>📝?</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>65</td>
 <td>P2 Key 5 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 5 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Right White LongNote</td>
-<td>📝?</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>66</td>
 <td>P2 Turn/Scratch LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Turn/Scratch LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>67</td>
 <td>P2 FootPedal LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 FootPedal LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>68</td>
 <td>P2 Key 6 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 6 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>69</td>
 <td>P2 Key 7 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 7 LongNote</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>6A</td>
@@ -2806,7 +2806,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <td>❌</td>
 <td>Change Option</td>
 <td>❌</td>
-<td>This was the mod system for BMS and PMS.</td>
+<td>This was the deprecated mod system for BMS and PMS.</td>
 </tr>
 <tr>
 <td>A7</td>
@@ -3255,6 +3255,14 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 </tbody>
 </table> </div>
 <hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=landmine-sections-xxxd1-e9---bmspms>
+LandMine Sections #xxxD1-E9 - (BMS/PMS)
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#landmine-sections-xxxd1-e9---bmspms class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor LandMine Sections #xxxD1-E9 - (BMS/PMS)" href=#landmine-sections-xxxd1-e9---bmspms><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>The original Land Mine Implementation is now supported in OutFox after some serious rewriting of the code to ensure these extended (greater than 9) channels were supported. We have tested these with a lot of different charts from the mid 2000s and we are now reproduce these perfectly with mines behaving as expected on BMS/BME and PMS files. Thanks to Bobini for the suggestion on ensuring that these channels were supported.</p>
+<p>BME and PMS support for the landmines (mines) is now 100% complete, and work as planned.</p>
 <div class=table-wrap> <table>
 <thead>
 <tr>
@@ -3282,92 +3290,92 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <tr>
 <td>D1</td>
 <td>P1 Key 1 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 1 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Left White LandMine</td>
-<td>📝?</td>
-<td>Not Used</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D2</td>
 <td>P1 Key 2 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 2 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Left Yellow LandMine</td>
-<td>📝?</td>
-<td>Not Used</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D3</td>
 <td>P1 Key 3 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 3 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Left Green LandMine</td>
-<td>📝?</td>
-<td>Not Used</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D4</td>
 <td>P1 Key 4 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 4 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Left Blue LandMine</td>
-<td>📝?</td>
-<td>Not Used</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D5</td>
 <td>P1 Key 5 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 5 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Red LandMine</td>
-<td>📝?</td>
-<td>Not Used</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D6</td>
 <td>P1 Turn/Scratch LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Turn/Scratch LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Used</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D7</td>
 <td>P1 FootPedal LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 FootPedal LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Used</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D8</td>
 <td>P1 Key 6 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 6 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Used</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D9</td>
 <td>P1 Key 7 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Key 7 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Used</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>DA</td>
@@ -3459,92 +3467,92 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 <tr>
 <td>E1</td>
 <td>P2 Key 1 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 1 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Used</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E2</td>
 <td>P2 Key 2 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 2 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Right Blue LandMine</td>
-<td>📝?</td>
-<td>Not Used</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E3</td>
 <td>P2 Key 3 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 3 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Right Green LandMine</td>
-<td>📝?</td>
-<td>Not Used</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E4</td>
 <td>P2 Key 4 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 4 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Right Yellow LandMine</td>
-<td>📝?</td>
-<td>Not Used</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E5</td>
 <td>P2 Key 5 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 5 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P1 Right White LandMine</td>
-<td>📝?</td>
-<td>Not Used</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E6</td>
 <td>P2 Turn/Scratch LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Turn/Scratch LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Used</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E7</td>
 <td>P2 FootPedal LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 FootPedal LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Used</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E8</td>
 <td>P2 Key 6 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 6 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Used</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E9</td>
 <td>P2 Key 7 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>P2 Key 7 LandMine</td>
-<td>📝?</td>
+<td>✅</td>
 <td>Not Used</td>
 <td>~</td>
-<td>Not Used</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>EA</td>
@@ -3786,7 +3794,7 @@ Long Note Sections #xxx51-69 - #LNTYPE1, #LNTYPE2 (BMS/PMS)
 </tbody>
 </table> </div>
 <hr>
-<p><em>Written and Maintained with ♡ by Squirrel, with thanks to the feeling-po-mu, BMS command memo, and Japanese BMS/PMS community</em></p>
+<p><em>Written and Maintained with ♡ by Squirrel, with thanks to the feeling-po-mu, BMS command memo, BMS Discord, and Japanese BMS/PMS community</em></p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
