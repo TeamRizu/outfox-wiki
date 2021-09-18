@@ -6,6 +6,10 @@ geekdocCollapseSection: true
 
 Project OutFox contains parsers for the DTX and GDA/G2D chart formats, which are the standard formats used in conjunction with the ``gddm`` and ``gdgf`` game types. The following table contains details on the DTX/GDA/G2D channels that Project OutFox currently supports.
 
+We have recently added parsing support for the guitar/bass side of this chart format, however we have heard that the DTX clients will be removing support for guitar and bass charts in their clients. 
+
+You need not worry about our abandonment of these modes, we will also look at creating a new easier to use format for gdgf in the future which supports 3/5 and 6 fret which has been requested by our community. The game mode can live on with us.
+
 ## DTX/GDA Notedata support as of Alpha 4.10.0
 
 ### Key:
@@ -55,22 +59,22 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
-20|Guitar OPEN|❌|Guitar OPEN|❌|✅|Not Supported yet on DTX
-21|Guitar xxBxx|❌|Guitar xxBxx|❌|✅|Not Supported yet on DTX
-22|Guitar xGxxx|❌|Guitar xGxxx|❌|✅|Not Supported yet on DTX
-23|Guitar xGBxx|❌|Guitar xGBxx|❌|✅|Not Supported yet on DTX
-24|Guitar Rxxxx|❌|Guitar Rxxxx|❌|✅|Not Supported yet on DTX
-25|Guitar RxBxx|❌|Guitar RxBxx|❌|✅|Not Supported yet on DTX
-26|Guitar RGxxx|❌|Guitar RGxxx|❌|✅|Not Supported yet on DTX
-27|Guitar RGBxx|❌|Guitar RGBxx|❌|✅|Not Supported yet on DTX
-28|Guitar Wail|❌|Guitar Wail|❌|✅|Not Supported yet on DTX
+20|Guitar OPEN|✅|Guitar OPEN|✅|✅|Supported in 4.10.0
+21|Guitar xxBxx|✅|Guitar xxBxx|✅|✅|Supported in 4.10.0
+22|Guitar xGxxx|✅|Guitar xGxxx|✅|✅|Supported in 4.10.0
+23|Guitar xGBxx|✅|Guitar xGBxx|✅|✅|Supported in 4.10.0
+24|Guitar Rxxxx|✅|Guitar Rxxxx|✅|✅|Supported in 4.10.0
+25|Guitar RxBxx|✅|Guitar RxBxx|✅|✅|Supported in 4.10.0
+26|Guitar RGxxx|✅|Guitar RGxxx|✅|✅|Supported in 4.10.0
+27|Guitar RGBxx|✅|Guitar RGBxx|✅|✅|Supported in 4.10.0
+28|Guitar Wail|✅|Guitar Wail|✅|✅|Supported in 4.10.0
 29|Not Supported|~|Not Supported|~|~|Not Supported
 2A|Not Supported|~|Not Supported|~|~|Not Supported
 2B|Not Used|~|Not Used|~|~|Not Used
-2C|Not Used|~|Guitar Long Note Start/End Point|❌|✅ AL|Not Supported
-2D|Not Used|~|Bass Long Note Start/End Point|❌|✅ AL|Not Supported
+2C|Not Used|~|Guitar Long Note Start/End Point|❌|✅ AL|Not Supported (TBC for 4.10.0)
+2D|Not Used|~|Bass Long Note Start/End Point|❌|✅ AL|Not Supported (TBC for 4.10.0)
 2E|Not Used|~|Not Used|~|~|Not Used
-2F|Guitar Wailing Sound|❌|Guitar Wailing Sound|❌|✅|Not Supported yet on DTX
+2F|Guitar Wailing Sound|✅|Guitar Wailing Sound|✅|✅|Supported in 4.10.0
 
 ---
 
@@ -205,40 +209,40 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 90|Sound Effect 30|✅|Sound Effect 30|✅|✅|Supported
 91|Sound Effect 31|✅|Sound Effect 31|✅|✅|Supported
 92|Sound Effect 32|✅|Sound Effect 32|✅|✅|Supported
-93|Not Used|~|Guitar xxxYx|❌|✅|Not Supported
-94|Not Used|~|Guitar xxBYx|❌|✅|Not Supported
-95|Not Used|~|Guitar xGxYx|❌|✅|Not Supported
-96|Not Used|~|Guitar xGBYx|❌|✅|Not Supported
-97|Not Used|~|Guitar RxxYx|❌|✅|Not Supported
-98|Not Used|~|Guitar RxBYx|❌|✅|Not Supported
-99|Not Used|~|Guitar RGxYx|❌|✅|Not Supported
-9A|Not Used|~|Guitar RGBYx|❌|✅|Not Supported
-9B|Not Used|~|Guitar xxxxP|❌|✅|Not Supported
-9C|Not Used|~|Guitar xxBxP|❌|✅|Not Supported
-9D|Not Used|~|Guitar xGxxP|❌|✅|Not Supported
-9E|Not Used|~|Guitar xGBxP|❌|✅|Not Supported
-9F|Not Used|~|Guitar RxxxP|❌|✅|Not Supported
+93|Not Used|~|Guitar xxxYx|✅|✅|Supported in 4.10.0
+94|Not Used|~|Guitar xxBYx|✅|✅|Supported in 4.10.0
+95|Not Used|~|Guitar xGxYx|✅|✅|Supported in 4.10.0
+96|Not Used|~|Guitar xGBYx|✅|✅|Supported in 4.10.0
+97|Not Used|~|Guitar RxxYx|✅|✅|Supported in 4.10.0
+98|Not Used|~|Guitar RxBYx|✅|✅|Supported in 4.10.0
+99|Not Used|~|Guitar RGxYx|✅|✅|Supported in 4.10.0
+9A|Not Used|~|Guitar RGBYx|✅|✅|Supported in 4.10.0
+9B|Not Used|~|Guitar xxxxP|✅|✅|Supported in 4.10.0
+9C|Not Used|~|Guitar xxBxP|✅|✅|Supported in 4.10.0
+9D|Not Used|~|Guitar xGxxP|✅|✅|Supported in 4.10.0
+9E|Not Used|~|Guitar xGBxP|✅|✅|Supported in 4.10.0
+9F|Not Used|~|Guitar RxxxP|✅|✅|Supported in 4.10.0
 
 ---
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
-A0|Bass OPEN|❌|Bass OPEN|❌|✅|Not Supported
-A1|Bass xxBxx|❌|Bass xxBxx|❌|✅|Not Supported
-A2|Bass xGxxx|❌|Bass xGxxx|❌|✅|Not Supported
-A3|Bass xGBxx|❌|Bass xGBxx|❌|✅|Not Supported
-A4|Bass Rxxxx|❌|Bass Rxxxx|❌|✅|Not Supported
-A5|Bass RxBxx|❌|Bass RxBxx|❌|✅|Not Supported
-A6|Bass RGxxx|❌|Bass RGxxx|❌|✅|Not Supported
-A7|Bass RGBxx|❌|Bass RGBxx|❌|✅|Not Supported
-A8|Bass Wail|❌|Bass Wail|❌|✅|Not Supported
-A9|Not Used|~|Guitar RxBxP|❌|✅|Not Supported
-AA|Not Used|~|Guitar RGxxP|❌|✅|Not Supported
-AB|Not Used|~|Guitar RGBxP|❌|✅|Not Supported
-AC|Not Used|~|Guitar xxxYP|❌|✅|Not Supported
-AD|Not Used|~|Guitar xxBYP|❌|✅|Not Supported
-AE|Not Used|~|Guitar xGxYP|❌|✅|Not Supported
-AF|Not Used|~|Guitar xGBYP|❌|✅|Not Supported
+A0|Bass OPEN|✅|Bass OPEN|✅|✅|Supported in 4.10.0
+A1|Bass xxBxx|✅|Bass xxBxx|✅|✅|Supported in 4.10.0
+A2|Bass xGxxx|✅|Bass xGxxx|✅|✅|Supported in 4.10.0
+A3|Bass xGBxx|✅|Bass xGBxx|✅|✅|Supported in 4.10.0
+A4|Bass Rxxxx|✅|Bass Rxxxx|✅|✅|Supported in 4.10.0
+A5|Bass RxBxx|✅|Bass RxBxx|✅|✅|Supported in 4.10.0
+A6|Bass RGxxx|✅|Bass RGxxx|✅|✅|Supported in 4.10.0
+A7|Bass RGBxx|✅|Bass RGBxx|✅|✅|Supported in 4.10.0
+A8|Bass Wail|✅|Bass Wail|✅|✅|Supported in 4.10.0
+A9|Not Used|~|Guitar RxBxP|✅|✅|Supported in 4.10.0
+AA|Not Used|~|Guitar RGxxP|✅|✅|Supported in 4.10.0
+AB|Not Used|~|Guitar RGBxP|✅|✅|Supported in 4.10.0
+AC|Not Used|~|Guitar xxxYP|✅|✅|Supported in 4.10.0
+AD|Not Used|~|Guitar xxBYP|✅|✅|Supported in 4.10.0
+AE|Not Used|~|Guitar xGxYP|✅|✅|Supported in 4.10.0
+AF|Not Used|~|Guitar xGBYP|✅|✅|Supported in 4.10.0
 
 ---
 
@@ -270,59 +274,59 @@ C1|Beat Bar Offset|❌|Beat Bar Offset|❌|✅|Not Supported
 C2|Hide Beat/Measure bar|❌|Hide Beat/Measure bar|❌|✅|Not Supported
 C3|Not Used|❌|Not Used|❌|❌|Not Used
 C4|Replacing BGA Layer 1|❌|Replacing BGA Layer 1|❌|✅|Not Supported
-C5|Not Used|~|Bass xxxYx|❌|✅|Not Supported
-C6|Not Used|~|Bass xxBYx|❌|✅|Not Supported
+C5|Not Used|~|Bass xxxYx|✅|✅|Supported in 4.10.0
+C6|Not Used|~|Bass xxBYx|✅|✅|Supported in 4.10.0
 C7|Replacing BGA Layer 2|❌|Replacing BGA Layer 2|❌|✅|Not Supported
-C8|Not Used|~|Bass xGxYx|❌|✅|Not Supported
-C9|Not Used|~|Bass xGBYx|❌|✅|Not Supported
-CA|Not Used|~|Bass RxxYx|❌|✅|Not Supported
-CB|Not Used|~|Bass RxBYx|❌|✅|Not Supported
-CC|Not Used|~|Bass RGxYx|❌|✅|Not Supported
-CD|Not Used|~|Bass RGBYx|❌|✅|Not Supported
-CE|Not Used|~|Bass xxxxP|❌|✅|Not Supported
-CF|Not Used|~|Bass xxBxP|❌|✅|Not Supported
+C8|Not Used|~|Bass xGxYx|✅|✅|Supported in 4.10.0
+C9|Not Used|~|Bass xGBYx|✅|✅|Supported in 4.10.0
+CA|Not Used|~|Bass RxxYx|✅|✅|Supported in 4.10.0
+CB|Not Used|~|Bass RxBYx|✅|✅|Supported in 4.10.0
+CC|Not Used|~|Bass RGxYx|✅|✅|Supported in 4.10.0
+CD|Not Used|~|Bass RGBYx|✅|✅|Supported in 4.10.0
+CE|Not Used|~|Bass xxxxP|✅|✅|Supported in 4.10.0
+CF|Not Used|~|Bass xxBxP|✅|✅|Supported in 4.10.0
 
 ---
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
-D0|Not Used|~|Guitar RxxYP|❌|✅|Not Supported
-D1|Not Used|~|Guitar RxBYP|❌|✅|Not Supported
-D2|Not Used|~|Guitar RGxYP|❌|✅|Not Supported
-D3|Not Used|~|Guitar RGBYP|❌|✅|Not Supported
+D0|Not Used|~|Guitar RxxYP|✅|✅|Supported in 4.10.0
+D1|Not Used|~|Guitar RxBYP|✅|✅|Supported in 4.10.0
+D2|Not Used|~|Guitar RGxYP|✅|✅|Supported in 4.10.0
+D3|Not Used|~|Guitar RGBYP|✅|✅|Supported in 4.10.0
 D4|Not Used|~|Not Used|❌|❌|Not Used
 D5|Replacing BGA Layer 3|❌|Replacing BGA Layer 3|❌|✅|Not Supported
 D6|Replacing BGA Layer 4|❌|Replacing BGA Layer 4|❌|✅|Not Supported
 D7|Replacing BGA Layer 5|❌|Replacing BGA Layer 5|❌|✅|Not Supported
 D8|Replacing BGA Layer 6|❌|Replacing BGA Layer 6|❌|✅|Not Supported
 D9|Replacing BGA Layer 7|❌|Replacing BGA Layer 7|❌|✅|Not Supported
-DA|Not Used|~|Bass xGxxP|❌|✅|Not Supported
-DB|Not Used|~|Bass xGBxP|❌|✅|Not Supported
-DC|Not Used|~|Bass RxxxP|❌|✅|Not Supported
-DD|Not Used|~|Bass RxBxP|❌|✅|Not Supported
-DE|Not Used|~|Bass RGxxP|❌|✅|Not Supported
-DF|Not Used|~|Bass RGBxP|❌|✅|Not Supported
+DA|Not Used|~|Bass xGxxP|❌|✅|Supported in 4.10.0
+DB|Not Used|~|Bass xGBxP|❌|✅|Supported in 4.10.0
+DC|Not Used|~|Bass RxxxP|❌|✅|Supported in 4.10.0
+DD|Not Used|~|Bass RxBxP|❌|✅|Supported in 4.10.0
+DE|Not Used|~|Bass RGxxP|❌|✅|Supported in 4.10.0
+DF|Not Used|~|Bass RGBxP|❌|✅|Supported in 4.10.0
 
 ---
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
 E0|Replacing BGA Layer 8|❌|Replacing BGA Layer 8|❌|✅|Not Supported
-E1|Not Used|~|Bass xxxYP|❌|✅|Not Supported
-E2|Not Used|~|Bass xxBYP|❌|✅|Not Supported
-E3|Not Used|~|Bass xGxYP|❌|✅|Not Supported
-E4|Not Used|~|Bass xGBYP|❌|❌|Not Used
-E5|Not Used|~|Bass RxxYP|❌|✅|Not Supported
-E6|Not Used|~|Bass RxBYP|❌|✅|Not Supported
-E7|Not Used|~|Bass RGxYP|❌|✅|Not Supported
-E8|Not Used|~|Bass RGBYP|❌|✅|Not Supported
+E1|Not Used|~|Bass xxxYP|✅|✅|Supported in 4.10.0
+E2|Not Used|~|Bass xxBYP|✅|✅|Supported in 4.10.0
+E3|Not Used|~|Bass xGxYP|✅|✅|Supported in 4.10.0
+E4|Not Used|~|Bass xGBYP|✅|✅|Supported in 4.10.0
+E5|Not Used|~|Bass RxxYP|✅|✅|Supported in 4.10.0
+E6|Not Used|~|Bass RxBYP|✅|✅|Supported in 4.10.0
+E7|Not Used|~|Bass RGxYP|✅|✅|Supported in 4.10.0
+E8|Not Used|~|Bass RGBYP|✅|✅|Supported in 4.10.0
 E9|Not Used|~|Not Used|❌|❌|Not Used
 EA|Not Used|~|Not Used|❌|❌|Not Used
 EB|Not Used|~|Not Used|❌|❌|Not Used
 EC|Metronome|❌|Metronome|❌|✅|Not Supported
 ED|Start Sound|❌|Start Sound|❌|✅|Not Supported
-EE|Not Used|~|Bass RGxxP|❌|✅|Not Supported
-EF|Not Used|~|Bass RGBxP|❌|✅|Not Supported
+EE|Not Used|~|Bass RGxxP|✅|✅|Supported in 4.10.0
+EF|Not Used|~|Bass RGBxP|✅|✅|Supported in 4.10.0
 
 ---
 
