@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=description content="Project OutFox contains parsers for the DTX and GDA/G2D chart formats, which are the standard formats used in conjunction with the gddm and gdgf game types. The following table contains details on the DTX/GDA/G2D channels that Project OutFox currently supports.
-DTX/GDA Notedata support as of Alpha 4.10.0    Key:     ✅ Fully supported and used in Mode ✓ Fully supported and not used in Mode 📝?">
+We have recently added parsing support for the guitar/bass side of this chart format, however we have heard that the DTX clients will be removing support for guitar and bass charts in their clients.">
 <title>DTX & GDA/G2D Support | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
@@ -684,6 +684,8 @@ hidden-mobile" itemprop=breadcrumb>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>DTX & GDA/G2D Support</h1>
 <p>Project OutFox contains parsers for the DTX and GDA/G2D chart formats, which are the standard formats used in conjunction with the <code>gddm</code> and <code>gdgf</code> game types. The following table contains details on the DTX/GDA/G2D channels that Project OutFox currently supports.</p>
+<p>We have recently added parsing support for the guitar/bass side of this chart format, however we have heard that the DTX clients will be removing support for guitar and bass charts in their clients.</p>
+<p>You need not worry about our abandonment of these modes, we will also look at creating a new easier to use format for gdgf in the future which supports 3/5 and 6 fret which has been requested by our community. The game mode can live on with us.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=dtxgda-notedata-support-as-of-alpha-4100>
 DTX/GDA Notedata support as of Alpha 4.10.0
@@ -1020,83 +1022,83 @@ Channel Support Table
 <tr>
 <td>20</td>
 <td>Guitar OPEN</td>
-<td>❌</td>
-<td>Guitar OPEN</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>Guitar OPEN</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>21</td>
 <td>Guitar xxBxx</td>
-<td>❌</td>
-<td>Guitar xxBxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>Guitar xxBxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>22</td>
 <td>Guitar xGxxx</td>
-<td>❌</td>
-<td>Guitar xGxxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>Guitar xGxxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>23</td>
 <td>Guitar xGBxx</td>
-<td>❌</td>
-<td>Guitar xGBxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>Guitar xGBxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>24</td>
 <td>Guitar Rxxxx</td>
-<td>❌</td>
-<td>Guitar Rxxxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>Guitar Rxxxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>25</td>
 <td>Guitar RxBxx</td>
-<td>❌</td>
-<td>Guitar RxBxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>Guitar RxBxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>26</td>
 <td>Guitar RGxxx</td>
-<td>❌</td>
-<td>Guitar RGxxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>Guitar RGxxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>27</td>
 <td>Guitar RGBxx</td>
-<td>❌</td>
-<td>Guitar RGBxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>Guitar RGBxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>28</td>
 <td>Guitar Wail</td>
-<td>❌</td>
-<td>Guitar Wail</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>Guitar Wail</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>29</td>
@@ -1132,7 +1134,7 @@ Channel Support Table
 <td>Guitar Long Note Start/End Point</td>
 <td>❌</td>
 <td>✅ AL</td>
-<td>Not Supported</td>
+<td>Not Supported (TBC for 4.10.0)</td>
 </tr>
 <tr>
 <td>2D</td>
@@ -1141,7 +1143,7 @@ Channel Support Table
 <td>Bass Long Note Start/End Point</td>
 <td>❌</td>
 <td>✅ AL</td>
-<td>Not Supported</td>
+<td>Not Supported (TBC for 4.10.0)</td>
 </tr>
 <tr>
 <td>2E</td>
@@ -1155,11 +1157,11 @@ Channel Support Table
 <tr>
 <td>2F</td>
 <td>Guitar Wailing Sound</td>
-<td>❌</td>
-<td>Guitar Wailing Sound</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported yet on DTX</td>
+<td>Guitar Wailing Sound</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2169,117 +2171,117 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xxxYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>94</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xxBYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>95</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xGxYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>96</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xGBYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>97</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RxxYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>98</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RxBYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>99</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RGxYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>9A</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RGBYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>9B</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xxxxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>9C</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xxBxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>9D</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xGxxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>9E</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xGBxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>9F</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RxxxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2300,146 +2302,146 @@ Channel Support Table
 <tr>
 <td>A0</td>
 <td>Bass OPEN</td>
-<td>❌</td>
-<td>Bass OPEN</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Bass OPEN</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>A1</td>
 <td>Bass xxBxx</td>
-<td>❌</td>
-<td>Bass xxBxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Bass xxBxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>A2</td>
 <td>Bass xGxxx</td>
-<td>❌</td>
-<td>Bass xGxxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Bass xGxxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>A3</td>
 <td>Bass xGBxx</td>
-<td>❌</td>
-<td>Bass xGBxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Bass xGBxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>A4</td>
 <td>Bass Rxxxx</td>
-<td>❌</td>
-<td>Bass Rxxxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Bass Rxxxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>A5</td>
 <td>Bass RxBxx</td>
-<td>❌</td>
-<td>Bass RxBxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Bass RxBxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>A6</td>
 <td>Bass RGxxx</td>
-<td>❌</td>
-<td>Bass RGxxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Bass RGxxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>A7</td>
 <td>Bass RGBxx</td>
-<td>❌</td>
-<td>Bass RGBxx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Bass RGBxx</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>A8</td>
 <td>Bass Wail</td>
-<td>❌</td>
-<td>Bass Wail</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Bass Wail</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>A9</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RxBxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>AA</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RGxxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>AB</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RGBxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>AC</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xxxYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>AD</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xxBYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>AE</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xGxYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>AF</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar xGBYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2667,18 +2669,18 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Bass xxxYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>C6</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass xxBYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>C7</td>
@@ -2694,72 +2696,72 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Bass xGxYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>C9</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass xGBYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>CA</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass RxxYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>CB</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass RxBYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>CC</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass RGxYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>CD</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass RGBYx</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>CE</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass xxxxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>CF</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass xxBxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2782,36 +2784,36 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RxxYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D1</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RxBYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D2</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RGxYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D3</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar RGBYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>D4</td>
@@ -2874,7 +2876,7 @@ Channel Support Table
 <td>Bass xGxxP</td>
 <td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>DB</td>
@@ -2883,7 +2885,7 @@ Channel Support Table
 <td>Bass xGBxP</td>
 <td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>DC</td>
@@ -2892,7 +2894,7 @@ Channel Support Table
 <td>Bass RxxxP</td>
 <td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>DD</td>
@@ -2901,7 +2903,7 @@ Channel Support Table
 <td>Bass RxBxP</td>
 <td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>DE</td>
@@ -2910,7 +2912,7 @@ Channel Support Table
 <td>Bass RGxxP</td>
 <td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>DF</td>
@@ -2919,7 +2921,7 @@ Channel Support Table
 <td>Bass RGBxP</td>
 <td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Supported in 4.10.0</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2951,72 +2953,72 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Bass xxxYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E2</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass xxBYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E3</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass xGxYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E4</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass xGBYP</td>
-<td>❌</td>
-<td>❌</td>
-<td>Not Used</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E5</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass RxxYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E6</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass RxBYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E7</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass RGxYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E8</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass RGBYP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>E9</td>
@@ -3068,18 +3070,18 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Bass RGxxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 <tr>
 <td>EF</td>
 <td>Not Used</td>
 <td>~</td>
 <td>Bass RGBxP</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.10.0</td>
 </tr>
 </tbody>
 </table> </div>
