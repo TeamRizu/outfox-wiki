@@ -41,6 +41,16 @@ body {
   --footer-font-color: #ffffff;
   --footer-link-color: #ffcc5c;
   --footer-link-color-visited: #ffcc5c;
+
+  --gdoc-hint-danger-border: #d50000;
+  --gdoc-hint-warning-border: #ffab00;
+  --gdoc-hint-info-border: #0091ea;
+
+  --gdoc-hint-danger-background: #fdf2f2;
+  --gdoc-hint-warning-background: #fdfaf4;
+  --gdoc-hint-info-background: #f3f9fd;
+
+  --gdoc-hint-text-color: var(--body-font-color);
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -69,6 +79,16 @@ body {
     --footer-font-color: #ffffff;
     --footer-link-color: #ffcc5c;
     --footer-link-color-visited: #ffcc5c;
+
+    --gdoc-hint-danger-border: #d50000;
+    --gdoc-hint-warning-border: #ffab00;
+    --gdoc-hint-info-border: #0091ea;
+
+    --gdoc-hint-danger-background: #fdf2f2;
+    --gdoc-hint-warning-background: #fdfaf4;
+    --gdoc-hint-info-background: #f3f9fd;
+
+    --gdoc-hint-text-color: var(--body-font-color);
   }
 }
 
@@ -99,6 +119,16 @@ body {
   --footer-font-color: #D5D9F5;
   --footer-link-color: #ffcc5c;
   --footer-link-color-visited: #ffcc5c;
+
+  --gdoc-hint-danger-border: rgb(156, 20, 16); 
+  --gdoc-hint-warning-border: rgb(174, 127, 34);
+  --gdoc-hint-info-border: rgb(37, 113, 155);
+
+  --gdoc-hint-danger-background: rgb(45, 13, 11);
+  --gdoc-hint-warning-background: rgb(50, 38, 17);
+  --gdoc-hint-info-background: rgb(40, 40, 40);
+
+  --gdoc-hint-text-color: var(--body-font-color);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -127,6 +157,16 @@ body {
   --footer-font-color: #D5D9F5;
   --footer-link-color: #ffcc5c;
   --footer-link-color-visited: #ffcc5c;
+
+  --gdoc-hint-danger-border: rgb(156, 20, 16); 
+  --gdoc-hint-warning-border: rgb(174, 127, 34);
+  --gdoc-hint-info-border: rgb(37, 113, 155);
+
+  --gdoc-hint-danger-background: rgb(45, 13, 11);
+  --gdoc-hint-warning-background: rgb(50, 38, 17);
+  --gdoc-hint-info-background: rgb(40, 40, 40);
+
+  --gdoc-hint-text-color: var(--body-font-color);
   }
 }
 
@@ -146,7 +186,27 @@ border-bottom: 4px solid #FFA147;
 
 @media screen and (min-width:39rem) {
 .gdoc-brand__title {
-	display: none;
-	}
+    display: none;
+    }
 }
 
+/* Check for elements to apply dark mode on. */
+:root .gdoc-hint.danger {
+    border-left-color: var(--gdoc-hint-danger-border);
+    background-color: var(--gdoc-hint-danger-background);
+    color: var(--gdoc-hint-text-color);
+    filter: brightness(1.15) !important;
+}
+:root .gdoc-hint.warning {
+    border-left-color: var(--gdoc-hint-warning-border);
+    background-color: var(--gdoc-hint-warning-background);
+    color: var(--gdoc-hint-text-color);
+    filter: brightness(1.15) !important;
+}
+
+:root .gdoc-hint.info {
+    border-left-color: var(--gdoc-hint-info-border);
+    background-color: var(--gdoc-hint-info-background);
+    color: var(--gdoc-hint-text-color);
+    filter: brightness(1.15) !important;
+}
