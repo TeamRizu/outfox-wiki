@@ -16,3 +16,5 @@ This guide will comprise of the process on how to create such theme from scratch
 
 Table of contents:
 {{<toc-tree>}}
+
+*Guide Written and Maintained by Jose_Varela.*

@@ -25,7 +25,7 @@ Contains images of gameplay objects.
 Contains INI files that with the transliterated strings. For more information, visit [the Translation guide](../../translation).
 {{</columns>}}
 {{<columns>}}
-## Modules
+## [Modules](../Theming-Modules)
 An optional folder that contains Lua files with simple functions or tables that can be called on demand, rather than
 storing the file on memory all the time.
 <--->
@@ -33,6 +33,6 @@ storing the file on memory all the time.
 An optional folder that contains special files, but also can contain other kinds of files that don't have a particular folder to reside in.
 {{</columns>}}
 {{<columns>}}
-## Scripts
+## [Scripts](../Theming-Scripts)
 Lua files that will be loaded into memory, that can be accessed at any time.
 {{</columns>}}
