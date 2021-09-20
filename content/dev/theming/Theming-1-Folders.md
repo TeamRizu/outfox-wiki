@@ -33,6 +33,6 @@ storing the file on memory all the time.
 An optional folder that contains special files, but also can contain other kinds of files that don't have a particular folder to reside in.
 {{</columns>}}
 {{<columns>}}
-## Scripts
+## [Scripts](../Theming-Scripts)
 Lua files that will be loaded into memory, that can be accessed at any time.
 {{</columns>}}
