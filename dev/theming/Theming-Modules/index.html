@@ -3,7 +3,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Modules in OutFox are Lua files that provide snippet-like functions, tables, and metatables that can be quickly used and unloaded from memory when done. These can be loaded by using the LoadModule function. Depending on the return methodology from the module, it can be called in several ways.
+<meta name=description content="Introduced in OutFox Alpha 4, Modules are Lua files that provide snippet-like functions, tables, and metatables that can be quickly used and unloaded from memory when done. These can be loaded by using the LoadModule function. Depending on the return methodology from the module, it can be called in several ways.
 Given the loading nature of modules, it is not recommended to use LoadModule directly if the function that will load it is called too quickly (like calling the module inside of a JudgmentMessageCommand), specially with modules that require file loading/saving.">
 <title>Modules | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
@@ -852,7 +852,7 @@ hidden-mobile" itemprop=breadcrumb>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>Modules</h1>
-<p>Modules in OutFox are Lua files that provide snippet-like functions, tables, and metatables that can be quickly used and unloaded from memory when done.
+<p>Introduced in <a class=gdoc-markdown__link href=../../../releases/A4.0/>OutFox Alpha 4</a>, Modules are Lua files that provide snippet-like functions, tables, and metatables that can be quickly used and unloaded from memory when done.
 These can be loaded by using the <code>LoadModule</code> function. Depending on the return methodology from the module, it can be called in several ways.</p>
 <blockquote class="gdoc-hint warning">
 <p>Given the loading nature of modules, it is not recommended to use LoadModule directly if the function
