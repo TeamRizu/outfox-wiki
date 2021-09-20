@@ -570,6 +570,13 @@ Creating a Font
 </li>
 <li>
 <span class=flex>
+<a href=../../../dev/theming/Theming-Scripts/ class=gdoc-nav__entry>
+Scripts
+</a>
+</span>
+</li>
+<li>
+<span class=flex>
 <a href=../../../dev/theming/Theming-Custom-Input/ class=gdoc-nav__entry>
 Custom Input
 </a>
@@ -864,7 +871,7 @@ graph LR
 </p>
 <p>To create a file for a specific layer, just name the file as <code>[ScreenName] [layer kind]</code>, so for example a Lua file that will control the Overlay layer from <code>ScreenTitleMenu</code>.</p>
 <pre tabindex=0><code>ScreenTitleMenu overlay.lua
-</code></pre><p>An important thing to mention with screen layers is: every layer <em><strong>MUST</strong></em> return a table. This is needed so the screen manager can create the screen, so either an empty table or an ActorFrame with any kind of content will do. For in-depth information on how to create an ActorFrame base, check <a class=gdoc-markdown__link href=../../actors/ActorsLua-Anatomy+Structure/#actorframes-and-how-to-build-them>ActorFrames and how to build them</a>.</p>
+</code></pre><p>An important thing to mention with screen layers is: every layer <em><strong>MUST</strong></em> return a table. This is needed so the screen manager can create the screen, so either an empty table or an ActorFrame with any kind of content will do. For in-depth information on how to create an ActorFrame base, check <a class=gdoc-markdown__link href=../../../dev/actors/actortypes/actorframe>ActorFrames and how to build them</a>.</p>
 <blockquote class="gdoc-hint warning">
 Due to this draw order, keep in mind that <strong>objects created on higher levels will always be shown first before the others.</strong>
 </blockquote>
