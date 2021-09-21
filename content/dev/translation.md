@@ -135,7 +135,7 @@ Translating can be boring and tedious. Sometimes it's hard to locate & remove li
 ![](/translation/translatorView.jpg)
 {{< /tab >}}
 {{< tab "Tiny-Webini" >}}
-[Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini) is a tool made by [zerinho6](https://tiny-foxes.github.io/Tiny-Web/members/moruzerinho6.png) to help with translations of [OutFox Website](https://projectmoon.dance/). While not used to translate OutFox (unless themes adopt HTML in the future), it uses the same translation system as OutFox. It makes less HTML code or none at all being necessary to translate the website. While the souce code might be able to run on other OS by building manually, it only supports Windows officially.
+[Tiny-Webini](https://github.com/Tiny-Foxes/Tiny-Webini) is a tool made by [zerinho6](https://tiny-foxes.github.io/Tiny-Web/members/moruzerinho6.png) to help with translations of [OutFox Website](https://projectoutfox.com/). While not used to translate OutFox (unless themes adopt HTML in the future), it uses the same translation system as OutFox. It makes less HTML code or none at all being necessary to translate the website. While the souce code might be able to run on other OS by building manually, it only supports Windows officially.
 
 > Translate OutFox website with the same style OutFox uses for its translations.
 
@@ -229,7 +229,7 @@ So you finished the translation for this alpha before the release? You can then 
 
 ## Webmasters Project
 
-Webmasters is an internal OutFox initiative to translate [OutFox Website](https://projectmoon.dance/). Being a webmaster means: 
+Webmasters is an internal OutFox initiative to translate [OutFox Website](https://projectoutfox.com/). Being a webmaster means: 
 
 - Partial access to the website backend to implement your translation files;
 - Closer contact with the OutFox Commmunity team for quick updates and help;
