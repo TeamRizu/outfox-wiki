@@ -38,7 +38,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 {{< button size="large" relref="user-guide/setup/install" >}}Installation{{< /button >}}
 {{< button size="large" relref="user-guide/setup/getting-started/" >}}Getting Started{{< /button >}}
 {{< button size="large" relref="user-guide/setup/controllers/" >}}Controllers{{< /button >}}
-{{< button size="large" relref="user-guide/games/" >}}Game modes{{< /button >}}
+{{< button size="large" relref="user-guide/games/" >}}Supported Modes{{< /button >}}
 {{< button size="large" relref="user-guide/config/folders/" >}}Content folders{{< /button >}}
 {{< button size="large" relref="user-guide/config/preferences/" >}}Preferences file{{< /button >}}
 
@@ -46,7 +46,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 
 ## For Developers and Creators
 
-{{< button size="large" relref="dev/mode-support/" >}}Mode support{{< /button >}}
+{{< button size="large" relref="dev/mode-support/" >}}NoteLoader support{{< /button >}}
 {{< button size="large" relref="dev/actors/" >}}Lua and Actors{{< /button >}}
 {{< button size="large" relref="dev/effects/" >}}Effects and Gimmicks{{< /button >}}
 {{< button size="large" relref="dev/mods/" >}}Modifiers{{< /button >}}
