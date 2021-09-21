@@ -62,7 +62,7 @@ If there's no `portable.ini` in your game folder, then you need to go into a spe
 
 Project OutFox uses XInput, it means controllers need to get mapped first and then never again. _It means every single controller should work with Project OutFox_
 
-The game doesn't even try to automap things yet, there's a [tutorial step-by-step how to map](https://projectmoon.dance/help/controllers)
+The game doesn't even try to automap things yet, there's a [tutorial step-by-step how to map](https://projectoutfox.com/help/controllers)
 
 ## Q: I'm new to this community and I don't understand many terms, could you explain what they mean?
 
@@ -120,7 +120,7 @@ Open `Themes` folder and drop here any theme that supports 5.x
 
 Open `NoteSkins` folder, open the folder that represents what noteskin gamemode the noteskin is made for, drop the **NoteSkin Folder** there.
 
-You can find more noteskins in https://projectmoon.dance/addons/noteskins
+You can find more noteskins in https://projectoutfox.com/addons/noteskins
 
 ### For Judgments
 

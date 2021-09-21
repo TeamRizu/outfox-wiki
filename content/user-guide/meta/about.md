@@ -57,4 +57,4 @@ The community members assists by creating, maintaining and expanding community p
 
 - Moderating the [Discord Server](https://discord.gg/cN4TjgQdcA), [Forum](https://discourse.projectmoon.dance/), [Subreddit](https://www.reddit.com/r/OutFox/) and our [Bug Hunter Repository](https://github.com/TeamRizu/OutFox);
 - Coordinating [Tiny-Foxes](https://github.com/Tiny-Foxes), a community group focusing on add-ons and localizations for Project OutFox.
-- Creation and organization of [OutFox Community Pack](https://projectmoon.dance/outfox-community-pack).
+- Creation and organization of [OutFox Community Pack](https://projectoutfox.com/outfox-serenity).
