@@ -210,3 +210,8 @@ border-bottom: 4px solid #FFA147;
     color: var(--gdoc-hint-text-color);
     filter: brightness(1.15) !important;
 }
+
+video {
+	max-width: 100%;
+	border-radius: .15rem;	
+}
