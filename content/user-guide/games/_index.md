@@ -8,7 +8,7 @@ Project OutFox supports a variety of game **modes**, which can simulate differen
 
 This page will give a little more detail and history about the modes that we support, and new additions and tweaks added to _Project OutFox_ that you may have not noticed. Click on a button below for mode specific information in more detail, and to learn a bit about how the mode has evolved.
 
-![Screenshot of the Project OutFox game selection screen.](/selectmode.png)
+![Screenshot of the Project OutFox game selection screen.](/user-guide/selectmode.png)
 
 As of OutFox-alpha-4.10.0, they include:
 
