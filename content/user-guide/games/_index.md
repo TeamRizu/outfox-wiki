@@ -41,7 +41,7 @@ As of OutFox-alpha-4.10.0, they include:
 
 {{< columns >}}
 
-## Project OutFox Dance Pad Modes
+## Dance Pad Modes
 {{< button size="medium" relref="user-guide/games/dance"    >}}dance{{< /button >}}
 {{< button size="medium" relref="user-guide/games/pump"     >}}pump{{< /button >}}
 {{< button size="medium" relref="user-guide/games/techno"   >}}techno{{< /button >}}
@@ -49,14 +49,14 @@ As of OutFox-alpha-4.10.0, they include:
 {{< button size="medium" relref="user-guide/games/kickbox"  >}}kickbox{{< /button >}}
 <--->
 
-## Project OutFox Sensor Based Modes
+## Sensor Based Modes
 
 {{< button size="medium" relref="user-guide/games/para" 	>}}para{{< /button >}}
 {{< button size="medium" relref="user-guide/games/ez2d" 	>}}ez2d{{< /button >}}
 {{< button size="medium" relref="user-guide/games/maniax" 	>}}maniax{{< /button >}}
 <--->
 
-## Project OutFox Controller Based Modes
+## Controller Based Modes
 
 {{< button size="medium" relref="user-guide/games/beat"		>}}beat{{< /button >}}
 {{< button size="medium" relref="user-guide/games/pomu" 	>}}pomu{{< /button >}}
