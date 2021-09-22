@@ -43,11 +43,7 @@ First off:
 
 6. Press **P** to play your song - you should see the attack you added scroll up the screen with the notes.
    * When the attack with your `Beat` modifier scrolls to the top of the screen, the arrows will start bouncing to the beat!
-
-![The beat modifier in gameplay](/making-simfiles/mods-attacks-beat.m4v ':include :type=video')
-
-
-
+   <video src="/making-simfiles/mods-attacks-beat.m4v" controls></video>
 
 ## Editing/Removing Attacks
 
@@ -96,7 +92,7 @@ Percentages **above 100%** are a-ok if you want *really* strong mods! **Negative
 
 Finally: `No` means the same thing as `0%`. Say, if you have a `Beat` attack earlier in the song, you can turn it off with `0% Beat` or `No Beat` - either works!
 
-<video src="/making-simfiles/mods-attacks-beat-strength.m4v" controls="">The difference between 50% Beat and 100% Beat</video>
+<video src="/making-simfiles/mods-attacks-beat-strength.m4v" controls>The difference between 50% Beat and 100% Beat</video>
 
 > In the above video - **Left = 40% Beat, Right = 125% Beat**
 
@@ -117,7 +113,7 @@ Higher numbers apply mods faster, lower numbers (decimals included!) make mods a
 
 > Mod approach rate can also combine with **any strength**, including **0%**! If you want to get rid of a mod really fast, you can use an attack like `*50 0% Beat`.
 
-<video src="/making-simfiles/mods-attacks-beat-speed.m4v" controls="">The difference between \*0.5 Beat and \*10 Beat</video>
+<video src="/making-simfiles/mods-attacks-beat-speed.m4v" controls>The difference between \*0.5 Beat and \*10 Beat</video>
 
 > In the above video - **Left = \*0.5 Beat** (fades in half as fast), **Right = \*10 Beat** (fades in 10x as fast!). They both get to the **same strength** at the end, but the **left side takes longer** to do so.
 
