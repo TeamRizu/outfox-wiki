@@ -4,7 +4,6 @@ description: Details about the `ds3ddx` mode supported by Project OutFox.
 weight: 2
 ---
 
-# Game Mode: para
 
 <!--
 insert picture of gameplay 

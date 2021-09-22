@@ -5,8 +5,6 @@ weight: 2
 ---
 
 
-# Game Mode: ez2d
-
 <!--
 insert picture of gameplay 
 -->

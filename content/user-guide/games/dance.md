@@ -4,7 +4,6 @@ description: Details about the `dance` mode supported by Project OutFox.
 weight: 2
 ---
 
-# Game Mode: Dance
 
 <!--
 insert picture of gameplay 
@@ -24,19 +23,23 @@ First Seen:
  * StepMania 0.93 - ``(single4)`` (17th October 2001)
  * StepMania 0.94 - ``(versus4)`` (20 November 2001)
  * StepMania 0.94 - ``(double4)`` (20 November 2001)
+ * StepMania 1.64 - ``(couple)`` (19 March 2002)
+ * StepMania v3.0 beta 6 - ``(dance-edit-couple)`` (17 August 2002)
+ * StepMania 1.64 - ``(couple)`` (19 March 2002)
+ * StepMania v4.0 CVS - ``(routine)`` (17 June 2006) 
 
 Replaced by:
  * StepMania 1.64 - ``(single)`` (19 March 2002)
  * StepMania 1.64 - ``(versus)`` (19 March 2002)
  * StepMania 1.64 - ``(double)`` (19 March 2002)
- * StepMania 1.64 - ``(couple)`` (19 March 2002)
+
 
 Replaced by:
  * StepMania v3.0 "compatibility test" - ``(dance-single)`` (27 May 2002)
  * StepMania v3.0 "compatibility test" - ``(dance-versus)`` (27 May 2002)
  * StepMania v3.0 "compatibility test" - ``(dance-double)`` (27 May 2002)
  * StepMania v3.0 "compatibility test" - ``(dance-couple)`` (27 May 2002)
- * StepMania v3.0 beta 6 - ``(dance-edit-couple)`` (17 August 2002)
+
 
 Replaced by:
  * StepMania v3.0 beta 6 - ``(DDR Single)`` (6 September 2002)
@@ -50,7 +53,15 @@ Replaced by:
  * StepMania v3.0 beta 6 - ``(versus)`` (15 September 2002)
  * StepMania v3.0 beta 6 - ``(double)`` (15 September 2002)
  * StepMania v3.0 beta 6 - ``(couple)`` (15 September 2002)
- * StepMania v3.0 beta 6 - ``(couple (edit only))`` (15 September 2002) 
+ * StepMania v3.0 beta 6 - ``(couple (edit only))`` (15 September 2002)
+
+Replaced by: ``(dance-)``
+ * StepMania v4.0 CVS - ``(single)`` (15 September 2002)
+ * StepMania v4.0 CVS - ``(versus)`` (15 September 2002)
+ * StepMania v4.0 CVS - ``(double)`` (15 September 2002)
+ * StepMania v4.0 CVS - ``(couple)`` (15 September 2002)
+ * StepMania v4.0 CVS - ``(couple (edit only))`` (15 September 2002)
+ * StepMania v4.0 CVS - ``(routine)`` (17 June 2006)  
 
 ---
 
@@ -71,9 +82,15 @@ Replaced by:
 
 ---
 
-#### 3 Panel:
+#### 3 Panel Left/Right/Down Arrangement: 
 First Seen:
- * StepMania SSC - 3 Panel Left/Right/Down (2nd May 2010) 
+ * StepMania v4.0 SVN - ``(three)`` (15 February 2010)
+
+Replaced by: 
+ * sm-ssc v1.0 beta 3 - ``(threepanel)`` (2 May 2010) 
+
+
+
  * StepMania 5.2 - 3 Panel UpLeft/UpRight/Down
  * OutFox - 3 Panel UpLeft/UpRight/Down
 
