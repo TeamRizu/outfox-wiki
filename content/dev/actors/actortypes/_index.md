@@ -17,83 +17,14 @@ This is a helper function that can be used to dynamically load an actor based on
 
 <center>
 {{<columns>}}
+{{< button size="large" relref="actor/" >}}Actor{{< /button >}}
+{{< button size="large" relref="actorframe/" >}}ActorFrame{{< /button >}}
 {{< button size="large" relref="actormultivertex/" >}}ActorMultiVertex{{< /button >}}
 {{< button size="large" relref="sprite/" >}}Sprite{{< /button >}}
 {{< button size="large" relref="bitmaptext/" >}}BitmapText{{< /button >}}
+{{< button size="large" relref="sound/" >}}Sound{{< /button >}}
 {{</columns>}}
 </center>
-
-## ActorFrame
-
-An Actor that can contain one or more Actors. Think of it as a box that can hold as many objects as it can.
-
-Example:
-```lua
-Def.ActorFrame{
-    -- This sprite is now included inside of the ActorFrame.
-    -- Any changes from the ActorFrame will affect the sprite, such as position, rotation,
-    -- zoom and such.
-    Def.Sprite{}
-}
-```
-
-ActorFrames can hold other actors. The ``Def.`` format is set up like any other lua table, allowing for creating actors in batches. Because of this, there are multiple ways to build an ActorFrame.
-
-### Inline building
-
-Actors can be explicitly placed into an ActorFrame like this:
-```lua
-Def.ActorFrame{
-	Def.Actor{
-		--Commands and stuff go here.
-	},
-	Def.Sprite{
-		--More commands and stuff go here.
-	}
-}
-```
-
-### Concatenation
-
-Because lua tables can be concatenated (added) to each other, so can ActorFrames.
-
-This can allow for programatically creating Actors in batches as needed.
-
-However, if one does not plan on creating actors programmaticly, then a simple `return Def.ActorFrame{...` is all that's needed. Storing it into a local variable that gets returned will waste resources.
-
-There are two ways to add onto an actorframe.
-
-<!-- TODO: There's probably better ways to show this. -->
-Method 1 (indexing):
-```lua
-local t = Def.ActorFrame{
-	Def.Sprite{
-		--commands & stuff
-	},
-	Def.BitmapText{
-		--who even knows
-	},
-}
-
-t[#t+1] = Def.Actor{
-	--It's the third actor
-}
-return t
-```
-
-Method 2 (lua concatenation):
-```lua
-return Def.ActorFrame{
-	Def.Sprite{
-		--commands & stuff
-	},
-	Def.BitmapText{
-		--who even knows
-	},
-} .. Def.Actor{
-	--It's the third actor
-}
-```
 
 ## ActorFrameTexture
 
@@ -563,45 +494,6 @@ Def.SongMeterDisplay{
 	-- Both the Stream and Tip are AutoActors, so they can be any actor type.
 	Stream=Def.Sprite{ Texture="MyStreamBar" },
 	Tip=Def.Sprite{ Texture="MyTip" }
-}
-```
-
-## Sound
-
-Used to play sound files outside of the common theme sound effects and the simfile's song itself.
-
-Removes the need to use `SOUND:PlayOnce()`, as it allows for pre-loading the sound file at the start instead of loading (possibly many times) and playing the sound mid-screen.
-
-```lua
-Def.Sound{
-	-- Load the audio called MySound, which is a ogg file in this example.
-	File="MySound.ogg",
-	-- Lets the audio pane from side to side. Useful for audios that need to play on a specific player side.
-	SupportPan=true,
-	-- Allows the audio to change rate and pitch.
-	SupportRateChanging=false,
-	-- this assigns the audio to be an Action, which is a flag for sounds that allows it to be muted by the player,
-	-- with the use of the Mute Actions key (Default to "Pause").
-	IsAction=true,
-	OnCommand=function(self)
-		-- When creating the actor, sound will not play automatically, so you need to use the play command
-		-- to perform such action.
-		self:play()
-
-		-- If the audio has the "(loop)" flag set on its filename, it will loop infinetly. So to top it, use the
-		-- appropiate command.
-		self:stop()
-
-		-- If the sound needs to be paused on a particular frame, and not to reset, use the pause command.
-		self:pause( true ) -- Use false to resume it.
-
-		-- To control actions like volume, you need to access the ActorSound's RageSound, by using the get function.
-		local MyRageSound = self:get()
-
-		MyRageSound:volume(0.5) -- Changes volume (0 to 1).
-		MyRageSound:pitch( 1.2 ) -- Requires SupportRateChanging to work.
-		MyRageSound:speed( 1.4 ) -- Requires SupportRateChanging to work.
-	end
 }
 ```
 
