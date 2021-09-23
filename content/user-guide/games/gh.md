@@ -31,18 +31,25 @@ The mode was removed completely, along with the note types and midi loader suppo
 #### 5 Key:
 
 First Seen:
- *  - ``(guitar-five)`` (23 September 2006) (Non-Functional)
-
-
-
-Replaced by:
- *  - ``(single)`` (15 September 2002)
-
-Replaced by:
-
+ * Project OutFox alpha 4.9.7.2 - ``(solo)`` (12 March 2021)
+ * Project OutFox alpha 4.9.7.2 - ``(versus)`` (12 March 2021)
+ * Project OutFox alpha 4.9.7.2 - ``(group)`` (12 March 2021) (Non-Functional)
+ * Project OutFox alpha 4.9.7.2 - ``(backup)`` (12 March 2021)
+ * Project OutFox alpha 4.9.7.2 - ``(backup-versus)`` (26 March 2021)
 
 Replaced by:
+ * Project OutFox alpha 4.9.7.2 - ``(solo-versus)`` (26 March 2021) (renamed from ``versus``)
 
+#### 6 Key:
+
+First Seen:
+ * Project OutFox alpha 4.9.7.2 - ``(solo6)`` (12 March 2021)
+ * Project OutFox alpha 4.9.7.2 - ``(group6)`` (12 March 2021)
+ * Project OutFox alpha 4.9.7.2 - ``(backup6)`` (12 March 2021)
+ * Project OutFox alpha 4.9.7.2 - ``(backup-versus6)`` (26 March 2021)
+
+Replaced by:
+ * Project OutFox alpha 4.9.7.2 - ``(solo-versus6)`` (26 March 2021) (renamed from ``group6``)
 
 
 ## Gameplay
