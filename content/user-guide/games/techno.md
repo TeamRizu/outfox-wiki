@@ -24,18 +24,24 @@ In the development of SM 4.0, this mode was broken with the rapid changes brough
 
 First Seen:
  * StepMania v3.0.2 - ``(single8)`` (3 September 2003) 
+ * StepMania v3.0.2 - ``(versus8)`` (7 June 2004) 
  * StepMania v3.0.2 - ``(single4)`` (25 July 2004) 
  * StepMania v3.0.2 - ``(single5)`` (25 July 2004) 
  * StepMania v3.0.2 - ``(versus4)`` (25 July 2004) 
  * StepMania v3.0.2 - ``(versus5)`` (25 July 2004) 
  * StepMania v3.0.2 - ``(double4)`` (25 July 2004) 
  * StepMania v3.0.2 - ``(double5)`` (25 July 2004) 
- * StepMania v3.0.2 - ``(double8)`` (9 January 2011)
+ * sm-ssc v1.2 - ``(double8)`` (9 January 2011)
 
 Replaced by:
- * ssm-sc v1.2 - ``(single8)`` (16 January 2005) Fixed to work once more
+ * StepMania 3.9 CVS "random build" - ``(single8)`` (16 January 2005) Fixed to work once more
+ 
+#### 9 Sensor (L/UL/UR/U/Center/DL/DR/R/D):
 
-Replaced by:
+First Seen:
+ * Project OutFox alpha 4.9.7.2 - ``(single9)`` (March 16 2021)
+ * Project OutFox alpha 4.9.7.2 - ``(versus9)`` (March 16 2021)
+ * Project OutFox alpha 4.9.7.2 - ``(double9)`` (March 16 2021)
 
 ## Gameplay
 

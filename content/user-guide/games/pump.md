@@ -24,7 +24,8 @@ First Seen:
  * StepMania v3.0 "compatibility test" - ``(single)`` (27 May 2002)
  * StepMania v3.0 "compatibility test" - ``(pump-versus)`` (27 May 2002)
  * StepMania v3.0 "compatibility test" - ``(pump-double)`` (28 May 2002)
- * StepMania v3.0 beta 6 - ``(pump-couple)`` (23 August 2002) 
+ * StepMania v3.0 beta 6 - ``(pump-couple)`` (23 August 2002)
+ * StepMania v4.0 alpha 5 - ``(routine)`` (25 January 2010)
 
 Replaced by:
  * StepMania v3.0 "compatibility test" - ``(pump-single)`` (14 June 2002)
@@ -40,7 +41,7 @@ Replaced by:
  * StepMania v3.0 beta 6 - ``(versus)`` (15 September 2002)
  * StepMania v3.0 beta 6 - ``(double)`` (15 September 2002)
  * StepMania v3.0 beta 6 - ``(couple)`` (15 September 2002)
- * StepMania v3.0 beta 6 - ``(couple (edit only))`` (15 September 2002)  
+ * StepMania v3.0 beta 6 - ``(couple (edit only))`` (15 September 2002)
 
 
 ### 6 Panel (UpLeft/UpRight/Centre/DownLeft/DownRight/Centre (2 Pads)):

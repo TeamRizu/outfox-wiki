@@ -21,14 +21,17 @@ This mode was added from the very beginning of the history of the StepMania proj
 First Seen:
  * StepMania v3.0 beta 6 - ``(Para Single)`` (7th September 2002) 
  * StepMania v3.0.2 - ``(para-versus)`` (10th July 2004)
+ * Project OutFox alpha 4.9.7.3 - ``(double)`` (April 4 2021)
 
 Replaced by:
  * StepMania v3.0 beta 6 - ``(single)`` (15 September 2002)
+ 
+#### 8 Panel (UpLeft/UpRight/Up/Left/Right/BackRight/Back/BackLeft):
 
-Replaced by:
+First Seen:
+ * Project OutFox alpha 4.9.9HF - ``(single-eight)`` (April 30 2021)
 
 
-Replaced by:
 
 
 
