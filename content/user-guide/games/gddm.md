@@ -24,6 +24,7 @@ This mode is selectable in the game select screen.
 First Seen:
  * OutFox Alpha 4.6.0 - ``"gddm-new"`` (19 Jun 2020) (9 lane style simulating DrumMania play)
  * OutFox Alpha 4.6.0 - ``"gddm-old"`` (19 Jun 2020) (5 lane style simulating BandJam/Gitadora play)
+ * OutFox Alpha 4.9.9HF - ``"gddm-real"`` (July 26 2021)
 
 
 ## Gameplay
