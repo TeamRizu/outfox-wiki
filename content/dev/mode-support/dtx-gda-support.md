@@ -71,8 +71,8 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 29|Not Supported|~|Not Supported|~|~|Not Supported
 2A|Not Supported|~|Not Supported|~|~|Not Supported
 2B|Not Used|~|Not Used|~|~|Not Used
-2C|Not Used|~|Guitar Long Note Start/End Point|❌|✅ AL|Not Supported (TBC for 4.10.0)
-2D|Not Used|~|Bass Long Note Start/End Point|❌|✅ AL|Not Supported (TBC for 4.10.0)
+2C|Not Used|~|Guitar Long Note Start/End Point|❌|✅ AL|Not Supported
+2D|Not Used|~|Bass Long Note Start/End Point|❌|✅ AL|Not Supported
 2E|Not Used|~|Not Used|~|~|Not Used
 2F|Guitar Wailing Sound|✅|Guitar Wailing Sound|✅|✅|Supported in 4.10.0
 
@@ -113,10 +113,10 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 49|Not Used|~|Not Used|~|~|Not Used
 4A|Not Used|~|Not Used|~|~|Not Used
 4B|Not Used|~|Not Used|~|~|Not Used
-4C|Bonus 04|❌|Bonus 04|❌|✅|Not Supported
-4D|Bonus 03|❌|Bonus 03|❌|✅|Not Supported
-4E|Bonus 02|❌|Bonus 02|❌|✅|Not Supported
-4F|Bonus 01|❌|Bonus 01|❌|✅|Not Supported
+4C|Bonus 04|✅|Bonus 04|✅|✅|Supported in 4.10.0
+4D|Bonus 03|✅|Bonus 03|✅|✅|Supported in 4.10.0
+4E|Bonus 02|✅|Bonus 02|✅|✅|Supported in 4.10.0
+4F|Bonus 01|✅|Bonus 01|✅|✅|Supported in 4.10.0
 
 ---
 
@@ -248,7 +248,7 @@ AF|Not Used|~|Guitar xGBYP|✅|✅|Supported in 4.10.0
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
-B0|Not Used|~|Not Used|❌|❌|Not Used
+B0|Not Used|~|Not Used|~|~|Not Used
 B1|HiHatClose Empty|❌|HiHatClose Empty|❌|✅|Not Supported
 B2|Snare Empty|❌|Snare Empty|❌|✅|Not Supported
 B3|Bass Drum Empty|❌|Bass Drum Empty|❌|✅|Not Supported
@@ -263,16 +263,16 @@ BB|Bass Empty|❌|Bass Empty|❌|✅|Not Supported
 BC|Not Used|~|LeftCymbal Empty|❌|✅|Not Supported
 BD|Not Used|~|LeftPedal Empty|❌|✅|Not Supported
 BE|Not Used|~|LeftBassDrum Empty|❌|✅|Not Supported
-BF|Not Used|❌|Not Used|❌|❌|Not Used
+BF|Not Used|~|Not Used|~|~|Not Used
 
 ---
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
-C0|Not Used|❌|Not Used|❌|❌|Not Used
+C0|Not Used|~|Not Used|~|~|Not Used
 C1|Beat Bar Offset|❌|Beat Bar Offset|❌|✅|Not Supported
 C2|Hide Beat/Measure bar|❌|Hide Beat/Measure bar|❌|✅|Not Supported
-C3|Not Used|❌|Not Used|❌|❌|Not Used
+C3|Not Used|~|Not Used|~|~|Not Used
 C4|Replacing BGA Layer 1|❌|Replacing BGA Layer 1|❌|✅|Not Supported
 C5|Not Used|~|Bass xxxYx|✅|✅|Supported in 4.10.0
 C6|Not Used|~|Bass xxBYx|✅|✅|Supported in 4.10.0
@@ -294,18 +294,18 @@ D0|Not Used|~|Guitar RxxYP|✅|✅|Supported in 4.10.0
 D1|Not Used|~|Guitar RxBYP|✅|✅|Supported in 4.10.0
 D2|Not Used|~|Guitar RGxYP|✅|✅|Supported in 4.10.0
 D3|Not Used|~|Guitar RGBYP|✅|✅|Supported in 4.10.0
-D4|Not Used|~|Not Used|❌|❌|Not Used
+D4|Not Used|~|Not Used|~|~|Not Used
 D5|Replacing BGA Layer 3|❌|Replacing BGA Layer 3|❌|✅|Not Supported
 D6|Replacing BGA Layer 4|❌|Replacing BGA Layer 4|❌|✅|Not Supported
 D7|Replacing BGA Layer 5|❌|Replacing BGA Layer 5|❌|✅|Not Supported
 D8|Replacing BGA Layer 6|❌|Replacing BGA Layer 6|❌|✅|Not Supported
 D9|Replacing BGA Layer 7|❌|Replacing BGA Layer 7|❌|✅|Not Supported
-DA|Not Used|~|Bass xGxxP|❌|✅|Supported in 4.10.0
-DB|Not Used|~|Bass xGBxP|❌|✅|Supported in 4.10.0
-DC|Not Used|~|Bass RxxxP|❌|✅|Supported in 4.10.0
-DD|Not Used|~|Bass RxBxP|❌|✅|Supported in 4.10.0
-DE|Not Used|~|Bass RGxxP|❌|✅|Supported in 4.10.0
-DF|Not Used|~|Bass RGBxP|❌|✅|Supported in 4.10.0
+DA|Not Used|~|Bass xGxxP|✅|✅|Supported in 4.10.0
+DB|Not Used|~|Bass xGBxP|✅|✅|Supported in 4.10.0
+DC|Not Used|~|Bass RxxxP|✅|✅|Supported in 4.10.0
+DD|Not Used|~|Bass RxBxP|✅|✅|Supported in 4.10.0
+DE|Not Used|~|Bass RGxxP|✅|✅|Supported in 4.10.0
+DF|Not Used|~|Bass RGBxP|✅|✅|Supported in 4.10.0
 
 ---
 
@@ -320,9 +320,9 @@ E5|Not Used|~|Bass RxxYP|✅|✅|Supported in 4.10.0
 E6|Not Used|~|Bass RxBYP|✅|✅|Supported in 4.10.0
 E7|Not Used|~|Bass RGxYP|✅|✅|Supported in 4.10.0
 E8|Not Used|~|Bass RGBYP|✅|✅|Supported in 4.10.0
-E9|Not Used|~|Not Used|❌|❌|Not Used
-EA|Not Used|~|Not Used|❌|❌|Not Used
-EB|Not Used|~|Not Used|❌|❌|Not Used
+E9|Not Used|~|Not Used|~|~|Not Used
+EA|Not Used|~|Not Used|~|~|Not Used
+EB|Not Used|~|Not Used|~|~|Not Used
 EC|Metronome|❌|Metronome|❌|✅|Not Supported
 ED|Start Sound|❌|Start Sound|❌|✅|Not Supported
 EE|Not Used|~|Bass RGxxP|✅|✅|Supported in 4.10.0
@@ -332,23 +332,23 @@ EF|Not Used|~|Bass RGBxP|✅|✅|Supported in 4.10.0
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
-F0|Not Used|~|Not Used|❌|❌|Not Used
-F1|Not Used|~|Not Used|❌|❌|Not Used
-F2|Not Used|~|Not Used|❌|❌|Not Used
-F3|Not Used|~|Not Used|❌|❌|Not Used
-F4|Not Used|~|Not Used|❌|❌|Not Used
-F5|Not Used|~|Not Used|❌|❌|Not Used
-F6|Not Used|~|Not Used|❌|❌|Not Used
-F7|Not Used|~|Not Used|❌|❌|Not Used
-F8|Not Used|~|Not Used|❌|❌|Not Used
-F9|Not Used|~|Not Used|❌|❌|Not Used
-FA|Not Used|~|Not Used|❌|❌|Not Used
-FB|Not Used|~|Not Used|❌|❌|Not Used
+F0|Not Used|~|Not Used|~|~|Not Used
+F1|Not Used|~|Not Used|~|~|Not Used
+F2|Not Used|~|Not Used|~|~|Not Used
+F3|Not Used|~|Not Used|~|~|Not Used
+F4|Not Used|~|Not Used|~|~|Not Used
+F5|Not Used|~|Not Used|~|~|Not Used
+F6|Not Used|~|Not Used|~|~|Not Used
+F7|Not Used|~|Not Used|~|~|Not Used
+F8|Not Used|~|Not Used|~|~|Not Used
+F9|Not Used|~|Not Used|~|~|Not Used
+FA|Not Used|~|Not Used|~|~|Not Used
+FB|Not Used|~|Not Used|~|~|Not Used
 FC|Metronome|❌|Metronome|❌|✅|Not Supported
 FD|Start Sound|❌|Start Sound|❌|✅|Not Supported
-FE|Not Used|~|Not Used|❌|❌|Not Used
-FF|Not Used|~|Not Used|❌|❌|Not Used
+FE|Not Used|~|Not Used|~|~|Not Used
+FF|Not Used|~|Not Used|~|~|Not Used
 
 ----
 
-_Written and Maintained with ♡ by Squirrel, with thanks to the BMS command memo, and Japanese DTX and BandJAM community, and thanks to dridi for the GDA help_
+_Written and Maintained with ♡ by Squirrel, with thanks to the BMS command memo, the Japanese DTX and BandJAM community, dridi for the GDA help and to Kangalioo for the VSRG docs_
