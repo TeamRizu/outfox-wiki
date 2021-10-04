@@ -266,20 +266,20 @@ The channel command to action #SCROLL values are a Base36 value which are ``#xxx
 
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
-1|Background Music|✅|Background Music|✅|Background Music|✅|Supported
-2|Measure Length|✅|Measure Length|✅|Measure length|✅|Supported
-3|Set Initial BPM|✅|Set Initial BPM|✅|Set Initial BPM|✅|Supported
-4|BGA Base|✅|BGA Base|✅|BG Base|✅|Supported - needs enabling
-5|eXtended Object|✅|eXtended Object|✅|eXtended Object|✅|Supported
-6|BGA Layer Miss|✅|BGA Layer Miss|✅|BGA Poor|✅|Supported - needs enabling
-7|BGA Layer|✅|BGA Layer|✅|BG Layer|✅|Supported - needs enabling sits above channel 4
-8|Extended BPM|✅|Extended BPM|✅|Set BPM|✅|Supported - Changes bpm to value
-9|Stop|✅|Stop|✅|Stop|✓|Supported
-0A|BGA Layer 2|✅|BGA Layer 2|✅|BGA Layer 2|✅|Supported
-0B|BGA Base Opacity|❌|BGA Base Opacity|❌|BGA Base Opacity|❌|Not Supported
-0C|BGA Layer Opacity|❌|BGA Layer Opacity|❌|Not Used|~|Not Supported
-0D|BGA Layer 2 Opacity|❌|BGA Layer 2 Opacity|❌|Not Used|~|Not Supported
-0E|BGA Poor Opacity|❌|BGA Poor Opacity|❌|BGA Poor Opacity|❌|Not Supported
+01|Background Music|✅|Background Music|✅|Background Music|✅|Supported
+02|Measure Length|✅|Measure Length|✅|Measure length|✅|Supported
+03|Set Initial BPM|✅|Set Initial BPM|✅|Set Initial BPM|✅|Supported
+04|BGA Base|✅|BGA Base|✅|BG Base|✅|Supported - needs enabling
+05|eXtended Object|✅|eXtended Object|✅|eXtended Object|✅|Supported
+06|BGA Layer Miss|✅|BGA Layer Miss|✅|BGA Poor|✅|Supported - needs enabling
+07|BGA Layer|✅|BGA Layer|✅|BG Layer|✅|Supported - needs enabling sits above channel 4
+08|Extended BPM|✅|Extended BPM|✅|Set BPM|✅|Supported - Changes bpm to value
+09|Stop|✅|Stop|✅|Stop|✓|Supported
+0A|Not Used|~|BGA Layer 2|✅|BGA Layer 2|✅|Supported
+0B|Not Used|~|BGA Base Opacity|❌|BGA Base Opacity|❌|Not Supported
+0C|Not Used|~|BGA Layer Opacity|❌|Not Used|~|Not Supported
+0D|Not Used|~|BGA Layer 2 Opacity|❌|Not Used|~|Not Supported
+0E|Not Used|~|BGA Poor Opacity|❌|BGA Poor Opacity|❌|Not Supported
 0F|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 ---
@@ -361,10 +361,10 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 49|P2 Key 7 Hidden|✅|P2 Key 7 Hidden|✅|Not Used|~|Supported in 4.10.0
 4A|Not Used|~|Not Used|~|Not Used|~|Not Used
 4B|Not Used|~|Not Used|~|Not Used|~|Not Used
-4C|Not Used|~|Not Used|~|Not Used|~|Not Supported
-4D|Not Used|~|Not Used|~|Not Used|~|Not Supported
-4E|Not Used|~|Not Used|~|Not Used|~|Not Supported
-4F|Not Used|~|Not Used|~|Not Used|~|Not Supported
+4C|Not Used|~|Not Used|~|Not Used|~|Not Used
+4D|Not Used|~|Not Used|~|Not Used|~|Not Used
+4E|Not Used|~|Not Used|~|Not Used|~|Not Used
+4F|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 ---
 
@@ -487,7 +487,7 @@ A2|Not Used|~|Not Used|~|Not Used|~|Not Used
 A3|Not Used|~|Not Used|~|Not Used|~|Not Used
 A4|Not Used|~|Not Used|~|Not Used|~|Not Used
 A5|Not Used|~|Not Used|~|Not Used|~|Not Used
-A6|Change Option|❌|Change Option|❌|Change Option|❌|This was the deprecated mod system for BMS and PMS.
+A6|Not Used|~|Change Option|❌|Change Option|❌|This was the deprecated mod system for BMS and PMS.
 A7|Not Used|~|Not Used|~|Not Used|~|Not Used
 A8|Not Used|~|Not Used|~|Not Used|~|Not Used
 A9|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -552,15 +552,15 @@ BME and PMS support for the landmines (mines) is now 100% complete, and work as 
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 D0|Not Used|~|Not Used|~|Not Used|~|Not Used
-D1|P1 Key 1 LandMine|✅|P1 Key 1 LandMine|✅|P1 Left White LandMine|✅|Supported in 4.10.0
-D2|P1 Key 2 LandMine|✅|P1 Key 2 LandMine|✅|P1 Left Yellow LandMine|✅|Supported in 4.10.0
-D3|P1 Key 3 LandMine|✅|P1 Key 3 LandMine|✅|P1 Left Green LandMine|✅|Supported in 4.10.0
-D4|P1 Key 4 LandMine|✅|P1 Key 4 LandMine|✅|P1 Left Blue LandMine|✅|Supported in 4.10.0
-D5|P1 Key 5 LandMine|✅|P1 Key 5 LandMine|✅|P1 Red LandMine|✅|Supported in 4.10.0
-D6|P1 Turn/Scratch LandMine|✅|P1 Turn/Scratch LandMine|✅|Not Used|~|Supported in 4.10.0
-D7|P1 FootPedal LandMine|✅|P1 FootPedal LandMine|✅|Not Used|~|Supported in 4.10.0
-D8|P1 Key 6 LandMine|✅|P1 Key 6 LandMine|✅|Not Used|~|Supported in 4.10.0
-D9|P1 Key 7 LandMine|✅|P1 Key 7 LandMine|✅|Not Used|~|Supported in 4.10.0
+D1|Not Used|~|P1 Key 1 LandMine|✅|P1 Left White LandMine|✅|Supported in 4.10.0
+D2|Not Used|~|P1 Key 2 LandMine|✅|P1 Left Yellow LandMine|✅|Supported in 4.10.0
+D3|Not Used|~|P1 Key 3 LandMine|✅|P1 Left Green LandMine|✅|Supported in 4.10.0
+D4|Not Used|~|P1 Key 4 LandMine|✅|P1 Left Blue LandMine|✅|Supported in 4.10.0
+D5|Not Used|~|P1 Key 5 LandMine|✅|P1 Red LandMine|✅|Supported in 4.10.0
+D6|Not Used|~|P1 Turn/Scratch LandMine|✅|Not Used|~|Supported in 4.10.0
+D7|Not Used|~|P1 FootPedal LandMine|✅|Not Used|~|Supported in 4.10.0
+D8|Not Used|~|P1 Key 6 LandMine|✅|Not Used|~|Supported in 4.10.0
+D9|Not Used|~|P1 Key 7 LandMine|✅|Not Used|~|Supported in 4.10.0
 DA|Not Used|~|Not Used|~|Not Used|~|Not Used
 DB|Not Used|~|Not Used|~|Not Used|~|Not Used
 DC|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -573,15 +573,15 @@ DF|Not Used|~|Not Used|~|Not Used|~|Not Used
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 E0|Not Used|~|Not Used|~|Not Used|~|Not Used
-E1|P2 Key 1 LandMine|✅|P2 Key 1 LandMine|✅|Not Used|~|Supported in 4.10.0
-E2|P2 Key 2 LandMine|✅|P2 Key 2 LandMine|✅|P1 Right Blue LandMine|✅|Supported in 4.10.0
-E3|P2 Key 3 LandMine|✅|P2 Key 3 LandMine|✅|P1 Right Green LandMine|✅|Supported in 4.10.0
-E4|P2 Key 4 LandMine|✅|P2 Key 4 LandMine|✅|P1 Right Yellow LandMine|✅|Supported in 4.10.0
-E5|P2 Key 5 LandMine|✅|P2 Key 5 LandMine|✅|P1 Right White LandMine|✅|Supported in 4.10.0
-E6|P2 Turn/Scratch LandMine|✅|P2 Turn/Scratch LandMine|✅|Not Used|~|Supported in 4.10.0
-E7|P2 FootPedal LandMine|✅|P2 FootPedal LandMine|✅|Not Used|~|Supported in 4.10.0
-E8|P2 Key 6 LandMine|✅|P2 Key 6 LandMine|✅|Not Used|~|Supported in 4.10.0
-E9|P2 Key 7 LandMine|✅|P2 Key 7 LandMine|✅|Not Used|~|Supported in 4.10.0
+E1|Not Used|~|P2 Key 1 LandMine|✅|Not Used|~|Supported in 4.10.0
+E2|Not Used|~|P2 Key 2 LandMine|✅|P1 Right Blue LandMine|✅|Supported in 4.10.0
+E3|Not Used|~|P2 Key 3 LandMine|✅|P1 Right Green LandMine|✅|Supported in 4.10.0
+E4|Not Used|~|P2 Key 4 LandMine|✅|P1 Right Yellow LandMine|✅|Supported in 4.10.0
+E5|Not Used|~|P2 Key 5 LandMine|✅|P1 Right White LandMine|✅|Supported in 4.10.0
+E6|Not Used|~|P2 Turn/Scratch LandMine|✅|Not Used|~|Supported in 4.10.0
+E7|Not Used|~|P2 FootPedal LandMine|✅|Not Used|~|Supported in 4.10.0
+E8|Not Used|~|P2 Key 6 LandMine|✅|Not Used|~|Supported in 4.10.0
+E9|Not Used|~|P2 Key 7 LandMine|✅|Not Used|~|Supported in 4.10.0
 EA|Not Used|~|Not Used|~|Not Used|~|Not Used
 EB|Not Used|~|Not Used|~|Not Used|~|Not Used
 EC|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -619,7 +619,7 @@ These two channels were recent additions to the specification used in the _beato
 
 Speed and Scroll segments replicate behaviour done with Channel 02/08/09, without relying on these channels changing. They were introduced in the SSC updates to StepMania and are natively supported in the engine in OutFox. These add a new layer of effects to be actioned without using #BPMxx or #STOPxx.
 
-BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
+BMS / BME / PMS Channel|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------
 SC|Scroll Adjustment|✅|Not Used|~|Added in 4.11.0
 SP|Speed Adjustment|✅|Not Used|~|Added in 4.11.0
