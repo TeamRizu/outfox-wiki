@@ -15,9 +15,11 @@ _Project OutFox_ uses mostly BM98 (1998 to 2003) era definitions for this file s
 
 ``BMS`` charts are mostly composed by artists from Asia, so reading them in non-asian locales can be difficult. _OutFox_ will be overcoming this limitation in a future update, so do not delete all your charts which just show ``??????????`` just yet!
 
-The other two file types on this page, ``PMS`` and ``BME`` were born from this format and are used for other types of games. ``PMS`` was originally designed to simulate _Keyboardmania_ and had a very different channel layout than ``BMS``, but it's use moved towards _po-mu_ / _feeling po-mu_ (po-mu is short for _Pop'n Music_). This had a unique layout for 9 key/button charts, and also were used in the actual arcade games (Though they used ``BME``) for a few years. _Project OutFox_ recently fixed a lot of support for this parser, along with adding several of the missing modes often charted by simfile authors.
+The other two file types on this page, ``PMS`` and ``BME`` were born from this format and are used for other types of games. ``PMS`` was originally designed to simulate _Keyboardmania_ and had a very different channel layout than ``BMS``, but it's use moved towards _po-mu_ / _feeling po-mu_ (po-mu is short for _Pop'n Music_). This had a unique layout for 9 key/button charts.  
 
-``BME`` is an Extension of ``BMS`` and offers newer features that were not offered in raw simulators of BM98. The other system we support is ``BML`` files, which ``PMS`` incorporated by default in 2002. ``BML`` adds ``Long Note`` (known as _holds_ in StepMania), which again extends the ``BMS`` specification. We will support both ``BME`` and ``BML`` fully in an upcoming release and update these documents in the future.
+``BME`` is an Extension of ``BMS`` and offers newer features that were not offered in raw simulators of BM98. This was also used in the actual arcade and console games for a few years in the early 2000s. _Project OutFox_ recently fixed a lot of support for this parser, along with adding several of the missing modes often charted by simfile authors. This extension allowed for channel numbers beyond 00-99 (99 values), then extended to base16 for 00-FF (255 values), which was then finally extended to 00-ZZ (1295 values), being based on base36.
+
+The other system we support is ``BML`` files, which ``PMS`` incorporated by default in 2002. ``BML`` adds ``Long Note`` (known as _holds_ in StepMania), which again extends the ``BMS`` specification. We will support both ``BME`` and ``BML`` fully in an upcoming release and update these documents in the future.
 
 **Again, if you feel any particular command or object should be included, do let us know. There are quite a few bits of the specification that just simply have not been considered or added at this time, I'm documenting what we _do_ have, and you are more than welcome to give suggestions for future additions. - Squirrel**
 
@@ -187,7 +189,7 @@ The gauge never changed size; it was an off screen calculation on how you could 
 
 ## ``#MAKER maker [string]`` or
 ## ``#CREDIT credit [string]`` or 
-## ``SUBARTIST subartist [string]``
+## ``#SUBARTIST subartist [string]``
 ``Status: ✅ Supported``
 
 Usage Example:
@@ -207,7 +209,6 @@ The `MAKER` or `CREDIT` command simply allows the author or maker of the chart t
 Since around 2017, another command, ``SUBARTIST`` began to be used more commonly in `BME`/`PMS` files, which was inherited from `DTX`. The sub artist is not normally displayed until the evaluation screen on earlier simulators, but in _OutFox_ we treat all three of these in the same manner. If you are creating a new `BMS` chart, then `#MAKER` is usually safer to use for other simulator support.
 
 ---
-
 ## ``#STAGEFILE stagefile [string]``
 ``Status: ✅ Supported``
 
@@ -220,6 +221,38 @@ The stagefile command is used to set an image to the 'loading screen' of the sim
 On older simulators, this loading process could take a _long_ time, so it was wise to incorporate a loading screen system into the simulator. This has also been recently done in _Project OutFox_ so we do not need to freeze the game while loading these files any more. This file is read in and parsed, just no theme at the moment takes advantage of the loading screen as of yet.
 
 ---
+
+## Main DATA FIELD commands
+
+---
+
+
+
+
+## ``#SCROLLxx n.n [-999.0 - 999.0]``
+``Status: ✅ Supported``
+
+Definition Usage Example:
+```
+#SCROLL01 0.5
+#SCROLL02 1.0
+#SCROLL03 -2.75
+```
+Channel Usage Example:
+```
+#003SC:02010001
+#005SC:03000002
+```
+
+The scroll command works similar to how it does in native SM5, but if you are unfamiliar with the system, the value is a _multiplier_ of the speed of the movement of any note on the screen.
+
+If your notes were moving at ``130BPM``, but you did not wish to edit the ``BPM`` directly, you could use scroll to change that speed. The game also supports negative values (this has the affect of moving things in the opposite direction), which can provide some very interesting affects.
+
+The channel command to action #SCROLL values are a Base36 value which are ``#xxxSC``. There are several benefits to using this system as legacy BMS use items you need to name on each measure, whereas #xxxSC can last beyond this restriction. You need to be aware, not many clients support this system, so it is not backwards compatible if you are making your chart available to other simulators.
+
+
+
+
 ---
 
 ### Key:
@@ -579,5 +612,19 @@ FF|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 
 ---
+
+## Scroll #xxxSC / Speed #xxxSP Sections - (BMS/PMS) 
+
+These two channels were recent additions to the specification used in the _beatoraja_ and _bemuse_ clients, and are done slightly differently to the specification. Rather than using one of the 30 spare channels in the lower ranges, these two options require full base 36 (00-ZZ) support to work as they use SC/SP instead of a Hex (00-FF) value. OutFox's BMS-like parsers were updated in 4.9.9 to support base 36 channel values even though not required by specification, so these channels were a trivial addition to our support.
+
+Speed and Scroll segments replicate behaviour done with Channel 02/08/09, without relying on these channels changing. They were introduced in the SSC updates to StepMania and are natively supported in the engine in OutFox. These add a new layer of effects to be actioned without using #BPMxx or #STOPxx.
+
+BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
+------------|-------------|-------------|-------------|-------------|-------------
+SC|Scroll Adjustment|✅|Not Used|~|Added in 4.11.0
+SP|Speed Adjustment|✅|Not Used|~|Added in 4.11.0
+
+---
+
 
 _Written and Maintained with ♡ by Squirrel, with thanks to the feeling-po-mu, BMS command memo, BMS Discord, and Japanese BMS/PMS community_
