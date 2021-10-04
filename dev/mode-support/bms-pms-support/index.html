@@ -985,8 +985,9 @@ Introduction
 <p>The <code>BMS</code> file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game <em>Beatmania</em> by Konami. There have been several dozen interations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.</p>
 <p><em>Project OutFox</em> uses mostly BM98 (1998 to 2003) era definitions for this file standard, though it is improving all the time. The format is used to simulate most of the <em>&lsquo;Down Scroll Rhythm Game Systems&rsquo;</em> and is known by several other derivatives which we are also slowly building support for.</p>
 <p><code>BMS</code> charts are mostly composed by artists from Asia, so reading them in non-asian locales can be difficult. <em>OutFox</em> will be overcoming this limitation in a future update, so do not delete all your charts which just show <code>??????????</code> just yet!</p>
-<p>The other two file types on this page, <code>PMS</code> and <code>BME</code> were born from this format and are used for other types of games. <code>PMS</code> was originally designed to simulate <em>Keyboardmania</em> and had a very different channel layout than <code>BMS</code>, but it&rsquo;s use moved towards <em>po-mu</em> / <em>feeling po-mu</em> (po-mu is short for <em>Pop&rsquo;n Music</em>). This had a unique layout for 9 key/button charts, and also were used in the actual arcade games (Though they used <code>BME</code>) for a few years. <em>Project OutFox</em> recently fixed a lot of support for this parser, along with adding several of the missing modes often charted by simfile authors.</p>
-<p><code>BME</code> is an Extension of <code>BMS</code> and offers newer features that were not offered in raw simulators of BM98. The other system we support is <code>BML</code> files, which <code>PMS</code> incorporated by default in 2002. <code>BML</code> adds <code>Long Note</code> (known as <em>holds</em> in StepMania), which again extends the <code>BMS</code> specification. We will support both <code>BME</code> and <code>BML</code> fully in an upcoming release and update these documents in the future.</p>
+<p>The other two file types on this page, <code>PMS</code> and <code>BME</code> were born from this format and are used for other types of games. <code>PMS</code> was originally designed to simulate <em>Keyboardmania</em> and had a very different channel layout than <code>BMS</code>, but it&rsquo;s use moved towards <em>po-mu</em> / <em>feeling po-mu</em> (po-mu is short for <em>Pop&rsquo;n Music</em>). This had a unique layout for 9 key/button charts.</p>
+<p><code>BME</code> is an Extension of <code>BMS</code> and offers newer features that were not offered in raw simulators of BM98. This was also used in the actual arcade and console games for a few years in the early 2000s. <em>Project OutFox</em> recently fixed a lot of support for this parser, along with adding several of the missing modes often charted by simfile authors. This extension allowed for channel numbers beyond 00-99 (99 values), then extended to base16 for 00-FF (255 values), which was then finally extended to 00-ZZ (1295 values), being based on base36.</p>
+<p>The other system we support is <code>BML</code> files, which <code>PMS</code> incorporated by default in 2002. <code>BML</code> adds <code>Long Note</code> (known as <em>holds</em> in StepMania), which again extends the <code>BMS</code> specification. We will support both <code>BME</code> and <code>BML</code> fully in an upcoming release and update these documents in the future.</p>
 <p><strong>Again, if you feel any particular command or object should be included, do let us know. There are quite a few bits of the specification that just simply have not been considered or added at this time, I&rsquo;m documenting what we <em>do</em> have, and you are more than welcome to give suggestions for future additions. - Squirrel</strong></p>
 <hr>
 <div class=gdoc-page__anchorwrap>
@@ -1200,8 +1201,8 @@ Common HEADER FIELD commands
 </h2>
 </div><div class=gdoc-page__anchorwrap>
 <h2 id=subartist-subartist-string>
-<code>SUBARTIST subartist [string]</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#subartist-subartist-string class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SUBARTIST subartist [string]" href=#subartist-subartist-string><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<code>#SUBARTIST subartist [string]</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#subartist-subartist-string class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #SUBARTIST subartist [string]" href=#subartist-subartist-string><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><p><code>Status: ✅ Supported</code></p>
@@ -1226,6 +1227,30 @@ Common HEADER FIELD commands
 </code></pre><p>The stagefile command is used to set an image to the &lsquo;loading screen&rsquo; of the simulator - when the song and options/modifiers have been set, this file is then placed as part of the loading process on the &lsquo;loading screen&rsquo;.</p>
 <p>On older simulators, this loading process could take a <em>long</em> time, so it was wise to incorporate a loading screen system into the simulator. This has also been recently done in <em>Project OutFox</em> so we do not need to freeze the game while loading these files any more. This file is read in and parsed, just no theme at the moment takes advantage of the loading screen as of yet.</p>
 <hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=main-data-field-commands>
+Main DATA FIELD commands
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#main-data-field-commands class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Main DATA FIELD commands" href=#main-data-field-commands><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=scrollxx-nn--9990---9990>
+<code>#SCROLLxx n.n [-999.0 - 999.0]</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#scrollxx-nn--9990---9990 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #SCROLLxx n.n [-999.0 - 999.0]" href=#scrollxx-nn--9990---9990><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p><code>Status: ✅ Supported</code></p>
+<p>Definition Usage Example:</p>
+<pre tabindex=0><code>#SCROLL01 0.5
+#SCROLL02 1.0
+#SCROLL03 -2.75
+</code></pre><p>Channel Usage Example:</p>
+<pre tabindex=0><code>#003SC:02010001
+#005SC:03000002
+</code></pre><p>The scroll command works similar to how it does in native SM5, but if you are unfamiliar with the system, the value is a <em>multiplier</em> of the speed of the movement of any note on the screen.</p>
+<p>If your notes were moving at <code>130BPM</code>, but you did not wish to edit the <code>BPM</code> directly, you could use scroll to change that speed. The game also supports negative values (this has the affect of moving things in the opposite direction), which can provide some very interesting affects.</p>
+<p>The channel command to action #SCROLL values are a Base36 value which are <code>#xxxSC</code>. There are several benefits to using this system as legacy BMS use items you need to name on each measure, whereas #xxxSC can last beyond this restriction. You need to be aware, not many clients support this system, so it is not backwards compatible if you are making your chart available to other simulators.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
 <h3 id=key>
@@ -4080,6 +4105,45 @@ LandMine Sections #xxxD1-E9 - (BMS/PMS)
 <td>Not Used</td>
 <td>~</td>
 <td>Not Used</td>
+</tr>
+</tbody>
+</table> </div>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=scroll-xxxsc--speed-xxxsp-sections---bmspms>
+Scroll #xxxSC / Speed #xxxSP Sections - (BMS/PMS)
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#scroll-xxxsc--speed-xxxsp-sections---bmspms class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Scroll #xxxSC / Speed #xxxSP Sections - (BMS/PMS)" href=#scroll-xxxsc--speed-xxxsp-sections---bmspms><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>These two channels were recent additions to the specification used in the <em>beatoraja</em> and <em>bemuse</em> clients, and are done slightly differently to the specification. Rather than using one of the 30 spare channels in the lower ranges, these two options require full base 36 (00-ZZ) support to work as they use SC/SP instead of a Hex (00-FF) value. OutFox&rsquo;s BMS-like parsers were updated in 4.9.9 to support base 36 channel values even though not required by specification, so these channels were a trivial addition to our support.</p>
+<p>Speed and Scroll segments replicate behaviour done with Channel 02/08/09, without relying on these channels changing. They were introduced in the SSC updates to StepMania and are natively supported in the engine in OutFox. These add a new layer of effects to be actioned without using #BPMxx or #STOPxx.</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>BMS / BME / PMS Channel</th>
+<th>BMS Name</th>
+<th>OutFox BMS Support</th>
+<th>PMS Name</th>
+<th>OutFox PMS Support</th>
+<th>OutFox BMS/PMS Status Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SC</td>
+<td>Scroll Adjustment</td>
+<td>✅</td>
+<td>Not Used</td>
+<td>~</td>
+<td>Added in 4.11.0</td>
+</tr>
+<tr>
+<td>SP</td>
+<td>Speed Adjustment</td>
+<td>✅</td>
+<td>Not Used</td>
+<td>~</td>
+<td>Added in 4.11.0</td>
 </tr>
 </tbody>
 </table> </div>
