@@ -80,11 +80,19 @@ The game doesn't even try to automap things yet, there's a [tutorial step-by-ste
 
 ## Q: Will Project OutFox go open source?
 
-_Yes_. Here's a quote from Squirrel if you want to know more:
+_Yes_.
 
-> The project began as a method to add online and profiles to SM5, but when we looked into the engine to see how this could be appropriated it was discovered just how much in a sorry state the code base was, and it looked mostly abandoned. I spoke to Shakesoda in hopes of a resurrection in the form of a team project, and it was requested rather than breaking 10 years of content and community to take the time to make a proper 5.x build that is stable and supports what the community as a whole wants from the game. This backward compatibility support has been an absolute git to do, but it's something now we are down the line which we are proud of, as it has brought many players and newcomers to the community, and provided a very stable experience for folks during the lockdown. We will continue to maintain a near 100% compatibility where we can, and this is taken into consideration whenever we plan a new feature or change engine components.
-> 
+From Squirrel:
+
+> The project began as a method to add online and profiles to SM5, but when we looked into the engine to see how this could be appropriated it was discovered just how much in a sorry state the code base was, and it looked mostly abandoned. I spoke to Shakesoda in hopes of a resurrection in the form of a team project, and it was requested rather than breaking 10 years of content and community to take the time to make a proper 5.x build that is stable and supports what the community as a whole wants from the game. This backward compatibility support has been an absolute git to do, but it's something now we are down the line which we are proud of, as it has brought many players and newcomers to the community, and provided a very stable experience for folks during the lockdown. We will continue to maintain a near 100% compatibility where we can, and this is taken into consideration whenever we plan a new feature or change engine components. 
+
+> In the beginning of the project we wanted to be the natural progression of 5.1, but due to resistance and feedback from the community, we have made the decision to adjust the returning of code back to the repo in the future. The aim has always been to open source when we get to Alpha 7.0, which gives us enough time to realise our plans for the project and the direction we chose to take OutFox in. We read the community loud and clear in terms of their wishes and needs for StepMania, so we will not disturb that paradigm.
+
 > We asked if it was ok to close the source while this process was done, and it was deemed wise for the health of the repo and the need of people who are just wanting to play. Its why we've been around the repo but not on it as taint can happen and we do not wish this. SSC did this same behaviour before us, so we did not see it as a problem. Some vocal members of the community disagreed, including some of the SMDev Team. We have also been compared to past SM repo contributors who may have left a less than savoury memory in the minds of some, and it has also been hard to differentiate from history we have no involvement with.
+
+> Moving forward with the project, it has become apparent that OutFox has moved beyond a lot of what the community _expects_ StepMania to be, so there will be a different ideal on the opening of source code to the StepMania Repo itself. We have had to 'rename' our internal system away from StepMania, this was due to us wishing to licence/digitally sign the binaries we make, and with gaining this with the SM name being almost impossible, we had to change name to OutFox. Moving forward we continue to keep this promise to ensure our builds are signed on Mac OS (and soon Windows) so it makes the game play experience better for everyone.
+
+> The project is about providing a free game with unencumbered assets and also packs of properly licenced content for the community, and this covers more than dance alone. We are not for profit, we do not ever wish to profit from this community, as we have been part of it for so long. We will announce more information in due course about our future, for now we are as excited as you on the progression of this project.
 
 ## My controller doesn't work, but it did on older versions of StepMania.
 
@@ -196,7 +204,7 @@ This is due to the renderer not supporting scaled screens yet. To fix this, righ
 
 ### What modes does OutFox currently support?
 
-The modes as of **Alpha 4.9.8 (April 2021)** are as follows:
+The modes as of **Alpha 4.11.0 (November 2021)** are as follows:
 
 ```
 Name    | Description
@@ -207,11 +215,11 @@ kb7     | 7 Keys
 ez2     | Ez2Dancer (3 Panels with 2 Sensors, 3 Panels with 4 Sensors and 6 Panels with 4 Sensors (Double))
 para    | Para Para Paradise (5, 8, and 10 Sensor)
 ds3ddx  | Dance Station 3DDX (4 Panels with 4 Sensors)
-beat    | Bemani style via BMS (5, 7, 10 (Double) and 14 (double) Keys + Scratch)
+bemu    | (formally beat) BMS (5, 7, 10 (Double) and 14 (double) Keys + Scratch)
 maniax  | Dance Maniax (4 and 8 (Double) Sensors)
 techno  | TechnoMotion (4, 5, 8. 9, 8 (Double), 10 (Double), 16 (Double) and 18 (Double) Panels)
 taitai  | A 'don da don' styled mode
-popn    | Pop'n Music via PMS (3, 4, 5, 7, 9 and 18 Keys)
+pomu    | Pop'n Music via PMS (3, 4, 5, 7, 9 and 18 Keys)
 gddm    | GitaDora Drummania style (5, 9 and 10 part!)
 gdgf    | GitaDora Guitar freaks style (5 Guitar/Bass, 3 Guitar/Bass) (6 Guitar support Coming soon!)
 gh      | Guitar style (5 Solo/Backup, 6 Solo/Backup)
@@ -230,27 +238,29 @@ drum      | A midi based drum mode with 20 parts simulating a full yamaha DTX dr
 karaoke   | A (.. do i need to explain this?) singing mode. Will happen if squirrel gets off his butt
 jam       | A mode properly supporting O2Jam and it's modes, with full .OJM loader support
 d86.4     | Feet dance Station Radio 3 panel
-???       | ???
+rb        | band style drums (5 lane)
 ```
 
 ### What NotesLoaders Does OutFox Support?
 
-The OutFox Supported Notes Loaders and their level of completeness to the specifications:
+The NoteLoaders as of **Alpha 4.11.0 (November 2021)** OutFox Supports and their level of completeness to the specifications:
 
 ```
 Name  | Notes:
 ------|------------
-BMS   | 75% See Wiki for more details
-BME   | 80% (beat loader for extended/PMS)
-BML   | 80% (beat loader for long notes)
+BMS   | 85% See Wiki for more details
+BME   | 90% (beat loader for extended/PMS)
+BML   | 90% (beat loader for long notes)
+BGF   | 100% (beat loader for GF proposed)
 CHART | 100% (gh loader)
-DTX   | 40% (gddm 90% / gdgf 15%)
+DTX   | 85% (gddm 90% / gdgf 85%)
 DWI   | 100% (as we know)
 KSF   | 100% (as we know)
 MID   | 90% (gh loader)
-PMS   | 100% BMS98 / 85% BME 2004
+PMS   | 100% BMS98 / 90% BME 2004
 SM    | 100% (+ OF fixes)
 SSC   | 100% (+ OF fixes v0.84 proposed)
+TJA   | 15% (taiko loader in progress)
 ```
 
 PLEASE NOTE: These are proposed and are scheduled on the road map, limitations or code problems may delay or change these modes, so it is why there is no date or ETA given.
@@ -259,8 +269,8 @@ PLEASE NOTE: These are proposed and are scheduled on the road map, limitations o
 Name  | Notes:
 ------|------------
 BMSON | 0%
-TJA   | 0%
-???   | 0%
+OSD   | 0%
+OJM   | 0%
 ???   | 0%
 ???   | 0%
 ```
