@@ -23,6 +23,7 @@ This is a helper function that can be used to dynamically load an actor based on
 {{< button size="large" relref="sprite/" >}}Sprite{{< /button >}}
 {{< button size="large" relref="bitmaptext/" >}}BitmapText{{< /button >}}
 {{< button size="large" relref="sound/" >}}Sound{{< /button >}}
+{{< button size="large" relref="notefield/" >}}NoteField{{< /button >}}
 {{</columns>}}
 </center>
 
@@ -358,12 +359,6 @@ The wheel used to select songs in ScreenSelectMusic or courses in ScreenSelectCo
 Cannot be created from lua, but can be grabbed from NoteField.
 
 This is a dedicated actor for a column in the notefield, and can be treated like any other actor.
-
-## NoteField
-
-Cannot be created from lua, but resides in Player.
-
-Contains the receptors and notes as seen in gameplay.
 
 ## OptionRow
 
