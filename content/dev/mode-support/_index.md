@@ -10,4 +10,5 @@ This section lists the different types of NoteLoaders (file parsers that can loa
 - [DTX/G2D/GDA support](/dev/mode-support/dtx-gda-support/)
 - [KSF support](/dev/mode-support/ksf-support/)
 - [SM support](/dev/mode-support/sm-support/)
+- [OTO support](/dev/mode-support/oto-support/) 
 - [TJA support](/dev/mode-support/tja-support/)

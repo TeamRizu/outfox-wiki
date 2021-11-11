@@ -1,1 +1,1 @@
-Text available under the Creative Commons Attribution Share-Alike 4.0 licence <http://creativecommons.org/licenses/by-sa/4.0/>, attributed to Team Rizu.
+Text available under the Creative Commons Attribution Share-Alike 4.0 licence <http://creativecommons.org/licenses/by-sa/4.0/>, attributed to Project OutFox Team.
