@@ -6,6 +6,8 @@ geekdocCollapseSection: true
 
 Project OutFox is working on a new `OTO` notesloader that supports the ``.osu`` (Osu) chart format, which is the standard format used in conjunction with the ``kb`` and ``taiko`` game types. The following page contains details on the ``.osu`` parsing options that Project OutFox currently supports. This is a living document - it will be updated as time allows and we add the support or features within. 
 
+**_This documentation exists as a mental 'layout' for me to learn about the format and how best to parse it for the way _OutFox_ needs. It will be updated in a few segments - There may be errors, but do let me know so i can update and clarify them, thanks for joining me on this ride! - (Squirrel)_**
+
 We are calling it the OTO parser as we chose to follow the _Osu Tatakae Ouendan_ name. 
 
 ## OTO Notedata support as of Alpha 4.11.0 - ``IN PROGRESS`` We are working on the parser!
