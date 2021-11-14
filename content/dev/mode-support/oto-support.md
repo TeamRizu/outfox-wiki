@@ -44,7 +44,7 @@ Section|What it's for|Command / Content type|Supported?
  ``[General]`` | Chart general information | `key: value` pairs| Yes, Some
  ``[Editor]`` | Settings saved from the Osu editor | `key: value` pairs| Ignored
  ``[Metadata]`` | Song Information (title/artist etc) | `key:value` pairs| Yes
- ``[Difficulty]`` | OTO difficulty settings | `key:value` pairs| Some. _CircleSize_ / _KeyCount_
+ ``[Difficulty]`` | Osu difficulty settings | `key:value` pairs| Some. _CircleSize_ / _KeyCount_
  ``[Events]`` | Osu graphical events  | `comma separated values` | Only _Background_
  ``[TimingPoints]`` | Timing and Control Points |`comma separated values` | Yes, Some
  ``[Colours]`` | Settings for the artist to change combo or theme colours | `key : value` pairs| Ignored
@@ -101,7 +101,7 @@ This entry in the list tells the game what music file to use for the chart. It w
 
 This variable is equivalent to the `#MUSIC` entry on SM/SSC files.
 ```
-#MUSIC song.mp3
+#MUSIC:song.mp3;
 ```
 ---
 
@@ -134,7 +134,7 @@ Unlike SM/SSC there is no `#SAMPLELENGTH` in this format that tells the game to 
 To make this variable compatible with OutFox it needs to be divided by 1000 to get the _seconds_ value, as per the `#SAMPLESTART` SM/SSC variable.
 
 ```
-#SAMPLESTART 35.841
+#SAMPLESTART:35.841;
 ```
 ---
 
@@ -392,7 +392,7 @@ On _OutFox_ this entry is usually the transliterated (translation) of the title,
 
 This variable is equivalent to the `#TITLETRANSLIT` entry on SM/SSC files.
 ```
-#TITLETRANSLIT My Great Song
+#TITLETRANSLIT:My Great Song;
 ```
 ---
 
@@ -409,7 +409,7 @@ On _OutFox_ this entry is usually the original title, so we will be parsing this
 
 This variable is equivalent to the `#TITLE` entry on SM/SSC files.
 ```
-#TITLE 私の素晴らしい歌
+#TITLE:私の素晴らしい歌;
 ```
 ---
 
@@ -426,7 +426,7 @@ On _OutFox_ this entry is usually the transliterated (translation) of the artist
 
 This variable is equivalent to the `#ARTISTTRANSLIT` entry on SM/SSC files.
 ```
-#ARTISTTRANSLIT OutFox Sound Team
+#ARTISTTRANSLIT:OutFox Sound Team;
 ```
 ---
 
@@ -443,7 +443,7 @@ On _OutFox_ this entry is usually the original artist name, so we will be parsin
 
 This variable is equivalent to the `#ARTIST` entry on SM/SSC files.
 ```
-#ARTIST 「OutFox」音楽
+#ARTIST:「OutFox」音楽;
 ```
 ---
 
@@ -460,7 +460,7 @@ On _OutFox_ this entry is referred to as the chart `credit`, and is used as a gi
 
 This variable is equivalent to the `#CREDIT` entry on SM/SSC files.
 ```
-#CREDIT Squirrel
+#CREDIT:Squirrel;
 ```
 ---
 
