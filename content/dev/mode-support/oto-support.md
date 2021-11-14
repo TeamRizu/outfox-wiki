@@ -42,10 +42,10 @@ The format consists of 8 different sections which detail specifics about the cha
 Section|What it's for|Command / Content type|Supported? 
 ------------|-------------|-------------|-------------|
  ``[General]`` | Chart general information | `key: value` pairs| Yes, Some
- ``[Editor]`` | Settings saved from the OTO editor | `key: value` pairs| Ignored
+ ``[Editor]`` | Settings saved from the Osu editor | `key: value` pairs| Ignored
  ``[Metadata]`` | Song Information (title/artist etc) | `key:value` pairs| Yes
  ``[Difficulty]`` | OTO difficulty settings | `key:value` pairs| Some. _CircleSize_ / _KeyCount_
- ``[Events]`` | OTO graphical events  | `comma separated values` | Only _Background_
+ ``[Events]`` | Osu graphical events  | `comma separated values` | Only _Background_
  ``[TimingPoints]`` | Timing and Control Points |`comma separated values` | Yes, Some
  ``[Colours]`` | Settings for the artist to change combo or theme colours | `key : value` pairs| Ignored
  ``[HitObjects]`` | Hit Objects / Note Types and Holds | `comma separated values` | Yes, Some
@@ -542,16 +542,83 @@ The commands for this section are done as `Command:Value`. Do note the lack of s
 ---
 
 ## ``HPDrainRate:n.n [0.0-10.0]``
+``Status: ❌ Ignored (Unsupported)``
 
-## ``CircleSize:n.n [0.0-10.0]/[0-10]``
+Usage Example:
+```
+HPDrainRate:7.2
+```
+`HP Drain Rate`, usually shortened to `HP`, sets the rate of health increase or decrease depending on how a note is hit. This is usually a set amount of time before or after, which we call a `timing window`. The closer to the notes actual time it is hit, the high the 'category' or 'judgment' the game records for that hit. 
+
+It allows for a recovery (health is added to the life bar) on a GOOD hit or better. The scale is from 0.0 to 10.0, with lower values giving more health returns. A higher value lowers the health return gained on the note.
+
+In reflection, the _drain_ of this value, which is given when a note is hit badly is different to the value. so a lower value affects the health bar less on a bad hit, and a higher value punishes the player more.
+
+In `circles` and `catch` this value can also modify the `passive rate` of drain. These modes have a constant drain on the life-bar. If the life bar drains to 0 the player counts as failing the chart.
+
+In _OutFox_ we do not have a life draining mechanism at this time, so this value isn't supported. If `catch` mode is ever implemented this mechanism will of course be required.
+
+This variable has no equivalent SM/SSC value.
+
+## ``CircleSize:n.n/n [0.0-10.0]/[0-10]``
+``Status: ✅ Supported (mania only)``
+
+Usage Example:
+```
+CircleSize:3.2
+CircleSize:4
+```
+`Circle Size` (CS) is a variable that lives a double life in the beatmaps or charts. In `circles` it defines the size of the hit objects, within the range of 1 to 10. Higher values helpfully make the circles _smaller_. In the community it is seen that the majority of the beatmaps use between 2.5 and 4.0. This is followed by 4.0 to 5.7, with values outside of these ranges almost never being used, mainly due to them being too small on some devices to hit, or just too big to make an efficient beatmap that flows with effects (Sliders/spinners overlapping etc due to scale).
+
+If the chart is above 7, it is likely that one of the Osu games mods, `Hard Rock` is being used. Outside of this, it is very unlikely to be used. The sliders in the editor do not permit for values outside of 2.0 to 7.0, so one needs to manually edit this value in the `.osu` file. 
+
+The other life this value leads, is within the `catch` mode. In this mode, the Circle Size defines the size of the fruit and the catcher sprites. It works as above, higher numbers make the fruit and catch _smaller_. This mode usually has values between 2 and 7, which is commonly seen as 3-4. 
+
+If the value is set to the highest value, 10, the hit objects will be the same size as the cursor that is shown on the screen to show the location of the mouse/pointer/pen/touch etc.
+
+This value is also 'seen' in the `taiko` mode, however, it does nothing. It is also ignored in the _OutFox_ `taiko` mode.
+
+However, if the mode is `mania`, this value becomes something completely different. In the editor it is an automatic switch to a variable called `'KeyCount'`. As this mode is a vertical scrolling game, this value is the number of 'keys' (on a keyboard or controller) you will be using to play that particular chart. This is also the same as the 'column count' we have in _OutFox_. 
+
+The `.osu` file does not reflect the _KeyCount_ word. It remains as `CircleSize`. The difference is, the mode uses whole numbers, so there will be no `CircleSize:4.3`.
+
+The values used for this version of `CircleSize` you will see 3 to 10. This is contrary to what the official documentation says, it is not 1 to 9. 
+
+_OutFox_ computes these column amounts as `CircleSize - 1` as our columns begin at 0. The new `kb` mode will support all key modes from 1 to 10, with 2 player support.
+
+This variable has no equivalent SM/SSC value.
 
 ## ``OverallDifficulty:n.n [0.0-10.0]``
+``Status: ❌ Ignored (Unsupported)``
+
+Usage Example:
+```
+OverallDifficulty:1.3
+```
 
 ## ``ApproachRate:n.n [0.0-10.0]``
+``Status: ❌ Ignored (Unsupported)``
+
+Usage Example:
+```
+ApproachRate:4.8
+```
 
 ## ``SliderMultiplier:n.n [0.0-10.0]``
+``Status: ❌ Ignored (Unsupported)``
+
+Usage Example:
+```
+SliderMultiplier:3.7
+```
 
 ## ``SliderTickRate:n.n [0.0-10.0]``
+``Status: ❌ Ignored (Unsupported)``
+
+Usage Example:
+```
+SliderTickRate:7.2
+```
 
 ---
 _Written and Maintained with ♡ by Squirrel, containing information with thanks from the [Osu! Wiki](https://osu.ppy.sh/wiki/en/osu%21_File_Formats/Osu_%28file_format%29) and members of the international Taikojira and Mania! communities._
