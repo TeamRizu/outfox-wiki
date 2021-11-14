@@ -1051,7 +1051,7 @@ Basic Format
 </tr>
 <tr>
 <td><code>[Difficulty]</code></td>
-<td>OTO difficulty settings</td>
+<td>Osu difficulty settings</td>
 <td><code>key:value</code> pairs</td>
 <td>Some. <em>CircleSize</em> / <em>KeyCount</em></td>
 </tr>
@@ -1134,7 +1134,7 @@ WidescreenStoryboard: 1
 <pre tabindex=0><code>AudioFilename: song.mp3 
 </code></pre><p>This entry in the list tells the game what music file to use for the chart. It will be case sensitive on Linux/Mac so bear this in mind if you have a chart which cannot find it&rsquo;s music file, this will be the issue.</p>
 <p>This variable is equivalent to the <code>#MUSIC</code> entry on SM/SSC files.</p>
-<pre tabindex=0><code>#MUSIC song.mp3
+<pre tabindex=0><code>#MUSIC:song.mp3;
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=audioleadin-n-0-212>
@@ -1161,7 +1161,7 @@ WidescreenStoryboard: 1
 </code></pre><p>This value tells the game the time in <em>milliseconds</em> to play the preview section of the song in the music wheel. There is no separate option for a preview file in this format, so it uses a time offset based on the music file detailed in the <code>AudioFilename</code> entry.</p>
 <p>Unlike SM/SSC there is no <code>#SAMPLELENGTH</code> in this format that tells the game to loop or reset the point of playback. It will fall back to the default 15 second length when parsing.</p>
 <p>To make this variable compatible with OutFox it needs to be divided by 1000 to get the <em>seconds</em> value, as per the <code>#SAMPLESTART</code> SM/SSC variable.</p>
-<pre tabindex=0><code>#SAMPLESTART 35.841
+<pre tabindex=0><code>#SAMPLESTART:35.841;
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=countdown-n-0-3>
@@ -1434,7 +1434,7 @@ BeatmapSetID:0987654
 </code></pre><p>This entry in the list tells the game what the song title is for this chart in roman form.</p>
 <p>On <em>OutFox</em> this entry is usually the transliterated (translation) of the title, so we will be parsing this as that entry. If there is no <code>TitleUnicode</code> entry it will use this as the title.</p>
 <p>This variable is equivalent to the <code>#TITLETRANSLIT</code> entry on SM/SSC files.</p>
-<pre tabindex=0><code>#TITLETRANSLIT My Great Song
+<pre tabindex=0><code>#TITLETRANSLIT:My Great Song;
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=titleunicodetitle-string>
@@ -1448,7 +1448,7 @@ BeatmapSetID:0987654
 </code></pre><p>This entry in the list tells the game what the song title is for this chart in utf8.</p>
 <p>On <em>OutFox</em> this entry is usually the original title, so we will be parsing this as that entry.</p>
 <p>This variable is equivalent to the <code>#TITLE</code> entry on SM/SSC files.</p>
-<pre tabindex=0><code>#TITLE 私の素晴らしい歌
+<pre tabindex=0><code>#TITLE:私の素晴らしい歌;
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=artistartist-string>
@@ -1462,7 +1462,7 @@ BeatmapSetID:0987654
 </code></pre><p>This entry in the list tells the game what the song artist is for this chart in roman form.</p>
 <p>On <em>OutFox</em> this entry is usually the transliterated (translation) of the artist name, so we will be parsing this as that entry. If there is no <code>ArtistUnicode</code> entry it will use this as the artist name.</p>
 <p>This variable is equivalent to the <code>#ARTISTTRANSLIT</code> entry on SM/SSC files.</p>
-<pre tabindex=0><code>#ARTISTTRANSLIT OutFox Sound Team
+<pre tabindex=0><code>#ARTISTTRANSLIT:OutFox Sound Team;
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=artistunicodeartist-string>
@@ -1476,7 +1476,7 @@ BeatmapSetID:0987654
 </code></pre><p>This entry in the list tells the game what the song artist name is for this chart in utf8.</p>
 <p>On <em>OutFox</em> this entry is usually the original artist name, so we will be parsing this as that entry.</p>
 <p>This variable is equivalent to the <code>#ARTIST</code> entry on SM/SSC files.</p>
-<pre tabindex=0><code>#ARTIST 「OutFox」音楽
+<pre tabindex=0><code>#ARTIST:「OutFox」音楽;
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=creatorcreator-string>
@@ -1490,7 +1490,7 @@ BeatmapSetID:0987654
 </code></pre><p>This entry in the list tells the game the creator or author of the <code>beatmap</code> or <code>chart</code>.</p>
 <p>On <em>OutFox</em> this entry is referred to as the chart <code>credit</code>, and is used as a given entry on the music wheel.</p>
 <p>This variable is equivalent to the <code>#CREDIT</code> entry on SM/SSC files.</p>
-<pre tabindex=0><code>#CREDIT Squirrel
+<pre tabindex=0><code>#CREDIT:Squirrel;
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=versionversion-string>
