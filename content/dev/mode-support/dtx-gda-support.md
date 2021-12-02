@@ -10,16 +10,22 @@ We have recently added parsing support for the guitar/bass side of this chart fo
 
 You need not worry about our abandonment of these modes, we will also look at creating a new easier to use format for gdgf in the future which supports 3/5 and 6 fret which has been requested by our community. The game mode can live on with us.
 
-## DTX/GDA Notedata support as of Alpha 4.10.0
+## DTX/GDA Notedata support as of Alpha 4.11.0
 
-### Key:
-- ✅ Fully supported and used in Mode
-- ✓ Fully supported and not used in Mode
-- 📝? No Documentation on this channel's support
-- ❌ Not Supported / Not Available
-- ~ Not Used
+### Table of Symbols
+---
+Key: | Comment
+---|---
+ ✅   | Fully supported and used in Mode
+ ✓    | Fully supported, but not used in this Mode
+ 📝?  | No Documentation on this channel's support
+ ⌛   | Game Supports this, but awaiting on documentation
+ ❌	 | Not Supported / Not Available
+ ~ |Not Used
 
+---
 ### Channel Support Table
+---
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
@@ -71,8 +77,8 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 29|Not Supported|~|Not Supported|~|~|Not Supported
 2A|Not Supported|~|Not Supported|~|~|Not Supported
 2B|Not Used|~|Not Used|~|~|Not Used
-2C|Not Used|~|Guitar Long Note Start/End Point|❌|✅ AL|Not Supported
-2D|Not Used|~|Bass Long Note Start/End Point|❌|✅ AL|Not Supported
+2C|Not Used|~|Guitar Long Note Start/End Point|⌛|✅ AL|Not Supported
+2D|Not Used|~|Bass Long Note Start/End Point|⌛|✅ AL|Not Supported
 2E|Not Used|~|Not Used|~|~|Not Used
 2F|Guitar Wailing Sound|✅|Guitar Wailing Sound|✅|✅|Supported in 4.10.0
 
@@ -122,11 +128,11 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
-50|Bar Line|❌|Bar Line|❌|✅|Not Used
-51|Beat Line|❌|Beat Line|❌|✅|Not Supported
+50|Show Beat Line|❌|Show Beat Line|⌛|✅|Not Supported
+51|Show Measure Line|❌|Show Measure Line|⌛|✅|Not Supported
 52|MIDI Drum Chorus|❌|MIDI Drum Chorus|❌|✅|Not Supported
 53|Fill In|~|Fill In|~|~|Not Supported
-54|Video Playback|❌|Video Playback|❌|✅|Not Supported
+54|Video Playback|✅|Sync Video Playback|✅|✅|Supported in 4.11.0
 55|BGA Layer 3|❌|BGA Layer 3|❌|✅|Not Supported
 56|BGA Layer 4|❌|BGA Layer 4|❌|✅|Not Supported
 57|BGA Layer 5|❌|BGA Layer 5|❌|✅|Not Supported
@@ -144,15 +150,15 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
 60|BGA Layer 8|❌|BGA Layer 8|❌|✅|Not Supported
-61|Sound Effect 01|✅|Sound Effect 01|✅|✅|Supported
-62|Sound Effect 02|✅|Sound Effect 02|✅|✅|Supported
-63|Sound Effect 03|✅|Sound Effect 03|✅|✅|Supported
-64|Sound Effect 04|✅|Sound Effect 04|✅|✅|Supported
-65|Sound Effect 05|✅|Sound Effect 05|✅|✅|Supported
-66|Sound Effect 06|✅|Sound Effect 06|✅|✅|Supported
-67|Sound Effect 07|✅|Sound Effect 07|✅|✅|Supported
-68|Sound Effect 08|✅|Sound Effect 08|✅|✅|Supported
-69|Sound Effect 09|✅|Sound Effect 09|✅|✅|Supported
+61|Sound Effect 01|✅|Sound Effect 01|✅|✅|Supported in 4.11.0
+62|Sound Effect 02|✅|Sound Effect 02|✅|✅|Supported in 4.11.0
+63|Sound Effect 03|✅|Sound Effect 03|✅|✅|Supported in 4.11.0
+64|Sound Effect 04|✅|Sound Effect 04|✅|✅|Supported in 4.11.0
+65|Sound Effect 05|✅|Sound Effect 05|✅|✅|Supported in 4.11.0
+66|Sound Effect 06|✅|Sound Effect 06|✅|✅|Supported in 4.11.0
+67|Sound Effect 07|✅|Sound Effect 07|✅|✅|Supported in 4.11.0
+68|Sound Effect 08|✅|Sound Effect 08|✅|✅|Supported in 4.11.0
+69|Sound Effect 09|✅|Sound Effect 09|✅|✅|Supported in 4.11.0
 6A|Not Used|~|Not Used|~|~|Not Used
 6B|Not Used|~|Not Used|~|~|Not Used
 6C|Not Used|~|Not Used|~|~|Not Used
@@ -164,16 +170,16 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
-70|Sound Effect 10|✅|Sound Effect 10|✅|✅|Supported
-71|Sound Effect 11|✅|Sound Effect 11|✅|✅|Supported
-72|Sound Effect 12|✅|Sound Effect 12|✅|✅|Supported
-73|Sound Effect 13|✅|Sound Effect 13|✅|✅|Supported
-74|Sound Effect 14|✅|Sound Effect 14|✅|✅|Supported
-75|Sound Effect 15|✅|Sound Effect 15|✅|✅|Supported
-76|Sound Effect 16|✅|Sound Effect 16|✅|✅|Supported
-77|Sound Effect 17|✅|Sound Effect 17|✅|✅|Supported
-78|Sound Effect 18|✅|Sound Effect 18|✅|✅|Supported
-79|Sound Effect 19|✅|Sound Effect 19|✅|✅|Supported
+70|Sound Effect 10|✅|Sound Effect 10|✅|✅|Supported in 4.11.0
+71|Sound Effect 11|✅|Sound Effect 11|✅|✅|Supported in 4.11.0
+72|Sound Effect 12|✅|Sound Effect 12|✅|✅|Supported in 4.11.0
+73|Sound Effect 13|✅|Sound Effect 13|✅|✅|Supported in 4.11.0
+74|Sound Effect 14|✅|Sound Effect 14|✅|✅|Supported in 4.11.0
+75|Sound Effect 15|✅|Sound Effect 15|✅|✅|Supported in 4.11.0
+76|Sound Effect 16|✅|Sound Effect 16|✅|✅|Supported in 4.11.0
+77|Sound Effect 17|✅|Sound Effect 17|✅|✅|Supported in 4.11.0
+78|Sound Effect 18|✅|Sound Effect 18|✅|✅|Supported in 4.11.0
+79|Sound Effect 19|✅|Sound Effect 19|✅|✅|Supported in 4.11.0
 7A|Not Used|~|Not Used|~|~|Not Used
 7B|Not Used|~|Not Used|~|~|Not Used
 7C|Not Used|~|Not Used|~|~|Not Used
@@ -185,16 +191,16 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
-80|Sound Effect 20|✅|Sound Effect 20|✅|✅|Supported
-81|Sound Effect 21|✅|Sound Effect 21|✅|✅|Supported
-82|Sound Effect 22|✅|Sound Effect 22|✅|✅|Supported
-83|Sound Effect 23|✅|Sound Effect 23|✅|✅|Supported
-84|Sound Effect 24|✅|Sound Effect 24|✅|✅|Supported
-85|Sound Effect 25|✅|Sound Effect 25|✅|✅|Supported
-86|Sound Effect 26|✅|Sound Effect 26|✅|✅|Supported
-87|Sound Effect 27|✅|Sound Effect 27|✅|✅|Supported
-88|Sound Effect 28|✅|Sound Effect 28|✅|✅|Supported
-89|Sound Effect 29|✅|Sound Effect 29|✅|✅|Supported
+80|Sound Effect 20|✅|Sound Effect 20|✅|✅|Supported in 4.11.0
+81|Sound Effect 21|✅|Sound Effect 21|✅|✅|Supported in 4.11.0
+82|Sound Effect 22|✅|Sound Effect 22|✅|✅|Supported in 4.11.0
+83|Sound Effect 23|✅|Sound Effect 23|✅|✅|Supported in 4.11.0
+84|Sound Effect 24|✅|Sound Effect 24|✅|✅|Supported in 4.11.0
+85|Sound Effect 25|✅|Sound Effect 25|✅|✅|Supported in 4.11.0
+86|Sound Effect 26|✅|Sound Effect 26|✅|✅|Supported in 4.11.0
+87|Sound Effect 27|✅|Sound Effect 27|✅|✅|Supported in 4.11.0
+88|Sound Effect 28|✅|Sound Effect 28|✅|✅|Supported in 4.11.0
+89|Sound Effect 29|✅|Sound Effect 29|✅|✅|Supported in 4.11.0
 8A|Not Used|~|Not Used|~|~|Not Used
 8B|Not Used|~|Not Used|~|~|Not Used
 8C|Not Used|~|Not Used|~|~|Not Used
@@ -206,9 +212,9 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
-90|Sound Effect 30|✅|Sound Effect 30|✅|✅|Supported
-91|Sound Effect 31|✅|Sound Effect 31|✅|✅|Supported
-92|Sound Effect 32|✅|Sound Effect 32|✅|✅|Supported
+90|Sound Effect 30|✅|Sound Effect 30|✅|✅|Supported in 4.11.0
+91|Sound Effect 31|✅|Sound Effect 31|✅|✅|Supported in 4.11.0
+92|Sound Effect 32|✅|Sound Effect 32|✅|✅|Supported in 4.11.0
 93|Not Used|~|Guitar xxxYx|✅|✅|Supported in 4.10.0
 94|Not Used|~|Guitar xxBYx|✅|✅|Supported in 4.10.0
 95|Not Used|~|Guitar xGxYx|✅|✅|Supported in 4.10.0
@@ -249,20 +255,20 @@ AF|Not Used|~|Guitar xGBYP|✅|✅|Supported in 4.10.0
 DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver. K Support|OutFox DTX Status Comments
 ------------|------------|-------------|------------|-------------|-------------|-------------
 B0|Not Used|~|Not Used|~|~|Not Used
-B1|HiHatClose Empty|❌|HiHatClose Empty|❌|✅|Not Supported
-B2|Snare Empty|❌|Snare Empty|❌|✅|Not Supported
-B3|Bass Drum Empty|❌|Bass Drum Empty|❌|✅|Not Supported
-B4|High Tom Empty|❌|High Tom Empty|❌|✅|Not Supported
-B5|Low Tom Empty|❌|Low Tom Empty|❌|✅|Not Supported
-B6|Cymbal Empty|❌|Cymbal Empty|❌|✅|Not Supported
-B7|Floor Tom Empty|❌|Floor Tom Empty|❌|✅|Not Supported
-B8|High Hat Open Empty|❌|High Hat Open Empty|❌|✅|Not Supported
-B9|Ride Cymbal Empty|❌|Ride Cymbal Empty|❌|✅|Not Supported
-BA|Guitar Empty|❌|Guitar Empty|❌|✅|Not Supported
-BB|Bass Empty|❌|Bass Empty|❌|✅|Not Supported
-BC|Not Used|~|LeftCymbal Empty|❌|✅|Not Supported
-BD|Not Used|~|LeftPedal Empty|❌|✅|Not Supported
-BE|Not Used|~|LeftBassDrum Empty|❌|✅|Not Supported
+B1|HiHatClose Empty|⌛|HiHatClose Empty|✅|✅|Supported in 4.11.0
+B2|Snare Empty|⌛|Snare Empty|✅|✅|Supported in 4.11.0
+B3|Bass Drum Empty|⌛|Bass Drum Empty|✅|✅|Supported in 4.11.0
+B4|High Tom Empty|⌛|High Tom Empty|✅|✅|Supported in 4.11.0
+B5|Low Tom Empty|⌛|Low Tom Empty|✅|✅|Supported in 4.11.0
+B6|Cymbal Empty|⌛|Cymbal Empty|✅|✅|Supported in 4.11.0
+B7|Floor Tom Empty|⌛|Floor Tom Empty|✅|✅|Supported in 4.11.0
+B8|High Hat Open Empty|⌛|High Hat Open Empty|✅|✅|Supported in 4.11.0
+B9|Ride Cymbal Empty|⌛|Ride Cymbal Empty|✅|✅|Supported in 4.11.0
+BA|Guitar Empty|⌛|Guitar Empty|✅|✅|Supported in 4.11.0
+BB|Bass Empty|⌛|Bass Empty|✅|✅|Supported in 4.11.0
+BC|Not Used|~|LeftCymbal Empty|✅|✅|Supported in 4.11.0
+BD|Not Used|~|LeftPedal Empty|✅|✅|Supported in 4.11.0
+BE|Not Used|~|LeftBassDrum Empty|✅|✅|Supported in 4.11.0
 BF|Not Used|~|Not Used|~|~|Not Used
 
 ---
@@ -271,7 +277,7 @@ DTX / GDA Channel|GDA Name|OutFox GDA Support|DTX Name|OutFox DTX Support|NX/Ver
 ------------|------------|-------------|------------|-------------|-------------|-------------
 C0|Not Used|~|Not Used|~|~|Not Used
 C1|Beat Bar Offset|❌|Beat Bar Offset|❌|✅|Not Supported
-C2|Hide Beat/Measure bar|❌|Hide Beat/Measure bar|❌|✅|Not Supported
+C2|Hide Beat/Measure bar|⌛|Hide Beat/Measure bar|⌛|✅|Not Supported
 C3|Not Used|~|Not Used|~|~|Not Used
 C4|Replacing BGA Layer 1|❌|Replacing BGA Layer 1|❌|✅|Not Supported
 C5|Not Used|~|Bass xxxYx|✅|✅|Supported in 4.10.0
@@ -323,8 +329,8 @@ E8|Not Used|~|Bass RGBYP|✅|✅|Supported in 4.10.0
 E9|Not Used|~|Not Used|~|~|Not Used
 EA|Not Used|~|Not Used|~|~|Not Used
 EB|Not Used|~|Not Used|~|~|Not Used
-EC|Metronome|❌|Metronome|❌|✅|Not Supported
-ED|Start Sound|❌|Start Sound|❌|✅|Not Supported
+EC|Metronome|⌛|Metronome|✅|✅|Supported in 4.11.0
+ED|Start Sound|⌛|Start Sound|✅|✅|Supported in 4.11.0
 EE|Not Used|~|Bass RGxxP|✅|✅|Supported in 4.10.0
 EF|Not Used|~|Bass RGBxP|✅|✅|Supported in 4.10.0
 
@@ -344,8 +350,8 @@ F8|Not Used|~|Not Used|~|~|Not Used
 F9|Not Used|~|Not Used|~|~|Not Used
 FA|Not Used|~|Not Used|~|~|Not Used
 FB|Not Used|~|Not Used|~|~|Not Used
-FC|Metronome|❌|Metronome|❌|✅|Not Supported
-FD|Start Sound|❌|Start Sound|❌|✅|Not Supported
+FC|Metronome|⌛|Metronome|✅|✅|Supported in 4.11.0
+FD|Start Sound|⌛|Start Sound|✅|✅|Supported in 4.11.0
 FE|Not Used|~|Not Used|~|~|Not Used
 FF|Not Used|~|Not Used|~|~|Not Used
 
