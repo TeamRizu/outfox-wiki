@@ -987,31 +987,61 @@ hidden-mobile" itemprop=breadcrumb>
 <p>We have recently added parsing support for the guitar/bass side of this chart format, however we have heard that the DTX clients will be removing support for guitar and bass charts in their clients.</p>
 <p>You need not worry about our abandonment of these modes, we will also look at creating a new easier to use format for gdgf in the future which supports 3/5 and 6 fret which has been requested by our community. The game mode can live on with us.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=dtxgda-notedata-support-as-of-alpha-4100>
-DTX/GDA Notedata support as of Alpha 4.10.0
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/dtx-gda-support/#dtxgda-notedata-support-as-of-alpha-4100 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DTX/GDA Notedata support as of Alpha 4.10.0" href=#dtxgda-notedata-support-as-of-alpha-4100><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=dtxgda-notedata-support-as-of-alpha-4110>
+DTX/GDA Notedata support as of Alpha 4.11.0
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/dtx-gda-support/#dtxgda-notedata-support-as-of-alpha-4110 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DTX/GDA Notedata support as of Alpha 4.11.0" href=#dtxgda-notedata-support-as-of-alpha-4110><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><div class=gdoc-page__anchorwrap>
-<h3 id=key>
-Key:
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/dtx-gda-support/#key class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Key:" href=#key><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=table-of-symbols>
+Table of Symbols
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/dtx-gda-support/#table-of-symbols class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Table of Symbols" href=#table-of-symbols><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
-</div><ul>
-<li>✅ Fully supported and used in Mode</li>
-<li>✓ Fully supported and not used in Mode</li>
-<li>📝? No Documentation on this channel&rsquo;s support</li>
-<li>❌ Not Supported / Not Available</li>
-<li>~ Not Used</li>
-</ul>
+</div><hr>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>Key:</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>Fully supported and used in Mode</td>
+</tr>
+<tr>
+<td>✓</td>
+<td>Fully supported, but not used in this Mode</td>
+</tr>
+<tr>
+<td>📝?</td>
+<td>No Documentation on this channel&rsquo;s support</td>
+</tr>
+<tr>
+<td>⌛</td>
+<td>Game Supports this, but awaiting on documentation</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Not Supported / Not Available</td>
+</tr>
+<tr>
+<td>~</td>
+<td>Not Used</td>
+</tr>
+</tbody>
+</table> </div>
+<hr>
 <div class=gdoc-page__anchorwrap>
 <h3 id=channel-support-table>
 Channel Support Table
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/dtx-gda-support/#channel-support-table class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Channel Support Table" href=#channel-support-table><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
-</div><div class=table-wrap> <table>
+</div><hr>
+<div class=table-wrap> <table>
 <thead>
 <tr>
 <th>DTX / GDA Channel</th>
@@ -1432,7 +1462,7 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Guitar Long Note Start/End Point</td>
-<td>❌</td>
+<td>⌛</td>
 <td>✅ AL</td>
 <td>Not Supported</td>
 </tr>
@@ -1441,7 +1471,7 @@ Channel Support Table
 <td>Not Used</td>
 <td>~</td>
 <td>Bass Long Note Start/End Point</td>
-<td>❌</td>
+<td>⌛</td>
 <td>✅ AL</td>
 <td>Not Supported</td>
 </tr>
@@ -1801,19 +1831,19 @@ Channel Support Table
 <tbody>
 <tr>
 <td>50</td>
-<td>Bar Line</td>
+<td>Show Beat Line</td>
 <td>❌</td>
-<td>Bar Line</td>
-<td>❌</td>
+<td>Show Beat Line</td>
+<td>⌛</td>
 <td>✅</td>
-<td>Not Used</td>
+<td>Not Supported</td>
 </tr>
 <tr>
 <td>51</td>
-<td>Beat Line</td>
+<td>Show Measure Line</td>
 <td>❌</td>
-<td>Beat Line</td>
-<td>❌</td>
+<td>Show Measure Line</td>
+<td>⌛</td>
 <td>✅</td>
 <td>Not Supported</td>
 </tr>
@@ -1838,11 +1868,11 @@ Channel Support Table
 <tr>
 <td>54</td>
 <td>Video Playback</td>
-<td>❌</td>
-<td>Video Playback</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>Sync Video Playback</td>
+<td>✅</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>55</td>
@@ -1975,7 +2005,7 @@ Channel Support Table
 <td>Sound Effect 01</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>62</td>
@@ -1984,7 +2014,7 @@ Channel Support Table
 <td>Sound Effect 02</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>63</td>
@@ -1993,7 +2023,7 @@ Channel Support Table
 <td>Sound Effect 03</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>64</td>
@@ -2002,7 +2032,7 @@ Channel Support Table
 <td>Sound Effect 04</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>65</td>
@@ -2011,7 +2041,7 @@ Channel Support Table
 <td>Sound Effect 05</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>66</td>
@@ -2020,7 +2050,7 @@ Channel Support Table
 <td>Sound Effect 06</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>67</td>
@@ -2029,7 +2059,7 @@ Channel Support Table
 <td>Sound Effect 07</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>68</td>
@@ -2038,7 +2068,7 @@ Channel Support Table
 <td>Sound Effect 08</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>69</td>
@@ -2047,7 +2077,7 @@ Channel Support Table
 <td>Sound Effect 09</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>6A</td>
@@ -2126,7 +2156,7 @@ Channel Support Table
 <td>Sound Effect 10</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>71</td>
@@ -2135,7 +2165,7 @@ Channel Support Table
 <td>Sound Effect 11</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>72</td>
@@ -2144,7 +2174,7 @@ Channel Support Table
 <td>Sound Effect 12</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>73</td>
@@ -2153,7 +2183,7 @@ Channel Support Table
 <td>Sound Effect 13</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>74</td>
@@ -2162,7 +2192,7 @@ Channel Support Table
 <td>Sound Effect 14</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>75</td>
@@ -2171,7 +2201,7 @@ Channel Support Table
 <td>Sound Effect 15</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>76</td>
@@ -2180,7 +2210,7 @@ Channel Support Table
 <td>Sound Effect 16</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>77</td>
@@ -2189,7 +2219,7 @@ Channel Support Table
 <td>Sound Effect 17</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>78</td>
@@ -2198,7 +2228,7 @@ Channel Support Table
 <td>Sound Effect 18</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>79</td>
@@ -2207,7 +2237,7 @@ Channel Support Table
 <td>Sound Effect 19</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>7A</td>
@@ -2286,7 +2316,7 @@ Channel Support Table
 <td>Sound Effect 20</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>81</td>
@@ -2295,7 +2325,7 @@ Channel Support Table
 <td>Sound Effect 21</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>82</td>
@@ -2304,7 +2334,7 @@ Channel Support Table
 <td>Sound Effect 22</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>83</td>
@@ -2313,7 +2343,7 @@ Channel Support Table
 <td>Sound Effect 23</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>84</td>
@@ -2322,7 +2352,7 @@ Channel Support Table
 <td>Sound Effect 24</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>85</td>
@@ -2331,7 +2361,7 @@ Channel Support Table
 <td>Sound Effect 25</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>86</td>
@@ -2340,7 +2370,7 @@ Channel Support Table
 <td>Sound Effect 26</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>87</td>
@@ -2349,7 +2379,7 @@ Channel Support Table
 <td>Sound Effect 27</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>88</td>
@@ -2358,7 +2388,7 @@ Channel Support Table
 <td>Sound Effect 28</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>89</td>
@@ -2367,7 +2397,7 @@ Channel Support Table
 <td>Sound Effect 29</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>8A</td>
@@ -2446,7 +2476,7 @@ Channel Support Table
 <td>Sound Effect 30</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>91</td>
@@ -2455,7 +2485,7 @@ Channel Support Table
 <td>Sound Effect 31</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>92</td>
@@ -2464,7 +2494,7 @@ Channel Support Table
 <td>Sound Effect 32</td>
 <td>✅</td>
 <td>✅</td>
-<td>Supported</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>93</td>
@@ -2771,128 +2801,128 @@ Channel Support Table
 <tr>
 <td>B1</td>
 <td>HiHatClose Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>HiHatClose Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>B2</td>
 <td>Snare Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Snare Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>B3</td>
 <td>Bass Drum Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Bass Drum Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>B4</td>
 <td>High Tom Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>High Tom Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>B5</td>
 <td>Low Tom Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Low Tom Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>B6</td>
 <td>Cymbal Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Cymbal Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>B7</td>
 <td>Floor Tom Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Floor Tom Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>B8</td>
 <td>High Hat Open Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>High Hat Open Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>B9</td>
 <td>Ride Cymbal Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Ride Cymbal Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>BA</td>
 <td>Guitar Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Guitar Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>BB</td>
 <td>Bass Empty</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Bass Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>BC</td>
 <td>Not Used</td>
 <td>~</td>
 <td>LeftCymbal Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>BD</td>
 <td>Not Used</td>
 <td>~</td>
 <td>LeftPedal Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>BE</td>
 <td>Not Used</td>
 <td>~</td>
 <td>LeftBassDrum Empty</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>BF</td>
@@ -2940,9 +2970,9 @@ Channel Support Table
 <tr>
 <td>C2</td>
 <td>Hide Beat/Measure bar</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Hide Beat/Measure bar</td>
-<td>❌</td>
+<td>⌛</td>
 <td>✅</td>
 <td>Not Supported</td>
 </tr>
@@ -3350,20 +3380,20 @@ Channel Support Table
 <tr>
 <td>EC</td>
 <td>Metronome</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Metronome</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>ED</td>
 <td>Start Sound</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Start Sound</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>EE</td>
@@ -3510,20 +3540,20 @@ Channel Support Table
 <tr>
 <td>FC</td>
 <td>Metronome</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Metronome</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>FD</td>
 <td>Start Sound</td>
-<td>❌</td>
+<td>⌛</td>
 <td>Start Sound</td>
-<td>❌</td>
 <td>✅</td>
-<td>Not Supported</td>
+<td>✅</td>
+<td>Supported in 4.11.0</td>
 </tr>
 <tr>
 <td>FE</td>
