@@ -1115,27 +1115,128 @@ techno updates!
 </h3>
 </div><p><strong>Mode Specific</strong></p>
 <ul>
-<li>❕✅</li>
+<li>❕✅ <strong>New!</strong> <code>BMS</code> Base36/Full BME Parser Support</li>
+<li>❕✅ <strong>New!</strong> <code>BMS</code> #SCROLL and #SPEED channel support stub. Full support will be in the next alpha</li>
+<li>❕✅ Fixed <code>pomu</code> 3 Key parser layout</li>
+<li>❕✅ Fixed <code>pomu</code> doubles missing graphics</li>
+<li>❕✅ <strong>New!</strong> <code>PIU</code> <code>pump</code> parser, designed for F2/P1 charts</li>
+<li>❕✅ <strong>New!</strong> <code>pump</code> bga one line support</li>
+<li>❕✅ <strong>New!</strong> <code>pump</code> long &lsquo;edit&rsquo; chart support</li>
+<li>❕✅ <strong>New!</strong> <code>pump</code> <code>GetSongFolder()</code> support</li>
+<li>❕✅ <strong>New!</strong> <code>pump</code> Custom Notesloader pathway, for themers to use</li>
+<li>❕✅ <strong>New!</strong> <code>be-mu</code> column lines for supported themes</li>
+<li>❕✅ <strong>New!</strong> <code>be-mu</code> spinning turntable support for noteskins</li>
+<li>❕✅ Fixed <code>pump</code> warp calculations due to ancient code paths being used instead of the new ones</li>
+<li>❕✅ <strong>New!</strong> <code>pump</code> added <code>SongCategory()</code>/<code>#SONGCATEGORY</code> support to parser</li>
+<li>❕✅ <strong>New!</strong> <code>pump</code> added <code>SongType()</code>/<code>#SONGTYPE</code> support to parser</li>
+<li>❕✅ Tweaked <code>gh</code> strum methods</li>
+<li>❕✅ Fixed <code>gh</code> overly punishing players</li>
+<li>❕✅ <strong>New!</strong> <code>OTO</code> parser in progress</li>
+<li>❕✅ Fixed <code>gh</code> fever issues</li>
+<li>❕✅ <strong>New!</strong> renamed <code>beat</code> to <code>be-mu</code> (BE-MUsic)</li>
+<li>❕✅ <strong>New!</strong> renamed <code>popn</code> to <code>po-mu</code> (POpn-MUsic)</li>
+<li>❕✅ Began <code>gdgf</code> hold support - still a work in progress</li>
+<li>❕✅ Fixed <code>be-mu</code> and <code>po-mu</code> mines auto hitting</li>
+<li>❕✅ <strong>New!</strong> <code>gdgf</code> wailing support engine</li>
 </ul>
 <p><strong>Engine</strong></p>
 <ul>
-<li>❕✅ Fixed CD Audio style loading methodology being called from 2006</li>
+<li>❕✅ Fixed stoi overflows (closes #432)</li>
+<li>❕✅ Fixed stof underflows (closes #432)</li>
+<li>❕✅ <strong>New!</strong> BW / WIDE stoi/stof functions to unclamp when required</li>
+<li>❕✅ Fixed XML input overflows</li>
+<li>❕✅ Fixed logic errors in FileDB</li>
+<li>❕✅ Fixed Hold endings being left over from deleted entries on the editor</li>
+<li>❕✅ Fixed bug in Chart Length descriptors</li>
+<li>❕✅ <strong>New!</strong> Use Chart Length properly in Steps</li>
+<li>❕✅ <strong>New!</strong> <code>GetChartLength()</code> lua command</li>
+<li>❕✅ <strong>New!</strong> Fix Player overflow in music length</li>
+<li>❕✅ <strong>New!</strong> Added support for <code>#LASTSECONDHINT</code> in ssc files</li>
+<li>❕✅ <strong>New!</strong> Fixed bugs with first and last second of charts</li>
+<li>❕✅ <strong>New!</strong> Added new generation of step length</li>
+<li>❕✅ <strong>New!</strong> Added new <code>GetFGChanges()</code> lua command</li>
+<li>❕✅ Fixed <code>haste()</code> math in resampler</li>
+<li>❕✅ Fixed how <code>haste</code> is calculated in notedata</li>
+<li>❕✅ Fixed bug with GL initialisation</li>
+<li>❕✅ <strong>New!</strong> Added new <code>HasSignificantBPMChanges()</code> lua command</li>
+<li>❕✅ <strong>New!</strong> Added new <code>IsDisplayBpmSpecified()</code> lua command</li>
+<li>❕✅ Fixed bug with some stops being &lsquo;ignored&rsquo; by the game engine</li>
+<li>❕✅ Fixed bug with edit files being truncated</li>
+<li>❕✅ Removed the edit file limits to the parsers</li>
+<li>❕✅ Fixed crash with parsing some F2 charts</li>
+<li>❕✅ Adjusted how longest charts are displayed</li>
+<li>❕✅ Fixed math overflow with astronomical BPM values</li>
+<li>❕✅ Fixed bug with sPath sometimes not finding files</li>
+<li>❕✅ Fixed math values on warp creation</li>
+<li>❕✅ Fixed warp points having duplicated notes</li>
+<li>❕✅ Added sanity check for verifying scroll application</li>
+<li>❕✅ Fixed timer overflow in player</li>
+<li>❕✅ <strong>New!</strong> Project and Name now set to Project OutFox</li>
+<li>❕✅ Fixed SDL Video Initialisation sometimes causing a white screen</li>
+<li>❕✅ Added SDL 2.0.17</li>
+<li>❕✅ Fixed underflow with some Chart calculations</li>
+<li>❕✅ <strong>New!</strong> LuathreadVariables to reduce conversions</li>
+<li>❕✅ <strong>New!</strong> iCol support for noteskins</li>
+<li>❕✅ Fixed animation length on receptor explosions</li>
+<li>❕✅ Fixed deprecated NSIS ini files</li>
+<li>❕✅ Fixed auto keysounds duplicated playback</li>
+<li>❕✅ Added playcommand for special keys in receptors</li>
+<li>❕✅ Added filetype check on foreground loading</li>
+<li>❕✅ <strong>New!</strong> JoyCon controller full support via HIDAPI</li>
+<li>❕✅ <strong>New!</strong> Stadia controller full support via HIDAPI</li>
+<li>❕✅ <strong>New!</strong> Luna controller full support via HIDAPI</li>
+<li>❕✅ <strong>New!</strong> Steam controller full support via HIDAPI</li>
+<li>❕✅ <strong>New!</strong> PS4/PS5 controller full support via HIDAPI</li>
+<li>❕✅ <strong>New!</strong> <code>rtMIDI</code> cross platform device driver support</li>
+<li>❕✅ Added <code>rtmidi</code> multi-device support, this allows for more than 1 MIDI device at a time!</li>
+<li>❕✅ <strong>New!</strong> Added <code>SetAutoplayForColumn()</code> for autoplay options for modes that need them</li>
+<li>❕✅ Fixed 3DP saving on SSC files</li>
+<li>❕✅ Fixed crash on some edit files with 6+ charts within</li>
+<li>❕✅ Fixed crash on userlog string buffer</li>
+<li>❕✅ Corrected Input behaviour with some controllers</li>
+<li>❕✅ Fixed iterator in ClearRange for Long Notes</li>
+<li>❕✅ Fixed log trace calls in the notes loader running out of memory</li>
+<li>❕✅ Added new preference: <code>UseSongNameOnGameWindow</code> to show the song name on the window title bar</li>
+<li>❕✅ Fixed Autoplay not being respected on the editor</li>
+<li>❕✅ Fixed editor Autoplay not using the correct GamePreferences</li>
+<li>❕✅ Fixed elements not hiding when autoplaying in editor</li>
+<li>❕✅ Added new preference: <code>JoyStickDeadzone</code> to allow the user to tweak a deadzone of an older pad</li>
+<li>❕✅ Added scrolling while previewing chart on editor</li>
+<li>❕✅ Added repeat input while previewing chart on editor</li>
+<li>❕✅ Added snap change during preview on editor</li>
+<li>❕✅ Added function to calculate beat to scroll</li>
+<li>❕✅ Added option to allow a toggle for clap on editor preview</li>
+<li>❕✅ Changed method for MMod/AMod to approach faster</li>
+<li>❕✅ Fixed bug with wrapper states not being cleared on playback</li>
+<li>❕✅ Fixed missing notes and mines in charts</li>
+<li>❕✅ Fixed loading window init system</li>
+<li>❕✅ Fixed parsing of pump charts causing a math overflow</li>
+<li>❕✅ Fixed notedata crash with some older chart types</li>
 </ul>
 <p><strong>Windows 7+:</strong></p>
 <ul>
-<li>❕✅</li>
+<li>❕✅ Fixed the NSIS target warnings for deprecated operating systems</li>
+<li>❕✅ Fixed deprecated NSIS ini files</li>
+<li>❕✅ Fixed XInput correlation when the extended windows 10/11 driver is used</li>
 </ul>
 <p><strong>Linux:</strong></p>
 <ul>
-<li>❕✅</li>
+<li>❕✅ Fixed crash in MESA 21+ with 5.3 -> kernels (closes #436)</li>
+<li>❕✅ Fixed edge crash with older cards on newer kernels (closes #436)</li>
+<li>❕✅ Corrected method to ensure X11 does not think we have hung</li>
 </ul>
 <p><strong>MacOS (Universal):</strong></p>
 <ul>
-<li>❕✅</li>
+<li>❕✅ Fixed compiler warnings on XCode 12</li>
+<li>❕✅ Fixed crash on M1 macs (Monterey) while paused</li>
+<li>❕✅ Fixed crash on Intel macs (Big Sur) in windowed mode and selecting app store</li>
 </ul>
 <p><strong>ARM32/ARM64: (Raspberry Pi etc)</strong></p>
 <ul>
-<li>❕✅</li>
+<li>❕✅ Fixed StringToFloat causing a segfault on the Pi3 and Armv7 CPUs</li>
+<li>❕✅ Fixed crash on rockpi 4 panfrost GPUs on newer MESA versions</li>
+<li>❕✅ Changed clocks to monotonic on arm</li>
+<li>❕✅ Corrected method to ensure X11 does not think we have hung</li>
 </ul>
 <div class=gdoc-page__anchorwrap>
 <h2 id=community-content>
@@ -1143,22 +1244,22 @@ Community content
 <a data-clipboard-text=https://outfox.wiki/releases/A4.11.0/#community-content class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Community content" href=#community-content><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><div class=gdoc-page__anchorwrap>
+</div><hr>
+<div class=gdoc-page__anchorwrap>
 <h3 id=noteskins>
 Noteskins
 <a data-clipboard-text=https://outfox.wiki/releases/A4.11.0/#noteskins class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Noteskins" href=#noteskins><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
-</div><ul>
-<li>✅</li>
-</ul>
+</div><hr>
 <div class=gdoc-page__anchorwrap>
 <h3 id=theme>
 Theme
 <a data-clipboard-text=https://outfox.wiki/releases/A4.11.0/#theme class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Theme" href=#theme><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
-</div><div class=gdoc-page__anchorwrap>
+</div><hr>
+<div class=gdoc-page__anchorwrap>
 <h3 id=translations>
 Translations
 <a data-clipboard-text=https://outfox.wiki/releases/A4.11.0/#translations class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Translations" href=#translations><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
