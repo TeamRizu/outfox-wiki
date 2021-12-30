@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=description content="Project OutFox contains parsers for the DTX and GDA/G2D chart formats, which are the standard formats used in conjunction with the gddm and gdgf game types. The following table contains details on the DTX/GDA/G2D channels that Project OutFox currently supports.
-We have recently added parsing support for the guitar/bass side of this chart format, however we have heard that the DTX clients will be removing support for guitar and bass charts in their clients.">
+We have recently added parsing support for the guitar/bass side of this chart format, and we will also look at creating a new easier to use format for gdgf in the future which supports 3/5 and 6 fret which has been requested by our community.">
 <title>DTX & GDA/G2D Support | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
@@ -1017,15 +1017,22 @@ hidden-mobile" itemprop=breadcrumb>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>DTX & GDA/G2D Support</h1>
 <p>Project OutFox contains parsers for the DTX and GDA/G2D chart formats, which are the standard formats used in conjunction with the <code>gddm</code> and <code>gdgf</code> game types. The following table contains details on the DTX/GDA/G2D channels that Project OutFox currently supports.</p>
-<p>We have recently added parsing support for the guitar/bass side of this chart format, however we have heard that the DTX clients will be removing support for guitar and bass charts in their clients.</p>
-<p>You need not worry about our abandonment of these modes, we will also look at creating a new easier to use format for gdgf in the future which supports 3/5 and 6 fret which has been requested by our community. The game mode can live on with us.</p>
+<p>We have recently added parsing support for the guitar/bass side of this chart format, and we will also look at creating a new easier to use format for gdgf in the future which supports 3/5 and 6 fret which has been requested by our community.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=dtxgda-notedata-support-as-of-alpha-4110>
-DTX/GDA Notedata support as of Alpha 4.11.0
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/dtx-gda-support/#dtxgda-notedata-support-as-of-alpha-4110 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DTX/GDA Notedata support as of Alpha 4.11.0" href=#dtxgda-notedata-support-as-of-alpha-4110><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=dtxgda-notedata-support-as-of-alpha-4120>
+DTX/GDA Notedata support as of Alpha 4.12.0
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/dtx-gda-support/#dtxgda-notedata-support-as-of-alpha-4120 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DTX/GDA Notedata support as of Alpha 4.12.0" href=#dtxgda-notedata-support-as-of-alpha-4120><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><div class=gdoc-page__anchorwrap>
+</div><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=new-for-alpha-4120---shift-jis-utf8-and-utf16le-support>
+New for Alpha 4.12.0 - SHIFT-JIS, UTF8 and UTF16LE Support!
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/dtx-gda-support/#new-for-alpha-4120---shift-jis-utf8-and-utf16le-support class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New for Alpha 4.12.0 - SHIFT-JIS, UTF8 and UTF16LE Support!" href=#new-for-alpha-4120---shift-jis-utf8-and-utf16le-support><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>This alpha includes complete support for all types of dtx/gda files, no matter which creator made it, including the newer standards. You do not need to change locale on windows, nor convert the encoding, the game will just load them up.</p>
+<div class=gdoc-page__anchorwrap>
 <h3 id=table-of-symbols>
 Table of Symbols
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/dtx-gda-support/#table-of-symbols class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Table of Symbols" href=#table-of-symbols><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
@@ -3609,7 +3616,7 @@ Channel Support Table
 </tbody>
 </table> </div>
 <hr>
-<p><em>Written and Maintained with ♡ by Squirrel, with thanks to the BMS command memo, the Japanese DTX and BandJAM community, dridi for the GDA help and to Kangalioo for the VSRG docs</em></p>
+<p><em>Written and Maintained with ♡ by Squirrel, with thanks to the BMS command memo, the Japanese DTX and BandJAM community, APPROVED from DTXMania&rsquo;s Discord community, dridi for the GDA help and to Kangalioo for the VSRG docs</em></p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
