@@ -6,11 +6,14 @@ geekdocCollapseSection: true
 
 Project OutFox contains parsers for the DTX and GDA/G2D chart formats, which are the standard formats used in conjunction with the ``gddm`` and ``gdgf`` game types. The following table contains details on the DTX/GDA/G2D channels that Project OutFox currently supports.
 
-We have recently added parsing support for the guitar/bass side of this chart format, however we have heard that the DTX clients will be removing support for guitar and bass charts in their clients. 
+We have recently added parsing support for the guitar/bass side of this chart format, and we will also look at creating a new easier to use format for gdgf in the future which supports 3/5 and 6 fret which has been requested by our community.
 
-You need not worry about our abandonment of these modes, we will also look at creating a new easier to use format for gdgf in the future which supports 3/5 and 6 fret which has been requested by our community. The game mode can live on with us.
+## DTX/GDA Notedata support as of Alpha 4.12.0
 
-## DTX/GDA Notedata support as of Alpha 4.11.0
+---
+## New for Alpha 4.12.0 - SHIFT-JIS, UTF8 and UTF16LE Support!
+
+This alpha includes complete support for all types of dtx/gda files, no matter which creator made it, including the newer standards. You do not need to change locale on windows, nor convert the encoding, the game will just load them up.
 
 ### Table of Symbols
 ---
@@ -357,4 +360,4 @@ FF|Not Used|~|Not Used|~|~|Not Used
 
 ----
 
-_Written and Maintained with ♡ by Squirrel, with thanks to the BMS command memo, the Japanese DTX and BandJAM community, dridi for the GDA help and to Kangalioo for the VSRG docs_
+_Written and Maintained with ♡ by Squirrel, with thanks to the BMS command memo, the Japanese DTX and BandJAM community, APPROVED from DTXMania's Discord community, dridi for the GDA help and to Kangalioo for the VSRG docs_
