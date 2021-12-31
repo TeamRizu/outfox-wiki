@@ -1078,7 +1078,7 @@ Signed Mac builds update!
 <a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#signed-mac-builds-update class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Signed Mac builds update!" href=#signed-mac-builds-update><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>We have continued to worked on our Mac builds since the last alpha, and this alpha will be released as a universal binary. This means we do not need to quarantine, nor worry about the systems we needed in the past to get the game to work. OutFox is fully signed and notorised, so this means installation is convenient and easy moving forward; you do not need to worry about which build to grab, as both will function as expected.</p>
+</div><p>We have continued to work on our Mac builds since the last alpha, and this alpha will be released as a universal binary. This means we do not need to quarantine, nor worry about the systems we needed in the past to get the game to work. OutFox is fully signed and notorised, so this means installation is convenient and easy moving forward; you do not need to worry about which build to grab, as both will function as expected.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=new-unicodeshift-jis-support>
@@ -1184,7 +1184,7 @@ WINDOWS: <em><code>legacy</code> set to be the default and is out of beta!</em>
 </code></pre><p><em>SDL Driver</em></p>
 <pre tabindex=0><code>InputDrivers=Para,SDL
 </code></pre><hr>
-<p>If you use a <em>Reflex</em> controller, you have several options, however it is best on Windows if you use the new legacy driver for now. To enable the <em>Reflex</em> controller with the legacy option enabled, so you do not cause a problem with the HIDAPI library. To activate this controller on 4.12, you need to add the following to your entry: (please note: You need legacy for keyboard input!)</p>
+<p>If you use a <em>Reflex</em> controller, you have several options, however it is best on Windows if you use the new legacy driver for now. To enable the <em>Reflex</em> controller , you need to add the following to your entry: (please note: You need legacy for keyboard input and to avoid HIDAPI problems!)</p>
 <p>(Only one player is supported at this time, however if there is demand we can add more player support! Bug Squirrel for more information!)</p>
 <pre tabindex=0><code>InputDrivers=Reflex,legacy,minisdl
 </code></pre><p>If you have a <code>Python2/3</code> controller, like the above set up for the <em>Reflex</em> you can simply add your entry here, (remember to set up your COM ports etc as seen in the Windows Device Manager) and remember that this device is not seen in Windows 8 or higher due to the change in the way USB controllers became emulated.</p>
