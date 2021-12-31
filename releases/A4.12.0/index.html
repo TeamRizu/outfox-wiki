@@ -1196,7 +1196,7 @@ WINDOWS: <em><code>legacy</code> set to be the default and is out of beta!</em>
 <a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_legacy-driver_-windows-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Legacy Driver (Windows Only)" href=#_legacy-driver_-windows-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h5>
-</div><pre tabindex=0><code>InputDrivers=legacy,minisdl
+</div><pre tabindex=0><code>InputDrivers=Para,legacy,minisdl
 </code></pre><div class=gdoc-page__anchorwrap>
 <h5 id=_sdl-driver_-windows-only-1>
 <em>SDL Driver</em> (Windows Only)
@@ -1246,7 +1246,7 @@ Announcing <code>smx</code> mode!
 <a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#we-respectfully-ask-you-to-not-try-to-rip-or-use-official-assets-or-songs-as-we-want-to-keep-the-arcade-scene-alive-and-support-the-guys-over-at-smx-outfox-will-not-support-the-arcade-timings-or-the-smx-sim-file-format-so-please-do-not-ask-us-for-this class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor We respectfully ask you to not try to rip or use official assets or songs as we want to keep the arcade scene alive and support the guys over at SMX! OutFox will not support the arcade timings or the smx sim file format, so please do not ask us for this!" href=#we-respectfully-ask-you-to-not-try-to-rip-or-use-official-assets-or-songs-as-we-want-to-keep-the-arcade-scene-alive-and-support-the-guys-over-at-smx-outfox-will-not-support-the-arcade-timings-or-the-smx-sim-file-format-so-please-do-not-ask-us-for-this><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
-</div><p>This mode was planned to be an Alpha V release, but with the pandemic, and the fact many of our players with SMX pads <a class=gdoc-markdown__link href=https://shop.steprevolution.com/collections/frontpage/products/stepmaniax-stage-5th-generation>Buy the pads here!</a></p>
+</div><p>This mode was planned to be an Alpha V release, but with the pandemic, and the fact many of our players with SMX pads requested it. The pads are released when ready but you can <a class=gdoc-markdown__link href=https://shop.steprevolution.com/collections/frontpage/products/stepmaniax-stage-5th-generation>Buy the pads here!</a> and see when they are available again.</p>
 <p>This mode will have some of the first non-arcade charted SMX files coming in the winter update of the OutFox Serenity Pack Volume 1.5 coming soon!</p>
 <p><img src=https://user-images.githubusercontent.com/11047768/147799078-e56acec2-621c-44af-9cd1-104c6af597ec.png alt=image></p>
 <div class=gdoc-page__anchorwrap>
@@ -1312,11 +1312,11 @@ kb12 = a w s d r f j i k l p ;
 kb13 = a w s d r f space j i k l p ;
 kb14 = a w s e d r f j i k o l p ;
 kb15 = a w s e d r f space j i k o l p ;
-</code></pre><p>This set is just the automapping, and as is always with <em>OutFox</em> everything is completely remappable, you can also assign controllers, MIDI input, drums, DJ controllers, pads etc to this and play in any way you like!</p>
+</code></pre><p>This set is just the auto-mapping, and as is always with <em>OutFox</em> everything is completely remappable, you can also assign controllers, MIDI input, drums, DJ controllers, pads etc to this and play in any way you like!</p>
 <p><img src=https://user-images.githubusercontent.com/11047768/147801592-6a4d3437-a696-45c8-90ed-7976dad29145.png alt=image></p>
 <p>This is the <code>o2jous</code> noteskin which has the same feature that shows the keyboard mapping, but is less vibrant on the eyes.</p>
-<p>The other news about this mode, is we have begun work on the <code>OTO</code> parser to enable <code>osu</code> file support. We support the <code>mania</code> mode (3) at this time - (we were unable to finish the <code>taitai</code> (1) support in time, it will come soon!) The game reads them and can play them with synched video and bg changes, but we do not support <code>osr</code> or <code>osb</code> at this time. <strong><code>osz</code> files are supported in linux and Mac OS at this time.</strong></p>
-<p>You must place the files in a folder as you would as normal with sim files from other modes. They will be created as a <code>kbx</code> chart type, they will NOT change over to dance or any other mode at this time! (unless you autoGen for them)</p>
+<p>The other news about this mode, is we have begun work on the <code>OTO</code> parser to enable <code>osu</code> file support. We support the <code>mania</code> mode (3) at this time - (we were unable to finish the <code>taitai</code> (1) support in time, it will come soon!) The game reads them and can play them with synched video and bg changes, but we do not support <code>osr</code> or <code>osb</code> at this time. <strong><code>osz</code> files are being worked on at this time, and only partially work on Mac/linux.</strong></p>
+<p>You must place the files in the group folder as you would as normal with sim files from other modes. They will be created as a <code>kbx</code> chart type, they will NOT change over to dance or any other mode at this time! (unless you autoGen for them)</p>
 <p>This mode supports multiple difficulty per folder, and will not make some versions &lsquo;disappear&rsquo; as the old versions did, and if there are multiple different songs in the same folder, the <code>OTO</code> parser can read and differentiate between the chart and it&rsquo;s song/background, meaning you do not need to swap out anything or move stuff to individual folders. We will look into making this option available to other modes in the future. This new parser is based off of the <code>.chart</code> parser using line by line, splitting up each section into it&rsquo;s own loading function.</p>
 <p>As we were testing this mode, many of our awesome testing players suggested that we should have a &lsquo;Lift-Hold&rsquo; to &lsquo;Normal Hold&rsquo; modifier, to make the game more accessible and fun as sometimes the lift-hold requirement raised the difficulty of the chart too much, or players felt overly punished by the placement of the lift holds.</p>
 <p>This alpha has a new modifier for this, it is available on the song options -> modifiers as seen in the screenshot below.</p>
