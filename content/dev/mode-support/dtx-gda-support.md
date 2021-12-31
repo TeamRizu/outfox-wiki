@@ -4,6 +4,10 @@ weight: 1
 geekdocCollapseSection: true
 ---
 
+_Preview shot of this mode from Alpha 4.9.8 with fallback theme_
+![gddm](https://user-images.githubusercontent.com/11047768/115624151-1e5b0900-a2f2-11eb-86db-1e0ad0283214.png)
+
+
 Project OutFox contains parsers for the DTX and GDA/G2D chart formats, which are the standard formats used in conjunction with the ``gddm`` and ``gdgf`` game types. The following table contains details on the DTX/GDA/G2D channels that Project OutFox currently supports.
 
 We have recently added parsing support for the guitar/bass side of this chart format, and we will also look at creating a new easier to use format for gdgf in the future which supports 3/5 and 6 fret which has been requested by our community.
@@ -360,4 +364,4 @@ FF|Not Used|~|Not Used|~|~|Not Used
 
 ----
 
-_Written and Maintained with ♡ by Squirrel, with thanks to the BMS command memo, the Japanese DTX and BandJAM community, APPROVED from DTXMania's Discord community, dridi for the GDA help and to Kangalioo for the VSRG docs_
+_Written and Maintained with ♡ by Squirrel, with thanks to the BMS command memo, the Japanese DTX and BandJAM community, ``APPROVED`` and ``sub`` from DTXMania's Discord community, ``dridi`` for the GDA help and to ``Kangalioo`` for the VSRG docs_
