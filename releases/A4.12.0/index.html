@@ -3,7 +3,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Release Date: 30th December 2021    &ldquo;Onegai Muscle!&rdquo;     &ldquo;Happy 2nd Anniversary, OutFox!&rdquo;    Please read the change log!     (Incorporates Internal Builds 4.12.0-rc0 to 4.12.0-rc3)    (Incorporates Internal Builds 4.11.1-rc0 to 4.11.1-rc17)    (Incorporates Internal Builds 5.0.0-editor-preview-r0 to 5.0.0-editor-preview-r31)     New Folder Locations and Short News Update.    This release will be moving the base application, folders and it&rsquo;s naming to &lsquo;OutFox&rsquo;.">
+<meta name=description content="Release Date: 31st December 2021    &ldquo;Onegai Muscle!&rdquo;     &ldquo;Happy 2nd Anniversary, OutFox!&rdquo;    Please read the change log!     (Incorporates Internal Builds 4.12.0-rc0 to 4.12.0-rc7)    (Incorporates Internal Builds 4.11.1-rc0 to 4.11.1-rc17)    (Incorporates Internal Builds 5.0.0-editor-preview-r0 to 5.0.0-editor-preview-r31)     New Folder Locations and Short News Update.    This release will be moving the base application, folders and it&rsquo;s naming to &lsquo;OutFox&rsquo;.">
 <title>OutFox Alpha 4.12.0 Build | Project OutFox Wiki</title>
 <link rel=icon href=../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../js/darkmode-ce906ea916.min.js></script>
@@ -1016,9 +1016,9 @@ hidden-mobile" itemprop=breadcrumb>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>OutFox Alpha 4.12.0 Build</h1>
 <div class=gdoc-page__anchorwrap>
-<h3 id=release-date-30th-december-2021>
-Release Date: 30th December 2021
-<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#release-date-30th-december-2021 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Release Date: 30th December 2021" href=#release-date-30th-december-2021><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=release-date-31st-december-2021>
+Release Date: 31st December 2021
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#release-date-31st-december-2021 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Release Date: 31st December 2021" href=#release-date-31st-december-2021><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><div class=gdoc-page__anchorwrap>
@@ -1042,9 +1042,9 @@ Please read the change log!
 </h1>
 </div><hr>
 <div class=gdoc-page__anchorwrap>
-<h4 id=incorporates-internal-builds-4120-rc0-to-4120-rc3>
-(Incorporates Internal Builds 4.12.0-rc0 to 4.12.0-rc3)
-<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#incorporates-internal-builds-4120-rc0-to-4120-rc3 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor (Incorporates Internal Builds 4.12.0-rc0 to 4.12.0-rc3)" href=#incorporates-internal-builds-4120-rc0-to-4120-rc3><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h4 id=incorporates-internal-builds-4120-rc0-to-4120-rc7>
+(Incorporates Internal Builds 4.12.0-rc0 to 4.12.0-rc7)
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#incorporates-internal-builds-4120-rc0-to-4120-rc7 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor (Incorporates Internal Builds 4.12.0-rc0 to 4.12.0-rc7)" href=#incorporates-internal-builds-4120-rc0-to-4120-rc7><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h4>
 </div><div class=gdoc-page__anchorwrap>
@@ -1171,25 +1171,159 @@ WINDOWS: <em><code>legacy</code> set to be the default and is out of beta!</em>
 </h2>
 </div><p>If you have been reading the previous changelogs, we have been testing a slightly modified version of the old SM4/5 input driver for those that prefer the &lsquo;feel&rsquo; of that era in input timing, and until the new GA driver is finished, (we are waiting for the Q1 2022 Win10/Win11 update) we will set this driver as default from this alpha.</p>
 <p>If you are on an established preference.ini, to use it you can follow the style above:</p>
-<p><strong>Windows</strong></p>
-<pre tabindex=0><code>InputDrivers=legacy,minisdl
+<div class=gdoc-page__anchorwrap>
+<h5 id=_legacy_-windows-only>
+<em>legacy</em> (Windows Only)
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_legacy_-windows-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor legacy (Windows Only)" href=#_legacy_-windows-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><pre tabindex=0><code>InputDrivers=legacy,minisdl
 </code></pre><p>You can also leave this blank, or add MIDI if you plan to play DTX or use a MIDI based input device in the future. You will need the <code>minisdl</code> input driver for your window and operating system controllers, it allows for a smaller footprint on the game, and for your windows based playback this is important at the moment. It shows up in the &lsquo;test input&rsquo; screen as &lsquo;Window Handler (aux)&rsquo; so you have window controls, and full-screen etc support while keeping the base drivers compact. This driver will be default on all operating systems in due course, when the GA driver is complete.</p>
 <p>if you however need to have an Xinput supported device, or you have an advanced setup, you can reset the driver to how it was before this alpha with a simple change in your preference.ini:</p>
-<pre tabindex=0><code>InputDrivers=SDL
+<div class=gdoc-page__anchorwrap>
+<h5 id=_sdl-driver_-windows-only>
+<em>SDL Driver</em> (Windows Only)
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_sdl-driver_-windows-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SDL Driver (Windows Only)" href=#_sdl-driver_-windows-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><pre tabindex=0><code>InputDrivers=SDL
 </code></pre><p>This will enable the support for the Xinput system, and the legacy system in the default theme experimental options, (the <code>UseOldJoystickMapping</code> one) which will allow you to switch between the options.</p>
 <hr>
 <p>If you use a <em>ParaParaParadise</em> controller you will need to add the <code>Para</code> Driver (windows only right now!) before your options in preferences.</p>
-<p><em>Legacy Driver</em></p>
-<pre tabindex=0><code>InputDrivers=legacy,minisdl
-</code></pre><p><em>SDL Driver</em></p>
-<pre tabindex=0><code>InputDrivers=Para,SDL
+<div class=gdoc-page__anchorwrap>
+<h5 id=_legacy-driver_-windows-only>
+<em>Legacy Driver</em> (Windows Only)
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_legacy-driver_-windows-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Legacy Driver (Windows Only)" href=#_legacy-driver_-windows-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><pre tabindex=0><code>InputDrivers=legacy,minisdl
+</code></pre><div class=gdoc-page__anchorwrap>
+<h5 id=_sdl-driver_-windows-only-1>
+<em>SDL Driver</em> (Windows Only)
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_sdl-driver_-windows-only-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SDL Driver (Windows Only)" href=#_sdl-driver_-windows-only-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><pre tabindex=0><code>InputDrivers=Para,SDL
 </code></pre><hr>
 <p>If you use a <em>Reflex</em> controller, you have several options, however it is best on Windows if you use the new legacy driver for now. To enable the <em>Reflex</em> controller , you need to add the following to your entry: (please note: You need legacy for keyboard input and to avoid HIDAPI problems!)</p>
 <p>(Only one player is supported at this time, however if there is demand we can add more player support! Bug Squirrel for more information!)</p>
-<pre tabindex=0><code>InputDrivers=Reflex,legacy,minisdl
-</code></pre><p>If you have a <code>Python2/3</code> controller, like the above set up for the <em>Reflex</em> you can simply add your entry here, (remember to set up your COM ports etc as seen in the Windows Device Manager) and remember that this device is not seen in Windows 8 or higher due to the change in the way USB controllers became emulated.</p>
-<pre tabindex=0><code>InputDrivers=Python23IO,legacy,minisdl
+<div class=gdoc-page__anchorwrap>
+<h5 id=_reflex-driver_-windows-only>
+<em>Reflex Driver</em> (Windows Only)
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_reflex-driver_-windows-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Reflex Driver (Windows Only)" href=#_reflex-driver_-windows-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><pre tabindex=0><code>InputDrivers=Reflex,legacy,minisdl
 </code></pre><hr>
+<p>If you have a <code>Python2/3</code> controller, like the above set up for the <em>Reflex</em> you can simply add your entry here, (remember to set up your COM ports etc as seen in the Windows Device Manager) and remember that this device is not seen in Windows 8 or higher due to the change in the way USB controllers became emulated.</p>
+<div class=gdoc-page__anchorwrap>
+<h5 id=windows-only>
+Windows Only
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#windows-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Windows Only" href=#windows-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><pre tabindex=0><code>InputDrivers=Python23IO,legacy,minisdl
+</code></pre><hr>
+<p>If you have a <code>Rtio</code> controller, you need to add this as the other controllers, remember that <code>legacy</code> gives you keyboard and mouse support.</p>
+<div class=gdoc-page__anchorwrap>
+<h5 id=windows-only-1>
+Windows Only
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#windows-only-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Windows Only" href=#windows-only-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><pre tabindex=0><code>InputDrivers=Rtio,legacy,minisdl
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h1 id=announcing-smx-mode>
+Announcing <code>smx</code> mode!
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#announcing-smx-mode class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Announcing smx mode!" href=#announcing-smx-mode><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div><p>This month we are proud to announce initial support for the <code>smx</code> mode. This mode is a simulation of the game StepManiaX (<a class=gdoc-markdown__link href=https://stepmaniax.com/>https://stepmaniax.com/</a>) by Step Revolution, and are long time friends of our project. You can join their discord <a class=gdoc-markdown__link href=https://discord.gg/N7SwDvTn>here</a> and give them some support!</p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=we-respectfully-ask-you-to-not-try-to-rip-or-use-official-assets-or-songs-as-we-want-to-keep-the-arcade-scene-alive-and-support-the-guys-over-at-smx-outfox-will-not-support-the-arcade-timings-or-the-smx-sim-file-format-so-please-do-not-ask-us-for-this>
+<strong>We respectfully ask you to not try to rip or use official assets or songs as we want to keep the arcade scene alive and support the guys over at SMX! OutFox will not support the arcade timings or the smx sim file format, so please do not ask us for this!</strong>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#we-respectfully-ask-you-to-not-try-to-rip-or-use-official-assets-or-songs-as-we-want-to-keep-the-arcade-scene-alive-and-support-the-guys-over-at-smx-outfox-will-not-support-the-arcade-timings-or-the-smx-sim-file-format-so-please-do-not-ask-us-for-this class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor We respectfully ask you to not try to rip or use official assets or songs as we want to keep the arcade scene alive and support the guys over at SMX! OutFox will not support the arcade timings or the smx sim file format, so please do not ask us for this!" href=#we-respectfully-ask-you-to-not-try-to-rip-or-use-official-assets-or-songs-as-we-want-to-keep-the-arcade-scene-alive-and-support-the-guys-over-at-smx-outfox-will-not-support-the-arcade-timings-or-the-smx-sim-file-format-so-please-do-not-ask-us-for-this><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p>This mode was planned to be an Alpha V release, but with the pandemic, and the fact many of our players with SMX pads <a class=gdoc-markdown__link href=https://shop.steprevolution.com/collections/frontpage/products/stepmaniax-stage-5th-generation>Buy the pads here!</a></p>
+<p>This mode will have some of the first non-arcade charted SMX files coming in the winter update of the OutFox Serenity Pack Volume 1.5 coming soon!</p>
+<p><img src=https://user-images.githubusercontent.com/11047768/147799078-e56acec2-621c-44af-9cd1-104c6af597ec.png alt=image></p>
+<div class=gdoc-page__anchorwrap>
+<h5 id=_serenity-smx-charts_>
+<em>Serenity <code>smx</code> charts</em>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_serenity-smx-charts_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Serenity smx charts" href=#_serenity-smx-charts_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><p>The game mode is best played with the itg based timing, and the layout is familiar:</p>
+<p><img src=https://user-images.githubusercontent.com/11047768/147799426-edadab2b-acec-4daf-978c-0b78b271cb17.png alt=image></p>
+<div class=gdoc-page__anchorwrap>
+<h5 id=_in-game-footage_>
+<em>In game footage</em>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_in-game-footage_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor In game footage" href=#_in-game-footage_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><p>This mode has several cool new features with the beat bars, and with popular request we have added the colour differences to show the BPM/Stop changes on the notefield:</p>
+<p><img src=https://user-images.githubusercontent.com/11047768/147799934-0d54b5a6-f140-4f94-bd7f-dadaa5b82a60.png alt=image></p>
+<p>Please be aware that autoGen does work with this mode, and that we&rsquo;ve been working on improving the memory use with the autogeneration until we have talented charters creating new content for it. Any other 5K sim-files that <em>OutFox</em> supports will work.</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h1 id=we-say-farewell-to-kb7-mode>
+We say farewell to <code>kb7</code> mode!
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#we-say-farewell-to-kb7-mode class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor We say farewell to kb7 mode!" href=#we-say-farewell-to-kb7-mode><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div><p>The mode introduced with Team SSC has been retired in this alpha. There were many players who wanted it to be more than it was, and the use of the mode was generally for a small set of players, and the original creators of the mode also wished for it to be retired as well when we got the chance.</p>
+<p>We salute the mode and what it did for <em>StepMania</em> at the time when it was released, but fear not kb fans and players, we are proud to announce:</p>
+<div class=gdoc-page__anchorwrap>
+<h1 id=introducing-kbx-mode>
+Introducing <code>kbx</code> Mode!
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#introducing-kbx-mode class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Introducing kbx Mode!" href=#introducing-kbx-mode><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div><p>This is a revamp and rewrite of the KB7 mode, aimed at players that wanted a specific down-scrolling game mode, but with different sets of columns. We of course have varying modes with different sets and styles already, but there was no actual option to have things set in one specific place and one specific mode for it.</p>
+<p>This mode supports 1 to 15 columns, and is a single player option. It will eventually get it&rsquo;s own theme and other mechanics, but for now, it will fall back to our usual theme, but this does not make it any less playable!</p>
+<p>We have decided to follow along the play style of ez2, or o2jam style of games, but giving our own little twist on things as is common with <em>OutFox</em> modes. In the future, there will be options to set this mode up to how you prefer, with styles and timing/scoring available to change up and adjust as always.</p>
+<p>There is one specific thing about this mode however, <strong><em>The mod system is disabled</em></strong>. You may be wondering why we took the time to write a &lsquo;slimmer&rsquo; player options for this mode, well, in honesty there are a lot of things happening in the background we don&rsquo;t use in some modes, and we wanted to try out turning some of these things off to see how it works with the game and performance styles.</p>
+<p>The default noteskin for this game is based off of a synthwave style from the 80s, and we will continue to create the theme with this aesthetic.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=please-note-you-do-not-need-to-turn-on-autogen-for-this-mode-the-game-will-automatically-create-charts-in-the-format-and-column-size-of-supported-sim-files-already-on-your-system>
+<strong>PLEASE NOTE: You do NOT need to turn on autoGen for this mode! The game will automatically create charts in the format and column size of supported sim files already on your system!</strong>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#please-note-you-do-not-need-to-turn-on-autogen-for-this-mode-the-game-will-automatically-create-charts-in-the-format-and-column-size-of-supported-sim-files-already-on-your-system class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PLEASE NOTE: You do NOT need to turn on autoGen for this mode! The game will automatically create charts in the format and column size of supported sim files already on your system!" href=#please-note-you-do-not-need-to-turn-on-autogen-for-this-mode-the-game-will-automatically-create-charts-in-the-format-and-column-size-of-supported-sim-files-already-on-your-system><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p><img src=https://user-images.githubusercontent.com/11047768/147801237-78e3a41b-c732-4616-917d-90a92f0b0878.png alt=image></p>
+<p>The mode comes with a variety of noteskins and features out of the box, alongside a new interface and feature!</p>
+<p><img src=https://user-images.githubusercontent.com/11047768/147801388-551badef-6210-441e-8d01-d82dcb54ac28.png alt=image></p>
+<p>This skin reads the input assigned to each column and prints it within the space for you to remember where things are. This is helpful for you to learn the mode, and to discover play methods that you are comfortable with.</p>
+<p>The default mapping for this mode is as follows:</p>
+<pre tabindex=0><code>kb1  = space
+kb2  = f j
+kb3  = f space j
+kb4  = d f j k
+kb5  = d f space j k 
+kb6  = s d f j k l
+kb7  = s d f space j k l
+kb8  = a s d f j k l ;
+kb9  = a s d space f j k l ;
+kb10 = a w s d f j k l p ;
+kb11 = a w s d f space j k l p ;
+kb12 = a w s d r f j i k l p ;
+kb13 = a w s d r f space j i k l p ;
+kb14 = a w s e d r f j i k o l p ;
+kb15 = a w s e d r f space j i k o l p ;
+</code></pre><p>This set is just the automapping, and as is always with <em>OutFox</em> everything is completely remappable, you can also assign controllers, MIDI input, drums, DJ controllers, pads etc to this and play in any way you like!</p>
+<p><img src=https://user-images.githubusercontent.com/11047768/147801592-6a4d3437-a696-45c8-90ed-7976dad29145.png alt=image></p>
+<p>This is the <code>o2jous</code> noteskin which has the same feature that shows the keyboard mapping, but is less vibrant on the eyes.</p>
+<p>The other news about this mode, is we have begun work on the <code>OTO</code> parser to enable <code>osu</code> file support. We support the <code>mania</code> mode (3) at this time - (we were unable to finish the <code>taitai</code> (1) support in time, it will come soon!) The game reads them and can play them with synched video and bg changes, but we do not support <code>osr</code> or <code>osb</code> at this time. <strong><code>osz</code> files are supported in linux and Mac OS at this time.</strong></p>
+<p>You must place the files in a folder as you would as normal with sim files from other modes. They will be created as a <code>kbx</code> chart type, they will NOT change over to dance or any other mode at this time! (unless you autoGen for them)</p>
+<p>This mode supports multiple difficulty per folder, and will not make some versions &lsquo;disappear&rsquo; as the old versions did, and if there are multiple different songs in the same folder, the <code>OTO</code> parser can read and differentiate between the chart and it&rsquo;s song/background, meaning you do not need to swap out anything or move stuff to individual folders. We will look into making this option available to other modes in the future. This new parser is based off of the <code>.chart</code> parser using line by line, splitting up each section into it&rsquo;s own loading function.</p>
+<p>As we were testing this mode, many of our awesome testing players suggested that we should have a &lsquo;Lift-Hold&rsquo; to &lsquo;Normal Hold&rsquo; modifier, to make the game more accessible and fun as sometimes the lift-hold requirement raised the difficulty of the chart too much, or players felt overly punished by the placement of the lift holds.</p>
+<p>This alpha has a new modifier for this, it is available on the song options -> modifiers as seen in the screenshot below.</p>
+<p><img src=https://user-images.githubusercontent.com/11047768/147801294-c28de69b-41a4-43d5-830e-595a8be36fda.png alt=image></p>
+<p>These options give a different play style to the pink game, and makes it a lot more accessible to folks playing.</p>
+<p>We hope you have fun with it, and do let us know what you think!</p>
+<hr>
 <div class=gdoc-page__anchorwrap>
 <h1 id=known-issues-alpha-4120>
 <strong>KNOWN ISSUES: Alpha 4.12.0</strong>
@@ -1200,6 +1334,7 @@ WINDOWS: <em><code>legacy</code> set to be the default and is out of beta!</em>
 <li>❕❌ <strong>ISSUE</strong> Playing <code>be-mu</code>/<code>po-mu</code> songs on Endless Mode may have a crash on song loading. Please be aware that course mode for these modes are a bit temperamental at the moment!</li>
 <li>❕❌ <strong>ISSUE</strong> <code>gh</code> mode: Some charts will cause a crash when loaded into the game</li>
 <li>❕❌ <strong>ISSUE</strong> <code>gddm</code>/<code>gdgf</code> mode: We do not support the XA codec at this time, it&rsquo;ll play silent.</li>
+<li>❕❌ <strong>ISSUE</strong> Charts with similar difficulties in a folder will have scores assigned to them weirdly, due to the old SM paradigm. This will be fixed in a future update.</li>
 </ul>
 <hr>
 <div class=gdoc-page__anchorwrap>
@@ -1210,10 +1345,20 @@ WINDOWS: <em><code>legacy</code> set to be the default and is out of beta!</em>
 </h3>
 </div><p><strong>Mode Specific</strong></p>
 <ul>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> Created a new <code>smx</code> mode!</li>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> Added display for stops and bpm changes on the note-field</li>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> Added new default noteskin</li>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> Added <code>single</code>, <code>double6</code>, <code>double10</code> styles</li>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> Added 2 player support</li>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> Adapted lift-holds to work with this mode</li>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> Adapted minefields to work with this mode</li>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> Adapted roll-types to work with this mode</li>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> Added custom beat bar render distance</li>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> Added special column spacing</li>
 <li>❕✅ <code>kb7</code>: <strong>New!</strong> removed <code>kb7</code> mode from the game</li>
 <li>❕✅ <code>kbx</code>: <strong>New!</strong> Created a new <code>kbx</code> mode!</li>
 <li>❕✅ <code>kbx</code>: <strong>New!</strong> Created a new mod-less path for <code>kbx</code> for better performance</li>
-<li>❕✅ <code>kbx</code>: <strong>New!</strong> Added 1 to 15 Column support</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Added 1 to 15 Column style support</li>
 <li>❕✅ <code>kbx</code>: <strong>New!</strong> Added proper BGA/Video sync</li>
 <li>❕✅ <code>kbx</code>: <strong>New!</strong> Added Background 1 and 2 support</li>
 <li>❕✅ <code>kbx</code>: <strong>New!</strong> Added per-chart music support for folders with different songs inside</li>
@@ -1223,7 +1368,7 @@ WINDOWS: <em><code>legacy</code> set to be the default and is out of beta!</em>
 <li>❕✅ <code>kbx</code>: <strong>New!</strong> SmartGen - You do not need to turn on autogen for this mode!</li>
 <li>❕✅ <code>kbx</code>: <strong>New!</strong> OTO Parser for <code>kbx</code> for osz and osu files</li>
 <li>❕✅ <code>kbx</code>: <strong>New!</strong> Added Modifier option to remove lift-holds in kbx</li>
-<li>❕✅ <code>dtx</code>: <strong>New!</strong> Only load Unicode based simfiles on the new codepaths</li>
+<li>❕✅ <code>dtx</code>: <strong>New!</strong> Only load Unicode based simfiles on the new code paths</li>
 <li>❕✅ <code>dance</code>: <strong>New!</strong> <code>def.NoteField()</code> command for mod creators</li>
 </ul>
 <p><strong>Engine</strong></p>
