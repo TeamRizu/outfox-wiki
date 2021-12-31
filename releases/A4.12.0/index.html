@@ -1087,9 +1087,14 @@ New Unicode/SHIFT-JIS support!
 </a>
 </h2>
 </div><p>This build also has <em>very</em> long overdue extended character support in the file handlers. BeMusic Script, and DTXMania files use different encodings to .SSC and .SM simfiles, and in the past, they often showed up as garbage characters, or mojibake characters which could not be easily read into the game. A simple fix for this was to convert the simfile into UTF8, but with many hundreds of files, this is not reasonable to ask of players!</p>
-<p><img src=https://user-images.githubusercontent.com/11047768/147369797-e8d37f02-6707-43f9-9c2d-bacb5fdde0ec.png alt=image>
-<em>(DTXMania Files natively loading)</em></p>
-<p>This build correctly can detect the encoding with no user interaction, and will load them as expected into the correct game mode.</p>
+<p><img src=https://user-images.githubusercontent.com/11047768/147369797-e8d37f02-6707-43f9-9c2d-bacb5fdde0ec.png alt=image></p>
+<div class=gdoc-page__anchorwrap>
+<h5 id=_dtxmania-files-natively-loading_>
+<em>(DTXMania Files natively loading)</em>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_dtxmania-files-natively-loading_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor (DTXMania Files natively loading)" href=#_dtxmania-files-natively-loading_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><p>This build correctly can detect the encoding with no user interaction, and will load them as expected into the correct game mode.</p>
 <p>The new supported encoding types are:</p>
 <ul>
 <li>ANSI/Windows Extended (<code>SMA</code>/<code>BMS</code>/<code>DWI</code>/<code>KSF</code>)</li>
@@ -1104,17 +1109,36 @@ New Unicode/SHIFT-JIS support!
 </ul>
 <p>This will mean songs using the new code paths for the encoding support will take a little bit longer to parse the first time, but having the support over not having it is worth it.</p>
 <p>There will be opportunities to optimise the loading path, so it will get faster again!</p>
-<p><img src=https://user-images.githubusercontent.com/11047768/147370344-8e87d622-a7c3-4c99-b16a-f78830310ae7.png alt=image>
-<em>(BME files encoded in SHIFT-JIS natively loading)</em></p>
-<hr>
+<p><img src=https://user-images.githubusercontent.com/11047768/147370344-8e87d622-a7c3-4c99-b16a-f78830310ae7.png alt=image></p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=new-input-options>
-New Input Options!
-<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#new-input-options class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New Input Options!" href=#new-input-options><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h5 id=_bme-files-encoded-in-shift-jis-natively-loading_>
+<em>(BME files encoded in SHIFT-JIS natively loading)</em>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_bme-files-encoded-in-shift-jis-natively-loading_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor (BME files encoded in SHIFT-JIS natively loading)" href=#_bme-files-encoded-in-shift-jis-natively-loading_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><hr>
+<div class=gdoc-page__anchorwrap>
+<h1 id=new-and-updated-input-options>
+New and Updated Input Options!
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#new-and-updated-input-options class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New and Updated Input Options!" href=#new-and-updated-input-options><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div><div class=gdoc-page__anchorwrap>
+<h2 id=all-os-_portmidi-comes-out-of-beta_>
+ALL OS: <em><code>portmidi</code> comes out of beta!</em>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#all-os-_portmidi-comes-out-of-beta_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ALL OS: portmidi comes out of beta!" href=#all-os-_portmidi-comes-out-of-beta_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p><code>portmidi</code> comes out of beta!</p>
+</div><p><img src=https://cdn.discordapp.com/attachments/845781084356870195/868575186256023602/IMG_20210724_2026112.jpg alt=teensyfsr></p>
+<div class=gdoc-page__anchorwrap>
+<h5 id=_prototype-fsr-midi-controller_>
+<em>prototype fsr midi controller</em>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#_prototype-fsr-midi-controller_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor prototype fsr midi controller" href=#_prototype-fsr-midi-controller_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5>
+</div><p><img src=https://cdn.discordapp.com/attachments/721759411516866610/872518375593627759/IMG_20210804_173611.jpg alt=teensyprototypebreadboard></p>
 <p>This driver was written to accommodate the new DTXMania like mode, as the drum kits a lot of players use are MIDI based. This was the first time that our engine contained a fully functioning cross platform MIDI driver, the previous semi-broken <code>win32-midi</code> being Windows only. This new driver offers a 1ms clock timer and near realtime input on Linux and Mac OSX, but only supports <em>one</em> device connected to the system.</p>
+<p><em>We are in the process of designing a MIDI based FSR controller for modes which need it as the MIDI system is currently the lowest latency for Windows based systems, and we hope to open source this in time, when the code is better (and Squirrel has the time!)</em></p>
 <p>The reason we kept it in beta for so long was there was an identified need to have a MIDI driver capable of supporting more than one MIDI input device, as had been requested by <code>be-mu</code> and <code>gddm</code> players, like DTXMania has, being able to add a second device to enable menu control, or to enable non-standard setups, for example pedals or ride cymbals from a second kit.</p>
 <p>To assist with this need, we added another MIDI driver to the game:</p>
 <p><code>rtmidi</code></p>
@@ -1138,14 +1162,34 @@ InputDrivers=portmidi,SDL
 
 (rtmidi - you have more than one device):
 InputDrivers=rtmidi,SDL
-</code></pre><p><code>legacy</code> set to be the default on windows and is out of beta!</p>
-<p>If you have been reading the previous changelogs, we have been testing a slightly modified version of the old SM4/5 input driver for those that prefer the &lsquo;feel&rsquo; of that era in input timing, and until the new GA driver is finished, (we are waiting for the Q1 2022 Win10/Win11 update) we will set this driver as default from this alpha.</p>
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=windows-_legacy-set-to-be-the-default-and-is-out-of-beta_>
+WINDOWS: <em><code>legacy</code> set to be the default and is out of beta!</em>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#windows-_legacy-set-to-be-the-default-and-is-out-of-beta_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor WINDOWS: legacy set to be the default and is out of beta!" href=#windows-_legacy-set-to-be-the-default-and-is-out-of-beta_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>If you have been reading the previous changelogs, we have been testing a slightly modified version of the old SM4/5 input driver for those that prefer the &lsquo;feel&rsquo; of that era in input timing, and until the new GA driver is finished, (we are waiting for the Q1 2022 Win10/Win11 update) we will set this driver as default from this alpha.</p>
 <p>If you are on an established preference.ini, to use it you can follow the style above:</p>
 <p><strong>Windows</strong></p>
 <pre tabindex=0><code>InputDrivers=legacy,minisdl
 </code></pre><p>You can also leave this blank, or add MIDI if you plan to play DTX or use a MIDI based input device in the future. You will need the <code>minisdl</code> input driver for your window and operating system controllers, it allows for a smaller footprint on the game, and for your windows based playback this is important at the moment. It shows up in the &lsquo;test input&rsquo; screen as &lsquo;Window Handler (aux)&rsquo; so you have window controls, and full-screen etc support while keeping the base drivers compact. This driver will be default on all operating systems in due course, when the GA driver is complete.</p>
+<p>if you however need to have an Xinput supported device, or you have an advanced setup, you can reset the driver to how it was before this alpha with a simple change in your preference.ini:</p>
+<pre tabindex=0><code>InputDrivers=SDL
+</code></pre><p>This will enable the support for the Xinput system, and the legacy system in the default theme experimental options, (the <code>UseOldJoystickMapping</code> one) which will allow you to switch between the options.</p>
 <hr>
-<hr>
+<p>If you use a <em>ParaParaParadise</em> controller you will need to add the <code>Para</code> Driver (windows only right now!) before your options in preferences.</p>
+<p><em>Legacy Driver</em></p>
+<pre tabindex=0><code>InputDrivers=legacy,minisdl
+</code></pre><p><em>SDL Driver</em></p>
+<pre tabindex=0><code>InputDrivers=Para,SDL
+</code></pre><hr>
+<p>If you use a <em>Reflex</em> controller, you have several options, however it is best on Windows if you use the new legacy driver for now. To enable the <em>Reflex</em> controller with the legacy option enabled, so you do not cause a problem with the HIDAPI library. To activate this controller on 4.12, you need to add the following to your entry: (please note: You need legacy for keyboard input!)</p>
+<p>(Only one player is supported at this time, however if there is demand we can add more player support! Bug Squirrel for more information!)</p>
+<pre tabindex=0><code>InputDrivers=Reflex,legacy,minisdl
+</code></pre><p>If you have a <code>Python2/3</code> controller, like the above set up for the <em>Reflex</em> you can simply add your entry here, (remember to set up your COM ports etc as seen in the Windows Device Manager) and remember that this device is not seen in Windows 8 or higher due to the change in the way USB controllers became emulated.</p>
+<pre tabindex=0><code>InputDrivers=Python23IO,legacy,minisdl
+</code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h1 id=known-issues-alpha-4120>
 <strong>KNOWN ISSUES: Alpha 4.12.0</strong>
@@ -1154,7 +1198,7 @@ InputDrivers=rtmidi,SDL
 </h1>
 </div><ul>
 <li>❕❌ <strong>ISSUE</strong> Playing <code>be-mu</code>/<code>po-mu</code> songs on Endless Mode may have a crash on song loading. Please be aware that course mode for these modes are a bit temperamental at the moment!</li>
-<li>❕❌ <strong>ISSUE</strong> <code>gh</code> mode: Some charts have no real &lsquo;standard&rsquo; and will cause a crash when loaded into the game</li>
+<li>❕❌ <strong>ISSUE</strong> <code>gh</code> mode: Some charts will cause a crash when loaded into the game</li>
 <li>❕❌ <strong>ISSUE</strong> <code>gddm</code>/<code>gdgf</code> mode: We do not support the XA codec at this time, it&rsquo;ll play silent.</li>
 </ul>
 <hr>
@@ -1166,199 +1210,78 @@ InputDrivers=rtmidi,SDL
 </h3>
 </div><p><strong>Mode Specific</strong></p>
 <ul>
-<li>❕✅ <code>be-mu</code>: <strong>New!</strong> renamed <code>beat</code> to <code>be-mu</code> (BE-MUsic)</li>
-<li>❕✅ <code>po-mu</code>: <strong>New!</strong> renamed <code>popn</code> to <code>po-mu</code> (POpn-MUsic)</li>
-<li>❕✅ <code>be-mu</code>: <strong>New!</strong> Base36/Full <code>BME</code> / <code>BML</code> Parser Support</li>
-<li>❕✅ <code>be-mu</code>: <strong>New!</strong> <code>BMS</code> #SCROLL and #SPEED channel support stub. Full support will be in the next alpha</li>
-<li>❕✅ <code>po-mu</code>: Fixed 3 Key parser layout</li>
-<li>❕✅ <code>po-mu</code>: Fixed doubles missing graphics</li>
-<li>❕✅ <code>pump</code>: <strong>New!</strong> <code>PIU</code> parser pathway, designed for F2/P1 charts</li>
-<li>❕✅ <code>pump</code>: <strong>New!</strong> Added bga one line support</li>
-<li>❕✅ <code>pump</code>: <strong>New!</strong> Added long &lsquo;edit&rsquo; chart support</li>
-<li>❕✅ <code>pump</code>: <strong>New!</strong> <code>GetSongFolder()</code> support</li>
-<li>❕✅ <code>pump</code>: <strong>New!</strong> <code>pump</code> Custom Notesloader pathway, for themers to use</li>
-<li>❕✅ <code>be-mu</code>: <strong>New!</strong> Column lines for supported themes</li>
-<li>❕✅ <code>be-mu</code>: <strong>New!</strong> Fixed spinning turntable support for noteskins</li>
-<li>❕✅ <code>pump</code>: Fixed warp calculations due to ancient code paths being used instead of the new ones</li>
-<li>❕✅ <code>pump</code>: <strong>New!</strong> Added <code>SongCategory()</code>/<code>#SONGCATEGORY</code> support to parser</li>
-<li>❕✅ <code>pump</code>: <strong>New!</strong> Added <code>SongType()</code>/<code>#SONGTYPE</code> support to parser</li>
-<li>❕✅ <code>gh</code>: Tweaked strum methods</li>
-<li>❕✅ <code>gh</code>: Fixed overly punishing players</li>
-<li>❕✅ <code>kbx</code>: <strong>New!</strong> <code>OTO</code> parser in progress</li>
-<li>❕✅ <code>gh</code>: Fixed fever issues</li>
-<li>❕✅ <code>gdgf</code>: Began hold support - still a work in progress</li>
-<li>❕✅ <code>be-mu</code> / <code>po-mu</code>: Fixed mines auto hitting</li>
-<li>❕✅ <code>gdgf</code>: <strong>New!</strong> wailing support engine</li>
-<li>❕✅ <code>be-mu</code> / <code>po-mu</code>: Began <code>#TOTAL</code> scoring system support</li>
-<li>❕✅ <code>be-mu</code> / <code>po-mu</code>: Fixed parser overflows (closes #448)</li>
-<li>❕✅ <code>gh</code>: Fixed strum sound crash</li>
-<li>❕✅ <code>be-mu</code> / <code>po-mu</code> / <code>gddm</code> / <code>gdgf</code>: Fixed &lsquo;fill&rsquo; and &lsquo;auto&rsquo; auto keysounds not playing</li>
-<li>❕✅ <code>gh</code>: Fixed HighNoteCheck check</li>
-<li>❕✅ <code>gh</code>: Fixed <code>#RESOLUTION</code>, <code>#OFFSET</code> on <code>.chart</code> files not working correctly</li>
-<li>❕✅ <code>gh</code>: Fixed tap notes being missed when correctly hit on a controller</li>
-<li>❕✅ <code>gh</code>: Fixed fever combo effects</li>
-<li>❕✅ <code>gh</code>: Fixed gh mode measure line drawing</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Channel <code>54</code> Support for Video playback, thanks APPROVED!</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Channel <code>54</code> sync support, thanks APPROVED!</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> GDACreator support added to the DTX parser, thanks APPROVED!</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Fixed bug with <code>.DTX</code> based charts converted from <code>.GDA</code> having no <code>BPM</code></li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Fixed bug with <code>.DTX</code> based charts converted from <code>.GDA</code> having an extra space in the channel commands</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Removed legacy <code>.GDA</code> code from the <code>.DTX</code> parser to fix Drum hidden notes missing</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Added Drum Empty Note channels</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Fixed some charts that abused channel <code>01</code> from overly playing too much of the same keysound</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Fixed video playback not being on the correct background layer</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Added mp3 preview support to <code>.GDA</code> / <code>.DTX</code> files</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Added missing Sound Effect Channels</li>
-<li>❕✅ <code>gdgf</code> / <code>gddm</code>: <strong>New!</strong> Added missing BGA/Start/Metronome Sound Channels</li>
-<li>❕✅ <code>be-mu</code> / <code>po-mu</code> / <code>gdgf</code> / <code>gddm</code>: Fixed <code>#RANDOM</code> parsing</li>
-<li>❕✅ <code>dance</code>: Fixed calculation in haste</li>
-<li>❕✅ <code>dance</code>: Fixed chart length discovery and tweaked this for mod files</li>
-<li>❕✅ <code>dance</code>: Stopped <code>pump</code> chart parsing breaking <em>Simply Love</em> users</li>
-<li>❕✅ <code>dance</code>: <strong>New!</strong> Editor preview!</li>
-<li>❕✅ <code>dance</code>: Fixed extreme BPM warp calls making files last 2+ years in time</li>
-<li>❕✅ <code>dance</code>: Fixed ghost &lsquo;hold tails&rsquo; left over from older charts</li>
-<li>❕✅ <code>dance</code>: Fixed warp detection</li>
+<li>❕✅ <code>kb7</code>: <strong>New!</strong> removed <code>kb7</code> mode from the game</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Created a new <code>kbx</code> mode!</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Created a new mod-less path for <code>kbx</code> for better performance</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Added 1 to 15 Column support</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Added proper BGA/Video sync</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Added Background 1 and 2 support</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Added per-chart music support for folders with different songs inside</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Added style support and noteskins</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Added new bpm and segment styles</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Repurposed old KB7 noteskins, thanks shakesoda and AJ!</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> SmartGen - You do not need to turn on autogen for this mode!</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> OTO Parser for <code>kbx</code> for osz and osu files</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> Added Modifier option to remove lift-holds in kbx</li>
+<li>❕✅ <code>dtx</code>: <strong>New!</strong> Only load Unicode based simfiles on the new codepaths</li>
+<li>❕✅ <code>dance</code>: <strong>New!</strong> <code>def.NoteField()</code> command for mod creators</li>
 </ul>
 <p><strong>Engine</strong></p>
 <ul>
-<li>❕✅ Fixed stoi overflows (closes #432)</li>
-<li>❕✅ Fixed stof underflows (closes #432)</li>
-<li>❕✅ <strong>New!</strong> BW / WIDE stoi/stof functions to unclamp when required (closes #434)</li>
-<li>❕✅ Fixed XML input overflows</li>
-<li>❕✅ Fixed logic errors in FileDB</li>
-<li>❕✅ Fixed Hold endings being left over from deleted entries on the editor (closes #331)</li>
-<li>❕✅ Fixed bug in Chart Length descriptors</li>
-<li>❕✅ <strong>New!</strong> Use Chart Length properly in Steps</li>
-<li>❕✅ <strong>New!</strong> <code>GetChartLength()</code> lua command</li>
-<li>❕✅ <strong>New!</strong> Fix Player overflow in music length</li>
-<li>❕✅ <strong>New!</strong> Added support for <code>#LASTSECONDHINT</code> in ssc files</li>
-<li>❕✅ <strong>New!</strong> Fixed bugs with first and last second of charts</li>
-<li>❕✅ <strong>New!</strong> Added new generation of step length</li>
-<li>❕✅ <strong>New!</strong> Added new <code>GetFGChanges()</code> lua command</li>
-<li>❕✅ Fixed <code>haste()</code> math in resampler</li>
-<li>❕✅ Fixed how <code>haste</code> is calculated in notedata</li>
-<li>❕✅ Fixed bug with GL initialisation</li>
-<li>❕✅ <strong>New!</strong> Added new <code>HasSignificantBPMChanges()</code> lua command</li>
-<li>❕✅ <strong>New!</strong> Added new <code>IsDisplayBpmSpecified()</code> lua command</li>
-<li>❕✅ <strong>New!</strong> Added new <code>song:PlayPreviewMusic()</code> lua command for Lua based wheels</li>
-<li>❕✅ Fixed bug with some stops being &lsquo;ignored&rsquo; by the game engine</li>
-<li>❕✅ Fixed bug with edit files being truncated</li>
-<li>❕✅ Removed the edit file limits to the parsers</li>
-<li>❕✅ Fixed crash with parsing some F2 charts</li>
-<li>❕✅ Adjusted how longest charts are displayed</li>
-<li>❕✅ Fixed math overflow with astronomical BPM values</li>
-<li>❕✅ Fixed bug with sPath sometimes not finding files</li>
-<li>❕✅ Fixed math values on warp creation</li>
-<li>❕✅ Fixed warp points having duplicated notes</li>
-<li>❕✅ Added sanity check for verifying scroll application</li>
-<li>❕✅ Fixed timer overflow in player</li>
-<li>❕✅ <strong>New!</strong> Project and Name now set to Project OutFox</li>
-<li>❕✅ Fixed SDL Video Initialisation sometimes causing a white screen</li>
-<li>❕✅ Added SDL 2.0.17</li>
-<li>❕✅ Fixed underflow with some Chart calculations</li>
-<li>❕✅ <strong>New!</strong> LuathreadVariables to reduce conversions</li>
-<li>❕✅ <strong>New!</strong> iCol support for noteskins</li>
-<li>❕✅ Fixed animation length on receptor explosions</li>
-<li>❕✅ Fixed deprecated NSIS ini files</li>
-<li>❕✅ Fixed auto keysounds duplicated playback</li>
-<li>❕✅ Added playcommand for special keys in receptors</li>
-<li>❕✅ Added filetype check on foreground loading</li>
-<li>❕✅ <strong>New!</strong> JoyCon controller full support via HIDAPI</li>
-<li>❕✅ <strong>New!</strong> Stadia controller full support via HIDAPI</li>
-<li>❕✅ <strong>New!</strong> Luna controller full support via HIDAPI</li>
-<li>❕✅ <strong>New!</strong> Steam controller full support via HIDAPI</li>
-<li>❕✅ <strong>New!</strong> PS4/PS5 controller full support via HIDAPI</li>
-<li>❕✅ <strong>New!</strong> <code>rtMIDI</code> cross platform device driver support</li>
-<li>❕✅ Added <code>rtmidi</code> multi-device support, this allows for more than 1 MIDI device at a time!</li>
-<li>❕✅ <strong>New!</strong> Added <code>SetAutoplayForColumn()</code> for autoplay options for modes that need them</li>
-<li>❕✅ Fixed 3DP saving on SSC files</li>
-<li>❕✅ Fixed crash on some edit files with 6+ charts within</li>
-<li>❕✅ Fixed crash on userlog string buffer</li>
-<li>❕✅ Corrected Input behaviour with some controllers</li>
-<li>❕✅ Fixed iterator in ClearRange for Long Notes</li>
-<li>❕✅ Fixed log trace calls in the notes loader running out of memory</li>
-<li>❕✅ Added new preference: <code>UseSongNameOnGameWindow</code> to show the song name on the window title bar</li>
-<li>❕✅ Fixed Autoplay not being respected on the editor</li>
-<li>❕✅ Fixed editor Autoplay not using the correct GamePreferences</li>
-<li>❕✅ Fixed elements not hiding when autoplaying in editor</li>
-<li>❕✅ Added new preference: <code>JoyStickDeadzone</code> to allow the user to tweak a deadzone of an older pad</li>
-<li>❕✅ Added scrolling while previewing chart on editor</li>
-<li>❕✅ Added repeat input while previewing chart on editor</li>
-<li>❕✅ Added snap change during preview on editor</li>
-<li>❕✅ Added function to calculate beat to scroll</li>
-<li>❕✅ Added option to allow a toggle for clap on editor preview</li>
-<li>❕✅ Changed method for MMod/AMod to approach faster</li>
-<li>❕✅ Fixed bug with wrapper states not being cleared on playback</li>
-<li>❕✅ Fixed missing notes and mines in charts</li>
-<li>❕✅ Fixed loading window init system</li>
-<li>❕✅ Fixed parsing of pump charts causing a math overflow</li>
-<li>❕✅ Fixed note-data crash with some older chart types</li>
-<li>❕✅ Fixed <code>Alt</code> button not being spotted by the editor or some third party themes</li>
-<li>❕✅ Added option to allow notefield changes on editor preview</li>
-<li>❕✅ Fixed CMod editor scrolling on step specific timing areas</li>
-<li>❕✅ Fixed odd condition states in AllowNotefieldChanges</li>
-<li>❕✅ Added psv/nsw build chains</li>
-<li>❕✅ Added new <code>LoadFromFont()</code> Lua command (closes #451)</li>
-<li>❕✅ Updated <code>.flac</code> / <code>.mp3</code> / <code>.wav</code> Audio libs</li>
-<li>❕✅ Fixed old sm build chains</li>
-<li>❕✅ Fixed BitmapText&rsquo;s missing returns</li>
-<li>❕✅ Fixed lua_number being defined as <code>double</code> when it should be <code>float</code></li>
-<li>❕✅ Fixed lua_number overflows in LuaManager</li>
-<li>❕✅ Added new memory optimised lua bindings</li>
-<li>❕✅ Fixed actor overflows in LuaManager</li>
-<li>❕✅ Fixed the engine converting everything Lua to <code>double</code></li>
-<li>❕✅ Respected the correct Lua Types</li>
-<li>❕✅ Fixed PlayerOptions being overly clamped</li>
-<li>❕✅ Fixed lua stack issues - stack uses 65% less resources</li>
-<li>❕✅ Removed 428 pointless static casts</li>
-<li>❕✅ Fixed use of protected keywords in commands</li>
-<li>❕✅ Modernised code of AFT/AMV/AMT</li>
-<li>❕✅ Fixed bug in WheelBase which caused a crash</li>
-<li>❕✅ Added new safer comparison function for floating points</li>
-<li>❕✅ Fixed access specifier warnings in the compiler</li>
-<li>❕✅ Fixed edge case bad_access due to the archaic <code>ARRAYLEN()</code></li>
-<li>❕✅ Fixed coloring state for <code>DrawBeatBars()</code></li>
-<li>❕✅ Fixed bug with MeterDisplay crashing SimplyLove/Melody users due to lack of sanitisation in the code</li>
-<li>❕✅ Fixed bug with GameplayElements sometimes freezing the game</li>
-<li>❕✅ Fixed math underflow bug from 2009 in tweens</li>
+<li>❕✅ Fixed SDL handle dereference (closes #465)</li>
+<li>❕✅ Updated base SDL libraries</li>
+<li>❕✅ Fixed SDL with OutFox patches</li>
+<li>❕✅ Fixed Reflex Driver OS calls</li>
+<li>❕✅ Fixed non-repeating input on Editor</li>
+<li>❕✅ Fixed negative position scrolling on preview</li>
+<li>❕✅ <strong>New!</strong> Add support for lift holds and mine fields to editor</li>
+<li>❕✅ Fixed lirocode causing hang on some screens in SoundWaves</li>
+<li>❕✅ Fixed bug with Out of Bounds Access Violation on some Actor calls</li>
+<li>❕✅ Fixed bug where courses could crash with an Access Violation when a course actually existed</li>
+<li>❕✅ Fixed header includes to respect Actor calls</li>
+<li>❕✅ Fixed bug with some float logic always returning true</li>
+<li>❕✅ <strong>New!</strong> ICU and Boost library to support Unicode properly</li>
+<li>❕✅ <strong>New!</strong> Meter floating point numbers display in the wheel etc</li>
+<li>❕✅ <strong>New!</strong> Groove Radar support for all note loaders</li>
+<li>❕✅ <strong>New!</strong> <code>SimpleHold()</code> functions to reduce load on playback</li>
+<li>❕✅ Fixed bug with math overflow in Lua, by setting lua numbers to float</li>
+<li>❕✅ Fixed bug in ArrowEffects with PlayerData being dereferenced</li>
+<li>❕✅ Reverted code optimisations to keep Simply Love and it&rsquo;s derivatives working as expected</li>
+<li>❕✅ Fixed bug with strings causing some themes to display rate at 0.05x</li>
+<li>❕✅ Fixed bug with some PlayerOptions functions returning a clamped value</li>
+<li>❕✅ Fixed issue with Notefield states</li>
+<li>❕✅ Fixed crash with loading empty files</li>
+<li>❕✅ <strong>New!</strong> Text entry movement and behaviour in editor</li>
+<li>❕✅ <strong>New!</strong> Fixed bug with note flashes would eat notes in editor</li>
+<li>❕✅ <strong>New!</strong> Fixed turn and long note functions in editor</li>
+<li>❕✅ <strong>New!</strong> PlayerOptionsSimple() a mod-less option for modes which are not gimmick based</li>
+<li>❕✅ <strong>New!</strong> Optimise and streamlined the note loading system for the modes which need them</li>
+<li>❕✅ Fixed bug with song offset causing crashes</li>
+<li>❕✅ Fixed hang with new parser and longer than 12second introductions before first note</li>
+<li>❕✅ Fixed slow parsing speed with new code, it needs more work</li>
+<li>❕✅ Fixed bug with cmake properties</li>
+<li>❕✅ Fixed bug</li>
 </ul>
 <p><strong>Windows 7+:</strong></p>
 <ul>
-<li>❕✅ Fixed the NSIS target warnings for deprecated operating systems</li>
-<li>❕✅ Fixed deprecated NSIS ini files</li>
-<li>❕✅ Fixed XInput correlation when the extended windows 10/11 driver is used</li>
-<li>❕✅ Fixed context grabbing by the Intel GPU when 2 or more GPUs are installed</li>
-<li>❕✅ Removed deprecated 2002 era OS calls causing crashes on Windows 11</li>
-<li>❕✅ Added new default settings to set the dedicated GPU if one is installed (This can be overridden in windows settings if you prefer)</li>
-<li>❕✅ Added some new code paths to better support unicode in the future</li>
-<li>❕✅ Fixed a crash on windows 11 with the new ISST Intel Integrated Sound Chips</li>
-<li>❕✅ Fixed bug with Windows 11 and users with HDMI Audio, will be fixed in Feb 2022 by Microsoft</li>
-<li>❕✅ Fixed GL Pipeline for windows 10 21H1 and higher</li>
+<li>❕✅ Fixed Reflex Driver breaking on latest Windows 10 update</li>
+<li>❕✅ Fixed Sound device truncation in Win 8+</li>
 </ul>
 <p><strong>Linux:</strong></p>
 <ul>
-<li>❕✅ Fixed crash in MESA 21+ with 5.3 -> kernels (closes #436)</li>
-<li>❕✅ Fixed edge crash with older cards on newer kernels (closes #436)</li>
-<li>❕✅ Corrected method to ensure X11 does not think we have hung</li>
-<li>❕✅ Fixed bug on Nvidia legacy drivers (340 and below) that would force a crash after song loading</li>
-<li>❕✅ Forced ATI era cards to respect what the system provided and to not override it in driver</li>
-<li>❕✅ Fixed <code>rtmidi</code> spawning 3 virtual devices on Ubuntu Studio and other Audio featured distros</li>
+<li>❕✅ Fixed L-Tek Dance pad missing on *Ubuntu and Debian</li>
+<li>❕✅ Fixed Cobalt Flux Dance pad missing on *Ubuntu and Debian</li>
 </ul>
 <p><strong>MacOS (Universal):</strong></p>
 <ul>
-<li>❕✅ Fixed compiler warnings on XCode 12</li>
-<li>❕✅ Fixed crash on M1 macs (Monterey) while paused</li>
-<li>❕✅ Fixed FPS running to the application above the game (closes #337)</li>
-<li>❕✅ Fixed crash on Intel macs (Big Sur) in windowed mode and selecting app store</li>
-<li>❕✅ Fixed <code>rtmidi</code> spawning 2-5 virtual devices on Big Sur and Monterey</li>
-<li>❕✅ Fixed <code>rtmidi</code> port opening on M1 Mac Pros (It supports Iphone Virtual MIDI)</li>
+<li>❕✅ Fixed L-Tek Dance pad missing on MacOS Sierra/High Sierra</li>
 </ul>
 <p><strong>ARM32/ARM64: (Raspberry Pi etc)</strong></p>
 <ul>
-<li>❕✅ Fixed StringToFloat causing a segfault on the Pi3 and Armv7 CPUs</li>
-<li>❕✅ Fixed crash on rockpi 4 panfrost GPUs on newer MESA versions</li>
-<li>❕✅ Changed clocks to monotonic on arm</li>
-<li>❕✅ Corrected method to ensure X11 does not think we have hung</li>
+<li>❕✅ Fixed L-Tek Dance pad missing on MacOS Sierra/High Sierra</li>
+<li>❕✅ Fixed bug with newer boards crashing with hashing</li>
+<li>❕✅ Fixed compiling with newer tomCrypt</li>
+<li>❕✅ Fixed bug with the new Unicode support crashing TwisterOS and Armbian OSs</li>
 </ul>
 <div class=gdoc-page__anchorwrap>
 <h2 id=community-content>
@@ -1373,7 +1296,20 @@ Noteskins
 <a data-clipboard-text=https://outfox.wiki/releases/A4.12.0/#noteskins class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Noteskins" href=#noteskins><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
-</div><hr>
+</div><ul>
+<li>✅ New default noteskin for kbx</li>
+<li>✅ New default noteskin for smx</li>
+<li>✅ New o2jous noteskin for kbx</li>
+<li>✅ New orbital noteskin for kbx</li>
+<li>✅ New orbular noteskin for kbx</li>
+<li>✅ New retrobar noteskin for kbx</li>
+<li>✅ New retrobar-iidx noteskin for kbx</li>
+<li>✅ New retrobar-o2jam noteskin for kbx</li>
+<li>✅ New retrobar-razor noteskin for kbx</li>
+<li>✅ New retrobar-razor_o2 noteskin for kbx</li>
+<li>✅ New coloured mine sprites for cat/bun noteskin for po-mu</li>
+</ul>
+<hr>
 <div class=gdoc-page__anchorwrap>
 <h3 id=theme>
 Theme
