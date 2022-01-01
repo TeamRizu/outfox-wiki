@@ -30,7 +30,7 @@ As of OutFox-alpha-4.10.0, they include:
 
 * **bms** - Formally _beat_ Supports 5-key and 7-key styles, and the ability to load BMS files. Full BME/BML support is coming soon.
 * **pomu** - Formally _popn_ A PMS player mode, supporting 3, 4, 5, 7, and 9-button styles, and the ability to load PMS files.
-* **kb7** - A seven-lane game type designed primarily for keyboard play, with two sets of three keys flanking a centre column (usually mapped by default to the SDF, JKL, and space keys). This is a StepMania-specific game type that does not emulate any specific game.
+* **kbx** - A 1 to 15 lane game type designed primarily for keyboard play, being able to play songs from any mode using the smartGen system. This is a OutFox-specific game type that does not emulate any specific game.
 * **gddm** - A drum mode supporting six-part (five drums and one pedal), nine-part (seven drums, bass pedal, hi-hat pedal), and 10-part ("Real") styles, modelled upon the mechanics of the arcade rhythm game _Drummania_). We support the DTX file format, which is used with simulators for the game such as DTXMania.
 * **gdgf** (formerly **guitar** prior to OutFox-alpha-4.9.8) - A guitar mode supporting three-fret and five-fret styles, modelled upon the mechanics of the arcade rhythm game _GuitarFreaks_.
 * **gh** - A five-fret guitar mode modelled upon the mechanics of once-popular console games originating from North America.
@@ -60,7 +60,7 @@ As of OutFox-alpha-4.10.0, they include:
 
 {{< button size="medium" relref="user-guide/games/beat"		>}}beat{{< /button >}}
 {{< button size="medium" relref="user-guide/games/pomu" 	>}}pomu{{< /button >}}
-{{< button size="medium" relref="user-guide/games/kb7" 		>}}kb7{{< /button >}}
+{{< button size="medium" relref="user-guide/games/kbx" 		>}}kbx{{< /button >}}
 {{< button size="medium" relref="user-guide/games/gdgf" 	>}}gdgf{{< /button >}}
 {{< button size="medium" relref="user-guide/games/gh"	 	>}}gh{{< /button >}}
 {{< button size="medium" relref="user-guide/games/gddm" 	>}}gddm{{< /button >}}

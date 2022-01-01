@@ -1,6 +1,6 @@
 ---
-title: "Game Mode: pomu"
-description: Details about the `pomu` mode supported by Project OutFox.
+title: "Game Mode: po-mu"
+description: Details about the `po-mu` mode supported by Project OutFox.
 weight: 2
 ---
 
