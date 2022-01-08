@@ -10,7 +10,7 @@ Project OutFox is working on a new `OTO` notesloader that supports the ``.osu`` 
 
 We are calling it the OTO parser as we chose to follow the _Osu Tatakae Ouendan_ name. 
 
-## OTO Notedata support as of Alpha 4.11.0 - ``IN PROGRESS`` We are working on the parser!
+## OTO Notedata support as of Alpha 4.12.0 - ``IN PROGRESS`` We have a partially working implementation of Mode 3 (Mania)!
 
 ---
 ## Trivia
@@ -55,16 +55,16 @@ Section|What it's for|Command / Content type|Supported?
 ---
 
 ## ``osu file format vn [1 - 14]``
-``Status: ❌ Ignored (Unsupported)``
+``Status: ✅ Supported``
 
 Usage Example:
 ```
 osu file format v14 
 ```
 
-This value is at the very beginning of the file, and sets the version of the specification that the file uses. As of November 2021, This is Version 14. 
+This value is at the very beginning of the file, and sets the version of the specification that the file uses. As of January 2022, This is Version 14. 
 
-This variable is unused in _OutFox_.
+This variable is used in _OutFox_ just to check for the supported version (charts under version 5 are not supported).
 
 ---
 ## `[General]` Section
@@ -72,7 +72,7 @@ This variable is unused in _OutFox_.
 
 An example of the layout of this section is below. There are several items not included on most charts, but we will cover all of the values you may see in a file so to avoid confusion. Like with the other loader support pages, it is better to be complete than omit things. The commands for this section are done as `Command: Value`. Do note the space!
 
-This section covers settings and options for the chart and gameplay screen. As _OutFox_ has a very different setup and internal system, most of the options in this section do not apply. It's here primarily for completeness and to explain what bits do.
+This section covers settings and options for the chart and game-play screen. As _OutFox_ has a very different setup and internal system, most of the options in this section do not apply. It's here primarily for completeness and to explain what bits do.
 
 ```
 [General]
@@ -465,7 +465,7 @@ This variable is equivalent to the `#CREDIT` entry on SM/SSC files.
 ---
 
 ## ``Version:version [string]``
-``Status: ✅ Supported - Unused``
+``Status: ✅ Supported``
 
 Usage Example:
 ```
@@ -477,7 +477,7 @@ Other authors use this field to also add the number of keys the chart has in `ma
 
 There is no specific detail given for this entry, other than it being used within the online portion of the game for difficulty and to give information on the music wheel when choosing a song. It is better to give some detail about the difficulty in the entry given, as you can risk not being ranked, and upsetting players.
 
-On _OutFox_ this entry will actually be ignored until the new caching system supports the multi-chart per song setup of these new modes, but we support this option for now, it is just unused. We have a new difficulty system in planning, but it is not complete.
+On _OutFox_ this entry is used for the 'multi-chart per folder' setup some packs have in the new ``kbx`` mode. This gives you seamless loading capabilities without having to split up multi-song chart packs.
 
 This variable has no equivalent SM/SSC value.
 
@@ -498,7 +498,7 @@ This variable has no equivalent SM/SSC value.
 ---
 
 ## ``Tag:tags [string string string]``
-``Status: ❌ Ignored (Unsupported)``
+``Status: ✅ Supported``
 
 Usage Example:
 ```
@@ -508,7 +508,7 @@ This command adds a selection of words that the chart can be searched by on the 
 
 It is important you put useful or meaningful tags in this section that reflect the chart so it can be found!
 
-_OutFox_ does not use this function yet so it is ignored for now.
+_OutFox_ supports this function for chart searching in supported wheels.
 
 This variable has no equivalent SM/SSC value.
 ---
@@ -589,12 +589,14 @@ _OutFox_ computes these column amounts as `CircleSize - 1` as our columns begin 
 This variable has no equivalent SM/SSC value.
 
 ## ``OverallDifficulty:n.n [0.0-10.0]``
-``Status: ❌ Ignored (Unsupported)``
+``Status: ✅ Supported``
 
 Usage Example:
 ```
 OverallDifficulty:1.3
 ```
+
+
 
 ## ``ApproachRate:n.n [0.0-10.0]``
 ``Status: ❌ Ignored (Unsupported)``
