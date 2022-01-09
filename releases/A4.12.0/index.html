@@ -1100,7 +1100,7 @@ New Unicode/SHIFT-JIS support!
 <li>ANSI/Windows Extended (<code>SMA</code>/<code>BMS</code>/<code>DWI</code>/<code>KSF</code>)</li>
 <li>SHIFT-JIS (<code>BMS</code>/<code>BME</code>/<code>PMS</code>/<code>DTX</code>/<code>GDA</code>/<code>TJA</code>)</li>
 <li>UTF-8 (<code>DTX</code>/<code>BME</code>/<code>SSC</code>/<code>SM</code>/<code>OTO</code>)</li>
-<li>UTF-8 BOM (<code>GDA</code>/<code>DTX</code>)</li>
+<li>UTF-8 BOM (<code>GDA</code>/<code>DTX</code>/<code>TJA</code>)</li>
 <li>UTF-8 Extended (<code>TJA</code>/<code>BME</code>/<code>DTX</code>)</li>
 <li>UTF-16 (<code>DTX</code>)</li>
 <li>UTF-16LE (<code>DTX</code>)</li>
@@ -1143,7 +1143,8 @@ ALL OS: <em><code>portmidi</code> comes out of beta!</em>
 <p>To assist with this need, we added another MIDI driver to the game:</p>
 <p><code>rtmidi</code></p>
 <p>This driver allows for more than one device support compared to our <code>portmidi</code> driver, which is limited to a single device, like an e-drum kit, or a DJ controller. <code>rtmidi</code> allows for more than one device to be connected for 2 player use, or for extra control for menu options for example.</p>
-<p>The new <code>rtmidi</code> driver can be added to your preference.ini if you wish to use it:</p>
+<p>The new <code>rtmidi</code> or <code>portmidi</code> driver can be added to your preference.ini if you wish to use it:</p>
+<p><strong>Please Note: You will need to add one of these so your controller will work!</strong></p>
 <p><strong>Windows</strong></p>
 <pre tabindex=0><code>(portmidi - you only have one device):
 InputDrivers=portmidi,legacy,minisdl

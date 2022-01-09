@@ -1020,9 +1020,9 @@ hidden-mobile" itemprop=breadcrumb>
 <p><strong><em>This documentation exists as a mental &lsquo;layout&rsquo; for me to learn about the format and how best to parse it for the way <em>OutFox</em> needs. It will be updated in a few segments - There may be errors, but do let me know so i can update and clarify them, thanks for joining me on this ride! - (Squirrel)</em></strong></p>
 <p>We are calling it the OTO parser as we chose to follow the <em>Osu Tatakae Ouendan</em> name.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=oto-notedata-support-as-of-alpha-4110---in-progress-we-are-working-on-the-parser>
-OTO Notedata support as of Alpha 4.11.0 - <code>IN PROGRESS</code> We are working on the parser!
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/oto-support/#oto-notedata-support-as-of-alpha-4110---in-progress-we-are-working-on-the-parser class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor OTO Notedata support as of Alpha 4.11.0 - IN PROGRESS We are working on the parser!" href=#oto-notedata-support-as-of-alpha-4110---in-progress-we-are-working-on-the-parser><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=oto-notedata-support-as-of-alpha-4120---in-progress-we-have-a-partially-working-implementation-of-mode-3-mania>
+OTO Notedata support as of Alpha 4.12.0 - <code>IN PROGRESS</code> We have a partially working implementation of Mode 3 (Mania)!
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/oto-support/#oto-notedata-support-as-of-alpha-4120---in-progress-we-have-a-partially-working-implementation-of-mode-3-mania class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor OTO Notedata support as of Alpha 4.12.0 - IN PROGRESS We have a partially working implementation of Mode 3 (Mania)!" href=#oto-notedata-support-as-of-alpha-4120---in-progress-we-have-a-partially-working-implementation-of-mode-3-mania><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div><hr>
@@ -1131,11 +1131,11 @@ File Format Layout
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/oto-support/#osu-file-format-vn-1---14 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor osu file format vn [1 - 14]" href=#osu-file-format-vn-1---14><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p><code>Status: ❌ Ignored (Unsupported)</code></p>
+</div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
 <pre tabindex=0><code>osu file format v14 
-</code></pre><p>This value is at the very beginning of the file, and sets the version of the specification that the file uses. As of November 2021, This is Version 14.</p>
-<p>This variable is unused in <em>OutFox</em>.</p>
+</code></pre><p>This value is at the very beginning of the file, and sets the version of the specification that the file uses. As of January 2022, This is Version 14.</p>
+<p>This variable is used in <em>OutFox</em> just to check for the supported version (charts under version 5 are not supported).</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=general-section>
@@ -1145,7 +1145,7 @@ File Format Layout
 </h2>
 </div><hr>
 <p>An example of the layout of this section is below. There are several items not included on most charts, but we will cover all of the values you may see in a file so to avoid confusion. Like with the other loader support pages, it is better to be complete than omit things. The commands for this section are done as <code>Command: Value</code>. Do note the space!</p>
-<p>This section covers settings and options for the chart and gameplay screen. As <em>OutFox</em> has a very different setup and internal system, most of the options in this section do not apply. It&rsquo;s here primarily for completeness and to explain what bits do.</p>
+<p>This section covers settings and options for the chart and game-play screen. As <em>OutFox</em> has a very different setup and internal system, most of the options in this section do not apply. It&rsquo;s here primarily for completeness and to explain what bits do.</p>
 <pre tabindex=0><code>[General]
 AudioFilename: audio.mp3
 AudioLeadIn: 0
@@ -1534,13 +1534,13 @@ BeatmapSetID:0987654
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/oto-support/#versionversion-string class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Version:version [string]" href=#versionversion-string><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p><code>Status: ✅ Supported - Unused</code></p>
+</div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
 <pre tabindex=0><code>Version:OutFox Easy Mod File 2021
 </code></pre><p>This entry in the list allows a chart author to name a difficulty &lsquo;version&rsquo; for the particular <code>.osu</code> file within a collection for one song. It is usually used for descriptive difficulty information, or to &lsquo;theme&rsquo; difficulties, for example (<code>spring easy</code>, <code>summer hard</code>, <code>autumn extreme</code>, <code>winter death</code>).</p>
 <p>Other authors use this field to also add the number of keys the chart has in <code>mania</code> mode, for example <code>[3k]</code>, <code>[6k]</code>, <code>[10k]</code> would let people know it uses 3 columns, 6 columns and 10 columns respectively before the difficulty name.</p>
 <p>There is no specific detail given for this entry, other than it being used within the online portion of the game for difficulty and to give information on the music wheel when choosing a song. It is better to give some detail about the difficulty in the entry given, as you can risk not being ranked, and upsetting players.</p>
-<p>On <em>OutFox</em> this entry will actually be ignored until the new caching system supports the multi-chart per song setup of these new modes, but we support this option for now, it is just unused. We have a new difficulty system in planning, but it is not complete.</p>
+<p>On <em>OutFox</em> this entry is used for the &lsquo;multi-chart per folder&rsquo; setup some packs have in the new <code>kbx</code> mode. This gives you seamless loading capabilities without having to split up multi-song chart packs.</p>
 <p>This variable has no equivalent SM/SSC value.</p>
 <hr>
 <div class=gdoc-page__anchorwrap>
@@ -1566,12 +1566,12 @@ This variable has no equivalent SM/SSC value.
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/oto-support/#tagtags-string-string-string class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Tag:tags [string string string]" href=#tagtags-string-string-string><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p><code>Status: ❌ Ignored (Unsupported)</code></p>
+</div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
 <pre tabindex=0><code>Tags:japanese j-pop modfile
 </code></pre><p>This command adds a selection of words that the chart can be searched by on the online system, and within the music wheel. They are simply space separated, and act like tags on a youtube video or instagram post, allowing players to find the chart.</p>
 <p>It is important you put useful or meaningful tags in this section that reflect the chart so it can be found!</p>
-<p><em>OutFox</em> does not use this function yet so it is ignored for now.</p>
+<p><em>OutFox</em> supports this function for chart searching in supported wheels.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=this-variable-has-no-equivalent-smssc-value-1>
 This variable has no equivalent SM/SSC value.
@@ -1651,7 +1651,7 @@ CircleSize:4
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/oto-support/#overalldifficultynn-00-100 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor OverallDifficulty:n.n [0.0-10.0]" href=#overalldifficultynn-00-100><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p><code>Status: ❌ Ignored (Unsupported)</code></p>
+</div><p><code>Status: ✅ Supported</code></p>
 <p>Usage Example:</p>
 <pre tabindex=0><code>OverallDifficulty:1.3
 </code></pre><div class=gdoc-page__anchorwrap>
