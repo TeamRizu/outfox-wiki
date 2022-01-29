@@ -1,5 +1,5 @@
 ---
-title: "Game Mode: gdgf"
+title: "Game Module: gdgf"
 description: Details about the `gdgf` mode supported by Project OutFox.
 weight: 2
 ---
@@ -13,14 +13,14 @@ insert picture of gameplay
 
 ## History:
 
-This mode was added in Project OutFox. It started as the "guitar" mode, before the "gh" mode existed. Around the time the "gh" mode came into being, this mode got renamed to "gdgf", which is the current name.
+This mode was added in Project OutFox. It started as the "guitar" mode, before the "gh" mode existed. Around the time the "gh" mode came into being, this mode was renamed to "gdgf", which is the current name.
 
 This mode is selectable in the game select screen.
 
 ### Introduced:
 
 First Seen:
- * OutFox Alpha 4.6 RC2 - ``"Guitar5"`` (21 June 2020, The game is known as "Guitar" at thie point)
+ * OutFox Alpha 4.6 RC2 - ``"Guitar5"`` (21 June 2020, The game is known as "Guitar" at this point)
  * OutFox Alpha 4.6 RC2 - ``"Versus5"`` (21 June 2020)
  * OutFox Alpha 4.6 RC2 - ``"Guitar3"`` (21 June 2020)
  * OutFox Alpha 4.6 RC2 - ``"Versus3"`` (21 June 2020)

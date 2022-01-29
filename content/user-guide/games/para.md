@@ -1,5 +1,5 @@
 ---
-title: "Game Mode: para"
+title: "Game Module: para"
 description: Details about the `para` mode supported by Project OutFox.
 weight: 2
 ---

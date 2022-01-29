@@ -1,5 +1,5 @@
 ---
-title: "Game Mode: kbx"
+title: "Game Module: kbx"
 description: Details about the `kbx` mode supported by Project OutFox.
 weight: 2
 ---
@@ -99,7 +99,6 @@ First Seen:
 First Seen:
  * Project OutFox alpha4.12.0 - ``kb15-single`` (31 December 2021)
 ---
-
 
 ## Game play
 

@@ -1,5 +1,5 @@
 ---
-title: "Game Mode: gh"
+title: "Game Module: gh"
 description: Details about the `gh` mode supported by Project OutFox.
 weight: 2
 ---
@@ -13,7 +13,7 @@ insert picture of gameplay
 
 ## History:
 
-This mode was originally created to simulate a popular game using a guitar shaped controller. It was added in StepMania 4, however work to complete it was not completed. It was rewritten and added back in Project OutFox in 2021.
+This mode was originally created to simulate a popular game using a guitar shaped controller. It was added in StepMania 4, however work to finish it was not completed. It was rewritten and added back in Project OutFox in Spring 2021.
 
 ### Introduced (StepMania 4):
 #### 5 Key:

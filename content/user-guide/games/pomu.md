@@ -1,21 +1,21 @@
 ---
-title: "Game Mode: po-mu"
+title: "Game Module: po-mu"
 description: Details about the `po-mu` mode supported by Project OutFox.
 weight: 2
 ---
 
 <!--
-insert picture of gameplay 
+insert picture of game-play 
 -->
 
 ## About
 
 ## History:
 
-This mode was added in the 3.0.2. There was no support for the associated loaders at this time, nor any theme or scoring updates. Pomu was rendered accidentally broken during the CVS era of development on StepMania 4 (January 2007), where it was not restored until Project OutFox Alpha 4.9.8 (25th April 2021) with a new notesloader and rewritten internal code.
+This mode was added in version 3.0.2. There was no support for the associated loaders at this time, nor any theme or scoring updates. Po-mu was rendered accidentally broken during the CVS era of development on StepMania 4 (January 2007), where it was not restored until Project OutFox Alpha 4.9.8 (25th April 2021) with a new notesloader and rewritten internal code.
 
 ### Introduced:
-#### 3 Key (LB/Red/RB):
+#### 3 Key (LW/LY/LG):
 
 First Seen:
  * Project OutFox alpha 4.9.8 - ``(popn-three)`` (17 April 2021)
@@ -55,7 +55,7 @@ First Seen:
 Replaced by:
  * StepMania v4.0 CVS - ``(popn-nine)`` (7 October 2005) 
 
-
+### mode renamed to ``po-mu`` (12th December 2021)
 
 ## Gameplay
 

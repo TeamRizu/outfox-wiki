@@ -1,6 +1,6 @@
 ---
-title: "Game Mode: Dance"
-description: Details about the `dance` mode supported by Project OutFox.
+title: "Game Module: Dance"
+description: Details about the `dance` module supported by Project OutFox.
 weight: 2
 ---
 
@@ -80,6 +80,9 @@ Replaced by:
  * StepMania v3.0 beta 6 - ``(DDR Solo)`` (6 September 2002)
  * StepMania v3.0 beta 6 - ``(dance-solo-versus)`` (6 September 2002) Commented out for removal
 
+Replaced by:
+ * Project OutFox alpha 4.13.0 - ``(solo-double)`` (31 January 2022)
+ * Project OutFox alpha 4.13.0 - ``(solo-versus)`` (31 January 2022)
 ---
 
 #### 3 Panel Left/Right/Down Arrangement: 
@@ -89,12 +92,13 @@ First Seen:
 Replaced by: 
  * sm-ssc v1.0 beta 3 - ``(threepanel)`` (2 May 2010) 
 
-
-
- * StepMania 5.2 - 3 Panel UpLeft/UpRight/Down
- * OutFox - 3 Panel UpLeft/UpRight/Down
-
-
+Replaced by: 
+#### 3 Panel UpLeft/UpRight/Down Arrangement:
+First Seen:
+ * StepMania 5.2 - ``(threepanel)`` (circa 2015)
+ * Project OutFox alpha 4.2.0 - ``(threepanel)`` (5 February 2020)
+ * Project OutFox alpha 4.13.0 - ``(threepanel-double)`` (31 January 2022)
+ * Project OutFox alpha 4.13.0 - ``(threepanel-versus)`` (31 January 2022)
 
 ## Gameplay
 

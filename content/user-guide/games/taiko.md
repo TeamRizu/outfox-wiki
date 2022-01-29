@@ -1,5 +1,5 @@
 ---
-title: "Game Mode: taiko"
+title: "Game Module: taiko"
 description: Details about the `taiko` mode supported by Project OutFox.
 weight: 2
 ---
@@ -14,9 +14,9 @@ insert picture of gameplay
 
 This mode was added in alpha 4.9.9HF of _Project OutFox_. In its' original form, it was a five-column mode with each note type having its' own column. Later, within the same alpha (July 11 2021), it was redone to have the notes be different note types instead of notes in columns, with only one column being needed.
 
-Right now, this mode can only be played with autogen charts.
+Right now, this mode can only be played with auto-gen charts.
 
-This mode is selectable in the gaem select screen.
+This mode is selectable in the game select screen.
 
 ### Introduced:
 #### Drum (LeftOuter, LeftInner, RightInner, RightOuter):
