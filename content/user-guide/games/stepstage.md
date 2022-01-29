@@ -4,7 +4,7 @@ description: Details about the `stepstage` mode supported by Project OutFox.
 weight: 2
 ---
 
-![Stepping Stage game-play, default theme](/user-guide/stepstagegameplayold.png)
+![Stepping Stage game-play, default theme](/user-guide/stepstagegameplayold.jpg)
 ###### stepstage game-play, default legacy theme
 
 ## About:

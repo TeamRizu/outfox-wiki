@@ -4,9 +4,11 @@ description: Details about the `kbx` mode supported by Project OutFox.
 weight: 2
 ---
 
-
-![image](https://user-images.githubusercontent.com/11047768/147801388-551badef-6210-441e-8d01-d82dcb54ac28.png)
-
+![kb4 game-play, default theme](/user-guide/kb4gameplayold.jpg)
+###### kb4 game-play, default legacy theme
+---
+![kb6 game-play, default theme](/user-guide/kb6gameplayold.jpg)
+###### kb6 game-play, default legacy theme
 # About
 
 ## History:
