@@ -3,11 +3,9 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Converting xml files into lua files.    StepMania 3.95 & ITG use xml files for both themeing and effect scripting. It also allows embedding lua functions to perform more complex effects & scripting.
-In StepMania 5, these have to be converted into .lua files instead.
-The &lsquo;easy way&rsquo; of converting    There are two semi-automatic ways to convert xml files into lua.
- StepMania 5&rsquo;s built-in XML to LUA converter   Converts positions to be based off of SCREEN_CENTER_X (which can result in some lost position information.">
-<title>Converting XML files to Lua | Project OutFox Wiki</title>
+<meta name=description content="What is OutFox Serenity?    OutFox Serenity is the official community song pack project made primarily for Project OutFox. It&rsquo;s purpose is to produce packs of &ldquo;libre&rdquo; songs for the game that can be freely redistributed (including as part of its default, bundled songs), and to showcase the functionality of Project Outfox by offering charts for multiple gametypes beyond just 4-key/dance.
+How was OutFox Serenity it created?    During Project OutFox Alpha 4.">
+<title>OutFox Serenity | Project OutFox Wiki</title>
 <link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -56,7 +54,7 @@ The &lsquo;easy way&rsquo; of converting    There are two semi-automatic ways to
 <h2>Navigation</h2>
 <ul class=gdoc-nav__list>
 <li>
-<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
+<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle checked>
 <label for=navtree-4d9830bf class="flex justify-between">
 <span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -80,7 +78,7 @@ FAQ
 </li>
 <li>
 <span class=flex>
-<a href=../../../user-guide/meta/serenity/ class=gdoc-nav__entry>
+<a href=../../../user-guide/meta/serenity/ class="gdoc-nav__entry is-active">
 OutFox Serenity
 </a>
 </span>
@@ -313,7 +311,7 @@ Game Module: techno
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle>
 <label for=navtree-6821e290 class="flex justify-between">
 <span class=flex>
 <a href=../../../dev/ class=gdoc-nav__entry>
@@ -396,7 +394,7 @@ Editor Preferences
 </ul>
 </li>
 <li>
-<input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle>
 <label for=navtree-e7ea7745 class="flex justify-between">
 <span class=flex>
 <a href=../../../dev/actors/ class=gdoc-nav__entry>
@@ -539,7 +537,7 @@ Converting INI files to Lua
 </li>
 <li>
 <span class=flex>
-<a href=../../../dev/actors/Converting-xml-to-Lua/ class="gdoc-nav__entry is-active">
+<a href=../../../dev/actors/Converting-xml-to-Lua/ class=gdoc-nav__entry>
 Converting XML files to Lua
 </a>
 </span>
@@ -1033,114 +1031,354 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/ href=../../../dev/actors/><span itemprop=name>Lua and Actors</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Converting XML files to Lua</span><meta itemprop=position content="4"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/ href=../../../user-guide/><span itemprop=name>User Guide</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/meta/ href=../../../user-guide/meta/><span itemprop=name>Front Matter</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>OutFox Serenity</span><meta itemprop=position content="4"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Converting XML files to Lua</h1>
+<h1>OutFox Serenity</h1>
 <div class=gdoc-page__anchorwrap>
-<h1 id=converting-xml-files-into-lua-files>
-Converting xml files into lua files.
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-xml-to-Lua/#converting-xml-files-into-lua-files class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Converting xml files into lua files." href=#converting-xml-files-into-lua-files><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h1>
-</div><p>StepMania 3.95 & ITG use xml files for both themeing and effect scripting. It also allows embedding lua functions to perform more complex effects & scripting.</p>
-<p>In StepMania 5, these have to be converted into .lua files instead.</p>
-<div class=gdoc-page__anchorwrap>
-<h2 id=the-easy-way-of-converting>
-The &lsquo;easy way&rsquo; of converting
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-xml-to-Lua/#the-easy-way-of-converting class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor The &lsquo;easy way&rsquo; of converting" href=#the-easy-way-of-converting><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=what-is-outfox-serenity>
+What is OutFox Serenity?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#what-is-outfox-serenity class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor What is OutFox Serenity?" href=#what-is-outfox-serenity><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><p>There are two semi-automatic ways to convert xml files into lua.</p>
-<ol>
-<li>StepMania 5&rsquo;s built-in XML to LUA converter</li>
+</div><p>OutFox Serenity is the official community song pack project <strong>made primarily for Project OutFox</strong>. It&rsquo;s purpose is to produce packs of &ldquo;libre&rdquo; songs for the game that can be freely redistributed (including as part of its default, bundled songs), and to showcase the functionality of Project Outfox by offering charts for multiple gametypes beyond just 4-key/dance.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=how-was-outfox-serenity-it-created>
+How was OutFox Serenity it created?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#how-was-outfox-serenity-it-created class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor How was OutFox Serenity it created?" href=#how-was-outfox-serenity-it-created><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>During Project OutFox Alpha 4.8.0 development, we started to release many modes, however, some of those modes have complicated chart standards or no longer have support. We decided then that it was right to create a community pack based on StepMania StepMix where the community would contribute for songs to be bundled with the game, but this time, songs for every mode OutFox supports.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=how-can-i-contribute-to-outfox-serenity>
+How can I contribute to OutFox Serenity?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#how-can-i-contribute-to-outfox-serenity class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor How can I contribute to OutFox Serenity?" href=#how-can-i-contribute-to-outfox-serenity><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><ol>
+<li>Make sure to <a class=gdoc-markdown__link href=https://projectoutfox.com/serenity-guidelines>read our guidelines</a> to understand the rules of contribution and submission.</li>
+<li>Fill <a class=gdoc-markdown__link href=https://projectoutfox.com/community-pack-submissions>our online form</a> selecting the option of which you want to submit and any other required information.</li>
 </ol>
 <ul>
-<li>Converts positions to be based off of SCREEN_CENTER_X (which can result in some lost position information.)</li>
-<li>Condition attributes are turned into uses of a local function</li>
-<li>Commands are left in command format</li>
-<li>Misses commands in .sprite files</li>
-<li>Accessible from the debug menu</li>
-<li>Rearranges commands to be in alphabetical order</li>
-</ul>
-<ol start=2>
-<li>XeroOl&rsquo;s xmlconvert tool</li>
-</ol>
+<li>
+<p>If you have <strong>music</strong> that follows our <strong>Music guidelines</strong>, then please submit it using <a class=gdoc-markdown__link href=https://projectoutfox.com/community-pack-submissions>our online form</a>, once you submit you have agreed that we have permission to store/share your content with members of our team to organize the selection of future volumes of OutFox Serenity.</p>
+</li>
+<li>
+<p>If you want to contribute with charts for:</p>
 <ul>
-<li>Requires some extra libraries on your system</li>
-<li>Does not touch positions</li>
-<li>Condition attributes are turned into ternary expressions</li>
-<li>Commands are turned into function format.</li>
-<li>performs a bit more work when dealing with modifier-related calls</li>
-<li>Sorts the actors to match what the xml tag sorting would do</li>
+<li>Old volumes (<a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox-Serenity/tree/main/OutFox%20Serenity%20Volume%201>Volume I</a>), you have two options:
+<ul>
+<li>Join our <a class=gdoc-markdown__link href=https://discord.gg/mNcFU67mK7>OutFox Serenity Discord Server</a> to get feedback and submit directly to our team.</li>
+<li>Make a Pull Request on our <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox-Serenity>OutFox Serenity Github Repository</a>. Remember to follow <strong>Chart Guidelines</strong>.</li>
 </ul>
-<p>The result isn&rsquo;t going to always work, but should do a good amount of the grunt-work needed.</p>
+</li>
+<li>Future Volumes: You need to join our <a class=gdoc-markdown__link href=https://discord.gg/mNcFU67mK7>OutFox Serenity Discord Server</a> and use &ldquo;chart-discussion&rdquo; and &ldquo;chart-feedback&rdquo; channels.</li>
+</ul>
+<p>In both options we will request you to use our templates which can be found on our <a class=gdoc-markdown__link href=https://discord.gg/mNcFU67mK7>OutFox Serenity Discord Server</a>. Make sure to check the pinned messages as they include each gamemode scaling.</p>
+</li>
+<li>
+<p>If you want to contribute with graphics, then follow the same steps given to chart contribution. But instead use the &ldquo;graphics&rdquo; channels on our Discord server.</p>
+</li>
+</ul>
 <div class=gdoc-page__anchorwrap>
-<h2 id=general-layout-of-an-xml-file>
-General layout of an xml file.
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-xml-to-Lua/#general-layout-of-an-xml-file class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor General layout of an xml file." href=#general-layout-of-an-xml-file><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=what-are-outfox-serenity-volumes>
+What are OutFox Serenity Volumes?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#what-are-outfox-serenity-volumes class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor What are OutFox Serenity Volumes?" href=#what-are-outfox-serenity-volumes><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><div class=highlight><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=nt>&lt;ActorFrame&gt;</span>
-	<span class=nt>&lt;children&gt;</span>
-
-	<span class=nt>&lt;ZZZActor</span>
-		<span class=na>Type=</span><span class=s>&#34;Quad&#34;</span>
-		<span class=na>InitCommand=</span><span class=s>&#34;hidden,1&#34;</span>
-		<span class=na>OnCommand=</span><span class=s>&#34;sleep,1000&#34;</span>
-	<span class=nt>/&gt;</span>
-
-	<span class=nt>&lt;Special</span>
-		<span class=na>Type=</span><span class=s>&#34;Sprite&#34;</span>
-		<span class=na>File=</span><span class=s>&#34;funny.png&#34;</span>
-		<span class=na>OnCommand=</span><span class=s>&#34;%function(self)
-</span><span class=s>			SCREENMAN:SystemMessage(&#39;hi&#39;)
-</span><span class=s>		end&#34;</span>
-	<span class=nt>/&gt;</span>
-
-	<span class=nt>&lt;Sprite</span>
-		<span class=na>File=</span><span class=s>&#34;circle&#34;</span>
-		<span class=na>Condition=</span><span class=s>&#34;GAMESTATE:IsHumanPlayer(0)&#34;</span>
-	<span class=nt>/&gt;</span>
-
-	<span class=nt>&lt;/children&gt;</span>
-<span class=nt>&lt;/ActorFrame&gt;</span>
-</code></pre></div><p>Here, layers can have a name as well as a tag or Type. Either the tag name or the Type attribute defines what type of actor it is. If neither of these are given, the game would have to infer the actor type by itself.</p>
-<p><a class=gdoc-markdown__link href=../ActorsLua-Anatomy+Structure/#actorframes-and-how-to-build-them>ActorFrames</a> have a <code>children</code> tag for holding their inner actors.</p>
-<p>Unlike .ini files, layers can have practically any name in the tag, instead of a required <code>Layer</code> prefix.</p>
-<p>The layer sorting is somewhat like ini files, with the tag name being used to determine actor order. (This is separate from the <code>Name</code> attribute)</p>
-<p>For example, the layer tagged as <code>ZZZActor</code> gets sorted to be after <code>Special</code>, even though it was written the other way around.</p>
+</div><div class=gdoc-page__anchorwrap>
+<h3 id=outfox-serenity-volume-i>
+OutFox Serenity Volume I
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#outfox-serenity-volume-i class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor OutFox Serenity Volume I" href=#outfox-serenity-volume-i><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p>Released August 27, 2021, OutFox Serenity Volume I features music by Aspid Cat, Drazil, Jack5, Matduke, mmry, PizeroFox, Seo, and Sevish. Alongside 4-panel (dance) and 5-panel (pump) charts, some of its songs also have Be-Mu, Po-Mu, techno (8- and 9-panel), gddm, and gdgf, and gh charts.</p>
+<p>Download coming soon.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=creating-the-lua-equivalent-manually>
-Creating the .lua equivalent manually.
-<a data-clipboard-text=https://outfox.wiki/dev/actors/Converting-xml-to-Lua/#creating-the-lua-equivalent-manually class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Creating the .lua equivalent manually." href=#creating-the-lua-equivalent-manually><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=outfox-serenity-volume-i-winter-update>
+OutFox Serenity Volume I Winter Update
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#outfox-serenity-volume-i-winter-update class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor OutFox Serenity Volume I Winter Update" href=#outfox-serenity-volume-i-winter-update><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p>The Winter Update to OutFox Serenity Volume I features three new songs by DJ Megas, Matduke and Pekoneko (ペコネコ). It also includes changes to some of the existing songs from Volume 1, including additional charts, and keysounded Be-Mu/Po-Mu and GH charts for selected songs.</p>
+<p>Download <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.1>now</a>.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=are-modfiles-allowed-to-be-submitted>
+Are modfiles allowed to be submitted?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#are-modfiles-allowed-to-be-submitted class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Are modfiles allowed to be submitted?" href=#are-modfiles-allowed-to-be-submitted><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=kr>return</span> <span class=n>Def.ActorFrame</span><span class=p>{</span>
-	<span class=c1>-- Special --</span>
-	<span class=n>Def.Sprite</span><span class=p>{</span>
-		<span class=n>Texture</span><span class=o>=</span><span class=s2>&#34;funny.png&#34;</span><span class=p>,</span>
-		<span class=n>OnCommand</span><span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span>
-			<span class=n>SCREENMAN</span><span class=p>:</span><span class=n>SystemMessage</span><span class=p>(</span><span class=s1>&#39;hi&#39;</span><span class=p>)</span>
-		<span class=kr>end</span><span class=p>,</span>
-	<span class=p>},</span>
-	<span class=c1>-- Sprite --</span>
-	<span class=n>GAMESTATE</span><span class=p>:</span><span class=n>IsHumanPlayer</span><span class=p>(</span><span class=n>PLAYER_1</span><span class=p>)</span> <span class=ow>and</span> <span class=n>Def.Sprite</span><span class=p>{</span>
-		<span class=n>Texture</span><span class=o>=</span><span class=s2>&#34;circle&#34;</span><span class=p>,</span>
-	<span class=p>}</span> <span class=ow>or</span> <span class=n>Def.Actor</span><span class=p>{},</span>
-	<span class=c1>-- ZZZActor --</span>
-	<span class=n>Def.Quad</span><span class=p>{</span>
-		<span class=n>Texture</span><span class=o>=</span><span class=s2>&#34;funny.png&#34;</span><span class=p>,</span>
-		<span class=n>InitCommand</span><span class=o>=</span><span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>visible</span><span class=p>(</span><span class=kc>false</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-		<span class=n>OnCommand</span><span class=o>=</span><span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span> <span class=n>self</span><span class=p>:</span><span class=n>sleep</span><span class=p>(</span><span class=mi>1000</span><span class=p>)</span> <span class=kr>end</span><span class=p>,</span>
-	<span class=p>},</span>
-<span class=p>}</span>
-</code></pre></div><p>Often, the main xml file is an <a class=gdoc-markdown__link href=../ActorsLua-Anatomy+Structure/#actorframes-and-how-to-build-them>ActorFrame</a>, with the inner actors matching the layout of the xml after sorting.</p>
-<p>Conditions can be turned into ternary expressions, though they now run at different times compared to the original xml file.</p>
-<p>Just like in ini files, commands have to be turned into function format.</p>
-<p>The commands that are already in function format are mostly 1:1. The &ldquo;% " that are around the functions must be removed.</p>
+</div><p>Yes. But make sure it only works with your specific chart/difficulty, no chart should impact other&rsquo;s chart in any way.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=i-submitted-music-but-it-wasnt-featured-on-the-next-volume-why>
+I submitted music but it wasn&rsquo;t featured on the next volume, why?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#i-submitted-music-but-it-wasnt-featured-on-the-next-volume-why class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor I submitted music but it wasn&rsquo;t featured on the next volume, why?" href=#i-submitted-music-but-it-wasnt-featured-on-the-next-volume-why><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Our team has a list of music submitted by members of the community, we try to select a safe amount of music that guarantees a healthy amount of charts will be made for each one, since chart and graphic submission is made purely by the interest of the author and at the moment of writing this document, Project OutFox has no Chart Creation Team.</p>
+<p>Another possible reason is that your submission does not follow the <strong>music guidelines</strong>, if you think that is the case then you can contact us using the following socials:</p>
+<ul>
+<li><a class=gdoc-markdown__link href=https://discord.gg/mNcFU67mK7>Discord</a></li>
+<li><a class=gdoc-markdown__link href=https://www.reddit.com/r/OutFox>Reddit</a> (Post or Private Message any Mods)</li>
+<li><a class=gdoc-markdown__link href=https://discourse.projectmoon.dance/>Project OutFox Forum</a> (Create a post)</li>
+<li><a class=gdoc-markdown__link href=https://twitter.com/projectoutfox>Twitter</a> (Private Message)</li>
+<li><a class=gdoc-markdown__link href=https://www.facebook.com/ProjectOutFox/>Facebook</a> (Private Message)</li>
+<li><a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox/discussions>Github</a> (New Discussion)</li>
+</ul>
+<p>Make sure to check any of the socials you provided to us, if we are considering using your music but it&rsquo;s missing something, we will try to contact you.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=why-are-some-music-files-missing-from-the-repository>
+Why are some music files missing from the repository?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#why-are-some-music-files-missing-from-the-repository class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Why are some music files missing from the repository?" href=#why-are-some-music-files-missing-from-the-repository><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Those are special as they use a license which doesn&rsquo;t allow us to publicly host them on Github, they are still bundled with our release zips.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=which-authors-have-had-their-music-released-with-outfox-serenity>
+Which authors have had their music released with OutFox Serenity?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#which-authors-have-had-their-music-released-with-outfox-serenity class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Which authors have had their music released with OutFox Serenity?" href=#which-authors-have-had-their-music-released-with-outfox-serenity><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><ul>
+<li>Matduke
+<ul>
+<li>Low End Theory <strong>(Volume I Winter Update)</strong></li>
+<li>Heartbeat <strong>(Volume I)</strong></li>
+<li>Let Me See You <strong>(Volume I)</strong></li>
+<li>Broken <strong>(Volume I)</strong></li>
+</ul>
+</li>
+<li>Sevish
+<ul>
+<li>Some Things Must <strong>(Volume I)</strong></li>
+</ul>
+</li>
+<li>PizeroFox
+<ul>
+<li>Tagebuch der vergangenen Erinnerungen <strong>(Volume I)</strong></li>
+</ul>
+</li>
+<li>mmry
+<ul>
+<li>After The Ending <strong>(Volume I)</strong></li>
+</ul>
+</li>
+<li>Jack5
+<ul>
+<li>Nexen II (Phase Two) <strong>(Volume I)</strong></li>
+</ul>
+</li>
+<li>Aspid Cat
+<ul>
+<li>Abandoned Doll <strong>(Volume I)</strong></li>
+<li>Conflicting Revenge <strong>(Volume I)</strong></li>
+</ul>
+</li>
+<li>Seo
+<ul>
+<li>brokenHeart resurrection _estele_ <strong>(Volume I)</strong></li>
+</ul>
+</li>
+<li>Drazil
+<ul>
+<li>synthborn lovebirds <strong>(Volume I)</strong></li>
+</ul>
+</li>
+<li>DJ Megas
+<ul>
+<li>Plasma <strong>(Volume I Winter Update)</strong></li>
+</ul>
+</li>
+<li>Pekoneko
+<ul>
+<li>Umi&rsquo;s Secret <strong>(Volume I Winter Update)</strong></li>
+</ul>
+</li>
+</ul>
+<div class=gdoc-page__anchorwrap>
+<h2 id=which-stepartists-have-had-their-charts-released-with-outfox-serenity>
+Which StepArtists have had their charts released with OutFox Serenity?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#which-stepartists-have-had-their-charts-released-with-outfox-serenity class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Which StepArtists have had their charts released with OutFox Serenity?" href=#which-stepartists-have-had-their-charts-released-with-outfox-serenity><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>Author</th>
+<th>Charts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Daniel Rotwind</td>
+<td>52</td>
+</tr>
+<tr>
+<td>Jack5</td>
+<td>48</td>
+</tr>
+<tr>
+<td>Chriszo</td>
+<td>41</td>
+</tr>
+<tr>
+<td>shockdude</td>
+<td>33</td>
+</tr>
+<tr>
+<td>Marukomuru</td>
+<td>23</td>
+</tr>
+<tr>
+<td>Fingy</td>
+<td>18</td>
+</tr>
+<tr>
+<td>K.TURN</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Xiddy</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Yosefu</td>
+<td>12</td>
+</tr>
+<tr>
+<td>48productions</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Telperion</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Dancing Maractus</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Gr00txD</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Kaede</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Kawafumi</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Snil4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>dj505</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Homeee</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Drazil</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Jose_Varela</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Sevish</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Ario</td>
+<td>1</td>
+</tr>
+</tbody>
+</table> </div>
+<ul>
+<li>Includes charts from OutFox Serenity Volume 1 Winter Update</li>
+</ul>
+<div class=gdoc-page__anchorwrap>
+<h2 id=which-graphic-makers-have-had-their-graphic-released-with-outfox-serenity>
+Which Graphic Makers have had their graphic released with OutFox Serenity?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#which-graphic-makers-have-had-their-graphic-released-with-outfox-serenity class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Which Graphic Makers have had their graphic released with OutFox Serenity?" href=#which-graphic-makers-have-had-their-graphic-released-with-outfox-serenity><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><ul>
+<li>Lirodon
+<ul>
+<li>Plasma (Background, Jacket, Banner)</li>
+<li>Broken (Background, Jacket, Banner)</li>
+<li>Heartbeat (Background, Jacket, Banner)</li>
+<li>Let Me See You (Background, Jacket, Banner)</li>
+<li>Conflicting Revenge (Background, Jacket, Banner)</li>
+<li>After The Ending (Jacket)</li>
+</ul>
+</li>
+<li>Daniel Rotwind
+<ul>
+<li>Umi&rsquo;s Secret (Background, Jacket, Banner) *Art comissioned from <a class=gdoc-markdown__link href=https://twitter.com/Trinitroid/status/1465752223439228931>Trinitoid</a></li>
+<li>Low End Theory (Background, Jacket, Banner) *Art comissioned from <a class=gdoc-markdown__link href=https://twitter.com/Khayos_Rave>Khayos</a></li>
+<li>Tagebuch der vergangenen Erinnerungen (Background, Jacket, Banner, BGA) *Art comissioned from <a class=gdoc-markdown__link href=https://twitter.com/Speed_Demon17>ArtPhantom17</a></li>
+<li>brokenHeart resurrection _estele_ (Background, Jacket, Banner)</li>
+<li>synthborn lovebirds (BGA)</li>
+</ul>
+</li>
+<li>Jack5
+<ul>
+<li>Nexen II (Background, Jacket, Banner)</li>
+<li>Some Things Must (Background, Jacket, Banner)</li>
+</ul>
+</li>
+<li>Jousway
+<ul>
+<li>After The Ending (Background, Banner)</li>
+</ul>
+</li>
+<li>Drazil
+<ul>
+<li>synthborn lovebirds (Background, Jacket, Banner)</li>
+</ul>
+</li>
+<li>Aqui
+<ul>
+<li>Abandoned Doll (Background, Jacket, Banner)</li>
+</ul>
+</li>
+<li>Jose_Varela
+<ul>
+<li>Heartbeat (BGA)</li>
+</ul>
+</li>
+</ul>
+<div class=gdoc-page__anchorwrap>
+<h2 id=who-organizes-the-project>
+Who organizes the project?
+<a data-clipboard-text=https://outfox.wiki/user-guide/meta/serenity/#who-organizes-the-project class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Who organizes the project?" href=#who-organizes-the-project><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><p>Most of the work is handled by OutFox Community Team with occasional help from OutFox Design Team and feedback from OutFox Development Team. In Specific:</p>
+<ul>
+<li>SHRMP0: Serenity Server Organization, Music Selection, Pack Organization, Serenity Sheet Organization, Chart Feedback.</li>
+<li>Lirodon: Does much of banners, Serenity Trailer, Serenity Website Section, Guidelines Rules, Pack Advertisement.</li>
+<li>Moru Zerinho6: Serenity Server Organization, Music Selection, Pack Organization, Serenity Website Section, Serenity Wiki.</li>
+<li>SheepyChris: Music Selection.</li>
+<li>Moneko: Music Selection.</li>
+<li>dj505: Chart Creation.</li>
+<li>Jose_Varela: Chart Creation.</li>
+</ul>
+<p>We also had help from members who aren&rsquo;t part of the team such as:</p>
+<ul>
+<li>Sevish: Sound Normalization.</li>
+<li>Daniel Rotwind: Creation of templates for beat based modes.</li>
+<li>shockdude: Creation of GH templates.</li>
+</ul>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
