@@ -8,7 +8,7 @@ weight: 3
 
 OutFox Serenity is the official community song pack project **made primarily for Project OutFox**. It's purpose is to produce packs of "libre" songs for the game that can be freely redistributed (including as part of its default, bundled songs), and to showcase the functionality of Project Outfox by offering charts for multiple gametypes beyond just 4-key/dance.
 
-## How was OutFox Serenity it created?
+## How was OutFox Serenity created?
 
 During Project OutFox Alpha 4.8.0 development, we started to release many modes, however, some of those modes have complicated chart standards or no longer have support. We decided then that it was right to create a community pack based on StepMania StepMix where the community would contribute for songs to be bundled with the game, but this time, songs for every mode OutFox supports.
 
