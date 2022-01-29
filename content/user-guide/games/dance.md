@@ -1,5 +1,5 @@
 ---
-title: "Game Module: Dance"
+title: "Game Module: dance"
 description: Details about the `dance` module supported by Project OutFox.
 weight: 2
 ---

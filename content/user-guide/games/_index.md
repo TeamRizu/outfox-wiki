@@ -65,8 +65,8 @@ As of OutFox-alpha-4.13.0, they include:
 
 ## Controller Based Modes
 
-{{< button size="medium" relref="user-guide/games/beat"		>}}beat{{< /button >}}
-{{< button size="medium" relref="user-guide/games/pomu" 	>}}pomu{{< /button >}}
+{{< button size="medium" relref="user-guide/games/bemu"		>}}be-mu{{< /button >}}
+{{< button size="medium" relref="user-guide/games/pomu" 	>}}po-mu{{< /button >}}
 {{< button size="medium" relref="user-guide/games/kbx" 		>}}kbx{{< /button >}}
 {{< button size="medium" relref="user-guide/games/gdgf" 	>}}gdgf{{< /button >}}
 {{< button size="medium" relref="user-guide/games/gh"	 	>}}gh{{< /button >}}
@@ -78,9 +78,8 @@ As of OutFox-alpha-4.13.0, they include:
 
 ## Future game types
 
-These are proposed and are scheduled on the roadmap. Limitations or code problems may delay or change these modes, so there is no date or ETA given.
+These are proposed and are scheduled on the road-map. Limitations or code problems may delay or change these modes, so there is no date or ETA given.
 
-* **drum** - A MIDI-based drum mode with 20 parts simulating a full Yamaha DTX drum kit.
 * **karaoke** -  A _(...do i need to explain this?)_ singing mode. Will happen if Squirrel gets off his butt.
 * **jam** - A mode properly supporting _o2Jam_ and its modes, with full .OJM loader support.
 * **piu** - A major refactoring to make it more accurate to the mainline series.
