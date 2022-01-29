@@ -25,6 +25,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 {{< button size="large" relref="user-guide/meta/about/#project-outfox-teams" >}}The Team{{< /button >}}
 {{< button size="large" relref="releases/" >}}Release History{{< /button >}}
 {{< button size="large" relref="roadmap/" >}}Our Project Roadmap{{< /button >}}
+{{< button size="large" relref="user-guide/meta//serenity">}}OutFox Serenity{{< /button >}}
 <--->
 
 ## User's guide
