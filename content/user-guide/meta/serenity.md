@@ -36,13 +36,13 @@ During Project OutFox Alpha 4.8.0 development, we started to release many modes,
 
 Released August 27, 2021, OutFox Serenity Volume I features music by Aspid Cat, Drazil, Jack5, Matduke, mmry, PizeroFox, Seo, and Sevish. Alongside 4-panel (dance) and 5-panel (pump) charts, some of its songs also have Be-Mu, Po-Mu, techno (8- and 9-panel), gddm, and gdgf, and gh charts.
 
-Download coming soon.
+Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.1).
 
 ### OutFox Serenity Volume I Winter Update
 
 The Winter Update to OutFox Serenity Volume I features three new songs by DJ Megas, Matduke and Pekoneko (ペコネコ). It also includes changes to some of the existing songs from Volume 1, including additional charts, and keysounded Be-Mu/Po-Mu and GH charts for selected songs.
 
-Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.1).
+Download coming soon.
 
 ## Are modfiles allowed to be submitted?
 
@@ -138,7 +138,6 @@ Those are special as they use a license which doesn't allow us to publicly host 
     - Low End Theory (Background, Jacket, Banner) *Art comissioned from  [Khayos](https://twitter.com/Khayos_Rave)
     - Tagebuch der vergangenen Erinnerungen (Background, Jacket, Banner, BGA) *Art comissioned from  [ArtPhantom17](https://twitter.com/Speed_Demon17)
     - brokenHeart resurrection \_estele\_ (Background, Jacket, Banner)
-    - synthborn lovebirds (BGA)
 - Jack5
     - Nexen II (Background, Jacket, Banner)
     - Some Things Must (Background, Jacket, Banner)
@@ -156,7 +155,7 @@ Those are special as they use a license which doesn't allow us to publicly host 
 Most of the work is handled by OutFox Community Team with occasional help from OutFox Design Team and feedback from OutFox Development Team. In Specific:
 
 - SHRMP0: Serenity Server Organization, Music Selection, Pack Organization, Serenity Sheet Organization, Chart Feedback.
-- Lirodon: Does much of banners, Serenity Trailer, Serenity Website Section, Guidelines Rules, Pack Advertisement.
+- Lirodon: Pack Assets, Serenity Trailer, Serenity Website Section, Guidelines Rules, Pack Advertisement.
 - Moru Zerinho6: Serenity Server Organization, Music Selection, Pack Organization, Serenity Website Section, Serenity Wiki.
 - SheepyChris: Music Selection.
 - Moneko: Music Selection.
