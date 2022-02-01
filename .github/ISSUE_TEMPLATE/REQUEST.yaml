@@ -1,0 +1,38 @@
+name: Request Documentation
+description: Request documentation about a subject.
+title: "[REQUEST] ADD TITLE HERE"
+labels: enhancement
+
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing request for this?
+      description: Please search to see if an issue already exists for the request you're making.
+      options:
+      - label: I have searched the existing requests and none matched.
+        required: true
+  - type: markdown
+    attributes:
+      value: |
+        # **Request Information**
+  - type: textarea
+    id: document_details
+    attributes:
+      label: Request
+      description: Tell us what you wish to be documented.
+    validations:
+      required: true
+  - type: textarea
+    id: how_to_document_details
+    attributes:
+      label:  Details to Document
+      description: Tell us how you wish such subjet to be documented.
+    validations:
+      required: true
+  - type: textarea
+    id: assets
+    attributes:
+      label:  Help the documentation
+      description: Give us any information that would help us document such subjet.
+    validations:
+      required: false
