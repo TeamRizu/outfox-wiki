@@ -34,18 +34,18 @@ During Project OutFox Alpha 4.8.0 development, we started to release many modes,
 
 ### OutFox Serenity Volume I
 
-Released August 27, 2021, OutFox Serenity Volume I features music by Aspid Cat, Drazil, Jack5, Matduke, mmry, PizeroFox, Seo, and Sevish. Alongside 4-panel (dance) and 5-panel (pump) charts, some of its songs also have Be-Mu, Po-Mu, techno (8- and 9-panel), gddm, and gdgf, and gh charts. Comes with:
+Released August 27, 2021, OutFox Serenity Volume I features music by Aspid Cat, Drazil, Jack5, Matduke, mmry, PizeroFox, Seo, and Sevish. Alongside 4-panel (dance) and 5-panel (pump) charts, some of its songs also have be-mu, po-mu, techno (8- and 9-panel), gddm, and gdgf, and gh charts. Comes with:
 
 | Mode | Charts |
 |---|---|
-| Dance | 84 |
-| Pump | 58 |
-| Be-Mu | 28 |
-| Po-Mu | 26 |
-| GH | 20 |
-| GDDM | 18 |
-| Techno | 8 |
-| GDGF | 8 |
+| dance | 84 |
+| pump | 58 |
+| be-mu | 28 |
+| po-mu | 26 |
+| gh | 20 |
+| gddm | 18 |
+| techno | 8 |
+| gdgf | 8 |
 
 250 Charts have been created for 11 songs. Volume I StepArtists had 97 days of development.
 
@@ -53,23 +53,23 @@ Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.1).
 
 ### OutFox Serenity Volume I Winter Update
 
-The Winter Update to OutFox Serenity Volume I features three new songs by DJ Megas, Matduke and Pekoneko (ペコネコ). It also includes changes to some of the existing songs from Volume 1, including additional charts, and keysounded Be-Mu/Po-Mu and GH charts for selected songs. Comes with:
+The Winter Update to OutFox Serenity Volume I features three new songs by DJ Megas, Matduke and Pekoneko (ペコネコ). It also includes changes to some of the existing songs from Volume 1, including additional charts, and keysounded be-mu/po-mu and gh charts for selected songs. Comes with:
 
 | Mode | Charts |
 |---|---|
-| Dance | 28 |
-| SMX | 16 |
-| GH | 11 |
-| Be-Mu | 9 |
-| Pump | 5 |
-| ManiaX | 2 |
-| Po-Mu | 2 |
-| Techno | 2 |
-| EZ2 | 1 |
+| dance | 28 |
+| smx | 16 |
+| gh | 11 |
+| be-mu | 9 |
+| pump | 5 |
+| maniax | 2 |
+| po-mu | 2 |
+| techno | 2 |
+| ez2 | 1 |
 
 76 Charts have been created for 3 songs. Volume I Winter Update StepArtists had 50 days of development.
 
-Download coming soon.
+Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.5)
 
 ## Are modfiles allowed to be submitted?
 
