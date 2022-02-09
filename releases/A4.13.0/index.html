@@ -3,7 +3,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Release Date: 8th February 2022    &ldquo;Back to the Normality&rdquo;     Please read the change log!     (Incorporates Internal Builds 4.13.0-rc0 to 4.13.0-rc9)    (Incorporates Internal Builds 4.12.1-rc0 to 4.12.1-rc7)     Announcing stepstage mode!    This month we are proud to announce initial support for the stepstage mode. This mode is a simulation of the game Stepping Stage released in the arcade by the company Jaleco in 2000.">
+<meta name=description content="Release Date: 9th February 2022    &ldquo;Back to the Normality&rdquo;     Please read the change log!     (Incorporates Internal Builds 4.13.0-rc0 to 4.13.0-rc9)    (Incorporates Internal Builds 4.12.1-rc0 to 4.12.1-rc7)     Announcing stepstage mode!    This month we are proud to announce initial support for the stepstage mode. This mode is a simulation of the game Stepping Stage released in the arcade by the company Jaleco in 2000.">
 <title>OutFox Alpha 4.13.0 Build | Project OutFox Wiki</title>
 <link rel=icon href=../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../js/darkmode-ce906ea916.min.js></script>
@@ -1044,9 +1044,9 @@ hidden-mobile" itemprop=breadcrumb>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>OutFox Alpha 4.13.0 Build</h1>
 <div class=gdoc-page__anchorwrap>
-<h3 id=release-date-8th-february-2022>
-Release Date: 8th February 2022
-<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#release-date-8th-february-2022 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Release Date: 8th February 2022" href=#release-date-8th-february-2022><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=release-date-9th-february-2022>
+Release Date: 9th February 2022
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#release-date-9th-february-2022 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Release Date: 9th February 2022" href=#release-date-9th-february-2022><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><div class=gdoc-page__anchorwrap>
@@ -1125,7 +1125,7 @@ To download the game <em>including</em> the Serenity Pack, look for the download
 <a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#to-download-the-game-_including_-the-serenity-pack-look-for-the-download-for-your-system-which-has-serenity-in-the-filename class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor To download the game including the Serenity Pack, look for the download for your system which has Serenity in the Filename." href=#to-download-the-game-_including_-the-serenity-pack-look-for-the-download-for-your-system-which-has-serenity-in-the-filename><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
-</div><p>====================</p>
+</div><hr>
 <hr>
 <div class=gdoc-page__anchorwrap>
 <h1 id=known-issues-alpha-4130>
@@ -1189,247 +1189,87 @@ To download the game <em>including</em> the Serenity Pack, look for the download
 </ul>
 <p><strong>Engine</strong></p>
 <ul>
-<li>
-<p>❕✅ Sync OutFox to match the support added in 0.35 of the TFG, adding Latin extended C and D</p>
-</li>
-<li>
-<p>❕✅ Add new noto medium fonts for added Latin Ext C/D</p>
-</li>
-<li>
-<p>❕✅ Add new noto semibold fonts for added Latin Ext C/D</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with unloading font maps</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with unloading song audio files (Closes #110)</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with noteskin caching on gamestate refresh</p>
-</li>
-<li>
-<p>❕✅ New cpr libraries</p>
-</li>
-<li>
-<p>❕✅ Fixed issue with cmake trying to set the wrong path</p>
-</li>
-<li>
-<p>❕✅ New OFMath lua namespace for better optimised math options</p>
-</li>
-<li>
-<p>❕✅ Load noteskins for non mod-files</p>
-</li>
-<li>
-<p>❕✅ Remove deprecated openSSL libraries</p>
-</li>
-<li>
-<p>❕✅ Fix long overdue NSKINMAN removal and bugs</p>
-</li>
-<li>
-<p>❕✅ Fix issues with no options on global skins</p>
-</li>
-<li>
-<p>❕✅ Work on the new TJA parser (still in progress)</p>
-</li>
-<li>
-<p>❕✅ Fix quirk with noteskin loading</p>
-</li>
-<li>
-<p>❕✅ Add reverse support for retrobar noteskin</p>
-</li>
-<li>
-<p>❕✅ Fixed crash with def.notefield() in editor</p>
-</li>
-<li>
-<p>❕✅ Fixed input passthrough with def.notefield() and AutoPlay</p>
-</li>
-<li>
-<p>❕✅ Added new LuaLife which can override internal life systems for modes which need custom ones</p>
-</li>
-<li>
-<p>❕✅ Added feature to set score limit</p>
-</li>
-<li>
-<p>❕✅ Enable new checkpoint scoring support</p>
-</li>
-<li>
-<p>❕✅ Added new &lsquo;GaveUp()&rsquo; lua feature to let themes know when a file is given up by holding start</p>
-</li>
-<li>
-<p>❕✅ Stop quirk with song preview breaking</p>
-</li>
-<li>
-<p>❕✅ Added lua exposure to m_iMenuStackSelection</p>
-</li>
-<li>
-<p>❕✅ Add new Lua Math functions</p>
-</li>
-<li>
-<p>❕✅ Add new Lua Random Functions, though these need optimising</p>
-</li>
-<li>
-<p>❕✅ <strong>New</strong> <code>UpdateMeshPosition()</code> for def.model</p>
-</li>
-<li>
-<p>❕✅ Fix noteskin recursive depth to level 9 so older noteskins work</p>
-</li>
-<li>
-<p>❕✅ Add new faster math functions, namespace tbc</p>
-</li>
-<li>
-<p>❕✅ Add new faster sine/cosine math</p>
-</li>
-<li>
-<p>❕✅ Re-enable pixel fonts (restore setexturefiltering() features without blur) (Closes #450)</p>
-</li>
-<li>
-<p>❕✅ Fixed erroneous half-width math</p>
-</li>
-<li>
-<p>❕✅ Change &lsquo;song length seconds&rsquo; to SM5.x behaviour for theme compatibility and to fix older modfiles</p>
-</li>
-<li>
-<p>❕✅ Fixed crash to desktop on loading songs (Closes #448)</p>
-</li>
-<li>
-<p>❕✅ Fixed crash to desktop on loading cached songs</p>
-</li>
-<li>
-<p>❕✅ Fixed Encoding crash on loading window on ZIV (pre 2019) song packs</p>
-</li>
-<li>
-<p>❕✅ Fixed Korean characters causing a CTD on loading window</p>
-</li>
-<li>
-<p>❕✅ Fixed encoding cache issues on song loading</p>
-</li>
-<li>
-<p>❕✅ Fixed cache crashing on FS corruption/bad sim files/audio (Closes #449)</p>
-</li>
-<li>
-<p>❕✅ Fixed crashes on any bad encoded file (Closes #436)</p>
-</li>
-<li>
-<p>❕✅ Fixed crash with badly unzipped file</p>
-</li>
-<li>
-<p>❕✅ Fixed new filesystem loader crashing on race condition (Closes #452)</p>
-</li>
-<li>
-<p>❕✅ Fixed crash/hang with keysounds loading erratically.</p>
-</li>
-<li>
-<p>❕✅ Fixed crash on thread trying to load things that weren&rsquo;t there</p>
-</li>
-<li>
-<p>❕✅ Fixed crash with overflow on file size if the file was 0 bytes</p>
-</li>
-<li>
-<p>❕✅ Fixed hash data reloading lag spikes</p>
-</li>
-<li>
-<p>❕✅ Fixed music wheel &lsquo;lag&rsquo; due to note data being loaded on song select</p>
-</li>
-<li>
-<p>❕✅ Fixed massive lag spikes on all music wheels due to legacy SM5.x method conflicting with new code pathways</p>
-</li>
-<li>
-<p>❕✅ Restored 3.x era legacy &lsquo;StepsTypes&rsquo; <code>iidx</code>/<code>bm</code>/<code>para</code> if you spot any that do not work ping Squirrel</p>
-</li>
-<li>
-<p>❕✅ Fixed crash with &lsquo;unknown&rsquo; StepsTypes breaking on 3.x SM files</p>
-</li>
-<li>
-<p>❕✅ Fixed crash on some noteskins asking for game/currentgame/currentstyle information before the game is available</p>
-</li>
-<li>
-<p>❕✅ Fixed another crash with noteskins on legacy/vintage hardware (Closes #476)</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with autogen on modes</p>
-</li>
-<li>
-<p>❕✅ Fixed player 2 crash on some modes</p>
-</li>
-<li>
-<p>❕✅ Added new rate/pitch theme-metric for legacy theme support</p>
-</li>
-<li>
-<p>❕✅ Fixed Initial screen animations on themes lower than 480p</p>
-</li>
-<li>
-<p>❕✅ Editor: Fixed crash on pressing Insert key on an incomplete marker selection</p>
-</li>
-<li>
-<p>❕✅ Editor: Restored note speeds to their actual values</p>
-</li>
-<li>
-<p>❕✅ Editor: Fixed iterator race condition on ActorFrame updates
-(This fixes a situation where deleting the last child of an Actorframe by an external source would crash the game)</p>
-</li>
-<li>
-<p>❕✅ Editor: Restored &ldquo;Paste at current beat/marker&rdquo; on Chart options</p>
-</li>
-<li>
-<p>❕✅ Editor: Added key combination to jump to end of audio file (Shift + End)</p>
-</li>
-<li>
-<p>❕✅ Editor: Help screen now auto-resizable across different themes</p>
-</li>
-<li>
-<p>❕✅ Editor: Fixed crash on loading some song types (Closes #125)</p>
-</li>
-<li>
-<p>❕✅ Added new encode/decode json commands from SM#2154 for Simply Love</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with 0 frame index on models (Closes #472)</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with bone index being incorrectly initialised (Closes #472)</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with dynamic random BGChanges</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with corrupted font glyphs on some themes/screens on a resolution change</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with random crashing/no shaders available on Nvidia 500+ series drivers</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with simplehold top caps</p>
-</li>
-<li>
-<p>❕✅ Fixed beat bar draw stops</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with a recursive GetHash() (Thanks notnola)</p>
-</li>
-<li>
-<p>❕✅ Fixed accuracy precision output of ATTACKS to 6dp (Closes #285)</p>
-</li>
-<li>
-<p>❕✅ Fixed empty BG/FGChanges being spawned</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with some mods needing a tweak to the cosine math</p>
-</li>
-<li>
-<p>❕✅ Fixed issue with ScreenGameplay not being reset in course mode (Closes #91)</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with missing wireframe on notes</p>
-</li>
-<li>
-<p>❕✅ Added new wireframe command into Actor instead of it being in model</p>
-</li>
-<li>
-<p>❕✅ Fixed bug with simfile ATTACKS not working in course mode (Closes #89)</p>
-</li>
-<li>
-<p>❕✅ Fixed bug that stopped mod file changes being reset for the next song</p>
-</li>
+<li>❕✅ Sync OutFox to match the support added in 0.35 of the TFG, adding Latin extended C and D</li>
+<li>❕✅ Add new noto medium fonts for added Latin Ext C/D</li>
+<li>❕✅ Add new noto semibold fonts for added Latin Ext C/D</li>
+<li>❕✅ Fixed bug with unloading font maps</li>
+<li>❕✅ Fixed bug with unloading song audio files (Closes #110)</li>
+<li>❕✅ Fixed bug with noteskin caching on gamestate refresh</li>
+<li>❕✅ New cpr libraries</li>
+<li>❕✅ Fixed issue with cmake trying to set the wrong path</li>
+<li>❕✅ New OFMath lua namespace for better optimised math options</li>
+<li>❕✅ Load noteskins for non mod-files</li>
+<li>❕✅ Remove deprecated openSSL libraries</li>
+<li>❕✅ Fix long overdue NSKINMAN removal and bugs</li>
+<li>❕✅ Fix issues with no options on global skins</li>
+<li>❕✅ Work on the new TJA parser (still in progress)</li>
+<li>❕✅ Fix quirk with noteskin loading</li>
+<li>❕✅ Add reverse support for retrobar noteskin</li>
+<li>❕✅ Fixed crash with def.notefield() in editor</li>
+<li>❕✅ Fixed input passthrough with def.notefield() and AutoPlay</li>
+<li>❕✅ Added new LuaLife which can override internal life systems for modes which need custom ones</li>
+<li>❕✅ Added feature to set score limit</li>
+<li>❕✅ Enable new checkpoint scoring support</li>
+<li>❕✅ Added new &lsquo;GaveUp()&rsquo; lua feature to let themes know when a file is given up by holding start</li>
+<li>❕✅ Stop quirk with song preview breaking</li>
+<li>❕✅ Added lua exposure to m_iMenuStackSelection</li>
+<li>❕✅ Add new Lua Math functions</li>
+<li>❕✅ Add new Lua Random Functions, though these need optimising</li>
+<li>❕✅ <strong>New</strong> <code>UpdateMeshPosition()</code> for def.model</li>
+<li>❕✅ Fix noteskin recursive depth to level 9 so older noteskins work</li>
+<li>❕✅ Add new faster math functions, namespace tbc</li>
+<li>❕✅ Add new faster sine/cosine math</li>
+<li>❕✅ Re-enable pixel fonts (restore setexturefiltering() features without blur) (Closes #450)</li>
+<li>❕✅ Fixed erroneous half-width math</li>
+<li>❕✅ Change &lsquo;song length seconds&rsquo; to SM5.x behaviour for theme compatibility and to fix older modfiles</li>
+<li>❕✅ Fixed crash to desktop on loading songs (Closes #448)</li>
+<li>❕✅ Fixed crash to desktop on loading cached songs</li>
+<li>❕✅ Fixed Encoding crash on loading window on ZIV (pre 2019) song packs</li>
+<li>❕✅ Fixed Korean characters causing a CTD on loading window</li>
+<li>❕✅ Fixed encoding cache issues on song loading</li>
+<li>❕✅ Fixed cache crashing on FS corruption/bad sim files/audio (Closes #449)</li>
+<li>❕✅ Fixed crashes on any bad encoded file (Closes #436)</li>
+<li>❕✅ Fixed crash with badly unzipped file</li>
+<li>❕✅ Fixed new filesystem loader crashing on race condition (Closes #452)</li>
+<li>❕✅ Fixed crash/hang with keysounds loading erratically.</li>
+<li>❕✅ Fixed crash on thread trying to load things that weren&rsquo;t there</li>
+<li>❕✅ Fixed crash with overflow on file size if the file was 0 bytes</li>
+<li>❕✅ Fixed hash data reloading lag spikes</li>
+<li>❕✅ Fixed music wheel &lsquo;lag&rsquo; due to note data being loaded on song select</li>
+<li>❕✅ Fixed massive lag spikes on all music wheels due to legacy SM5.x method conflicting with new code pathways</li>
+<li>❕✅ Restored 3.x era legacy &lsquo;StepsTypes&rsquo; <code>iidx</code>/<code>bm</code>/<code>para</code> if you spot any that do not work ping Squirrel</li>
+<li>❕✅ Fixed crash with &lsquo;unknown&rsquo; StepsTypes breaking on 3.x SM files</li>
+<li>❕✅ Fixed crash on some noteskins asking for game/currentgame/currentstyle information before the game is available</li>
+<li>❕✅ Fixed another crash with noteskins on legacy/vintage hardware (Closes #476)</li>
+<li>❕✅ Fixed bug with autogen on modes</li>
+<li>❕✅ Fixed player 2 crash on some modes</li>
+<li>❕✅ Added new rate/pitch theme-metric for legacy theme support</li>
+<li>❕✅ Fixed Initial screen animations on themes lower than 480p</li>
+<li>❕✅ Editor: Fixed crash on pressing Insert key on an incomplete marker selection</li>
+<li>❕✅ Editor: Restored note speeds to their actual values</li>
+<li>❕✅ Editor: Fixed iterator race condition on ActorFrame updates
+(This fixes a situation where deleting the last child of an Actorframe by an external source would crash the game)</li>
+<li>❕✅ Editor: Restored &ldquo;Paste at current beat/marker&rdquo; on Chart options</li>
+<li>❕✅ Editor: Added key combination to jump to end of audio file (Shift + End)</li>
+<li>❕✅ Editor: Help screen now auto-resizable across different themes</li>
+<li>❕✅ Editor: Fixed crash on loading some song types (Closes #125)</li>
+<li>❕✅ Added new encode/decode json commands from SM#2154 for Simply Love</li>
+<li>❕✅ Fixed bug with 0 frame index on models (Closes #472)</li>
+<li>❕✅ Fixed bug with bone index being incorrectly initialised (Closes #472)</li>
+<li>❕✅ Fixed bug with dynamic random BGChanges</li>
+<li>❕✅ Fixed bug with corrupted font glyphs on some themes/screens on a resolution change</li>
+<li>❕✅ Fixed bug with random crashing/no shaders available on Nvidia 500+ series drivers</li>
+<li>❕✅ Fixed bug with simplehold top caps</li>
+<li>❕✅ Fixed beat bar draw stops</li>
+<li>❕✅ Fixed bug with a recursive GetHash() (Thanks notnola)</li>
+<li>❕✅ Fixed accuracy precision output of ATTACKS to 6dp (Closes #285)</li>
+<li>❕✅ Fixed empty BG/FGChanges being spawned</li>
+<li>❕✅ Fixed bug with some mods needing a tweak to the cosine math</li>
+<li>❕✅ Fixed issue with ScreenGameplay not being reset in course mode (Closes #91)</li>
+<li>❕✅ Fixed bug with missing wireframe on notes</li>
+<li>❕✅ Added new wireframe command into Actor instead of it being in model</li>
+<li>❕✅ Fixed bug with simfile ATTACKS not working in course mode (Closes #89)</li>
+<li>❕✅ Fixed bug that stopped mod file changes being reset for the next song</li>
 </ul>
 <p>*<strong>Windows 7+:</strong></p>
 <ul>
