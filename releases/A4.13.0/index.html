@@ -3,8 +3,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Release Date: 14th August 2020    &ldquo;Chocolate Keyboards and Frikandel&rdquo;    New Input Update (Version 4)!     ❕✅🐲 New Selectable Input system via Preference.ini and Experimental Settings in the theme ❕✅🐲 Added new &ldquo;legacy&rdquo;(HIDAPI) Input to fix regressions in Windows and Ubuntu updates ❕✅🐲 Fixed bug with Modern XInput method causing slowdowns ❕✅🐲 Fixed bug with ParaPara Controller not being detected ❕✅🐲 Fixed bug with Bemani Controllers not being detected ❕✅🐲 Fixed bug with Hori PS2 Controllers not being detected ❕✅🐲 Fixed bug with PS2 Adapted Controllers not being detected ❕✅🐲 Added new Init() functions for controllers ❕✅🐲 Added new ReAssign functions for controllers ❕✅🐲 Fixed error in update loop that added controllers twice to the system ❕✅🐲 Fixed error with mapping buttons back to front on legacy ❕✅🐲 Fixed edge case crashes when adding names to controllers plugged in ❕✅🐲 Fixed error in option row not setting the preference value.">
-<title>OutFox Alpha 4.8.0 Build | Project OutFox Wiki</title>
+<meta name=description content="Release Date: 8th February 2022    &ldquo;Back to the Normality&rdquo;     Please read the change log!     (Incorporates Internal Builds 4.13.0-rc0 to 4.13.0-rc9)    (Incorporates Internal Builds 4.12.1-rc0 to 4.12.1-rc7)     Announcing stepstage mode!    This month we are proud to announce initial support for the stepstage mode. This mode is a simulation of the game Stepping Stage released in the arcade by the company Jaleco in 2000.">
+<title>OutFox Alpha 4.13.0 Build | Project OutFox Wiki</title>
 <link rel=icon href=../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -794,7 +794,7 @@ Release History
 <ul class=gdoc-nav__list>
 <li>
 <span class=flex>
-<a href=../../releases/A4.13.0/ class=gdoc-nav__entry>
+<a href=../../releases/A4.13.0/ class="gdoc-nav__entry is-active">
 OutFox Alpha 4.13.0 Build
 </a>
 </span>
@@ -927,7 +927,7 @@ OutFox Alpha 4.8.1 Build
 </li>
 <li>
 <span class=flex>
-<a href=../../releases/A4.8.0/ class="gdoc-nav__entry is-active">
+<a href=../../releases/A4.8.0/ class=gdoc-nav__entry>
 OutFox Alpha 4.8.0 Build
 </a>
 </span>
@@ -1037,193 +1037,482 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/releases/ href=../../releases/><span itemprop=name>Release History</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>OutFox Alpha 4.8.0 Build</span><meta itemprop=position content="3"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/releases/ href=../../releases/><span itemprop=name>Release History</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>OutFox Alpha 4.13.0 Build</span><meta itemprop=position content="3"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>OutFox Alpha 4.8.0 Build</h1>
+<h1>OutFox Alpha 4.13.0 Build</h1>
 <div class=gdoc-page__anchorwrap>
-<h3 id=release-date-14th-august-2020>
-Release Date: 14th August 2020
-<a data-clipboard-text=https://outfox.wiki/releases/A4.8.0/#release-date-14th-august-2020 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Release Date: 14th August 2020" href=#release-date-14th-august-2020><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=release-date-8th-february-2022>
+Release Date: 8th February 2022
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#release-date-8th-february-2022 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Release Date: 8th February 2022" href=#release-date-8th-february-2022><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div><div class=gdoc-page__anchorwrap>
-<h2 id=chocolate-keyboards-and-frikandel>
-&ldquo;Chocolate Keyboards and Frikandel&rdquo;
-<a data-clipboard-text=https://outfox.wiki/releases/A4.8.0/#chocolate-keyboards-and-frikandel class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor &ldquo;Chocolate Keyboards and Frikandel&rdquo;" href=#chocolate-keyboards-and-frikandel><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=back-to-the-normality>
+&ldquo;Back to the Normality&rdquo;
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#back-to-the-normality class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor &ldquo;Back to the Normality&rdquo;" href=#back-to-the-normality><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
+</div><p><img src=https://cdn.discordapp.com/attachments/422897880626626569/940423180806410250/2089717-bigthumbnail.jpg alt=image></p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h1 id=please-read-the-change-log>
+Please read the change log!
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#please-read-the-change-log class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Please read the change log!" href=#please-read-the-change-log><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div><hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=incorporates-internal-builds-4130-rc0-to-4130-rc9>
+(Incorporates Internal Builds 4.13.0-rc0 to 4.13.0-rc9)
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#incorporates-internal-builds-4130-rc0-to-4130-rc9 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor (Incorporates Internal Builds 4.13.0-rc0 to 4.13.0-rc9)" href=#incorporates-internal-builds-4130-rc0-to-4130-rc9><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4>
 </div><div class=gdoc-page__anchorwrap>
-<h2 id=new-input-update-version-4>
-New Input Update (Version 4)!
-<a data-clipboard-text=https://outfox.wiki/releases/A4.8.0/#new-input-update-version-4 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New Input Update (Version 4)!" href=#new-input-update-version-4><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h4 id=incorporates-internal-builds-4121-rc0-to-4121-rc7>
+(Incorporates Internal Builds 4.12.1-rc0 to 4.12.1-rc7)
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#incorporates-internal-builds-4121-rc0-to-4121-rc7 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor (Incorporates Internal Builds 4.12.1-rc0 to 4.12.1-rc7)" href=#incorporates-internal-builds-4121-rc0-to-4121-rc7><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2>
-</div><ul>
-<li>❕✅🐲 New Selectable Input system via Preference.ini and Experimental Settings in the theme</li>
-<li>❕✅🐲 Added new &ldquo;legacy&rdquo;(HIDAPI) Input to fix regressions in Windows and Ubuntu updates</li>
-<li>❕✅🐲 Fixed bug with Modern XInput method causing slowdowns</li>
-<li>❕✅🐲 Fixed bug with ParaPara Controller not being detected</li>
-<li>❕✅🐲 Fixed bug with Bemani Controllers not being detected</li>
-<li>❕✅🐲 Fixed bug with Hori PS2 Controllers not being detected</li>
-<li>❕✅🐲 Fixed bug with PS2 Adapted Controllers not being detected</li>
-<li>❕✅🐲 Added new Init() functions for controllers</li>
-<li>❕✅🐲 Added new ReAssign functions for controllers</li>
-<li>❕✅🐲 Fixed error in update loop that added controllers twice to the system</li>
-<li>❕✅🐲 Fixed error with mapping buttons back to front on legacy</li>
-<li>❕✅🐲 Fixed edge case crashes when adding names to controllers plugged in</li>
-<li>❕✅🐲 Fixed error in option row not setting the preference value.</li>
-<li>❕✅🐲 Added new <code>UseOldJoystickMapping</code> preference to choose your input system</li>
-<li>❕✅🐲 Fixed some older controllers causing a stuck button</li>
-<li>❕✅🐲 Fixed controller index being sketchy on USB Host/Hub reset (USB 1.1/1.0)</li>
-<li>❕✅🐲 Fixed button assignment reaching a cap and causing an edge crash</li>
-<li>❕✅🐲 Fixed availability of Rotary and L - R button assignments on &lsquo;legacy&rsquo; input</li>
-<li>❕✅🐲 Fixed analogue inputs on some controllers staying at max range</li>
-<li>❕✅🐲 Fixed some older controllers (Pre-2009) from polling at 250ms</li>
-<li>❕✅🐲 Fixed some mechanical keyboards polling at 10hz/100hz in Windows 8.1/10</li>
-<li>❕✅ Fix some analogue inputs being seen as &lsquo;depressed&rsquo; when they were not (Thanks JapanYoshi)</li>
-<li>❕✅ Fix left analogue sticks not being detected on some controllers (Thanks JapanYoshi)</li>
-<li>❕✅ Fix some D-Pad presses (on XInput) not being detected on some controllers (Thanks JapanYoshi)</li>
-</ul>
-<p>This edition features another rewrite of the Input System for OutFox. Due to windows updates, (and Ubuntu updates) that have directly affected several of our users, we have taken the time to bring forward our plans to fix this sooner rather that later.</p>
-<p>What this means to you, our players. You now have a choice of using the XInput which will be enabled by default, (and has been the norm since alpha 4.5) which gives the familiar buttons on the XBox controller. We have added a new controller option row in the &lsquo;Experimental Settings&rsquo; which will allow easy change, you will need to reboot your game to reinitialise the input system, but we will make this a non-game reset option in a future update. There is also a preference you can edit which is called <code>UseOldJoystickMapping</code> setting this to <code>0</code> sets the XInput mode, and setting this to <code>1</code> enables the legacy (HIDAPI) mode for your controller or pad.</p>
-<p>You will likely need to check your offset for this update, if you are swapping modes, as some controllers behave slightly different in legacy/XInput. This is true especially of custom Arduino pads, so take time to remember to test this.</p>
-<p>If you use older controllers, please ensure they are plugged in BEFORE you start the game. Because we do not depend on DirectX anymore, we need to initialise the system on game start. We are looking into this, but once the system is live, controllers can be added and removed as normal. We really do not want to go back to DInput7 or DInput8 as Microsoft is really punishing use of these system and will remove them outright eventually.</p>
-<p>Keyboard players can use either method, this update fixed a couple of awry driver update issues on steelseries/Corsair keyboards to fix their polling issue, so you can play as normal.</p>
-<p>If you have an SMX 4k/5k/pump pad, you can use either mode, but some players have mentioned that legacy &lsquo;feels tighter&rsquo; than XInput for this pad. Give it a try and let us know your thoughts.</p>
-<p>This new mode allows for more than 4 controllers (which XInput is limited to by design), and does not require a mapping for the <code>gamecontrollerdb.txt</code> file which XInput pads require. This new mode allows the older Joystick path to run, which is based on HIDAPI, thus giving us a greater level of controller support than ever before. If your controller does not show up in OutFox, or has become troublesome since the operating system updates, this is the mode for you. If you have any issues with the new system (bear in mind, you WILL need to go to Key mapping and map all the buttons for your controller to their actions. YOU DO NOT NEED TO USE CONTROLLER MAPPING WITH THIS MODE!</p>
-<p>The legacy mode returns to a slightly more familiar system from 5.1/5.0 so those of you with particularly troublesome controllers will no longer have issues. The ParaParaParadise Controller prefers to be on legacy. So if you use OutFox for Para/ParaStar/EKS-D remember to set this in your game, and restart. The PPP Controller needs to be plugged in BEFORE you start the game, due to how windows operates now. This is true for Ubuntu also. Mac OSX now also properly supports this controller.</p>
-<p>On the subject of ParaPara Paradise, this month has seen a lot of work and collaboration to finally fix some of the glaring issues for this mode. We will continue to do this for all our modes, so look out for updates!</p>
+</h4>
+</div><hr>
 <div class=gdoc-page__anchorwrap>
-<h2 id=parapara-paradise-mode-has-been-given-a-swathe-of-fixes>
-ParaPara Paradise mode has been given a swathe of fixes:
-<a data-clipboard-text=https://outfox.wiki/releases/A4.8.0/#parapara-paradise-mode-has-been-given-a-swathe-of-fixes class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ParaPara Paradise mode has been given a swathe of fixes:" href=#parapara-paradise-mode-has-been-given-a-swathe-of-fixes><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=announcing-stepstage-mode>
+Announcing <code>stepstage</code> mode!
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#announcing-stepstage-mode class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Announcing stepstage mode!" href=#announcing-stepstage-mode><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div><ul>
-<li>❕✅ Fixed Noteskin loading on PPP mode</li>
-<li>❕✅ Fixed missing theme elements on PPP mode</li>
-<li>❕✅ Added new timing windows for PPP mode, which match the PS2/2nd Mix games</li>
-<li>❕✅ Added new judgement names for PPP mode to match PS2/2nd Mix</li>
-<li>❕✅ Added new Tick hit support - This allows for a hit if the sensor is triggered, as per the original games</li>
-<li>❕✅ Added new Hold Tick Hit support - Fixes a long overdue bug in holds on PPP mode.</li>
-<li>❕✅ Added new column style &lsquo;active&rsquo; when a sensor is triggered, to closer match the original games</li>
-<li>❕✅ Added 2 player support for PPP mode</li>
-<li>❕✅ Fixed PPP controller buttons not being recognised in game</li>
-<li>❕✅ Added new default noteskin for PPP mode</li>
-<li>❕✅ Added new Jara noteskin for PPP mode</li>
-<li>❕✅ Fixed evaluation screen elements causing an edge case crash</li>
-<li>❕✅ Fixed how the game records play details to be more accurate to the original play experience.</li>
-<li>❕✅ Fixed Rate mode being set to a weird value</li>
-<li>❕✅ Fixed Speed Mod. For accurate arcade experience, use A or C mod, between 100-300, we feel the sweet spot is 100-150</li>
-<li>❕✅ Fixed missing gameplay elements</li>
-</ul>
-<p>We hope you all enjoy the new revamped Para Mode, and remember it&rsquo;s also playable on MacOS fully for the first time! If you have any feedback or questions please do not hesitate to contact us on the discord!</p>
+</div><p><img src=https://user-images.githubusercontent.com/11047768/153197662-982c4b7e-26b7-43b8-a036-4db81f9f4fdb.jpg alt=stepstagegameplayold></p>
+<p>This month we are proud to announce initial support for the <code>stepstage</code> mode. This mode is a simulation of the game <em>Stepping Stage</em> released in the arcade by the company <em>Jaleco</em> in 2000.</p>
+<p><img src=https://user-images.githubusercontent.com/11047768/153202754-5205b725-2400-4003-b6d4-08f518d6fa76.png alt="steppingstage cab"></p>
+<p>This game featured quite a unique layout, having 3 panels of input per column. The game used a dual column layout for the &lsquo;normal&rsquo; mode, which had 6 inputs total, with the left hand side of the pad being for left, and right side being right. There is a much easier &lsquo;single&rsquo; mode where all 6 pads are placed on a single column, but only the <em>colour</em> is needed to be hit, with the &lsquo;left or right&rsquo; side being ignored.</p>
+<p>There was a home release of this game called <em>Stepping Selection</em> released for the <em>PlayStation 2</em>, and naturally, <em>Project OutFox</em> supports the use of this pad via the usual adapter, so you can play at home on the original dance mat.</p>
+<p><img src=https://cdn.discordapp.com/attachments/935356423393644565/940956125505921064/IMG_20220209_130247.jpg alt="Stepping Selection Dance Mat"></p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=new-loading-window>
-New Loading Window
-<a data-clipboard-text=https://outfox.wiki/releases/A4.8.0/#new-loading-window class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New Loading Window" href=#new-loading-window><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h5 id=_i-took-a-photo-of-my-dance-mat-as-there-werent-many-clear-photos-online---squirrel_>
+<em>I took a photo of my dance mat as there weren&rsquo;t many clear photos online - Squirrel</em>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#_i-took-a-photo-of-my-dance-mat-as-there-werent-many-clear-photos-online---squirrel_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor I took a photo of my dance mat as there weren&rsquo;t many clear photos online - Squirrel" href=#_i-took-a-photo-of-my-dance-mat-as-there-werent-many-clear-photos-online---squirrel_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2>
-</div><ul>
-<li>❕✅🐲 New loading song error checking - The log will tell you about bad songs</li>
-<li>❕✅🐲 New loading window system</li>
-<li>❕✅🐲 Support UTF-8 on new loading window</li>
-<li>❕✅🐲 New themeable loading window</li>
-<li>❕✅🐲 Custom Font loading support</li>
-<li>❕✅🐲 New font rendering</li>
-</ul>
-<p>This version sees the launch of a new loading window, which has plagued the game since 2007. We plan to use this new window for more features in the future, and it will become fully themeable for those of you that wish to modify it. It is cross platform so replaces the legacy Linux Loader, and the horribly bugged MacOSX loader. The other good thing about this mode is when you load songs, it will check your audio files for availability. What this means, if the file is corrupted or damaged, or just unable to be loaded by the game, you will get a notice in your log file. For ease of viewing, you can scan the games songs with the new version, then check out <code>info.txt</code> in your <code>/logs</code> folder. if you have any damaged songs or corrupt mp3s etc, they will be logged here. An example from my own simfile collection:</p>
-<p><code>WARNING: Sound file /AdditionalSongs/parapara/Big O/Big O.ogg couldn't be opened: . Please check it is not corrupted and redownload the file.</code></p>
-<p>We hope you find this a welcome addition, as it will prevent some sudden crashing or silence being played in the song wheel. This feature will be worked on in the future, so if you have any ideas please throw them our way! Sometimes the window will look like it&rsquo;s &lsquo;locked up&rsquo; on Windows - this is just the SSC cache being generated! Give it a moment and it&rsquo;ll sort itself out, it only does it once.</p>
-<p>We have plans to allow the online patcher and for configurations to be changed/set up for the future, so I&rsquo;m hoping it is stable for you all and works as designed.</p>
+</h5>
+</div><p>The mode supports autoGen and can use dance/pump/kb6 charts to great success, and does support modfile cross-generation, so you can see the cool effects in this mode.</p>
+<p><img src=https://user-images.githubusercontent.com/11047768/153202059-7a3247f6-1476-4141-863f-eeb62df8a94d.png alt=stepstagemodfileold></p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=new-mp3-driver>
-New MP3 Driver:
-<a data-clipboard-text=https://outfox.wiki/releases/A4.8.0/#new-mp3-driver class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor New MP3 Driver:" href=#new-mp3-driver><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=what-about-other-dance-pads>
+What about other dance pads?
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#what-about-other-dance-pads class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor What about other dance pads?" href=#what-about-other-dance-pads><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2>
+</h3>
+</div><p><img src=https://user-images.githubusercontent.com/11047768/153203398-f12b5bd6-c0d3-48b5-a448-48176eb09582.jpg alt="ps dancemat"></p>
+<p>If you have a dance pad with has the input buttons there are noteskins to help remind you of this so you can play this mode with the far right column, and far left:</p>
+<p><img src=https://user-images.githubusercontent.com/11047768/153203414-75f5028e-7d3f-4ab4-81fe-695890e0e0cf.png alt="compatible pad noteskin"></p>
+<p>This can allow you to play on any 9/8 panel mat made for other games with this mode, using Top Left / Left / Bottom Left and Top Right / Right / Bottom Right for the inputs.</p>
+<hr>
+<p><img src=https://user-images.githubusercontent.com/58047457/151451423-19123d7a-3103-43bc-a481-bdd5082d66c5.png alt=image></p>
+<div class=gdoc-page__anchorwrap>
+<h1 id=announcing-outfox-serenity-volume-1-winter-update>
+Announcing OutFox Serenity Volume 1 Winter Update!
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#announcing-outfox-serenity-volume-1-winter-update class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Announcing OutFox Serenity Volume 1 Winter Update!" href=#announcing-outfox-serenity-volume-1-winter-update><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div><p>Welcome to OutFox Serenity, the official community song pack project for Project OutFox! Its purpose is to produce packs of &ldquo;libre&rdquo; songs for the game that can be freely redistributed (including as part of its default, bundled songs), and to showcase the extended mode support of Project OutFox by offering charts for multiple game types beyond just 4-key styles.</p>
+<p>Initially released on August 27, 2021, OutFox Serenity Volume I featured music by Aspid Cat, Drazil, Jack5, Matduke, mmry, PizeroFox, Seo, and Sevish. Alongside 4-panel <code>dance</code> and 5-panel <code>pump</code> charts, most of its songs also have <code>be-mu</code>, <code>po-mu</code>, <code>techno</code> (8- and 9-panel), <code>gddm</code>, <code>gdgf</code>, and <code>gh</code> charts.</p>
+<p>The Winter Update to OutFox Serenity Volume I features three new songs by DJ Megas, Matduke and Pekoneko (ペコネコ). It also includes changes to some of the existing songs from Volume 1, including additional charts, and key-sounded <code>be-mu</code>/<code>po-mu</code> and <code>gh</code> charts for selected songs.</p>
+<p>Find out more here: <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox-Serenity/releases/latest>https://github.com/TeamRizu/OutFox-Serenity/releases/latest</a></p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=to-download-the-game-_including_-the-serenity-pack-look-for-the-download-for-your-system-which-has-serenity-in-the-filename>
+To download the game <em>including</em> the Serenity Pack, look for the download for your system which has <code>Serenity</code> in the Filename.
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#to-download-the-game-_including_-the-serenity-pack-look-for-the-download-for-your-system-which-has-serenity-in-the-filename class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor To download the game including the Serenity Pack, look for the download for your system which has Serenity in the Filename." href=#to-download-the-game-_including_-the-serenity-pack-look-for-the-download-for-your-system-which-has-serenity-in-the-filename><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p>====================</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h1 id=known-issues-alpha-4130>
+<strong>KNOWN ISSUES: Alpha 4.13.0</strong>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#known-issues-alpha-4130 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor KNOWN ISSUES: Alpha 4.13.0" href=#known-issues-alpha-4130><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
 </div><ul>
-<li>❕✅ Removed libMAD and it&rsquo;s dependencies</li>
-<li>❕✅ Added new dr_mp3 MP3 Driver (clean for closed source phase)</li>
-<li>❕✅ Added new libmpeg123 MP3 Driver (not in repo but available for open source phase)</li>
-<li>❕✅🐲 Fixed internal Threads overflow</li>
-<li>❕✅🐲 Fixed internal buffer sizes</li>
-<li>❕✅🐲 Set modern system settings to allow transition</li>
+<li>❕❌ <strong>ISSUE</strong> Playing <code>be-mu</code>/<code>po-mu</code> songs on Endless Mode may have a crash on song loading. Please be aware that course mode for these modes are a bit temperamental at the moment!</li>
+<li>❕❌ <strong>ISSUE</strong> <code>gh</code> mode: Some charts may cause a crash when loaded into the game</li>
+<li>❕❌ <strong>ISSUE</strong> <code>gddm</code>/<code>gdgf</code> mode: We do not support the XA codec at this time, it&rsquo;ll play silent.</li>
+<li>❕❌ <strong>ISSUE</strong> Charts with similar difficulties in a folder will have scores assigned to them weirdly, due to the old SM paradigm. This will be fixed in a future update.</li>
 </ul>
-<p>This has been in the background for some time. LibMAD has been a bit of a thorn in our side for some years, and as it is also GPL, it does not really fit with our closed source phase, so we have spent the past 3 months working on a resolution. We have two drivers, Libmpeg123, and dr_mp3. Libmpeg123 will be added when we are open source, and currently is on a closed branch not for distribution. dr_mp3 is the new library we have chosen to fully support as it finally adds VBR support, it&rsquo;s lightweight, and also finally stops one of the <code>broken_pipe</code> problems on the Raspberry Pi 2/3 boards. It also has meant we have taken the time to identify more problems with the sound delivery in the game, so we will be fixing these in the future. For now we have tweaked the pipe to be consistent across drivers, so this also has given us a better experience across the different modes. We also will be looking at a new asynchronous loading mode for Keysounds, primarily for beat/popn so the load times will be reduced and this will deliver a better player experience.</p>
-<p>If you experience any issues with the new sound driver, do let us know, but it has had some serious testing so we&rsquo;re hoping it is stable and sane for you guys!</p>
-<p>The other fixes for this month include:</p>
-<p><strong>ALL:</strong></p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=all>
+<strong>ALL:</strong>
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#all class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor ALL:" href=#all><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><p><strong>Mode Specific</strong></p>
 <ul>
-<li>❕✅🐲 Fix texture buffer inconsistencies in RageTextureManager</li>
-<li>❕✅🐲 Fixed resolution of some broken actorframe calls</li>
-<li>❕✅ Fixed several pointer dereferences in actor handling</li>
-<li>❕✅ Fixed a few missing casts in the GL pipe</li>
-<li>❕✅ Fixed missing oem102 key for foreign keyboards</li>
-<li>❕✅ Fixed bad issues with variables in RageSurface</li>
-<li>❕✅ Revert C++ opts until the new compile method is finished</li>
-<li>❕✅ Fixed absf math issues when calculating locations</li>
-<li>❕✅ Fix compiler unoptimised functions causing slowdown on tweens</li>
-<li>❕✅ Prevent overlapped centering when - 1p occurs (Thanks Neko²)</li>
-<li>❕✅ Fix sizing on - 6/8 panel modes</li>
-<li>❕✅ Fix size of notefield via AR over ScreenWidth</li>
-<li>❕✅ Allow HoldJudgements to receive Player variables</li>
-<li>❕✅ Change round method on stats display</li>
-<li>❕✅ Support for toggling audio preview modes for ScreenSelectMusic</li>
-<li>❕✅🐲 Changed the use of ragefile within sound engine</li>
-<li>❕✅🐲 Removed GL 4.6 and 3.3 due to windows 10 update bugs killing the intel driver</li>
-<li>❕✅📝 Fixed Esc not leaving test input screen <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox/issues/41>Issue #41</a> (Thanks Moru!)</li>
-<li>❕✅📝 Allowed early dismissal of input keybind warning <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox/issues/40>Issue 40</a></li>
-<li>❕✅📝 Fixed non-random Seed generation for game/stage <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox/issues/38>Issue 38</a> (Thanks JustinLove)</li>
-<li>❕✅📝 Fixed Game Crash in Extended/Course Mode <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox/issues/29>Issue 29</a> (Thanks Jubo)</li>
-<li>❕✅📝 Fixed FPS Slowdown on some GPUs <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox/issues/25>Issue 25</a> (Thanks LightningSkunk)</li>
-<li>❕✅📝 Fixed Notefield Overlaps on Center 1 player <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox/issues/24>Issue 24</a> (Thanks SilentTempest83/Neko²)</li>
-<li>❕✅📝 Fixed Random noteskins failing to activate <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox/issues/21>Issue 21</a> (Thanks bibusdax)</li>
-<li>❕✅📝 Make ScreenTextEntry handle caps lock once more <a class=gdoc-markdown__link href=https://github.com/TeamRizu/OutFox/issues/13>Issue #13</a>(Thanks Moru!)</li>
+<li>❕✅ <code>dance</code>/<code>smx</code>: <strong>New!</strong> Added the Mine Fix for dance and smx modes only so it doesn&rsquo;t break others (theme metric - EnableMineFix)</li>
+<li>❕✅ <code>stepstage</code>: <strong>NEW</strong> <code>stepstage</code> Game mode, based on Jaleco&rsquo;s arcade/ps2 game from 2000</li>
+<li>❕✅ <code>dance</code>: <strong>New</strong> 3 panel versus / double style</li>
+<li>❕✅ <code>dance</code>: <strong>New</strong> solo versus / double style</li>
+<li>❕✅ <code>ds3ddx</code>: <strong>New</strong> ds3ddx versus / double style</li>
+<li>❕✅ <code>stepstage</code>: <strong>NEW</strong> Added support for combined notes</li>
+<li>❕✅ <code>smx</code>: <strong>New!</strong> OutFox-note and OutFox-ITG noteskins</li>
+<li>❕✅ <code>kbx</code>: Fix kbx noteskin display for keyboard/controller</li>
+<li>❕✅ <code>kbx</code>: Add XInput buttons to kbx noteskin support</li>
+<li>❕✅ <code>kbx</code>: Support .qua/.qp files (no time signature changes yet)</li>
+<li>❕✅ <code>kbx</code>: <strong>New!</strong> QUA parser! ( for <code>KB4</code> and <code>KB7</code> support!)</li>
+<li>❕✅ <code>kbx</code>: Fixed hash system for OTO &lsquo;many charts in a folder&rsquo; system for KBX</li>
+<li>❕✅ <code>kbx</code>: Fixed checkpoint scoring for KBX</li>
+<li>❕✅ <code>kbx</code>: <strong>New</strong> &ldquo;exactbar&rdquo; noteskin for kbx</li>
+<li>❕✅ <code>smx</code>: Fix Stop / BPM colours on the measure lines</li>
+<li>❕✅ <code>kbx</code>: Lessen the harshness on scoring on kbx mode</li>
+<li>❕✅ <code>kbx</code>: Restore AutoPlay to POsimple (kbx mode)</li>
+<li>❕✅ <code>ALL</code>: Finally fix GetHash() - fixes edit/same difficulty in folder scoring applying to all charts for that song</li>
+<li>❕✅ <code>ds3ddx</code>: Fixed bug with layers and default noteskins</li>
+<li>❕✅ <code>be-mu</code>/<code>po-mu</code>: Fixed options menu crash (Closes #434)</li>
+<li>❕✅ <code>be-mu</code>/<code>po-mu</code>/<code>gddm</code>: Fixed overflow with files that have 1280+ keysounds</li>
+<li>❕✅ <code>be-mu</code>/<code>po-mu</code>: Fixed crash with missing noteskin metrics</li>
+<li>❕✅ <code>be-mu</code>/<code>po-mu</code>: Fixed hang on with some charts (Closes #434)</li>
+<li>❕✅ <code>taitai</code>: <strong>New</strong> basic taiko parsing on .osu files!</li>
+<li>❕✅ <code>stepstage</code>: Fixed support for the unique display mode on stepstage</li>
+<li>❕✅ <code>stepstage</code>: New compat-PS/XB noteskins for those with normal 8/9 panel dance mats</li>
+<li>❕✅ <code>djh</code>: Added DJH 2 scratch support (future mode)</li>
+<li>❕✅ <code>djh</code>: Added DJH controller support (future mode)</li>
+<li>❕✅ <code>ds3ddx</code>: <strong>New</strong> ds3ddx noteskin</li>
+<li>❕✅ <code>stepstage</code>: <strong>New</strong> StepStage noteskins</li>
+<li>❕✅ <code>gdgf</code>: <strong>New</strong> gdgf noteskins</li>
+<li>❕✅ <code>smx</code>: <strong>New</strong> smx noteskins</li>
+<li>❕✅ <code>ds3ddx</code>: New and fixed ds3ddx sprites</li>
+<li>❕✅ <code>stepstage</code>: Fixed missing strings</li>
+<li>❕✅ <code>kbx</code>: Fixed bug where the mode did not select AutoSetStyle</li>
+<li>❕✅ <code>pump</code>: Fixed piu loader overflow</li>
+<li>❕✅ <code>pump</code>: Fixed piu loader rare recursive bug crashing the game (thanks notnola)</li>
+<li>❕✅ <code>ds3ddx</code>: Fixed crash with ds3ddx on screen demonstration</li>
 </ul>
-<p><strong>Windows:</strong></p>
+<p><strong>Engine</strong></p>
 <ul>
-<li>❕✅ Fixed dll <code>Access Violation</code> issues with older videos</li>
-<li>❕✅ Fixed edge case overflow on ttf loading</li>
-<li>❕✅ Fixed missing return path on input</li>
-<li>❕✅🐲 Removed Loading Window win32 and its baggage</li>
-<li>❕✅🐲 Removed deprecated WINAPI callbacks</li>
+<li>
+<p>❕✅ Sync OutFox to match the support added in 0.35 of the TFG, adding Latin extended C and D</p>
+</li>
+<li>
+<p>❕✅ Add new noto medium fonts for added Latin Ext C/D</p>
+</li>
+<li>
+<p>❕✅ Add new noto semibold fonts for added Latin Ext C/D</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with unloading font maps</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with unloading song audio files (Closes #110)</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with noteskin caching on gamestate refresh</p>
+</li>
+<li>
+<p>❕✅ New cpr libraries</p>
+</li>
+<li>
+<p>❕✅ Fixed issue with cmake trying to set the wrong path</p>
+</li>
+<li>
+<p>❕✅ New OFMath lua namespace for better optimised math options</p>
+</li>
+<li>
+<p>❕✅ Load noteskins for non mod-files</p>
+</li>
+<li>
+<p>❕✅ Remove deprecated openSSL libraries</p>
+</li>
+<li>
+<p>❕✅ Fix long overdue NSKINMAN removal and bugs</p>
+</li>
+<li>
+<p>❕✅ Fix issues with no options on global skins</p>
+</li>
+<li>
+<p>❕✅ Work on the new TJA parser (still in progress)</p>
+</li>
+<li>
+<p>❕✅ Fix quirk with noteskin loading</p>
+</li>
+<li>
+<p>❕✅ Add reverse support for retrobar noteskin</p>
+</li>
+<li>
+<p>❕✅ Fixed crash with def.notefield() in editor</p>
+</li>
+<li>
+<p>❕✅ Fixed input passthrough with def.notefield() and AutoPlay</p>
+</li>
+<li>
+<p>❕✅ Added new LuaLife which can override internal life systems for modes which need custom ones</p>
+</li>
+<li>
+<p>❕✅ Added feature to set score limit</p>
+</li>
+<li>
+<p>❕✅ Enable new checkpoint scoring support</p>
+</li>
+<li>
+<p>❕✅ Added new &lsquo;GaveUp()&rsquo; lua feature to let themes know when a file is given up by holding start</p>
+</li>
+<li>
+<p>❕✅ Stop quirk with song preview breaking</p>
+</li>
+<li>
+<p>❕✅ Added lua exposure to m_iMenuStackSelection</p>
+</li>
+<li>
+<p>❕✅ Add new Lua Math functions</p>
+</li>
+<li>
+<p>❕✅ Add new Lua Random Functions, though these need optimising</p>
+</li>
+<li>
+<p>❕✅ <strong>New</strong> <code>UpdateMeshPosition()</code> for def.model</p>
+</li>
+<li>
+<p>❕✅ Fix noteskin recursive depth to level 9 so older noteskins work</p>
+</li>
+<li>
+<p>❕✅ Add new faster math functions, namespace tbc</p>
+</li>
+<li>
+<p>❕✅ Add new faster sine/cosine math</p>
+</li>
+<li>
+<p>❕✅ Re-enable pixel fonts (restore setexturefiltering() features without blur) (Closes #450)</p>
+</li>
+<li>
+<p>❕✅ Fixed erroneous half-width math</p>
+</li>
+<li>
+<p>❕✅ Change &lsquo;song length seconds&rsquo; to SM5.x behaviour for theme compatibility and to fix older modfiles</p>
+</li>
+<li>
+<p>❕✅ Fixed crash to desktop on loading songs (Closes #448)</p>
+</li>
+<li>
+<p>❕✅ Fixed crash to desktop on loading cached songs</p>
+</li>
+<li>
+<p>❕✅ Fixed Encoding crash on loading window on ZIV (pre 2019) song packs</p>
+</li>
+<li>
+<p>❕✅ Fixed Korean characters causing a CTD on loading window</p>
+</li>
+<li>
+<p>❕✅ Fixed encoding cache issues on song loading</p>
+</li>
+<li>
+<p>❕✅ Fixed cache crashing on FS corruption/bad sim files/audio (Closes #449)</p>
+</li>
+<li>
+<p>❕✅ Fixed crashes on any bad encoded file (Closes #436)</p>
+</li>
+<li>
+<p>❕✅ Fixed crash with badly unzipped file</p>
+</li>
+<li>
+<p>❕✅ Fixed new filesystem loader crashing on race condition (Closes #452)</p>
+</li>
+<li>
+<p>❕✅ Fixed crash/hang with keysounds loading erratically.</p>
+</li>
+<li>
+<p>❕✅ Fixed crash on thread trying to load things that weren&rsquo;t there</p>
+</li>
+<li>
+<p>❕✅ Fixed crash with overflow on file size if the file was 0 bytes</p>
+</li>
+<li>
+<p>❕✅ Fixed hash data reloading lag spikes</p>
+</li>
+<li>
+<p>❕✅ Fixed music wheel &lsquo;lag&rsquo; due to note data being loaded on song select</p>
+</li>
+<li>
+<p>❕✅ Fixed massive lag spikes on all music wheels due to legacy SM5.x method conflicting with new code pathways</p>
+</li>
+<li>
+<p>❕✅ Restored 3.x era legacy &lsquo;StepsTypes&rsquo; <code>iidx</code>/<code>bm</code>/<code>para</code> if you spot any that do not work ping Squirrel</p>
+</li>
+<li>
+<p>❕✅ Fixed crash with &lsquo;unknown&rsquo; StepsTypes breaking on 3.x SM files</p>
+</li>
+<li>
+<p>❕✅ Fixed crash on some noteskins asking for game/currentgame/currentstyle information before the game is available</p>
+</li>
+<li>
+<p>❕✅ Fixed another crash with noteskins on legacy/vintage hardware (Closes #476)</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with autogen on modes</p>
+</li>
+<li>
+<p>❕✅ Fixed player 2 crash on some modes</p>
+</li>
+<li>
+<p>❕✅ Added new rate/pitch theme-metric for legacy theme support</p>
+</li>
+<li>
+<p>❕✅ Fixed Initial screen animations on themes lower than 480p</p>
+</li>
+<li>
+<p>❕✅ Editor: Fixed crash on pressing Insert key on an incomplete marker selection</p>
+</li>
+<li>
+<p>❕✅ Editor: Restored note speeds to their actual values</p>
+</li>
+<li>
+<p>❕✅ Editor: Fixed iterator race condition on ActorFrame updates
+(This fixes a situation where deleting the last child of an Actorframe by an external source would crash the game)</p>
+</li>
+<li>
+<p>❕✅ Editor: Restored &ldquo;Paste at current beat/marker&rdquo; on Chart options</p>
+</li>
+<li>
+<p>❕✅ Editor: Added key combination to jump to end of audio file (Shift + End)</p>
+</li>
+<li>
+<p>❕✅ Editor: Help screen now auto-resizable across different themes</p>
+</li>
+<li>
+<p>❕✅ Editor: Fixed crash on loading some song types (Closes #125)</p>
+</li>
+<li>
+<p>❕✅ Added new encode/decode json commands from SM#2154 for Simply Love</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with 0 frame index on models (Closes #472)</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with bone index being incorrectly initialised (Closes #472)</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with dynamic random BGChanges</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with corrupted font glyphs on some themes/screens on a resolution change</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with random crashing/no shaders available on Nvidia 500+ series drivers</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with simplehold top caps</p>
+</li>
+<li>
+<p>❕✅ Fixed beat bar draw stops</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with a recursive GetHash() (Thanks notnola)</p>
+</li>
+<li>
+<p>❕✅ Fixed accuracy precision output of ATTACKS to 6dp (Closes #285)</p>
+</li>
+<li>
+<p>❕✅ Fixed empty BG/FGChanges being spawned</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with some mods needing a tweak to the cosine math</p>
+</li>
+<li>
+<p>❕✅ Fixed issue with ScreenGameplay not being reset in course mode (Closes #91)</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with missing wireframe on notes</p>
+</li>
+<li>
+<p>❕✅ Added new wireframe command into Actor instead of it being in model</p>
+</li>
+<li>
+<p>❕✅ Fixed bug with simfile ATTACKS not working in course mode (Closes #89)</p>
+</li>
+<li>
+<p>❕✅ Fixed bug that stopped mod file changes being reset for the next song</p>
+</li>
+</ul>
+<p>*<strong>Windows 7+:</strong></p>
+<ul>
+<li>❕✅ Fixed compile for windows &lt; 8</li>
+<li>❕✅ Fixed crash on Windows 7 with visual studio setting the wrong build version</li>
+<li>❕✅ Fixed crash on Windows 7 due to wrong library support</li>
+<li>❕✅ Fixed crash with wry Windows 8+ call being selected for Windows 7 binaries</li>
+<li>❕✅ Fixed random crash on MK9/Konami PCs with Windows 7 due to dispatcher</li>
 </ul>
 <p><strong>Linux:</strong></p>
 <ul>
-<li>❕✅ Fixed missing EGL calls</li>
-<li>❕✅🐲 Re-add MacOSX 10.16 optimised code as it offers better stability</li>
-<li>❕✅🐲 Begun Wayland compatibility code</li>
-<li>❕✅🐲 Removed Loading Window linux and its baggage</li>
-<li>❕✅🐲 Removed deprecated GTK dependencies</li>
-<li>❕✅🐲 Removed deprecated X11/XRandR dependencies</li>
-<li>❕✅📝 Added upstream fix to use GLVND <a class=gdoc-markdown__link href=https://github.com/stepmania/stepmania/pull/1860>SM Issue 1860</a> (Thanks mwkroening)</li>
+<li>❕✅ Fixed new LTek pad (1000hz / Pro) not detected (Closes #465)</li>
+<li>❕✅ Fixed quirk in some file systems crashing</li>
+<li>❕✅ New multi-build script for our linux dev environment</li>
+<li>❕✅ Fixed crash with badly encoded mp3s (mostly pre 2010) (Closes #478)</li>
+<li>❕✅ New DJHero controller fixes for linux, dual mode and dual turntable mode added for input</li>
+<li>❕✅ Fixed GL dispatcher for arm/i386 systems</li>
 </ul>
-<p><strong>MacOSX:</strong></p>
+<p><strong>MacOS (Universal):</strong></p>
 <ul>
-<li>❕✅ Fix discord linking for status updates</li>
-<li>❕✅🐲 Removed Loading Window and its baggage</li>
-<li>❕✅🐲 Removed Darwin era dependencies</li>
-<li>❕✅ Fix CMake folder inclusion</li>
+<li>❕✅ Fixed new LTek pad (1000hz / Pro) not detected (Closes #465)</li>
+<li>❕✅ Fixed crash on some song charts from ZIV</li>
 </ul>
-<p><strong>ARM/ARM64: (Raspberry Pi etc)</strong></p>
+<p><strong>ARM32/ARM64: (Raspberry Pi etc)</strong></p>
 <ul>
-<li>❕✅ Fix char overflow</li>
-<li>❕✅ Fix legacy 32bit FFMPEG builds</li>
-<li>❕✅ Adjust Sound buffer sizes to ease CPU load</li>
+<li>❕✅ Fixed new LTek pad (1000hz / Pro) not detected (Closes #465)</li>
+<li>❕✅ Fixed quirk in some file systems crashing</li>
+<li>❕✅ Fixed libssl for the Raspberry Pi 3b/3b+/4/400</li>
+<li>❕✅ Fixed bug with aarch64 and some GL drivers</li>
+<li>❕✅ Fixed bug with cmake causing crashes on TwisterOS (Closes #216)</li>
 </ul>
-<p><strong>Community Content:</strong></p>
-<ul>
+<div class=gdoc-page__anchorwrap>
+<h2 id=community-content>
+Community content
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#community-content class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Community content" href=#community-content><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div><hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=noteskins>
+Noteskins
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#noteskins class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Noteskins" href=#noteskins><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><ul>
+<li>✅ New default noteskin for kbx</li>
+<li>✅ New default noteskin for smx</li>
+<li>✅ New o2jous noteskin for kbx</li>
+<li>✅ New orbital noteskin for kbx</li>
+<li>✅ New orbular noteskin for kbx</li>
+<li>✅ New retrobar noteskin for kbx</li>
+<li>✅ New retrobar-iidx noteskin for kbx</li>
+<li>✅ New retrobar-o2jam noteskin for kbx</li>
+<li>✅ New retrobar-razor noteskin for kbx</li>
+<li>✅ New retrobar-razor_o2 noteskin for kbx</li>
+<li>✅ New coloured mine sprites for cat/bun noteskin for po-mu</li>
+</ul>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=theme>
+Theme
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#theme class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Theme" href=#theme><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><ul>
+<li>✅ Remove <code>ScreenStageInformation</code> from Soundwaves to further streamline transition to game-play.</li>
+</ul>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=translations>
+Translations
+<a data-clipboard-text=https://outfox.wiki/releases/A4.13.0/#translations class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Translations" href=#translations><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div><ul>
 <li>✅ Translations updated from Moru, SHRMP0 and SheepyChris (Brazilian Portuguese)</li>
-<li>✅ Translations updated from MoNeko (Polish)</li>
+<li>✅ Translations updated from Moneko (Polish)</li>
 <li>✅ Translations updated from Hanubeki (Japanese)</li>
 <li>✅ Translations updated from Jose_Varela (Spanish)</li>
 <li>✅ Translations updated from Daniel Rotwind (German)</li>
+<li>✅ Translations updated from Ksempac (French)</li>
 </ul>
-<p><strong>(The &lsquo;source&rsquo; code below is the reporting issues template, it is not the source for OutFox)</strong></p>
+<hr>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
