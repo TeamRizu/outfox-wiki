@@ -49,7 +49,8 @@ Released August 27, 2021, OutFox Serenity Volume I features music by Aspid Cat, 
 
 250 Charts have been created for 11 songs. Volume I StepArtists had 97 days of development.
 
-Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.1).
+- Watch video [here](https://youtu.be/YAgVL2GPp3c)
+- Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.1).
 
 ### OutFox Serenity Volume I Winter Update
 
@@ -69,7 +70,8 @@ The Winter Update to OutFox Serenity Volume I features three new songs by DJ Meg
 
 76 Charts have been created for 3 songs. Volume I Winter Update StepArtists had 50 days of development.
 
-Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.5)
+- Watch video [here](https://youtu.be/tyeeItPfbzc)
+- Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.5)
 
 ## Are modfiles allowed to be submitted?
 
