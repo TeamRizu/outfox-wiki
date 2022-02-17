@@ -62,7 +62,7 @@ This defines which song(s) will be played in the course.
 ```
 
 #### Additional Tags
-| Placeholder | Value |
+| Tag | Description |
 |---|---|
 | showcourse | (Default) Shows the song in the course list.
 | noshowcourse | Hides the song in the course list, and instead reports ?????.
@@ -105,7 +105,7 @@ Instead of a particular song, a random one can be chosen by using the wildcard o
 ```
 
 ```
-#SONG:*/*; # Will pick a random song from the entire instalation.	
+#SONG:*; # Will pick a random song from the entire instalation.	
 ```
 
 ### #COURSETRANSLIT
@@ -118,6 +118,7 @@ the user has the "Translate Song Titles" option enabled.
 
 ### #BANNER
 Set a custom banner made specifically for the course which will be displayed upon selection.
+The banner must be on the same folder as the course file.
 
 ```
 #BANNER:MyBanner.png;
@@ -125,6 +126,7 @@ Set a custom banner made specifically for the course which will be displayed upo
 
 ### #BACKGROUND
 Set a custom background made specifically for the course which will be displayed before starting the course.
+The background must be on the same folder as the course file.
 
 ```
 #BANNER:MyBackground.png;
@@ -191,14 +193,7 @@ Sets the style that this course will be compatible with.
 Defines the author of the course to be shown during the music wheel
 
 ```
-#SCRIPTER:SSC;
-```
-
-### #BANNER
-Defines the banner to be used during the music wheel when this course is selected.
-The banner must be on the same folder as the course file.
-```
-#BANNER:Automation;
+#SCRIPTER:You!;
 ```
 
 ### #MODS
