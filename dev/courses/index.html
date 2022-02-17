@@ -3,7 +3,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Location of Courses Example Course File Playing Courses Tags  #COURSE (Required) #SONG (Required)  Additional Tags Special #SONG tags Random Songs (*)   #COURSETRANSLIT #BANNER #BACKGROUND #DESCRIPTION #REPEAT #LIVES #GAINSECONDS #METER #RADAR #STYLE #SCRIPTER #BANNER #MODS Unused tags #DISPLAYCOURSE #COMBO #COMBOMODE       Location of Courses    The default location for courses are in Project OutFox/Courses, with the following structure:">
+<meta name=description content="Location of Courses Example Course File Playing Courses Tags  #COURSE (Required) #SONG (Required)  Additional Tags Special #SONG tags Random Songs (*)   #COURSETRANSLIT #BANNER #BACKGROUND #DESCRIPTION #REPEAT #LIVES #GAINSECONDS #METER #RADAR #STYLE #SCRIPTER #MODS Unused tags #DISPLAYCOURSE #COMBO #COMBOMODE       Location of Courses    The default location for courses are in Project OutFox/Courses, with the following structure:">
 <title>Courses | Project OutFox Wiki</title>
 <link rel=icon href=../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../js/darkmode-ce906ea916.min.js></script>
@@ -1075,7 +1075,6 @@ hidden-mobile" itemprop=breadcrumb>
 <li><a href=#radar>#RADAR</a></li>
 <li><a href=#style>#STYLE</a></li>
 <li><a href=#scripter>#SCRIPTER</a></li>
-<li><a href=#banner-1>#BANNER</a></li>
 <li><a href=#mods>#MODS</a></li>
 <li><a href=#unused-tags>Unused tags</a></li>
 <li><a href=#displaycourse>#DISPLAYCOURSE</a></li>
@@ -1163,8 +1162,8 @@ Additional Tags
 </div><div class=table-wrap> <table>
 <thead>
 <tr>
-<th>Placeholder</th>
-<th>Value</th>
+<th>Tag</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1258,7 +1257,7 @@ Random Songs (*)
 </h4>
 </div><p>Instead of a particular song, a random one can be chosen by using the wildcard operator (*).</p>
 <pre tabindex=0><code>#SONG:My Song Folder/*; # Will pick a random song from the &quot;My Song Folder&quot; folder.
-</code></pre><pre tabindex=0><code>#SONG:*/*; # Will pick a random song from the entire instalation.	
+</code></pre><pre tabindex=0><code>#SONG:*; # Will pick a random song from the entire instalation.	
 </code></pre><div class=gdoc-page__anchorwrap>
 <h3 id=coursetranslit>
 #COURSETRANSLIT
@@ -1274,7 +1273,8 @@ the user has the &ldquo;Translate Song Titles&rdquo; option enabled.</p>
 <a data-clipboard-text=https://outfox.wiki/dev/courses/#banner class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #BANNER" href=#banner><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
-</div><p>Set a custom banner made specifically for the course which will be displayed upon selection.</p>
+</div><p>Set a custom banner made specifically for the course which will be displayed upon selection.
+The banner must be on the same folder as the course file.</p>
 <pre tabindex=0><code>#BANNER:MyBanner.png;
 </code></pre><div class=gdoc-page__anchorwrap>
 <h3 id=background>
@@ -1282,7 +1282,8 @@ the user has the &ldquo;Translate Song Titles&rdquo; option enabled.</p>
 <a data-clipboard-text=https://outfox.wiki/dev/courses/#background class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #BACKGROUND" href=#background><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
-</div><p>Set a custom background made specifically for the course which will be displayed before starting the course.</p>
+</div><p>Set a custom background made specifically for the course which will be displayed before starting the course.
+The background must be on the same folder as the course file.</p>
 <pre tabindex=0><code>#BANNER:MyBackground.png;
 </code></pre><div class=gdoc-page__anchorwrap>
 <h3 id=description>
@@ -1357,16 +1358,7 @@ to show each meter from the available songs in the course.</p>
 </a>
 </h3>
 </div><p>Defines the author of the course to be shown during the music wheel</p>
-<pre tabindex=0><code>#SCRIPTER:SSC;
-</code></pre><div class=gdoc-page__anchorwrap>
-<h3 id=banner-1>
-#BANNER
-<a data-clipboard-text=https://outfox.wiki/dev/courses/#banner-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #BANNER" href=#banner-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div><p>Defines the banner to be used during the music wheel when this course is selected.
-The banner must be on the same folder as the course file.</p>
-<pre tabindex=0><code>#BANNER:Automation;
+<pre tabindex=0><code>#SCRIPTER:You!;
 </code></pre><div class=gdoc-page__anchorwrap>
 <h3 id=mods>
 #MODS
