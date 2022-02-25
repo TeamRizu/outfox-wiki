@@ -186,6 +186,8 @@ Most of the work is handled by OutFox Community Team with occasional help from O
 - SHRMP0: Serenity Server Organization, Music Selection, Pack Organization, Serenity Sheet Organization, Chart Feedback.
 - Lirodon: Pack Assets, Serenity Trailer, Serenity Website Section, Guidelines Rules, Pack Advertisement.
 - Moru Zerinho6: Serenity Server Organization, Music Selection, Pack Organization, Serenity Website Section, Serenity Wiki.
+- Daniel Rotwind: Creation of templates for beat based modes.
+- Sevish: Sound Normalization.
 - SheepyChris: Music Selection.
 - Moneko: Music Selection.
 - dj505: Chart Creation.
@@ -193,6 +195,5 @@ Most of the work is handled by OutFox Community Team with occasional help from O
 
 We also had help from members who aren't part of the team such as:
 
-- Sevish: Sound Normalization.
-- Daniel Rotwind: Creation of templates for beat based modes.
+
 - shockdude: Creation of GH templates.
