@@ -75,11 +75,11 @@ The Winter Update to OutFox Serenity Volume I features three new songs by DJ Meg
 
 ## Are modfiles allowed to be submitted?
 
-Yes. But make sure it only works with your specific chart/difficulty, no chart should impact other's chart in any way.
+Yes. But make sure it's gimmicks only works with your specific chart/difficulty, no chart should impact other's chart in any way.
 
 ## I submitted music but it wasn't featured on the next volume, why?
 
-Our team has a list of music submitted by members of the community, we try to select a safe amount of music that guarantees a healthy amount of charts will be made for each one, since chart and graphic submission is made purely by the interest of the author and at the moment of writing this document, Project OutFox has no Chart Creation Team.
+Our team has a list of music submitted by members of the community, we try to select a safe amount of music that guarantees a healthy amount of charts will be made for each one, since chart and graphic submissions are made purely by the interest of the authors and at the moment of writing this document, Project OutFox has no dedicated Chart Creation Team.
 
 Another possible reason is that your submission does not follow the **music guidelines**, if you think that is the case then you can contact us using the following socials:
 
@@ -104,24 +104,24 @@ Those are special as they use a license which doesn't allow us to publicly host 
     - Let Me See You **(Volume I)**
     - Broken **(Volume I)**
 - Sevish
-    - Some Things Must **(Volume I)**
+    - Some Things Must (OutFox Edit) **(Volume I)**
 - PizeroFox
     - Tagebuch der vergangenen Erinnerungen **(Volume I)**
 - mmry
-    - After The Ending **(Volume I)**
+    - After the Ending **(Volume I)**
 - Jack5
     - Nexen II (Phase Two) **(Volume I)**
 - Aspid Cat
     - Abandoned Doll **(Volume I)**
     - Conflicting Revenge **(Volume I)**
 - Seo
-    - brokenHeart resurrection \_estele\_ **(Volume I)**
-- Drazil
+    - brokenHeart resurrection ~estele~ **(Volume I)**
+- spirai project "drazil"
     - synthborn lovebirds **(Volume I)**
 - DJ Megas
     - Plasma **(Volume I Winter Update)**
-- Pekoneko
-    - Umi's Secret **(Volume I Winter Update)**
+- Pekoneko (ペコネコ)
+    - Umi's Secret (Chiptune Mix) **(Volume I Winter Update)**
 
 ## Which StepArtists have had their charts released with OutFox Serenity?
 
@@ -161,17 +161,17 @@ Those are special as they use a license which doesn't allow us to publicly host 
     - Heartbeat (Background, Jacket, Banner)
     - Let Me See You (Background, Jacket, Banner)
     - Conflicting Revenge (Background, Jacket, Banner)
-    - After The Ending (Jacket)
+    - After the Ending (Jacket)
 - Daniel Rotwind
-    - Umi's Secret (Background, Jacket, Banner) *Art comissioned from  [Trinitoid](https://twitter.com/Trinitroid/status/1465752223439228931)
+    - Umi's Secret (Chiptune Mix) (Background, Jacket, Banner) *Art comissioned from  [Trinitoid](https://twitter.com/Trinitroid/status/1465752223439228931)
     - Low End Theory (Background, Jacket, Banner) *Art comissioned from  [Khayos](https://twitter.com/Khayos_Rave)
     - Tagebuch der vergangenen Erinnerungen (Background, Jacket, Banner, BGA) *Art comissioned from  [ArtPhantom17](https://twitter.com/Speed_Demon17)
-    - brokenHeart resurrection \_estele\_ (Background, Jacket, Banner)
+    - brokenHeart resurrection ~estele~ (Background, Jacket, Banner)
 - Jack5
     - Nexen II (Background, Jacket, Banner)
-    - Some Things Must (Background, Jacket, Banner)
+    - Some Things Must (OutFox Edit) (Background, Jacket, Banner)
 - Jousway
-    - After The Ending (Background, Banner)
+    - After the Ending (Background, Banner)
 - Drazil
     - synthborn lovebirds (Background, Jacket, Banner)
 - Aqui
@@ -183,13 +183,13 @@ Those are special as they use a license which doesn't allow us to publicly host 
 
 Most of the work is handled by OutFox Community Team with occasional help from OutFox Design Team and feedback from OutFox Development Team. In Specific:
 
-- SHRMP0: Serenity Server Organization, Music Selection, Pack Organization, Serenity Sheet Organization, Chart Feedback.
+- SHRMP0: Serenity Server Organization, Music Selection, Pack Organization, Serenity Sheet Organization, Simfile Templates, Chart Feedback.
 - Lirodon: Pack Assets, Serenity Trailer, Serenity Website Section, Guidelines Rules, Pack Advertisement.
 - Moru Zerinho6: Serenity Server Organization, Music Selection, Pack Organization, Serenity Website Section, Serenity Wiki.
-- Daniel Rotwind: Creation of templates for beat based modes.
-- shockdude: Creation of GH templates.
-- Sevish: Sound Normalization.
-- SheepyChris: Music Selection.
+- Daniel Rotwind: Creation of templates for be-mu/po-mu gamemodes, Pack Assets, Chart Creation.
+- shockdude: Creation of GH gamemode templates, Chart Creation.
+- Sevish: Sound Normalization, Music Feedback, Chart Creation.
+- SheepyChris: Music Selection, Simfile Templates, Chart Feedback.
 - Moneko: Music Selection.
-- dj505: Chart Creation.
-- Jose_Varela: Chart Creation.
+- dj505: Chart Creation and Feedback.
+- Jose_Varela: Chart Creation, Pack Assets.
