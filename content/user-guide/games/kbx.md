@@ -21,6 +21,8 @@ The mode initially started life with 6 columns, but this was resolved when the S
 
 In the final release of 2021, Project OutFox 4.12 replaced the original mode completely with a new rewritten version which allowed players to use a differing number of lanes, ranging from 1 to 15 in total. It also created a newer streamlined version of the system to give a small performance boost to this mode. Community member MDR has contributed some ideas to this mode.
 
+Due to the observations of community members Tarben and Yuki, this mode did not effectively support all of the expanded 'doubles' support of ``be-mu`` 7's (so 16k) and ``techno`` 18k / ``po-mu`` 18k. These charts were not being made available in a suitable playable format for this mode. ``kb16``, ``kb17``, ``kb18`` and ``kb19`` were added in the spring alpha release of alpha 4.14 at the end of March 2022.
+
 _This mode is still being developed, so feedback and suggestion is welcome!_
 
 ---
@@ -101,6 +103,22 @@ First Seen:
 First Seen:
  * Project OutFox alpha4.12.0 - ``kb15-single`` (31 December 2021)
 ---
+#### 16 Key:
+First Seen:
+ * Project OutFox alpha4.14.0 - ``kb16-single`` (27 March 2022)
+---
+#### 17 Key:
+First Seen:
+ * Project OutFox alpha4.14.0 - ``kb17-single`` (27 March 2022)
+---
+#### 18 Key:
+First Seen:
+ * Project OutFox alpha4.14.0 - ``kb18-single`` (27 March 2022)
+---
+#### 19 Key:
+First Seen:
+ * Project OutFox alpha4.14.0 - ``kb19-single`` (27 March 2022)
+---
 
 ## Game play
 
@@ -139,6 +157,10 @@ kb12 = a w s d r f j i k l p ;
 kb13 = a w s d r f space j i k l p ;
 kb14 = a w s e d r f j i k o l p ;
 kb15 = a w s e d r f space j i k o l p ;
+kb16 = q a w s e d r f j i k o l p ; [
+kb17 = q a w s e d r f space j i k o l p ; [
+kb18 = caps q a w s e d r f j i k o l p ; [ '
+kb19 = caps q a w s e d r f space j i k o l p ; [ '
 ```
 ---
 ## Play Styles
