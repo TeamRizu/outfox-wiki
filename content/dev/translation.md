@@ -1,6 +1,6 @@
 ---
 title: Translation
-description: Guide on translating themes on Project OutFox.
+description: Guide on translating themes for Project OutFox.
 weight: 4
 ---
 
@@ -29,6 +29,12 @@ To start your work, create a new file for your language(-COUNTRY, if needed), an
 
 Now open en.ini and your new language file, then copy all the content from en.ini to your language file. You can close en.ini now.
 
+### Language file name standard
+
+The language code used for your language file should follow [ISO-1 Language codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), while the COUNTRY CODE should follow [ISO 3166-1 Alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements).
+
+> ⚠️ StepMania Engine doesn't have proper support for more than 2 letters language files: Both StepMania and OutFox, as the date of writting this document, do not follow ISO-1 and ISO 3166-1 standards, however, new languages should not abide by non-standards of StepMania Engine quirks. Your language will still be able to be selected and used, however, instead of showing the Language name, it will show the language code and users won't have the game auto-select the language for them. This will later be fixed at least for OutFox, [following this issue](https://github.com/TeamRizu/OutFox/issues/311).
+
 ### What you should translate
 
 _This is a code example taken from the Soundwaves theme._
@@ -44,6 +50,8 @@ LocationLoadError=Current Location (%s) is missing its location model. Please ch
 SongLoaderSingleSong=Random Song Play: Current Folder only contains 1 song. OutFox might get confused when picking the song via random. Selecting to index 1.
 SongLoaderNoSongs=Random Song Play: No songs were found in your OutFox install folder! Switching back to fallback music.
 ```
+
+**Do not translate WindowTitle or StepMania keys. Do not translate the name "Project OutFox".**
 
 You can see on this image and your file that every line has a Title=Value, and that's how translation works on OutFox, you need to translate the value of the titles and you're done. The theme does all the work of what string it should use.
 
@@ -110,6 +118,10 @@ Many folks are already helping translate the new Soundwaves theme for various la
 ° [Hungarian](https://github.com/Tiny-Foxes/OutFox-hu) - Done by [KaZo75](https://github.com/Tiny-Foxes/OutFox-hu)
 
 ° [Italian](https://github.com/Tiny-Foxes/OutFox-IT) - Done by [Gabrimax](https://github.com/Gabrimax98)
+
+° [Simplified Chinese](https://github.com/Tiny-Foxes/OutFox-zh-CN) - Done by [jerrymyx](https://github.com/jerrymxy)
+
+° [Slovak](https://github.com/Tiny-Foxes/OutFox-sk) - Done by [jose1711](https://github.com/jose1711)
 
 ---
 
