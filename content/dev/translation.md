@@ -151,7 +151,7 @@ Translating can be tedious. Sometimes it's hard to locate & remove lines that sh
 {{< /tab >}}
 {{< tab "fini" >}}
 
-[fini](https://github.com/Tiny-Foxes/Tiny-Webini) is a tool made by [moruzerinho6](https://github.com/moruzerinho6)
+[fini](https://github.com/Tiny-Foxes/fini) is a tool made by [moruzerinho6](https://github.com/moruzerinho6)
 
 > Adds a extra build process where you can additional features that are not available on default ini file. Use:
 >
