@@ -30,7 +30,7 @@ Value Example:
 ```
 C:\AdditionalFolder
 │
-└───Apperance
+└───Appearance
 │   │   
 │   └───Themes
 │       │Infinitesimal
@@ -43,7 +43,7 @@ _See [folder](/user-guide/config/folders)._
 
 ### AdditionalSongFolders
 
-Takes a comma-separated list of directories where additional song groups are stored. Those additional **song** folders are expect to have **Group folders** inside.
+Takes a comma-separated list of directories where additional song groups are stored. Those additional **song** folders are expected to have **Group folders** inside.
 
 What's the usage of this? The best usage of this preference would be to have songs on another disk with maybe more space or faster so your main drive doesn't get filled with songs.
 
@@ -63,7 +63,7 @@ C:\AdditionalSongs
 │       │Chart.sm
 ```
 
-AdditionalSongFolders can point to any valid path and doesn't have to be on the same disk as OutFox.
+AdditionalSongFolders can point to any valid path and don't have to be on the same disk as OutFox.
 
 Default value: nothing
 
@@ -73,7 +73,7 @@ _See [folder](/user-guide/config/folders)._
 
 When event mode is off, allow the player to qualify for an extra stage.
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
@@ -81,7 +81,7 @@ Default value: 0
 
 Allow the user to enter the player options menu by holding the start button when selecting a song. If set to 0, the user must press the start button twice instead.
 
-Possible values are ``0`` or ``1``. 0 being ``"Double tap"`` and 1 being ``"Hold"``.
+Possible values are ``0`` or ``1``. 0 is ``"Double tap"`` and 1 is ``"Hold"``.
 
 Default value: 1
 
@@ -89,7 +89,7 @@ Default value: 1
 
 Allows multiple high score entries by the same user.
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 1
 
@@ -97,7 +97,7 @@ Default value: 1
 
 Allows multiple instances of Project OutFox to be opened.
 
-Possible values: `0` or `1`. `0` being disabled and `1` being enabled.
+Possible values: `0` or `1`. `0` is disabled and `1` is enabled.
 
 Default value: `0`
 
@@ -105,13 +105,13 @@ Default value: `0`
 
 Allows the legacy toasty animation to play multiple times in a single song.
 
-Possible values are ``0`` or ``1``. 0 being ``Of`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Of`` and 1 is ``On``.
 
 Default value: 1
 
 ### AllowMultiTexture
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
@@ -121,19 +121,19 @@ Allows the ability to delete a song on the Music Wheel by performing the followi
 
 `CTRL + Backspace`
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
 ### AllowUnacceleratedRenderer
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### AllowW1
 
-Enables the W1 judgement ("Flawless", "Marevelous", "Fantastic" depending on theme) in regular gameplay. 
+Enables the W1 judgement ("Flawless", "Marevelous", "Fantastic" depending on the theme) in regular gameplay. 
 
 Possible values are ``"Never"``, ``"Courses Only"`` and ``"Always"``.
 
@@ -141,7 +141,7 @@ Default value: everywhere
 
 ### AnisotropicFiltering
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -153,7 +153,7 @@ Default value: nothing
 
 ### ArcadeOptionsNavigation
 
-Possible values are ``0`` and ``1``. 0 being ``StepMania Style`` and 1 being ``Arcade Style``.
+Possible values are ``0`` and ``1``. 0 is ``StepMania Style`` and 1 is ``Arcade Style``.
 
 Default value: 0
 
@@ -161,7 +161,7 @@ Default value: 0
 
 Determines how often sound is enabled during the attract mode loop in arcade mode.
 
-Possible values are ``Never``, ``Always``, ``2 Times``, ``3 Times``, ``4 Times`` and ``5 Times``.
+Possible values are ``Never``, ``Always``, ``2 Times``, ``3 Times``, ``4 Times``, and ``5 Times``.
 
 Default value: EveryTime
 
@@ -169,7 +169,7 @@ Default value: EveryTime
 
 ### AutoMapOnJoyChange
 
-Possible values are ``0`` or ``1``. 0 being "Off" and 1 being "On (recommended)".
+Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On (recommended)".
 
 Default value: 1
 
@@ -183,15 +183,15 @@ Default value: "Human"
 
 Automatically generates nonstop courses based on installed songs.
 
-Possible values are ``0`` or ``1``. 0 being "Off" and 1 being "On".
+Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
 
 Default value: 1
 
 ### AutogenSteps
 
-Allows charts to be generated for other [game types](/user-guide/config/game-types/) and styles that a song does not have its own charts for.
+Allows charts to be generated for other [game types](/user-guide/config/game-types/) and styles that a song does not have its charts for.
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -223,13 +223,13 @@ Possible values are ``CoverDistort``, ``CoverPreserve``, ``FitInside``, ``FitIns
 
 This preference controls BothAtOnce, an input mode that mirrors input across both players. This preference is 
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### BreakComboToGetItem
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -237,7 +237,7 @@ Default value: 0
 
 Currently only used on Legacy Dancing Characters, which makes the characters have a toon-styled shade applied.
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
@@ -245,7 +245,7 @@ Default value: 0
 
 In single-player modes, renders the notefield in the center of the screen rather than to the left or right.
 
-Possible values are ``0`` and ``1``. 0 being ``"Off"`` and 1 being ``"On"``.
+Possible values are ``0`` and ``1``. 0 is ``"Off"`` and 1 is ``"On"``.
 
 Default value: 0
 
@@ -255,10 +255,10 @@ CenterImageAddHeight, CenterImageAddWidth, CenterImageTranslateX, and CenterImag
 
 Default values:
 
-- CenterImageTranslateX 	= 0
-- CenterImageTranslateY 	= 0
-- CenterImageAddWidth 	    = 0.000000
-- CenterImageAddHeight 	    = 0.000000
+- CenterImageTranslateX     = 0
+- CenterImageTranslateY     = 0
+- CenterImageAddWidth       = 0.000000
+- CenterImageAddHeight      = 0.000000
 
 ### CoinMode
 
@@ -290,7 +290,7 @@ Default value: 1
 
 If enabled, the player's combo will carry over between songs rather than start from 0.
 
-Possible values are ``0`` or ``1``. 0 being ``Of`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Of`` and 1 is ``On``.
 
 Default value: 0
 
@@ -316,9 +316,9 @@ Default value: nothing
 
 ### CustomSongsEnable
 
-If set to 1, players may load their own songs from a folder in their profile on a USB media (similar to the "r21" patch from _In the Groove 2_).
+If set to 1, players may load their songs from a folder in their profile on a USB media (similar to the "r21" patch from _In the Groove 2_).
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
@@ -332,13 +332,13 @@ Default value: 5.000000
 
 The maximum number of songs that can be loaded as custom songs.
 
-Possible values are ``10``, ``20``, ``30``, ``40``, ``50``, ``60``, ``70``, ``80``, ``90``, ``100`` and ``1000``.
+Possible values are ``10``, ``20``, ``30``, ``40``, ``50``, ``60``, ``70``, ``80``, ``90``, ``100``, and ``1000``.
 
 Default value: 1000
 
 ### CustomSongsMaxMegabytes 
 
-The maximum file size for audio files of custom songs.
+The maximum filesize for audio files of custom songs.
 
 Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, ``9``, ``10``, ``20``, ``30`` and ``1000``.
 
@@ -348,7 +348,7 @@ Default value: 5.000000
 
 The maximum length in seconds for custom songs.
 
-Possible values are ``60``, ``90``, ``120``, ``150``, ``180``, ``210``, ``240`` and ``10000``.
+Possible values are ``60``, ``90``, ``120``, ``150``, ``180``, ``210``, ``240``, and ``10000``.
 
 Default value: 120.000000
 
@@ -362,7 +362,7 @@ Default value: 0.000000
 
 Displays a debug overlay for lights outputs.
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -376,7 +376,7 @@ Possible values are ``Immediate``, ``ImmediateContinue``, ``EndOfSong`` and ``Of
 
 ### DefaultModifiers
 
-Comma-seperated list of modifiers used by players with no profile, or a new profile with no personal settings.
+Comma-separated list of modifiers used by players with no profile, or a new profile with no personal settings.
 
 Default value: nothing
 
@@ -392,20 +392,20 @@ Default value: "default"
 
 If enabled, you must hold the back button for 0.5 seconds to exit gameplay.
 
-Possible values are ``0`` or ``1``. 0 being ``"Instant"`` and 1 being ``"Hold"``.
+Possible values are ``0`` or ``1``. 0 is ``"Instant"`` and 1 is ``"Hold"``.
 
 Default value: 1
 
 ### DelayedCreditsReconcile
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 
 ### DelayedModelDelete
 
-Possible values are ``0`` and ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -413,26 +413,26 @@ Default value: 0
 
 ### DelayedTextureDelete
 
-Possible values are ``0`` and ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### DisableScreenSaver
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
 ### DisableUploadDir
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### DisabledSongs
 
-Defines songs that will be disabled (by not making them visible or selectable) from selection.
-Formatting for this follows the structure of _[folder](/user-guide/config/folders)._, and must be a path to the song.
+Defines songs that will be disabled (by not making them visible or selectable) from the selection.
+Formatting for this follows the structure of _[folder](/user-guide/config/folders)._and must be a path to the song.
 
 ```ìni
 DisabledSongs=MyGroup/MySong,MyGroup2/MyOtherSong
@@ -448,13 +448,13 @@ Default value: 1.777778
 
 ### DisplayColorDepth
 
-The current color depth, either 32 or 16. 32 being ``32bit`` and 16 being ``16bit``.
+The current color depth is either 32 or 16. 32 is ``32bit`` and 16 is ``16bit``.
 
 Default value: 32
 
 ### DisplayHeight and DisplayWidth 
 
-Determines the window resolution. This does not change the game internal resolution which is defined by the theme.
+Determines the window resolution. This does not change the game's internal resolution which is defined by the theme.
 
 Possible values = Any positive number.
 
@@ -472,9 +472,9 @@ Default value: nothing
 
 ### Disqualification
 
-If enabled, scores will not be saved if specific modifiers (such as constant BPM) is used.
+If enabled, scores will not be saved if specific modifiers (such as constant BPM) are used.
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
@@ -484,13 +484,13 @@ Default value: 0
 
 Enables or disables easter eggs, if a theme is aware of and uses this preference.
 
-Possible values are ``0`` or ``1``. 0 being ``"Off"`` and 1 being ``"On"``.
+Possible values are ``0`` or ``1``. 0 is ``"Off"`` and 1 is ``"On"``.
 
 Default value: 0
 
 ### EditClearPromptThreshold
 
-Possible values are ``-1``, ``10``, ``50``, ``100``, ``1000`` and ``1000000``.
+Possible values are ``-1``, ``10``, ``50``, ``100``, ``1000``, and ``1000000``.
 
 Default value: 50
 
@@ -506,14 +506,14 @@ Default value: 1.000000
 
 Enables background scripts to be previewed when playing back a song in the editor.
 
-Possible values are ``0`` and ``1``. 0 being ``Hide`` and 1 being ``Show``.
+Possible values are ``0`` and ``1``. 0 is ``Hide`` and 1 is ``Show``.
 
 ### EnableAttackSounds
 
-Possible values are ``0`` and ``1``. 0 being ``No`` and 1 being ``Yes``.
+Possible values are ``0`` and ``1``. 0 is ``No`` and 1 is ``Yes``.
 ### EnableBeginnerHelperBackgrounds
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -521,11 +521,11 @@ Default value: 0
 
 Plays an explosion sound if you hit a mine note.
 
-Possible values are ``0`` or ``1``. 0 being ``No`` and 1 being ``Yes``.
+Possible values are ``0`` or ``1``. 0 is ``No`` and 1 is ``Yes``.
 
 ### EnableScoreboard
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
@@ -533,25 +533,25 @@ Default value: 1
 
 Also known as "Free Mode"; if disabled, each game session is divided into a maximum number of stages (arcade-style).
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On (recommended)``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On (recommended)``.
 
 Default value: 1
 
 ### ExtendedChineseGlyphs
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### ExtendedJapaneseGlyphs
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### ExtendedKoreanGlyphs
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -561,48 +561,48 @@ Possible values are ``Silent``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``6
 
 ### FailOffForFirstStageEasy
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
 ### FailOffInBeginner
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
 ### FastLoad
-Caches all songs available in your songs folder, meaning the next time you open the game it won't have to load them again. This is recommended to be ``0`` when creating your own charts otherwise the game might not detect your changes.
+Caches all songs available in your songs folder, meaning the next time you open the game it won't have to load them again. This is recommended to be ``0`` when creating your charts otherwise the game might not detect your changes.
 
-Possible values are ``0`` or ``1``. 0 being "Off" and 1 being "On".
+Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
 
 Default value: 1
 
 ### FastLoadAdditionalSongs
 
-Caches all songs available in your additionalsongfolder path, meaning the next time you open the game it won't have to load them again. This is recommended to be ``0`` when creating your own charts otherwise the game might not detect your changes. **Cached songs will always be saved on the game folder or appdata if portable mode is disabled.**
+Caches all songs available in your additionalsongfolder path, meaning the next time you open the game it won't have to load them again. This is recommended to be ``0`` when creating your charts otherwise the game might not detect your changes. **Cached songs will always be saved on the game folder or AppData if the portable mode is disabled.**
 
-Possible values are ``0`` or ``1``. 0 being "Off" and 1 being "On".
+Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
 
 Default value: 1
 
 ### FastNoteRendering
 
-In short, this makes so the renderer stops doing z-axis corrections possibily making the performance better but notes might appear merged with another. This is recommended to be ``1`` when playing modfiles as those abuse its enabled behavior to make masking effects.
+In short, this makes the renderer stops doing z-axis corrections possibly making the performance better but notes might appear merged with another. This is recommended to be ``1`` when playing modfiles as those abuse its enabled behavior to make masking effects.
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
 ### ForceLogFlush
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### ForceMipMaps
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -612,7 +612,7 @@ Default value: 0
 
 Enables borderless fullscreen.
 
-Possible values being ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
@@ -626,13 +626,13 @@ Default value: -0.008
 
 ### HarshHotLifePenalty
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 1
 
 ### HiddenSongs
 
-Possible values are ``0`` and ``1``. 0 being ``"Off"`` and 1 being ``"On"``.
+Possible values are ``0`` and ``1``. 0 is ``"Off"`` and 1 is ``"On"``.
 
 Default value: 0
 
@@ -640,13 +640,13 @@ Default value: 0
 
 ### HighResolutionTextures
 
-Possible values are ``Auto``, ``Force Off`` and ``Force On``.
+Possible values are ``Auto``, ``Force Off``, and ``Force On``.
 
 Default value: Auto
 
 ### HighresScreenshotsBydefault
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -658,7 +658,7 @@ Default value: "Off"
 
 ### InputBackgroundEvents
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -670,7 +670,7 @@ Possible valures are ``0ms``, ``10ms``, ``20ms``, ``30ms``, ``40ms``, ``50ms``, 
 
 ### Interlaced
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -699,7 +699,7 @@ Automatically generated.
 
 ### LifeDifficulty
 
-Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6`` and ``7``.
+Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, and ``7``.
 
 ### LifeDifficultyScale
 
@@ -715,19 +715,19 @@ Default value: 1.000000
 
 ### LightsStepsDifficulty
 
-If there is no dedicated ``lights`` chart, generates lighting patterns from the existing charts on the specified difficul(ties).
+If there is no dedicated ``lights`` chart, generate lighting patterns from the existing charts on the specified difficul(ties).
 
 Default value: "hard, medium"
 
 ### LockCourseDifficulties
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 1
 
 ### LogCheckpoints
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -739,7 +739,7 @@ At intervals, the current FPS and average FPS will be appended to the log file.
 
 **This preference is obsolete.**
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -747,7 +747,7 @@ Default value: 0
 
 Enabling this will write log files.
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
@@ -785,9 +785,9 @@ Default value: 5
 
 ### MaxTextureResolution
 
-Defines the resolution which the game will load/show textures at, textures higher than the defined max resolution will have its resolution lowered. It's not recommended to go above 2048 while OutFox is still in Alpha until futher notice. Try going down to 1024 if you want more performance as 2048 is still not much used.
+Defines the resolution at which the game will load/show textures, textures higher than the defined max resolution will have their resolution lowered. It's not recommended to go above 2048 while OutFox is still in Alpha until further notice. Try going down to 1024 if you want more performance as 2048 is still not much used.
 
-Possible values are ``256``, ``512``, ``1024``, ``2048``, ``4096`` and ``8192``.
+Possible values are ``256``, ``512``, ``1024``, ``2048``, ``4096``, and ``8192``.
 
 Default value: 2048
 
@@ -825,25 +825,25 @@ The name of the subfolder used to store profile data on a USB device.
 
 If enabled, a timer is used in gameplay menus. Usually used in arcade or event settings.
 
-Possible values are ``0`` and ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` and ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
 ### MercifulBeginner
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### MercifulDrain
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### MercifulSuperMeter
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
@@ -857,7 +857,7 @@ Default value: 0.0001
 
 ### MinTNSToHideNotes
 
-The minimum judgement window needed for notes to disappear after hitting them.
+The minimum judgement window is needed for notes to disappear after hitting them.
 
 Possible values are ``TNS_None``, ``TNS_HitMine``, ``TNS_AvoidMine``, ``TNS_CheckpointMiss``, ``TNS_Miss``, ``TNS_W5``, ``TNS_W4``, ``TNS_W3``, ``TNS_W2``, ``TNS_W1``, ``TNS_PRO_W5``, ``TNS_PRO_W4``, ``TNS_PRO_W3``, ``TNS_PRO_W2``, ``TNS_PRO_W1`` and ``TNS_CheckpointHit``.
 
@@ -865,7 +865,7 @@ Default value: TNS_W3
 
 ### Minimum1FullSongInCourses
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -873,18 +873,18 @@ Default value: 0
 
 A deprecated input mode no longer used on Project OutFox. This is maintained for compatibility only.
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### MoveRandomToEnd
 
-Possible values are ``0`` or ``1``. 0 being "No" and 1 being "Yes".
+Possible values are ``0`` or ``1``. 0 is "No" and 1 is "Yes".
 
 Default value: 0
 ### MovieColorDepth
 
-Possible values are ``16`` or ``32``. 16 being ``16bit`` and 32 being ``32bit``.
+Possible values are ``16`` or ``32``. 16 is ``16bit`` and 32 is ``32bit``.
 
 Default value: 32
 
@@ -892,7 +892,7 @@ Default value: 32
 
 ### MusicWheelSwitchSpeed
 
-Possible values ``Slow``, ``Normal``, ``Fast`` and ``Really fast``.
+Possible values are ``Slow``, ``Normal``, ``Fast``, and ``Really fast``.
 
 Default value: 15
 
@@ -906,7 +906,7 @@ Default value: Always
 
 Mutes sound effects in menus.
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -920,13 +920,13 @@ Default value: nothing
 
 ### NumBackgrounds
 
-Possible values are ``1``, ``5``, ``10``, ``15`` and ``20``.
+Possible values are ``1``, ``5``, ``10``, ``15``, and ``20``.
 
 Default value: 10
 
 ### NotePathWidth
 
-Possible values are ``Thin``, ``500``, ``250``, ``150``, ``100`` and ``Fat``.
+Possible values are ``Thin``, ``500``, ``250``, ``150``, ``100``, and ``Fat``.
 
 ### OnlyDedicatedMenuButtons
 
@@ -936,19 +936,19 @@ Default value: 0
 
 ### OnlyPreferredDifficulties
 
-Possible values are ``0`` or ``1``. 0 being "Off" and 1 being "On".
+Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
 
 Default value: 0
 
 ### OITGStyleLights
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### PAL
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -962,7 +962,7 @@ Default value: 0.000000
 
 If enabled and themes are aware, scores will be expressed as percentages.
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 1
 
@@ -970,7 +970,7 @@ Default value: 1
 
 ### PreferredSortUsesGroups
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
@@ -992,19 +992,19 @@ Default value: 1
 
 ### ProgressiveLifebar
 
-Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7`` and ``8``.
+Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, and ``8``.
 
 Default value: 0
 
 ### ProgressiveNonstopLifebar
 
-Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8`` and ``9``(Insanity).
+Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, and ``9``(Insanity).
 
 Default value: 0
 
 ### ProgressiveStageLifebar
 
-Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8`` and ``9``(Insanity).
+Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, and ``9``(Insanity).
 
 Default value: 0
 
@@ -1012,7 +1012,7 @@ Default value: 0
 
 ### PseudoLocalize
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -1026,13 +1026,13 @@ Default value: 0
 
 ### PickExtraStage
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
 ### QuirksMode
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -1046,13 +1046,13 @@ Possible values are ``"Off"``, ``"Animations"`` and ``Random Movies``
 
 ### RateModsAffectFGChanges
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
 ### RefreshRate
 
-Possible values are ``Default``, ``60``, ``70``, ``72`` ,``75``, ``90``, ``100``, ``120``, ``144``, ``165``, ``200`` and ``240``.
+Possible values are ``Default``, ``60``, ``70``, ``72``, ``75``, ``90``, ``100``, ``120``, ``144``, ``165``, ``200``, and ``240``.
 
 Default value: Default
 ### RegenComboAfterMiss
@@ -1061,7 +1061,7 @@ Default value: 5
 
 ### ReverseMouseButtons
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -1073,13 +1073,13 @@ Default value: 0
 
 ### ShowBanners
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 1
 
 ### ShowBeginnerHelper
 
-Possible values are ``0`` or ``1``. 0 being "Off" and 1 being "On".
+Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
 
 Default value: 0
 
@@ -1087,13 +1087,13 @@ Default value: 0
 
 Displays a caution screen before gameplay begins.
 
-Possible values are ``0`` or ``1``. 0 being "Skip" and 1 being "Show".
+Possible values are ``0`` or ``1``. 0 is "Skip" and 1 is "Show".
 
 Default value: 0
 
 ### ShowDancingCharacters
 
-Possible values are ``Default to Off``, ``Default to Random`` and ``Select``.
+Possible values are ``Default to Off``, ``Default to Random``, and ``Select``.
 
 Default value: Random
 
@@ -1101,7 +1101,7 @@ Default value: Random
 
 If the theme is aware, this can toggle visual effects used to signify low health.
 
-Possible values are ``0`` or ``1``. 0 being "Hide" and 1 being "Show".
+Possible values are ``0`` or ``1``. 0 is "Hide" and 1 is "Show".
 
 Default value: 1
 
@@ -1109,7 +1109,7 @@ Default value: 1
 
 If the theme is aware, this can toggle additional tutorial screens shown in-game.
 
-Possible values are ``0`` or ``1``. 0 being "Skip" and 1 being "Show".
+Possible values are ``0`` or ``1``. 0 is "Skip" and 1 is "Show".
 
 Default value: 1
 
@@ -1117,7 +1117,7 @@ Default value: 1
 
 Toggles the splash screen.
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
@@ -1125,15 +1125,15 @@ Default value: 1
 
 On Windows, this will open a ``cmd.exe`` window to display log output when the game is running.
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### ShowLyrics
 
-Shows lyrics from a .crs file in-game in present.
+It Shows lyrics from a .crs file in-game in present.
 
-Possible values are ``0`` and ``1``. 0 being "Hide" and 1 being "Show".
+Possible values are ``0`` and ``1``. 0 is "Hide" and 1 is "Show".
 
 Default value: 1
 
@@ -1143,15 +1143,15 @@ Default value: 1
 
 Determines whether the OS mouse cursor will disappear if hovered over the game window.
 
-Possible values: ``0`` or ``1``. 0 being ``"Off"`` and 1 being ``"On"``. Changing this in-game might require a game restart.
+Possible values: ``0`` or ``1``. 0 is ``"Off"`` and 1 is ``"On"``. Changing this in-game might require a game restart.
 
 Default value: 1
 
 ### ShowNativeLanguage
 
-Toggles whether song titles are displayed in their native language (1), or in a transliterated or translated form as determined in their metadata (0)
+Toggles whether song titles are displayed in their native language (1), or a transliterated or translated form as determined in their metadata (0)
 
-Possible values are ``0`` or ``1``. 0 being "Romanization" and 1 being "Native Language".
+Possible values are ``0`` or ``1``. 0 is "Romanization" and 1 is "Native Language".
 
 Default value: 0
 
@@ -1167,7 +1167,7 @@ Default value: "Ask"
 
 Shows an overlay in the top corner of the screen for information such as frame rate and memory usage.
 
-Possible values are ``0`` and ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` and ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0 (1 if in debug mode)
 
@@ -1175,19 +1175,19 @@ Default value: 0 (1 if in debug mode)
 
 If enabled, Lua errors will be displayed in an overlay at the top of the screen.
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### SignProfileData
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### SmoothLines
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
@@ -1201,15 +1201,15 @@ Default value: 0
 
 ### SongsPerPlay
 
-Number of songs per-session (excluding extra stages) if ``EventMode`` is disabled.
+A number of songs per session (excluding extra stages) if ``EventMode`` is disabled.
 
-Possible values are ``1``, ``2``, ``3``, ``4`` and ``5``.
+Possible values are ``1``, ``2``, ``3``, ``4``, and ``5``.
 
 Default value: 3
 
 ### SongsPerPlayOrEvent
 
-Possible values are ``1``, ``2``, ``3``, ``4``, ``5`` and ``Event``.
+Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, and ``Event``.
 
 ### SoundDevice
 
@@ -1245,19 +1245,19 @@ Default value: 4096
 
 ### StretchBackgrounds
 
-Possible values are ``0`` or ``1``. 0 being "Off" and 1 being "On".
+Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
 
 Default value: 0
 
 ### StreamerMode
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### SubSortByNumSteps
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -1269,7 +1269,7 @@ Default value: nothing
 
 ### TextureColorDepth
 
-Possible values are ``16`` and ``32``. 16 being ``16bit`` and 32 being ``32bit``.
+Possible values are ``16`` and ``32``. 16 is ``16bit`` and 32 is ``32bit``.
 
 Default value: 32
 
@@ -1277,7 +1277,7 @@ Default value: 32
 
 ### ThreadedInput
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
@@ -1285,7 +1285,7 @@ Default value: 1
 
 ### ThreeKeyNavigation
 
-Possible values are ``0`` or ``1``. 0 being ``"Five Key Menu"`` and 1 being ``"Three Key Menu"``.
+Possible values are ``0`` or ``1``. 0 is ``"Five Key Menu"`` and 1 is ``"Three Key Menu"``.
 
 Default value: 0
 
@@ -1297,7 +1297,7 @@ Default value: 0
 
 ### TimingWindowScale
 
-Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8`` and ``Justice``.
+Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, and ``Justice``.
 
 Default value: 4.000000
 
@@ -1307,7 +1307,7 @@ These settings define the timing windows used in themes that do not use the Proj
 
 ### TrilinearFiltering
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -1317,19 +1317,19 @@ These settings are used for the lifebar in battle mode.
 
 ### TurnOffWMCompositor
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### UpdateCheckEnable
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### UseEGLonLinux
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -1337,7 +1337,7 @@ Default value: 0
 
 Toggles between HIDAPI and XInput modes.
 
-Possible values are ``0`` or ``1``. 0 being ``"XInput"`` and 1 being ``"HIDAPI"``.
+Possible values are ``0`` or ``1``. 0 is ``"XInput"`` and 1 is ``"HIDAPI"``.
 
 Default value: 1
 
@@ -1345,19 +1345,19 @@ Default value: 1
 
 Enable or disable the use of points between each section of an ActorMultiVertex and use blending modes into it.
 
-Possible values are ``0`` or ``1``. 0 being ``No`` and 1 being ``Yes``.
+Possible values are ``0`` or ``1``. 0 is ``No`` and 1 is ``Yes``.
 
 Default value: 1
 
 ### UseUnlockSystem
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### UsingArcadePads
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -1371,7 +1371,7 @@ Possible values are ``-5``, ``-4``, ``-3``, ``-2``, ``-1``, ``0``, ``+1``, ``+2`
 
 ### VideoUpscaleFilter
 
-Possible values are ``0`` or ``1``. 0 being disabled and 1 being enabled.
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
@@ -1379,23 +1379,25 @@ Default value: 0
 
 Enables vertical sync (Vsync)
 
-Possible values are ``0`` or ``1``. 0 being ``Off`` and 1 being ``On``.
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 1
 
 ### WideScreen16_10
 
-Possible values are ``0`` and ``1``. 0 being ``Off`` and 1 being ``On``
+Possible values are ``0`` and ``1``. 0 is ``Off`` and 1 is ``On``
 
 
 ### WideScreen16_9
 
-Possible values are ``0`` and ``1``. 0 being ``Off`` and 1 being ``On``
+Possible values are ``0`` and ``1``. 0 is ``Off`` and 1 is ``On``
 
 ### Windowed
 
 Enables windowed mode.
 
-Possible values are ``0`` or ``1``. 0 being ``Full Screen`` and 1 being ``Windowed``.
+Possible values are ``0`` or ``1``. 0 is ``Full Screen`` and 1 is ``Windowed``.
 
 Default value: 1
+
+_Written and Maintained by Moru Zerinho6_

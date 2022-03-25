@@ -6,7 +6,7 @@ weight: 3
 
 ## What is OutFox Serenity?
 
-OutFox Serenity is the official community song pack project **made primarily for Project OutFox**. It's purpose is to produce packs of "libre" songs for the game that can be freely redistributed (including as part of its default, bundled songs), and to showcase the functionality of Project Outfox by offering charts for multiple gametypes beyond just 4-key/dance.
+OutFox Serenity is the official community song pack project **made primarily for Project OutFox**. Its purpose is to produce packs of "libre" songs for the game that can be freely redistributed (including as part of its default, bundled songs), and to showcase the functionality of Project Outfox by offering charts for multiple game types beyond just 4-key/dance.
 
 ## How was OutFox Serenity created?
 
@@ -26,9 +26,9 @@ During Project OutFox Alpha 4.8.0 development, we started to release many modes,
         - Make a Pull Request on our [OutFox Serenity Github Repository](https://github.com/TeamRizu/OutFox-Serenity). Remember to follow **Chart Guidelines**.
     - Future Volumes: You need to join our [OutFox Serenity Discord Server](https://discord.gg/mNcFU67mK7) and use "chart-discussion" and "chart-feedback" channels.
 
-    In both options we will request you to use our templates which can be found on our [OutFox Serenity Discord Server](https://discord.gg/mNcFU67mK7). Make sure to check the pinned messages as they include each gamemode scaling.
+    In both options, we will request you to use our templates which can be found on our [OutFox Serenity Discord Server](https://discord.gg/mNcFU67mK7). Make sure to check the pinned messages as they include each game mode scaling.
 
-- If you want to contribute with graphics, then follow the same steps given to chart contribution. But instead use the "graphics" channels on our Discord server.
+- If you want to contribute with graphics, then follow the same steps given to chart contribution. But instead, use the "graphics" channels on our Discord server.
 
 ## What are OutFox Serenity Volumes?
 
@@ -54,7 +54,7 @@ Released August 27, 2021, OutFox Serenity Volume I features music by Aspid Cat, 
 
 ### OutFox Serenity Volume I Winter Update
 
-The Winter Update to OutFox Serenity Volume I features three new songs by DJ Megas, Matduke and Pekoneko (ペコネコ). It also includes changes to some of the existing songs from Volume 1, including additional charts, and keysounded be-mu/po-mu and gh charts for selected songs. Comes with:
+The Winter Update to OutFox Serenity Volume I features three new songs by DJ Megas, Matduke and Pekoneko (ペコネコ). It also includes changes to some of the existing songs from Volume 1, including additional charts, and key sounded be-mu/po-mu and gh charts for selected songs. Comes with:
 
 | Mode | Charts |
 |---|---|
@@ -75,11 +75,11 @@ The Winter Update to OutFox Serenity Volume I features three new songs by DJ Meg
 
 ## Are modfiles allowed to be submitted?
 
-Yes. But make sure it's gimmicks only works with your specific chart/difficulty, no chart should impact other's chart in any way.
+Yes. But make sure its gimmicks only work with your specific chart/difficulty, no chart should impact other's charts in any way.
 
 ## I submitted music but it wasn't featured on the next volume, why?
 
-Our team has a list of music submitted by members of the community, we try to select a safe amount of music that guarantees a healthy amount of charts will be made for each one, since chart and graphic submissions are made purely by the interest of the authors and at the moment of writing this document, Project OutFox has no dedicated Chart Creation Team.
+Our team has a list of music submitted by members of the community, we try to select a safe amount of music that guarantees a healthy amount of charts will be made for each one since chart and graphic submissions are made purely by the interest of the authors and at the moment of writing this document, Project OutFox has no dedicated Chart Creation Team.
 
 Another possible reason is that your submission does not follow the **music guidelines**, if you think that is the case then you can contact us using the following socials:
 
@@ -94,7 +94,7 @@ Make sure to check any of the socials you provided to us, if we are considering 
 
 ## Why are some music files missing from the repository?
 
-Those are special as they use a license which doesn't allow us to publicly host them on Github, they are still bundled with our release zips.
+Those are special as they use a license that doesn't allow us to publicly host them on Github, they are still bundled with our release zips.
 
 ## Which authors have had their music released with OutFox Serenity?
 
@@ -163,8 +163,8 @@ Those are special as they use a license which doesn't allow us to publicly host 
     - Conflicting Revenge (Background, Jacket, Banner)
     - After the Ending (Jacket)
 - Daniel Rotwind
-    - Umi's Secret (Chiptune Mix) (Background, Jacket, Banner) *Art comissioned from  [Trinitoid](https://twitter.com/Trinitroid/status/1465752223439228931)
-    - Low End Theory (Background, Jacket, Banner) *Art comissioned from  [Khayos](https://twitter.com/Khayos_Rave)
+    - Umi's Secret (Chiptune Mix) (Background, Jacket, Banner) *Art commissioned from  [Trinitoid](https://twitter.com/Trinitroid/status/1465752223439228931)
+    - Low End Theory (Background, Jacket, Banner) *Art commissioned from  [Khayos](https://twitter.com/Khayos_Rave)
     - Tagebuch der vergangenen Erinnerungen (Background, Jacket, Banner, BGA) *Art comissioned from  [ArtPhantom17](https://twitter.com/Speed_Demon17)
     - brokenHeart resurrection ~estele~ (Background, Jacket, Banner)
 - Jack5
@@ -186,10 +186,12 @@ Most of the work is handled by OutFox Community Team with occasional help from O
 - SHRMP0: Serenity Server Organization, Music Selection, Pack Organization, Serenity Sheet Organization, Simfile Templates, Chart Feedback.
 - Lirodon: Pack Assets, Serenity Trailer, Serenity Website Section, Guidelines Rules, Pack Advertisement.
 - Moru Zerinho6: Serenity Server Organization, Music Selection, Pack Organization, Serenity Website Section, Serenity Wiki.
-- Daniel Rotwind: Creation of templates for be-mu/po-mu gamemodes, Pack Assets, Chart Creation.
-- shockdude: Creation of GH gamemode templates, Chart Creation.
+- Daniel Rotwind: Creation of templates for be-mu/po-mu game modes, Pack Assets, Chart Creation.
+- shockdude: Creation of GH game mode templates, Chart Creation.
 - Sevish: Sound Normalization, Music Feedback, Chart Creation.
 - SheepyChris: Music Selection, Simfile Templates, Chart Feedback.
 - Moneko: Music Selection.
 - dj505: Chart Creation and Feedback.
 - Jose_Varela: Chart Creation, Pack Assets.
+
+_Written and Maintained by Moru Zerinho6_

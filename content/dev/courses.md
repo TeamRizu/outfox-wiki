@@ -66,8 +66,8 @@ This defines which song(s) will be played in the course.
 |---|---|
 | showcourse | (Default) Shows the song in the course list.
 | noshowcourse | Hides the song in the course list, and instead reports ?????.
-| nodifficult | Hides the song's difficulty meter.
-| award | Defines how many lives the player will earn upon clearing the song (Used on battery life meter / Oni).
+| nodifficult | Prevents the player from changing difficulties from the one provided in the course.
+| award* | Defines how many lives the player will earn upon clearing the song (Used on battery life meter / Oni).
 
 Example
 | Placeholder | Value |
@@ -172,7 +172,7 @@ Defines a general meter for the course. Most themes don't display this value, an
 to show each meter from the available songs in the course.
 
 ```
-#METER:6;
+#METER:Medium:6;
 ```
 
 ### #RADAR
@@ -186,7 +186,7 @@ Defines the radar values for the entire course. Takes the same data type as regu
 Sets the style that this course will be compatible with.
 
 ```
-#STYLE:single;
+#STYLE:single,versus;
 ```
 
 ### #SCRIPTER
