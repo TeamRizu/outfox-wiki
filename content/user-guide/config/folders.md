@@ -6,11 +6,11 @@ weight: 0
 Project OutFox uses various folders to store content, such as songs, save data, themes, noteskins, etc. Content is stored in one of the three following locations;
 
 * **Global folders** are located within the Project OutFox installation directory. If you are on a multi-user operating system, content in these folders will be accessible to all users. When _Portable Mode_ is enabled, your save data (including profiles and preference files) will be placed in the installation directory.
-* **User folders** are also created in your operating system's home/user directory if _Portable Mode_ is disabled. When _Portable Mode_ is disabled, this is where your save data will be stored. As of 0.4.14 (released 2022-03-25):
-    * On macOS, these folders are located in **~/Library/Preferences/Project OutFox/**
-    * On Linux, these folders are located in **~/.project-outfox/**
-    * On Windows, these folders are located in **%APPDATA%\Project OutFox**
-    * On versions prior to 0.4.14, the folders was named **OutFox 5.3** or **outfox-5.3**.
+* **User folders** are where your save data is stored if _Portable Mode_ is disabled. They are created in your operating system's home/user directory. As of 0.4.14 (released 2022-03-25), they are located in:
+    * **~/Library/Preferences/Project OutFox/** on macOS
+    * **~/.project-outfox/** on Linux
+    * **%APPDATA%\Project OutFox** on Windows
+    * On versions prior to 0.4.14, the user folder was named either **OutFox 5.3** (macOS and Windows) or **outfox-5.3** (Linux).
 * **Additional folders** are paths configured in the [Preferences.ini file](/user-guide/config/preferences/#additionalfolders); for instance, you can store your song library on a second hard drive and link to it there, or share content between multiple installations.
 
 These content folders comprise the game's "Virtual File System" (VFS). They are, in turn, divided into various subdirectories for storing specific types of content. 
@@ -28,11 +28,13 @@ Square images that can be used as avatars for your profile.
 
 If supported by the current theme, you can pick a different design for in-game judgement displays from images in this folder.
 
-Judgement fonts are divided into equally-sized sprites for each judgement. Fonts designed for specific timing modes have a modifier in their file name, such as ``[Advanced]``, ``[FAPlus]``, etc. A judgement font can also have specific versions for early and late timings.
+Judgement fonts are divided into equally-sized sprites for each judgement. Fonts designed for specific timing modes have a modifier in their file name, such as ``[Advanced]``, ``[FAPlus]``, etc. A judgement font can also be divided into two columns to display indicators for early or late timing.
 
 ### NoteSkins
 
-NoteSkins affect the appearance of notes. They could be arrows, bars, circles, pawprints, etc. Project OutFox is compatible with noteskins designed for StepMania 5.
+NoteSkins affect the appearance of notes. They could be arrows, bars, circles, pawprints, etc. 
+
+NoteSkins that are compatible with StepMania 5.0.12 and 5.1 are compatible with Project OutFox.
 
 The NoteSkins folder is divided into subfolders for specific [game types](/user-guide/games/). A _global noteskin_ appears in all game types.
 
@@ -48,7 +50,9 @@ NoteSkins
 
 ### Themes
 
-Themes determine the look, feel, and functionality of the game. Themes compatible with StepMania 5.0.12 and 5.1 are also compatible with OutFox, while themes from older versions or StepMania 5.2 won't.
+Themes determine the look, feel, and functionality of the game. 
+
+Themes compatible with StepMania 5.0.12 and 5.1 are compatible with Project OutFox.
 
 ```
 Themes
@@ -60,7 +64,7 @@ Themes
 
 ### Toasties
 
-Inspired by the famous _Mortal Kombat_ easter egg, a toasty is an image and sound played on specific combo milestones.
+Combinations of an image and sound played when a specific combo milestone is reached. They are inspired by the famous _Mortal Kombat_ easter egg.
 
 ## BackgroundEffects
 
@@ -68,7 +72,7 @@ Visual effects used for background script sequences in songs.
 
 ## BackgroundTransitions
 
-Visual effects used for background script sequences in songs.
+Transition effects used for background script sequences in songs.
 
 ## BGAnimations
 
@@ -124,7 +128,7 @@ Songs
 ```
 
 # Additional folders
-Via the preferences file (Save/Preferences.ini), you can specify _additional_ folders. 
+Via the preferences file (Save/Preferences.ini), you can specify _additional_ folders to store content. For example, you can keep your song library in a centralized location (such as in a separate folder or on a different storage device), and share them between multiple installations of OutFox or StepMania-based games.
 
 Both of these parameters accept multiple directory paths, comma-separated.
 
@@ -146,7 +150,7 @@ D:\AdditionalSongs
 
 ## AdditionalFolders
 
-AdditionalFolders is like the above, except they can contain any of the usual content subdirectories like so;
+AdditionalFolders is like the above, except they can contain any of the other content subdirectories like so;
 
 ```
 D:\OutFoxExtra
