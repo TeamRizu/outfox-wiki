@@ -6,10 +6,11 @@ weight: 0
 Project OutFox uses various folders to store content, such as songs, save data, themes, noteskins, etc. Content is stored in one of the three following locations;
 
 * **Global folders** are located within the Project OutFox installation directory. If you are on a multi-user operating system, content in these folders will be accessible to all users. When _Portable Mode_ is enabled, your save data (including profiles and preference files) will be placed in the installation directory.
-* **User folders** are also created in your operating system's home/user directory if _Portable Mode_ is disabled. When _Portable Mode_ is disabled, this is where your save data will be stored.
-    * On macOS, these folders are located in **~/Library/Preferences/OutFox 5.3/**
-    * On Linux, these folders are located in **~/.outfox-5.3/**
-    * On Windows, these folders are located in **%APPDATA%\OutFox 5.3**
+* **User folders** are also created in your operating system's home/user directory if _Portable Mode_ is disabled. When _Portable Mode_ is disabled, this is where your save data will be stored. As of 0.4.14 (released 2022-03-25):
+    * On macOS, these folders are located in **~/Library/Preferences/Project OutFox/**
+    * On Linux, these folders are located in **~/.project-outfox/**
+    * On Windows, these folders are located in **%APPDATA%\Project OutFox**
+    * On versions prior to 0.4.14, the folders was named **OutFox 5.3** or **outfox-5.3**.
 * **Additional folders** are paths configured in the [Preferences.ini file](/user-guide/config/preferences/#additionalfolders); for instance, you can store your song library on a second hard drive and link to it there, or share content between multiple installations.
 
 These content folders comprise the game's "Virtual File System" (VFS). They are, in turn, divided into various subdirectories for storing specific types of content. 
