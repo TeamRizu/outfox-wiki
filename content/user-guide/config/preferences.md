@@ -123,7 +123,7 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
-### AllowNotefieldChangesOnPreview=0
+### AllowNotefieldChangesOnPreview
 
 Allows any changes to the notefield to be made while using preview mode on editor.
 
