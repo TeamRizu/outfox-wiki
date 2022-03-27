@@ -37,7 +37,7 @@ C:\AdditionalFolder
 │       │SoundWaves Community Edition
 ```
 
-Default values: nothing
+Default value: nothing
 
 _See [folder](/user-guide/config/folders)._
 
@@ -68,6 +68,14 @@ AdditionalSongFolders can point to any valid path and don't have to be on the sa
 Default value: nothing
 
 _See [folder](/user-guide/config/folders)._
+
+### AllowEditorAutoSaving
+
+If enabled, chart data will be saved every 5 minutes while editing a chart.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
+Default value: 1
 
 ### AllowExtraStage
 
@@ -109,11 +117,19 @@ Possible values are ``0`` or ``1``. 0 is ``Of`` and 1 is ``On``.
 
 Default value: 1
 
-### AllowMultiTexture
+### AllowMultitexture
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
+
+### AllowNotefieldChangesOnPreview=0
+
+Allows any changes to the notefield to be made while using preview mode on editor.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
+Default value: 0
 
 ### AllowSongDeletion
 
@@ -167,6 +183,10 @@ Default value: EveryTime
 
 ### AutoJoin
 
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
+Default value: 0
+
 ### AutoMapOnJoyChange
 
 Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On (recommended)".
@@ -183,7 +203,7 @@ Default value: "Human"
 
 Automatically generates nonstop courses based on installed songs.
 
-Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 1
 
@@ -195,11 +215,19 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
+### AxisFix
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
+Default value: 0
+
 ### BGBrightness
 
 Sets the brightness of background visuals in gameplay.
 
 Possible values are ``0%``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
+
+Default value: 0.700000
 
 ### BGBrightnessNoZero
 
@@ -211,17 +239,27 @@ Possible values are ``Disabled``, ``25% Bright``, ``50% Bright`` and ``75% Brigh
 
 ### BackUpAllSongSaves
 
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
+Default value: 0
+
 ### BackgroundFitMode
 
 Determines scaling/cropping of song backgrounds based on resolution and aspect ratio.
 
 Possible values are ``CoverDistort``, ``CoverPreserve``, ``FitInside``, ``FitInsideAvoidLetter`` and ``FitInsideAvoidPillar``
 
+Default value: CoverPreserve
+
 ### BlinkGameplayButtonLightsOnNote
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
+Default value: 0
 
 ### BothAtOnce
 
-This preference controls BothAtOnce, an input mode that mirrors input across both players. This preference is 
+This preference controls BothAtOnce, an input mode that mirrors input across both players.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -278,6 +316,8 @@ Possible values are ``Pay`` and ``Free Play``.
 
 ### CoinRecoveryExpirationHours
 
+Default value: 0
+
 ### CoinsPerCredit
 
 Specifies the number of coins that must be inserted for each credit.
@@ -296,13 +336,19 @@ Default value: 0
 
 ### ConstantUpdateDeltaSeconds
 
+Default value: 0.000000
+
 ### Cookie
 
 ~~Cookies are delicious delicacies.~~
 
+Default value: nothing
+
 ### CourseSortOrder
 
 Possible values are "Num Songs", "Average Feet", "Total Feet" and "Ranking"
+
+Default value: Songs
 
 ### CoursesToShowRanking
 
@@ -354,6 +400,8 @@ Default value: 120.000000
 
 ### DDRStyleRandom
 
+Default value: 0
+
 ### DebounceCoinInputTime
 
 Default value: 0.000000
@@ -372,7 +420,11 @@ Possible values are ``Immediate``, ``ImmediateContinue``, ``EndOfSong`` and ``Of
 
 ### DefaultLocalProfileIDP1
 
+Default value: nothing
+
 ### DefaultLocalProfileIDP2
+
+Default value: nothing
 
 ### DefaultModifiers
 
@@ -382,11 +434,13 @@ Default value: nothing
 
 ### DefaultRecordLength
 
+Default value: 4.000000
+
 ### DefaultTheme
 
 Sets the theme that will be loaded as a backup if the current theme cannot be loaded. If ``theme`` cannot also be found, then it will look back for ``"default"`` as the theme to load.
 
-Default value: "default"
+Default value: default
 
 ### DelayedBack
 
@@ -402,7 +456,6 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
-
 ### DelayedModelDelete
 
 Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
@@ -410,6 +463,10 @@ Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
 Default value: 0
 
 ### DelayedScreenLoad
+
+Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
+
+Default value: 0
 
 ### DelayedTextureDelete
 
@@ -438,6 +495,8 @@ Formatting for this follows the structure of _[folder](/user-guide/config/folder
 DisabledSongs=MyGroup/MySong,MyGroup2/MyOtherSong
 ```
 
+Default value: nothing
+
 ### DisplayAspectRatio
 
 The current aspect ratio, expressed as a decimal (i.e. 16:9 = 1.777778, or 16/9).
@@ -458,14 +517,17 @@ Determines the window resolution. This does not change the game's internal resol
 
 Possible values = Any positive number.
 
-Default value: 
+Default value:
 
-- DisplayWidth  = 854
-- DisplayHeight = 480
+- DisplayWidth  = 1280
+- DisplayHeight = 720
+
+Note: The default value of this preference is not constant.
 
 ### DisplayResolution
 
 Possible values are your GPU supported resolutions.
+
 ### DisplayId
 
 Default value: nothing
@@ -480,13 +542,15 @@ Default value: 0
 
 ### EXTIOComPort
 
+Default value: COM1
+
 ### EasterEggs
 
 Enables or disables easter eggs, if a theme is aware of and uses this preference.
 
 Possible values are ``0`` or ``1``. 0 is ``"Off"`` and 1 is ``"On"``.
 
-Default value: 0
+Default value: 1
 
 ### EditClearPromptThreshold
 
@@ -500,7 +564,11 @@ Default value: 1.000000
 
 ### EditorMemoryCardOsMountPoint
 
+Default value: nothing
+
 ### EditorNoteSkinP1 and EditorNoteSkinP2
+
+Default value: default
 
 ### EditorShowBGChangesPlay
 
@@ -508,9 +576,14 @@ Enables background scripts to be previewed when playing back a song in the edito
 
 Possible values are ``0`` and ``1``. 0 is ``Hide`` and 1 is ``Show``.
 
+Default value: 1
+
 ### EnableAttackSounds
 
 Possible values are ``0`` and ``1``. 0 is ``No`` and 1 is ``Yes``.
+
+Default value: 1
+
 ### EnableBeginnerHelperBackgrounds
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
@@ -522,6 +595,8 @@ Default value: 0
 Plays an explosion sound if you hit a mine note.
 
 Possible values are ``0`` or ``1``. 0 is ``No`` and 1 is ``Yes``.
+
+Default value: 1
 
 ### EnableScoreboard
 
@@ -559,6 +634,8 @@ Default value: 0
 
 Possible values are ``Silent``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
 
+Default value: 0.500000
+
 ### FailOffForFirstStageEasy
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
@@ -572,6 +649,7 @@ Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 Default value: 0
 
 ### FastLoad
+
 Caches all songs available in your songs folder, meaning the next time you open the game it won't have to load them again. This is recommended to be ``0`` when creating your charts otherwise the game might not detect your changes.
 
 Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
@@ -608,6 +686,8 @@ Default value: 0
 
 ### FrameLimitPercent
 
+Default value: 0.000000
+
 ### FullscreenIsBorderlessWindow
 
 Enables borderless fullscreen.
@@ -616,13 +696,19 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
+### GDDMRealToNew
+
+Default value: 0
+
 ### GetRankingName
 
 Possible values are ``Off``, ``On``, ``Ranking Songs``.
 
+Default value: On
+
 ### GlobalOffsetSeconds
 
-Default value: -0.008
+Default value: -0.008000
 
 ### HarshHotLifePenalty
 
@@ -638,6 +724,8 @@ Default value: 0
 
 ### HideIncompleteCourses
 
+Default value: 0
+
 ### HighResolutionTextures
 
 Possible values are ``Auto``, ``Force Off``, and ``Force On``.
@@ -651,6 +739,8 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 Default value: 0
 
 ### IgnoredDialogs
+
+Default value: 0
 
 ### ImageCache
 
@@ -666,13 +756,21 @@ Default value: 0
 
 Possible valures are ``0ms``, ``10ms``, ``20ms``, ``30ms``, ``40ms``, ``50ms``, ``60ms``, ``70ms``, ``80ms``, ``90ms`` and ``100ms``.
 
+Default value: 0.000000
+
 ### InputDrivers
+
+Default value: nothing
 
 ### Interlaced
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
+
+### JoystickDeadzone
+
+Default value: 3200
 
 ### JointPremium
 
@@ -682,10 +780,15 @@ Possible values are ``Off`` and ``2 Players for 1 Credit``.
 
 Default value: nothing
 
+Note: The game will default to en (English).
+
 ### LastConnectedServer
 
+Default value: nothing
 
 ### LastSeenInputDevices
+
+Default value: nothing
 
 ### LastSeenVideoDriver
 
@@ -697,6 +800,8 @@ Default value: nothing
 
 Automatically generated.
 
+Default value: nothing
+
 ### LifeDifficulty
 
 Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, and ``7``.
@@ -707,17 +812,25 @@ Default value: 1.000000
 
 ### LightsAheadSeconds
 
+Default value: 0.500000
+
 ### LightsComPort
+
+Default value: COM54
 
 ### LightsDriver
 
+Default value: nothing
+
 ### LightsFalloffSeconds
+
+Default value: 0.100000
 
 ### LightsStepsDifficulty
 
 If there is no dedicated ``lights`` chart, generate lighting patterns from the existing charts on the specified difficul(ties).
 
-Default value: "hard, medium"
+Default value: hard, medium
 
 ### LockCourseDifficulties
 
@@ -734,6 +847,8 @@ Default value: 0
 ### LogFPS
 
 At intervals, the current FPS and average FPS will be appended to the log file.
+
+Default value: 1
 
 ### LogSkips
 
@@ -755,9 +870,13 @@ Default value: 1
 
 Determines how long a song must be for it to be classified as "long" (which costs two stages outside of Event Mode).
 
+Default value: 150.000000
+
 ### MarathonVerSongSeconds
 
 Determines how long a song must be for it to be classified as a "marathon" (which costs three stages outside of Event Mode).
+
+Default value: 300.000000
 
 ### MachineName
 
@@ -777,11 +896,15 @@ Default value: 3
 
 ### MaxInputLatencySeconds
 
+Default value: 0.000000
+
 ### MaxRegenComboAfterMiss
 
 Default value: 5
 
 ### MaxSongsInEditCourse
+
+Default value: -1
 
 ### MaxTextureResolution
 
@@ -789,37 +912,65 @@ Defines the resolution at which the game will load/show textures, textures highe
 
 Possible values are ``256``, ``512``, ``1024``, ``2048``, ``4096``, and ``8192``.
 
-Default value: 2048
+Default value: 1024
 
 ### MemoryCardDriver
 
-### MemoryCardOsMountPoint
+Default value: USB
 
-### MemoryCardOsMountPoint
+### MemoryCardOsMountPointP1
+
+Default value: nothing
+
+### MemoryCardOsMountPointP2
+
+Default value: nothing
 
 ### MemoryCardPadmissEnabled
 
+Default vlaue: 0
+
 ### MemoryCardProfileImportSubdirs
+
+Default value: nothing
 
 ### MemoryCardProfileSubdir
 
 The name of the subfolder used to store profile data on a USB device.
 
+Default value: Project OutFox
+
 ### MemoryCardProfiles
+
+Default value: 1
 
 ### MemoryCardUsbBusP1
 
+Defaut value: -1
+
 ### MemoryCardUsbBusP2
+
+Defaut value: -1
 
 ### MemoryCardUsbLevelP1
 
+Defaut value: -1
+
 ### MemoryCardUsbLevelP2
+
+Defaut value: -1
 
 ### MemoryCardUsbPortP1
 
+Defaut value: -1
+
 ### MemoryCardUsbPortP2
 
+Defaut value: -1
+
 ### MemoryCards
+
+Defaut value: 0
 
 ### MenuTimer
 
@@ -849,11 +1000,11 @@ Default value: 1
 
 ### MinPercentageForMachineCourseHighScore
 
-Default value: 0.0001
+Default value: 0.000100
 
 ### MinPercentageForMachineSongHighScore
 
-Default value: 0.0001
+Default value: 0.000100
 
 ### MinTNSToHideNotes
 
@@ -861,7 +1012,7 @@ The minimum judgement window is needed for notes to disappear after hitting them
 
 Possible values are ``TNS_None``, ``TNS_HitMine``, ``TNS_AvoidMine``, ``TNS_CheckpointMiss``, ``TNS_Miss``, ``TNS_W5``, ``TNS_W4``, ``TNS_W3``, ``TNS_W2``, ``TNS_W1``, ``TNS_PRO_W5``, ``TNS_PRO_W4``, ``TNS_PRO_W3``, ``TNS_PRO_W2``, ``TNS_PRO_W1`` and ``TNS_CheckpointHit``.
 
-Default value: TNS_W3
+Default value: W3
 
 ### Minimum1FullSongInCourses
 
@@ -882,6 +1033,7 @@ Default value: 0
 Possible values are ``0`` or ``1``. 0 is "No" and 1 is "Yes".
 
 Default value: 0
+
 ### MovieColorDepth
 
 Possible values are ``16`` or ``32``. 16 is ``16bit`` and 32 is ``32bit``.
@@ -889,6 +1041,8 @@ Possible values are ``16`` or ``32``. 16 is ``16bit`` and 32 is ``32bit``.
 Default value: 32
 
 ### MovieDrivers
+
+Default value: nothing
 
 ### MusicWheelSwitchSpeed
 
@@ -912,7 +1066,11 @@ Default value: 0
 
 ### NetworkStartOffset
 
+Default value: 3.000000
+
 ### NeverBoostAppPriority
+
+Default value: 0
 
 ### NeverCacheList
 
@@ -954,6 +1112,8 @@ Default value: 0
 
 ### PacDriveLightOrdering
 
+Default value: minimaid
+
 ### PadStickSeconds
 
 Default value: 0.000000
@@ -967,6 +1127,8 @@ Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 Default value: 1
 
 ### PreCacheAllWheelSorts
+
+Default value: 0
 
 ### PreferredSortUsesGroups
 
@@ -986,9 +1148,15 @@ Default value: 1
 
 ### ProfileCourseEdits
 
+Default value: 1
+
 ### ProfileDataCompress
 
+Default value: 0
+
 ### ProfileStepEdits
+
+Default value: 0
 
 ### ProgressiveLifebar
 
@@ -1010,6 +1178,8 @@ Default value: 0
 
 ### PruneFonts
 
+Default value: 1
+
 ### PseudoLocalize
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
@@ -1018,11 +1188,19 @@ Default value: 0
 
 ### Python23IO_HDXB_DEV_ID
 
+Default value: 3
+
 ### Python23IO_HDXB_PORT
+
+Default value: nothing
 
 ### Python23IO_Mode
 
+Default value: SDP3IO
+
 ### Python23IO_P2IO_EXTIO
+
+Default value: 1
 
 ### PickExtraStage
 
@@ -1031,6 +1209,8 @@ Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 Default value: 0
 
 ### QuirksMode
+
+Allows legacy loading of .xml files.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1044,6 +1224,8 @@ Default value: 0
 
 Possible values are ``"Off"``, ``"Animations"`` and ``Random Movies``
 
+Default value: RandomMovies
+
 ### RateModsAffectFGChanges
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
@@ -1054,7 +1236,8 @@ Default value: 1
 
 Possible values are ``Default``, ``60``, ``70``, ``72``, ``75``, ``90``, ``100``, ``120``, ``144``, ``165``, ``200``, and ``240``.
 
-Default value: Default
+Default value: 0
+
 ### RegenComboAfterMiss
 
 Default value: 5
@@ -1067,9 +1250,15 @@ Default value: 0
 
 ### SatelliteComPort
 
+Default value: nothing
+
 ### ScoreBroadcastURL
 
+Default value: nothing
+
 ### SextetStreamOutputFilename
+
+Default value: \\.\pipe\StepMania-Lights-SextetStream
 
 ### ShowBanners
 
@@ -1089,7 +1278,7 @@ Displays a caution screen before gameplay begins.
 
 Possible values are ``0`` or ``1``. 0 is "Skip" and 1 is "Show".
 
-Default value: 0
+Default value: 1
 
 ### ShowDancingCharacters
 
@@ -1104,6 +1293,14 @@ If the theme is aware, this can toggle visual effects used to signify low health
 Possible values are ``0`` or ``1``. 0 is "Hide" and 1 is "Show".
 
 Default value: 1
+
+### ShowDeltaClock
+
+Adds additional information about **frametime** to the top right of the screen. Those values can be used to view how much time your script (from Themes or modfiles) adds to the frametime, anything above 16ms is very slow and calls for optimization, the more consistant those values are, the better the game will feel.
+
+Possible values are ``0`` or ``1``. 0 is "Hide" and 1 is "Show".
+
+Default value: 0
 
 ### ShowInstructions
 
@@ -1139,6 +1336,12 @@ Default value: 1
 
 ### ShowMasks
 
+Default value: 0
+
+### ShowMeasureLinesInEditorPlayback
+
+Default value: 1
+
 ### ShowMouseCursor
 
 Determines whether the OS mouse cursor will disappear if hovered over the game window.
@@ -1153,6 +1356,12 @@ Toggles whether song titles are displayed in their native language (1), or a tra
 
 Possible values are ``0`` or ``1``. 0 is "Romanization" and 1 is "Native Language".
 
+Default value: 1
+
+### ShowPlayerModifiersInEditor
+
+Shows a list of currently active modifiers while using preview mode.
+
 Default value: 0
 
 ### ShowSongOptions
@@ -1161,7 +1370,7 @@ Toggles whether the game will ask players if they wish to view the Song Options 
 
 Possible values are ``Ask``, ``Hide`` and ``Show``
 
-Default value: "Ask"
+Default value: Ask
 
 ### ShowStats
 
@@ -1179,11 +1388,19 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
+### ShowTwoPlayersInEditor
+
+Default value: 0
+
 ### SignProfileData
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
+
+### SmartAutoKbx
+
+Default value: 1
 
 ### SmoothLines
 
@@ -1193,11 +1410,19 @@ Default value: 0
 
 ### SongBackgrounds
 
+Default value: 1
+
 ### SongBroadcastURL
+
+Default value: nothing
 
 ### SongMinTNSToHideNotes
 
+Default value: None
+
 ### SongNoteskins
+
+Default value: nothing
 
 ### SongsPerPlay
 
@@ -1217,13 +1442,23 @@ Default value: nothing
 
 ### SoundDrivers
 
+Default value: nothing
+
+### SoundLibSampleRateMode
+
+Default value: 2
+
 ### SoundPreferredSampleRate
 
 Default value: 44100
 
 ### SoundPreload16bit
 
+Default value: 1
+
 ### SoundPreloadMaxSamples
+
+Default value: 1048576
 
 ### SoundVolume
 
@@ -1231,13 +1466,15 @@ System sound volume.
 
 Possible values are ``Silent``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
 
-Default value: 0.400000
+Default value: 0.500000
 
 ### SoundVolumeAttract
 
 Possible values are ``Silent``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
 
 Volume used in arcade attract mode.
+
+Default value: 0.500000
 
 ### SoundWriteAhead
 
@@ -1251,6 +1488,8 @@ Default value: 0
 
 ### StreamerMode
 
+Absurdly limits CPU and GPU usage when the game window is not focused.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
@@ -1261,7 +1500,27 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
-### SuperMeterPercentChange**
+### SuperMeterPercentChange
+
+Default values:
+
+- SuperMeterPercentChangeCheckpointHit  =  0.050000
+- SuperMeterPercentChangeCheckpointMiss = -0.200000
+- SuperMeterPercentChangeHeld           =  0.040000
+- SuperMeterPercentChangeHitMine        = -0.400000
+- SuperMeterPercentChangeLetGo          = -0.200000
+- SuperMeterPercentChangeMiss           = -0.200000
+- SuperMeterPercentChangeMissedHold     = -0.000000
+- SuperMeterPercentChangeProW1          =  0.080000
+- SuperMeterPercentChangeProW2          =  0.100000
+- SuperMeterPercentChangeProW3          =  0.120000
+- SuperMeterPercentChangeProW4          =  0.140000
+- SuperMeterPercentChangeProW5          =  0.160000
+- SuperMeterPercentChangeW1             =  0.050000
+- SuperMeterPercentChangeW2             =  0.040000
+- SuperMeterPercentChangeW3             =  0.020000
+- SuperMeterPercentChangeW4             =  0.000000
+- SuperMeterPercentChangeW5             =  0.000000
 
 ### TestInitialScreen
 
@@ -1275,6 +1534,8 @@ Default value: 32
 
 ### Theme
 
+Default value: _fallback
+
 ### ThreadedInput
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
@@ -1283,27 +1544,71 @@ Default value: 1
 
 ### ThreadedMovieDecode
 
+Default value: 1
+
 ### ThreeKeyNavigation
 
 Possible values are ``0`` or ``1``. 0 is ``"Five Key Menu"`` and 1 is ``"Three Key Menu"``.
 
 Default value: 0
 
-### TimeMeterSecondsChange*
+### TimeMeterSecondsChange
+
+Default values:
+
+- TimeMeterSecondsChangeCheckpointHit  =  0.000000
+- TimeMeterSecondsChangeCheckpointMiss = -0.000000
+- TimeMeterSecondsChangeHeld           =  0.000000
+- TimeMeterSecondsChangeHitMine        = -2.000000
+- TimeMeterSecondsChangeLetGo          = -1.000000
+- TimeMeterSecondsChangeMiss           = -4.000000
+- TimeMeterSecondsChangeMissedHold     = -0.000000
+- TimeMeterSecondsChangeProW1          =  0.400000
+- TimeMeterSecondsChangeProW2          =  0.500000
+- TimeMeterSecondsChangeProW3          =  0.600000
+- TimeMeterSecondsChangeProW4          =  0.800000
+- TimeMeterSecondsChangeProW5          =  1.000000
+- TimeMeterSecondsChangeW1             =  0.200000
+- TimeMeterSecondsChangeW2             =  0.000000
+- TimeMeterSecondsChangeW3             = -0.500000
+- TimeMeterSecondsChangeW4             = -1.000000
+- TimeMeterSecondsChangeW5             = -2.000000
 
 ### TimingWindowAdd
 
+Default value: 0.000000
+
 ### TimingWindowJump
+
+Default value: 0.250000
 
 ### TimingWindowScale
 
 Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, and ``Justice``.
 
-Default value: 4.000000
+Default value: 1.000000
 
-### TimingWindowSeconds*
+### TimingWindowSeconds
 
 These settings define the timing windows used in themes that do not use the Project OutFox LuaTiming system. These settings are provided for backwards compatibility purposes.
+
+Default values:
+
+- TimingWindowSecondsAttack     = 0.135000
+- TimingWindowSecondsCheckpoint = 0.166400
+- TimingWindowSecondsHold       = 0.250000
+- TimingWindowSecondsMine       = 0.090000
+- TimingWindowSecondsProW1      = 0.000000
+- TimingWindowSecondsProW2      = 0.000000
+- TimingWindowSecondsProW3      = 0.000000
+- TimingWindowSecondsProW4      = 0.000000
+- TimingWindowSecondsProW5      = 0.000000
+- TimingWindowSecondsRoll       = 0.500000
+- TimingWindowSecondsW1         = 0.022500
+- TimingWindowSecondsW2         = 0.045000
+- TimingWindowSecondsW3         = 0.090000
+- TimingWindowSecondsW4         = 0.135000
+- TimingWindowSecondsW5         = 0.180000
 
 ### TrilinearFiltering
 
@@ -1311,9 +1616,29 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
-### TugMeterPercentChange*
+### TugMeterPercentChange
 
 These settings are used for the lifebar in battle mode.
+
+Default values:
+
+- TugMeterPercentChangeCheckpointHit  =  0.002000
+- TugMeterPercentChangeCheckpointMiss = -0.002000
+- TugMeterPercentChangeHeld           =  0.008000
+- TugMeterPercentChangeHitMine        = -0.040000
+- TugMeterPercentChangeLetGo          = -0.020000
+- TugMeterPercentChangeMiss           = -0.020000
+- TugMeterPercentChangeMissedHold     =  0.000000
+- TugMeterPercentChangeProW1          =  0.012000
+- TugMeterPercentChangeProW2          =  0.014000
+- TugMeterPercentChangeProW3          =  0.016000
+- TugMeterPercentChangeProW4          =  0.018000
+- TugMeterPercentChangeProW5          =  0.020000
+- TugMeterPercentChangeW1             =  0.010000
+- TugMeterPercentChangeW2             =  0.008000
+- TugMeterPercentChangeW3             =  0.004000
+- TugMeterPercentChangeW4             =  0.000000
+- TugMeterPercentChangeW5             = -0.010000
 
 ### TurnOffWMCompositor
 
@@ -1325,7 +1650,7 @@ Default value: 0
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
-Default value: 0
+Default value: 1
 
 ### UseEGLonLinux
 
@@ -1349,6 +1674,10 @@ Possible values are ``0`` or ``1``. 0 is ``No`` and 1 is ``Yes``.
 
 Default value: 1
 
+### UseSongNameOnGameWindow
+
+Default value: 0
+
 ### UseUnlockSystem
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
@@ -1365,9 +1694,13 @@ Default value: 0
 
 Determines the renderer used by Project OutFox.
 
+Default value: opengl
+
 ### VisualDelaySeconds
 
 Possible values are ``-5``, ``-4``, ``-3``, ``-2``, ``-1``, ``0``, ``+1``, ``+2``, ``+3``, ``+4`` and ``+5``
+
+Default value: 0.000000
 
 ### VideoUpscaleFilter
 
