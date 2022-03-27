@@ -7,7 +7,7 @@ geekdocAnchor: false
 geekdocBreadcrumb: false
 ---
 
-Welcome to the documentation wiki for [Project OutFox](https://projectoutfox.com)! **Project OutFox** is a multi-moded rhythm game sandbox. It features 15 (and growing!) different simulation styles allowing players to create unique experiences in charting, gimmicks and effects to outfox their friends! The game allows for full customisation and supports a number of community led custom chart formats.
+Welcome to the documentation wiki for [Project OutFox](https://projectoutfox.com)! **Project OutFox** is a multi-moded rhythm game sandbox. It features 17 (and growing!) different simulation styles allowing players to create unique experiences in charting, gimmicks and effects to outfox their friends! The game allows for full customisation and supports a number of community led custom chart formats.
 
 
 This wiki is still a work in progress, so keep checking back for updates on new content! It is edited via a [Git repository](https://github.com/TeamRizu/outfox-wiki); commit access is limited to the development team, but you can always perform pull requests too.
