@@ -1694,23 +1694,29 @@ Default value: 0
 
 Determines the renderer used by Project OutFox.
 
+Possible values are ``opengl`` (Legacy OpenGL), ``glad`` (Modern OpenGL) and ``null`` (Null renderer)
+
 Default value: opengl
 
 ### VisualDelaySeconds
 
-Possible values are ``-5``, ``-4``, ``-3``, ``-2``, ``-1``, ``0``, ``+1``, ``+2``, ``+3``, ``+4`` and ``+5``
+Sets how much display lag to compensate for, in seconds. In-game, the choices are represented as ``-5`` to ``+5``
+
+Possible choices are ``-0.125``, ``-0.100``, ``-0.075``, ``-0.050``, ``-0.025``, ``0.000``, ``0.025``, ``0.050``, ``0.075``, ``0.100`` and ``0.125``
 
 Default value: 0.000000
 
 ### VideoUpscaleFilter
 
-Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+Determines what upscale filter FFMPEG uses when playing videos.
+
+Possible values are ``0`` (None, fastest), ``1`` (Fast bilinear), ``2`` (Bilinear), ``3`` (Bicubic), ``4`` (X Sharpens + Contrast, ``5`` (Point), ``6`` (Area), ``7`` (Bicublin, recommended), ``8`` (Gaussian), ``9`` (Sinc), ``10`` (Lanczos) and ``11`` (Spline).
 
 Default value: 0
 
 ### Vsync
 
-Enables vertical sync (Vsync)
+Enables vertical sync (Vsync), which limits the framerate to the display's refresh rate.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -1718,12 +1724,24 @@ Default value: 1
 
 ### WideScreen16_10
 
-Possible values are ``0`` and ``1``. 0 is ``Off`` and 1 is ``On``
+Meant to be used in an options screen as a simple replacement for the `DisplayAspectRatio` preference.
+
+This is used for switching between 4:3 and 16:10.
+
+Possible values are ``On`` and ``Off``.
+
+When ``On``, `DisplayAspectRatio` becomes ``1.600000`` (16:10). ``Off`` sets it to ``1.333333`` (4:3) instead.
 
 
 ### WideScreen16_9
 
-Possible values are ``0`` and ``1``. 0 is ``Off`` and 1 is ``On``
+Meant to be used in an options screen as a simple replacement for the `DisplayAspectRatio` preference.
+
+This is used for switching between 4:3 and 16:9.
+
+Possible values are ``On`` and ``Off``.
+
+When ``On``, `DisplayAspectRatio` becomes ``1.777778`` (16:9). ``Off`` sets it to ``1.333333`` (4:3) instead.
 
 ### Windowed
 
@@ -1733,4 +1751,4 @@ Possible values are ``0`` or ``1``. 0 is ``Full Screen`` and 1 is ``Windowed``.
 
 Default value: 1
 
-_Written and Maintained by Moru Zerinho6_
+_Written and Maintained by Moru Zerinho6 & MTK_
