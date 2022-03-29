@@ -1524,9 +1524,13 @@ Default values:
 
 ### TestInitialScreen
 
+Sets the first screen to go to upon opening the game. Useful for working on themes. If empty or invalid, the game uses the current theme's ``InitialScreen`` metric.
+
 Default value: nothing
 
 ### TextureColorDepth
+
+Sets the color depth of textures. Most current-day systems should work fine with ``32``.
 
 Possible values are ``16`` and ``32``. 16 is ``16bit`` and 32 is ``32bit``.
 
@@ -1534,9 +1538,15 @@ Default value: 32
 
 ### Theme
 
+Sets what theme is used. Can be Game-specific. Note that if a theme starts with `_`, it cannot be used as a normal theme and will default back to ``default``.
+
+Built-in themes: ``default``, ``home``
+
 Default value: _fallback
 
 ### ThreadedInput
+
+Creates a thread for the input driver if enabled. Affects the Windows ``legacy`` and ``Pump`` input drivers.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1544,15 +1554,23 @@ Default value: 1
 
 ### ThreadedMovieDecode
 
+Enabled threaded movie decoding. Currently unused.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
 Default value: 1
 
 ### ThreeKeyNavigation
+
+Determines if navigation is done with three buttons (Left/Right/Start) or five buttons (Left/Right/Up/Down/Start).
 
 Possible values are ``0`` or ``1``. 0 is ``"Five Key Menu"`` and 1 is ``"Three Key Menu"``.
 
 Default value: 0
 
 ### TimeMeterSecondsChange
+
+These settings define how much time (in seconds) one gains or loses based on judgment. This affects the Time-type lifebar.
 
 Default values:
 
@@ -1575,18 +1593,23 @@ Default values:
 - TimeMeterSecondsChangeW5             = -2.000000
 
 ### TimingWindowAdd
+Adds a static amount, in seconds, to all judgment windows. ITG uses ``0.0015``.
 
 Default value: 0.000000
 
 ### TimingWindowJump
 
+How far apart simultaneous steps can be to be counted as a jump, in seconds. Only used for counting the calories used during a song.
+
 Default value: 0.250000
 
 ### TimingWindowScale
 
-Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, and ``Justice``.
+Applies a multiplier on the judgment windows. A higher number means tighter judgment windows.
 
-Default value: 1.000000
+Possible values are ``1`` (1.500000), ``2`` (1.330000), ``3`` (1.160000), ``4`` (1.000000), ``5`` (0.840000), ``6`` (0.660000), ``7`` (0.500000), ``8`` (0.330000), and ``Justice`` (0.200000).
+
+Default value: 1.000000 (``4``)
 
 ### TimingWindowSeconds
 
@@ -1611,6 +1634,8 @@ Default values:
 - TimingWindowSecondsW5         = 0.180000
 
 ### TrilinearFiltering
+
+Turns on trilinear filtering in the ``opengl`` renderer. This is unused in the ``glad`` renderer.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1642,11 +1667,15 @@ Default values:
 
 ### TurnOffWMCompositor
 
+Disable the current Window Manager's compositing on linux.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### UpdateCheckEnable
+
+When enabled, the game checks for online updates. Currently unused since early 2012.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1654,13 +1683,15 @@ Default value: 1
 
 ### UseEGLonLinux
 
+When enabled, SDL attempts to use EGL for the OpenGL context. Currently unused.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### UseOldJoystickMapping
 
-Toggles between HIDAPI and XInput modes.
+Toggles between HIDAPI and XInput modes. Useful for when a controller doesn't work in one of the modes.
 
 Possible values are ``0`` or ``1``. 0 is ``"XInput"`` and 1 is ``"HIDAPI"``.
 
@@ -1668,7 +1699,7 @@ Default value: 1
 
 ### UsePointsandBlending
 
-Enable or disable the use of points between each section of an ActorMultiVertex and use blending modes into it.
+Enable or disable the use of points between each section of an ActorMultiVertex or NotePath and use blending modes into it.
 
 Possible values are ``0`` or ``1``. 0 is ``No`` and 1 is ``Yes``.
 
@@ -1676,15 +1707,23 @@ Default value: 1
 
 ### UseSongNameOnGameWindow
 
+When enabled, the title of the song currently being edited will show on the game window's title.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
 Default value: 0
 
 ### UseUnlockSystem
+
+Enables the metrics.ini-driven unlock system. This affects courses, selectable mods, songs and charts.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### UsingArcadePads
+
+Tells the SDL input handler that arcade dance pads are in use, and to act accordingly based on what input system is used.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
