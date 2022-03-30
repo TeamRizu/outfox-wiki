@@ -1436,7 +1436,7 @@ Default value: 1
 
 ### SmoothLines
 
-LineStrips are drawn via GPU functions instead of quads if this is turned on. Note that the thickness of the line depnds on the GPU being used.
+LineStrips are drawn via GPU functions instead of quads if this is turned on. Note that the thickness of the line depends on the GPU being used.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -1458,7 +1458,7 @@ Default value: nothing
 
 ### SongMinTNSToHideNotes
 
-A version of ```MinTNSToHideNotes`` meant to be used in the song-level Preferences.ini.
+A version of ``MinTNSToHideNotes`` meant to be used in the song-level Preferences.ini.
 
 Default value: nothing
 
