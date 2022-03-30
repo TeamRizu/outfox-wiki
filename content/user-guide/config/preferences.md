@@ -1250,17 +1250,25 @@ Default value: 0
 
 ### SatelliteComPort
 
+The COM device to use for the Satellite lights driver.
+
 Default value: nothing
 
 ### ScoreBroadcastURL
+
+The URL to send POST requests to upon finishing a song. Data sent there includes machine guid, song path, the md5 of the simfile, title and author of the song, player guid, if it's on event mode, difficulty, chart type, score, percentage, grade and number of players.
 
 Default value: nothing
 
 ### SextetStreamOutputFilename
 
+The file to use as the output pipe for the SextetStream lights driver.
+
 Default value: \\.\pipe\StepMania-Lights-SextetStream
 
 ### ShowBanners
+
+Show the song's banner on the music wheel screen.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -1268,7 +1276,9 @@ Default value: 1
 
 ### ShowBeginnerHelper
 
-Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
+Shows a helper if a beginner difficulty chart is currently playing.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
@@ -1281,6 +1291,8 @@ Possible values are ``0`` or ``1``. 0 is "Skip" and 1 is "Show".
 Default value: 1
 
 ### ShowDancingCharacters
+
+Determines if a dancing character shows up in gameplay and how the character is chosen.
 
 Possible values are ``Default to Off``, ``Default to Random``, and ``Select``.
 
@@ -1328,7 +1340,7 @@ Default value: 0
 
 ### ShowLyrics
 
-It Shows lyrics from a .crs file in-game in present.
+Shows lyrics from a .lrc file in-game if present.
 
 Possible values are ``0`` and ``1``. 0 is "Hide" and 1 is "Show".
 
@@ -1336,9 +1348,17 @@ Default value: 1
 
 ### ShowMasks
 
+Shows actors set up to be masks when they would otherwise be invisible.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 0
 
 ### ShowMeasureLinesInEditorPlayback
+
+Shows chart measure lines & beat bars in the editor's playback mode if on.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 1
 
@@ -1346,7 +1366,7 @@ Default value: 1
 
 Determines whether the OS mouse cursor will disappear if hovered over the game window.
 
-Possible values: ``0`` or ``1``. 0 is ``"Off"`` and 1 is ``"On"``. Changing this in-game might require a game restart.
+Possible values: ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``. Changing this in-game might require a game restart.
 
 Default value: 1
 
@@ -1362,6 +1382,8 @@ Default value: 1
 
 Shows a list of currently active modifiers while using preview mode.
 
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 0
 
 ### ShowSongOptions
@@ -1374,7 +1396,7 @@ Default value: Ask
 
 ### ShowStats
 
-Shows an overlay in the top corner of the screen for information such as frame rate and memory usage.
+Shows an overlay in the top corner of the screen with information such as frame rate and memory usage.
 
 Possible values are ``0`` and ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -1390,9 +1412,15 @@ Default value: 0
 
 ### ShowTwoPlayersInEditor
 
+Show two players in the editor's playback mode. Useful for testing modfiles that make use of two players.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 0
 
 ### SignProfileData
+
+Sign any profiles that are loaded. May result in unusable profiles if the signing isn't set up properly.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1400,9 +1428,15 @@ Default value: 0
 
 ### SmartAutoKbx
 
+Allow the game to autogen kbx mode charts from all other modes.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 1
 
 ### SmoothLines
+
+LineStrips are drawn via GPU functions instead of quads if this is turned on. Note that the thickness of the line depnds on the GPU being used.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -1410,17 +1444,27 @@ Default value: 0
 
 ### SongBackgrounds
 
+Show the backround of the song being played.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 1
 
 ### SongBroadcastURL
+
+The URL to send POST requests to when playing a song. Data sent there includes machine guid, song path, the md5 of the ssc, the transliterated song title, song artist and if it's in event mode.
 
 Default value: nothing
 
 ### SongMinTNSToHideNotes
 
-Default value: None
+A version of ```MinTNSToHideNotes`` meant to be used in the song-level Preferences.ini.
+
+Default value: nothing
 
 ### SongNoteskins
+
+Which NoteSkins to preload when playing a song. Usually used in the song-level Preferences.ini.
 
 Default value: nothing
 
@@ -1434,29 +1478,49 @@ Default value: 3
 
 ### SongsPerPlayOrEvent
 
+Meant to be used in an options screen where it would set ``SongsPerPlay`` on the first five choices, and turn on ``EventMode`` for the last choice.
+
 Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, and ``Event``.
 
 ### SoundDevice
+
+The sound device to try to use, which is passed into the audio driver. If not specified, the audio driver will grab a device on its' own.
 
 Default value: nothing
 
 ### SoundDrivers
 
+What sound driver Project OutFox will use. If not specified, the game will attempt to auto-detect which driver to use.
+
+Possible values are ``DirectSound-sw`` (Windows), ``WaveOut`` (Windows), ``ALSA-sw`` (Linux), ``alsa`` (Linux), ``Pulse`` (Linux), ``OSS`` (Linux), ``JACK`` (Linux), ``AudioUnit`` (MacOS) and ``Null``.
+
 Default value: nothing
 
 ### SoundLibSampleRateMode
+
+What converter libresamplerate uses when resampling audio.
+
+Possible values are ``0`` (Sinc, Best Quality), ``1`` (Sinc, Medium Quality), ``2`` (Sinc, Fastest), ``3`` (Zero Order Hold), ``4`` (Linear).
 
 Default value: 2
 
 ### SoundPreferredSampleRate
 
+What sample rate the audio drivers will try to use by default.
+
 Default value: 44100
 
 ### SoundPreload16bit
 
+Make the preload system use 16-bit buffers internally.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 1
 
 ### SoundPreloadMaxSamples
+
+If an audio file has more samples than this amount, the Preload system won't bother preloading it.
 
 Default value: 1048576
 
@@ -1470,19 +1534,23 @@ Default value: 0.500000
 
 ### SoundVolumeAttract
 
-Possible values are ``Silent``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
+Volume used in arcade attract mode. (Usually used to catch a person's interest in an arcade setting)
 
-Volume used in arcade attract mode.
+Possible values are ``Silent``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
 
 Default value: 0.500000
 
 ### SoundWriteAhead
 
+How many frames the audio driver should read ahead. Used in the ALSA, ALSA-sw and DSound drivers.
+
 Default value: 4096
 
 ### StretchBackgrounds
 
-Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
+Stretch the song's background image. Used only in a few theme's ScreenGameplay in transition. Unused otherwise.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
@@ -1496,11 +1564,15 @@ Default value: 0
 
 ### SubSortByNumSteps
 
+When enabled, the number of taps and holds in a chart are also taken into account when sorting by chart type and meter.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### SuperMeterPercentChange
+
+Determines how much gets added to the Rave Mode's "Super Meter" (Charges attacks on the opponent).
 
 Default values:
 
