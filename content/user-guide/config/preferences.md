@@ -1106,15 +1106,23 @@ Default value: 0
 
 ### PAL
 
+Forces PAL mode. Appears to be unused.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### PacDriveLightOrdering
 
+What lights order to send to the PacDrive.
+
+Possible values are ``minimaid``, ``lumenar`` and ``openitg``.
+
 Default value: minimaid
 
 ### PadStickSeconds
+
+How long, in seconds, the pad can stick for.
 
 Default value: 0.000000
 
@@ -1128,9 +1136,15 @@ Default value: 1
 
 ### PreCacheAllWheelSorts
 
+Precaches the list for all sorting types.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
 Default value: 0
 
 ### PreferredSortUsesGroups
+
+Makes the preferred sort show groups. Only affects Roulette sort.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1140,25 +1154,43 @@ Default value: 1
 
 Pay Mode-specific setting, allowing styles requiring two controllers (such as Double) to be played without requiring 2 credits.
 
+Possible values are ``DoubleFor1Credit``, ``2PlayersFor1Credit`` and ``1PBothAtOnceFor1Credit``,
+
 Default value: DoubleFor1Credit
 
 ### ProductID
+
+Used to track software versions for HighScores. Not the same as what the lua function ``ProductID`` provides.
 
 Default value: 1
 
 ### ProfileCourseEdits
 
+Load course edits from profiles.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
 Default value: 1
 
 ### ProfileDataCompress
+
+Compresses the profile's Stats.xml into Stats.xml.gz.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### ProfileStepEdits
 
+Load edit steps from profiles.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
 Default value: 0
 
 ### ProgressiveLifebar
+
+Makes every consecutive miss drain more life. Disabled in Extra Stage and the How To Play modes.
 
 Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, and ``8``.
 
@@ -1166,11 +1198,15 @@ Default value: 0
 
 ### ProgressiveNonstopLifebar
 
+When enabled, The lifebar gets more difficult based on how many stages in a player is. Affects the NonStop play mode.
+
 Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, and ``9``(Insanity).
 
 Default value: 0
 
 ### ProgressiveStageLifebar
+
+When enabled, The lifebar gets more difficult based on how many stages in a player is. Affects the Regular play mode.
 
 Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, and ``9``(Insanity).
 
@@ -1178,9 +1214,15 @@ Default value: 0
 
 ### PruneFonts
 
+Prunes any unused fonts. Currently unused.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 1
 
 ### PseudoLocalize
+
+Show different characters with accents to help test the display of those.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1188,21 +1230,35 @@ Default value: 0
 
 ### Python23IO_HDXB_DEV_ID
 
+The device ID of the HDXB device.
+
 Default value: 3
 
 ### Python23IO_HDXB_PORT
+
+What port to use for COM4.
 
 Default value: nothing
 
 ### Python23IO_Mode
 
+The IO mode to use for the Pyton board.
+
+Possible values are ``HDP3IO``, ``HDP2IO``, ``SDP2IO``, ``SDP3IOHDXB``, ``SDP3IO`` and ``none`.`
+
 Default value: SDP3IO
 
 ### Python23IO_P2IO_EXTIO
 
+Specifies if the Python board has EXTIO.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 1
 
 ### PickExtraStage
+
+Allows one to pick what to play for the Extra Stage. Currently unused.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -1218,9 +1274,13 @@ Default value: 0
 
 ### RageSoundSampleCountClamp
 
+The maximum amount of samples the audio driver should expect to avoid driver skipping. Used only in the generic software audio driver.
+
 Default value: 0
 
 ### RandomBackgroundMode
+
+What is used when random backgrounds are enabled in gameplay. ``Animations`` reads from the game's BGAnimations folder, while ``RandomMovies`` reads from the game's RandomMovies folder.
 
 Possible values are ``"Off"``, ``"Animations"`` and ``Random Movies``
 
@@ -1228,21 +1288,29 @@ Default value: RandomMovies
 
 ### RateModsAffectFGChanges
 
+When active, actor tweens and modifier approaching in gameplay are affected by the music rate.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
 ### RefreshRate
 
-Possible values are ``Default``, ``60``, ``70``, ``72``, ``75``, ``90``, ``100``, ``120``, ``144``, ``165``, ``200``, and ``240``.
+The refresh rate to use when in VSync.
+
+Possible values are ``Default`` (0), ``60``, ``70``, ``72``, ``75``, ``90``, ``100``, ``120``, ``144``, ``165``, ``200``, and ``240``.
 
 Default value: 0
 
 ### RegenComboAfterMiss
 
+How much combo is needed to start gaining life after a miss.
+
 Default value: 5
 
 ### ReverseMouseButtons
+
+Flip the left and right button inputs. Only used in the SDL input handler.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
