@@ -880,9 +880,13 @@ Default value: 300.000000
 
 ### MachineName
 
+The display name to use for the machine profile.
+
 Default value: nothing
 
 ### MaxHighScoresPerListForMachine
+
+The maximum number of high scores to save for a song on the machine profile.
 
 Possible values are ``1``, ``2``. ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, ``9``, ``10``, ``11``, ``12``, ``13``, ``14``, ``15``, ``16``, ``17``, ``18``, ``19`` and ``20``.
 
@@ -890,19 +894,27 @@ Default value: 10
 
 ### MaxHighScoresPerListForPlayer
 
+The maximum number of high scores to save for a song on a player's profile.
+
 Possible values are ``1``, ``2``. ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, ``9``, ``10``, ``11``, ``12``, ``13``, ``14``, ``15``, ``16``, ``17``, ``18``, ``19`` and ``20``.
 
 Default value: 3
 
 ### MaxInputLatencySeconds
 
+The amount of latency the input has, in seconds. Only affects the maximum step distance.
+
 Default value: 0.000000
 
 ### MaxRegenComboAfterMiss
 
+The maximum amount of combo needed to start gaining life after a miss.
+
 Default value: 5
 
 ### MaxSongsInEditCourse
+
+The maximum amount of edit charts allowed in a course. ``-1`` turns off the limit.
 
 Default value: -1
 
@@ -916,17 +928,29 @@ Default value: 1024
 
 ### MemoryCardDriver
 
+The driver to use for reading external profiles.
+
+Possible values are ``USB`` or ``Directory``.
+
 Default value: USB
 
 ### MemoryCardOsMountPointP1
+
+The system mount point to use for reading USB profile data from for P1.
 
 Default value: nothing
 
 ### MemoryCardOsMountPointP2
 
+The system mount point to use for reading USB profile data from for P2.
+
 Default value: nothing
 
 ### MemoryCardPadmissEnabled
+
+Allows saving scores in a format made for Padmiss.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default vlaue: 0
 
@@ -942,33 +966,53 @@ Default value: Project OutFox
 
 ### MemoryCardProfiles
 
+Enables saving profiles to USB devices.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
 Default value: 1
 
 ### MemoryCardUsbBusP1
+
+The bus to use for reading P1's USB profile from.
 
 Defaut value: -1
 
 ### MemoryCardUsbBusP2
 
+The bus to use for reading P2's USB profile from.
+
 Defaut value: -1
 
 ### MemoryCardUsbLevelP1
+
+The level to use for reading P1's USB profile from.
 
 Defaut value: -1
 
 ### MemoryCardUsbLevelP2
 
+The level to use for reading P2's USB profile from.
+
 Defaut value: -1
 
 ### MemoryCardUsbPortP1
+
+The port to use for reading P1's USB profile from.
 
 Defaut value: -1
 
 ### MemoryCardUsbPortP2
 
+The port to use for reading P2's USB profile from.
+
 Defaut value: -1
 
 ### MemoryCards
+
+Enables the memory card system, allowing USB profiles to be used.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Defaut value: 0
 
@@ -982,11 +1026,15 @@ Default value: 0
 
 ### MercifulBeginner
 
+Beginner difficulty charts get more lenient score & grade, and the W5 judgment wingow is larger.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### MercifulDrain
+
+Losses in the life bar are scaled by the player's current life percentage.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -994,15 +1042,21 @@ Default value: 0
 
 ### MercifulSuperMeter
 
+Losses in the super meter are scaled by the player's life percentage.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
 ### MinPercentageForMachineCourseHighScore
 
+The minimum course score required for a high score to be saved to the machine profile.
+
 Default value: 0.000100
 
 ### MinPercentageForMachineSongHighScore
+
+The minimum song score required for a high score to be saved to the machine profile.
 
 Default value: 0.000100
 
@@ -1015,6 +1069,8 @@ Possible values are ``TNS_None``, ``TNS_HitMine``, ``TNS_AvoidMine``, ``TNS_Chec
 Default value: W3
 
 ### Minimum1FullSongInCourses
+
+Ensures that the first song in a course can be played in its' entirety.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1030,11 +1086,15 @@ Default value: 0
 
 ### MoveRandomToEnd
 
+Moves courses with random songs at the end of the list.
+
 Possible values are ``0`` or ``1``. 0 is "No" and 1 is "Yes".
 
 Default value: 0
 
 ### MovieColorDepth
+
+The color depth for use for movie files.
 
 Possible values are ``16`` or ``32``. 16 is ``16bit`` and 32 is ``32bit``.
 
@@ -1042,15 +1102,23 @@ Default value: 32
 
 ### MovieDrivers
 
+The driver to use for viewing movie files.
+
+Possible values are ``MiniFFMpeg``, ``ModernFFMpeg`` and ``Null``
+
 Default value: nothing
 
 ### MusicWheelSwitchSpeed
 
-Possible values are ``Slow``, ``Normal``, ``Fast``, and ``Really fast``.
+How fast the music wheel can be scrolled.
+
+Possible values are ``Slow`` (5), ``Normal`` (10), ``Fast`` (15), and ``Really fast`` (25).
 
 Default value: 15
 
 ### MusicWheelUsesSections
+
+The music wheel shows sections.
 
 Possible values are "Never", "Always" and "Title Only"
 
@@ -1066,17 +1134,27 @@ Default value: 0
 
 ### NetworkStartOffset
 
+An additional start offset, in seconds, to be used when in Gameplay online.
+
 Default value: 3.000000
 
 ### NeverBoostAppPriority
+
+When set to on, the game's priority is never boosted, even when focused.
+
+Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
 
 Default value: 0
 
 ### NeverCacheList
 
+A list of song groups to never create cache for.
+
 Default value: nothing
 
 ### NumBackgrounds
+
+The number of random backgrounds to use in gameplay.
 
 Possible values are ``1``, ``5``, ``10``, ``15``, and ``20``.
 
@@ -1084,21 +1162,31 @@ Default value: 10
 
 ### NotePathWidth
 
-Possible values are ``Thin``, ``500``, ``250``, ``150``, ``100``, and ``Fat``.
+**This preference is obsolete.**
+
+Altered how thick the notepath is.
+
+Possible values are ``Thin`` (1000), ``500``, ``250``, ``150``, ``100``, and ``Fat`` (50).
 
 ### OnlyDedicatedMenuButtons
 
-Possible values ``Use Gameplay Buttons`` and ``Only Dedicated Buttons``.
+When enabled, only the menu buttons can be used to navigate the menus.
+
+Possible values ``Use Gameplay Buttons`` (0) and ``Only Dedicated Buttons`` (1).
 
 Default value: 0
 
 ### OnlyPreferredDifficulties
+
+All charts shown in the music wheel match the chosen style and difficulty.
 
 Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
 
 Default value: 0
 
 ### OITGStyleLights
+
+When enabled, lights charts act like they would in OpenITG.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
