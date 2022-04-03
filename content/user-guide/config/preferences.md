@@ -638,11 +638,15 @@ Default value: 0.500000
 
 ### FailOffForFirstStageEasy
 
+When enabled, the first stage will have failing disabled when on Easy or Beginner.
+
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
 ### FailOffInBeginner
+
+When enabled, Beginner charts will have failing disabled.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -674,11 +678,15 @@ Default value: 0
 
 ### ForceLogFlush
 
+All logs are immediately written to disk ("Flushed") when logging is performed.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### ForceMipMaps
+
+Forces mipmapping on all textures. Currently unused.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -686,11 +694,13 @@ Default value: 0
 
 ### FrameLimitPercent
 
+How much the game clamps down on performance in terms of a percentage. Having ``0.000000`` as the value disables this feature.
+
 Default value: 0.000000
 
 ### FullscreenIsBorderlessWindow
 
-Enables borderless fullscreen.
+Enables borderless fullscreen, which makes the window takes up the size of the screen without changing the actual resolution of the screen.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -698,19 +708,29 @@ Default value: 1
 
 ### GDDMRealToNew
 
+Turns all GDDM "Real" charts into "New" charts.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 0
 
 ### GetRankingName
 
-Possible values are ``Off``, ``On``, ``Ranking Songs``.
+Determine if the high score name entry screen is shown.
+
+Possible values are ``Off``, ``On`` or ``Ranking Songs``.
 
 Default value: On
 
 ### GlobalOffsetSeconds
 
+The offset that gets added to every song's own offset, in seconds.
+
 Default value: -0.008000
 
 ### HarshHotLifePenalty
+
+When this is on and a player has a full life bar, the penalty when losing health is harsher than it otherwise is.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -718,15 +738,23 @@ Default value: 1
 
 ### HiddenSongs
 
+Some songs are meant to be only played courses or through roulette. Turn this off to display all songs regardless of the ``SELECTABLE`` setting of the simfile.
+
 Possible values are ``0`` and ``1``. 0 is ``"Off"`` and 1 is ``"On"``.
 
 Default value: 0
 
 ### HideIncompleteCourses
 
+Hide courses that don't have all the songs it has listed available.
+
+Possible values are ``0`` and ``1``. 0 is ``"Off"`` and 1 is ``"On"``.
+
 Default value: 0
 
 ### HighResolutionTextures
+
+Set if high resoltuion textures are used. Not all themes support this. ``Auto`` makes high resolution happen if the window's height is greather than 480 pixels. Unused by the engine as a whole, but still has an enum for it.
 
 Possible values are ``Auto``, ``Force Off``, and ``Force On``.
 
@@ -734,19 +762,31 @@ Default value: Auto
 
 ### HighresScreenshotsBydefault
 
+When on, pressing the screenshot button saves high-res png screenshots. Holding shift will result in low-res compressed jpgs being saved instead.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### IgnoredDialogs
 
-Default value: 0
+Dialog types listed here won't pop up a dialog box (Not applicable in linux systems or systems running in fullscreen)
+
+Possible values are ``FRAME_DIMENSIONS_WARNING`` (unused), ``MissingThemeElement``, ``JSON_PARSE_ERROR`` (unused), ``UpdateCheckConfirm`` (unused), ``UpdateCheck`` (unused), ``LUA_ERROR``, ``INVALID_GAME_COMMAND``, ``NOTESKIN_ERROR``, ``BROKEN_FILE_REFERENCE``, ``SPRITE_INVALID_FRAME``, ``COMMAND_DEFINED_TWICE``, ``INVALID_SCREEN`` and ``XML_PARSE_ERROR``.
+
+Default value: nothing
 
 ### ImageCache
+
+The type of image cache to use. Note that the current image cache system is considered **deprecated for now**.
+
+Possible values are ``Off``, ``LowResPreload``, ``LowResLoadOnDemand`` and ``Full``.
 
 Default value: "Off"
 
 ### InputBackgroundEvents
+
+Allow joystick & controller input to be accepted regardless of the application focus.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -754,15 +794,29 @@ Default value: 0
 
 ### InputDebounceTime
 
-Possible valures are ``0ms``, ``10ms``, ``20ms``, ``30ms``, ``40ms``, ``50ms``, ``60ms``, ``70ms``, ``80ms``, ``90ms`` and ``100ms``.
+How much time the input is known to bounce, in seconds. Use this if your input device doesn't stabilize inputs quickly.
+
+Possible valures are ``0ms`` (0.0), ``10ms`` (0.01), ``20ms`` (0.02), ``30ms`` (0.03), ``40ms`` (0.04), ``50ms`` (0.05), ``60ms`` (0.06), ``70ms`` (0.07), ``80ms`` (0.08), ``90ms`` (0.09) and ``100ms`` (0.1).
 
 Default value: 0.000000
 
 ### InputDrivers
 
+The input drivers the game will use. If nothing is specified, the following defaults will be used:
+
+Windows: ``Para,legacy,minisdl``
+
+Mac: ``portmidi,SDL``
+
+Linux: ``SDL``
+
+The possible values are ``Rtio`` (Windows), ``legacy`` (Windows), ``SDL`` (All platforms), ``Reflex`` (All platforms), ``rtmidi`` (All platforms), ``Python23IO`` (All platforms), ``portmidi`` (All platforms), ``para`` (All platforms) and ``minisdl`` (All platforms)
+
 Default value: nothing
 
 ### Interlaced
+
+Force interlaced mode. Currently unused.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -770,13 +824,21 @@ Default value: 0
 
 ### JoystickDeadzone
 
+Sets the joystick dead zone for the SDL input handler. Useful if inputs are firing off when doing nothing.
+
 Default value: 3200
 
 ### JointPremium
 
+A separate variant of the ``Premium`` preference meant for use on options menus. ``Off`` corresponds to the ``Double For 1 Credit`` option.
+
 Possible values are ``Off`` and ``2 Players for 1 Credit``.
 
 ### Language
+
+The language the game will display text in. Not all themes support all languages.
+
+Possible values are ``de`` (German), ``en`` (English), ``fr`` (French), ``he`` (Hebrew), ``ja`` (Japanese), ``nl`` (Dutch), ``pl`` (Polish), ``pt-BR`` (Portuguese-Brazil), ``sk`` (Slovak), ``zh-Hans`` (Chinese Simplified) and ``zh-Hant`` (Chinese Traditional)
 
 Default value: nothing
 
@@ -784,9 +846,13 @@ Note: The game will default to en (English).
 
 ### LastConnectedServer
 
+The previously set server to connect to.
+
 Default value: nothing
 
 ### LastSeenInputDevices
+
+The previously seen input devices during the session.
 
 Default value: nothing
 
@@ -798,41 +864,61 @@ Default value: nothing
 
 ### LastSeenMemory
 
-Automatically generated.
+The previously seen amount of memory the system had available. Automatically generated.
 
 Default value: nothing
 
 ### LifeDifficulty
 
-Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, and ``7``.
+How harsh the life bar is. This is meant to be used in options menus and sets the value of ``LifeDifficultyScale``.
+
+Possible values are ``1`` (1.6), ``2`` (1.4), ``3`` (1.2), ``4`` (1.0), ``5`` (0.8), ``6`` (0.6), and ``7`` (0.4).
+
+Default value: 1.000000
 
 ### LifeDifficultyScale
+
+The base life difficulty used. Going under 1.0 means smaller gains and larger losses.
 
 Default value: 1.000000
 
 ### LightsAheadSeconds
 
+How far ahead the lights should be from the current song, in seconds.
+
 Default value: 0.500000
 
 ### LightsComPort
+
+The COM port to use in the Win32 Serial lights driver.
 
 Default value: COM54
 
 ### LightsDriver
 
+The lights driver to use for cabinet and controller lights. If nothing is provided, ``SystemMessage,Export`` is used.
+
+Possible values: ``Win32Serial`` (Windows), ``Win32Parallel`` (Windows), ``Win32Minimaid`` (Windows), ``PacDrive`` (Windows), ``SextetStreamToFile`` (All platforms), ``Satellite`` (All platforms), ``EXTIO`` (All Platforms), ``Export`` (All Platforms), ``SystemMessage`` (All platforms, requires ``DebugLights``), ``LinuxWeedTech`` (Linux), ``PIUIO_Leds`` (Linux), ``PIUIO`` (Linux), ``LinuxParallel`` (Linux), ``LinuxPacDrive`` (Linux), ``LinuxMinimaid`` (Linux), ``ITGIO`` (Linux)
+
 Default value: nothing
 
 ### LightsFalloffSeconds
+
+How long a cabinet light is on for, in seconds.
 
 Default value: 0.100000
 
 ### LightsStepsDifficulty
 
-If there is no dedicated ``lights`` chart, generate lighting patterns from the existing charts on the specified difficul(ties).
+If there is no dedicated ``lights`` chart, generate lighting patterns from the existing charts on the specified difficulty/difficulties.
+
+Possible values are ``beginner``, ``easy``, ``medium``, ``hard``, ``challenge``, ``edit``, ``d7``, ``d8``, ``d9``, ``d10``, ``d11``, ``d12``, ``d13``, ``d14``, ``d15`` and ``selected`` (Uses the chart selected by the player)
 
 Default value: hard, medium
 
 ### LockCourseDifficulties
+
+When on, difficulties across multiple players are locked for courses.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -840,19 +926,25 @@ Default value: 1
 
 ### LogCheckpoints
 
+When on, internal code checkpoints are outputted to the logs.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### LogFPS
 
-At intervals, the current FPS and average FPS will be appended to the log file.
+At 1 second intervals, the current FPS, average FPS, VPF, current memory usage, and delta clock data (if enabled) will be appended to the log file.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
 ### LogSkips
 
 **This preference is obsolete.**
+
+Outputs detected song position skips to the logs.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -868,7 +960,7 @@ Default value: 1
 
 ### LongVerSongSeconds
 
-Determines how long a song must be for it to be classified as "long" (which costs two stages outside of Event Mode).
+Determines how long a song, in seconds, must be for it to be classified as "long" (which costs two stages outside of Event Mode).
 
 Default value: 150.000000
 
