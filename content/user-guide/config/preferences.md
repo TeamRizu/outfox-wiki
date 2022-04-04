@@ -119,6 +119,8 @@ Default value: 1
 
 ### AllowMultitexture
 
+Allows models to use multitextures when rendering.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
@@ -143,6 +145,8 @@ Default value: 0
 
 ### AllowUnacceleratedRenderer
 
+Allows the game to continue using a software renderer if the graphics card cannot support the renderer.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
@@ -157,6 +161,8 @@ Default value: everywhere
 
 ### AnisotropicFiltering
 
+Makes textures use "Anisotropic Filtering". Noted to have no effect without mipmaps on, and is not mutually exclusive with ``TrilinearFiltering``.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
@@ -169,6 +175,8 @@ Default value: nothing
 
 ### ArcadeOptionsNavigation
 
+Determines how menus are navigated. ``StepMania Style`` has up & down switch option lines, and start moves to the end. ``Arcade Style`` has up & down ignored, while start moves to the next option line.
+
 Possible values are ``0`` and ``1``. 0 is ``StepMania Style`` and 1 is ``Arcade Style``.
 
 Default value: 0
@@ -177,11 +185,13 @@ Default value: 0
 
 Determines how often sound is enabled during the attract mode loop in arcade mode.
 
-Possible values are ``Never``, ``Always``, ``2 Times``, ``3 Times``, ``4 Times``, and ``5 Times``.
+Possible values are ``Never``, ``Always`` (EveryTime), ``2 Times`` (Every2Times), ``3 Times`` (Every3Times), ``4 Times`` (Every4Times), and ``5 Times`` (Every5Times).
 
 Default value: EveryTime
 
 ### AutoJoin
+
+Allow both players to automatically join upon a single start press.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -189,13 +199,17 @@ Default value: 0
 
 ### AutoMapOnJoyChange
 
+Perform automapping when a change in joysticks or controllers is detected.
+
 Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On (recommended)".
 
 Default value: 1
 
 ### AutoPlay
 
-Possible values are ``Off``, ``On`` and ``CPU-Controlled``.
+Has the notefield play the chart by itself. ``CPU-controlled`` involves the ``AI.ini`` file inside the game's ``Data`` folder.
+
+Possible values are ``Off`` (Human), ``On`` (Autoplay) and ``CPU-Controlled`` (CPU).
 
 Default value: "Human"
 
@@ -217,6 +231,8 @@ Default value: 0
 
 ### AxisFix
 
+Enables an input workaround for certain devices where the D-Pad won't allow two inputs of opposing directions.
+
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
@@ -231,13 +247,19 @@ Default value: 0.700000
 
 ### BGBrightnessNoZero
 
-Possible values are ``0%``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
+Similar to ``BGBrightness``, but without a ``0%`` option. meant for use in options menus.
+
+Possible values are ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
 
 ### BGBrightnessOrStatic
+
+Sets the brightness of the background or disables it. Meant for use on options menus. ``Disabled`` sets ``SongBackgrounds`` to ``Off``.
 
 Possible values are ``Disabled``, ``25% Bright``, ``50% Bright`` and ``75% Bright``.
 
 ### BackUpAllSongSaves
+
+When enabled, all SSC saving saves a secondary backup file.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -253,6 +275,8 @@ Default value: CoverPreserve
 
 ### BlinkGameplayButtonLightsOnNote
 
+Make game lights blink when chart notes cross the receptors.
+
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
@@ -266,6 +290,8 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 Default value: 0
 
 ### BreakComboToGetItem
+
+Require breaking combo to earn items in a player's inventory.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -312,9 +338,13 @@ Default value: Home
 
 ### CoinModeNoHome
 
+This is meant for use in options menus. It only lets one choose between pay and free play modes.
+
 Possible values are ``Pay`` and ``Free Play``.
 
 ### CoinRecoveryExpirationHours
+
+How many hours can pass before previously inserted coins from a different instance expire.
 
 Default value: 0
 
@@ -336,27 +366,37 @@ Default value: 0
 
 ### ConstantUpdateDeltaSeconds
 
+Experimantal feature that forces a specific update loop, in seconds. Having a value of ``0.0`` disables it.
+
 Default value: 0.000000
 
 ### Cookie
 
 ~~Cookies are delicious delicacies.~~
 
+Used by the file downloader functionality. Since this functionality isn't really used, this preference is also mostly unused.
+
 Default value: nothing
 
 ### CourseSortOrder
 
-Possible values are "Num Songs", "Average Feet", "Total Feet" and "Ranking"
+Chooses how the courses are sorted.
+
+Possible values are "Preferred" (Not choosable in options menus), "Num Songs" (Songs), "Average Feet" (Meter), "Total Feet" (MeterSum) and "Ranking" (MeterRank)
 
 Default value: Songs
 
 ### CoursesToShowRanking
 
+The names of courses to show in the Ranking screen. Only used when showing ranking of specific trails.
+
 Default value: nothing
 
 ### CurrentGame
 
-Determines the current [game types](/user-guide/config/game-types/).
+The game type currently being used.
+
+Possible values are listed [here](/user-guide/games).
 
 Default value: nothing
 
@@ -369,6 +409,8 @@ Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 Default value: 0
 
 ### CustomSongsLoadTimeout
+
+How long the game will wait for a custom song to be loaded before skipping it, in seconds.
 
 Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, ``9``, ``10``, ``20``, ``30`` and ``1000``.
 
@@ -400,9 +442,15 @@ Default value: 120.000000
 
 ### DDRStyleRandom
 
+When on, random backrounds use the song's directory as the seed, ensuring a conststent set of backgrounds for each song.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 0
 
 ### DebounceCoinInputTime
+
+How much the coin detector's input is expected to bounce, in seconds. (Because otherwise, a coin could count as more than one)
 
 Default value: 0.000000
 
@@ -416,23 +464,31 @@ Default value: 0
 
 ### DefaultFailType
 
+The fail type to use for every song. Alters the ``DefaultModifiers`` preference. Meant for use in options menus.
+
 Possible values are ``Immediate``, ``ImmediateContinue``, ``EndOfSong`` and ``Off``.
 
 ### DefaultLocalProfileIDP1
+
+The ID of the local profile that P1 should use by default.
 
 Default value: nothing
 
 ### DefaultLocalProfileIDP2
 
+The ID of the local profile that P2 should use by default.
+
 Default value: nothing
 
 ### DefaultModifiers
 
-Comma-separated list of modifiers used by players with no profile, or a new profile with no personal settings.
+Comma-separated list of modifiers used by players with no profile, or a new profile with no personal settings. This is game-specific (eg: ``dance`` and ``pump`` could have different default modifiers).
 
 Default value: nothing
 
 ### DefaultRecordLength
+
+How long a recording section in the editor is by defualt, in seconds.
 
 Default value: 4.000000
 
@@ -452,11 +508,15 @@ Default value: 1
 
 ### DelayedCreditsReconcile
 
+This allows extra credits already present to be used for new plays. Otherwise, the required amount of credits is always required every time.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### DelayedModelDelete
+
+When enabled, model unloading is delayed.
 
 Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
 
@@ -464,11 +524,15 @@ Default value: 0
 
 ### DelayedScreenLoad
 
+When enabled, all unloaded screens are immediately removed from memory. May result in redundant loads.
+
 Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### DelayedTextureDelete
+
+When on, textures are held in memory, reducing the amount of times it needs to load.
 
 Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
 
@@ -476,11 +540,15 @@ Default value: 0
 
 ### DisableScreenSaver
 
+Disables the X11 screensaver while the game is running. Currently unused.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
 ### DisableUploadDir
+
+Turns off writing scores to the profile's Upload folder.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -530,6 +598,8 @@ Possible values are your GPU supported resolutions.
 
 ### DisplayId
 
+The display to use for fullscreen.
+
 Default value: nothing
 
 ### Disqualification
@@ -541,6 +611,8 @@ Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 Default value: 0
 
 ### EXTIOComPort
+
+The COM port to use for the EXTIO lights driver.
 
 Default value: COM1
 
@@ -560,13 +632,19 @@ Default value: 50
 
 ### EditRecordModeLeadIn
 
+The amount of time, in seconds, before reaching the start of the recording section in the editor.
+
 Default value: 1.000000
 
 ### EditorMemoryCardOsMountPoint
 
+The mount point for the memory card system that the editor specifically uses.
+
 Default value: nothing
 
 ### EditorNoteSkinP1 and EditorNoteSkinP2
+
+The noteskin to use for the two players in the editor. P1 also affects the noteskin in the main editor.
 
 Default value: default
 
@@ -580,11 +658,15 @@ Default value: 1
 
 ### EnableAttackSounds
 
+Plays a sound every time an attack starts and ends. Not all themes have sounds for this, and this may not be desired if playing simfiles with a lot of scripted attacks.
+
 Possible values are ``0`` and ``1``. 0 is ``No`` and 1 is ``Yes``.
 
 Default value: 1
 
 ### EnableBeginnerHelperBackgrounds
+
+When enabled, a dancing character on a pad will show up during Beginner charts.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -600,6 +682,8 @@ Default value: 1
 
 ### EnableScoreboard
 
+Shows an online score board. Only has an effect during networked rounds.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
@@ -614,11 +698,19 @@ Default value: 1
 
 ### ExtendedChineseGlyphs
 
+**This preference is obsolete.**
+
+Enables extended Chinese glyph support.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### ExtendedJapaneseGlyphs
+
+**This preference is obsolete.**
+
+Enables extended Japanese glyph support.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -626,11 +718,17 @@ Default value: 0
 
 ### ExtendedKoreanGlyphs
 
+**This preference is obsolete.**
+
+Enables extended Korean glyph support.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### EffectVolume
+
+The volume used for sounds labeled as an effect. This is multiplied by the ``SoundVolume`` preference when Effects are played.
 
 Possible values are ``Silent``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
 
