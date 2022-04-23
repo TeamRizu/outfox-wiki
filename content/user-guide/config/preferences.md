@@ -223,7 +223,7 @@ Default value: 1
 
 ### AutogenSteps
 
-Allows charts to be generated for other [game types](/user-guide/config/game-types/) and styles that a song does not have its charts for.
+Allows charts to be generated for other [game types](/user-guide/games/) and styles that a song does not have its charts for.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1902,7 +1902,7 @@ Default value: 0
 
 ### StreamerMode
 
-Absurdly limits CPU and GPU usage when the game window is not focused.
+Removes the framerate cap when the window is not focused.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
