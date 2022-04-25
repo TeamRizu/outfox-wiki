@@ -119,6 +119,8 @@ Default value: 1
 
 ### AllowMultitexture
 
+Allows models to use multitextures when rendering.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
@@ -143,6 +145,8 @@ Default value: 0
 
 ### AllowUnacceleratedRenderer
 
+Allows the game to continue using a software renderer if the graphics card cannot support the renderer.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
@@ -157,6 +161,8 @@ Default value: everywhere
 
 ### AnisotropicFiltering
 
+Makes textures use "Anisotropic Filtering". Noted to have no effect without mipmaps on, and is not mutually exclusive with ``TrilinearFiltering``.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
@@ -169,6 +175,8 @@ Default value: nothing
 
 ### ArcadeOptionsNavigation
 
+Determines how menus are navigated. ``StepMania Style`` has up & down switch option lines, and start moves to the end. ``Arcade Style`` has up & down ignored, while start moves to the next option line.
+
 Possible values are ``0`` and ``1``. 0 is ``StepMania Style`` and 1 is ``Arcade Style``.
 
 Default value: 0
@@ -177,11 +185,13 @@ Default value: 0
 
 Determines how often sound is enabled during the attract mode loop in arcade mode.
 
-Possible values are ``Never``, ``Always``, ``2 Times``, ``3 Times``, ``4 Times``, and ``5 Times``.
+Possible values are ``Never``, ``Always`` (EveryTime), ``2 Times`` (Every2Times), ``3 Times`` (Every3Times), ``4 Times`` (Every4Times), and ``5 Times`` (Every5Times).
 
 Default value: EveryTime
 
 ### AutoJoin
+
+Allow both players to automatically join upon a single start press.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -189,13 +199,17 @@ Default value: 0
 
 ### AutoMapOnJoyChange
 
+Perform automapping when a change in joysticks or controllers is detected.
+
 Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On (recommended)".
 
 Default value: 1
 
 ### AutoPlay
 
-Possible values are ``Off``, ``On`` and ``CPU-Controlled``.
+Has the notefield play the chart by itself. ``CPU-controlled`` involves the ``AI.ini`` file inside the game's ``Data`` folder.
+
+Possible values are ``Off`` (Human), ``On`` (Autoplay) and ``CPU-Controlled`` (CPU).
 
 Default value: "Human"
 
@@ -209,13 +223,15 @@ Default value: 1
 
 ### AutogenSteps
 
-Allows charts to be generated for other [game types](/user-guide/config/game-types/) and styles that a song does not have its charts for.
+Allows charts to be generated for other [game types](/user-guide/games/) and styles that a song does not have its charts for.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### AxisFix
+
+Enables an input workaround for certain devices where the D-Pad won't allow two inputs of opposing directions.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -231,13 +247,19 @@ Default value: 0.700000
 
 ### BGBrightnessNoZero
 
-Possible values are ``0%``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
+Similar to ``BGBrightness``, but without a ``0%`` option. meant for use in options menus.
+
+Possible values are ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
 
 ### BGBrightnessOrStatic
+
+Sets the brightness of the background or disables it. Meant for use on options menus. ``Disabled`` sets ``SongBackgrounds`` to ``Off``.
 
 Possible values are ``Disabled``, ``25% Bright``, ``50% Bright`` and ``75% Bright``.
 
 ### BackUpAllSongSaves
+
+When enabled, all SSC saving saves a secondary backup file.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -253,6 +275,8 @@ Default value: CoverPreserve
 
 ### BlinkGameplayButtonLightsOnNote
 
+Make game lights blink when chart notes cross the receptors.
+
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
@@ -266,6 +290,8 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 Default value: 0
 
 ### BreakComboToGetItem
+
+Require breaking combo to earn items in a player's inventory.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -312,9 +338,13 @@ Default value: Home
 
 ### CoinModeNoHome
 
+This is meant for use in options menus. It only lets one choose between pay and free play modes.
+
 Possible values are ``Pay`` and ``Free Play``.
 
 ### CoinRecoveryExpirationHours
+
+How many hours can pass before previously inserted coins from a different instance expire.
 
 Default value: 0
 
@@ -336,27 +366,37 @@ Default value: 0
 
 ### ConstantUpdateDeltaSeconds
 
+Experimantal feature that forces a specific update loop, in seconds. Having a value of ``0.0`` disables it.
+
 Default value: 0.000000
 
 ### Cookie
 
 ~~Cookies are delicious delicacies.~~
 
+Used by the file downloader functionality. Since this functionality isn't really used, this preference is also mostly unused.
+
 Default value: nothing
 
 ### CourseSortOrder
 
-Possible values are "Num Songs", "Average Feet", "Total Feet" and "Ranking"
+Chooses how the courses are sorted.
+
+Possible values are "Preferred" (Not choosable in options menus), "Num Songs" (Songs), "Average Feet" (Meter), "Total Feet" (MeterSum) and "Ranking" (MeterRank)
 
 Default value: Songs
 
 ### CoursesToShowRanking
 
+The names of courses to show in the Ranking screen. Only used when showing ranking of specific trails.
+
 Default value: nothing
 
 ### CurrentGame
 
-Determines the current [game types](/user-guide/config/game-types/).
+The game type currently being used.
+
+Possible values are listed [here](/user-guide/games).
 
 Default value: nothing
 
@@ -369,6 +409,8 @@ Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 Default value: 0
 
 ### CustomSongsLoadTimeout
+
+How long the game will wait for a custom song to be loaded before skipping it, in seconds.
 
 Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, ``9``, ``10``, ``20``, ``30`` and ``1000``.
 
@@ -400,9 +442,15 @@ Default value: 120.000000
 
 ### DDRStyleRandom
 
+When on, random backrounds use the song's directory as the seed, ensuring a conststent set of backgrounds for each song.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 0
 
 ### DebounceCoinInputTime
+
+How much the coin detector's input is expected to bounce, in seconds. (Because otherwise, a coin could count as more than one)
 
 Default value: 0.000000
 
@@ -416,23 +464,31 @@ Default value: 0
 
 ### DefaultFailType
 
+The fail type to use for every song. Alters the ``DefaultModifiers`` preference. Meant for use in options menus.
+
 Possible values are ``Immediate``, ``ImmediateContinue``, ``EndOfSong`` and ``Off``.
 
 ### DefaultLocalProfileIDP1
+
+The ID of the local profile that P1 should use by default.
 
 Default value: nothing
 
 ### DefaultLocalProfileIDP2
 
+The ID of the local profile that P2 should use by default.
+
 Default value: nothing
 
 ### DefaultModifiers
 
-Comma-separated list of modifiers used by players with no profile, or a new profile with no personal settings.
+Comma-separated list of modifiers used by players with no profile, or a new profile with no personal settings. This is game-specific (eg: ``dance`` and ``pump`` could have different default modifiers).
 
 Default value: nothing
 
 ### DefaultRecordLength
+
+How long a recording section in the editor is by defualt, in seconds.
 
 Default value: 4.000000
 
@@ -452,11 +508,15 @@ Default value: 1
 
 ### DelayedCreditsReconcile
 
+This allows extra credits already present to be used for new plays. Otherwise, the required amount of credits is always required every time.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### DelayedModelDelete
+
+When enabled, model unloading is delayed.
 
 Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
 
@@ -464,11 +524,15 @@ Default value: 0
 
 ### DelayedScreenLoad
 
+When enabled, all unloaded screens are immediately removed from memory. May result in redundant loads.
+
 Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### DelayedTextureDelete
+
+When on, textures are held in memory, reducing the amount of times it needs to load.
 
 Possible values are ``0`` and ``1``. 0 is disabled and 1 is enabled.
 
@@ -476,11 +540,15 @@ Default value: 0
 
 ### DisableScreenSaver
 
+Disables the X11 screensaver while the game is running. Currently unused.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
 ### DisableUploadDir
+
+Turns off writing scores to the profile's Upload folder.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -530,6 +598,8 @@ Possible values are your GPU supported resolutions.
 
 ### DisplayId
 
+The display to use for fullscreen.
+
 Default value: nothing
 
 ### Disqualification
@@ -541,6 +611,8 @@ Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 Default value: 0
 
 ### EXTIOComPort
+
+The COM port to use for the EXTIO lights driver.
 
 Default value: COM1
 
@@ -560,13 +632,19 @@ Default value: 50
 
 ### EditRecordModeLeadIn
 
+The amount of time, in seconds, before reaching the start of the recording section in the editor.
+
 Default value: 1.000000
 
 ### EditorMemoryCardOsMountPoint
 
+The mount point for the memory card system that the editor specifically uses.
+
 Default value: nothing
 
 ### EditorNoteSkinP1 and EditorNoteSkinP2
+
+The noteskin to use for the two players in the editor. P1 also affects the noteskin in the main editor.
 
 Default value: default
 
@@ -580,11 +658,15 @@ Default value: 1
 
 ### EnableAttackSounds
 
+Plays a sound every time an attack starts and ends. Not all themes have sounds for this, and this may not be desired if playing simfiles with a lot of scripted attacks.
+
 Possible values are ``0`` and ``1``. 0 is ``No`` and 1 is ``Yes``.
 
 Default value: 1
 
 ### EnableBeginnerHelperBackgrounds
+
+When enabled, a dancing character on a pad will show up during Beginner charts.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -600,6 +682,8 @@ Default value: 1
 
 ### EnableScoreboard
 
+Shows an online score board. Only has an effect during networked rounds.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
@@ -614,11 +698,19 @@ Default value: 1
 
 ### ExtendedChineseGlyphs
 
+**This preference is obsolete.**
+
+Enables extended Chinese glyph support.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### ExtendedJapaneseGlyphs
+
+**This preference is obsolete.**
+
+Enables extended Japanese glyph support.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -626,11 +718,17 @@ Default value: 0
 
 ### ExtendedKoreanGlyphs
 
+**This preference is obsolete.**
+
+Enables extended Korean glyph support.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### EffectVolume
+
+The volume used for sounds labeled as an effect. This is multiplied by the ``SoundVolume`` preference when Effects are played.
 
 Possible values are ``Silent``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
 
@@ -638,11 +736,15 @@ Default value: 0.500000
 
 ### FailOffForFirstStageEasy
 
+When enabled, the first stage will have failing disabled when on Easy or Beginner.
+
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
 ### FailOffInBeginner
+
+When enabled, Beginner charts will have failing disabled.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -674,11 +776,15 @@ Default value: 0
 
 ### ForceLogFlush
 
+All logs are immediately written to disk ("Flushed") when logging is performed.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### ForceMipMaps
+
+Forces mipmapping on all textures. Currently unused.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -686,11 +792,13 @@ Default value: 0
 
 ### FrameLimitPercent
 
+How much the game clamps down on performance in terms of a percentage. Having ``0.000000`` as the value disables this feature.
+
 Default value: 0.000000
 
 ### FullscreenIsBorderlessWindow
 
-Enables borderless fullscreen.
+Enables borderless fullscreen, which makes the window takes up the size of the screen without changing the actual resolution of the screen.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -698,19 +806,29 @@ Default value: 1
 
 ### GDDMRealToNew
 
+Turns all GDDM "Real" charts into "New" charts.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 0
 
 ### GetRankingName
 
-Possible values are ``Off``, ``On``, ``Ranking Songs``.
+Determine if the high score name entry screen is shown.
+
+Possible values are ``Off``, ``On`` or ``Ranking Songs``.
 
 Default value: On
 
 ### GlobalOffsetSeconds
 
+The offset that gets added to every song's own offset, in seconds.
+
 Default value: -0.008000
 
 ### HarshHotLifePenalty
+
+When this is on and a player has a full life bar, the penalty when losing health is harsher than it otherwise is.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -718,15 +836,23 @@ Default value: 1
 
 ### HiddenSongs
 
+Some songs are meant to be only played courses or through roulette. Turn this off to display all songs regardless of the ``SELECTABLE`` setting of the simfile.
+
 Possible values are ``0`` and ``1``. 0 is ``"Off"`` and 1 is ``"On"``.
 
 Default value: 0
 
 ### HideIncompleteCourses
 
+Hide courses that don't have all the songs it has listed available.
+
+Possible values are ``0`` and ``1``. 0 is ``"Off"`` and 1 is ``"On"``.
+
 Default value: 0
 
 ### HighResolutionTextures
+
+Set if high resoltuion textures are used. Not all themes support this. ``Auto`` makes high resolution happen if the window's height is greather than 480 pixels. Unused by the engine as a whole, but still has an enum for it.
 
 Possible values are ``Auto``, ``Force Off``, and ``Force On``.
 
@@ -734,19 +860,31 @@ Default value: Auto
 
 ### HighresScreenshotsBydefault
 
+When on, pressing the screenshot button saves high-res png screenshots. Holding shift will result in low-res compressed jpgs being saved instead.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### IgnoredDialogs
 
-Default value: 0
+Dialog types listed here won't pop up a dialog box (Not applicable in linux systems or systems running in fullscreen)
+
+Possible values are ``FRAME_DIMENSIONS_WARNING`` (unused), ``MissingThemeElement``, ``JSON_PARSE_ERROR`` (unused), ``UpdateCheckConfirm`` (unused), ``UpdateCheck`` (unused), ``LUA_ERROR``, ``INVALID_GAME_COMMAND``, ``NOTESKIN_ERROR``, ``BROKEN_FILE_REFERENCE``, ``SPRITE_INVALID_FRAME``, ``COMMAND_DEFINED_TWICE``, ``INVALID_SCREEN`` and ``XML_PARSE_ERROR``.
+
+Default value: nothing
 
 ### ImageCache
+
+The type of image cache to use. Note that the current image cache system is considered **deprecated for now**.
+
+Possible values are ``Off``, ``LowResPreload``, ``LowResLoadOnDemand`` and ``Full``.
 
 Default value: "Off"
 
 ### InputBackgroundEvents
+
+Allow joystick & controller input to be accepted regardless of the application focus.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -754,15 +892,29 @@ Default value: 0
 
 ### InputDebounceTime
 
-Possible valures are ``0ms``, ``10ms``, ``20ms``, ``30ms``, ``40ms``, ``50ms``, ``60ms``, ``70ms``, ``80ms``, ``90ms`` and ``100ms``.
+How much time the input is known to bounce, in seconds. Use this if your input device doesn't stabilize inputs quickly.
+
+Possible valures are ``0ms`` (0.0), ``10ms`` (0.01), ``20ms`` (0.02), ``30ms`` (0.03), ``40ms`` (0.04), ``50ms`` (0.05), ``60ms`` (0.06), ``70ms`` (0.07), ``80ms`` (0.08), ``90ms`` (0.09) and ``100ms`` (0.1).
 
 Default value: 0.000000
 
 ### InputDrivers
 
+The input drivers the game will use. If nothing is specified, the following defaults will be used:
+
+Windows: ``Para,legacy,minisdl``
+
+Mac: ``portmidi,SDL``
+
+Linux: ``SDL``
+
+The possible values are ``Rtio`` (Windows), ``legacy`` (Windows), ``SDL`` (All platforms), ``Reflex`` (All platforms), ``rtmidi`` (All platforms), ``Python23IO`` (All platforms), ``portmidi`` (All platforms), ``para`` (All platforms) and ``minisdl`` (All platforms)
+
 Default value: nothing
 
 ### Interlaced
+
+Force interlaced mode. Currently unused.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -770,13 +922,21 @@ Default value: 0
 
 ### JoystickDeadzone
 
+Sets the joystick dead zone for the SDL input handler. Useful if inputs are firing off when doing nothing.
+
 Default value: 3200
 
 ### JointPremium
 
+A separate variant of the ``Premium`` preference meant for use on options menus. ``Off`` corresponds to the ``Double For 1 Credit`` option.
+
 Possible values are ``Off`` and ``2 Players for 1 Credit``.
 
 ### Language
+
+The language the game will display text in. Not all themes support all languages.
+
+Possible values are ``de`` (German), ``en`` (English), ``fr`` (French), ``he`` (Hebrew), ``ja`` (Japanese), ``nl`` (Dutch), ``pl`` (Polish), ``pt-BR`` (Portuguese-Brazil), ``sk`` (Slovak), ``zh-Hans`` (Chinese Simplified) and ``zh-Hant`` (Chinese Traditional)
 
 Default value: nothing
 
@@ -784,9 +944,13 @@ Note: The game will default to en (English).
 
 ### LastConnectedServer
 
+The previously set server to connect to.
+
 Default value: nothing
 
 ### LastSeenInputDevices
+
+The previously seen input devices during the session.
 
 Default value: nothing
 
@@ -798,41 +962,61 @@ Default value: nothing
 
 ### LastSeenMemory
 
-Automatically generated.
+The previously seen amount of memory the system had available. Automatically generated.
 
 Default value: nothing
 
 ### LifeDifficulty
 
-Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, and ``7``.
+How harsh the life bar is. This is meant to be used in options menus and sets the value of ``LifeDifficultyScale``.
+
+Possible values are ``1`` (1.6), ``2`` (1.4), ``3`` (1.2), ``4`` (1.0), ``5`` (0.8), ``6`` (0.6), and ``7`` (0.4).
+
+Default value: 1.000000
 
 ### LifeDifficultyScale
+
+The base life difficulty used. Going under 1.0 means smaller gains and larger losses.
 
 Default value: 1.000000
 
 ### LightsAheadSeconds
 
+How far ahead the lights should be from the current song, in seconds.
+
 Default value: 0.500000
 
 ### LightsComPort
+
+The COM port to use in the Win32 Serial lights driver.
 
 Default value: COM54
 
 ### LightsDriver
 
+The lights driver to use for cabinet and controller lights. If nothing is provided, ``SystemMessage,Export`` is used.
+
+Possible values: ``Win32Serial`` (Windows), ``Win32Parallel`` (Windows), ``Win32Minimaid`` (Windows), ``PacDrive`` (Windows), ``SextetStreamToFile`` (All platforms), ``Satellite`` (All platforms), ``EXTIO`` (All Platforms), ``Export`` (All Platforms), ``SystemMessage`` (All platforms, requires ``DebugLights``), ``LinuxWeedTech`` (Linux), ``PIUIO_Leds`` (Linux), ``PIUIO`` (Linux), ``LinuxParallel`` (Linux), ``LinuxPacDrive`` (Linux), ``LinuxMinimaid`` (Linux), ``ITGIO`` (Linux)
+
 Default value: nothing
 
 ### LightsFalloffSeconds
+
+How long a cabinet light is on for, in seconds.
 
 Default value: 0.100000
 
 ### LightsStepsDifficulty
 
-If there is no dedicated ``lights`` chart, generate lighting patterns from the existing charts on the specified difficul(ties).
+If there is no dedicated ``lights`` chart, generate lighting patterns from the existing charts on the specified difficulty/difficulties.
+
+Possible values are ``beginner``, ``easy``, ``medium``, ``hard``, ``challenge``, ``edit``, ``d7``, ``d8``, ``d9``, ``d10``, ``d11``, ``d12``, ``d13``, ``d14``, ``d15`` and ``selected`` (Uses the chart selected by the player)
 
 Default value: hard, medium
 
 ### LockCourseDifficulties
+
+When on, difficulties across multiple players are locked for courses.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -840,19 +1024,25 @@ Default value: 1
 
 ### LogCheckpoints
 
+When on, internal code checkpoints are outputted to the logs.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### LogFPS
 
-At intervals, the current FPS and average FPS will be appended to the log file.
+At 1 second intervals, the current FPS, average FPS, VPF, current memory usage, and delta clock data (if enabled) will be appended to the log file.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
 ### LogSkips
 
 **This preference is obsolete.**
+
+Outputs detected song position skips to the logs.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -868,7 +1058,7 @@ Default value: 1
 
 ### LongVerSongSeconds
 
-Determines how long a song must be for it to be classified as "long" (which costs two stages outside of Event Mode).
+Determines how long a song, in seconds, must be for it to be classified as "long" (which costs two stages outside of Event Mode).
 
 Default value: 150.000000
 
@@ -880,9 +1070,13 @@ Default value: 300.000000
 
 ### MachineName
 
+The display name to use for the machine profile.
+
 Default value: nothing
 
 ### MaxHighScoresPerListForMachine
+
+The maximum number of high scores to save for a song on the machine profile.
 
 Possible values are ``1``, ``2``. ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, ``9``, ``10``, ``11``, ``12``, ``13``, ``14``, ``15``, ``16``, ``17``, ``18``, ``19`` and ``20``.
 
@@ -890,19 +1084,27 @@ Default value: 10
 
 ### MaxHighScoresPerListForPlayer
 
+The maximum number of high scores to save for a song on a player's profile.
+
 Possible values are ``1``, ``2``. ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, ``9``, ``10``, ``11``, ``12``, ``13``, ``14``, ``15``, ``16``, ``17``, ``18``, ``19`` and ``20``.
 
 Default value: 3
 
 ### MaxInputLatencySeconds
 
+The amount of latency the input has, in seconds. Only affects the maximum step distance.
+
 Default value: 0.000000
 
 ### MaxRegenComboAfterMiss
 
+The maximum amount of combo needed to start gaining life after a miss.
+
 Default value: 5
 
 ### MaxSongsInEditCourse
+
+The maximum amount of edit charts allowed in a course. ``-1`` turns off the limit.
 
 Default value: -1
 
@@ -916,17 +1118,29 @@ Default value: 1024
 
 ### MemoryCardDriver
 
+The driver to use for reading external profiles.
+
+Possible values are ``USB`` or ``Directory``.
+
 Default value: USB
 
 ### MemoryCardOsMountPointP1
+
+The system mount point to use for reading USB profile data from for P1.
 
 Default value: nothing
 
 ### MemoryCardOsMountPointP2
 
+The system mount point to use for reading USB profile data from for P2.
+
 Default value: nothing
 
 ### MemoryCardPadmissEnabled
+
+Allows saving scores in a format made for Padmiss.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default vlaue: 0
 
@@ -942,33 +1156,53 @@ Default value: Project OutFox
 
 ### MemoryCardProfiles
 
+Enables saving profiles to USB devices.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
 Default value: 1
 
 ### MemoryCardUsbBusP1
+
+The bus to use for reading P1's USB profile from.
 
 Defaut value: -1
 
 ### MemoryCardUsbBusP2
 
+The bus to use for reading P2's USB profile from.
+
 Defaut value: -1
 
 ### MemoryCardUsbLevelP1
+
+The level to use for reading P1's USB profile from.
 
 Defaut value: -1
 
 ### MemoryCardUsbLevelP2
 
+The level to use for reading P2's USB profile from.
+
 Defaut value: -1
 
 ### MemoryCardUsbPortP1
+
+The port to use for reading P1's USB profile from.
 
 Defaut value: -1
 
 ### MemoryCardUsbPortP2
 
+The port to use for reading P2's USB profile from.
+
 Defaut value: -1
 
 ### MemoryCards
+
+Enables the memory card system, allowing USB profiles to be used.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Defaut value: 0
 
@@ -982,11 +1216,15 @@ Default value: 0
 
 ### MercifulBeginner
 
+Beginner difficulty charts get more lenient score & grade, and the W5 judgment wingow is larger.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### MercifulDrain
+
+Losses in the life bar are scaled by the player's current life percentage.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -994,15 +1232,21 @@ Default value: 0
 
 ### MercifulSuperMeter
 
+Losses in the super meter are scaled by the player's life percentage.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
 ### MinPercentageForMachineCourseHighScore
 
+The minimum course score required for a high score to be saved to the machine profile.
+
 Default value: 0.000100
 
 ### MinPercentageForMachineSongHighScore
+
+The minimum song score required for a high score to be saved to the machine profile.
 
 Default value: 0.000100
 
@@ -1015,6 +1259,8 @@ Possible values are ``TNS_None``, ``TNS_HitMine``, ``TNS_AvoidMine``, ``TNS_Chec
 Default value: W3
 
 ### Minimum1FullSongInCourses
+
+Ensures that the first song in a course can be played in its' entirety.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1030,11 +1276,15 @@ Default value: 0
 
 ### MoveRandomToEnd
 
+Moves courses with random songs at the end of the list.
+
 Possible values are ``0`` or ``1``. 0 is "No" and 1 is "Yes".
 
 Default value: 0
 
 ### MovieColorDepth
+
+The color depth for use for movie files.
 
 Possible values are ``16`` or ``32``. 16 is ``16bit`` and 32 is ``32bit``.
 
@@ -1042,15 +1292,23 @@ Default value: 32
 
 ### MovieDrivers
 
+The driver to use for viewing movie files.
+
+Possible values are ``MiniFFMpeg``, ``ModernFFMpeg`` and ``Null``
+
 Default value: nothing
 
 ### MusicWheelSwitchSpeed
 
-Possible values are ``Slow``, ``Normal``, ``Fast``, and ``Really fast``.
+How fast the music wheel can be scrolled.
+
+Possible values are ``Slow`` (5), ``Normal`` (10), ``Fast`` (15), and ``Really fast`` (25).
 
 Default value: 15
 
 ### MusicWheelUsesSections
+
+The music wheel shows sections.
 
 Possible values are "Never", "Always" and "Title Only"
 
@@ -1066,17 +1324,27 @@ Default value: 0
 
 ### NetworkStartOffset
 
+An additional start offset, in seconds, to be used when in Gameplay online.
+
 Default value: 3.000000
 
 ### NeverBoostAppPriority
+
+When set to on, the game's priority is never boosted, even when focused.
+
+Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
 
 Default value: 0
 
 ### NeverCacheList
 
+A list of song groups to never create cache for.
+
 Default value: nothing
 
 ### NumBackgrounds
+
+The number of random backgrounds to use in gameplay.
 
 Possible values are ``1``, ``5``, ``10``, ``15``, and ``20``.
 
@@ -1084,15 +1352,23 @@ Default value: 10
 
 ### NotePathWidth
 
-Possible values are ``Thin``, ``500``, ``250``, ``150``, ``100``, and ``Fat``.
+**This preference is obsolete.**
+
+Altered how thick the notepath is.
+
+Possible values are ``Thin`` (1000), ``500``, ``250``, ``150``, ``100``, and ``Fat`` (50).
 
 ### OnlyDedicatedMenuButtons
 
-Possible values ``Use Gameplay Buttons`` and ``Only Dedicated Buttons``.
+When enabled, only the menu buttons can be used to navigate the menus.
+
+Possible values ``Use Gameplay Buttons`` (0) and ``Only Dedicated Buttons`` (1).
 
 Default value: 0
 
 ### OnlyPreferredDifficulties
+
+All charts shown in the music wheel match the chosen style and difficulty.
 
 Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
 
@@ -1100,11 +1376,15 @@ Default value: 0
 
 ### OITGStyleLights
 
+When enabled, lights charts act like they would in OpenITG.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### PAL
+
+Forces PAL mode. Appears to be unused.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1112,9 +1392,15 @@ Default value: 0
 
 ### PacDriveLightOrdering
 
+What lights order to send to the PacDrive.
+
+Possible values are ``minimaid``, ``lumenar`` and ``openitg``.
+
 Default value: minimaid
 
 ### PadStickSeconds
+
+How long, in seconds, the pad can stick for.
 
 Default value: 0.000000
 
@@ -1128,9 +1414,15 @@ Default value: 1
 
 ### PreCacheAllWheelSorts
 
+Precaches the list for all sorting types.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
 Default value: 0
 
 ### PreferredSortUsesGroups
+
+Makes the preferred sort show groups. Only affects Roulette sort.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1140,25 +1432,43 @@ Default value: 1
 
 Pay Mode-specific setting, allowing styles requiring two controllers (such as Double) to be played without requiring 2 credits.
 
+Possible values are ``DoubleFor1Credit``, ``2PlayersFor1Credit`` and ``1PBothAtOnceFor1Credit``,
+
 Default value: DoubleFor1Credit
 
 ### ProductID
+
+Used to track software versions for HighScores. Not the same as what the lua function ``ProductID`` provides.
 
 Default value: 1
 
 ### ProfileCourseEdits
 
+Load course edits from profiles.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
 Default value: 1
 
 ### ProfileDataCompress
+
+Compresses the profile's Stats.xml into Stats.xml.gz.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### ProfileStepEdits
 
+Load edit steps from profiles.
+
+Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
+
 Default value: 0
 
 ### ProgressiveLifebar
+
+Makes every consecutive miss drain more life. Disabled in Extra Stage and the How To Play modes.
 
 Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, and ``8``.
 
@@ -1166,11 +1476,15 @@ Default value: 0
 
 ### ProgressiveNonstopLifebar
 
+When enabled, The lifebar gets more difficult based on how many stages in a player is. Affects the NonStop play mode.
+
 Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, and ``9``(Insanity).
 
 Default value: 0
 
 ### ProgressiveStageLifebar
+
+When enabled, The lifebar gets more difficult based on how many stages in a player is. Affects the Regular play mode.
 
 Possible values are ``0``(Off) or ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, ``7``, ``8``, and ``9``(Insanity).
 
@@ -1178,9 +1492,15 @@ Default value: 0
 
 ### PruneFonts
 
+Prunes any unused fonts. Currently unused.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 1
 
 ### PseudoLocalize
+
+Show different characters with accents to help test the display of those.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1188,21 +1508,35 @@ Default value: 0
 
 ### Python23IO_HDXB_DEV_ID
 
+The device ID of the HDXB device.
+
 Default value: 3
 
 ### Python23IO_HDXB_PORT
+
+What port to use for COM4.
 
 Default value: nothing
 
 ### Python23IO_Mode
 
+The IO mode to use for the Pyton board.
+
+Possible values are ``HDP3IO``, ``HDP2IO``, ``SDP2IO``, ``SDP3IOHDXB``, ``SDP3IO`` and ``none`.`
+
 Default value: SDP3IO
 
 ### Python23IO_P2IO_EXTIO
 
+Specifies if the Python board has EXTIO.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 1
 
 ### PickExtraStage
+
+Allows one to pick what to play for the Extra Stage. Currently unused.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -1218,9 +1552,13 @@ Default value: 0
 
 ### RageSoundSampleCountClamp
 
+The maximum amount of samples the audio driver should expect to avoid driver skipping. Used only in the generic software audio driver.
+
 Default value: 0
 
 ### RandomBackgroundMode
+
+What is used when random backgrounds are enabled in gameplay. ``Animations`` reads from the game's BGAnimations folder, while ``RandomMovies`` reads from the game's RandomMovies folder.
 
 Possible values are ``"Off"``, ``"Animations"`` and ``Random Movies``
 
@@ -1228,21 +1566,29 @@ Default value: RandomMovies
 
 ### RateModsAffectFGChanges
 
+When active, actor tweens and modifier approaching in gameplay are affected by the music rate.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
 ### RefreshRate
 
-Possible values are ``Default``, ``60``, ``70``, ``72``, ``75``, ``90``, ``100``, ``120``, ``144``, ``165``, ``200``, and ``240``.
+The refresh rate to use when in VSync.
+
+Possible values are ``Default`` (0), ``60``, ``70``, ``72``, ``75``, ``90``, ``100``, ``120``, ``144``, ``165``, ``200``, and ``240``.
 
 Default value: 0
 
 ### RegenComboAfterMiss
 
+How much combo is needed to start gaining life after a miss.
+
 Default value: 5
 
 ### ReverseMouseButtons
+
+Flip the left and right button inputs. Only used in the SDL input handler.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1250,17 +1596,25 @@ Default value: 0
 
 ### SatelliteComPort
 
+The COM device to use for the Satellite lights driver.
+
 Default value: nothing
 
 ### ScoreBroadcastURL
+
+The URL to send POST requests to upon finishing a song. Data sent there includes machine guid, song path, the md5 of the simfile, title and author of the song, player guid, if it's on event mode, difficulty, chart type, score, percentage, grade and number of players.
 
 Default value: nothing
 
 ### SextetStreamOutputFilename
 
+The file to use as the output pipe for the SextetStream lights driver.
+
 Default value: \\.\pipe\StepMania-Lights-SextetStream
 
 ### ShowBanners
+
+Show the song's banner on the music wheel screen.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -1268,7 +1622,9 @@ Default value: 1
 
 ### ShowBeginnerHelper
 
-Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
+Shows a helper if a beginner difficulty chart is currently playing.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
@@ -1281,6 +1637,8 @@ Possible values are ``0`` or ``1``. 0 is "Skip" and 1 is "Show".
 Default value: 1
 
 ### ShowDancingCharacters
+
+Determines if a dancing character shows up in gameplay and how the character is chosen.
 
 Possible values are ``Default to Off``, ``Default to Random``, and ``Select``.
 
@@ -1328,7 +1686,7 @@ Default value: 0
 
 ### ShowLyrics
 
-It Shows lyrics from a .crs file in-game in present.
+Shows lyrics from a .lrc file in-game if present.
 
 Possible values are ``0`` and ``1``. 0 is "Hide" and 1 is "Show".
 
@@ -1336,9 +1694,17 @@ Default value: 1
 
 ### ShowMasks
 
+Shows actors set up to be masks when they would otherwise be invisible.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 0
 
 ### ShowMeasureLinesInEditorPlayback
+
+Shows chart measure lines & beat bars in the editor's playback mode if on.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 1
 
@@ -1346,7 +1712,7 @@ Default value: 1
 
 Determines whether the OS mouse cursor will disappear if hovered over the game window.
 
-Possible values: ``0`` or ``1``. 0 is ``"Off"`` and 1 is ``"On"``. Changing this in-game might require a game restart.
+Possible values: ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``. Changing this in-game might require a game restart.
 
 Default value: 1
 
@@ -1362,6 +1728,8 @@ Default value: 1
 
 Shows a list of currently active modifiers while using preview mode.
 
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 0
 
 ### ShowSongOptions
@@ -1374,7 +1742,7 @@ Default value: Ask
 
 ### ShowStats
 
-Shows an overlay in the top corner of the screen for information such as frame rate and memory usage.
+Shows an overlay in the top corner of the screen with information such as frame rate and memory usage.
 
 Possible values are ``0`` and ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -1390,9 +1758,15 @@ Default value: 0
 
 ### ShowTwoPlayersInEditor
 
+Show two players in the editor's playback mode. Useful for testing modfiles that make use of two players.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 0
 
 ### SignProfileData
+
+Sign any profiles that are loaded. May result in unusable profiles if the signing isn't set up properly.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1400,9 +1774,15 @@ Default value: 0
 
 ### SmartAutoKbx
 
+Allow the game to autogen kbx mode charts from all other modes.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 1
 
 ### SmoothLines
+
+LineStrips are drawn via GPU functions instead of quads if this is turned on. Note that the thickness of the line depends on the GPU being used.
 
 Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
@@ -1410,17 +1790,27 @@ Default value: 0
 
 ### SongBackgrounds
 
+Show the backround of the song being played.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 1
 
 ### SongBroadcastURL
+
+The URL to send POST requests to when playing a song. Data sent there includes machine guid, song path, the md5 of the ssc, the transliterated song title, song artist and if it's in event mode.
 
 Default value: nothing
 
 ### SongMinTNSToHideNotes
 
-Default value: None
+A version of ``MinTNSToHideNotes`` meant to be used in the song-level Preferences.ini.
+
+Default value: nothing
 
 ### SongNoteskins
+
+Which NoteSkins to preload when playing a song. Usually used in the song-level Preferences.ini.
 
 Default value: nothing
 
@@ -1434,29 +1824,49 @@ Default value: 3
 
 ### SongsPerPlayOrEvent
 
+Meant to be used in an options screen where it would set ``SongsPerPlay`` on the first five choices, and turn on ``EventMode`` for the last choice.
+
 Possible values are ``1``, ``2``, ``3``, ``4``, ``5``, and ``Event``.
 
 ### SoundDevice
+
+The sound device to try to use, which is passed into the audio driver. If not specified, the audio driver will grab a device on its' own.
 
 Default value: nothing
 
 ### SoundDrivers
 
+What sound driver Project OutFox will use. If not specified, the game will attempt to auto-detect which driver to use.
+
+Possible values are ``DirectSound-sw`` (Windows), ``WaveOut`` (Windows), ``ALSA-sw`` (Linux), ``alsa`` (Linux), ``Pulse`` (Linux), ``OSS`` (Linux), ``JACK`` (Linux), ``AudioUnit`` (MacOS) and ``Null``.
+
 Default value: nothing
 
 ### SoundLibSampleRateMode
+
+What converter libresamplerate uses when resampling audio.
+
+Possible values are ``0`` (Sinc, Best Quality), ``1`` (Sinc, Medium Quality), ``2`` (Sinc, Fastest), ``3`` (Zero Order Hold), ``4`` (Linear).
 
 Default value: 2
 
 ### SoundPreferredSampleRate
 
+What sample rate the audio drivers will try to use by default.
+
 Default value: 44100
 
 ### SoundPreload16bit
 
+Make the preload system use 16-bit buffers internally.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
+
 Default value: 1
 
 ### SoundPreloadMaxSamples
+
+If an audio file has more samples than this amount, the Preload system won't bother preloading it.
 
 Default value: 1048576
 
@@ -1470,25 +1880,29 @@ Default value: 0.500000
 
 ### SoundVolumeAttract
 
-Possible values are ``Silent``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
+Volume used in arcade attract mode. (Usually used to catch a person's interest in an arcade setting)
 
-Volume used in arcade attract mode.
+Possible values are ``Silent``, ``10%``, ``20%``, ``30%``, ``40%``, ``50%``, ``60%``, ``70%``, ``80%``, ``90%`` and ``100%``.
 
 Default value: 0.500000
 
 ### SoundWriteAhead
 
+How many frames the audio driver should read ahead. Used in the ALSA, ALSA-sw and DSound drivers.
+
 Default value: 4096
 
 ### StretchBackgrounds
 
-Possible values are ``0`` or ``1``. 0 is "Off" and 1 is "On".
+Stretch the song's background image. Used only in a few theme's ScreenGameplay in transition. Unused otherwise.
+
+Possible values are ``0`` or ``1``. 0 is ``Off`` and 1 is ``On``.
 
 Default value: 0
 
 ### StreamerMode
 
-Absurdly limits CPU and GPU usage when the game window is not focused.
+Removes the framerate cap when the window is not focused.
 
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
@@ -1496,11 +1910,15 @@ Default value: 0
 
 ### SubSortByNumSteps
 
+When enabled, the number of taps and holds in a chart are also taken into account when sorting by chart type and meter.
+
 Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 0
 
 ### SuperMeterPercentChange
+
+Determines how much gets added to the Rave Mode's "Super Meter" (Charges attacks on the opponent).
 
 Default values:
 
