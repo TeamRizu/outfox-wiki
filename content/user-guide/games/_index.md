@@ -18,7 +18,7 @@ As of OutFox-alpha-4.13.0, they include:
 
 ### Dance Pad Based Modes:
 
-* **dance** _(core)_ - The default game type. Similar to games such as _Dance Dance Revolution_ and _In the Groove_, it uses four lanes in the cardinal directions (left, down, up, right). It also contains a 6-lane style (solo) adding up-left and up-right directions, and a 3-lane style using only up-left, down, and up-right.
+* **dance** _(core)_ - The default game type that simulates some of the features of early _Dance Dance Revolution_ and _In the Groove_, it uses four lanes in the cardinal directions (left, down, up, right). It also contains a 6-lane style (solo) adding up-left and up-right directions, and a 3-lane style using only up-left, down, and up-right.
 * **pump** _(core)_ - A five-lane dance game, which uses four diagonal directions and the center rather than cardinal directions. In terms of functionality and behavior it is in line with  _Pro_/StepMania 4 CVS.
 * **techno** _(core)_ - A dance game type designed for pads with nine panels, including 4-lane (similar to dance), 5-lane (similar to pump), 8-lane (using all but the center panel), and 9-lane styles in single and double versions.
 * **smx** _(core)_ - A dance game type designed by _StepRevolution_ using a new unique pad which uses the cardinal directions plus middle (left, down, up, right and centre).
@@ -33,9 +33,9 @@ As of OutFox-alpha-4.13.0, they include:
 
 ### Controller Based Modes:
 
-* **be-mu** _(core)_ - Formally _beat_ Supports 5-key and 7-key styles, and the ability to load BMS files. Full BME/BML support is in progress.
-* **po-mu** _(core)_ - Formally _popn_ A PMS player mode, supporting 3, 4, 5, 7, and 9-button styles, 2 player mode, and the ability to load PMS/BME po-mu files.
-* **kbx** _(core)_ - A 1 to 15 lane game type designed primarily for keyboard play, being able to play songs from any mode using the smartGen system. This is a OutFox-specific game type that does not emulate any specific game.
+* **be-mu** _(core)_ - Formally _beat_ Supports 5-key + scratch and 7-key + scratch styles , and the ability to load BMS files. Full BME/BML support is almost complete.
+* **po-mu** _(core)_ - Formally _popn_ A PMS player mode, supporting 3, 4, 5, 7, 9 and 18-button styles, 2 player mode, and the ability to load PMS/BME po-mu files.
+* **kbx** _(core)_ - A 1 to 19 lane game type designed primarily for keyboard play, being able to play songs from any mode using the smartGen system. This is a OutFox-specific game type that does not emulate any specific game.
 * **gddm** _(core)_ - A drum mode supporting six-part (five drums and one pedal), nine-part (seven drums, bass pedal, hi-hat pedal), and 10-part ("Real") styles, modelled upon the mechanics of the arcade rhythm game _Drummania_). We support the DTX file format, which is used with simulators for the game such as DTXMania.
 * **gdgf** _(core)_ (formerly **guitar** prior to OutFox-alpha-4.9.8) - A guitar mode supporting three-fret and five-fret styles, modelled upon the mechanics of the arcade rhythm game _GuitarFreaks_.
 * **gh** _(core)_ - A five-fret guitar mode modelled upon the mechanics of once-popular console games originating from North America.

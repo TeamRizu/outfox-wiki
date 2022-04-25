@@ -62,7 +62,7 @@ If there's no `portable.ini` in your game folder, then you need to go into a spe
 
 Project OutFox uses XInput, it means controllers need to get mapped first and then never again. _It means every single controller should work with Project OutFox_
 
-The game doesn't even try to automap things yet, there's a [tutorial step-by-step how to map](https://projectoutfox.com/help/controllers)
+The game doesn't even try to auto-map things yet, there's a [tutorial step-by-step how to map](https://projectoutfox.com/help/controllers)
 
 ## Q: I'm new to this community and I don't understand many terms, could you explain what they mean?
 
@@ -76,7 +76,7 @@ The game doesn't even try to automap things yet, there's a [tutorial step-by-ste
 - Ghosttap: When you hit a place where there's no step.
 - 4th,8th,12th: Note types and colors, 4th: red arrow (hit after each beat), 8th: blue arrow (hit after each half beat), 12th: green arrow (hit after each 1/3 beat)..it goes on.
 - Playfield/Notefield/Receptors/PlayerBoards: The targets that notes are going to reach. In dance, the 4 notes that are always at the top. In pump, the 5 notes that are always at the top.
-- Lifts: Note that you have to stop holding the moment they reach the playfield.
+- Lifts: Note that you have to stop holding the moment they reach the play field.
 
 ## Q: Will Project OutFox go open source?
 
@@ -84,15 +84,15 @@ _Yes_.
 
 From Squirrel:
 
-> The project began as a method to add online and profiles to SM5, but when we looked into the engine to see how this could be appropriated it was discovered just how much in a sorry state the code base was, and it looked mostly abandoned. I spoke to Shakesoda in hopes of a resurrection in the form of a team project, and it was requested rather than breaking 10 years of content and community to take the time to make a proper 5.x build that is stable and supports what the community as a whole wants from the game. This backward compatibility support has been an absolute git to do, but it's something now we are down the line which we are proud of, as it has brought many players and newcomers to the community, and provided a very stable experience for folks during the lockdown. We will continue to maintain a near 100% compatibility where we can, and this is taken into consideration whenever we plan a new feature or change engine components. 
+> The project began as a method to add online and profiles to SM5, but when we looked into the engine to see how this could be appropriated it was discovered just how much in a sorry state the code base was, and it looked mostly abandoned. I spoke to Shakesoda in hopes of a resurrection in the form of a team project, and it was requested rather than breaking 10 years of content and community to take the time to make a proper 5.x build that is stable and supports what the community as a whole wants from the game. This backward compatibility support has been an absolute git to do, but it's something now we are down the line which we are proud of, as it has brought many players and newcomers to the community, and provided a very stable experience for folks during the lock down. We will continue to maintain a near 100% compatibility where we can, and this is taken into consideration whenever we plan a new feature or change engine components. 
 
 > In the beginning of the project we wanted to be the natural progression of 5.1, but due to resistance and feedback from the community, we have made the decision to adjust the returning of code back to the repo in the future. The aim has always been to open source when we get to Alpha 7.0, which gives us enough time to realise our plans for the project and the direction we chose to take OutFox in. We read the community loud and clear in terms of their wishes and needs for StepMania, so we will not disturb that paradigm.
 
 > We asked if it was ok to close the source while this process was done, and it was deemed wise for the health of the repo and the need of people who are just wanting to play. Its why we've been around the repo but not on it as taint can happen and we do not wish this. SSC did this same behaviour before us, so we did not see it as a problem. Some vocal members of the community disagreed, including some of the SMDev Team. We have also been compared to past SM repo contributors who may have left a less than savoury memory in the minds of some, and it has also been hard to differentiate from history we have no involvement with.
 
-> Moving forward with the project, it has become apparent that OutFox has moved beyond a lot of what the community _expects_ StepMania to be, so there will be a different ideal on the opening of source code to the StepMania Repo itself. We have had to 'rename' our internal system away from StepMania, this was due to us wishing to licence/digitally sign the binaries we make, and with gaining this with the SM name being almost impossible, we had to change name to OutFox. Moving forward we continue to keep this promise to ensure our builds are signed on Mac OS (and soon Windows) so it makes the game play experience better for everyone.
+> Moving forward with the project, it has become apparent that OutFox has moved beyond a lot of what the community _expects_ StepMania to be, so there will be a different ideal on the opening of source code to the StepMania Repo itself. We have had to 'rename' our internal system away from StepMania, this was due to us wishing to license/digitally sign the binaries we make, and with gaining this with the SM name being almost impossible, we had to change name to OutFox. Moving forward we continue to keep this promise to ensure our builds are signed on Mac OS (and soon Windows) so it makes the game play experience better for everyone.
 
-> The project is about providing a free game with unencumbered assets and also packs of properly licenced content for the community, and this covers more than dance alone. We are not for profit, we do not ever wish to profit from this community, as we have been part of it for so long. We will announce more information in due course about our future, for now we are as excited as you on the progression of this project.
+> The project is about providing a free game with unencumbered assets and also packs of properly licensed content for the community, and this covers more than dance alone. We are not for profit, we do not ever wish to profit from this community, as we have been part of it for so long. We will announce more information in due course about our future, for now we are as excited as you on the progression of this project.
 
 ## My controller doesn't work, but it did on older versions of StepMania.
 
@@ -106,7 +106,7 @@ This is going to have a proper fix later.
 
 ## Q: Is online mode available yet? If not, is it coming?
 
-Short answer: no it's not available, yes it's coming. Long answer: It'll take a while, the engine is still being optimized and the online system is still in development (being done by Cube). 
+Short answer: no it's not available, yes it's coming. Long answer: It'll take a while, the engine is still being optimised and the online system is still in development (being done by Cube). 
 
 This doesn't mean Online isn't important for us, it's a lot, it was one of Team Rizu first plans but the engine just wasn't ready for their plans. 
 
@@ -122,11 +122,11 @@ Open `Avatars` folder and drop any png, jpg, gif into there with any name you wa
 
 ### For Themes
 
-Open `Themes` folder and drop here any theme that supports 5.x
+Open `Themes` folder and drop here any theme that supports 5.x.
 
 ### For Noteskins
 
-Open `NoteSkins` folder, open the folder that represents what noteskin gamemode the noteskin is made for, drop the **NoteSkin Folder** there.
+Open `NoteSkins` folder, open the folder that represents what game mode the noteskin is made for, drop the **NoteSkin Folder** there.
 
 You can find more noteskins in https://projectoutfox.com/addons/noteskins
 
@@ -136,7 +136,7 @@ Open `Judgments`, drop the judgment image there. **Do not change the name of the
 
 ### For Toasties
 
-Open `Toasties`, drop the game Toastie folter there. (The game can come with 2 toasties in the installer options)
+Open `Toasties`, drop the game Toasty folder there. (The game can come with 2 toasties in the installer options)
 
 ## Q: I have an ancient Intel Card and the game does nothing but crash!
 
@@ -204,26 +204,29 @@ This is due to the renderer not supporting scaled screens yet. To fix this, righ
 
 ### What modes does OutFox currently support?
 
-The modes as of **Alpha 4.11.0 (November 2021)** are as follows:
+The modes as of **Alpha 4.14.0 (April 2022)** are as follows:
 
 ```
-Name    | Description
---------|------------
-dance   | Dance Dance Revolution + Solo (3, 4, 6 and 8 (Double) Panels)
-pump    | Pump It Up (5, 6 (HalfDouble), 10 (Double)) based off of the pro era (SM4)
-kb7     | 7 Keys
-ez2     | Ez2Dancer (3 Panels with 2 Sensors, 3 Panels with 4 Sensors and 6 Panels with 4 Sensors (Double))
-para    | Para Para Paradise (5, 8, and 10 Sensor)
-ds3ddx  | Dance Station 3DDX (4 Panels with 4 Sensors)
-bemu    | (formally beat) BMS (5, 7, 10 (Double) and 14 (double) Keys + Scratch)
-maniax  | Dance Maniax (4 and 8 (Double) Sensors)
-techno  | TechnoMotion (4, 5, 8. 9, 8 (Double), 10 (Double), 16 (Double) and 18 (Double) Panels)
-taitai  | A 'don da don' styled mode
-pomu    | Pop'n Music via PMS (3, 4, 5, 7, 9 and 18 Keys)
-gddm    | GitaDora Drummania style (5, 9 and 10 part!)
-gdgf    | GitaDora Guitar freaks style (5 Guitar/Bass, 3 Guitar/Bass) (6 Guitar support Coming soon!)
-gh      | Guitar style (5 Solo/Backup, 6 Solo/Backup)
-kickbox | Obscure lash a soft dance pad to a punching bag mode (4, 6, 8 sensor Mode)
+Name      | Description
+----------|------------
+dance     | The classic 4k dance game + Solo (3, 4, 6 and 8 (Double) Panels)
+pump      | 5k diagonal dance game  (5, 6 (HalfDouble), 10 (Double)) based off of the pro era (SM4)
+kbx       | 1-19 Keys
+ez2       | Ez2Dancer (3 Panels with 2 Sensors, 3 Panels with 4 Sensors and 6 Panels with 4 Sensors (Double))
+para      | Para Para Paradise (5, 8, and 10 Sensor)
+ds3ddx    | Dance Station 3DDX (4 Panels with 4 Sensors)
+be-mu     | (formally beat) BMS (5, 7, 10 (Double) and 14 (double) Keys + Scratch)
+maniax    | Dance Maniax (4 and 8 (Double) Sensors)
+techno    | TechnoMotion (4, 5, 8. 9, 8 (Double), 10 (Double), 16 (Double) and 18 (Double) Panels)
+taitai    | A 'don da don' styled mode
+po-mu     | PMS (3, 4, 5, 7, 9 and 18 Keys)
+gddm      | DTX drum style (5, 9 and 10 part!)
+gdgf      | DTX based guitar style (5 Guitar/Bass, 3 Guitar/Bass) (6 Guitar support Coming soon!)
+gh        | Guitar style (5 Solo/Backup, 6 Solo/Backup)
+smx       | 5k cardinal style dance game (5 Solo/Backup, 6 Solo/Backup)
+stepstage | Based on the defunct game Stepping Stage by Jaleco in 2000 (single and twin)
+kickbox   | Obscure lash a soft dance pad to a punching bag mode (4, 6, 8 sensor Mode)
+
 ```
 
 The Modes we can talk about are as follows: 
@@ -243,24 +246,29 @@ rb        | band style drums (5 lane)
 
 ### What NotesLoaders Does OutFox Support?
 
-The NoteLoaders as of **Alpha 4.11.0 (November 2021)** OutFox Supports and their level of completeness to the specifications:
+The NoteLoaders as of **Alpha 4.14.0 (April 2022)** OutFox Supports and their level of completeness to the specifications:
 
 ```
-Name  | Notes:
-------|------------
-BMS   | 85% See Wiki for more details
-BME   | 90% (beat loader for extended/PMS)
-BML   | 90% (beat loader for long notes)
-BGF   | 100% (beat loader for GF proposed)
-CHART | 100% (gh loader)
-DTX   | 85% (gddm 90% / gdgf 85%)
-DWI   | 100% (as we know)
-KSF   | 100% (as we know)
-MID   | 90% (gh loader)
-PMS   | 100% BMS98 / 90% BME 2004
-SM    | 100% (+ OF fixes)
-SSC   | 100% (+ OF fixes v0.84 proposed)
-TJA   | 15% (taiko loader in progress)
+Name     | Notes:
+---------|------------
+BMS      | 92% See Wiki for more details
+BME      | 92% (beat loader for extended/PMS)
+BML      | 92% (beat loader for long notes)
+BGF      | 100% (beat loader for GF proposed)
+CHART    | 100% (gh loader)
+DTX      | 95% (gddm 90% / gdgf 85%)
+DWI      | 100% (as we know)
+GDA      | 95% (gddm 95%)
+KSF      | 100% (as we know)
+MC       | 30% (Malody loader)
+MID      | 80% (gh/rb loader)
+OTO/.osz | 70% (O!Mania 95%, O!Taiko 60%)
+PIU      | 100% (+ SSC v0.81 parser for F2/P1 specific)
+PMS      | 100% BMS98 / 94% BME 2004
+QUA/.qp  | 94% (Missing Warps)
+SM       | 100% (+ OF fixes)
+SSC      | 100% (+ OF fixes v0.84 proposed)
+TJA      | 65% (Taiko loader in progress)
 ```
 
 PLEASE NOTE: These are proposed and are scheduled on the road map, limitations or code problems may delay or change these modes, so it is why there is no date or ETA given.
@@ -269,7 +277,6 @@ PLEASE NOTE: These are proposed and are scheduled on the road map, limitations o
 Name  | Notes:
 ------|------------
 BMSON | 0%
-OSD   | 0%
 OJM   | 0%
 ???   | 0%
 ???   | 0%
