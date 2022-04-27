@@ -4,7 +4,7 @@ weight: 1
 geekdocCollapseSection: true
 ---
 
-Project OutFox contains parsers for the ``BMS`` and ``PMS`` chart formats, which are the standard formats used in conjunction with mostly the ``beat`` and ``popn`` game types. The following page contains details on the ``BMS``/``PMS`` channels that _Project OutFox_ currently supports. This is a living document, and will be updated as progress is made to expand the work to support as much of these as possible.
+Project OutFox contains parsers for the ``BMS`` and ``PMS`` chart formats, which are the standard formats used in conjunction with mostly the ``be-mu`` and ``po-mu`` game types. The following page contains details on the ``BMS``/``PMS`` channels that _Project OutFox_ currently supports. This is a living document, and will be updated as progress is made to expand the work to support as much of these as possible.
 
 ---
 # Introduction
@@ -13,13 +13,13 @@ The ``BMS`` file standard was devised by Urao Yane in 1998. It was originally cr
 
 _Project OutFox_ uses mostly BM98 (1998 to 2003) era definitions for this file standard, though it is improving all the time. The format is used to simulate most of the _'Down Scroll Rhythm Game Systems'_ and is known by several other derivatives which we are also slowly building support for. 
 
-``BMS`` charts are mostly composed by artists from Asia, so reading them in non-asian locales can be difficult. _OutFox_ will be overcoming this limitation in a future update, so do not delete all your charts which just show ``??????????`` just yet!
+``BMS`` charts are mostly composed by artists from Asia, so reading them in non-asian locales can be difficult. _OutFox_ has overcome this limitation in 2022, so if you see any charts in the music wheel with ``??????????`` and you are updating from a previous build, reset your cache. If you do find a glyph the game does not understand, do let Squirrel know so it can be added.
 
 The other two file types on this page, ``PMS`` and ``BME`` were born from this format and are used for other types of games. ``PMS`` was originally designed to simulate _Keyboardmania_ and had a very different channel layout than ``BMS``, but it's use moved towards _po-mu_ / _feeling po-mu_ (po-mu is short for _Pop'n Music_). This had a unique layout for 9 key/button charts.  
 
 ``BME`` is an Extension of ``BMS`` and offers newer features that were not offered in raw simulators of BM98. This was also used in the actual arcade and console games for a few years in the early 2000s. _Project OutFox_ recently fixed a lot of support for this parser, along with adding several of the missing modes often charted by simfile authors. This extension allowed for channel numbers beyond 00-99 (99 values), then extended to base16 for 00-FF (255 values), which was then finally extended to 00-ZZ (1295 values), being based on base36.
 
-The other system we support is ``BML`` files, which ``PMS`` incorporated by default in 2002. ``BML`` adds ``Long Note`` (known as _holds_ in StepMania), which again extends the ``BMS`` specification. We will support both ``BME`` and ``BML`` fully in an upcoming release and update these documents in the future.
+The other system we support is ``BML`` files, which ``PMS`` incorporated by default in 2002. ``BML`` adds ``Long Note`` (known as _holds_ in StepMania), which again extends the ``BMS`` specification. We now fully support both ``BME`` and ``BML`` fully, including mines and extended hidden note keysounds, as well as player 2 wide channel support.
 
 **Again, if you feel any particular command or object should be included, do let us know. There are quite a few bits of the specification that just simply have not been considered or added at this time, I'm documenting what we _do_ have, and you are more than welcome to give suggestions for future additions. - Squirrel**
 
@@ -80,7 +80,7 @@ This command defines the play style that the chart is set for. In the earlier ve
 
 >* ``4`` = 1 vs 2 Player, or Battle Play, with two life gauges, which was removed in iidx19, has fallen out of favour in use. I have actually only found ``PMS`` battle mode files with 3 key vs 3 key chart styles from _portable 2_. _OutFox_ currently can parse these files, but has no battle mode support.
 
-_Project OutFox_ also supports 'duet' or normal 2 player mode without needing to be set in the file itself, by joining a second player on the select music screen. As of Alpha 4.9.8 this was extended to ``PMS`` offering new modes with a 2 player option of po-mu for the first time. All ``popn`` styles (3k, 4k, 5k, 7k, 9k) have 2 player support now, with battle mode planned in the future. 
+_Project OutFox_ also supports 'duet' or normal 2 player mode without needing to be set in the file itself, by joining a second player on the select music screen. As of Alpha 4.9.8 this was extended to ``PMS`` offering new modes with a 2 player option of po-mu for the first time. All ``po-mu`` styles (3k, 4k, 5k, 7k, 9k) have 2 player support now, with battle mode planned in the future. 
 
 ---
 
@@ -126,13 +126,13 @@ Usage Example:
 ```
 This setting allows the chart to specify the beginning (or starting) BPM of a song. This value will also be shown in the music wheel, and will be setting the speed that will be used as part of the modifiers / scrolling of the notes. This value used to require a whole number. _Project OutFox_ allows for floats here - you are limited to 6 decimal places - so ``143.000290`` as an example.
 
-Older simulators do not support decimal point `BPM` values, and you cannot enter a value above `255` as it can crash the simulator in question. If you are wishing to make your chart portable to other programs, bear this in mind; not every simulator supports this!
+Older simulators do not support decimal point `BPM` values, and you cannot enter a value above `255` as it can crash the simulator. If you are wishing to make your chart portable to other programs, bear this in mind; not every simulator supports this!
 
 This value also can (and will!) be overwritten by channel commands/settings later on in the chart.
 
 ---
 
-## ``#PLAYLEVEL n [0-6]/[0-9]/[1-49]``
+## ``#PLAYLEVEL n [0-6]/[0-9]/[0/15]/[1-49]``
 ``Status: ✅ Supported``
 
 Usage Example:
@@ -262,7 +262,9 @@ The channel command to action #SCROLL values are a Base36 value which are ``#xxx
 - ❌ Not Supported / Not Available
 - ~ Not Used
 
-### Channel Support Table
+_PMSX listed below on some channels, is the wider 2 player mode that outfox supports for 18k mode._
+
+## BMS / BME / PMS Channel Support Table
 
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
@@ -284,18 +286,18 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 
 ---
 
-BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
+BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS / PMSX Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 10|Not Used|~|Not Used|~|Not Used|~|Not Used
-11|P1 Key 1|✅|P1 Key 1|✅|P1 Left White|✅|Supported
-12|P1 Key 2|✅|P1 Key 2|✅|P1 Left Yellow|✅|Supported
-13|P1 Key 3|✅|P1 Key 3|✅|P1 Left Green|✅|Supported
-14|P1 Key 4|✅|P1 Key 4|✅|P1 Left Blue|✅|Supported
-15|P1 Key 5|✅|P1 Key 5|✅|P1 Red|✅|Supported
-16|P1 Turn/Scratch|✅|P1 Turn/Scratch|✅|Not Used|~|Supported
-17|P1 FootPedal|❌|P1 FootPedal|❌|Not Used|~|Not Supported
-18|P1 Key 6|✅|P1 Key 6|✅|Not Used|~|Supported
-19|P1 Key 7|✅|P1 Key 7|✅|Not Used|~|Supported
+11|P1 Key 1|✅|P1 Key 1|✅|P1 Left White / P1 Left White |✅|Supported
+12|P1 Key 2|✅|P1 Key 2|✅|P1 Left Yellow / P1 Left Yellow|✅|Supported
+13|P1 Key 3|✅|P1 Key 3|✅|P1 Left Green / P1 Left Green|✅|Supported
+14|P1 Key 4|✅|P1 Key 4|✅|P1 Left Blue / P1 Left Blue |✅|Supported
+15|P1 Key 5|✅|P1 Key 5|✅|P1 Red / P1 Red|✅|Supported
+16|P1 Turn/Scratch|✅|P1 Turn/Scratch|✅|Not Used / P1 Right Blue|✅|Supported
+17|P1 FootPedal|❌|P1 FootPedal|❌|Not Used / P1 Right Green|✅|Not Supported
+18|P1 Key 6|✅|P1 Key 6|✅|Not Used / P1 Right Yellow|✅|Supported
+19|P1 Key 7|✅|P1 Key 7|✅|Not Used / P1 Right White|✅|Supported
 1A|Not Used|~|Not Used|~|Not Used|~|Not Used
 1B|Not Used|~|Not Used|~|Not Used|~|Not Used
 1C|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -305,18 +307,18 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 
 ---
 
-BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
+BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS / PMSX Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 20|Not Used|~|Not Used|~|Not Used|~|Not Used
 21|P2 Key 1|✅|P2 Key 1|✅|Not Used|✅|Supported
-22|P2 Key 2|✅|P2 Key 2|✅|P1 Right Blue|✅|Supported
-23|P2 Key 3|✅|P2 Key 3|✅|P1 Right Green|✅|Supported
-24|P2 Key 4|✅|P2 Key 4|✅|P1 Right Yellow|✅|Supported
-25|P2 Key 5|✅|P2 Key 5|✅|P1 Right White|✅|Supported
-26|P2 Turn/Scratch|✅|P2 Turn/Scratch|✅|Not Used|~|Supported
-27|P2 FootPedal|❌|P2 FootPedal|❌|Not Used|~|Not Supported yet
-28|P2 Key 6|✅|P2 Key 6|✅|Not Used|~|Supported
-29|P2 Key 7|✅|P2 Key 7|✅|Not Used|~|Supported
+22|P2 Key 2|✅|P2 Key 2|✅|P1 Right Blue / P2 Left White|✅|Supported
+23|P2 Key 3|✅|P2 Key 3|✅|P1 Right Green / P2 Left Yellow|✅|Supported
+24|P2 Key 4|✅|P2 Key 4|✅|P1 Right Yellow / P2 Left Green|✅|Supported
+25|P2 Key 5|✅|P2 Key 5|✅|P1 Right White / P2 Red|✅|Supported
+26|P2 Turn/Scratch|✅|P2 Turn/Scratch|✅|Not Used / P2 Right Blue|✅|Supported
+27|P2 FootPedal|❌|P2 FootPedal|❌|Not Used / P2 Right Green|✅|Not Supported
+28|P2 Key 6|✅|P2 Key 6|✅|Not Used / P2 Right Yellow|✅|Supported
+29|P2 Key 7|✅|P2 Key 7|✅|Not Used / P2 Right White|✅|Supported
 2A|Not Used|~|Not Used|~|Not Used|~|Not Used
 2B|Not Used|~|Not Used|~|Not Used|~|Not Used
 2C|Not Used|~|Not Used|~|Not Used|~|Not Used
