@@ -13,11 +13,9 @@ weight: 2
 
 ## History:
 
-This mode (``kb7``) was added in StepMania 4 CVS. It was designed to be a keyboard based mode using 7 keys and was requested by the community, as an alternative to the dance only focus at the time, with a view of providing keyboard players a better streamlined experience in the engine.
+The mode (``kb7``) was added in StepMania 4 CVS. It was designed to be a keyboard based mode using 7 keys (6 normal keys and the spacebar) and was requested by the community, as an alternative to the dance only focus at the time, with a view of providing keyboard players a better streamlined experience in the engine.
 
-The mode initially started life with 6 columns, but this was resolved when the SSC builds began.
-
-``kb7-small`` was a modded version of the mode, with a much smaller 'space bar' or middle button. It was more used than it's original, and replaced the original ``kb7-single`` as the mode in Project OutFox.
+``kb7-small`` was a modded version of the mode, with a much smaller 'space bar' or middle button so the notefield was easier to read. This made it more popular than the standard wide mode, and due to this, it replaced the original ``kb7-single`` as the mode in Project OutFox.
 
 In the final release of 2021, Project OutFox 4.12 replaced the original mode completely with a new rewritten version which allowed players to use a differing number of lanes, ranging from 1 to 15 in total. It also created a newer streamlined version of the system to give a small performance boost to this mode. Community member MDR has contributed some ideas to this mode.
 
@@ -212,6 +210,10 @@ No Modding is available in this mode.
 ---
 ## Trivia
 
+The mode initially started life with 6 columns, but this was changed to include the spacebar when the SSC builds began.
+
 Although the name for this mode is ``kbx`` it was decided to not use the SSC era title of ``'keyboard X'`` where X is the number of keys used, because this mode can be played on any device.
 
 There was a completed theme for this mode exclusive to SM4/SSC 1.x made by the SSC team, but it was never released.
+
+_Written and Maintained with ♡ by Squirrel_
