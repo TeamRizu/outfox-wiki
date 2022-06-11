@@ -8,7 +8,7 @@ BeginCommand
 EndCommand
 SetAttackCommand Called on the noteskin actor before drawing an Attack-type TapNote
 Parameters:
-Modifiers (string, The attack associated with the tap note.</description></item><item><title>Tweening</title><link>https://outfox.wiki/dev/actors/ActorsLua-Tweening/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://outfox.wiki/dev/actors/ActorsLua-Tweening/</guid><description>Actors have the ability to transition from point A to point B using Tweening.
+Modifiers (string, The attack associated with the tap note.)</description></item><item><title>Tweening</title><link>https://outfox.wiki/dev/actors/ActorsLua-Tweening/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://outfox.wiki/dev/actors/ActorsLua-Tweening/</guid><description>Actors have the ability to transition from point A to point B using Tweening.
 It allows for queueing up movements &amp;amp; transitions on position, size, color and other attributes as well as commands and messages.
 Queueing-style tweens These help with queueing actions after a certain amount of time.
 Sleep The actor waits for a given amount of seconds before performing the next command.

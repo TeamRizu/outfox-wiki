@@ -30,4 +30,4 @@ In SM5, this is only accessible through the PlayerOptions functions, while NotIT
 &amp;ldquo;clearall&amp;rdquo; Desc: Tells PlayerOptions to do a reset. Often used in modfiles to mimic crs-style resetting. Only available in modstring form right now.
 Quirks: N/A
 Modstring format: clearall
-HoldGrainMult Desc: Adds a multiplier to the &amp;lsquo;step size&amp;rsquo; of holds, allowing one to control how &amp;lsquo;granular&amp;rsquo; a hold is.</description></item></channel></rss>
+HoldGrainMult Desc: Adds a multiplier to the &amp;lsquo;step size&amp;rsquo; of holds, allowing one to control how &amp;lsquo;granular&amp;rsquo; a hold is. In NotITG, this is known as &amp;ldquo;granulate&amp;rdquo; or &amp;ldquo;grain&amp;rdquo; (alias).</description></item></channel></rss>
