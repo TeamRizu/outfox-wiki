@@ -143,10 +143,6 @@ File Type|Label|Original Mode|Key Values Supported|Notes
 This mode needs no _autogen_ to be configured! There is a setting in the preferences that enables or disables the precaching when the game loads.
 
  ---
-
-
-
-
 ## Game play
 
 This mode is played default in down scroll, with the note receptors at the bottom of the screen. The mode has several different noteskins available to it, with some of them reflecting the currently _mapped_ button to the lane you need to press when the note hits the receptor.
@@ -154,17 +150,26 @@ This mode is played default in down scroll, with the note receptors at the botto
 
 
 ### Mechanics
-**_lift holds_**, **_anti-mash_**, **_tick holds_**, **_anything goes_**, **_disabled mods_**, **_down scroll_**
 
-_lift holds_ are on by default! You will need to lift at the end of each long note in time, or you will be judged a miss. You can turn it off in the modifier menu.
+``lift holds`` 
 
-_anti-mash_ is enabled to prevent button spam on some of the difficult charts, and the game will judge you as a miss and will break combo.
+You will need to lift at the end of each long note in time, or you will be judged a miss. You can turn it off in the modifier menu.
 
-_tick holds_ are active on this mode, holding a long note will increase combo per tick.
+``anti-mash`` 
 
-_anything goes_ in this mode, as it is able to read almost everything the game supports.
+This is enabled to prevent button spam on some of the difficult charts, and the game will judge you as a miss and will break combo.
 
-_disabled mods_ exist in this mode, as this mode is aimed to be better optimised for better playback. Mod files will play, but without any gimmick or effects.
+``tick holds`` 
+
+These hold types are active on this mode, completely holding a long note will increase combo per tick.
+
+``anything loaded`` 
+
+In this mode, as it is able to read almost everything the game supports.
+
+``disabled mods`` 
+
+This setting exists in this mode, as this mode is aimed to be better optimised for better playback. Mod files will play, but without any gimmick or effects. If a file/chart uses any FGCHANGES for movies or backgrounds, they too will sometimes fail to play.
 
 ### Key Mapping:
 

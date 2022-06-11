@@ -84,8 +84,6 @@ First Seen:
 
 This mode was merged back into the 'bm' mode due to a duplication of styles. The IIDX side of the simulator was barely used, so it made sense to move towards the BMS specification which was more common at the time, and this was also used for early ``dance`` based songs as well, (4 panel and 6 panel BMS files).
 
-
-
 This mode is _parser specific_. It will only load and parse items designed for the `BeMusic Script`.
 
 The table below lists the supported files and their types that ``be-mu`` supports, their key/button value and the original mode the parser is used for (if any).
@@ -99,9 +97,10 @@ File Type|Label|Original Mode|Key Values Supported|Notes
 This mode is played default in down scroll, with the note receptors at the bottom of the screen. There is a 'scratch' lane designed to be a rotary controller, and 5 or 7 buttons which need to be pressed when the item reaches the receptor. This game mode cannot play ``po-mu`` charts any longer as that now is done via a different loader.
 
 ### Mechanics
-**_key sounded_**
 
-_key sounded_ notes exist in this mode! This means buttons you press will add to the song being played. Similarly there can be percussion and other sound effects added to these. Due to the nature of key sounded charts, they take longer to load and compile than other charts, so do not be suprised if you see a 'loading screen' for be-mu charts!
+``key sounded`` 
+
+The notes in this mode are based off of small clips of audio that react when you press a key. This means buttons you press will add to the song being played. Similarly there can be percussion and other sound effects added to these. Due to the nature of key sounded charts, they take longer to load and compile than other charts, so do not be suprised if you see a 'loading screen' for be-mu charts!
 
 
 ## Play Styles

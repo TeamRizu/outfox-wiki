@@ -32,21 +32,52 @@ First Seen:
  * Project OutFox alpha 4.13.0 - ``(versus)`` (31 January 2022)
 
 #### 5 Panel 4 Sensor:
- * To be confirmed
+
+First Seen:
+ * Project OutFox alpha 4.15.0 - ``(single)`` (12th June 2022)
+ * Project OutFox alpha 4.15.0 - ``(double)`` (12th June 2022)
+ * Project OutFox alpha 4.15.0 - ``(versus)`` (12th June 2022)
+
+This mode is _parser specific_. It will only load and parse items designed for `ds3ddx` including `pump`. It will also autogenerate charts based on the ``pump`` game mode automatically, though the extended features are not available yet.
+
+The table below lists the supported files and their types that ``ds3ddx`` supports, their key/button value and the original mode the parser is used for (if any).
+
+File Type|Label|Original Mode|Key Values Supported|Notes 
+------------|-------------|-------------|-------------|-------------|
+ ``.ssc`` | SSC | ``ds3ddx`` | 4k / 8k | 4k and 4k doubles ds3ddx charts
+ ``.ssc`` | PIU | ``pump`` | 5k / 10k | 5k and 5k doubles pump (v0.81) charts
 
 ## Gameplay
 
 The game is played in a total of 8 directions, with 4 being for the legs, (the oblique corner areas on the pad) and 4 sensors for the hands (the cardinal directions). There were two types of cabinet produced, some with sensors in the pad area itself, and the other with sensors above the player akin to _Para Para Paradise_. 
 
-The game was designed to allow a lot of freestyle movement and provided the opportunity for a good workout while playing. The game screen featured a wider than normal note field with arrows and sensors moving up to receptors. The colours of the oblique arrows mirrors that of _Pump it Up_ using red for the top arrows and blue for the bottom arrows, with the sensor based hand arrows are yellow for up and down (again following the _Pump_ style), with left and right being green.
+The game was designed to allow a lot of freestyle movement and provided the opportunity for a good workout while playing. The game screen featured a wider than normal note field with arrows and sensors moving up to receptors. The colours of the oblique arrows mirrors that of _Pump it Up_ using red for the top arrows and blue for the bottom arrows, with the sensor based hand arrows are yellow for up and down (again following the _Pump_ style), with left and right being green. The centre panel on a lot of the earlier cabinets was inactive, and just used for a place for the player to place their feet. 
 
-_E5 Online_ added the yellow centre button which sits under the up and down hand receptors in the note field. This is one of the reasons a lot of the harder charts do not use those hands, as sometimes it has harder to see in a stream of notes.
+_E5 Online_ added the yellow centre button which sits under the up and down hand receptors in the note field. This is one of the reasons a lot of the harder charts do not use those hands, as sometimes it has harder to see in a stream of notes. Many of the charts used in early PIU games were commonly used on this game, and the mechanics of later _pump_ games were 'borrowed' for the 5 panel mode. Support for this will be added in a later _Project OutFox_ release.
+
+### Mechanics
+
+``pump holds`` 
+
+There is a special system for how pump holds are judged, which is different to ``dance`` or ``smx``. These holds can be picked up and regained on a loss.
+
+``tick holds`` 
+
+These hold types are active on this mode, completely holding a long note will increase combo per tick.
+
+``free-style`` 
+
+A lot of the charts made for this mode do not make use of the sensors, or encourage full body movement to complement a workout style way of playing the game. This is extremely popular in Chinese Arcades.
+
+``sensors`` 
+
+This mode uses PIR or photo sensors to measure a movement passing by them or for checking a movement has been met.
 
 ## Play Styles
 
- * Single - This style is played on 4 panels and 4 sensors for hands. 
+ * Single - This style is played on 4 or 5 panels and 4 sensors for hands. 
   
- * Dual - This style is played on 8 panels and 8 sensors for hands, across 2 single player areas.
+ * Dual - This style is played on 8 or 10 panels and 8 sensors for hands, across 2 single player areas.
 
 ## Grading / Accuracy
 

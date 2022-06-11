@@ -72,7 +72,6 @@ File Type|Label|Original Mode|Key Values Supported|Notes
  ``.bme`` | BMS | ``be-mu`` | 5k / 7k / 9k / 18k | po-mu in BMS Extended files
  ``.pms`` | PMS | ``po-mu`` | 3k / 4k / 5k / 7k / 9k / 18k | po-mu charts
 
-
 ## Game play
 
 This mode is played default in down scroll, with the note receptors at the bottom of the screen. There is a selection of different coloured lanes that match a set colour on a large controller. The mode has been extended to support the obscure/rare modes that were charted and these have a slightly different colour layout to the standard 9 key mode. The little notes fall down to be pressed when the item reaches the receptor. This game mode can still play ``po-mu`` charts in BME/BML files, which was a common practice up until around 2014. Play is usually on a dome based button controller, layed out in a 4 top 5 button arrangement. 
@@ -104,7 +103,7 @@ When this game mode was added in 2003, it actually supported all 9 buttons avail
 
 This mode has been 'broken' the longest in the game's history. Due to the lack of users, no-one reported any bugs until development began on the new BMS loader during the _Project OutFox_ era. An anonymous Japanese player reported a series of bugs and then this mode was properly restored and is now very playable.
 
-``po-mu`` 3 button was broken due to a channel issue as _Squirrel_ misread the japanese documentation on PMS so they did not play properly. This was fixed in March 2022.
+``po-mu`` 3 button was broken due to a channel issue as _Squirrel_ misread the Japanese documentation on PMS so they did not play properly. This was fixed in March 2022.
 
 PMS began life as a piano format, and when the project sadly faded away, it was adopted for ``po-mu`` charts around 2004-5. 5 or 7 key charts _need_ to be in their PMS file to not accidentally be parsed by simulators as 5K BMS.
 
