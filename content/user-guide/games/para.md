@@ -87,3 +87,5 @@ The original ``para`` games worked more on the replication of the dance moves an
 ## Trivia
 
 The old official _Konami_ controller used to have a bug on non Windows based systems until alpha 4.12.0 which prevented the device waking up correctly on those systems. 
+
+_Written and Maintained with ♡ by Squirrel_

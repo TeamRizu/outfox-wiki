@@ -78,3 +78,5 @@ File Type|Label|Original Mode|Key Values Supported|Notes
 ## Controls
 
 ## Trivia
+
+_Written and Maintained with ♡ by Squirrel_

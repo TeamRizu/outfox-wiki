@@ -70,3 +70,5 @@ Are notes that require you to hit the edge of the drum (katsu) on both sides at 
 ## Controls
 
 ## Trivia
+
+_Written and Maintained with ♡ by Squirrel_
