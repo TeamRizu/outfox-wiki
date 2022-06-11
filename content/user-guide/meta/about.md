@@ -9,7 +9,7 @@ Project OutFox is a fork of StepMania 5.1, led by a group of veteran rhythm game
 
 * Refactoring its internal codebase to improve performance, adhere to modern coding practices, and enhance its capabilities on modern hardware and other platforms. 
 * Working on support for single-board ARM systems such as Raspberry Pi, including the new M1 ARM systems, and improve performance on legacy systems.
-* Continue the legacy of StepMania 3.x; Refactor the ideas and visions from the early developers in making the game a fully fledged engine, not just focused primarily on one mode.
+* Continue the legacy of StepMania 3; Refactor the ideas and visions from the early developers in making the game a fully fledged engine, not just focused primarily on one mode.
 * Restoring and improving support for other modes beyond dance.
 * Provide the facility to allow better customisation and 'modding' of the UI and functions. We are planning to make the project a cross-platform "sandbox" for rhythm games, rather than simply a simulator for popular dance game franchises.
 * Create a working museum of rhythm games for the newer generation to experience the major Boom of the early 2000s in a convenient way.
@@ -36,7 +36,6 @@ Design |
 [Jose Varela](https://github.com/JoseVarelaP)
 [Lirodon](https://github.com/ListenerJubatus)
 [SheepyChris](https://github.com/SheepyChris)
-[Sudospective](https://github.com/Sudospective)
 
 <---> <!-- magic separator, between columns -->
 

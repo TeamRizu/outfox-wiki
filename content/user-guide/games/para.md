@@ -4,7 +4,6 @@ description: Details about the `para` mode supported by Project OutFox.
 weight: 2
 ---
 
-
 <!--
 insert picture of gameplay 
 -->

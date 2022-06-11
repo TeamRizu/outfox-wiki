@@ -3,11 +3,9 @@ title: FAQ
 weight: 2
 ---
 
-## What is Project OutFox?
+This page has some of the more commonly asked questions pitched to us from the community, remember if you cannot find your answer here, feel free to ask in the discord server!
 
-A project to modernize the StepMania 5.0.12/5.1 codebase to improve its performance and provide enhanced support for modern hardware and operating systems. We are also adding new features, including those being requested by our community, as well as refurbishing its support of non-dance/4-key game types, adding new game types, and so forth.
-
-## Will it still work with my old songs/themes/etc..?
+## Will OutFox still work with my old songs/themes/etc..?
 
 Project OutFox builds upon the existing StepMania 5.0.12/5.1 beta codebase, and maintaining backwards compatibility with older content is one of our main priorities. Content that worked on StepMania 5.0.12/5.1 (including songs, themes, and noteskins) should still work on OutFox. If you experience any issues/weirdness, please report it to us.
 
@@ -21,10 +19,6 @@ Please note that we are deprecating the use of semicolon-separated ``cmd()`` blo
 Yes. Our installer on Windows also defaults to portable mode, so user profile data is stored in your installation directory.
 
 If you would like to have a shared song library between multiple builds, you can use the AdditionalSongFolders preference in ``Save/Preferences.ini`` to specify a path. [Learn how to here](/user-guide/config/preferences/#additionalsongfolders)
-
-## Will there be online support?
-
-The existing SMO functionality is deprecated, but we have future plans to develop a revamped online system.
 
 ## Q: Where should I report Bugs, request features and post game crashes?
 
@@ -42,21 +36,15 @@ You can also use [our forum](https://discourse.projectmoon.dance/)
 - You can report bugs and make feature suggestions on our Discord server.
 - [TinyFoxes](https://github.com/Tiny-Foxes) is coordinating and hosting community-produced content for Project OutFox, such as translations and other add-ons.
 
-## What is StepMania 5.2 and why did you skip over it?
-
-StepMania 5.2 was originally intended to be the next version. However, it included a number of major changes that broke compatibility with previous versions, and were not well-received by the community and other developers.
-
-StepMania 5.2 was originally meant to be 5.1. However, in response to the reception, it was officially delayed in favour of a new 5.1 that was largely an update to 5.0.12 that did not break compatibility with existing content. This was done under the presumption that the new version (subsequently renamed 5.2) would eventually be completed. However, this did not end up happening.
-
 ## Q: How do I get logs?
 
 Go into your game folder and check if there's a file called `portable.ini` (or just `portable` if your system doesn't display file extensions). If there's a `portable.ini` in your game folder then all you need to do is open the `Logs` folder and you'll find all logs, the most important one being `log.txt`. (Try to do this after closing the game)
 
 If there's no `portable.ini` in your game folder, then you need to go into a specific path based on your OS:
 
-- Windows: `appdata/roaming/stepmania 5.3`
-- Mac: `~/Library/Logs/Stepmania 5.3/`
-- Linux: `/home/user/.stepmania-5.3`
+- Windows: `appdata/roaming/Project OutFox`
+- Mac: `~/Library/Logs/OutFox/`
+- Linux: `/home/user/.OutFox`
 
 ## Q: Why do I have to configure my pad while older versions of StepMania could work with no problem?
 
@@ -80,29 +68,23 @@ The game doesn't even try to auto-map things yet, there's a [tutorial step-by-st
 
 ## Q: Will Project OutFox go open source?
 
-_Yes_.
+_Yes, in the future_.
 
-From Squirrel:
+From the Team:
 
-> The project began as a method to add online and profiles to SM5, but when we looked into the engine to see how this could be appropriated it was discovered just how much in a sorry state the code base was, and it looked mostly abandoned. I spoke to Shakesoda in hopes of a resurrection in the form of a team project, and it was requested rather than breaking 10 years of content and community to take the time to make a proper 5.x build that is stable and supports what the community as a whole wants from the game. This backward compatibility support has been an absolute git to do, but it's something now we are down the line which we are proud of, as it has brought many players and newcomers to the community, and provided a very stable experience for folks during the lock down. We will continue to maintain a near 100% compatibility where we can, and this is taken into consideration whenever we plan a new feature or change engine components. 
+> The project began as a method to add online and profiles to SM5, but when we looked into the engine to see how this could be appropriated it was discovered just how much in a sorry state the code base was, and it looked mostly abandoned. We spoke to Shakesoda in hopes of a resurrection in the form of a team project, and it was requested rather than breaking 10 years of content and community to take the time to make a proper 5.x build that is stable and supports what the community as a whole wants from the game. This backward compatibility support has been very problematic to maintain, but it's something now we are down the line which we are proud of, as it has brought many newcomers and veteran players back to the community, and provided a very stable experience for folks during the lock down. We will continue to try to attain a near 100% compatibility where we can, and this is taken into consideration whenever we plan a new feature or change engine components. 
 
-> In the beginning of the project we wanted to be the natural progression of 5.1, but due to resistance and feedback from the community, we have made the decision to adjust the returning of code back to the repo in the future. The aim has always been to open source when we get to Alpha 7.0, which gives us enough time to realise our plans for the project and the direction we chose to take OutFox in. We read the community loud and clear in terms of their wishes and needs for StepMania, so we will not disturb that paradigm.
+> In the beginning of the project we wanted to be the natural progression of 5.1, but due to resistance and feedback from the community, we have made the decision to adjust the returning of code back to the repo in the future. The aim has always been to open source when the project is in a releasable state, which gives us enough time to realise our plans for the project and the direction we wanted to take OutFox in. We read the community loud and clear in terms of their wishes and needs for StepMania, so we will not disturb that paradigm.
 
-> We asked if it was ok to close the source while this process was done, and it was deemed wise for the health of the repo and the need of people who are just wanting to play. Its why we've been around the repo but not on it as taint can happen and we do not wish this. SSC did this same behaviour before us, so we did not see it as a problem. Some vocal members of the community disagreed, including some of the SMDev Team. We have also been compared to past SM repo contributors who may have left a less than savoury memory in the minds of some, and it has also been hard to differentiate from history we have no involvement with.
+> We asked if it was ok to close the source while this process was done, and it was deemed wise for the health of the repo and the need of people who are just wanting to play. Its why we've been around the repo but not on it as taint can happen and we do not wish this. SSC did this same behaviour before us, so we did not see it as a problem. Some vocal members of the community disagreed, including some of the previous SMDev Team. We have also been compared to past SM repo contributors who may have left a less than savoury memory in the minds of some, and it has also been hard to differentiate from history we have no involvement with.
 
-> Moving forward with the project, it has become apparent that OutFox has moved beyond a lot of what the community _expects_ StepMania to be, so there will be a different ideal on the opening of source code to the StepMania Repo itself. We have had to 'rename' our internal system away from StepMania, this was due to us wishing to license/digitally sign the binaries we make, and with gaining this with the SM name being almost impossible, we had to change name to OutFox. Moving forward we continue to keep this promise to ensure our builds are signed on Mac OS (and soon Windows) so it makes the game play experience better for everyone.
+> Moving forward with the project, it has become apparent that OutFox has moved beyond a lot of what the community _expects_ StepMania to be, and has grown into a project that is well beyond just being a _DDR_ or _ITG_ clone. We have had to 'rename' our internal branding and naming conventions away from StepMania, this was due to us wishing to license/digitally sign the binaries we make, and with gaining this with the SM name being almost impossible, we had to change name to OutFox. Moving forward we continue to keep this promise to ensure our builds are signed on Mac OS (and soon Windows) so it makes the game play experience better for everyone. With us also releasing on _Steam_ it has become even more important that we continue consistent naming conventions. 
 
 > The project is about providing a free game with unencumbered assets and also packs of properly licensed content for the community, and this covers more than dance alone. We are not for profit, we do not ever wish to profit from this community, as we have been part of it for so long. We will announce more information in due course about our future, for now we are as excited as you on the progression of this project.
 
 ## My controller doesn't work, but it did on older versions of StepMania.
 
 Currently the game features two modes: a HIDAPI-based "Legacy" input system, similar in behaviour to the input system seen in StepMania 5.0, and an XInput-compliant input system (additional configuration is needed to use unrecognized controllers in this mode, see here for more information). If you are unable to map any buttons to the game, try switching modes to Legacy, available as an option in the Experimental Settings menu, or follow the guide mentioned above on how to map your controller with XInput.
-
-## Q: I have a really recent processor and my game is having a lot of problems, why is that?
-
-Outfox reached a point of optimization that good processors are going to have some problems because some parts of the game are going too fast and need catch up. The current solution to this is to have something running in the background (Have a video playing, other programs) to keep the processor busy.
-
-This is going to have a proper fix later.
 
 ## Q: Is online mode available yet? If not, is it coming?
 
@@ -188,11 +170,11 @@ Install either ``libglvnd`` and/or ``libopengl0`` based on your distro. On some 
 
 ## Mac
 
-### I'm having issues launching the game.
+### I'm having issues launching the game and I have Alpha 4.9.5 or lower.
 
 If you receive errors such as "No noteskins found" or other unusual behavior, you will have to change macOS security settings in order for Project OutFox to operate correctly. MacOS performs a process every time a new program has been downloaded called quarantine, which will require Gatekeeper (The OS's security manager) to verify its signature. The OS does not trust unsigned applications, and prevents access to external files unless given manual permission by the user.
 
-To do this, open Terminal and run the following command: ``xattr -dr com.apple.quarantine /path/to/StepMania``, replacing ``/path/to/StepMania`` with the path to the directory containing the StepMania executable (manually typing it out, or dragging the folder containing the game executable directly onto the window to fill it automatically).
+To do this, open Terminal and run the following command: ``xattr -dr com.apple.quarantine /path/to/OutFox``, replacing ``/path/to/OutFox`` with the path to the directory containing the OutFox executable (manually typing it out, or dragging the folder containing the game executable directly onto the window to fill it automatically).
 
 <video src="/faq/vid/quarantine.webm" controls="">Quarantine video example</video>
 
@@ -214,13 +196,13 @@ pump      | 5k diagonal dance game  (5, 6 (HalfDouble), 10 (Double)) based off o
 kbx       | 1-19 Keys
 ez2       | Ez2Dancer (3 Panels with 2 Sensors, 3 Panels with 4 Sensors and 6 Panels with 4 Sensors (Double))
 para      | Para Para Paradise (5, 8, and 10 Sensor)
-ds3ddx    | Dance Station 3DDX (4 Panels with 4 Sensors)
-be-mu     | (formally beat) BMS (5, 7, 10 (Double) and 14 (double) Keys + Scratch)
+ds3ddx    | Dance Station 3DDX (4 Panels with 4 Sensors, 5 Panels with 4 Sensors and (Double) versions of these)
+be-mu     | (formally beat) BMS (5, 7, 10 (Double) and 14 (Double) Keys + Scratch)
 maniax    | Dance Maniax (4 and 8 (Double) Sensors)
 techno    | TechnoMotion (4, 5, 8. 9, 8 (Double), 10 (Double), 16 (Double) and 18 (Double) Panels)
 taitai    | A 'don da don' styled mode
 po-mu     | PMS (3, 4, 5, 7, 9 and 18 Keys)
-gddm      | DTX drum style (5, 9 and 10 part!)
+gddm      | DTX drum style (5, 9 and 10 piece)
 gdgf      | DTX based guitar style (5 Guitar/Bass, 3 Guitar/Bass) (6 Guitar support Coming soon!)
 gh        | Guitar style (5 Solo/Backup, 6 Solo/Backup)
 smx       | 5k cardinal style dance game (5 Solo/Backup, 6 Solo/Backup)
@@ -236,7 +218,10 @@ The Modes we can talk about are as follows:
 Name      | Description
 ----------|------------
 piu       | A major refactoring to a more accurate mode, to update it to closer to mainline style
-djh       | A Hero isn't always needed, neither are the DJs
+djh       | Some DJ's could be the hero
+cdj       | Some DJ's are just crackin!
+kbm       | bmson 24/48k support
+piano     | up to 88k piano support
 drum      | A midi based drum mode with 20 parts simulating a full yamaha DTX drum kit
 karaoke   | A (.. do i need to explain this?) singing mode. Will happen if squirrel gets off his butt
 jam       | A mode properly supporting O2Jam and it's modes, with full .OJM loader support
@@ -246,24 +231,25 @@ rb        | band style drums (5 lane)
 
 ### What NotesLoaders Does OutFox Support?
 
-The NoteLoaders as of **Alpha 4.14.0 (April 2022)** OutFox Supports and their level of completeness to the specifications:
+The NoteLoaders as of **Alpha 4.15.0 (June 2022)** OutFox Supports and their level of completeness to the specifications:
 
 ```
 Name     | Notes:
 ---------|------------
 BMS      | 92% See Wiki for more details
 BME      | 92% (beat loader for extended/PMS)
-BML      | 92% (beat loader for long notes)
+BML      | 100% (beat loader for long notes extension)
 BGF      | 100% (beat loader for GF proposed)
-CHART    | 100% (gh loader)
-DTX      | 95% (gddm 90% / gdgf 85%)
+BMSON    | 10% (beat loader for 24/48k)
+CHART    | 90% (gh/rb loader)
+DTX      | 95% (gddm 95% / gdgf 90%)
 DWI      | 100% (as we know)
-GDA      | 95% (gddm 95%)
+GDA      | 100% (gddm 95%)
 KSF      | 100% (as we know)
-MC       | 30% (Malody loader)
+MC       | 10% (Malody loader)
 MID      | 80% (gh/rb loader)
 OTO/.osz | 70% (O!Mania 95%, O!Taiko 60%)
-PIU      | 100% (+ SSC v0.81 parser for F2/P1 specific)
+PIU      | 80% (+ SSC v0.81 parser for F2/P1 specific)
 PMS      | 100% BMS98 / 94% BME 2004
 QUA/.qp  | 94% (Missing Warps)
 SM       | 100% (+ OF fixes)
@@ -276,7 +262,6 @@ PLEASE NOTE: These are proposed and are scheduled on the road map, limitations o
 ```
 Name  | Notes:
 ------|------------
-BMSON | 0%
 OJM   | 0%
 ???   | 0%
 ???   | 0%

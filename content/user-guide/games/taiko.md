@@ -1,6 +1,6 @@
 ---
-title: "Game Module: taiko"
-description: Details about the `taiko` mode supported by Project OutFox.
+title: "Game Module: taitai"
+description: Details about the `taitai` mode supported by Project OutFox.
 weight: 2
 ---
 
