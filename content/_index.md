@@ -1,19 +1,14 @@
 ---
 title: Project OutFox Wiki
 description: Wiki documentation for Project OutFox.
-geekdocNav: false
+geekdocNav: true
 geekdocAlign: center
 geekdocAnchor: false
 geekdocBreadcrumb: false
 ---
 
-Pardon our dust! We have rebuilt the wiki using a new framework to make things nicer and more organized.
+Welcome to the documentation wiki for [Project OutFox](https://projectoutfox.com)! **Project OutFox** is a multi-moded rhythm game sandbox. It features 17 (and growing!) different simulation styles allowing players to create unique experiences in charting, gimmicks and effects to outfox their friends! The game allows for full customisation and supports a number of community led custom chart formats.
 
-All of the existing content has been migrated, but be sure to report any issues you encounter, and we'll get them fixed ASAP.
-
-----
-
-Welcome to the documentation wiki for [Project OutFox](https://projectmoon.dance)! **Project OutFox** is a fork of StepMania with a focus on internal modernization to its code, as well as refurbishing and extending its ability to support various types of rhythm games.
 
 This wiki is still a work in progress, so keep checking back for updates on new content! It is edited via a [Git repository](https://github.com/TeamRizu/outfox-wiki); commit access is limited to the development team, but you can always perform pull requests too.
 
@@ -30,6 +25,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 {{< button size="large" relref="user-guide/meta/about/#project-outfox-teams" >}}The Team{{< /button >}}
 {{< button size="large" relref="releases/" >}}Release History{{< /button >}}
 {{< button size="large" relref="roadmap/" >}}Our Project Roadmap{{< /button >}}
+{{< button size="large" relref="user-guide/meta//serenity">}}OutFox Serenity{{< /button >}}
 <--->
 
 ## User's guide
@@ -37,7 +33,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 {{< button size="large" relref="user-guide/setup/install" >}}Installation{{< /button >}}
 {{< button size="large" relref="user-guide/setup/getting-started/" >}}Getting Started{{< /button >}}
 {{< button size="large" relref="user-guide/setup/controllers/" >}}Controllers{{< /button >}}
-{{< button size="large" relref="user-guide/games/" >}}Game modes{{< /button >}}
+{{< button size="large" relref="user-guide/games/" >}}Supported Modes{{< /button >}}
 {{< button size="large" relref="user-guide/config/folders/" >}}Content folders{{< /button >}}
 {{< button size="large" relref="user-guide/config/preferences/" >}}Preferences file{{< /button >}}
 
@@ -45,9 +41,10 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 
 ## For Developers and Creators
 
-{{< button size="large" relref="dev/mode-support/" >}}Mode support{{< /button >}}
+{{< button size="large" relref="dev/mode-support/" >}}NoteLoader support{{< /button >}}
 {{< button size="large" relref="dev/actors/" >}}Lua and Actors{{< /button >}}
 {{< button size="large" relref="dev/effects/" >}}Effects and Gimmicks{{< /button >}}
+{{< button size="large" relref="dev/editor/" >}}Chart Editor{{< /button >}}
 {{< button size="large" relref="dev/mods/" >}}Modifiers{{< /button >}}
 {{< button size="large" relref="dev/translation/" >}}Translation{{< /button >}}
 {{< button size="large" relref="dev/theming/" >}}Theming{{< /button >}}

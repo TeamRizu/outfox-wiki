@@ -6,7 +6,7 @@ geekdocCollapseSection: true
 
 Project OutFox is working on support on the parser for the TJA (Taikojiro) chart format, which is the standard format used in conjunction with the ``taiko`` game types. The following page contains details on the Taiko parsing options that Project OutFox currently supports. This is a living document - it will be incomplete as Squirrel finds time to update and confirm/clarify items that are missing or unknown.
 
-## TJA Notedata support as of Alpha 4.9.9 - ``NOT YET`` We are still designing the parser!
+## TJA Notedata support as of Alpha 4.14.0 - ``Partial``!
 ---
 ## Headers
 ---
@@ -267,7 +267,7 @@ This tag is used for the name of the chart artist. It is not often seen in the s
 ---
 ## Taiko Note Types
 
->* ``0`` = No Notes
+>* ``0`` = No Notes Placed, empty Space
 >* ``1`` = Small Don (Orange Note)
 >* ``2`` = Small Kat (Blue Note) 
 >* ``3`` = Large Don (Orange Note)

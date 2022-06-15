@@ -4,7 +4,7 @@ weight: 1
 geekdocCollapseSection: true
 ---
 
-Project OutFox contains parsers for the ``BMS`` and ``PMS`` chart formats, which are the standard formats used in conjunction with mostly the ``beat`` and ``popn`` game types. The following page contains details on the ``BMS``/``PMS`` channels that _Project OutFox_ currently supports. This is a living document, and will be updated as progress is made to expand the work to support as much of these as possible.
+Project OutFox contains parsers for the ``BMS`` and ``PMS`` chart formats, which are the standard formats used in conjunction with mostly the ``be-mu`` and ``po-mu`` game types. The following page contains details on the ``BMS``/``PMS`` channels that _Project OutFox_ currently supports. This is a living document, and will be updated as progress is made to expand the work to support as much of these as possible.
 
 ---
 # Introduction
@@ -13,11 +13,13 @@ The ``BMS`` file standard was devised by Urao Yane in 1998. It was originally cr
 
 _Project OutFox_ uses mostly BM98 (1998 to 2003) era definitions for this file standard, though it is improving all the time. The format is used to simulate most of the _'Down Scroll Rhythm Game Systems'_ and is known by several other derivatives which we are also slowly building support for. 
 
-``BMS`` charts are mostly composed by artists from Asia, so reading them in non-asian locales can be difficult. _OutFox_ will be overcoming this limitation in a future update, so do not delete all your charts which just show ``??????????`` just yet!
+``BMS`` charts are mostly composed by artists from Asia, so reading them in non-asian locales can be difficult. _OutFox_ has overcome this limitation in 2022, so if you see any charts in the music wheel with ``??????????`` and you are updating from a previous build, reset your cache. If you do find a glyph the game does not understand, do let Squirrel know so it can be added.
 
-The other two file types on this page, ``PMS`` and ``BME`` were born from this format and are used for other types of games. ``PMS`` was originally designed to simulate _Keyboardmania_ and had a very different channel layout than ``BMS``, but it's use moved towards _po-mu_ / _feeling po-mu_ (po-mu is short for _Pop'n Music_). This had a unique layout for 9 key/button charts, and also were used in the actual arcade games (Though they used ``BME``) for a few years. _Project OutFox_ recently fixed a lot of support for this parser, along with adding several of the missing modes often charted by simfile authors.
+The other two file types on this page, ``PMS`` and ``BME`` were born from this format and are used for other types of games. ``PMS`` was originally designed to simulate _Keyboardmania_ and had a very different channel layout than ``BMS``, but it's use moved towards _po-mu_ / _feeling po-mu_ (po-mu is short for _Pop'n Music_). This had a unique layout for 9 key/button charts.  
 
-``BME`` is an Extension of ``BMS`` and offers newer features that were not offered in raw simulators of BM98. The other system we support is ``BML`` files, which ``PMS`` incorporated by default in 2002. ``BML`` adds ``Long Note`` (known as _holds_ in StepMania), which again extends the ``BMS`` specification. We will support both ``BME`` and ``BML`` fully in an upcoming release and update these documents in the future.
+``BME`` is an Extension of ``BMS`` and offers newer features that were not offered in raw simulators of BM98. This was also used in the actual arcade and console games for a few years in the early 2000s. _Project OutFox_ recently fixed a lot of support for this parser, along with adding several of the missing modes often charted by simfile authors. This extension allowed for channel numbers beyond 00-99 (99 values), then extended to base16 for 00-FF (255 values), which was then finally extended to 00-ZZ (1295 values), being based on base36.
+
+The other system we support is ``BML`` files, which ``PMS`` incorporated by default in 2002. ``BML`` adds ``Long Note`` (known as _holds_ in StepMania), which again extends the ``BMS`` specification. We now fully support both ``BME`` and ``BML`` fully, including mines and extended hidden note keysounds, as well as player 2 wide channel support.
 
 **Again, if you feel any particular command or object should be included, do let us know. There are quite a few bits of the specification that just simply have not been considered or added at this time, I'm documenting what we _do_ have, and you are more than welcome to give suggestions for future additions. - Squirrel**
 
@@ -78,7 +80,7 @@ This command defines the play style that the chart is set for. In the earlier ve
 
 >* ``4`` = 1 vs 2 Player, or Battle Play, with two life gauges, which was removed in iidx19, has fallen out of favour in use. I have actually only found ``PMS`` battle mode files with 3 key vs 3 key chart styles from _portable 2_. _OutFox_ currently can parse these files, but has no battle mode support.
 
-_Project OutFox_ also supports 'duet' or normal 2 player mode without needing to be set in the file itself, by joining a second player on the select music screen. As of Alpha 4.9.8 this was extended to ``PMS`` offering new modes with a 2 player option of po-mu for the first time. All ``popn`` styles (3k, 4k, 5k, 7k, 9k) have 2 player support now, with battle mode planned in the future. 
+_Project OutFox_ also supports 'duet' or normal 2 player mode without needing to be set in the file itself, by joining a second player on the select music screen. As of Alpha 4.9.8 this was extended to ``PMS`` offering new modes with a 2 player option of po-mu for the first time. All ``po-mu`` styles (3k, 4k, 5k, 7k, 9k) have 2 player support now, with battle mode planned in the future. 
 
 ---
 
@@ -124,13 +126,13 @@ Usage Example:
 ```
 This setting allows the chart to specify the beginning (or starting) BPM of a song. This value will also be shown in the music wheel, and will be setting the speed that will be used as part of the modifiers / scrolling of the notes. This value used to require a whole number. _Project OutFox_ allows for floats here - you are limited to 6 decimal places - so ``143.000290`` as an example.
 
-Older simulators do not support decimal point `BPM` values, and you cannot enter a value above `255` as it can crash the simulator in question. If you are wishing to make your chart portable to other programs, bear this in mind; not every simulator supports this!
+Older simulators do not support decimal point `BPM` values, and you cannot enter a value above `255` as it can crash the simulator. If you are wishing to make your chart portable to other programs, bear this in mind; not every simulator supports this!
 
 This value also can (and will!) be overwritten by channel commands/settings later on in the chart.
 
 ---
 
-## ``#PLAYLEVEL n [0-6]/[0-9]/[1-49]``
+## ``#PLAYLEVEL n [0-6]/[0-9]/[0/15]/[1-49]``
 ``Status: ✅ Supported``
 
 Usage Example:
@@ -187,7 +189,7 @@ The gauge never changed size; it was an off screen calculation on how you could 
 
 ## ``#MAKER maker [string]`` or
 ## ``#CREDIT credit [string]`` or 
-## ``SUBARTIST subartist [string]``
+## ``#SUBARTIST subartist [string]``
 ``Status: ✅ Supported``
 
 Usage Example:
@@ -207,7 +209,6 @@ The `MAKER` or `CREDIT` command simply allows the author or maker of the chart t
 Since around 2017, another command, ``SUBARTIST`` began to be used more commonly in `BME`/`PMS` files, which was inherited from `DTX`. The sub artist is not normally displayed until the evaluation screen on earlier simulators, but in _OutFox_ we treat all three of these in the same manner. If you are creating a new `BMS` chart, then `#MAKER` is usually safer to use for other simulator support.
 
 ---
-
 ## ``#STAGEFILE stagefile [string]``
 ``Status: ✅ Supported``
 
@@ -220,6 +221,38 @@ The stagefile command is used to set an image to the 'loading screen' of the sim
 On older simulators, this loading process could take a _long_ time, so it was wise to incorporate a loading screen system into the simulator. This has also been recently done in _Project OutFox_ so we do not need to freeze the game while loading these files any more. This file is read in and parsed, just no theme at the moment takes advantage of the loading screen as of yet.
 
 ---
+
+## Main DATA FIELD commands
+
+---
+
+
+
+
+## ``#SCROLLxx n.n [-999.0 - 999.0]``
+``Status: ✅ Supported``
+
+Definition Usage Example:
+```
+#SCROLL01 0.5
+#SCROLL02 1.0
+#SCROLL03 -2.75
+```
+Channel Usage Example:
+```
+#003SC:02010001
+#005SC:03000002
+```
+
+The scroll command works similar to how it does in native SM5, but if you are unfamiliar with the system, the value is a _multiplier_ of the speed of the movement of any note on the screen.
+
+If your notes were moving at ``130BPM``, but you did not wish to edit the ``BPM`` directly, you could use scroll to change that speed. The game also supports negative values (this has the affect of moving things in the opposite direction), which can provide some very interesting affects.
+
+The channel command to action #SCROLL values are a Base36 value which are ``#xxxSC``. There are several benefits to using this system as legacy BMS use items you need to name on each measure, whereas #xxxSC can last beyond this restriction. You need to be aware, not many clients support this system, so it is not backwards compatible if you are making your chart available to other simulators.
+
+
+
+
 ---
 
 ### Key:
@@ -229,40 +262,42 @@ On older simulators, this loading process could take a _long_ time, so it was wi
 - ❌ Not Supported / Not Available
 - ~ Not Used
 
-### Channel Support Table
+_PMSX listed below on some channels, is the wider 2 player mode that outfox supports for 18k mode._
+
+## BMS / BME / PMS Channel Support Table
 
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
-1|Background Music|✅|Background Music|✅|Background Music|✅|Supported
-2|Measure Length|✅|Measure Length|✅|Measure length|✅|Supported
-3|Set Initial BPM|✅|Set Initial BPM|✅|Set Initial BPM|✅|Supported
-4|BGA Base|✅|BGA Base|✅|BG Base|✅|Supported - needs enabling
-5|eXtended Object|✅|eXtended Object|✅|eXtended Object|✅|Supported
-6|BGA Layer Miss|✅|BGA Layer Miss|✅|BGA Poor|✅|Supported - needs enabling
-7|BGA Layer|✅|BGA Layer|✅|BG Layer|✅|Supported - needs enabling sits above channel 4
-8|Extended BPM|✅|Extended BPM|✅|Set BPM|✅|Supported - Changes bpm to value
-9|Stop|✅|Stop|✅|Stop|✓|Supported
-0A|BGA Layer 2|✅|BGA Layer 2|✅|BGA Layer 2|✅|Supported
-0B|BGA Base Opacity|❌|BGA Base Opacity|❌|BGA Base Opacity|❌|Not Supported
-0C|BGA Layer Opacity|❌|BGA Layer Opacity|❌|Not Used|~|Not Supported
-0D|BGA Layer 2 Opacity|❌|BGA Layer 2 Opacity|❌|Not Used|~|Not Supported
-0E|BGA Poor Opacity|❌|BGA Poor Opacity|❌|BGA Poor Opacity|❌|Not Supported
+01|Background Music|✅|Background Music|✅|Background Music|✅|Supported
+02|Measure Length|✅|Measure Length|✅|Measure length|✅|Supported
+03|Set Initial BPM|✅|Set Initial BPM|✅|Set Initial BPM|✅|Supported
+04|BGA Base|✅|BGA Base|✅|BG Base|✅|Supported - needs enabling
+05|eXtended Object|✅|eXtended Object|✅|eXtended Object|✅|Supported
+06|BGA Layer Miss|✅|BGA Layer Miss|✅|BGA Poor|✅|Supported - needs enabling
+07|BGA Layer|✅|BGA Layer|✅|BG Layer|✅|Supported - needs enabling sits above channel 4
+08|Extended BPM|✅|Extended BPM|✅|Set BPM|✅|Supported - Changes bpm to value
+09|Stop|✅|Stop|✅|Stop|✓|Supported
+0A|Not Used|~|BGA Layer 2|✅|BGA Layer 2|✅|Supported
+0B|Not Used|~|BGA Base Opacity|❌|BGA Base Opacity|❌|Not Supported
+0C|Not Used|~|BGA Layer Opacity|❌|Not Used|~|Not Supported
+0D|Not Used|~|BGA Layer 2 Opacity|❌|Not Used|~|Not Supported
+0E|Not Used|~|BGA Poor Opacity|❌|BGA Poor Opacity|❌|Not Supported
 0F|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 ---
 
-BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
+BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS / PMSX Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 10|Not Used|~|Not Used|~|Not Used|~|Not Used
-11|P1 Key 1|✅|P1 Key 1|✅|P1 Left White|✅|Supported
-12|P1 Key 2|✅|P1 Key 2|✅|P1 Left Yellow|✅|Supported
-13|P1 Key 3|✅|P1 Key 3|✅|P1 Left Green|✅|Supported
-14|P1 Key 4|✅|P1 Key 4|✅|P1 Left Blue|✅|Supported
-15|P1 Key 5|✅|P1 Key 5|✅|P1 Red|✅|Supported
-16|P1 Turn/Scratch|✅|P1 Turn/Scratch|✅|Not Used|~|Supported
-17|P1 FootPedal|❌|P1 FootPedal|❌|Not Used|~|Not Supported
-18|P1 Key 6|✅|P1 Key 6|✅|Not Used|~|Supported
-19|P1 Key 7|✅|P1 Key 7|✅|Not Used|~|Supported
+11|P1 Key 1|✅|P1 Key 1|✅|P1 Left White / P1 Left White |✅|Supported
+12|P1 Key 2|✅|P1 Key 2|✅|P1 Left Yellow / P1 Left Yellow|✅|Supported
+13|P1 Key 3|✅|P1 Key 3|✅|P1 Left Green / P1 Left Green|✅|Supported
+14|P1 Key 4|✅|P1 Key 4|✅|P1 Left Blue / P1 Left Blue |✅|Supported
+15|P1 Key 5|✅|P1 Key 5|✅|P1 Red / P1 Red|✅|Supported
+16|P1 Turn/Scratch|✅|P1 Turn/Scratch|✅|Not Used / P1 Right Blue|✅|Supported
+17|P1 FootPedal|❌|P1 FootPedal|❌|Not Used / P1 Right Green|✅|Not Supported
+18|P1 Key 6|✅|P1 Key 6|✅|Not Used / P1 Right Yellow|✅|Supported
+19|P1 Key 7|✅|P1 Key 7|✅|Not Used / P1 Right White|✅|Supported
 1A|Not Used|~|Not Used|~|Not Used|~|Not Used
 1B|Not Used|~|Not Used|~|Not Used|~|Not Used
 1C|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -272,18 +307,18 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 
 ---
 
-BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
+BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS / PMSX Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 20|Not Used|~|Not Used|~|Not Used|~|Not Used
 21|P2 Key 1|✅|P2 Key 1|✅|Not Used|✅|Supported
-22|P2 Key 2|✅|P2 Key 2|✅|P1 Right Blue|✅|Supported
-23|P2 Key 3|✅|P2 Key 3|✅|P1 Right Green|✅|Supported
-24|P2 Key 4|✅|P2 Key 4|✅|P1 Right Yellow|✅|Supported
-25|P2 Key 5|✅|P2 Key 5|✅|P1 Right White|✅|Supported
-26|P2 Turn/Scratch|✅|P2 Turn/Scratch|✅|Not Used|~|Supported
-27|P2 FootPedal|❌|P2 FootPedal|❌|Not Used|~|Not Supported yet
-28|P2 Key 6|✅|P2 Key 6|✅|Not Used|~|Supported
-29|P2 Key 7|✅|P2 Key 7|✅|Not Used|~|Supported
+22|P2 Key 2|✅|P2 Key 2|✅|P1 Right Blue / P2 Left White|✅|Supported
+23|P2 Key 3|✅|P2 Key 3|✅|P1 Right Green / P2 Left Yellow|✅|Supported
+24|P2 Key 4|✅|P2 Key 4|✅|P1 Right Yellow / P2 Left Green|✅|Supported
+25|P2 Key 5|✅|P2 Key 5|✅|P1 Right White / P2 Red|✅|Supported
+26|P2 Turn/Scratch|✅|P2 Turn/Scratch|✅|Not Used / P2 Right Blue|✅|Supported
+27|P2 FootPedal|❌|P2 FootPedal|❌|Not Used / P2 Right Green|✅|Not Supported
+28|P2 Key 6|✅|P2 Key 6|✅|Not Used / P2 Right Yellow|✅|Supported
+29|P2 Key 7|✅|P2 Key 7|✅|Not Used / P2 Right White|✅|Supported
 2A|Not Used|~|Not Used|~|Not Used|~|Not Used
 2B|Not Used|~|Not Used|~|Not Used|~|Not Used
 2C|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -328,10 +363,10 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 49|P2 Key 7 Hidden|✅|P2 Key 7 Hidden|✅|Not Used|~|Supported in 4.10.0
 4A|Not Used|~|Not Used|~|Not Used|~|Not Used
 4B|Not Used|~|Not Used|~|Not Used|~|Not Used
-4C|Not Used|~|Not Used|~|Not Used|~|Not Supported
-4D|Not Used|~|Not Used|~|Not Used|~|Not Supported
-4E|Not Used|~|Not Used|~|Not Used|~|Not Supported
-4F|Not Used|~|Not Used|~|Not Used|~|Not Supported
+4C|Not Used|~|Not Used|~|Not Used|~|Not Used
+4D|Not Used|~|Not Used|~|Not Used|~|Not Used
+4E|Not Used|~|Not Used|~|Not Used|~|Not Used
+4F|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 ---
 
@@ -454,7 +489,7 @@ A2|Not Used|~|Not Used|~|Not Used|~|Not Used
 A3|Not Used|~|Not Used|~|Not Used|~|Not Used
 A4|Not Used|~|Not Used|~|Not Used|~|Not Used
 A5|Not Used|~|Not Used|~|Not Used|~|Not Used
-A6|Change Option|❌|Change Option|❌|Change Option|❌|This was the deprecated mod system for BMS and PMS.
+A6|Not Used|~|Change Option|❌|Change Option|❌|This was the deprecated mod system for BMS and PMS.
 A7|Not Used|~|Not Used|~|Not Used|~|Not Used
 A8|Not Used|~|Not Used|~|Not Used|~|Not Used
 A9|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -519,15 +554,15 @@ BME and PMS support for the landmines (mines) is now 100% complete, and work as 
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 D0|Not Used|~|Not Used|~|Not Used|~|Not Used
-D1|P1 Key 1 LandMine|✅|P1 Key 1 LandMine|✅|P1 Left White LandMine|✅|Supported in 4.10.0
-D2|P1 Key 2 LandMine|✅|P1 Key 2 LandMine|✅|P1 Left Yellow LandMine|✅|Supported in 4.10.0
-D3|P1 Key 3 LandMine|✅|P1 Key 3 LandMine|✅|P1 Left Green LandMine|✅|Supported in 4.10.0
-D4|P1 Key 4 LandMine|✅|P1 Key 4 LandMine|✅|P1 Left Blue LandMine|✅|Supported in 4.10.0
-D5|P1 Key 5 LandMine|✅|P1 Key 5 LandMine|✅|P1 Red LandMine|✅|Supported in 4.10.0
-D6|P1 Turn/Scratch LandMine|✅|P1 Turn/Scratch LandMine|✅|Not Used|~|Supported in 4.10.0
-D7|P1 FootPedal LandMine|✅|P1 FootPedal LandMine|✅|Not Used|~|Supported in 4.10.0
-D8|P1 Key 6 LandMine|✅|P1 Key 6 LandMine|✅|Not Used|~|Supported in 4.10.0
-D9|P1 Key 7 LandMine|✅|P1 Key 7 LandMine|✅|Not Used|~|Supported in 4.10.0
+D1|Not Used|~|P1 Key 1 LandMine|✅|P1 Left White LandMine|✅|Supported in 4.10.0
+D2|Not Used|~|P1 Key 2 LandMine|✅|P1 Left Yellow LandMine|✅|Supported in 4.10.0
+D3|Not Used|~|P1 Key 3 LandMine|✅|P1 Left Green LandMine|✅|Supported in 4.10.0
+D4|Not Used|~|P1 Key 4 LandMine|✅|P1 Left Blue LandMine|✅|Supported in 4.10.0
+D5|Not Used|~|P1 Key 5 LandMine|✅|P1 Red LandMine|✅|Supported in 4.10.0
+D6|Not Used|~|P1 Turn/Scratch LandMine|✅|Not Used|~|Supported in 4.10.0
+D7|Not Used|~|P1 FootPedal LandMine|✅|Not Used|~|Supported in 4.10.0
+D8|Not Used|~|P1 Key 6 LandMine|✅|Not Used|~|Supported in 4.10.0
+D9|Not Used|~|P1 Key 7 LandMine|✅|Not Used|~|Supported in 4.10.0
 DA|Not Used|~|Not Used|~|Not Used|~|Not Used
 DB|Not Used|~|Not Used|~|Not Used|~|Not Used
 DC|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -540,15 +575,15 @@ DF|Not Used|~|Not Used|~|Not Used|~|Not Used
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 E0|Not Used|~|Not Used|~|Not Used|~|Not Used
-E1|P2 Key 1 LandMine|✅|P2 Key 1 LandMine|✅|Not Used|~|Supported in 4.10.0
-E2|P2 Key 2 LandMine|✅|P2 Key 2 LandMine|✅|P1 Right Blue LandMine|✅|Supported in 4.10.0
-E3|P2 Key 3 LandMine|✅|P2 Key 3 LandMine|✅|P1 Right Green LandMine|✅|Supported in 4.10.0
-E4|P2 Key 4 LandMine|✅|P2 Key 4 LandMine|✅|P1 Right Yellow LandMine|✅|Supported in 4.10.0
-E5|P2 Key 5 LandMine|✅|P2 Key 5 LandMine|✅|P1 Right White LandMine|✅|Supported in 4.10.0
-E6|P2 Turn/Scratch LandMine|✅|P2 Turn/Scratch LandMine|✅|Not Used|~|Supported in 4.10.0
-E7|P2 FootPedal LandMine|✅|P2 FootPedal LandMine|✅|Not Used|~|Supported in 4.10.0
-E8|P2 Key 6 LandMine|✅|P2 Key 6 LandMine|✅|Not Used|~|Supported in 4.10.0
-E9|P2 Key 7 LandMine|✅|P2 Key 7 LandMine|✅|Not Used|~|Supported in 4.10.0
+E1|Not Used|~|P2 Key 1 LandMine|✅|Not Used|~|Supported in 4.10.0
+E2|Not Used|~|P2 Key 2 LandMine|✅|P1 Right Blue LandMine|✅|Supported in 4.10.0
+E3|Not Used|~|P2 Key 3 LandMine|✅|P1 Right Green LandMine|✅|Supported in 4.10.0
+E4|Not Used|~|P2 Key 4 LandMine|✅|P1 Right Yellow LandMine|✅|Supported in 4.10.0
+E5|Not Used|~|P2 Key 5 LandMine|✅|P1 Right White LandMine|✅|Supported in 4.10.0
+E6|Not Used|~|P2 Turn/Scratch LandMine|✅|Not Used|~|Supported in 4.10.0
+E7|Not Used|~|P2 FootPedal LandMine|✅|Not Used|~|Supported in 4.10.0
+E8|Not Used|~|P2 Key 6 LandMine|✅|Not Used|~|Supported in 4.10.0
+E9|Not Used|~|P2 Key 7 LandMine|✅|Not Used|~|Supported in 4.10.0
 EA|Not Used|~|Not Used|~|Not Used|~|Not Used
 EB|Not Used|~|Not Used|~|Not Used|~|Not Used
 EC|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -579,5 +614,19 @@ FF|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 
 ---
+
+## Scroll #xxxSC / Speed #xxxSP Sections - (BMS/PMS) 
+
+These two channels were recent additions to the specification used in the _beatoraja_ and _bemuse_ clients, and are done slightly differently to the specification. Rather than using one of the 30 spare channels in the lower ranges, these two options require full base 36 (00-ZZ) support to work as they use SC/SP instead of a Hex (00-FF) value. OutFox's BMS-like parsers were updated in 4.9.9 to support base 36 channel values even though not required by specification, so these channels were a trivial addition to our support.
+
+Speed and Scroll segments replicate behaviour done with Channel 02/08/09, without relying on these channels changing. They were introduced in the SSC updates to StepMania and are natively supported in the engine in OutFox. These add a new layer of effects to be actioned without using #BPMxx or #STOPxx.
+
+BMS / BME / PMS Channel|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
+------------|-------------|-------------|-------------|-------------|-------------
+SC|Scroll Adjustment|✅|Not Used|~|Added in 4.11.0
+SP|Speed Adjustment|✅|Not Used|~|Added in 4.11.0
+
+---
+
 
 _Written and Maintained with ♡ by Squirrel, with thanks to the feeling-po-mu, BMS command memo, BMS Discord, and Japanese BMS/PMS community_

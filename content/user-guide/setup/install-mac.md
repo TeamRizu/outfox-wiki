@@ -4,8 +4,18 @@ description: Installation guide for Project OutFox on Mac OS systems.
 weight: 1
 ---
 
-Open the DMG file and drag the game to your Applications directory.
+### Note to users using "App Store Only Applications"
 
+Using this permission will make Gatekeeper revoke necessary permissions that Project OutFox needs to read the game content (Given the app loads files externally).
+So, if you are using this option instead of "App Store and Identified Developers", change it before downloading the software.
+
+This option can be found on System Preferences -> Security and Privacy -> "Allow apps downloaded from:"
+
+![Showcase of both options for the "Allow Apps" setting on the Security and Privacy section.](/getting-started/mac-allowapps.png)
+
+---
+
+Open the DMG file and drag the game to your Applications directory.
 ![Screenshot of the OutFox DMG image on MacOS Big Sur.](/getting-started/mac-dmg.png)
 
 ## Additional Notes
