@@ -91,6 +91,10 @@ _key sounded_ notes exist in this mode! This means buttons you press will add to
 
 ## Health Bar
 
+The "health bar" in this mode is called a 'gauge'. It is a measure of accuracy as well as your 'life'. Depending on the difficulty you need to achieve a specific percentage to pass a song.
+
+```#TOTAL``` can edit the gauge, and this is a new feature to _Project OutFox_, as our health bar system was inherited by _StepMania_ so needed a rewrite and new code implemented.
+
 ## Modding
 
 ## Charting
@@ -101,12 +105,14 @@ _key sounded_ notes exist in this mode! This means buttons you press will add to
 
 When this game mode was added in 2003, it actually supported all 9 buttons available on the controller, Yet no 3/4/5 or 7 button mode was created.
 
-This mode has been 'broken' the longest in the game's history. Due to the lack of users, no-one reported any bugs until development began on the new BMS loader during the _Project OutFox_ era. An anonymous Japanese player reported a series of bugs and then this mode was properly restored and is now very playable.
+This mode has been 'broken' the longest in the game's _(StepMania's)_ history. Due to the lack of users, no-one reported any bugs until development began on the new BMS loader during the _Project OutFox_ era. An anonymous Japanese player reported a series of bugs and then this mode was properly restored and is now very playable.
 
 ``po-mu`` 3 button was broken due to a channel issue as _Squirrel_ misread the Japanese documentation on PMS so they did not play properly. This was fixed in March 2022.
 
 PMS began life as a piano format, and when the project sadly faded away, it was adopted for ``po-mu`` charts around 2004-5. 5 or 7 key charts _need_ to be in their PMS file to not accidentally be parsed by simulators as 5K BMS.
 
 18K ``po-mu`` was a design by a simulator in the early 2010s, and still is in use today. Support for it was heavily requested, so it has been added.
+
+
 
 _Written and Maintained with ♡ by Squirrel_
