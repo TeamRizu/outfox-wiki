@@ -19,7 +19,7 @@ The mode (``kb7``) was added in StepMania 4 CVS. It was designed to be a keyboar
 
 In the final release of 2021, Project OutFox 4.12 replaced the original mode completely with a new rewritten version which allowed players to use a differing number of lanes, ranging from 1 to 15 in total. It also created a newer streamlined version of the system to give a small performance boost to this mode. Community member MDR has contributed some ideas to this mode.
 
-Nicknamed ``Key Button eXtreme`` it has become a quite popular option for those who wish to trail/learn charts or just play in a slightly more efficient sandbox for other modes.
+Nicknamed ``Key Button eXtreme`` it has become a quite popular option for those who wish to trial/learn charts or just play in a slightly more efficient sandbox for other modes.
 
 Due to the observations of community members Tarben and Yuki, this mode did not effectively support all of the expanded 'doubles' support of ``be-mu`` 7's (so 16k) and ``techno`` 18k / ``po-mu`` 18k. These charts were not being made available in a suitable playable format for this mode. ``kb16``, ``kb17``, ``kb18`` and ``kb19`` were added in the spring alpha release of alpha 4.14 at the end of March 2022.
 
@@ -46,12 +46,10 @@ Replaced by:
  * Project OutFox alpha4.12.0 - ``kb7-single`` (31 December 2021)
 ---
 #### 1 Key:
-
 First Seen:
  * Project OutFox alpha4.12.0 - ``kb1-single`` (31 December 2021)
 ---
 #### 2 Key:
-
 First Seen:
  * Project OutFox alpha4.12.0 - ``kb2-single`` (31 December 2021)
 ---  
@@ -129,6 +127,7 @@ The table below lists the supported files and their types that ``kbx`` supports,
 File Type|Label|Original Mode|Key Values Supported|Notes 
 ------------|-------------|-------------|-------------|-------------|
  ``.bms/.bme/.bml`` | BMS | ``be-mu`` | 6k / 12k / 8k / 16k | 5k+scratch / 7k+scratch be-mu charts
+ ``.bms`` | BMS | ``dance`` | 4k / 6k | 4k dance / 6k dance in be-mu charts
  ``.chart`` | CHART | ``gh`` | 6k | 5 lane _clone hero_ guitar charts with open notes
  ``.dwi`` | DWI | ``dance`` | 4k | legacy _dance with intensity_ charts
  ``.gda/.g2a/.dtx`` | DTX | ``gddm`` | 6k / 9k / 10k | 6/9/10 piece DTXMania drum charts
@@ -139,6 +138,7 @@ File Type|Label|Original Mode|Key Values Supported|Notes
  ``.pms/.bme`` | PMS | ``po-mu`` | 3k / 4k / 5k / 7k / 9k / 18k | po-mu charts
  ``.qua``/``.qp`` | QUA | ``kbx`` | 4k / 7k | charts created in the game _quaver_ - QP files are the compressed charts
  ``.sm/.ssc`` | SM | ``dance`` / ``pump`` / ``para`` / ``techno`` / ``smx`` / ``ds3ddx`` / ``maniax`` / ``ez2``  | 3k / 4k / 5k / 6k / 8k / 9k / 10k / 12k / 16k / 18k | main format of _stepmania_ covering a lot of game types and lanes
+``.tja`` | TJA | ``taitai`` | 1k | _taikojira_ charts
 
 This mode needs no _autogen_ to be configured! There is a setting in the preferences that enables or disables the precaching when the game loads.
 
@@ -146,8 +146,6 @@ This mode needs no _autogen_ to be configured! There is a setting in the prefere
 ## Game play
 
 This mode is played default in down scroll, with the note receptors at the bottom of the screen. The mode has several different noteskins available to it, with some of them reflecting the currently _mapped_ button to the lane you need to press when the note hits the receptor.
-
-
 
 ### Mechanics
 
@@ -215,10 +213,10 @@ No Modding is available in this mode.
 ---
 ## Trivia
 
-The mode initially started life with 6 columns, but this was changed to include the spacebar when the SSC builds began.
+The legacy kb7 mode initially started life with 6 columns, but this was changed to include the spacebar when the SSC builds began.
 
 Although the name for this mode is ``kbx`` it was decided to not use the SSC era title of ``'keyboard X'`` where X is the number of keys used, because this mode can be played on any device.
 
-There was a completed theme for this mode exclusive to SM4/SSC 1.x made by the SSC team, but it was never released.
+There was a completed theme for the legacy kb7 mode exclusive to SM4/SSC 1.x made by the SSC team, but it was never released.
 
 _Written and Maintained with ♡ by Squirrel_
