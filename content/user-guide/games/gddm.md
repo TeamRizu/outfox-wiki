@@ -13,9 +13,11 @@ insert picture of gameplay
 
 ## History:
 
-This mode was added in Project OutFox. It was added to provide users with a 5/9/10 lane drum mode that works on linux and Mac OS.
+This mode was added in Project OutFox. It was added to provide users with a 5/9/10 lane drum mode that works on Linux and Mac OS.
 
-When added, players could use the auto-gen system to test it out, and there is noticeable lag on windows due to the sound drivers. This will be resolved in a future release.
+When added, players could use the auto-gen system to test it out, and there was noticeable lag on Windows due to the sound drivers. This was resolved in Alpha 4.12, when we rewrote the MIDI input system. This mode mirrors the keysounded options of ``be-mu`` and ``po-mu`` and will take a little time loading your songs due to the nature of mapping and ensuring smooth playback.
+
+This mode is best played on MIDI drums due to the superior lower latency, as well as no input overhead.
 
 This mode is selectable in the game select screen.
 
@@ -66,7 +68,7 @@ _fail at end_ is set by default, so you can look at accuracy and playback over s
 
 ## Health Bar
 
-The concept of a health bar is not used within this mode, the player is scored on accuracy and combo.
+The concept of a health bar is not used within this mode, the player is scored on accuracy and judgement timings. Combo is included, but not something most players care about.
 
 ## Modding
 
@@ -74,10 +76,22 @@ The concept of a health bar is not used within this mode, the player is scored o
 
 ## Controls
 
+The easiest way to play this mode is with MIDI enabled electronic drums. The new cross platform MIDI drivers added to _Project OutFox_ made setting this up a breeze, and allowed for better response times and a more stable playing experience.
+
+There is a MIDI guide here on this _wiki_, which explains in detail how to set up controllers better for this mode.
+
+We have had reports that the rb drum kit can be set up to work within the 5 piece version of this mode, however, as it uses a different input system, you may experience latency (a slight delay from when you hit the drum to it being recognised) which could affect your ability to play. You can adjust your offsets for this, however if you can play via MIDI is recommended.
+
 ## Trivia
 
 This game mode was added to the engine as a 'why not?' joke between the main developers of _Project OutFox_. When the community noticed it existed then there was a demand for a parser and proper support. It led to the creation of the GDA/DTX parser, and 2 new cross platform MIDI drivers being added to the engine, as well as 2 previously undiscovered sound bugs being fixed.
 
-This mode simulations DTXMania, as there is more content for that simulator, and it follows a practice. There are _many_ forks of this project, so we spent some time with the community working out the features to add/discard from OutFox.
+A _keysound_ in this mode is called a 'chip'. 
 
-_Written and Maintained with ♡ by Squirrel_
+This mode needed 'hidden lane' support. That is, two different note lanes occupying the same column. It is a special feature of _OutFox_.
+
+This mode simulates DTXMania, as there is more content for that simulator, and it follows a practice. There are _many_ forks of this project, so we spent some time with the community working out the features to add/discard from OutFox.
+
+The parser for this mode inherits a lot of the functionality of the `BMS` extended set, so OutFox by nature has a wider optional set of features due to this. One can also use `PMS`, or any other of the `BMS` derived parser features. We do not recommend this option if you want to keep your charts compatible with the orginal DTXMania of course!
+
+_Written and Maintained with ♡ by Squirrel, with thanks to the DTXMania community; APPROVED, np\_sub and Furukon._
