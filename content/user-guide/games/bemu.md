@@ -6,8 +6,11 @@ weight: 2
 
 ![be-mu-seven long note game-play, default theme](https://user-images.githubusercontent.com/11047768/135678430-b92b84e3-c24b-40f8-b01a-8adcc8c38fd3.png)
 
+_be-mu seven key long note game-play, default legacy theme_
+
 ![be-mu-seven mine game-play, default theme](https://user-images.githubusercontent.com/11047768/135678425-9f455953-c8b0-4006-9235-3b0b61e8a62b.png)
 
+_be-mu seven key mine game-play, default legacy theme_
 
 <!--
 insert picture of gameplay 

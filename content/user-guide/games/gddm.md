@@ -4,6 +4,9 @@ description: Details about the `gddm` mode supported by Project OutFox.
 weight: 2
 ---
 
+![gddm-new game-play, default theme](https://user-images.githubusercontent.com/11047768/135682218-0706dc51-438b-4971-85a6-cedc6729cca2.png)
+
+_Early GDDM playback, default legacy theme_
 
 <!--
 insert picture of gameplay 
