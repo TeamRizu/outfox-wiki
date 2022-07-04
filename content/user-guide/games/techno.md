@@ -13,23 +13,27 @@ insert picture of gameplay
 
 ## History:
 
-This mode was added in the 3.0.2, with the first mode being 8 panel. Like most modes from this period, there were not many theme items or specifics in scoring or timing windows at all.
+This mode was added in the 3.0.2, with the first mode being 8 panel. Like most modes from this period, there were not many theme items or specifics in scoring or timing windows at all. It was rendered almost unplayable due to the rapid code changes of the time, and was fixed in the side fork of 3.9.5 around spring 2004.
 
-In the development of SM 4.0, this mode was broken with the rapid changes brought into the game and was then fixed again by Team SSC in StepMania 5 Preview 4, restoring doubles and noteskin support. 
+In the development of SM 4.0, this mode was broken with the rapid changes brought into the game and was then fixed again by Team SSC in StepMania 5 Preview 4 aroun 2010, restoring doubles and noteskin support. 
+
+I have not added the fixes/tweaks done to this mode in the history that were added to the _OutFox_ codebase; though much was done to include the 9 panel support requested by a lot of the community. 
+
+This mode can happily play most charts for _dance_ and _pump_ modes, as a lot of the chart styles were 'borrowed'. 
 
 ### Introduced:
 
-#### 4 Sensor (L/U/R/D):
+#### 4 Panel (L/U/R/D):
  * StepMania v3.0.2 - ``(single4)`` (25 July 2004) 
  * StepMania v3.0.2 - ``(versus4)`` (25 July 2004) 
  * StepMania v3.0.2 - ``(double4)`` (25 July 2004)
 
-#### 5 Sensor (UL/UR/C/DR/DL)
+#### 5 Panel (UL/UR/C/DR/DL)
  * StepMania v3.0.2 - ``(single5)`` (25 July 2004)
  * StepMania v3.0.2 - ``(versus5)`` (25 July 2004)
  * StepMania v3.0.2 - ``(double5)`` (25 July 2004) 
 
-#### 8 Sensor (L/UL/UR/U/DL/DR/R/D):
+#### 8 Panel (L/UL/UR/U/DL/DR/R/D):
 
 First Seen:
  * StepMania v3.0.2 - ``(single8)`` (3 September 2003) 
@@ -39,7 +43,7 @@ First Seen:
 Replaced by:
  * StepMania 3.9 CVS "random build" - ``(single8)`` (16 January 2005) Fixed to work once more
  
-#### 9 Sensor (L/UL/UR/U/Center/DL/DR/R/D):
+#### 9 Panel (L/UL/UR/U/Center/DL/DR/R/D):
 
 First Seen:
  * Project OutFox alpha 4.9.7.2 - ``(single9)`` (March 16 2021)
@@ -47,6 +51,10 @@ First Seen:
  * Project OutFox alpha 4.9.7.2 - ``(double9)`` (March 16 2021)
 
 ## Gameplay
+
+This mode is played in upscroll by default, with arrows moving towards the receptor as per other VSRGs. The mode has a variety of different timing options, and it is a very versatile option for those wishing to experiment with different options or note layouts before moving them to ``dance`` or ``pump`` options later on.
+
+This mode supports mods and gimmicks, and a wide base of chart formats to play.
 
 ## Play Styles
 
@@ -64,4 +72,10 @@ First Seen:
 
 ## Trivia
 
-When this game mode was added in 2003, it actually supported all 9 buttons available on the pad, Yet no 4/5 or 9 panel mode was created.
+When this game mode was added in 2003, it actually supported all 9 buttons available on the pad, Yet no 4/5 or 9 panel mode was created until later in development.
+
+This mode was one of the first working custom modes outside of _dance_ to be supported in the earlier versions of the engine.
+
+This mode has a big following; we know of a lot of players that enjoy it's freedom and versatility.
+
+_Written and Maintained with ♡ by Squirrel_
