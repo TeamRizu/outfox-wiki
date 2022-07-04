@@ -7,12 +7,20 @@ weight: 2
 <!--
 insert picture of game-play 
 -->
+![po-mu-nine game-play, default theme](https://user-images.githubusercontent.com/11047768/115632725-40f41e80-a300-11eb-8d9d-479a82dcb6bf.png)
+
 
 ## About
 
 ## History:
 
 This mode was added in version 3.0.2. There was no support for the associated loaders at this time, nor any theme or scoring updates. Po-mu was rendered accidentally broken during the CVS era of development on StepMania 4 (January 2007), where it was not restored until Project OutFox Alpha 4.9.8 (25th April 2021) with a new notesloader and rewritten internal code.
+
+This mode has been around for a very long time, but has not really had any support or been looked at since before 2010. It was side-lined into the `BMS` loader, which actually broke a lot of the needed changes `PMS` actually uses, and as a result most `PMS` files with 7 or 9 lanes, would be added to the game as ``be-mu`` 10 lane or 14 lane charts. It was known there were issues with this mode, but we were not aware it was broken as bad as it was.
+
+Squirrel would like to thank the anonymous japanese player we'll name "竹 (Take)" girl, for reporting this bug, who wanted to play Nitro's `PMS` chart of the song on OutFox, but experienced the issue above, and there were also issues with how the keysounds were being loaded for this song in ``po-mu`` mode and she took the time to give a very detailed report, but deleted her account before we could see her username. I thank you a lot for the report, and if you ever read this, please come and say hi in our discord!
+
+We took the time to investigate it and it was decided to code a new modernised `PMS` loader to the game, which now correctly loads `PMS` songs as they should be. This also removes the oddity and edge crashes when anyone wished to play po-mu mode on OutFox. This song, '竹' (Bamboo) charted by Nitro was used as a testbed to debug and ensure it properly works correctly in the game, so we took time to fix it so it would be recognised as a 9 Button `PMS` file. I'd like to thank Nitro for charting this as we would never have had the report which meant we could fix 13 year old bugs on our `PMS` and `BMS` loaders, and to 竹 girl for taking the time to bring it to our attention so we could fix this properly and have a restored mode. You can find the author of the song at https://twitter.com/NitroX72 - Thanks again Nitro!
 
 ### Introduced:
 #### 3 Key (LW/LY/LG):
@@ -74,7 +82,7 @@ File Type|Label|Original Mode|Key Values Supported|Notes
 
 ## Game play
 
-This mode is played default in down scroll, with the note receptors at the bottom of the screen. There is a selection of different coloured lanes that match a set colour on a large controller. The mode has been extended to support the obscure/rare modes that were charted and these have a slightly different colour layout to the standard 9 key mode. The little notes fall down to be pressed when the item reaches the receptor. This game mode can still play ``po-mu`` charts in BME/BML files, which was a common practice up until around 2014. Play is usually on a dome based button controller, layed out in a 4 top 5 button arrangement. 
+This mode is played default in down scroll, with the note receptors at the bottom of the screen. There is a selection of different coloured lanes that match a set colour on a large controller. The mode has been extended to support the obscure/rare modes that were charted and these have a slightly different colour layout to the standard 9 key mode. The little notes fall down to be pressed when the item reaches the receptor. This game mode can still play ``po-mu`` charts in BME/BML files, which was a common practice up until around 2014. Play is usually on a dome based button controller, layed out in a 4 top 5 botton button arrangement. 
 
 ``po-mu`` also supports 2 player mode on _Project OutFox_ as this was a missing feature from all simulations from the past and was highly requested by the community. 
 
@@ -101,6 +109,10 @@ The "health bar" in this mode is called a 'gauge'. It is a measure of accuracy a
 
 ## Controls
 
+While playable on keyboard, this mode really comes alive when played with a 9 button dome controller. The Arcade style ones can be up to 3 feet / 91cm wide, and provide a really good base for passing the higher level charts. The only mode which can be troublesome is 4 button, as this uses a slghtly different mapping.
+
+Two player ``po-mu`` is a new feature for our simulator, and is still experimental. Let us know if there are any issues if you find any!
+
 ## Trivia
 
 When this game mode was added in 2003, it actually supported all 9 buttons available on the controller, Yet no 3/4/5 or 7 button mode was created.
@@ -111,8 +123,8 @@ This mode has been 'broken' the longest in the game's _(StepMania's)_ history. D
 
 PMS began life as a piano format, and when the project sadly faded away, it was adopted for ``po-mu`` charts around 2004-5. 5 or 7 key charts _need_ to be in their PMS file to not accidentally be parsed by simulators as 5K BMS.
 
-18K ``po-mu`` was a design by a simulator in the early 2010s, and still is in use today. Support for it was heavily requested, so it has been added.
+18K ``po-mu`` was a design by a simulator in the early 2010s, and still is in use today. Support for it was heavily requested, so it has been added as of 4.14.0.
 
-
+The mode has several special background layers that need to have the code finished when the new theme is complete. BGA MISS, BGA Layer 2 and BGA Layer 3 are now in game, but not activated as of 4.15.1. The side effect of these layers is that they can be exposed to the other game modes for special effects too.
 
 _Written and Maintained with ♡ by Squirrel_
