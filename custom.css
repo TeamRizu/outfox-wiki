@@ -215,3 +215,20 @@ video {
 	max-width: 100%;
 	border-radius: .15rem;	
 }
+
+.gdoc-menu-header a {
+  color: var(--footer-link-color);
+}
+
+.gdoc-menu-header a:visited {
+  color: var(--footer-link-color-visited);
+}
+
+.gdoc-menu-header {
+  display: flex;
+  align-items: center;
+}
+
+.gdoc-menu-header > * {
+  margin-left: 0.5rem;
+}

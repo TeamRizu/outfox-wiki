@@ -1,80 +1,1141 @@
-<!doctype html><html lang=en class=color-toggle-hidden><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="Project OutFox contains a parser for the KSF chart format, which is used for Kick It Up and &lsquo;Pump it Up&rsquo;-style charts. This has been supported as early as StepMania 3.9, so everything listed here is what OutFox supports. At this point, most everyone has moved away from the KSF format in favor of SM or SSC. Like SM and SSC, sections follow this format: #SECTION:DATA;, which means #, : and ; shouldn&rsquo;t be used in the data segment."><title>KSF | Project OutFox Wiki</title><link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon><script src=../../../js/darkmode-ce906ea916.min.js></script>
-<link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous><link rel=preload as=font href=../../../fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous><link rel=preload href=../../../main-0c0de99286.min.css as=style><link rel=stylesheet href=../../../main-0c0de99286.min.css media=all><link rel=preload href=../../../mobile-c344439d04.min.css as=style><link rel=stylesheet href=../../../mobile-c344439d04.min.css media="screen and (max-width: 45rem)"><link rel=preload href=../../../print-f79fc3e5d7.min.css as=style><link rel=stylesheet href=../../../print-f79fc3e5d7.min.css media=print><link rel=preload href=../../../custom.css as=style><link rel=stylesheet href=../../../custom.css media=all></head><body itemscope itemtype=https://schema.org/WebPage><svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.526v2.947H5.755l8.351 8.421-2.105 2.105-12-12 12-12 2.105 2.105-8.351 8.421H24z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M5.965 10.526V6.035L0 12l5.965 5.965v-4.491H24v-2.947H5.965z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M18.035 10.526V6.035L24 12l-5.965 5.965v-4.491H0v-2.947h18.035z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_bitbucket" xmlns="http://www.w3.org/2000/svg"><path d="M15.905 13.355c.189 1.444-1.564 2.578-2.784 1.839-1.375-.602-1.375-2.784-.034-3.403 1.151-.705 2.818.223 2.818 1.564zm1.907-.361c-.309-2.44-3.076-4.056-5.328-3.042-1.426.636-2.389 2.148-2.32 3.747.086 2.097 2.08 3.815 4.176 3.626s3.729-2.234 3.472-4.331zm4.108-9.315c-.756-.997-2.045-1.169-3.179-1.358-3.214-.516-6.513-.533-9.727.034-1.066.172-2.269.361-2.939 1.323 1.1 1.031 2.664 1.186 4.073 1.358 2.544.327 5.156.344 7.699.017 1.426-.172 3.008-.309 4.073-1.375zm.979 17.788c-.481 1.684-.206 3.953-1.994 4.932-3.076 1.701-6.806 1.89-10.191 1.289-1.787-.327-3.884-.894-4.864-2.578-.43-1.65-.705-3.334-.98-5.018l.103-.275.309-.155c5.121 3.386 12.288 3.386 17.427.0.808.241.206 1.22.189 1.805zM26.01 4.951c-.584 3.764-1.255 7.51-1.908 11.257-.189 1.1-1.255 1.719-2.148 2.183-3.214 1.615-6.96 1.89-10.483 1.512-2.389-.258-4.829-.894-6.771-2.389-.911-.705-.911-1.908-1.083-2.922-.602-3.523-1.289-7.046-1.719-10.604.206-1.547 1.942-2.217 3.231-2.698C6.848.654 8.686.362 10.508.19c3.884-.378 7.854-.241 11.618.859 1.341.395 2.784.945 3.695 2.097.412.533.275 1.203.189 1.805z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15.268 4.392q.868.0 1.532.638t.664 1.506v17.463l-7.659-3.268-7.608 3.268V6.536q0-.868.664-1.506t1.532-.638h10.876zm4.34 14.144V4.392q0-.868-.638-1.532t-1.506-.664H6.537q0-.868.664-1.532T8.733.0h10.876q.868.0 1.532.664t.664 1.532v17.412z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_auto" xmlns="http://www.w3.org/2000/svg"><path d="M16.846 18.938h2.382L15.22 7.785h-2.44L8.772 18.938h2.382l.871-2.44h3.95zm7.087-9.062L27.999 14l-4.066 4.124v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809zm-11.385 4.937L14 10.282l1.452 4.531h-2.904z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_dark" xmlns="http://www.w3.org/2000/svg"><path d="M14 21.435q3.079.0 5.257-2.178T21.435 14t-2.178-5.257T14 6.565q-1.51.0-3.079.697 1.917.871 3.108 2.701T15.22 14t-1.191 4.037-3.108 2.701q1.568.697 3.079.697zm9.933-11.559L27.999 14l-4.066 4.124v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_light" xmlns="http://www.w3.org/2000/svg"><path d="M14 21.435q3.079.0 5.257-2.178T21.435 14t-2.178-5.257T14 6.565 8.743 8.743 6.565 14t2.178 5.257T14 21.435zm9.933-3.311v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809L27.999 14z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_cloud_off" xmlns="http://www.w3.org/2000/svg"><path d="M9.023 10.5H7q-1.914.0-3.281 1.395t-1.367 3.309 1.367 3.281T7 19.852h11.375zM3.5 4.976l1.477-1.477L24.5 23.022l-1.477 1.477-2.352-2.297H6.999q-2.898.0-4.949-2.051t-2.051-4.949q0-2.844 1.969-4.867t4.758-2.133zm19.086 5.578q2.242.164 3.828 1.832T28 16.351q0 3.008-2.461 4.758l-1.695-1.695q1.805-.984 1.805-3.063.0-1.422-1.039-2.461t-2.461-1.039h-1.75v-.602q0-2.68-1.859-4.539t-4.539-1.859q-1.531.0-2.953.711l-1.75-1.695Q11.431 3.5 14.001 3.5q2.953.0 5.496 2.078t3.09 4.977z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_code" xmlns="http://www.w3.org/2000/svg"><path d="M9.917 24.5a1.75 1.75.0 10-3.501.001 1.75 1.75.0 003.501-.001zm0-21a1.75 1.75.0 10-3.501.001A1.75 1.75.0 009.917 3.5zm11.666 2.333a1.75 1.75.0 10-3.501.001 1.75 1.75.0 003.501-.001zm1.75.0a3.502 3.502.0 01-1.75 3.026c-.055 6.581-4.721 8.039-7.82 9.023-2.898.911-3.846 1.349-3.846 3.117v.474a3.502 3.502.0 011.75 3.026c0 1.932-1.568 3.5-3.5 3.5s-3.5-1.568-3.5-3.5c0-1.294.711-2.424 1.75-3.026V6.526A3.502 3.502.0 014.667 3.5c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5a3.502 3.502.0 01-1.75 3.026v9.06c.93-.456 1.914-.766 2.807-1.039 3.391-1.075 5.323-1.878 5.359-5.687a3.502 3.502.0 01-1.75-3.026c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_date" xmlns="http://www.w3.org/2000/svg"><path d="M27.192 28.844V11.192H4.808v17.652h22.384zm0-25.689q1.277.0 2.253.976t.976 2.253v22.459q0 1.277-.976 2.216t-2.253.939H4.808q-1.352.0-2.291-.901t-.939-2.253V6.385q0-1.277.939-2.253t2.291-.976h1.577V.001h3.23v3.155h12.769V.001h3.23v3.155h1.577zm-3.155 11.267v3.155h-3.23v-3.155h3.23zm-6.46.0v3.155h-3.155v-3.155h3.155zm-6.384.0v3.155h-3.23v-3.155h3.23z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_download" xmlns="http://www.w3.org/2000/svg"><path d="M2.866 28.209h26.269v3.79H2.866v-3.79zm26.268-16.925L16 24.418 2.866 11.284h7.493V.001h11.283v11.283h7.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_email" xmlns="http://www.w3.org/2000/svg"><path d="M28.845 9.615v-3.23L16 14.422 3.155 6.385v3.23L16 17.577zm0-6.46q1.277.0 2.216.977T32 6.385v19.23q0 1.277-.939 2.253t-2.216.977H3.155q-1.277.0-2.216-.977T0 25.615V6.385q0-1.277.939-2.253t2.216-.977h25.69z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_git" xmlns="http://www.w3.org/2000/svg"><path d="M27.472 12.753 15.247.529a1.803 1.803.0 00-2.55.0l-2.84 2.84 2.137 2.137a2.625 2.625.0 013.501 3.501l3.499 3.499a2.625 2.625.0 11-1.237 1.237l-3.499-3.499c-.083.04-.169.075-.257.106v7.3a2.626 2.626.0 11-1.75.0v-7.3a2.626 2.626.0 01-1.494-3.607L8.62 4.606l-8.09 8.09a1.805 1.805.0 000 2.551l12.225 12.224a1.803 1.803.0 002.55.0l12.168-12.168a1.805 1.805.0 000-2.551z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_github" xmlns="http://www.w3.org/2000/svg"><path d="M16 .394c8.833.0 15.999 7.166 15.999 15.999.0 7.062-4.583 13.062-10.937 15.187-.813.146-1.104-.354-1.104-.771.0-.521.021-2.25.021-4.396.0-1.5-.5-2.458-1.083-2.958 3.562-.396 7.312-1.75 7.312-7.896.0-1.75-.625-3.167-1.646-4.291.167-.417.708-2.042-.167-4.25-1.333-.417-4.396 1.646-4.396 1.646a15.032 15.032.0 00-8 0S8.937 6.602 7.603 7.018c-.875 2.208-.333 3.833-.167 4.25-1.021 1.125-1.646 2.542-1.646 4.291.0 6.125 3.729 7.5 7.291 7.896-.458.417-.875 1.125-1.021 2.146-.917.417-3.25 1.125-4.646-1.333-.875-1.521-2.458-1.646-2.458-1.646-1.562-.021-.104.979-.104.979 1.042.479 1.771 2.333 1.771 2.333.938 2.854 5.396 1.896 5.396 1.896.0 1.333.021 2.583.021 2.979.0.417-.292.917-1.104.771C4.582 29.455-.001 23.455-.001 16.393-.001 7.56 7.165.394 15.998.394zM6.063 23.372c.042-.083-.021-.187-.146-.25-.125-.042-.229-.021-.271.042-.042.083.021.187.146.25.104.062.229.042.271-.042zm.646.709c.083-.062.062-.208-.042-.333-.104-.104-.25-.146-.333-.062-.083.062-.062.208.042.333.104.104.25.146.333.062zm.625.937c.104-.083.104-.25.0-.396-.083-.146-.25-.208-.354-.125-.104.062-.104.229.0.375s.271.208.354.146zm.875.875c.083-.083.042-.271-.083-.396-.146-.146-.333-.167-.417-.062-.104.083-.062.271.083.396.146.146.333.167.417.062zm1.187.521c.042-.125-.083-.271-.271-.333-.167-.042-.354.021-.396.146s.083.271.271.312c.167.062.354.0.396-.125zm1.313.104c0-.146-.167-.25-.354-.229-.187.0-.333.104-.333.229.0.146.146.25.354.229.187.0.333-.104.333-.229zm1.208-.208c-.021-.125-.187-.208-.375-.187-.187.042-.312.167-.292.312.021.125.187.208.375.167s.312-.167.292-.292z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_gitlab" xmlns="http://www.w3.org/2000/svg"><path d="M1.629 11.034 14 26.888.442 17.048a1.09 1.09.0 01-.39-1.203l1.578-4.811zm7.217.0h10.309l-5.154 15.854zM5.753 1.475l3.093 9.559H1.63l3.093-9.559a.548.548.0 011.031.0zm20.618 9.559 1.578 4.811c.141.437-.016.922-.39 1.203l-13.558 9.84 12.371-15.854zm0 0h-7.216l3.093-9.559a.548.548.0 011.031.0z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_heart" xmlns="http://www.w3.org/2000/svg"><path d="M16 29.714a1.11 1.11.0 01-.786-.321L4.072 18.643c-.143-.125-4.071-3.714-4.071-8 0-5.232 3.196-8.357 8.535-8.357 3.125.0 6.053 2.464 7.464 3.857 1.411-1.393 4.339-3.857 7.464-3.857 5.339.0 8.535 3.125 8.535 8.357.0 4.286-3.928 7.875-4.089 8.035L16.785 29.392c-.214.214-.5.321-.786.321z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_keyborad_arrow_down" xmlns="http://www.w3.org/2000/svg"><path d="M3.281 5.36 14 16.079 24.719 5.36 28 8.641l-14 14-14-14z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_keyborad_arrow_left" xmlns="http://www.w3.org/2000/svg"><path d="M25.875 28.25 22.125 32 6.126 16.001 22.125.002l3.75 3.75-12.25 12.25z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_keyborad_arrow_right" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 28.25 18.375 16 6.125 3.75 9.875.0l15.999 15.999L9.875 31.998z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_keyborad_arrow_up" xmlns="http://www.w3.org/2000/svg"><path d="M24.719 22.64 14 11.921 3.281 22.64.0 19.359l14-14 14 14z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_link" xmlns="http://www.w3.org/2000/svg"><path d="M24.037 7.963q3.305.0 5.634 2.366T32 16t-2.329 5.671-5.634 2.366h-6.46v-3.08h6.46q2.028.0 3.493-1.465t1.465-3.493-1.465-3.493-3.493-1.465h-6.46v-3.08h6.46zM9.615 17.578v-3.155h12.77v3.155H9.615zM3.005 16q0 2.028 1.465 3.493t3.493 1.465h6.46v3.08h-6.46q-3.305.0-5.634-2.366T0 16.001t2.329-5.671 5.634-2.366h6.46v3.08h-6.46q-2.028.0-3.493 1.465t-1.465 3.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_menu" xmlns="http://www.w3.org/2000/svg"><path d="M.001 5.334h31.998v3.583H.001V5.334zm0 12.416v-3.5h31.998v3.5H.001zm0 8.916v-3.583h31.998v3.583H.001z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_notification" xmlns="http://www.w3.org/2000/svg"><path d="M22.615 19.384l2.894 2.894v1.413H2.49v-1.413l2.894-2.894V12.25q0-3.365 1.716-5.856t4.745-3.231v-1.01q0-.875.606-1.514T13.999.0t1.548.639.606 1.514v1.01q3.029.74 4.745 3.231t1.716 5.856v7.134zM14 27.999q-1.211.0-2.053-.808t-.841-2.019h5.788q0 1.144-.875 1.986T14 27.999z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_path" xmlns="http://www.w3.org/2000/svg"><path d="M28 12.62h-9.793V8.414h-2.826v11.173h2.826v-4.206H28V26.62h-9.793v-4.206H12.62v-14H9.794v4.206H.001V1.381h9.793v4.206h8.413V1.381H28V12.62z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_person" xmlns="http://www.w3.org/2000/svg"><path d="M16 20.023q5.052.0 10.526 2.199t5.473 5.754v4.023H0v-4.023q0-3.555 5.473-5.754t10.526-2.199zM16 16q-3.275.0-5.614-2.339T8.047 8.047t2.339-5.661T16 0t5.614 2.386 2.339 5.661-2.339 5.614T16 16z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_search" xmlns="http://www.w3.org/2000/svg"><path d="M11.925 20.161q3.432.0 5.834-2.402t2.402-5.834-2.402-5.834-5.834-2.402-5.834 2.402-2.402 5.834 2.402 5.834 5.834 2.402zm10.981.0L32 29.255 29.255 32l-9.094-9.094v-1.458l-.515-.515q-3.26 2.831-7.721 2.831-4.976.0-8.45-3.432T.001 11.925t3.474-8.45 8.45-3.474 8.407 3.474 3.432 8.45q0 1.802-.858 4.075t-1.973 3.646l.515.515h1.458z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_shield" xmlns="http://www.w3.org/2000/svg"><path d="M22.167 15.166V3.5h-8.166v20.726c.93-.492 2.424-1.349 3.883-2.497 1.95-1.531 4.284-3.919 4.284-6.562zm3.499-13.999v14c0 7.674-10.737 12.523-11.192 12.724-.146.073-.31.109-.474.109s-.328-.036-.474-.109c-.456-.201-11.192-5.049-11.192-12.724v-14C2.334.529 2.863.0 3.501.0H24.5c.638.0 1.167.529 1.167 1.167z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_tags" xmlns="http://www.w3.org/2000/svg"><path d="M6.606 7.549c0-1.047-.84-1.887-1.887-1.887s-1.887.84-1.887 1.887.84 1.887 1.887 1.887 1.887-.84 1.887-1.887zm15.732 8.493c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546s-.988-.206-1.327-.546L1.342 14.066C.59 13.329.0 11.899.0 10.852V4.718a1.9 1.9.0 011.887-1.887h6.134c1.047.0 2.477.59 3.229 1.342L21.792 14.7c.339.354.546.84.546 1.342zm5.661.0c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546-.767.0-1.15-.354-1.651-.87l6.93-6.93c.339-.339.546-.826.546-1.327s-.206-.988-.546-1.342L13.609 4.173c-.752-.752-2.182-1.342-3.229-1.342h3.303c1.047.0 2.477.59 3.229 1.342L27.454 14.7c.339.354.546.84.546 1.342z"/></symbol></svg><div class=wrapper><input type=checkbox class=hidden id=menu-control>
-<input type=checkbox class=hidden id=menu-header-control><header class=gdoc-header><div class="container flex align-center justify-between"><label for=menu-control class=gdoc-nav__control><svg class="icon gdoc_menu"><title>Open Nav Menu</title><use xlink:href="#gdoc_menu"/></svg><svg class="icon gdoc_arrow_back"><title>Close Nav Menu</title><use xlink:href="#gdoc_arrow_back"/></svg></label><a class=gdoc-header__link href=https://outfox.wiki><span class="gdoc-brand flex align-center"><img class=gdoc-brand__img src=../../../logo.png alt>
-<span class=gdoc-brand__title>Project OutFox Wiki</span></span></a><div class=gdoc-menu-header><span id=outfox-link><a href=https://projectoutfox.com>Back to ProjectOutFox.com</a></span>
-<span id=gdoc-dark-mode><svg class="icon gdoc_brightness_dark"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_dark"/></svg><svg class="icon gdoc_brightness_light"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_light"/></svg><svg class="icon gdoc_brightness_auto"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_auto"/></svg></span></div></div></header><main class="container flex flex-even"><aside class=gdoc-nav><nav><div class=gdoc-search><svg class="icon gdoc_search"><use xlink:href="#gdoc_search"/></svg><input type=text id=gdoc-search-input class=gdoc-search__input placeholder=Search... aria-label=Search maxlength=64><div class="gdoc-search__spinner spinner hidden"></div><ul id=gdoc-search-results class=gdoc-search__list></ul></div><section class=gdoc-nav--main><h2>Navigation</h2><ul class=gdoc-nav__list><li><input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
-<label for=navtree-4d9830bf class="flex justify-between"><span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex>Front Matter</span><ul class=gdoc-nav__list><li><span class=flex><a href=../../../user-guide/meta/about/ class=gdoc-nav__entry>About Project OutFox</a></span></li><li><span class=flex><a href=../../../user-guide/meta/faq/ class=gdoc-nav__entry>FAQ</a></span></li><li><span class=flex><a href=../../../user-guide/meta/serenity/ class=gdoc-nav__entry>OutFox Serenity</a></span></li></ul></li><li><span class=flex>Setup</span><ul class=gdoc-nav__list><li><span class=flex><a href=../../../user-guide/setup/install/ class=gdoc-nav__entry>Installation</a></span></li><li><span class=flex><a href=../../../user-guide/setup/install-linux/ class=gdoc-nav__entry>Installation on Linux & Raspberry Pi</a></span></li><li><span class=flex><a href=../../../user-guide/setup/install-mac/ class=gdoc-nav__entry>Installation on Mac OS</a></span></li><li><span class=flex><a href=../../../user-guide/setup/install-windows/ class=gdoc-nav__entry>Installation on Windows</a></span></li><li><span class=flex><a href=../../../user-guide/setup/key_shortcuts/ class=gdoc-nav__entry>Keyboard Shortcuts</a></span></li><li><span class=flex><a href=../../../user-guide/setup/getting-started/ class=gdoc-nav__entry>Getting started</a></span></li><li><span class=flex><a href=../../../user-guide/setup/controllers/ class=gdoc-nav__entry>Configure controllers</a></span></li></ul></li><li><input type=checkbox id=navtree-a4bf1acb class=gdoc-nav__toggle>
-<label for=navtree-a4bf1acb class="flex justify-between"><span class=flex>Controllers and Peripherals</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../user-guide/controllers/controller_mapping_drums/ class=gdoc-nav__entry>Drums Mapping</a></span></li><li><span class=flex><a href=../../../user-guide/controllers/controller_mapping_guitars/ class=gdoc-nav__entry>Guitars Mapping</a></span></li></ul></li><li><span class=flex>Features & Config</span><ul class=gdoc-nav__list><li><span class=flex><a href=../../../user-guide/config/folders/ class=gdoc-nav__entry>Content folders</a></span></li><li><span class=flex><a href=../../../user-guide/config/preferences/ class=gdoc-nav__entry>Preferences.ini</a></span></li></ul></li><li><span class=flex><a href=../../../user-guide/games/ class=gdoc-nav__entry>Supported Game Modules</a></span><ul class=gdoc-nav__list><li><span class=flex><a href=../../../user-guide/games/bemu/ class=gdoc-nav__entry>Game Module: be-mu</a></span></li><li><span class=flex><a href=../../../user-guide/games/dance/ class=gdoc-nav__entry>Game Module: dance</a></span></li><li><span class=flex><a href=../../../user-guide/games/ds3ddx/ class=gdoc-nav__entry>Game Module: ds3ddx</a></span></li><li><span class=flex><a href=../../../user-guide/games/ez2d/ class=gdoc-nav__entry>Game Module: ez2d</a></span></li><li><span class=flex><a href=../../../user-guide/games/gddm/ class=gdoc-nav__entry>Game Module: gddm</a></span></li><li><span class=flex><a href=../../../user-guide/games/gdgf/ class=gdoc-nav__entry>Game Module: gdgf</a></span></li><li><span class=flex><a href=../../../user-guide/games/gh/ class=gdoc-nav__entry>Game Module: gh</a></span></li><li><span class=flex><a href=../../../user-guide/games/kbx/ class=gdoc-nav__entry>Game Module: kbx</a></span></li><li><span class=flex><a href=../../../user-guide/games/kickbox/ class=gdoc-nav__entry>Game Module: kickbox</a></span></li><li><span class=flex><a href=../../../user-guide/games/maniax/ class=gdoc-nav__entry>Game Module: maniax</a></span></li><li><span class=flex><a href=../../../user-guide/games/para/ class=gdoc-nav__entry>Game Module: para</a></span></li><li><span class=flex><a href=../../../user-guide/games/pomu/ class=gdoc-nav__entry>Game Module: po-mu</a></span></li><li><span class=flex><a href=../../../user-guide/games/pump/ class=gdoc-nav__entry>Game Module: pump</a></span></li><li><span class=flex><a href=../../../user-guide/games/smx/ class=gdoc-nav__entry>Game Module: smx</a></span></li><li><span class=flex><a href=../../../user-guide/games/stepstage/ class=gdoc-nav__entry>Game Module: stepstage</a></span></li><li><span class=flex><a href=../../../user-guide/games/taiko/ class=gdoc-nav__entry>Game Module: taitai</a></span></li><li><span class=flex><a href=../../../user-guide/games/techno/ class=gdoc-nav__entry>Game Module: techno</a></span></li></ul></li></ul></li><li><input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
-<label for=navtree-6821e290 class="flex justify-between"><span class=flex><a href=../../../dev/ class=gdoc-nav__entry>Developers and Creators</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><input type=checkbox id=navtree-4e04bb11 class=gdoc-nav__toggle checked>
-<label for=navtree-4e04bb11 class="flex justify-between"><span class=flex><a href=../../../dev/mode-support/ class=gdoc-nav__entry>NoteLoader support</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/mode-support/bms-pms-support/ class=gdoc-nav__entry>BMS/BME/PMS Support</a></span></li><li><span class=flex><a href=../../../dev/mode-support/dtx-gda-support/ class=gdoc-nav__entry>DTX & GDA/G2D Support</a></span></li><li><span class=flex><a href=../../../dev/mode-support/ksf-support/ class="gdoc-nav__entry is-active">KSF</a></span></li><li><span class=flex><a href=../../../dev/mode-support/oto-support/ class=gdoc-nav__entry>OTO Compatibility</a></span></li><li><span class=flex><a href=../../../dev/mode-support/sm-support/ class=gdoc-nav__entry>SM</a></span></li><li><span class=flex><a href=../../../dev/mode-support/tja-support/ class=gdoc-nav__entry>TJA Compatibility</a></span></li></ul></li><li><input type=checkbox id=navtree-408e5923 class=gdoc-nav__toggle>
-<label for=navtree-408e5923 class="flex justify-between"><span class=flex><a href=../../../dev/editor/ class=gdoc-nav__entry>Editor</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/editor/0-Editor-Preferences/ class=gdoc-nav__entry>Editor Preferences</a></span></li></ul></li><li><span class=flex><a href=../../../dev/courses/ class=gdoc-nav__entry>Courses</a></span></li><li><input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle>
-<label for=navtree-e7ea7745 class="flex justify-between"><span class=flex><a href=../../../dev/actors/ class=gdoc-nav__entry>Lua and Actors</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><input type=checkbox id=navtree-88f64d71 class=gdoc-nav__toggle>
-<label for=navtree-88f64d71 class="flex justify-between"><span class=flex><a href=../../../dev/actors/actortypes/ class=gdoc-nav__entry>Actor Types</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><input type=checkbox id=navtree-42ad3adb class=gdoc-nav__toggle>
-<label for=navtree-42ad3adb class="flex justify-between"><span class=flex><a href=../../../dev/actors/actortypes/actor/ class=gdoc-nav__entry>Actor</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/actors/actortypes/actor/ActorsLua-Anatomy+Structure/ class=gdoc-nav__entry>Anatomy of an Actor</a></span></li><li><span class=flex><a href=../../../dev/actors/actortypes/actor/obtainlevels/ class=gdoc-nav__entry>Obtaining Childs and ActorFrame Levels</a></span></li></ul></li><li><span class=flex><a href=../../../dev/actors/actortypes/actorframe/ class=gdoc-nav__entry>ActorFrame</a></span></li><li><span class=flex><a href=../../../dev/actors/actortypes/actormultivertex/ class=gdoc-nav__entry>ActorMultiVertex</a></span></li><li><input type=checkbox id=navtree-86ad643b class=gdoc-nav__toggle>
-<label for=navtree-86ad643b class="flex justify-between"><span class=flex><a href=../../../dev/actors/actortypes/sprite/ class=gdoc-nav__entry>Sprite</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/actors/actortypes/sprite/Frames/ class=gdoc-nav__entry>Managing Frames</a></span></li></ul></li><li><input type=checkbox id=navtree-6adb90e6 class=gdoc-nav__toggle>
-<label for=navtree-6adb90e6 class="flex justify-between"><span class=flex><a href=../../../dev/actors/actortypes/bitmaptext/ class=gdoc-nav__entry>BitmapText</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/actors/actortypes/bitmaptext/Bitmap-EnsuringStringComp/ class=gdoc-nav__entry>Ensuring string compatiblity</a></span></li><li><span class=flex><a href=../../../dev/actors/actortypes/bitmaptext/Bitmap-InlineColoring/ class=gdoc-nav__entry>Inline-Text manipulation</a></span></li><li><span class=flex><a href=../../../dev/actors/actortypes/bitmaptext/Bitmap-Segments/ class=gdoc-nav__entry>Segments of a BitmapText</a></span></li></ul></li></ul></li><li><span class=flex><a href=../../../dev/actors/General-DifferencesfromOlderSM/ class=gdoc-nav__entry>Behavioral differences from SM 3.95/ITG</a></span></li><li><span class=flex><a href=../../../dev/actors/ActorsLua-CommandList/ class=gdoc-nav__entry>Command List</a></span></li><li><span class=flex><a href=../../../dev/actors/ActorsLua-Tweening/ class=gdoc-nav__entry>Tweening</a></span></li><li><span class=flex><a href=../../../dev/actors/Converting-ini-to-Lua/ class=gdoc-nav__entry>Converting INI files to Lua</a></span></li><li><span class=flex><a href=../../../dev/actors/Converting-xml-to-Lua/ class=gdoc-nav__entry>Converting XML files to Lua</a></span></li></ul></li><li><input type=checkbox id=navtree-07f3f85e class=gdoc-nav__toggle>
-<label for=navtree-07f3f85e class="flex justify-between"><span class=flex><a href=../../../dev/effects/ class=gdoc-nav__entry>Effect Simfiles</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/effects/EffectFiles-ChartSegments/ class=gdoc-nav__entry>Chart segments</a></span></li><li><span class=flex><a href=../../../dev/effects/EffectFiles-ModifierFiles/ class=gdoc-nav__entry>Modifier Files</a></span></li></ul></li><li><input type=checkbox id=navtree-fb0e8f07 class=gdoc-nav__toggle>
-<label for=navtree-fb0e8f07 class="flex justify-between"><span class=flex><a href=../../../dev/mods/ class=gdoc-nav__entry>Guide to Modifiers</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/mods/Mods-0-Overview/ class=gdoc-nav__entry>Overview of modifiers</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-1-Speed-Mods/ class=gdoc-nav__entry>Speed</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-2-Perspective-Mods/ class=gdoc-nav__entry>Perspective</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-3-Column-Movement-Mods/ class=gdoc-nav__entry>Column movement</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-4-Scroll-Mods/ class=gdoc-nav__entry>Scroll</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-5-Rotation-Mods/ class=gdoc-nav__entry>Rotation</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-6-Zoom-Mods/ class=gdoc-nav__entry>Zoom</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-7-Acceleration-Mods/ class=gdoc-nav__entry>Acceleration</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-8-Visibility-Mods/ class=gdoc-nav__entry>Visibility</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-9-Path-Mods/ class=gdoc-nav__entry>Path modifiers</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-10-Color+Gradient-Mods/ class=gdoc-nav__entry>Color modifiers</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-11-ModSplines/ class=gdoc-nav__entry>ModSplines</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-12-Chart-Mods/ class=gdoc-nav__entry>Chart modifiers</a></span></li><li><span class=flex><a href=../../../dev/mods/Mods-13-Miscellaneous-Mods/ class=gdoc-nav__entry>Miscellaneous Modifiers</a></span></li></ul></li><li><input type=checkbox id=navtree-2f59d80b class=gdoc-nav__toggle>
-<label for=navtree-2f59d80b class="flex justify-between"><span class=flex><a href=../../../dev/theming/ class=gdoc-nav__entry>Introduction to theming</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../dev/theming/Theming-0-Differences/ class=gdoc-nav__entry>Theming differences between older versions</a></span></li><li><span class=flex><a href=../../../dev/theming/Theming-1-Folders/ class=gdoc-nav__entry>The Structure of folders</a></span></li><li><span class=flex><a href=../../../dev/theming/Theming-2-Screen-Creation/ class=gdoc-nav__entry>Creating a custom screen</a></span></li><li><span class=flex><a href=../../../dev/theming/Theming-3-Anatomy-Screen/ class=gdoc-nav__entry>Anatomy of a screen</a></span></li><li><span class=flex><a href=../../../dev/theming/Theming-4-Creating-Font/ class=gdoc-nav__entry>Creating a Font</a></span></li><li><span class=flex><a href=../../../dev/theming/Theming-Scripts/ class=gdoc-nav__entry>Scripts</a></span></li><li><span class=flex><a href=../../../dev/theming/Theming-Custom-Input/ class=gdoc-nav__entry>Custom Input</a></span></li><li><span class=flex><a href=../../../dev/theming/Theming-Modules/ class=gdoc-nav__entry>Modules</a></span></li><li><span class=flex><a href=../../../dev/theming/Theming-Sounds/ class=gdoc-nav__entry>Sounds</a></span></li></ul></li><li><span class=flex><a href=../../../dev/translation/ class=gdoc-nav__entry>Translation</a></span></li></ul></li><li><input type=checkbox id=navtree-a315f98a class=gdoc-nav__toggle>
-<label for=navtree-a315f98a class="flex justify-between"><span class=flex><a href=../../../roadmap/ class=gdoc-nav__entry>Our Project Roadmap</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../roadmap/2019/ class=gdoc-nav__entry>OutFox Alpha 3.0 to 4.0 Roadmap</a></span></li></ul></li><li><input type=checkbox id=navtree-4affc580 class=gdoc-nav__toggle>
-<label for=navtree-4affc580 class="flex justify-between"><span class=flex><a href=../../../releases/ class=gdoc-nav__entry>Release History</a></span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><span class=flex><a href=../../../releases/A4.15.1/ class=gdoc-nav__entry>OutFox Alpha 4.15.1 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.15.0/ class=gdoc-nav__entry>OutFox Alpha 4.15.0 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.14.0/ class=gdoc-nav__entry>OutFox Alpha 4.14.0 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.13.0/ class=gdoc-nav__entry>OutFox Alpha 4.13.0 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.12.0/ class=gdoc-nav__entry>OutFox Alpha 4.12.0 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.11.0/ class=gdoc-nav__entry>OutFox Alpha 4.11.0 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.10.0/ class=gdoc-nav__entry>OutFox Alpha 4.10.0 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.10/ class=gdoc-nav__entry>OutFox Alpha 4.9.10 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.9HF3/ class=gdoc-nav__entry>OutFox Alpha 4.9.9HF3 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.9HF2/ class=gdoc-nav__entry>OutFox Alpha 4.9.9HF2 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.9HF/ class=gdoc-nav__entry>OutFox Alpha 4.9.9HF Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.9/ class=gdoc-nav__entry>OutFox Alpha 4.9.9 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.8/ class=gdoc-nav__entry>OutFox Alpha 4.9.8 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.7GG/ class=gdoc-nav__entry>OutFox Alpha 4.9.7GG Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.7/ class=gdoc-nav__entry>OutFox Alpha 4.9.7 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.6/ class=gdoc-nav__entry>OutFox Alpha 4.9.6 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.5/ class=gdoc-nav__entry>OutFox Alpha 4.9.5 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.1/ class=gdoc-nav__entry>OutFox Alpha 4.9.1 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.9.0HF/ class=gdoc-nav__entry>OutFox Alpha 4.9.0/HF Build</a></span></li><li><span class=flex><a href=../../../releases/A4.8.5/ class=gdoc-nav__entry>OutFox Alpha 4.8.5 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.8.2/ class=gdoc-nav__entry>OutFox Alpha 4.8.2 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.8.1/ class=gdoc-nav__entry>OutFox Alpha 4.8.1 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.8.0/ class=gdoc-nav__entry>OutFox Alpha 4.8.0 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.6.0/ class=gdoc-nav__entry>OutFox Alpha 4.6.0 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.6.0RC3/ class=gdoc-nav__entry>OutFox Alpha 4.6.0 RC3 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.6.0RC2/ class=gdoc-nav__entry>OutFox Alpha 4.6.0 RC2 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.6.0RC1/ class=gdoc-nav__entry>OutFox Alpha 4.6.0 RC1 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.5.9/ class=gdoc-nav__entry>OutFox Alpha 4.5.9 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.5.8/ class=gdoc-nav__entry>OutFox Alpha 4.5.8 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.5.6/ class=gdoc-nav__entry>OutFox Alpha 4.5.6 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.5/ class=gdoc-nav__entry>OutFox Alpha 4.5.0 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.4/ class=gdoc-nav__entry>OutFox Alpha 4.4 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.3/ class=gdoc-nav__entry>OutFox Alpha 4.3 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.2/ class=gdoc-nav__entry>OutFox Alpha 4.2 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.1/ class=gdoc-nav__entry>OutFox Alpha 4.1 Build</a></span></li><li><span class=flex><a href=../../../releases/A4.0/ class=gdoc-nav__entry>OutFox Alpha 4.0 Build</a></span></li></ul></li></ul></section><section class=gdoc-nav--more></section></nav></aside><div class=gdoc-page><div class="gdoc-page__header flex flex-wrap
+<!doctype html><html lang=en class=color-toggle-hidden>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=color-scheme content="light dark">
+<meta name=description content="Project OutFox contains a parser for the KSF chart format, which is used for Kick It Up and &lsquo;Pump it Up&rsquo;-style charts. This has been supported as early as StepMania 3.9, so everything listed here is what OutFox supports. At this point, most everyone has moved away from the KSF format in favor of SM or SSC. Like SM and SSC, sections follow this format: #SECTION:DATA;, which means #, : and ; shouldn&rsquo;t be used in the data segment.">
+<title>KSF | Project OutFox Wiki</title><link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
+<script src=../../../js/darkmode-ce906ea916.min.js></script>
+<link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
+<link rel=preload as=font href=../../../fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=../../../main-0c0de99286.min.css as=style>
+<link rel=stylesheet href=../../../main-0c0de99286.min.css media=all>
+<link rel=preload href=../../../mobile-c344439d04.min.css as=style>
+<link rel=stylesheet href=../../../mobile-c344439d04.min.css media="screen and (max-width: 45rem)">
+<link rel=preload href=../../../print-f79fc3e5d7.min.css as=style>
+<link rel=stylesheet href=../../../print-f79fc3e5d7.min.css media=print>
+<link rel=preload href=../../../custom.css as=style>
+<link rel=stylesheet href=../../../custom.css media=all>
+</head><body itemscope itemtype=https://schema.org/WebPage><svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.526v2.947H5.755l8.351 8.421-2.105 2.105-12-12 12-12 2.105 2.105-8.351 8.421H24z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M5.965 10.526V6.035L0 12l5.965 5.965v-4.491H24v-2.947H5.965z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M18.035 10.526V6.035L24 12l-5.965 5.965v-4.491H0v-2.947h18.035z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_bitbucket" xmlns="http://www.w3.org/2000/svg"><path d="M15.905 13.355c.189 1.444-1.564 2.578-2.784 1.839-1.375-.602-1.375-2.784-.034-3.403 1.151-.705 2.818.223 2.818 1.564zm1.907-.361c-.309-2.44-3.076-4.056-5.328-3.042-1.426.636-2.389 2.148-2.32 3.747.086 2.097 2.08 3.815 4.176 3.626s3.729-2.234 3.472-4.331zm4.108-9.315c-.756-.997-2.045-1.169-3.179-1.358-3.214-.516-6.513-.533-9.727.034-1.066.172-2.269.361-2.939 1.323 1.1 1.031 2.664 1.186 4.073 1.358 2.544.327 5.156.344 7.699.017 1.426-.172 3.008-.309 4.073-1.375zm.979 17.788c-.481 1.684-.206 3.953-1.994 4.932-3.076 1.701-6.806 1.89-10.191 1.289-1.787-.327-3.884-.894-4.864-2.578-.43-1.65-.705-3.334-.98-5.018l.103-.275.309-.155c5.121 3.386 12.288 3.386 17.427.0.808.241.206 1.22.189 1.805zM26.01 4.951c-.584 3.764-1.255 7.51-1.908 11.257-.189 1.1-1.255 1.719-2.148 2.183-3.214 1.615-6.96 1.89-10.483 1.512-2.389-.258-4.829-.894-6.771-2.389-.911-.705-.911-1.908-1.083-2.922-.602-3.523-1.289-7.046-1.719-10.604.206-1.547 1.942-2.217 3.231-2.698C6.848.654 8.686.362 10.508.19c3.884-.378 7.854-.241 11.618.859 1.341.395 2.784.945 3.695 2.097.412.533.275 1.203.189 1.805z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="gdoc_bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15.268 4.392q.868.0 1.532.638t.664 1.506v17.463l-7.659-3.268-7.608 3.268V6.536q0-.868.664-1.506t1.532-.638h10.876zm4.34 14.144V4.392q0-.868-.638-1.532t-1.506-.664H6.537q0-.868.664-1.532T8.733.0h10.876q.868.0 1.532.664t.664 1.532v17.412z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_auto" xmlns="http://www.w3.org/2000/svg"><path d="M16.846 18.938h2.382L15.22 7.785h-2.44L8.772 18.938h2.382l.871-2.44h3.95zm7.087-9.062L27.999 14l-4.066 4.124v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809zm-11.385 4.937L14 10.282l1.452 4.531h-2.904z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_dark" xmlns="http://www.w3.org/2000/svg"><path d="M14 21.435q3.079.0 5.257-2.178T21.435 14t-2.178-5.257T14 6.565q-1.51.0-3.079.697 1.917.871 3.108 2.701T15.22 14t-1.191 4.037-3.108 2.701q1.568.697 3.079.697zm9.933-11.559L27.999 14l-4.066 4.124v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_brightness_light" xmlns="http://www.w3.org/2000/svg"><path d="M14 21.435q3.079.0 5.257-2.178T21.435 14t-2.178-5.257T14 6.565 8.743 8.743 6.565 14t2.178 5.257T14 21.435zm9.933-3.311v5.809h-5.809L14 27.999l-4.124-4.066H4.067v-5.809L.001 14l4.066-4.124V4.067h5.809L14 .001l4.124 4.066h5.809v5.809L27.999 14z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_cloud_off" xmlns="http://www.w3.org/2000/svg"><path d="M9.023 10.5H7q-1.914.0-3.281 1.395t-1.367 3.309 1.367 3.281T7 19.852h11.375zM3.5 4.976l1.477-1.477L24.5 23.022l-1.477 1.477-2.352-2.297H6.999q-2.898.0-4.949-2.051t-2.051-4.949q0-2.844 1.969-4.867t4.758-2.133zm19.086 5.578q2.242.164 3.828 1.832T28 16.351q0 3.008-2.461 4.758l-1.695-1.695q1.805-.984 1.805-3.063.0-1.422-1.039-2.461t-2.461-1.039h-1.75v-.602q0-2.68-1.859-4.539t-4.539-1.859q-1.531.0-2.953.711l-1.75-1.695Q11.431 3.5 14.001 3.5q2.953.0 5.496 2.078t3.09 4.977z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_code" xmlns="http://www.w3.org/2000/svg"><path d="M9.917 24.5a1.75 1.75.0 10-3.501.001 1.75 1.75.0 003.501-.001zm0-21a1.75 1.75.0 10-3.501.001A1.75 1.75.0 009.917 3.5zm11.666 2.333a1.75 1.75.0 10-3.501.001 1.75 1.75.0 003.501-.001zm1.75.0a3.502 3.502.0 01-1.75 3.026c-.055 6.581-4.721 8.039-7.82 9.023-2.898.911-3.846 1.349-3.846 3.117v.474a3.502 3.502.0 011.75 3.026c0 1.932-1.568 3.5-3.5 3.5s-3.5-1.568-3.5-3.5c0-1.294.711-2.424 1.75-3.026V6.526A3.502 3.502.0 014.667 3.5c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5a3.502 3.502.0 01-1.75 3.026v9.06c.93-.456 1.914-.766 2.807-1.039 3.391-1.075 5.323-1.878 5.359-5.687a3.502 3.502.0 01-1.75-3.026c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_date" xmlns="http://www.w3.org/2000/svg"><path d="M27.192 28.844V11.192H4.808v17.652h22.384zm0-25.689q1.277.0 2.253.976t.976 2.253v22.459q0 1.277-.976 2.216t-2.253.939H4.808q-1.352.0-2.291-.901t-.939-2.253V6.385q0-1.277.939-2.253t2.291-.976h1.577V.001h3.23v3.155h12.769V.001h3.23v3.155h1.577zm-3.155 11.267v3.155h-3.23v-3.155h3.23zm-6.46.0v3.155h-3.155v-3.155h3.155zm-6.384.0v3.155h-3.23v-3.155h3.23z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_download" xmlns="http://www.w3.org/2000/svg"><path d="M2.866 28.209h26.269v3.79H2.866v-3.79zm26.268-16.925L16 24.418 2.866 11.284h7.493V.001h11.283v11.283h7.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_email" xmlns="http://www.w3.org/2000/svg"><path d="M28.845 9.615v-3.23L16 14.422 3.155 6.385v3.23L16 17.577zm0-6.46q1.277.0 2.216.977T32 6.385v19.23q0 1.277-.939 2.253t-2.216.977H3.155q-1.277.0-2.216-.977T0 25.615V6.385q0-1.277.939-2.253t2.216-.977h25.69z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_git" xmlns="http://www.w3.org/2000/svg"><path d="M27.472 12.753 15.247.529a1.803 1.803.0 00-2.55.0l-2.84 2.84 2.137 2.137a2.625 2.625.0 013.501 3.501l3.499 3.499a2.625 2.625.0 11-1.237 1.237l-3.499-3.499c-.083.04-.169.075-.257.106v7.3a2.626 2.626.0 11-1.75.0v-7.3a2.626 2.626.0 01-1.494-3.607L8.62 4.606l-8.09 8.09a1.805 1.805.0 000 2.551l12.225 12.224a1.803 1.803.0 002.55.0l12.168-12.168a1.805 1.805.0 000-2.551z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_github" xmlns="http://www.w3.org/2000/svg"><path d="M16 .394c8.833.0 15.999 7.166 15.999 15.999.0 7.062-4.583 13.062-10.937 15.187-.813.146-1.104-.354-1.104-.771.0-.521.021-2.25.021-4.396.0-1.5-.5-2.458-1.083-2.958 3.562-.396 7.312-1.75 7.312-7.896.0-1.75-.625-3.167-1.646-4.291.167-.417.708-2.042-.167-4.25-1.333-.417-4.396 1.646-4.396 1.646a15.032 15.032.0 00-8 0S8.937 6.602 7.603 7.018c-.875 2.208-.333 3.833-.167 4.25-1.021 1.125-1.646 2.542-1.646 4.291.0 6.125 3.729 7.5 7.291 7.896-.458.417-.875 1.125-1.021 2.146-.917.417-3.25 1.125-4.646-1.333-.875-1.521-2.458-1.646-2.458-1.646-1.562-.021-.104.979-.104.979 1.042.479 1.771 2.333 1.771 2.333.938 2.854 5.396 1.896 5.396 1.896.0 1.333.021 2.583.021 2.979.0.417-.292.917-1.104.771C4.582 29.455-.001 23.455-.001 16.393-.001 7.56 7.165.394 15.998.394zM6.063 23.372c.042-.083-.021-.187-.146-.25-.125-.042-.229-.021-.271.042-.042.083.021.187.146.25.104.062.229.042.271-.042zm.646.709c.083-.062.062-.208-.042-.333-.104-.104-.25-.146-.333-.062-.083.062-.062.208.042.333.104.104.25.146.333.062zm.625.937c.104-.083.104-.25.0-.396-.083-.146-.25-.208-.354-.125-.104.062-.104.229.0.375s.271.208.354.146zm.875.875c.083-.083.042-.271-.083-.396-.146-.146-.333-.167-.417-.062-.104.083-.062.271.083.396.146.146.333.167.417.062zm1.187.521c.042-.125-.083-.271-.271-.333-.167-.042-.354.021-.396.146s.083.271.271.312c.167.062.354.0.396-.125zm1.313.104c0-.146-.167-.25-.354-.229-.187.0-.333.104-.333.229.0.146.146.25.354.229.187.0.333-.104.333-.229zm1.208-.208c-.021-.125-.187-.208-.375-.187-.187.042-.312.167-.292.312.021.125.187.208.375.167s.312-.167.292-.292z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_gitlab" xmlns="http://www.w3.org/2000/svg"><path d="M1.629 11.034 14 26.888.442 17.048a1.09 1.09.0 01-.39-1.203l1.578-4.811zm7.217.0h10.309l-5.154 15.854zM5.753 1.475l3.093 9.559H1.63l3.093-9.559a.548.548.0 011.031.0zm20.618 9.559 1.578 4.811c.141.437-.016.922-.39 1.203l-13.558 9.84 12.371-15.854zm0 0h-7.216l3.093-9.559a.548.548.0 011.031.0z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_heart" xmlns="http://www.w3.org/2000/svg"><path d="M16 29.714a1.11 1.11.0 01-.786-.321L4.072 18.643c-.143-.125-4.071-3.714-4.071-8 0-5.232 3.196-8.357 8.535-8.357 3.125.0 6.053 2.464 7.464 3.857 1.411-1.393 4.339-3.857 7.464-3.857 5.339.0 8.535 3.125 8.535 8.357.0 4.286-3.928 7.875-4.089 8.035L16.785 29.392c-.214.214-.5.321-.786.321z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_keyborad_arrow_down" xmlns="http://www.w3.org/2000/svg"><path d="M3.281 5.36 14 16.079 24.719 5.36 28 8.641l-14 14-14-14z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_keyborad_arrow_left" xmlns="http://www.w3.org/2000/svg"><path d="M25.875 28.25 22.125 32 6.126 16.001 22.125.002l3.75 3.75-12.25 12.25z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_keyborad_arrow_right" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 28.25 18.375 16 6.125 3.75 9.875.0l15.999 15.999L9.875 31.998z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_keyborad_arrow_up" xmlns="http://www.w3.org/2000/svg"><path d="M24.719 22.64 14 11.921 3.281 22.64.0 19.359l14-14 14 14z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_link" xmlns="http://www.w3.org/2000/svg"><path d="M24.037 7.963q3.305.0 5.634 2.366T32 16t-2.329 5.671-5.634 2.366h-6.46v-3.08h6.46q2.028.0 3.493-1.465t1.465-3.493-1.465-3.493-3.493-1.465h-6.46v-3.08h6.46zM9.615 17.578v-3.155h12.77v3.155H9.615zM3.005 16q0 2.028 1.465 3.493t3.493 1.465h6.46v3.08h-6.46q-3.305.0-5.634-2.366T0 16.001t2.329-5.671 5.634-2.366h6.46v3.08h-6.46q-2.028.0-3.493 1.465t-1.465 3.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_menu" xmlns="http://www.w3.org/2000/svg"><path d="M.001 5.334h31.998v3.583H.001V5.334zm0 12.416v-3.5h31.998v3.5H.001zm0 8.916v-3.583h31.998v3.583H.001z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_notification" xmlns="http://www.w3.org/2000/svg"><path d="M22.615 19.384l2.894 2.894v1.413H2.49v-1.413l2.894-2.894V12.25q0-3.365 1.716-5.856t4.745-3.231v-1.01q0-.875.606-1.514T13.999.0t1.548.639.606 1.514v1.01q3.029.74 4.745 3.231t1.716 5.856v7.134zM14 27.999q-1.211.0-2.053-.808t-.841-2.019h5.788q0 1.144-.875 1.986T14 27.999z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_path" xmlns="http://www.w3.org/2000/svg"><path d="M28 12.62h-9.793V8.414h-2.826v11.173h2.826v-4.206H28V26.62h-9.793v-4.206H12.62v-14H9.794v4.206H.001V1.381h9.793v4.206h8.413V1.381H28V12.62z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_person" xmlns="http://www.w3.org/2000/svg"><path d="M16 20.023q5.052.0 10.526 2.199t5.473 5.754v4.023H0v-4.023q0-3.555 5.473-5.754t10.526-2.199zM16 16q-3.275.0-5.614-2.339T8.047 8.047t2.339-5.661T16 0t5.614 2.386 2.339 5.661-2.339 5.614T16 16z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="gdoc_search" xmlns="http://www.w3.org/2000/svg"><path d="M11.925 20.161q3.432.0 5.834-2.402t2.402-5.834-2.402-5.834-5.834-2.402-5.834 2.402-2.402 5.834 2.402 5.834 5.834 2.402zm10.981.0L32 29.255 29.255 32l-9.094-9.094v-1.458l-.515-.515q-3.26 2.831-7.721 2.831-4.976.0-8.45-3.432T.001 11.925t3.474-8.45 8.45-3.474 8.407 3.474 3.432 8.45q0 1.802-.858 4.075t-1.973 3.646l.515.515h1.458z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_shield" xmlns="http://www.w3.org/2000/svg"><path d="M22.167 15.166V3.5h-8.166v20.726c.93-.492 2.424-1.349 3.883-2.497 1.95-1.531 4.284-3.919 4.284-6.562zm3.499-13.999v14c0 7.674-10.737 12.523-11.192 12.724-.146.073-.31.109-.474.109s-.328-.036-.474-.109c-.456-.201-11.192-5.049-11.192-12.724v-14C2.334.529 2.863.0 3.501.0H24.5c.638.0 1.167.529 1.167 1.167z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gdoc_tags" xmlns="http://www.w3.org/2000/svg"><path d="M6.606 7.549c0-1.047-.84-1.887-1.887-1.887s-1.887.84-1.887 1.887.84 1.887 1.887 1.887 1.887-.84 1.887-1.887zm15.732 8.493c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546s-.988-.206-1.327-.546L1.342 14.066C.59 13.329.0 11.899.0 10.852V4.718a1.9 1.9.0 011.887-1.887h6.134c1.047.0 2.477.59 3.229 1.342L21.792 14.7c.339.354.546.84.546 1.342zm5.661.0c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546-.767.0-1.15-.354-1.651-.87l6.93-6.93c.339-.339.546-.826.546-1.327s-.206-.988-.546-1.342L13.609 4.173c-.752-.752-2.182-1.342-3.229-1.342h3.303c1.047.0 2.477.59 3.229 1.342L27.454 14.7c.339.354.546.84.546 1.342z"/></symbol></svg>
+<div class=wrapper>
+<input type=checkbox class=hidden id=menu-control>
+<input type=checkbox class=hidden id=menu-header-control>
+<header class=gdoc-header>
+<div class="container flex align-center justify-between">
+<label for=menu-control class=gdoc-nav__control><svg class="icon gdoc_menu"><title>Open Nav Menu</title><use xlink:href="#gdoc_menu"/></svg><svg class="icon gdoc_arrow_back"><title>Close Nav Menu</title><use xlink:href="#gdoc_arrow_back"/></svg>
+</label>
+<a class=gdoc-header__link href=https://outfox.wiki>
+<span class="gdoc-brand flex align-center">
+<img class=gdoc-brand__img src=../../../logo.png alt>
+<span class=gdoc-brand__title>Project OutFox Wiki</span>
+</span>
+</a>
+<div class=gdoc-menu-header>
+<span id=outfox-link>
+<a href=https://projectoutfox.com>Back to ProjectOutFox.com</a>
+</span>
+<span id=gdoc-dark-mode><svg class="icon gdoc_brightness_dark"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_dark"/></svg><svg class="icon gdoc_brightness_light"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_light"/></svg><svg class="icon gdoc_brightness_auto"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_auto"/></svg>
+</span>
+</div></div></header><main class="container flex flex-even">
+<aside class=gdoc-nav>
+<nav>
+<div class=gdoc-search><svg class="icon gdoc_search"><use xlink:href="#gdoc_search"/></svg>
+<input type=text id=gdoc-search-input class=gdoc-search__input placeholder=Search... aria-label=Search maxlength=64>
+<div class="gdoc-search__spinner spinner hidden"></div><ul id=gdoc-search-results class=gdoc-search__list></ul></div><section class=gdoc-nav--main>
+<h2>Navigation</h2><ul class=gdoc-nav__list>
+<li>
+<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
+<label for=navtree-4d9830bf class="flex justify-between">
+<span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>Front Matter</span>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../user-guide/meta/about/ class=gdoc-nav__entry>
+About Project OutFox
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/meta/faq/ class=gdoc-nav__entry>
+FAQ
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/meta/serenity/ class=gdoc-nav__entry>
+OutFox Serenity
+</a>
+</span>
+</li></ul></li><li>
+<span class=flex>Setup</span>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../user-guide/setup/install/ class=gdoc-nav__entry>
+Installation
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/setup/install-linux/ class=gdoc-nav__entry>
+Installation on Linux & Raspberry Pi
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/setup/install-mac/ class=gdoc-nav__entry>
+Installation on Mac OS
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/setup/install-windows/ class=gdoc-nav__entry>
+Installation on Windows
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/setup/key_shortcuts/ class=gdoc-nav__entry>
+Keyboard Shortcuts
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/setup/getting-started/ class=gdoc-nav__entry>
+Getting started
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/setup/controllers/ class=gdoc-nav__entry>
+Configure controllers
+</a>
+</span>
+</li></ul></li><li>
+<input type=checkbox id=navtree-a4bf1acb class=gdoc-nav__toggle>
+<label for=navtree-a4bf1acb class="flex justify-between">
+<span class=flex>Controllers and Peripherals</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../user-guide/controllers/controller_mapping_drums/ class=gdoc-nav__entry>
+Drums Mapping
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/controllers/controller_mapping_guitars/ class=gdoc-nav__entry>
+Guitars Mapping
+</a>
+</span>
+</li></ul></li><li>
+<span class=flex>Features & Config</span>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../user-guide/config/folders/ class=gdoc-nav__entry>
+Content folders
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/config/preferences/ class=gdoc-nav__entry>
+Preferences.ini
+</a>
+</span>
+</li></ul></li><li>
+<span class=flex>
+<a href=../../../user-guide/games/ class=gdoc-nav__entry>
+Supported Game Modules
+</a>
+</span>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../user-guide/games/bemu/ class=gdoc-nav__entry>
+Game Module: be-mu
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/dance/ class=gdoc-nav__entry>
+Game Module: dance
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/ds3ddx/ class=gdoc-nav__entry>
+Game Module: ds3ddx
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/ez2d/ class=gdoc-nav__entry>
+Game Module: ez2d
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/gddm/ class=gdoc-nav__entry>
+Game Module: gddm
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/gdgf/ class=gdoc-nav__entry>
+Game Module: gdgf
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/gh/ class=gdoc-nav__entry>
+Game Module: gh
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/kbx/ class=gdoc-nav__entry>
+Game Module: kbx
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/kickbox/ class=gdoc-nav__entry>
+Game Module: kickbox
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/maniax/ class=gdoc-nav__entry>
+Game Module: maniax
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/para/ class=gdoc-nav__entry>
+Game Module: para
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/pomu/ class=gdoc-nav__entry>
+Game Module: po-mu
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/pump/ class=gdoc-nav__entry>
+Game Module: pump
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/smx/ class=gdoc-nav__entry>
+Game Module: smx
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/stepstage/ class=gdoc-nav__entry>
+Game Module: stepstage
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/taiko/ class=gdoc-nav__entry>
+Game Module: taitai
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../user-guide/games/techno/ class=gdoc-nav__entry>
+Game Module: techno
+</a>
+</span>
+</li></ul></li></ul></li><li>
+<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
+<label for=navtree-6821e290 class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/ class=gdoc-nav__entry>
+Developers and Creators
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox id=navtree-4e04bb11 class=gdoc-nav__toggle checked>
+<label for=navtree-4e04bb11 class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/mode-support/ class=gdoc-nav__entry>
+NoteLoader support
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/mode-support/bms-pms-support/ class=gdoc-nav__entry>
+BMS/BME/PMS Support
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mode-support/dtx-gda-support/ class=gdoc-nav__entry>
+DTX & GDA/G2D Support
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mode-support/ksf-support/ class="gdoc-nav__entry is-active">
+KSF
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mode-support/oto-support/ class=gdoc-nav__entry>
+OTO Compatibility
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mode-support/sm-support/ class=gdoc-nav__entry>
+SM
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mode-support/tja-support/ class=gdoc-nav__entry>
+TJA Compatibility
+</a>
+</span>
+</li></ul></li><li>
+<input type=checkbox id=navtree-408e5923 class=gdoc-nav__toggle>
+<label for=navtree-408e5923 class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/editor/ class=gdoc-nav__entry>
+Editor
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/editor/0-Editor-Preferences/ class=gdoc-nav__entry>
+Editor Preferences
+</a>
+</span>
+</li></ul></li><li>
+<span class=flex>
+<a href=../../../dev/courses/ class=gdoc-nav__entry>
+Courses
+</a>
+</span>
+</li><li>
+<input type=checkbox id=navtree-e7ea7745 class=gdoc-nav__toggle>
+<label for=navtree-e7ea7745 class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/actors/ class=gdoc-nav__entry>
+Lua and Actors
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox id=navtree-88f64d71 class=gdoc-nav__toggle>
+<label for=navtree-88f64d71 class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/actors/actortypes/ class=gdoc-nav__entry>
+Actor Types
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox id=navtree-42ad3adb class=gdoc-nav__toggle>
+<label for=navtree-42ad3adb class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/actors/actortypes/actor/ class=gdoc-nav__entry>
+Actor
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/actor/ActorsLua-Anatomy+Structure/ class=gdoc-nav__entry>
+Anatomy of an Actor
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/actor/obtainlevels/ class=gdoc-nav__entry>
+Obtaining Childs and ActorFrame Levels
+</a>
+</span>
+</li></ul></li><li>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/actorframe/ class=gdoc-nav__entry>
+ActorFrame
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/actormultivertex/ class=gdoc-nav__entry>
+ActorMultiVertex
+</a>
+</span>
+</li><li>
+<input type=checkbox id=navtree-86ad643b class=gdoc-nav__toggle>
+<label for=navtree-86ad643b class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/actors/actortypes/sprite/ class=gdoc-nav__entry>
+Sprite
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/sprite/Frames/ class=gdoc-nav__entry>
+Managing Frames
+</a>
+</span>
+</li></ul></li><li>
+<input type=checkbox id=navtree-6adb90e6 class=gdoc-nav__toggle>
+<label for=navtree-6adb90e6 class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/actors/actortypes/bitmaptext/ class=gdoc-nav__entry>
+BitmapText
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/bitmaptext/Bitmap-EnsuringStringComp/ class=gdoc-nav__entry>
+Ensuring string compatiblity
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/bitmaptext/Bitmap-InlineColoring/ class=gdoc-nav__entry>
+Inline-Text manipulation
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/bitmaptext/Bitmap-Segments/ class=gdoc-nav__entry>
+Segments of a BitmapText
+</a>
+</span>
+</li></ul></li></ul></li><li>
+<span class=flex>
+<a href=../../../dev/actors/General-DifferencesfromOlderSM/ class=gdoc-nav__entry>
+Behavioral differences from SM 3.95/ITG
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/actors/ActorsLua-CommandList/ class=gdoc-nav__entry>
+Command List
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/actors/ActorsLua-Tweening/ class=gdoc-nav__entry>
+Tweening
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/actors/Converting-ini-to-Lua/ class=gdoc-nav__entry>
+Converting INI files to Lua
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/actors/Converting-xml-to-Lua/ class=gdoc-nav__entry>
+Converting XML files to Lua
+</a>
+</span>
+</li></ul></li><li>
+<input type=checkbox id=navtree-07f3f85e class=gdoc-nav__toggle>
+<label for=navtree-07f3f85e class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/effects/ class=gdoc-nav__entry>
+Effect Simfiles
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/effects/EffectFiles-ChartSegments/ class=gdoc-nav__entry>
+Chart segments
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/effects/EffectFiles-ModifierFiles/ class=gdoc-nav__entry>
+Modifier Files
+</a>
+</span>
+</li></ul></li><li>
+<input type=checkbox id=navtree-fb0e8f07 class=gdoc-nav__toggle>
+<label for=navtree-fb0e8f07 class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/mods/ class=gdoc-nav__entry>
+Guide to Modifiers
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-0-Overview/ class=gdoc-nav__entry>
+Overview of modifiers
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-1-Speed-Mods/ class=gdoc-nav__entry>
+Speed
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-2-Perspective-Mods/ class=gdoc-nav__entry>
+Perspective
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-3-Column-Movement-Mods/ class=gdoc-nav__entry>
+Column movement
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-4-Scroll-Mods/ class=gdoc-nav__entry>
+Scroll
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-5-Rotation-Mods/ class=gdoc-nav__entry>
+Rotation
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-6-Zoom-Mods/ class=gdoc-nav__entry>
+Zoom
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-7-Acceleration-Mods/ class=gdoc-nav__entry>
+Acceleration
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-8-Visibility-Mods/ class=gdoc-nav__entry>
+Visibility
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-9-Path-Mods/ class=gdoc-nav__entry>
+Path modifiers
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-10-Color+Gradient-Mods/ class=gdoc-nav__entry>
+Color modifiers
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-11-ModSplines/ class=gdoc-nav__entry>
+ModSplines
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-12-Chart-Mods/ class=gdoc-nav__entry>
+Chart modifiers
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/mods/Mods-13-Miscellaneous-Mods/ class=gdoc-nav__entry>
+Miscellaneous Modifiers
+</a>
+</span>
+</li></ul></li><li>
+<input type=checkbox id=navtree-2f59d80b class=gdoc-nav__toggle>
+<label for=navtree-2f59d80b class="flex justify-between">
+<span class=flex>
+<a href=../../../dev/theming/ class=gdoc-nav__entry>
+Introduction to theming
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../dev/theming/Theming-0-Differences/ class=gdoc-nav__entry>
+Theming differences between older versions
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/theming/Theming-1-Folders/ class=gdoc-nav__entry>
+The Structure of folders
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/theming/Theming-2-Screen-Creation/ class=gdoc-nav__entry>
+Creating a custom screen
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/theming/Theming-3-Anatomy-Screen/ class=gdoc-nav__entry>
+Anatomy of a screen
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/theming/Theming-4-Creating-Font/ class=gdoc-nav__entry>
+Creating a Font
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/theming/Theming-Scripts/ class=gdoc-nav__entry>
+Scripts
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/theming/Theming-Custom-Input/ class=gdoc-nav__entry>
+Custom Input
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/theming/Theming-Modules/ class=gdoc-nav__entry>
+Modules
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../dev/theming/Theming-Sounds/ class=gdoc-nav__entry>
+Sounds
+</a>
+</span>
+</li></ul></li><li>
+<span class=flex>
+<a href=../../../dev/translation/ class=gdoc-nav__entry>
+Translation
+</a>
+</span>
+</li></ul></li><li>
+<input type=checkbox id=navtree-a315f98a class=gdoc-nav__toggle>
+<label for=navtree-a315f98a class="flex justify-between">
+<span class=flex>
+<a href=../../../roadmap/ class=gdoc-nav__entry>
+Our Project Roadmap
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../roadmap/2019/ class=gdoc-nav__entry>
+OutFox Alpha 3.0 to 4.0 Roadmap
+</a>
+</span>
+</li></ul></li><li>
+<input type=checkbox id=navtree-4affc580 class=gdoc-nav__toggle>
+<label for=navtree-4affc580 class="flex justify-between">
+<span class=flex>
+<a href=../../../releases/ class=gdoc-nav__entry>
+Release History
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../releases/A4.15.1/ class=gdoc-nav__entry>
+OutFox Alpha 4.15.1 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.15.0/ class=gdoc-nav__entry>
+OutFox Alpha 4.15.0 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.14.0/ class=gdoc-nav__entry>
+OutFox Alpha 4.14.0 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.13.0/ class=gdoc-nav__entry>
+OutFox Alpha 4.13.0 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.12.0/ class=gdoc-nav__entry>
+OutFox Alpha 4.12.0 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.11.0/ class=gdoc-nav__entry>
+OutFox Alpha 4.11.0 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.10.0/ class=gdoc-nav__entry>
+OutFox Alpha 4.10.0 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.10/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.10 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.9HF3/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.9HF3 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.9HF2/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.9HF2 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.9HF/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.9HF Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.9/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.9 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.8/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.8 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.7GG/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.7GG Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.7/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.7 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.6/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.6 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.5/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.5 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.1/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.1 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.9.0HF/ class=gdoc-nav__entry>
+OutFox Alpha 4.9.0/HF Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.8.5/ class=gdoc-nav__entry>
+OutFox Alpha 4.8.5 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.8.2/ class=gdoc-nav__entry>
+OutFox Alpha 4.8.2 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.8.1/ class=gdoc-nav__entry>
+OutFox Alpha 4.8.1 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.8.0/ class=gdoc-nav__entry>
+OutFox Alpha 4.8.0 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.6.0/ class=gdoc-nav__entry>
+OutFox Alpha 4.6.0 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.6.0RC3/ class=gdoc-nav__entry>
+OutFox Alpha 4.6.0 RC3 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.6.0RC2/ class=gdoc-nav__entry>
+OutFox Alpha 4.6.0 RC2 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.6.0RC1/ class=gdoc-nav__entry>
+OutFox Alpha 4.6.0 RC1 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.5.9/ class=gdoc-nav__entry>
+OutFox Alpha 4.5.9 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.5.8/ class=gdoc-nav__entry>
+OutFox Alpha 4.5.8 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.5.6/ class=gdoc-nav__entry>
+OutFox Alpha 4.5.6 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.5/ class=gdoc-nav__entry>
+OutFox Alpha 4.5.0 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.4/ class=gdoc-nav__entry>
+OutFox Alpha 4.4 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.3/ class=gdoc-nav__entry>
+OutFox Alpha 4.3 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.2/ class=gdoc-nav__entry>
+OutFox Alpha 4.2 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.1/ class=gdoc-nav__entry>
+OutFox Alpha 4.1 Build
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../releases/A4.0/ class=gdoc-nav__entry>
+OutFox Alpha 4.0 Build
+</a>
+</span>
+</li></ul></li></ul></section><section class=gdoc-nav--more>
+</section></nav></aside><div class=gdoc-page>
+<div class="gdoc-page__header flex flex-wrap
 justify-between
-hidden-mobile" itemprop=breadcrumb><div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg><ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li>/</li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li>/</li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mode-support/ href=../../../dev/mode-support/><span itemprop=name>NoteLoader support</span></a><meta itemprop=position content="3"></li><li>/</li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>KSF</span><meta itemprop=position content="4"></li></ol></div></div><article class="gdoc-markdown gdoc-markdown__align--left"><h1>KSF</h1><p>Project OutFox contains a parser for the KSF chart format, which is used for Kick It Up and &lsquo;Pump it Up&rsquo;-style charts. This has been supported as early as StepMania 3.9, so everything listed here is what OutFox supports. At this point, most everyone has moved away from the KSF format in favor of SM or SSC. Like SM and SSC, sections follow this format: <code>#SECTION:DATA;</code>, which means <code>#</code>, <code>:</code> and <code>;</code> shouldn&rsquo;t be used in the data segment.</p><div class=gdoc-page__anchorwrap><h1 id=file-naming>File Naming
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#file-naming class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor File Naming" href=#file-naming><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h1></div><p>Most KSF files have the difficulty and chart type as its&rsquo; file name. The following tables show what names translate to which difficulty, default rating and chart type</p><div class=gdoc-page__anchorwrap><h2 id=difficulty>Difficulty
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#difficulty class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Difficulty" href=#difficulty><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><div class=table-wrap><table><thead><tr><th>File Name</th><th>Chart Rating</th><th>StepMania 5.1 and older</th><th>Project OutFox alpha 4.9.9</th></tr></thead><tbody><tr><td>another</td><td>25</td><td>Edit</td><td>D6</td></tr><tr><td>wild / wd / hardcore</td><td>20</td><td>Challenge</td><td>D5</td></tr><tr><td>crazy+ / cz+</td><td>20</td><td>Challenge</td><td>D5</td></tr><tr><td>crazy / cz / crazydouble</td><td>14</td><td>Hard</td><td>D4</td></tr><tr><td>nightmare / nm</td><td>14</td><td>Hard</td><td>D4</td></tr><tr><td>hard / hd / double</td><td>8</td><td>Medium</td><td>D3</td></tr><tr><td>freestyle / fs</td><td>8</td><td>Medium</td><td>D3</td></tr><tr><td>easy / ez / normal</td><td>4</td><td>Easy</td><td>D2</td></tr><tr><td>Beginner / practice</td><td>4</td><td>Beginner</td><td>D1</td></tr></tbody></table></div><p>If not specified, it gets set to Hard/D4 and is given a rating of 10.</p><div class=gdoc-page__anchorwrap><h2 id=chart-type>Chart Type
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#chart-type class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Chart Type" href=#chart-type><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><div class=table-wrap><table><thead><tr><th>File Name</th><th>Resulting Steps Type</th></tr></thead><tbody><tr><td>halfdouble / half-double / h_double / hdb</td><td>halfdouble</td></tr><tr><td>double / db</td><td>double</td></tr><tr><td>freestyle / fs</td><td>double</td></tr><tr><td>nm</td><td>double</td></tr><tr><td>_1</td><td>single</td></tr><tr><td>_2</td><td>couple</td></tr></tbody></table></div><hr><div class=gdoc-page__anchorwrap><h1 id=sections>Sections
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#sections class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Sections" href=#sections><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h1></div><div class=gdoc-page__anchorwrap><h2 id=title><code>TITLE</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#title class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TITLE" href=#title><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>This gives both the song name and artist.
-There are three acceptable formats for this section:</p><blockquote><ul><li><code>song name</code>
-This just gives a song name only.</li></ul></blockquote><blockquote><ul><li><code>artist name - song name</code>
-This gives both a song name and artist name, separated by a <code>-</code></li></ul></blockquote><blockquote><ul><li><code>artist name - song name - difficulty</code>
+hidden-mobile" itemprop=breadcrumb>
+<div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
+<ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mode-support/ href=../../../dev/mode-support/><span itemprop=name>NoteLoader support</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>KSF</span><meta itemprop=position content="4"></li></ol></div></div><article class="gdoc-markdown gdoc-markdown__align--left">
+<h1>KSF</h1><p>Project OutFox contains a parser for the KSF chart format, which is used for Kick It Up and &lsquo;Pump it Up&rsquo;-style charts. This has been supported as early as StepMania 3.9, so everything listed here is what OutFox supports. At this point, most everyone has moved away from the KSF format in favor of SM or SSC. Like SM and SSC, sections follow this format: <code>#SECTION:DATA;</code>, which means <code>#</code>, <code>:</code> and <code>;</code> shouldn&rsquo;t be used in the data segment.</p><div class=gdoc-page__anchorwrap>
+<h1 id=file-naming>
+File Naming
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#file-naming class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor File Naming" href=#file-naming><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1></div><p>Most KSF files have the difficulty and chart type as its&rsquo; file name. The following tables show what names translate to which difficulty, default rating and chart type</p><div class=gdoc-page__anchorwrap>
+<h2 id=difficulty>
+Difficulty
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#difficulty class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Difficulty" href=#difficulty><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>File Name</th><th>Chart Rating</th><th>StepMania 5.1 and older</th><th>Project OutFox alpha 4.9.9</th></tr></thead><tbody>
+<tr>
+<td>another</td><td>25</td><td>Edit</td><td>D6</td></tr><tr>
+<td>wild / wd / hardcore</td><td>20</td><td>Challenge</td><td>D5</td></tr><tr>
+<td>crazy+ / cz+</td><td>20</td><td>Challenge</td><td>D5</td></tr><tr>
+<td>crazy / cz / crazydouble</td><td>14</td><td>Hard</td><td>D4</td></tr><tr>
+<td>nightmare / nm</td><td>14</td><td>Hard</td><td>D4</td></tr><tr>
+<td>hard / hd / double</td><td>8</td><td>Medium</td><td>D3</td></tr><tr>
+<td>freestyle / fs</td><td>8</td><td>Medium</td><td>D3</td></tr><tr>
+<td>easy / ez / normal</td><td>4</td><td>Easy</td><td>D2</td></tr><tr>
+<td>Beginner / practice</td><td>4</td><td>Beginner</td><td>D1</td></tr></tbody></table></div><p>If not specified, it gets set to Hard/D4 and is given a rating of 10.</p><div class=gdoc-page__anchorwrap>
+<h2 id=chart-type>
+Chart Type
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#chart-type class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Chart Type" href=#chart-type><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>File Name</th><th>Resulting Steps Type</th></tr></thead><tbody>
+<tr>
+<td>halfdouble / half-double / h_double / hdb</td><td>halfdouble</td></tr><tr>
+<td>double / db</td><td>double</td></tr><tr>
+<td>freestyle / fs</td><td>double</td></tr><tr>
+<td>nm</td><td>double</td></tr><tr>
+<td>_1</td><td>single</td></tr><tr>
+<td>_2</td><td>couple</td></tr></tbody></table></div><hr>
+<div class=gdoc-page__anchorwrap>
+<h1 id=sections>
+Sections
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#sections class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Sections" href=#sections><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1></div><div class=gdoc-page__anchorwrap>
+<h2 id=title>
+<code>TITLE</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#title class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TITLE" href=#title><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>This gives both the song name and artist.
+There are three acceptable formats for this section:</p><blockquote>
+<ul>
+<li><code>song name</code>
+This just gives a song name only.</li></ul></blockquote><blockquote>
+<ul>
+<li><code>artist name - song name</code>
+This gives both a song name and artist name, separated by a <code>-</code></li></ul></blockquote><blockquote>
+<ul>
+<li><code>artist name - song name - difficulty</code>
 This gives both a song name, artist name and difficulty, separated by a <code>-</code>.
 In this case, the difficulty is ignored, since it&rsquo;s read from the file name instead.</li></ul></blockquote><p>Example:</p><pre tabindex=0><code>#TITLE:L.F.O;
 </code></pre><p>With artist & title:</p><pre tabindex=0><code>#TITLE:aran - L.F.O;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=tickcount><code>TICKCOUNT</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#tickcount class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TICKCOUNT" href=#tickcount><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Sets the starting tick count for the file. This specifies how many lines of notes is needed to pass one beat.</p><p>For example: a tick count of 4 means 4 lines of notes are needed for a whole beat, allowing for 16ths.</p><p>Example:</p><pre tabindex=0><code>#TICKCOUNT:4;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=bpm><code>BPM</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bpm class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BPM" href=#bpm><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>This defines the starting BPM.</p><p>Example:</p><pre tabindex=0><code>#BPM:135.01;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=bpm2--bpm3><code>BPM2</code> / <code>BPM3</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bpm2--bpm3 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BPM2 / BPM3" href=#bpm2--bpm3><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Kick It Up uses these to define the BPMs to change to. You can have up to two BPM changes.</p><p>Example:</p><pre tabindex=0><code>#BPM2:164;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=tickcount>
+<code>TICKCOUNT</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#tickcount class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TICKCOUNT" href=#tickcount><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>Sets the starting tick count for the file. This specifies how many lines of notes is needed to pass one beat.</p><p>For example: a tick count of 4 means 4 lines of notes are needed for a whole beat, allowing for 16ths.</p><p>Example:</p><pre tabindex=0><code>#TICKCOUNT:4;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=bpm>
+<code>BPM</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bpm class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BPM" href=#bpm><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>This defines the starting BPM.</p><p>Example:</p><pre tabindex=0><code>#BPM:135.01;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=bpm2--bpm3>
+<code>BPM2</code> / <code>BPM3</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bpm2--bpm3 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BPM2 / BPM3" href=#bpm2--bpm3><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>Kick It Up uses these to define the BPMs to change to. You can have up to two BPM changes.</p><p>Example:</p><pre tabindex=0><code>#BPM2:164;
 #BPM3:174;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=bunki--bunki2><code>BUNKI</code> / <code>BUNKI2</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bunki--bunki2 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BUNKI / BUNKI2" href=#bunki--bunki2><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Kick It Up uses these to handle the positioning of BPM changes. You can have up to two BPM changes.</p><p>This is specified in centiseconds in SM.</p><p>Example:</p><pre tabindex=0><code>#BUNKI:2000;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=bunki--bunki2>
+<code>BUNKI</code> / <code>BUNKI2</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bunki--bunki2 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BUNKI / BUNKI2" href=#bunki--bunki2><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>Kick It Up uses these to handle the positioning of BPM changes. You can have up to two BPM changes.</p><p>This is specified in centiseconds in SM.</p><p>Example:</p><pre tabindex=0><code>#BUNKI:2000;
 #BUNKI2:6500;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=difficulty-1><code>DIFFICULTY</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#difficulty-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DIFFICULTY" href=#difficulty-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Sets the rating of the chart. Otherwise, values from the Difficulty secion above are used.</p><p>Example:</p><pre tabindex=0><code>#DIFFICULTY:7;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=starttime><code>STARTTIME</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#starttime class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor STARTTIME" href=#starttime><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Sets the beat 0 offset of the chart. SM interprets this in centiseconds.</p><p>Example:</p><pre tabindex=0><code>#STARTTIME:829;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=starttime2--starttime3><code>STARTTIME2</code> / <code>STARTTIME3</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#starttime2--starttime3 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor STARTTIME2 / STARTTIME3" href=#starttime2--starttime3><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Kick It Up uses these to help ensure more accurate BPM changes. STARTTIME3 is ignored in SM.</p><p>Example:</p><pre tabindex=0><code>#STARTTIME2:9;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=difficulty-1>
+<code>DIFFICULTY</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#difficulty-1 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DIFFICULTY" href=#difficulty-1><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>Sets the rating of the chart. Otherwise, values from the Difficulty secion above are used.</p><p>Example:</p><pre tabindex=0><code>#DIFFICULTY:7;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=starttime>
+<code>STARTTIME</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#starttime class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor STARTTIME" href=#starttime><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>Sets the beat 0 offset of the chart. SM interprets this in centiseconds.</p><p>Example:</p><pre tabindex=0><code>#STARTTIME:829;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=starttime2--starttime3>
+<code>STARTTIME2</code> / <code>STARTTIME3</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#starttime2--starttime3 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor STARTTIME2 / STARTTIME3" href=#starttime2--starttime3><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>Kick It Up uses these to help ensure more accurate BPM changes. STARTTIME3 is ignored in SM.</p><p>Example:</p><pre tabindex=0><code>#STARTTIME2:9;
 #STARTTIME3:0;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=player><code>PLAYER</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#player class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PLAYER" href=#player><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p><p>If &ldquo;double&rdquo; is found, the file is marked as a doubles chart.</p><p>Example:</p><pre tabindex=0><code>#PLAYER:DOUBLE;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=player>
+<code>PLAYER</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#player class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PLAYER" href=#player><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p><p>If &ldquo;double&rdquo; is found, the file is marked as a doubles chart.</p><p>Example:</p><pre tabindex=0><code>#PLAYER:DOUBLE;
 </code></pre><p>or</p><pre tabindex=0><code>#PLAYER:SINGLE;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=musicintro--intro><code>MUSICINTRO</code> / <code>INTRO</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#musicintro--intro class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor MUSICINTRO / INTRO" href=#musicintro--intro><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p><p>Sets the start point of the music sample. It&rsquo;s parsed in HH:MM:SS format</p><p>Example:</p><pre tabindex=0><code>#MUSICINTRO:1:20;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=titlefile><code>TITLEFILE</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#titlefile class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TITLEFILE" href=#titlefile><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p><p>Sets the background location of the song.</p><p>Example:</p><pre tabindex=0><code>#TITLEFILE:CoolTitle.png;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=discfile><code>DISCFILE</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#discfile class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DISCFILE" href=#discfile><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p><p>Sets the banner location of the song.</p><p>Example:</p><pre tabindex=0><code>#DISCFILE:FunnyDisc.png;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=songfile><code>SONGFILE</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#songfile class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SONGFILE" href=#songfile><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p><p>Sets the file name of the song&rsquo;s audio.</p><p>If not specified, the game looks for an audio file named &ldquo;song&rdquo; in the same folder as the KSF.</p><p>Example:</p><pre tabindex=0><code>#SONGFILE:SweetTunes.mp3;
-</code></pre><hr><div class=gdoc-page__anchorwrap><h2 id=step><code>#STEP:</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#step class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #STEP:" href=#step><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>This is the notedata of the file.</p><hr><div class=gdoc-page__anchorwrap><h3 id=notedata-specs>Notedata specs
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#notedata-specs class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Notedata specs" href=#notedata-specs><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><p>Each row of notes is 13 characters long, with all <code>2</code>s marking the end of the chart.</p><p>If any holds are unfinished at that point, they automatically capped off at the end of the chart.</p><p>For half-doubles, the first two columns are always 0.</p><div class=gdoc-page__anchorwrap><h3 id=note-types>Note types
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#note-types class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Note types" href=#note-types><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><div class=table-wrap><table><thead><tr><th>Character</th><th>Note Type</th><th>Quirks</th></tr></thead><tbody><tr><td>0</td><td>empty</td><td>N/A</td></tr><tr><td>1</td><td>Tap Note</td><td>N/A</td></tr><tr><td>4</td><td>Hold Note</td><td>The hold finishes upon the first non-<code>4</code> character in the column.</td></tr><tr><td>M / m</td><td>Mines</td><td>N/A</td></tr><tr><td>F / f</td><td>Fake Note</td><td>N/A</td></tr><tr><td>L / l</td><td>Lift Note</td><td>N/A</td></tr></tbody></table></div><p>Example:</p><pre tabindex=0><code>#STEP:
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=musicintro--intro>
+<code>MUSICINTRO</code> / <code>INTRO</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#musicintro--intro class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor MUSICINTRO / INTRO" href=#musicintro--intro><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p><p>Sets the start point of the music sample. It&rsquo;s parsed in HH:MM:SS format</p><p>Example:</p><pre tabindex=0><code>#MUSICINTRO:1:20;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=titlefile>
+<code>TITLEFILE</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#titlefile class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor TITLEFILE" href=#titlefile><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p><p>Sets the background location of the song.</p><p>Example:</p><pre tabindex=0><code>#TITLEFILE:CoolTitle.png;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=discfile>
+<code>DISCFILE</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#discfile class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DISCFILE" href=#discfile><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p><p>Sets the banner location of the song.</p><p>Example:</p><pre tabindex=0><code>#DISCFILE:FunnyDisc.png;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=songfile>
+<code>SONGFILE</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#songfile class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SONGFILE" href=#songfile><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>From Aldo_MX&rsquo;s fork of &ldquo;Stepmania Plus REDUX&rdquo;</p><p>Sets the file name of the song&rsquo;s audio.</p><p>If not specified, the game looks for an audio file named &ldquo;song&rdquo; in the same folder as the KSF.</p><p>Example:</p><pre tabindex=0><code>#SONGFILE:SweetTunes.mp3;
+</code></pre><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=step>
+<code>#STEP:</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#step class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #STEP:" href=#step><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>This is the notedata of the file.</p><hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=notedata-specs>
+Notedata specs
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#notedata-specs class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Notedata specs" href=#notedata-specs><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><p>Each row of notes is 13 characters long, with all <code>2</code>s marking the end of the chart.</p><p>If any holds are unfinished at that point, they automatically capped off at the end of the chart.</p><p>For half-doubles, the first two columns are always 0.</p><div class=gdoc-page__anchorwrap>
+<h3 id=note-types>
+Note types
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#note-types class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Note types" href=#note-types><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>Character</th><th>Note Type</th><th>Quirks</th></tr></thead><tbody>
+<tr>
+<td>0</td><td>empty</td><td>N/A</td></tr><tr>
+<td>1</td><td>Tap Note</td><td>N/A</td></tr><tr>
+<td>4</td><td>Hold Note</td><td>The hold finishes upon the first non-<code>4</code> character in the column.</td></tr><tr>
+<td>M / m</td><td>Mines</td><td>N/A</td></tr><tr>
+<td>F / f</td><td>Fake Note</td><td>N/A</td></tr><tr>
+<td>L / l</td><td>Lift Note</td><td>N/A</td></tr></tbody></table></div><p>Example:</p><pre tabindex=0><code>#STEP:
 1000010000000
 0010000400000
 0000000400000
 0000000400000
 2222222222222
-</code></pre><div class=gdoc-page__anchorwrap><h3 id=segment-types>Segment types
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#segment-types class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Segment types" href=#segment-types><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><p>Direct Move 0.5 had segment definitions to allow for more extendable charting.</p><div class=gdoc-page__anchorwrap><h4 id=tn><code>|Tn|</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#tn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Tn|" href=#tn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h4></div><p>Sets the tick count at the current beat.</p><p>Example: <code>|T512|</code> sets the tick count to 512.</p><hr><div class=gdoc-page__anchorwrap><h4 id=bn><code>|Bn|</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Bn|" href=#bn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h4></div><p>Sets the BPM at the current beat.</p><p>Example: <code>|B128.5|</code> sets the BPM to 128.5.</p><hr><div class=gdoc-page__anchorwrap><h4 id=en><code>|En|</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#en class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |En|" href=#en><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h4></div><p>Sets a delay segment at the given beat for n beats</p><p>Example: <code>|E12|</code> Makes a 12 beat delay segment.</p><hr><div class=gdoc-page__anchorwrap><h4 id=dn><code>|Dn|</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#dn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Dn|" href=#dn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h4></div><p>Sets a delay segment at the given beat for n miliseconds</p><p>Example: <code>|D1000|</code> Makes a 1000 milisecond (1 second) delay segment.</p><hr><div class=gdoc-page__anchorwrap><h4 id=mn--cn><code>|Mn|</code> / <code>|Cn|</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#mn--cn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Mn| / |Cn|" href=#mn--cn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h4></div><p>Sets the combo multiplier at the given beat</p><p>Example: <code>|M2|</code> sets the combo multiplier to 2.</p><hr><div class=gdoc-page__anchorwrap><h4 id=xn><code>|Xn|</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#xn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Xn|" href=#xn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h4></div><p>Sets the scroll segment at the current beat.</p><p>Example: <code>|X3|</code> sets the scroll to 3x.</p></article><div class="gdoc-page__footer flex flex-wrap justify-between"></div></div></main><footer class=gdoc-footer><div class="container flex"><div class="flex flex-wrap"><span class="gdoc-footer__item gdoc-footer__item--row">Built with <a href=https://gohugo.io/ class=gdoc-footer__link>Hugo</a> and<svg class="icon gdoc_heart"><use xlink:href="#gdoc_heart"/></svg></span></div><div class="flex flex-25 justify-end"><span class=gdoc-footer__item><a class="gdoc-footer__link fake-link" href=# aria-label="Back to top"><svg class="icon gdoc_keyborad_arrow_up"><use xlink:href="#gdoc_keyborad_arrow_up"/></svg><span class=hidden-mobile>Back to top</span></a></span></div></div></footer></div><script defer src=../../../js/en.search.min.1ed3ab2dbaac65827fc25f10eb395a440e07241973132823c6ef2ad821b55f16.js></script>
+</code></pre><div class=gdoc-page__anchorwrap>
+<h3 id=segment-types>
+Segment types
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#segment-types class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Segment types" href=#segment-types><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><p>Direct Move 0.5 had segment definitions to allow for more extendable charting.</p><div class=gdoc-page__anchorwrap>
+<h4 id=tn>
+<code>|Tn|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#tn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Tn|" href=#tn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4></div><p>Sets the tick count at the current beat.</p><p>Example: <code>|T512|</code> sets the tick count to 512.</p><hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=bn>
+<code>|Bn|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#bn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Bn|" href=#bn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4></div><p>Sets the BPM at the current beat.</p><p>Example: <code>|B128.5|</code> sets the BPM to 128.5.</p><hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=en>
+<code>|En|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#en class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |En|" href=#en><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4></div><p>Sets a delay segment at the given beat for n beats</p><p>Example: <code>|E12|</code> Makes a 12 beat delay segment.</p><hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=dn>
+<code>|Dn|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#dn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Dn|" href=#dn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4></div><p>Sets a delay segment at the given beat for n miliseconds</p><p>Example: <code>|D1000|</code> Makes a 1000 milisecond (1 second) delay segment.</p><hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=mn--cn>
+<code>|Mn|</code> / <code>|Cn|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#mn--cn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Mn| / |Cn|" href=#mn--cn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4></div><p>Sets the combo multiplier at the given beat</p><p>Example: <code>|M2|</code> sets the combo multiplier to 2.</p><hr>
+<div class=gdoc-page__anchorwrap>
+<h4 id=xn>
+<code>|Xn|</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/ksf-support/#xn class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor |Xn|" href=#xn><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h4></div><p>Sets the scroll segment at the current beat.</p><p>Example: <code>|X3|</code> sets the scroll to 3x.</p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
+</div></div></main><footer class=gdoc-footer>
+<div class="container flex">
+<div class="flex flex-wrap">
+<span class="gdoc-footer__item gdoc-footer__item--row">
+Built with <a href=https://gohugo.io/ class=gdoc-footer__link>Hugo</a> and
+<span><svg class="icon gdoc_heart"><use xlink:href="#gdoc_heart"/></svg></span>
+</span>
+</div><div class="flex flex-25 justify-end">
+<span class=gdoc-footer__item>
+<a class="gdoc-footer__link fake-link" href=# aria-label="Back to top"><svg class="icon gdoc_keyborad_arrow_up"><use xlink:href="#gdoc_keyborad_arrow_up"/></svg> <span class=hidden-mobile>Back to top</span>
+</a>
+</span>
+</div></div></footer></div><script defer src=../../../js/en.search.min.1ed3ab2dbaac65827fc25f10eb395a440e07241973132823c6ef2ad821b55f16.js></script>
 <script defer src=../../../js/clipboard-27784b7376.min.js></script>
-<script defer src=../../../js/clipboard-loader-f0b5fbd5f6.min.js></script></body></html>
+<script defer src=../../../js/clipboard-loader-f0b5fbd5f6.min.js></script>
+</body></html>
