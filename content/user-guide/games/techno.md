@@ -60,9 +60,9 @@ File Type|Label|Original Mode|Key Values Supported|Notes
 ------------|-------------|-------------|-------------|-------------|
  ``.bms`` | BMS | ``dance`` | 4k / 6k / 8k | 4k dance / 6k dance / 4k dance doubles in be-mu charts
  ``.dwi`` | DWI | ``dance`` | 4k | legacy _dance with intensity_ charts
- ``.sm/.ssc`` | SM | ``dance`` / ``techno`` | 3k / 4k / 6k / 8k  | 3k dance / 4k dance / 6k dance / 4k dance doubles
+ ``.sm/.ssc`` | SM | ``dance`` / ``techno`` | 4k / 6k / 8k  | 4k dance / 6k dance / 8k (4k dance doubles)
  ``.sm/.ssc`` | SM | ``pump`` / ``techno`` | 5k / 10k / 6k  | 5k dance / 10k (5k doubles)) / 6k halfdoubles
- ``.sm/.ssc`` | SM | ``techno`` | 8k / 16k / 9k / 18k  | 8k techno / 16k (8k doubles) / 9k techno / 18k doubles 
+ ``.sm/.ssc`` | SM | ``techno`` | 8k / 16k / 9k / 18k  | 8k techno / 16k (8k doubles) / 9k techno / 18k (9k doubles )
 
 
 ## Gameplay
