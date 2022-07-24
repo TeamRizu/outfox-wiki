@@ -17,15 +17,20 @@ This mode was added from the very beginning of the history of the StepMania proj
 
 ---
 ### Introduced:
+
+This history does not include the original years before the project was announced and given to the community. If you know of any builds or information missing, do let us know! you can find some of these earlier builds at the archive here https://josevarela.xyz/SMArchive/Builds/index.html 
+
 #### 4 Panel (Up/Down/Left/Right):
 
 First Seen:
- * StepMania 0.93 - ``(single4)`` (17th October 2001)
- * StepMania 0.94 - ``(versus4)`` (20 November 2001)
- * StepMania 0.94 - ``(double4)`` (20 November 2001)
- * StepMania 1.64 - ``(couple)`` (19 March 2002)
+ * DDR PC Edition m1 - ``(single)`` (21 August 2001)
+ * DDR PC Edition m1 - ``(double)`` (21 August 2001)
+
+Replaced by:
+ * Between StepMania 0.64 and 0.9 - ``(single4)`` (17 October 2001)
+ * Between StepMania 0.64 and 0.9 - ``(versus4)`` (20 November 2001)
+ * Between StepMania 0.64 and 0.9 - ``(double4)`` (20 November 2001)
  * StepMania v3.0 beta 6 - ``(dance-edit-couple)`` (17 August 2002)
- * StepMania 1.64 - ``(couple)`` (19 March 2002)
  * StepMania v4.0 CVS - ``(routine)`` (17 June 2006) 
 
 Replaced by:
@@ -67,6 +72,9 @@ Replaced by: ``(dance-)``
 
 #### 6 Panel Up/Down/Left/Right/UpLeft/UpRight:
 First Seen:
+ * DDR PC Edition m1 - ``(solo6)`` (21 August 2001)
+  
+Replaced by:
  * StepMania 0.94 - ``(single6)`` (20 November 2001)
 
 Replaced by:
@@ -78,7 +86,7 @@ Replaced by:
 
 Replaced by:
  * StepMania v3.0 beta 6 - ``(DDR Solo)`` (6 September 2002)
- * StepMania v3.0 beta 6 - ``(dance-solo-versus)`` (6 September 2002) Commented out for removal
+ * StepMania v3.0 beta 6 - ``(dance-solo-versus)`` (6 September 2002) This style was commented out for removal
 
 Replaced by:
  * Project OutFox alpha 4.13.0 - ``(solo-double)`` (31 January 2022)
@@ -99,6 +107,20 @@ First Seen:
  * Project OutFox alpha 4.2.0 - ``(threepanel)`` (5 February 2020)
  * Project OutFox alpha 4.13.0 - ``(threepanel-double)`` (31 January 2022)
  * Project OutFox alpha 4.13.0 - ``(threepanel-versus)`` (31 January 2022)
+
+## Supported Parser Types:
+
+This mode is _parser agnostic_. It will load 4k charts from a variety of formats.
+
+The table below lists the supported files and their types that ``dance`` supports, their panel/key value and the original mode the parser is used for (if any).
+
+File Type|Label|Original Mode|Key Values Supported|Notes 
+------------|-------------|-------------|-------------|-------------|
+ ``.bms`` | BMS | ``dance`` | 4k / 6k / 8k | 4k dance / 6k dance / 4k dance doubles in be-mu charts
+ ``.dwi`` | DWI | ``dance`` | 4k / 6K | legacy _dance with intensity_ charts
+ ``.sm/.ssc`` | SM | ``dance`` | 3k / 4k / 6k / 8k  | 3k dance / 4k dance / 6k dance / 4k dance doubles
+
+_Project OutFox_ added ``double`` and ``versus`` modes to solo and threepanel at the beginning of 2022 due to community request and demand. These charts will not parse on legacy builds of _StepMania_.
 
 ## Gameplay
 

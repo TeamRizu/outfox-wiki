@@ -43,9 +43,6 @@ First Seen:
  * Project OutFox alpha 4.9.9HF - ``(popn-five-versus)`` (27 April 2021)
 
 Replaced by:
- * StepMania v3.0 beta 6 - ``(single)`` (15 September 2002)
-
-Replaced by:
  * StepMania v4.0 CVS - ``(popn-five)`` (7 October 2005) 
 
 #### 7 Key (LY/LG/LB/Red/RB/RG/RY):
@@ -88,14 +85,14 @@ File Type|Label|Original Mode|Key Values Supported|Notes
 
 ## Game play
 
-This mode is played default in down scroll, with the note receptors at the bottom of the screen. There is a selection of different coloured lanes that match a set colour on a large controller. The mode has been extended to support the obscure/rare modes that were charted and these have a slightly different colour layout to the standard 9 key mode. The little notes fall down to be pressed when the item reaches the receptor. This game mode can still play ``po-mu`` charts in BME/BML files, which was a common practice up until around 2014. Play is usually on a dome based button controller, layed out in a 4 top 5 botton button arrangement. 
+This mode is played default in down scroll, with the note receptors at the bottom of the screen. There is a selection of different coloured lanes that match a set colour on a large controller. The mode has been extended to support the obscure/rare modes that were charted and these have a slightly different colour layout to the standard 9 key mode. The little notes fall down to be pressed when the item reaches the receptor. This game mode can still play ``po-mu`` charts in BME/BML files, which was a common practice up until around 2014. Play is usually on a dome based button controller, layed out in a 4 top 5 bottom button arrangement. 
 
 ``po-mu`` also supports 2 player mode on _Project OutFox_ as this was a missing feature from all simulations from the past and was highly requested by the community. 
 
 ### Mechanics
 **_key sounded_**
 
-_key sounded_ notes exist in this mode! This means buttons you press will add to the song being played. Similarly there can be percussion and other sound effects added to these. Due to the nature of key sounded charts, they take longer to load and compile than other charts, so do not be suprised if you see a 'loading screen' for po-mu charts!
+_key sounded_ notes exist in this mode! This means buttons you press will add to the song being played. Similarly there can be percussion and other sound effects added to these. Due to the nature of key sounded charts, they take longer to load and compile than other charts, so do not be surprised if you see a 'loading screen' for po-mu charts!
 
 ## Play Styles
 
@@ -115,7 +112,7 @@ The "health bar" in this mode is called a 'gauge'. It is a measure of accuracy a
 
 ## Controls
 
-While playable on keyboard, this mode really comes alive when played with a 9 button dome controller. The Arcade style ones can be up to 3 feet / 91cm wide, and provide a really good base for passing the higher level charts. The only mode which can be troublesome is 4 button, as this uses a slghtly different mapping.
+While playable on keyboard, this mode really comes alive when played with a 9 button dome controller. The Arcade style ones can be up to 3 feet / 91cm wide, and provide a really good base for passing the higher level charts. The only mode which can be troublesome is 4 button, as this uses a slightly different mapping.
 
 Two player ``po-mu`` is a new feature for our simulator, and is still experimental. Let us know if there are any issues if you find any!
 

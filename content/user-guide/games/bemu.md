@@ -27,6 +27,14 @@ The _mode_ was added in the 3.0 beta era, starting off life as a simple mode wit
 The mode did not see much use and fell into having a broken notesloader around the summer of 2010, making it not work with older BMS files, or files with BME or BML extensions. Many files were misinterpreted or just did not load at all, and some were even seen as ``po-mu`` songs when they were not. The game also wiped any BMS charts with the same difficulty or 'level', meaning the multichart methods BMS authors used were non-functional. The overdue revamp of the loading system in 2021 and 2022 fixed many of these bugs, allowing this mode to function and flourish once more. As of Alpha 4.14.0 the ``be-mu`` mode parsing support is almost complete, with only #TOTAL and #RANK support left to implement.
 
 ### Introduced:
+
+(These styles are not in this mode, they are here for completion as being history for the BMS protocol)
+#### 4 Key (Up/Down/Left/Right):
+ * Between StepMania 0.64 and 0.9 - ``(ddr-single4)`` (17 October 2001)
+#### 8 Key (Up/Down/Left/Right-Up/Down/Left/Right):
+ * Between StepMania 0.64 and 0.9 - ``(ddr-double4)`` (20 November 2001)
+
+Main BMS styles:
 #### 5 Key (LW/LB/CW/RB/RW/Scratch):
 
 First Seen:
@@ -93,6 +101,7 @@ First Seen:
 
 This mode was merged back into the 'bm' mode due to a duplication of styles. The IIDX side of the simulator was barely used, so it made sense to move towards the BMS specification which was more common at the time.
 
+## Supported Parser Types:
 This mode is _parser specific_. It will only load and parse items designed for the `BeMusic Script`.
 
 The table below lists the supported files and their types that ``be-mu`` supports, their key/button value and the original mode the parser is used for (if any).
@@ -100,16 +109,17 @@ The table below lists the supported files and their types that ``be-mu`` support
 File Type|Label|Original Mode|Key Values Supported|Notes 
 ------------|-------------|-------------|-------------|-------------|
  ``.bms/.bme/.bml`` | BMS | ``be-mu`` | 6k / 12k / 8k / 16k | 5k+scratch / 7k+scratch be-mu charts
+ ``.bms/.bme/.bml`` | BMS | ``be-mu`` | 5k / 10k / 7k / 14k | 5k / 7k be-mu charts without scratch (as of alpha 4.16)
 
 ## Game play
 
-This mode is played default in down scroll, with the note receptors at the bottom of the screen. There is a 'scratch' lane designed to be a rotary controller, and 5 or 7 buttons which need to be pressed when the item reaches the receptor. This game mode cannot play ``po-mu`` charts any longer as that now is done via a different loader.
+This mode is played default in down scroll, with the note receptors at the bottom of the screen. There is a 'scratch' lane designed to be a rotary controller, and 5 or 7 buttons which need to be pressed when the item reaches the receptor. This game mode cannot accidentally play ``po-mu`` charts any longer as that now is done via a different loader.
 
 ### Mechanics
 
 ``key sounded`` 
 
-The notes in this mode are based off of small clips of audio that react when you press a key. This means buttons you press will add to the song being played. Similarly there can be percussion and other sound effects added to these. Due to the nature of key sounded charts, they take longer to load and compile than other charts, so do not be suprised if you see a 'loading screen' for be-mu charts!
+The notes in this mode are based off of small clips of audio that react when you press a key. This means buttons you press will add to the song being played. Similarly there can be percussion and other sound effects added to these. Due to the nature of key sounded charts, they take longer to load and compile than other charts, so do not be surprised if you see a 'loading screen' for be-mu charts!
 
 
 ## Play Styles

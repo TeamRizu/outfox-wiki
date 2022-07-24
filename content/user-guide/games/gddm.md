@@ -45,18 +45,18 @@ File Type|Label|Original Mode|Key Values Supported|Notes
 
 ## Gameplay
 
-This mode is played default in down scroll, with the animated notes indicating which piece of the drum set to hit at the moment as it hits the base line at the bottom of the screen. Most columns are drawn to make it easier to read for the player, as well as this mode has 'superceded lanes'. This means that there are two types of notes in one column.
+This mode is played default in down scroll, with the animated notes indicating which piece of the drum set to hit at the moment as it hits the base line at the bottom of the screen. Most columns are drawn to make it easier to read for the player, as well as this mode has 'superseded lanes'. This means that there are two types of notes in one column.
 
 This mode is typically played using a midi enabled electronic drum kit and hit like a normal drum kit.
 
 This mode has default 'fail at song end' as it allows the player to continue to practice as needed to get a better grip of the song being played.
 
-``gddm`` is a single player game, and is usally played in a wide area of space because of the size needed for the drum kit and pedals, swinging range of arms etc.
+``gddm`` is a single player game, and is usually played in a wide area of space because of the size needed for the drum kit and pedals, swinging range of arms etc.
 
 ### Mechanics
 **_key sounded_**
 
-_key sounded_ notes exist in this mode! This means drum pieces you hit will add to the song being played. Similarly there can be percussion and other sound effects added to these. Due to the nature of key sounded charts, they take longer to load and compile than other charts, so do not be suprised if you see a 'loading screen' for ``gddm`` charts!
+_key sounded_ notes exist in this mode! This means drum pieces you hit will add to the song being played. Similarly there can be percussion and other sound effects added to these. Due to the nature of key sounded charts, they take longer to load and compile than other charts, so do not be surprised if you see a 'loading screen' for ``gddm`` charts!
 
 **_fail at end_**
 

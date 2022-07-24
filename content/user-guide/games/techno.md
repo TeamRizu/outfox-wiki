@@ -50,6 +50,21 @@ First Seen:
  * Project OutFox alpha 4.9.7.2 - ``(versus9)`` (March 16 2021)
  * Project OutFox alpha 4.9.7.2 - ``(double9)`` (March 16 2021)
 
+## Supported Parser Types:
+
+This mode is _parser agnostic_. It will load 4/5/8/9k charts from a variety of formats.
+
+The table below lists the supported files and their types that ``techno`` supports, their panel/key value and the original mode the parser is used for (if any).
+
+File Type|Label|Original Mode|Key Values Supported|Notes 
+------------|-------------|-------------|-------------|-------------|
+ ``.bms`` | BMS | ``dance`` | 4k / 6k / 8k | 4k dance / 6k dance / 4k dance doubles in be-mu charts
+ ``.dwi`` | DWI | ``dance`` | 4k | legacy _dance with intensity_ charts
+ ``.sm/.ssc`` | SM | ``dance`` / ``techno`` | 3k / 4k / 6k / 8k  | 3k dance / 4k dance / 6k dance / 4k dance doubles
+ ``.sm/.ssc`` | SM | ``pump`` / ``techno`` | 5k / 10k / 6k  | 5k dance / 10k (5k doubles)) / 6k halfdoubles
+ ``.sm/.ssc`` | SM | ``techno`` | 8k / 16k / 9k / 18k  | 8k techno / 16k (8k doubles) / 9k techno / 18k doubles 
+
+
 ## Gameplay
 
 This mode is played in upscroll by default, with arrows moving towards the receptor as per other VSRGs. The mode has a variety of different timing options, and it is a very versatile option for those wishing to experiment with different options or note layouts before moving them to ``dance`` or ``pump`` options later on.
