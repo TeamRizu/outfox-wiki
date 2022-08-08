@@ -9,7 +9,7 @@ insert picture of game-play
 -->
 
 
-# This mode will be added in alpha 4.18.0/alpha 5.0.0-pre33-ish of _Project OutFox_.
+## This mode will be added in alpha 4.18.0/alpha 5.0.0-pre33-ish of _Project OutFox_.
 
 ## About
 
