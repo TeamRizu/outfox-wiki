@@ -19,100 +19,84 @@ As of OutFox-alpha-4.16.0, they include:
 ### Dance / Fitness Pad Based Modes:
 
 * **dance** _(core)_ (3k, 3k double, 4k, 4k double, 6k, 6k double) 
-  
-  Parsers: .bms, .dwi, .sm, .ssc 
-  The default game type. This game type uses four lanes in the cardinal directions (left, down, up, right). It also contains a 6-lane style, adding up-left and up-right directions, and a 3-lane style using only up-left, down, and up-right.
+  * Parsers: .bms, .dwi, .sm, .ssc 
+  * The default game type. This game type uses four lanes in the cardinal directions (left, down, up, right). It also contains a 6-lane style, adding up-left and up-right directions, and a 3-lane style using only up-left, down, and up-right.
 
 * **pump** _(core)_ (5k, 5k double, 6k (half-double) 
-  
-  Parsers: .ksf, .piu, .sma, .sm, .ssc 
-  A five-lane dance game, which uses four diagonal directions and the center rather than cardinal directions.
+  * Parsers: .ksf, .piu, .sma, .sm, .ssc 
+  * A five-lane dance game, which uses four diagonal directions and the center rather than cardinal directions.
 
 * **techno** _(core)_ (4k, 4k double, 5k, 5k double, 8k, 8k double, 9k, 9k double)
-  
-  Parsers: .sm, .ssc
-  A dance game type designed for pads with nine panels, including 4-lane (similar to dance), 5-lane (similar to pump), 8-lane (using all but the center panel), and 9-lane styles in single and double versions.
+  * Parsers: .sm, .ssc
+  * A dance game type designed for pads with nine panels, including 4-lane (similar to dance), 5-lane (similar to pump), 8-lane (using all but the center panel), and 9-lane styles in single and double versions.
 
 * **smx** _(core)_ (3k, 3k double, 5k, 5k double)
-  Parsers: .ssc
-  A dance game type designed by _StepRevolution_ using a new unique pad which uses the cardinal directions plus middle (left, down, up, right and centre).
+  * Parsers: .ssc
+  * A dance game type designed by _StepRevolution_ using a new unique pad which uses the cardinal directions plus middle (left, down, up, right and centre).
 
 * **stepstage** (6k, 3k)
-  
-  Parsers: .ssc
-  A dance game whose format is familiar to those that played it; it had 6 panels over 2 columns, based on a circular design and was made by _Jaleco_ in 2000.
+  * Parsers: .ssc
+  * A dance game whose format is familiar to those that played it; it had 6 panels over 2 columns, based on a circular design and was made by _Jaleco_ in 2000.
 
 * **kickbox** (4k, 6k, 8k)
-  
-  Parsers: .sm, .ssc
-  An obscure lash-a-soft dance pad-to-a-punching-bag mode. Designed for a boxing style workout, it was requested by a community member in late 2014.
+  * Parsers: .sm, .ssc
+  * An obscure lash-a-soft dance pad-to-a-punching-bag mode. Designed for a boxing style workout, it was requested by a community member in late 2014.
 ---
 ### Sensor / Mixed Sensor Based Modes:
 
 * **ds3ddx** (4k + 4 sensor, 5k + 4 sensor)
-  
-  Parsers: .ssc
-  A dance game whose format is common among Chinese arcade dance games, which uses four diagonal foot panels, and four hand sensors around the pad in the cardinal directions. The extended version which used the centre panel as well as the diagonals was added to the game in the Spring of 2022, simulating _E5Online_ style play.
+  * Parsers: .ssc
+  * A dance game whose format is common among Chinese arcade dance games, which uses four diagonal foot panels, and four hand sensors around the pad in the cardinal directions. The extended version which used the centre panel as well as the diagonals was added to the game in the Spring of 2022, simulating _E5Online_ style play.
 
 * **para** (5 sensor, 8 sensor)
-  
-  Parsers: .sm, .ssc
-  A freestyle game designed for para para routines, which is typically played with five infrared hand sensors in a semicircular layout, and uses a considerably looser scoring system. 
+  * Parsers: .sm, .ssc
+  * A freestyle game designed for para para routines, which is typically played with five infrared hand sensors in a semicircular layout, and uses a considerably looser scoring system. 
   
 * **ez2** (3k + 4 sensor) 
-  
-  Parsers: .sm, .ssc 
-  A game type based on the defunct arcade dance game EZ2Dancer, which uses three foot panels and a pair of hand sensors.
+  * Parsers: .sm, .ssc 
+  * A game type based on the defunct arcade dance game EZ2Dancer, which uses three foot panels and a pair of hand sensors.
   
 * **maniax** (4 sensor)
-  
-  Parsers: .sm, .ssc
-  A game type based on the defunct arcade dance game DanceManiax, which uses four hand sensors arranged into two columns (upper and lower).
+  * Parsers: .sm, .ssc
+  * A game type based on the defunct arcade dance game DanceManiax, which uses four hand sensors arranged into two columns (upper and lower).
   
 ---
 ### Instrument Based Modes
 
 * **gddm** _(core)_ (6k, 9k, 10k)
-  
-  Parsers: .dtx, .gda, .g2a
-  A drum mode supporting six-part (five drums and one pedal), nine-part (seven drums, bass pedal, hi-hat pedal), and 10-part (“Real”) styles, played with MIDI electronic drum kits.
+  * Parsers: .dtx, .gda, .g2a
+  * A drum mode supporting six-part (five drums and one pedal), nine-part (seven drums, bass pedal, hi-hat pedal), and 10-part (“Real”) styles, played with MIDI electronic drum kits.
 
 * **gdgf** _(core)_ (3fret, 5fret, 6fret coming soon)
-  
-  Parsers: .dtx, .gda
-  (formerly **guitar** prior to OutFox-alpha-4.9.8) A fiendishly difficult guitar mode supporting three-fret and five-fret styles, often played with a guitar style controller. a highly requested 6 fret mode is coming soon.
+  * Parsers: .dtx, .gda
+  * (formerly **guitar** prior to OutFox-alpha-4.9.8) A fiendishly difficult guitar mode supporting three-fret and five-fret styles, often played with a guitar style controller. a highly requested 6 fret mode is coming soon.
 
 * **gh** _(core)_ (5fret, 6fret coming soon)
-  
-  Parsers: .chart, .mid
-  A five-fret guitar mode simulating the mechanics of once-popular console games originating from North America.
+  * Parsers: .chart, .mid
+  * A five-fret guitar mode simulating the mechanics of once-popular console games originating from North America.
   
 * **taiko** _(core)_ (1 drum - 4 hit points)
-  
-  Parsers: .osu, .osz, .tja 
-  A popular game often played with a single drum controller.
+  * Parsers: .osu, .osz, .tja 
+  * A popular game often played with a single drum controller.
 
 * **bongo** - (2 drums - 2x2 hit points) _Coming Soon_
-  
-  Parsers: .osu, .osz, .tja 
-  A 2 hand drum controller styled mode. Uses content designed for _taiko_. This mode is often played with a 2 hand drum controller, or 4 midi drums called toms.
-
+  * Parsers: .osu, .osz, .tja 
+  * A 2 hand drum controller styled mode. Uses content designed for _taiko_. This mode is often played with a 2 hand drum controller, or 4 midi drums called toms.
 ---
 
 ### Controller / Key Based Modes:
 
-> **be-mu** _(core)_ (5k +scratch, 5k +scratch+foot, 5k +scratch double, 7k +scratch, 7k +scratch double)
-> Parsers: .bms, .bml, .bme
-> Formally _beat_. A BMS player mode, supporting 5-key+scratch, 5-key+scratch+foot and 7-key+scratch styles and the ability to load BMS files. Full BME/BML support is almost complete. 5K and 7K charts _without_ scratch are also supported, though will likely play in the 7 lane + scratch layouts.
+* **be-mu** _(core)_ (5k +scratch, 5k +scratch+foot, 5k +scratch double, 7k +scratch, 7k +scratch double)
+  * Parsers: .bms, .bml, .bme
+  * Formally _beat_. A BMS player mode, supporting 5-key+scratch, 5-key+scratch+foot and 7-key+scratch styles and the ability to load BMS files. Full BME/BML support is almost complete. 5K and 7K charts _without_ scratch are also supported, though will likely play in the 7 lane + scratch layouts.
 
-> **po-mu** _(core)_ (3k, 4k, 5k, 7k, 9k, 9k double)
-> Parsers: .pms, .bme 
-  Formally _popn_. A PMS player mode, supporting 3, 4, 5, 7, and 9-button styles, 2 player mode, and the ability to load PMS/BME po-mu files, with full extended _po-mu_ support. The 4 button mode simulates a short lived arcade game with a different layout 
+* **po-mu** _(core)_ (3k, 4k, 5k, 7k, 9k, 9k double)
+  * Parsers: .pms, .bme 
+  * Formally _popn_. A PMS player mode, supporting 3, 4, 5, 7, and 9-button styles, 2 player mode, and the ability to load PMS/BME po-mu files, with full extended _po-mu_ support. The 4 button mode simulates a short lived arcade game with a different layout 
 
-> **kbx** _(core)_ (1k to 19k)
-> Parsers: .bms, .bml, .bme .chart, .dwi, .dtx, .gda, .ksf, .mc, .mid, .osu, .osz, .pms, .qua, .qp, .sma, .sm, .ssc, .tja
->
-> A 1 to 19 lane game type designed primarily for keyboard play, being able to play songs from any mode using the smartGen system. This is an OutFox-specific game type that does not simulate any specific game. The legacy _SSC_ era kb7 mode charts are still supported and run in this mode instead.
+* **kbx** _(core)_ (1k to 19k)
+  * Parsers: .bms, .bml, .bme .chart, .dwi, .dtx, .gda, .ksf, .mc, .mid, .osu, .osz, .pms, .qua, .qp, .sma, .sm, .ssc, .tja
+  * A 1 to 19 lane game type designed primarily for keyboard play, being able to play songs from any mode using the smartGen system. This is an OutFox-specific game type that does not simulate any specific game. The legacy _SSC_ era kb7 mode charts are still supported and run in this mode instead.
   
 ---
 
@@ -161,6 +145,7 @@ These are proposed and are scheduled on the road-map. Limitations or code proble
 * **piu** - A major refactoring to make it more accurate to the mainline series.
 * **ppr** - An obscure 'Plug in!' TV based cartridge marble game from 2001.
 * **djh** - A Hero isn't always needed, neither are the DJs
+* **cdj** - The dj's are crackin'!
 * **d86** - Feet dance Station Radio 3 panel
 
 _Written and Maintained with ♡ by Squirrel_
