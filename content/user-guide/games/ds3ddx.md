@@ -45,6 +45,7 @@ The table below lists the supported files and their types that ``ds3ddx`` suppor
 File Type|Label|Original Mode|Key Values Supported|Notes 
 ------------|-------------|-------------|-------------|-------------|
  ``.ssc`` | SSC | ``ds3ddx`` | 4k / 8k | 4k and 4k doubles ds3ddx charts
+ ``.ssc`` | SSC | ``dance`` | 4k / 8k | 4k and 4k doubles dance charts
  ``.ssc`` | PIU | ``pump`` | 5k / 10k | 5k and 5k doubles pump (v0.81) charts
 
 ## Gameplay
@@ -98,5 +99,7 @@ The timing windows for this grading system is very similar to the one used in th
 ## Controls
 
 ## Trivia
+
+
 
 _Written and Maintained with ♡ by Squirrel, with thanks to community member MKNK for the detailed information on the Chinese Versions._
