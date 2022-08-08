@@ -101,20 +101,18 @@ As of OutFox-alpha-4.16.0, they include:
 
 ### Controller / Key Based Modes:
 
-* **be-mu** _(core)_ (5k +scratch, 5k +scratch+foot, 5k +scratch double, 7k +scratch, 7k +scratch double)
-  
-  Parsers: .bms, .bml, .bme
-  Formally _beat_. A BMS player mode, supporting 5-key+scratch, 5-key+scratch+foot and 7-key+scratch styles and the ability to load BMS files. Full BME/BML support is almost complete. 5K and 7K charts _without_ scratch are also supported, though will likely play in the 7 lane + scratch layouts.
+> **be-mu** _(core)_ (5k +scratch, 5k +scratch+foot, 5k +scratch double, 7k +scratch, 7k +scratch double)
+> Parsers: .bms, .bml, .bme
+> Formally _beat_. A BMS player mode, supporting 5-key+scratch, 5-key+scratch+foot and 7-key+scratch styles and the ability to load BMS files. Full BME/BML support is almost complete. 5K and 7K charts _without_ scratch are also supported, though will likely play in the 7 lane + scratch layouts.
 
-* **po-mu** _(core)_ (3k, 4k, 5k, 7k, 9k, 9k double)
-  
-  Parsers: .pms, .bme 
+> **po-mu** _(core)_ (3k, 4k, 5k, 7k, 9k, 9k double)
+> Parsers: .pms, .bme 
   Formally _popn_. A PMS player mode, supporting 3, 4, 5, 7, and 9-button styles, 2 player mode, and the ability to load PMS/BME po-mu files, with full extended _po-mu_ support. The 4 button mode simulates a short lived arcade game with a different layout 
 
-* **kbx** _(core)_ (1k to 19k)
-  
-  Parsers: .bms, .bml, .bme .chart, .dwi, .dtx, .gda, .ksf, .mc, .mid, .osu, .osz, .pms, .qua, .qp, .sma, .sm, .ssc, .tja
-  A 1 to 19 lane game type designed primarily for keyboard play, being able to play songs from any mode using the smartGen system. This is an OutFox-specific game type that does not simulate any specific game. The legacy _SSC_ era kb7 mode charts are still supported and run in this mode instead.
+> **kbx** _(core)_ (1k to 19k)
+> Parsers: .bms, .bml, .bme .chart, .dwi, .dtx, .gda, .ksf, .mc, .mid, .osu, .osz, .pms, .qua, .qp, .sma, .sm, .ssc, .tja
+>
+> A 1 to 19 lane game type designed primarily for keyboard play, being able to play songs from any mode using the smartGen system. This is an OutFox-specific game type that does not simulate any specific game. The legacy _SSC_ era kb7 mode charts are still supported and run in this mode instead.
   
 ---
 
@@ -138,7 +136,7 @@ As of OutFox-alpha-4.16.0, they include:
 {{< button size="medium" relref="user-guide/games/maniax" 	>}}maniax{{< /button >}}
 
 <--->
-## Instrument Based Modes
+## MIDI Instrument / Controller Based Modes:
 {{< button size="medium" relref="user-guide/games/gddm" 	>}}gddm{{< /button >}}
 {{< button size="medium" relref="user-guide/games/gdgf" 	>}}gdgf{{< /button >}}
 {{< button size="medium" relref="user-guide/games/gh"	 	>}}gh{{< /button >}}
