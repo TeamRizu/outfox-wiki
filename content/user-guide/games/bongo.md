@@ -7,7 +7,10 @@ weight: 2
 <!--
 insert picture of game-play 
 -->
+
+
 # This mode will be added in alpha 4.18.0/alpha 5.0.0-pre33-ish of _Project OutFox_.
+
 ## About
 
 It parses files made for _taitai_ into a dual lane mode to play on a bongo based controller, or bongo based midi controller. One must hit the inside or the outside of the bongo drum when it reaches the receptor. Scoring and timing windows are yet to be decided.
