@@ -5,7 +5,11 @@ weight: 1
 
 ## What is Project OutFox?
 
-Project OutFox is a fork of StepMania 5.1, led by a group of veteran rhythm game players wanting to provide a free and stable experience for the community. Its main goals include:
+Project OutFox is a fork of StepMania 5.1. The project began to improve the main repo and it's codebase, however due to community feedback and response the project changed direction into what it is today; A working museum of scrolling rhythm games playable within a single client.
+
+The team provides a free-to-play cross-platform engine supporting and supported by the many new communities and areas that _OutFox_ now supports. It continues the legacy of the early pre 3.0 _StepMania_ developers: to enable everyone to enjoy the rhythm no matter what game they play, or what they play it on.
+
+The original aims (kept here for history) were as follows, most of these have now been met:
 
 * Refactoring its internal codebase to improve performance, adhere to modern coding practices, and enhance its capabilities on modern hardware and other platforms. 
 * Working on support for single-board ARM systems such as Raspberry Pi, including the new M1 ARM systems, and improve performance on legacy systems.
@@ -26,7 +30,6 @@ Development |
 [Jousway](https://github.com/Jousway)
 [Cube](https://github.com/concubidated)
 [MrThatKid](https://github.com/MrThatKid)
-[ArcticFqx](https://github.com/ArcticFqx)
 [Jose Varela](https://github.com/JoseVarelaP)
 
 <---> <!-- magic separator, between columns -->
@@ -35,7 +38,6 @@ Design |
 :------------ |
 [Jose Varela](https://github.com/JoseVarelaP)
 [Lirodon](https://github.com/ListenerJubatus)
-[SheepyChris](https://github.com/SheepyChris)
 
 <---> <!-- magic separator, between columns -->
 

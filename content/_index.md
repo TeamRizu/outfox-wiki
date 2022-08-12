@@ -18,7 +18,7 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 
 {{< columns >}}
 
-## Project OutFox
+## Info on Project OutFox
 
 {{< button size="large" relref="user-guide/meta/about" >}}About{{< /button >}}
 {{< button size="large" relref="user-guide/meta/FAQ" >}}FAQ{{< /button >}}
@@ -30,12 +30,12 @@ This wiki is still a work in progress, so keep checking back for updates on new 
 
 ## User's guide
 
-{{< button size="large" relref="user-guide/setup/install" >}}Installation{{< /button >}}
-{{< button size="large" relref="user-guide/setup/getting-started/" >}}Getting Started{{< /button >}}
-{{< button size="large" relref="user-guide/setup/controllers/" >}}Controllers{{< /button >}}
-{{< button size="large" relref="user-guide/games/" >}}Supported Modes{{< /button >}}
+{{< button size="large" relref="user-guide/setup/install" >}}Installing OutFox{{< /button >}}
+{{< button size="large" relref="user-guide/setup/getting-started/" >}}Let's Get Started{{< /button >}}
+{{< button size="large" relref="user-guide/setup/controllers/" >}}Configure Controllers{{< /button >}}
+{{< button size="large" relref="user-guide/games/" >}}Supported Game Modes{{< /button >}}
 {{< button size="large" relref="user-guide/config/folders/" >}}Content folders{{< /button >}}
-{{< button size="large" relref="user-guide/config/preferences/" >}}Preferences file{{< /button >}}
+{{< button size="large" relref="user-guide/config/preferences/" >}}Preferences.ini file{{< /button >}}
 
 <--->
 
