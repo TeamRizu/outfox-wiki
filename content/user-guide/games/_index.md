@@ -82,6 +82,10 @@ As of OutFox-alpha-4.16.0, they include:
 * **bongo** - (2 drums - 2x2 hit points) _Coming Soon_
   * Parsers: .osu, .osz, .tja 
   * A 2 hand drum controller styled mode. Uses content designed for _taiko_. This mode is often played with a 2 hand drum controller, or 4 midi drums called toms.
+
+* **kbm** - (2 octave piano, 4 octave piano) _Coming Soon_
+  * Parsers: .bmson 
+  * A piano style game played using a small portion of a normal piano or keyboard. Best played on MIDI, or a normal piano with an arduino MIDI pickup. Most modern 48 key or 61 key MIDI keyboards work well and are recommended if you wish to use a compact option.
 ---
 
 ### Controller / Key Based Modes:
@@ -124,8 +128,9 @@ As of OutFox-alpha-4.16.0, they include:
 {{< button size="medium" relref="user-guide/games/gddm" 	>}}gddm{{< /button >}}
 {{< button size="medium" relref="user-guide/games/gdgf" 	>}}gdgf{{< /button >}}
 {{< button size="medium" relref="user-guide/games/gh"	 	>}}gh{{< /button >}}
-{{< button size="medium" relref="user-guide/games/taiko" 	>}}taiko{{< /button >}}
+{{< button size="medium" relref="user-guide/games/taiko" 	>}}taitai{{< /button >}}
 {{< button size="medium" relref="user-guide/games/bongo" 	>}}bongo{{< /button >}}
+{{< button size="medium" relref="user-guide/games/kbm" 	    >}}kbm{{< /button >}}
 
 <--->
 ## Controller / Key Based Modes:
