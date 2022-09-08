@@ -73,6 +73,28 @@ The Winter Update to OutFox Serenity Volume I features three new songs by DJ Meg
 - Watch video [here](https://youtu.be/tyeeItPfbzc)
 - Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.5)
 
+### OutFox Serenity Volume II
+
+Released September 4, 2022, Serenity Volume II features music by Ace of Beat, Finite Limit, Jack5, Kurio Prokos, Lagoona, Rilliam, rN, SiLiS, and td. Comes with:
+
+| Mode | Charts |
+|---|---|
+| dance | 59 |
+| gh | 25 |
+| pump | 19 |
+| be-mu | 12 |
+| po-mu | 12 |
+| smx | 9 |
+| kbx | 8 |
+| ds3ddx | 6 |
+| kickbox | 4 |
+| ez2 | 1 |
+
+155 Charts have been created for 10 songs. Volume II StepArtists had 111 days of development.
+
+- Watch video [here](https://youtu.be/yVsGkWDPfWY)
+- Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v2.0)
+
 ## Are modfiles allowed to be submitted?
 
 Yes. But make sure its gimmicks only work with your specific chart/difficulty, no chart should impact other's charts in any way.
@@ -111,6 +133,7 @@ Those are special as they use a license that doesn't allow us to publicly host t
     - After the Ending **(Volume I)**
 - Jack5
     - Nexen II (Phase Two) **(Volume I)**
+    - Sweetners **(Volume II)**
 - Aspid Cat
     - Abandoned Doll **(Volume I)**
     - Conflicting Revenge **(Volume I)**
@@ -122,36 +145,57 @@ Those are special as they use a license that doesn't allow us to publicly host t
     - Plasma **(Volume I Winter Update)**
 - Pekoneko (ペコネコ)
     - Umi's Secret (Chiptune Mix) **(Volume I Winter Update)**
+- Rilliam
+    - chop chop **(Volume II)**
+- Kurio Prokos
+    - Beatucada **(Volume II)**
+- Lagoona
+    - Into My Dream **(Volume II)**
+- SiLiS
+    - Bounded Quietude **(Volume II)**
+    - Phycietiia **(Volume II)**
+    - Neutralize (PTB10 Mix) **(Volume II)**
+- Finite Limit
+    - Bounded Quietude **(Volume II)**
+- rN
+    - Phycietiia **(Volume II)**
+- Thomas Dingwall a.k.a td
+    - CRUSH THE DEVIL (IN MY BRAIN) **(Volume II)**
+- Ace of Beat
+    - Technological ≠ Emotional **(Volume II)**
+    - B-Happy **(Volume II)**
 
 ## Which StepArtists have had their charts released with OutFox Serenity?
 
 
 | Author | Charts |
 |---|---|
-| Daniel Rotwind | 52 |
-| Jack5 | 48 |
-| Chriszo | 41 |
-| shockdude | 33 |
-| Marukomuru | 23 |
+| Daniel Rotwind | 91 |
+| shockdude | 58 |
+| Chriszo | 58 |
+| Jack5 | 56 |
+| Marukomuru | 44 |
+| Xiddy | 22 |
+| K.TURN | 21 |
+| Yosefu | 19 |
 | Fingy | 18 |
-| K.TURN | 16 |
-| Xiddy | 15 |
-| Yosefu | 12 |
-| 48productions | 11 |
-| Telperion | 9 |
+| Telperion | 15 |
+| 48productions | 14 |
+| Kawafumi | 10 |
 | Dancing Maractus | 8 |
 | Gr00txD | 8 |
 | Kaede | 7 |
-| Kawafumi | 7 |
 | Snil4 | 5 |
 | dj505 | 5 |
+| kals | 4 |
+| DJGRS | 4 |
 | Homeee | 4 |
 | Drazil | 3 |
+| SHRMP0 | 3 |
+| Timo Kitsune | 2 |
 | Jose_Varela | 1 |
 | Sevish | 1 |
 | Ario | 1 |
-
-* Includes charts from OutFox Serenity Volume 1 Winter Update
 
 ## Which Graphic Makers have had their graphic released with OutFox Serenity?
 
@@ -162,11 +206,16 @@ Those are special as they use a license that doesn't allow us to publicly host t
     - Let Me See You (Background, Jacket, Banner)
     - Conflicting Revenge (Background, Jacket, Banner)
     - After the Ending (Jacket)
+    - Sweetners (Background, Jacket, Banner)
+    - Phycietiia (Background, Jacket, Banner)
+    - Technological ≠ Emotional (Background, Jacket, Banner)
 - Daniel Rotwind
     - Umi's Secret (Chiptune Mix) (Background, Jacket, Banner) *Art commissioned from  [Trinitoid](https://twitter.com/Trinitroid/status/1465752223439228931)
     - Low End Theory (Background, Jacket, Banner) *Art commissioned from  [Khayos](https://twitter.com/Khayos_Rave)
     - Tagebuch der vergangenen Erinnerungen (Background, Jacket, Banner, BGA) *Art comissioned from  [ArtPhantom17](https://twitter.com/Speed_Demon17)
     - brokenHeart resurrection ~estele~ (Background, Jacket, Banner)
+    - Bounded Quietude (Background, Jacket, Banner) *Art comissioned from  [Axl_fox](https://twitter.com/Axl_fox)
+    - Neutralize (PTB10 Mix) (Background, Jacket, Banner) *Art comissioned from  [Zeta-Neubourn](https://twitter.com/ZetaNeubourn)
 - Jack5
     - Nexen II (Background, Jacket, Banner)
     - Some Things Must (OutFox Edit) (Background, Jacket, Banner)
@@ -178,7 +227,15 @@ Those are special as they use a license that doesn't allow us to publicly host t
     - Abandoned Doll (Background, Jacket, Banner)
 - Jose_Varela
     - Heartbeat (BGA)
-
+    - Beatucada (Background, Jacket, Banner)
+- Dramis
+    - chop chop (Background, Jacket, Banner)
+- K.TURN
+    - Into My Dream (Background, Jacket, Banner, BGA)
+- Telperion
+    - CRUSH THE DEVIL (IN MY BRAIN) (Background, Jacket, Banner)
+- Kaimaruz
+    - B-Happy (Background, Jacket, Banner)
 ## Who organizes the project?
 
 Most of the work is handled by OutFox Community Team with occasional help from OutFox Design Team and feedback from OutFox Development Team. In Specific:
@@ -189,7 +246,6 @@ Most of the work is handled by OutFox Community Team with occasional help from O
 - Daniel Rotwind: Creation of templates for be-mu/po-mu game modes, Pack Assets, Chart Creation.
 - shockdude: Creation of GH game mode templates, Chart Creation.
 - Sevish: Sound Normalization, Music Feedback, Chart Creation.
-- SheepyChris: Music Selection, Simfile Templates, Chart Feedback.
 - Moneko: Music Selection.
 - dj505: Chart Creation and Feedback.
 - Jose_Varela: Chart Creation, Pack Assets.
