@@ -18,7 +18,7 @@ During Project OutFox Alpha 4.8.0 development, we started to release many modes,
 2. Fill [our online form](https://projectoutfox.com/community-pack-submissions) selecting the option of which you want to submit and any other required information. 
 
 
-- If you have **music** that follows our **Music guidelines**, then please submit it using [our online form](https://projectoutfox.com/community-pack-submissions), once you submit you have agreed that we have permission to store/share your content with members of our team to organize the selection of future volumes of OutFox Serenity.
+- If you have **music** that follows our **Music guidelines**, then please submit it using [our online form](https://projectoutfox.com/community-pack-submissions), once you submit you have agreed that we have permission to store/share your content with members of our team to organize the selection of future volumes of OutFox Serenity and that the public has permission to Stream/Record and Upload Videos playing Project OutFox with your songs, our channel will upload your song to Project OutFox Youtube Channel and that your song can be featured in arcades, as long as your song is selected.
 
 - If you want to contribute with charts for:
     - Old volumes ([Volume I](https://github.com/TeamRizu/OutFox-Serenity/tree/main/OutFox%20Serenity%20Volume%201)), you have two options:
@@ -30,6 +30,36 @@ During Project OutFox Alpha 4.8.0 development, we started to release many modes,
 
 - If you want to contribute with graphics, then follow the same steps given to chart contribution. But instead, use the "graphics" channels on our Discord server.
 
+## Does OutFox Serenity work with other StepMania forks?
+
+No, the packages we provide include content which will not work with other StepMania forks and can even cause crashes when trying to load them.
+
+Contributors and the Serenity Team prepare the pack with Project OutFox performance and behavior in mind, even if some individual chart works with those older forks.
+
+## How do I update my packs?
+
+We will notify everwhere possible that a new version has come out and we will also include a "New X Only" and "All In One" Package, you can choose which package to update your current install.
+
+## How will Volume 3 work?
+
+Volume 3 will work very different from past volumes, but to make it simple:
+
+- We will reveal 3 songs with SSC Templates and that will be a season.
+- Contributors can contribute with charts and graphics.
+- After 1 month from the season reveal, we will release that season package.
+- Every other month after the season package that package will get updated.
+- After 3 months another season will be revealed and the same steps as above will apply.
+
+Important: 
+
+- TTC (Time to Chart) for every season will be 3 months.
+- There's no Testing Weeks, make sure your content is final and meets all our requirements before sending.
+- Each season will always have 3 songs at max.
+- If a song has charts but no graphics yet, it will use the pack graphics, if after 2 months of the song reveal there's still no graphic for that song, then it will be made by members of the Serenity Team.
+
+## Can I Stream/Record and Upload Videos of me playing Serenity Songs or use them in a Arcade?
+
+Yes! In case you want to be extra secure, each song folder in our package includes a text file with licenses for the Song and Graphics. (If a section isn't include for one of those, you can assume you're safe.)
 ## What are OutFox Serenity Volumes?
 
 ### OutFox Serenity Volume I
