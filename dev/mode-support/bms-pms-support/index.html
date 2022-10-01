@@ -1094,7 +1094,8 @@ Key:
 BMS / BME / PMS Channel Support Table
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#bms--bme--pms-channel-support-table class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BMS / BME / PMS Channel Support Table" href=#bms--bme--pms-channel-support-table><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><div class=table-wrap> <table>
+</h2></div><p>The earlier versions of BMS were based on a 0-9 supported channel value, being <code>00</code> to <code>99</code>. Over time, it was extended to <em>base16</em> (<code>00</code> to <code>FF</code>), and then to <em>base36</em>. I won&rsquo;t list the tables in full base 36, as those extra channels are mostly used for player notes and keysounds, so it would be very long and hard to read. This table takes the most common layout which is base 16 based, and is also the most common supported by most of the other simulators. There are parts where <code>*0</code> to <code>*Z</code> can be used, and those will be noted.</p><p>This table will be updated and modified as information is found out or addenda needed to fix mistakes. If you notice anything on this page that needs correcting, do let Squirrel know, or make a PR to the wiki&rsquo;s repo!</p><hr>
+<div class=table-wrap> <table>
 <thead>
 <tr>
 <th>BMS / BME / PMS Channel</th><th>BMS Name</th><th>OutFox BMS Support</th><th>BME Name</th><th>OutFox BME Support</th><th>PMS Name</th><th>OutFox PMS Support</th><th>OutFox BMS/PMS Status Comments</th></tr></thead><tbody>
@@ -1114,6 +1115,12 @@ BMS / BME / PMS Channel Support Table
 <td>0D</td><td>Not Used</td><td>~</td><td>BGA Layer 2 Opacity</td><td>❌</td><td>Not Used</td><td>~</td><td>Not Supported</td></tr><tr>
 <td>0E</td><td>Not Used</td><td>~</td><td>BGA Poor Opacity</td><td>❌</td><td>BGA Poor Opacity</td><td>❌</td><td>Not Supported</td></tr><tr>
 <td>0F</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td></tr></tbody></table></div><hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=channel-00-to-0f>
+Channel 00 to 0F
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#channel-00-to-0f class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Channel 00 to 0F" href=#channel-00-to-0f><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><p>The lower channels on a BMS / PMS file mostly set up the specifics of the musical side of the chart, enabling BPM, backgrounds, and special effects like Stops and BGA (background) changes and selection.</p><p>The most important channel on this table is <code>01</code> which sets the &lsquo;backing&rsquo; track or &lsquo;master keysound&rsquo; of this track as created by some users. Most of the community do not use a completed file here however, it is better practice for the chart author to create keysounded files, as charting for a &lsquo;single&rsquo; file is often thought of as lazy.</p><p>On PMS files, the BGA transparency settings are set here as well for effects and &lsquo;cool/miss&rsquo; events that happen during the song if the user triggers those. On OutFox we support this mechanic, but as of yet we have not seen any files or have had any reported bugs with this, so it is a low priority option. Do reach out to us if you spot a pack or a song which has these channels within them so we can see what they are and how the effects work.</p><hr>
 <div class=table-wrap> <table>
 <thead>
 <tr>
@@ -1135,6 +1142,12 @@ BMS / BME / PMS Channel Support Table
 <td>1D</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td></tr><tr>
 <td>1E</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td></tr><tr>
 <td>1F</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td></tr></tbody></table></div><hr>
+<div class=gdoc-page__anchorwrap>
+<h3 id=channel-10-to-1f>
+Channel 10 to 1F
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#channel-10-to-1f class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Channel 10 to 1F" href=#channel-10-to-1f><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><p>This block of channels is used for <em>visible</em> player notes for player 1. This selection of channels from <code>10</code> to <code>19</code> is ordered and swapped around depending on the game chosen. This is why in the early 2000s there were arrangements made for <code>pomu</code> / <code>PMS</code> to be split into it&rsquo;s own file name, as it reused a lot of notes which on some simulators were loaded as <code>BMS</code> files. Do remember your target mode/game/style when you create your chart! This is especially important if you plan to have support with other simulators as they will not be as relaxed and &lsquo;wide supporting&rsquo; as OutFox is.</p><p>The pomu-extended mode which is very common in <code>BME</code> files is one such example. It uses <code>11</code> to <code>19</code> which on some simulations are incorrectly loaded. This type of chart was common in <em>nanasi</em> and we have aligned our support to this as it seems to be more common for the extended options than other &lsquo;formats&rsquo;.</p><hr>
 <div class=table-wrap> <table>
 <thead>
 <tr>
