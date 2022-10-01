@@ -251,8 +251,6 @@ If your notes were moving at ``130BPM``, but you did not wish to edit the ``BPM`
 The channel command to action #SCROLL values are a Base36 value which are ``#xxxSC``. There are several benefits to using this system as legacy BMS use items you need to name on each measure, whereas #xxxSC can last beyond this restriction. You need to be aware, not many clients support this system, so it is not backwards compatible if you are making your chart available to other simulators.
 
 
-
-
 ---
 
 ### Key:
@@ -266,6 +264,11 @@ _PMSX listed below on some channels, is the wider 2 player mode that outfox supp
 
 ## BMS / BME / PMS Channel Support Table
 
+The earlier versions of BMS were based on a 0-9 supported channel value, being ``00`` to ``99``. Over time, it was extended to _base16_ (``00`` to ``FF``), and then to _base36_. I won't list the tables in full base 36, as those extra channels are mostly used for player notes and keysounds, so it would be very long and hard to read. This table takes the most common layout which is base 16 based, and is also the most common supported by most of the other simulators. There are parts where ``*0`` to ``*Z`` can be used, and those will be noted.
+
+This table will be updated and modified as information is found out or addenda needed to fix mistakes. If you notice anything on this page that needs correcting, do let Squirrel know, or make a PR to the wiki's repo!
+
+---
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 01|Background Music|✅|Background Music|✅|Background Music|✅|Supported
@@ -283,6 +286,16 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 0D|Not Used|~|BGA Layer 2 Opacity|❌|Not Used|~|Not Supported
 0E|Not Used|~|BGA Poor Opacity|❌|BGA Poor Opacity|❌|Not Supported
 0F|Not Used|~|Not Used|~|Not Used|~|Not Used
+
+---
+
+### Channel 00 to 0F
+
+The lower channels on a BMS / PMS file mostly set up the specifics of the musical side of the chart, enabling BPM, backgrounds, and special effects like Stops and BGA (background) changes and selection.
+
+The most important channel on this table is ``01`` which sets the 'backing' track or 'master keysound' of this track as created by some users. Most of the community do not use a completed file here however, it is better practice for the chart author to create keysounded files, as charting for a 'single' file is often thought of as lazy.
+
+On PMS files, the BGA transparency settings are set here as well for effects and 'cool/miss' events that happen during the song if the user triggers those. On OutFox we support this mechanic, but as of yet we have not seen any files or have had any reported bugs with this, so it is a low priority option. Do reach out to us if you spot a pack or a song which has these channels within them so we can see what they are and how the effects work.
 
 ---
 
@@ -304,6 +317,13 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 1D|Not Used|~|Not Used|~|Not Used|~|Not Used
 1E|Not Used|~|Not Used|~|Not Used|~|Not Used
 1F|Not Used|~|Not Used|~|Not Used|~|Not Used
+---
+
+### Channel 10 to 1F
+
+This block of channels is used for _visible_ player notes for player 1. This selection of channels from ``10`` to ``19`` is ordered and swapped around depending on the game chosen. This is why in the early 2000s there were arrangements made for ``pomu`` / ``PMS`` to be split into it's own file name, as it reused a lot of notes which on some simulators were loaded as ``BMS`` files. Do remember your target mode/game/style when you create your chart! This is especially important if you plan to have support with other simulators as they will not be as relaxed and 'wide supporting' as OutFox is.
+
+The pomu-extended mode which is very common in ``BME`` files is one such example. It uses ``11`` to ``19`` which on some simulations are incorrectly loaded. This type of chart was common in _nanasi_ and we have aligned our support to this as it seems to be more common for the extended options than other 'formats'.
 
 ---
 
