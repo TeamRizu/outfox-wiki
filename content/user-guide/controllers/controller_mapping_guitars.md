@@ -7,7 +7,7 @@ weight: 3
 {{< toc >}}
 
 ## Madcatz Rock Band 4 Guitar (Playstation 4, Bluetooth)
-| Outfox Joypad Button | Physical Device Name |     gh     |  gdgm  |
+| Outfox Joypad Button | Physical Device Name |     gh     |  gdgf  |
 |:--------------------:|:--------------------:|:----------:|:------:|
 |                      |                      |            |        |
 |       Button 1       |       Blue Fret      |   Fret 4   | Fret 4 |
