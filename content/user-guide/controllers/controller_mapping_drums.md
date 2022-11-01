@@ -7,7 +7,7 @@ weight: 3
 {{< toc >}}
 
 ## Madcatz Rock Band 4 Drum Kit (Playstation 4, Bluetooth)
-| Outfox Joypad Button | Physical Device Name |     popn     |
+| Outfox Joypad Button | Physical Device Name |     po-mu     |
 |:--------------------:|:--------------------:|:------------:|
 |                      |                      |              |
 |       Button 1       |   Blue Pad and Cym   | Right Yellow |
