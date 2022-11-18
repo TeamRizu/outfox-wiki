@@ -308,7 +308,7 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 14|P1 Key 4|✅|P1 Key 4|✅|P1 Left Blue / P1 Left Blue |✅|Supported
 15|P1 Key 5|✅|P1 Key 5|✅|P1 Red / P1 Red|✅|Supported
 16|P1 Turn/Scratch|✅|P1 Turn/Scratch|✅|Not Used / P1 Right Blue|✅|Supported
-17|P1 FootPedal|❌|P1 FootPedal|❌|Not Used / P1 Right Green|✅|Not Supported
+17|P1 FootPedal|✅|P1 FootPedal|✅|Not Used / P1 Right Green|✅|Supported in Alpha 4.16.0
 18|P1 Key 6|✅|P1 Key 6|✅|Not Used / P1 Right Yellow|✅|Supported
 19|P1 Key 7|✅|P1 Key 7|✅|Not Used / P1 Right White|✅|Supported
 1A|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -336,7 +336,7 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 24|P2 Key 4|✅|P2 Key 4|✅|P1 Right Yellow / P2 Left Green|✅|Supported
 25|P2 Key 5|✅|P2 Key 5|✅|P1 Right White / P2 Red|✅|Supported
 26|P2 Turn/Scratch|✅|P2 Turn/Scratch|✅|Not Used / P2 Right Blue|✅|Supported
-27|P2 FootPedal|❌|P2 FootPedal|❌|Not Used / P2 Right Green|✅|Not Supported
+27|P2 FootPedal|✅|P2 FootPedal|✅|Not Used / P2 Right Green|✅|Supported in Alpha 4.16.0
 28|P2 Key 6|✅|P2 Key 6|✅|Not Used / P2 Right Yellow|✅|Supported
 29|P2 Key 7|✅|P2 Key 7|✅|Not Used / P2 Right White|✅|Supported
 2A|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -639,12 +639,12 @@ FF|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 These two channels were recent additions to the specification used in the _beatoraja_ and _bemuse_ clients, and are done slightly differently to the specification. Rather than using one of the 30 spare channels in the lower ranges, these two options require full base 36 (00-ZZ) support to work as they use SC/SP instead of a Hex (00-FF) value. OutFox's BMS-like parsers were updated in 4.9.9 to support base 36 channel values even though not required by specification, so these channels were a trivial addition to our support.
 
-Speed and Scroll segments replicate behaviour done with Channel 02/08/09, without relying on these channels changing. They were introduced in the SSC updates to StepMania and are natively supported in the engine in OutFox. These add a new layer of effects to be actioned without using #BPMxx or #STOPxx.
+Speed and Scroll segments replicate behaviour done with Channel 02/08/09, without relying on these channels changing. They were introduced in the SSC updates to StepMania and are natively supported in the engine in OutFox. These add a new layer of effects to be utlised without using #BPMxx or #STOPxx.
 
 BMS / BME / PMS Channel|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------
-SC|Scroll Adjustment|✅|Not Used|~|Added in 4.11.0
-SP|Speed Adjustment|✅|Not Used|~|Added in 4.11.0
+SC|Scroll Adjustment|❌|Not Used|~|Not Supported Yet
+SP|Speed Adjustment|❌|Not Used|~|Not Supported Yet
 
 ---
 
