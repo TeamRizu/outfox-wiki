@@ -8,25 +8,20 @@ weight: 2
 insert picture of game-play 
 -->
 
-
-## This mode will be added in alpha 4.18.0/alpha 5.0.0-pre33-ish of _Project OutFox_.
-
 ## About
 
-It parses files made for _taitai_ into a dual lane mode to play on a bongo based controller, or bongo based midi controller. One must hit the inside or the outside of the bongo drum when it reaches the receptor. Scoring and timing windows are yet to be decided.
+It parses files made for _taitai_ into a lane mode to play on a bongo based controller, or bongo based midi controller. One must hit the left or right bongo drum when it reaches the receptor, or clap your hands when the star appears. Scoring and timing windows are yet to be decided.
 
 ## History:
 
-The parser support for the mode is currently actively developed, and the chart support will be aligned with the taiko simulator based parser support. We can parse .osu/.osz (Mode 1 taiko) and .tja files, although some of the scroll and time signature math needs to be concluded. As of alpha 4.16 the parsers are about 60% complete.
-
-This mode is not selectable in the game select screen at the moment.
+The parser support for the mode is currently actively developed, and the chart support will be aligned with the taiko simulator based parser support. We can parse .osu/.osz (Mode 1 taiko) and .tja files, although some of the scroll and time signature math needs to be concluded. As of alpha 4.18 the parsers are about 60% complete.
 
 ### Introduced:
-#### Bongo (LeftDrumOuter, LeftDrumInner, RightDrumInner, RightDrumOuter):
+#### Bongo (LeftDrum, RightDrum, clap):
 
 First Seen:
- * Project OutFox alpha 4.18.0 - ``(bongo-single)`` (October 2022)
- * Project OutFox alpha 4.18.0 - ``(bongo-versus)`` (October 2022)
+ * Project OutFox LTS 4.18.0 / alpha 5.0.0-pre21 - ``(bongo-single)`` (26th October 2022)
+ * Project OutFox LTS 4.18.0 / alpha 5.0.0-pre21 - ``(bongo-versus)`` (26th October 2022)
 
 This mode is _parser specific_. It will only load and parse items designed for `taitai`.
 
@@ -67,8 +62,6 @@ Are notes that require you to hit the both edges of the left bongo drum at the s
 ## Charting
 
 ## Controls
-
-This game can be played as a 4K layout, or on a drum based controller. There were several home based console drum controllers, as well as proper arcade style ones. 
 
 There are also notes which need to be hit a certain amount within a set time.
 

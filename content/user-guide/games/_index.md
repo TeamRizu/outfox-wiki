@@ -14,7 +14,7 @@ This page will give a little more detail and history about the modes that we sup
 
 ![Screenshot of the Project OutFox game selection screen.](/user-guide/selectmode.png)
 
-As of OutFox-alpha-4.16.0, they include:
+As of OutFox-alpha-4.18.1, they include:
 ---
 ### Dance / Fitness Pad Based Modes:
 
@@ -79,13 +79,17 @@ As of OutFox-alpha-4.16.0, they include:
   * Parsers: .osu, .osz, .tja 
   * A popular game often played with a single drum controller.
 
-* **bongo** - (2 drums - 2x2 hit points) _Coming Soon_
+* **bongo** - (2 bongos + clap)
   * Parsers: .osu, .osz, .tja 
-  * A 2 hand drum controller styled mode. Uses content designed for _taiko_. This mode is often played with a 2 hand drum controller, or 4 midi drums called toms.
+  * A 2 hand drum controller styled mode. Uses content designed for _taiko_. This mode is often played with a 2 hand drum controller, or 3 midi drums called toms.
 
 * **kbm** - (2 octave piano, 4 octave piano) _Coming Soon_
   * Parsers: .bmson 
   * A piano style game played using a small portion of a normal piano or keyboard. Best played on MIDI, or a normal piano with an arduino MIDI pickup. Most modern 48 key or 61 key MIDI keyboards work well and are recommended if you wish to use a compact option.
+
+* **karaoke** - (1 pitch grid) _Coming Soon_
+  * Parsers: .txt/.xml 
+  * A karaoke style mode simulating the likes of _UltraStar_. It allows for the input of singing/rapping into a microphone, and like the other simulators, it uses pitch based detection for scoring. It will read most microphone inputs and can use the official _SingStar_ mics, so keep them around, don't lose that usb dongle!
 ---
 
 ### Controller / Key Based Modes:
@@ -131,6 +135,7 @@ As of OutFox-alpha-4.16.0, they include:
 {{< button size="medium" relref="user-guide/games/taiko" 	>}}taitai{{< /button >}}
 {{< button size="medium" relref="user-guide/games/bongo" 	>}}bongo{{< /button >}}
 {{< button size="medium" relref="user-guide/games/kbm" 	    >}}kbm{{< /button >}}
+{{< button size="medium" relref="user-guide/games/karaoke" 	    >}}karaoke{{< /button >}}
 
 <--->
 ## Controller / Key Based Modes:
@@ -145,7 +150,6 @@ As of OutFox-alpha-4.16.0, they include:
 
 These are proposed and are scheduled on the road-map. Limitations or code problems may delay or change these modes, so there is no date or ETA given.
 
-* **karaoke** -  A _(...do i need to explain this?)_ singing mode. Will happen if Squirrel gets off his butt.
 * **jam** - A mode properly supporting _o2Jam_ and its modes, with full .OJM loader support.
 * **piu** - A major refactoring to make it more accurate to the mainline series.
 * **ppr** - An obscure 'Plug in!' TV based cartridge marble game from 2001.
