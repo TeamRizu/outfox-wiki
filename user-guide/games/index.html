@@ -206,6 +206,12 @@ Game Module: gh
 </span>
 </li><li>
 <span class=flex>
+<a href=../../user-guide/games/karaoke/ class=gdoc-nav__entry>
+Game Module: karaoke
+</a>
+</span>
+</li><li>
+<span class=flex>
 <a href=../../user-guide/games/kbm/ class=gdoc-nav__entry>
 Game Module: kbm
 </a>
@@ -936,9 +942,9 @@ hidden-mobile" itemprop=breadcrumb>
 <a data-clipboard-text=https://outfox.wiki/user-guide/games/#_we-are-still-dedicated-to-our-players-from-older-versions-and-this-does-not-mean-we-are-not-focussing-on-working-on-our-core-game-support_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor We are still dedicated to our players from older versions, and this does not mean we are not focussing on working on our core game support!" href=#_we-are-still-dedicated-to-our-players-from-older-versions-and-this-does-not-mean-we-are-not-focussing-on-working-on-our-core-game-support_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3></div><p><img src=../../user-guide/selectmode.png alt="Screenshot of the Project OutFox game selection screen."></p><div class=gdoc-page__anchorwrap>
-<h2 id=as-of-outfox-alpha-4160-they-include>
-As of OutFox-alpha-4.16.0, they include:
-<a data-clipboard-text=https://outfox.wiki/user-guide/games/#as-of-outfox-alpha-4160-they-include class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor As of OutFox-alpha-4.16.0, they include:" href=#as-of-outfox-alpha-4160-they-include><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=as-of-outfox-alpha-4181-they-include>
+As of OutFox-alpha-4.18.1, they include:
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/#as-of-outfox-alpha-4181-they-include class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor As of OutFox-alpha-4.18.1, they include:" href=#as-of-outfox-alpha-4181-they-include><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><div class=gdoc-page__anchorwrap>
 <h3 id=dance--fitness-pad-based-modes>
@@ -989,10 +995,12 @@ Instrument Based Modes
 <li>Parsers: .chart, .mid</li><li>A five-fret guitar mode simulating the mechanics of once-popular console games originating from North America.</li></ul></li><li>
 <p><strong>taiko</strong> <em>(core)</em> (1 drum - 4 hit points)</p><ul>
 <li>Parsers: .osu, .osz, .tja</li><li>A popular game often played with a single drum controller.</li></ul></li><li>
-<p><strong>bongo</strong> - (2 drums - 2x2 hit points) <em>Coming Soon</em></p><ul>
-<li>Parsers: .osu, .osz, .tja</li><li>A 2 hand drum controller styled mode. Uses content designed for <em>taiko</em>. This mode is often played with a 2 hand drum controller, or 4 midi drums called toms.</li></ul></li><li>
+<p><strong>bongo</strong> - (2 bongos + clap)</p><ul>
+<li>Parsers: .osu, .osz, .tja</li><li>A 2 hand drum controller styled mode. Uses content designed for <em>taiko</em>. This mode is often played with a 2 hand drum controller, or 3 midi drums called toms.</li></ul></li><li>
 <p><strong>kbm</strong> - (2 octave piano, 4 octave piano) <em>Coming Soon</em></p><ul>
-<li>Parsers: .bmson</li><li>A piano style game played using a small portion of a normal piano or keyboard. Best played on MIDI, or a normal piano with an arduino MIDI pickup. Most modern 48 key or 61 key MIDI keyboards work well and are recommended if you wish to use a compact option.</li></ul></li></ul><hr>
+<li>Parsers: .bmson</li><li>A piano style game played using a small portion of a normal piano or keyboard. Best played on MIDI, or a normal piano with an arduino MIDI pickup. Most modern 48 key or 61 key MIDI keyboards work well and are recommended if you wish to use a compact option.</li></ul></li><li>
+<p><strong>karaoke</strong> - (1 pitch grid) <em>Coming Soon</em></p><ul>
+<li>Parsers: .txt/.xml</li><li>A karaoke style mode simulating the likes of <em>UltraStar</em>. It allows for the input of singing/rapping into a microphone, and like the other simulators, it uses pitch based detection for scoring. It will read most microphone inputs and can use the official <em>SingStar</em> mics, so keep them around, don&rsquo;t lose that usb dongle!</li></ul></li></ul><hr>
 <div class=gdoc-page__anchorwrap>
 <h3 id=controller--key-based-modes>
 Controller / Key Based Modes:
@@ -1110,6 +1118,11 @@ bongo
 kbm
 </a>
 </span>
+<span class="gdoc-button gdoc-button--regular">
+<a href=../../user-guide/games/karaoke/ class=gdoc-button__link>
+karaoke
+</a>
+</span>
 </div><div class="gdoc-columns__content gdoc-markdown--nested flex-even">
 <div class=gdoc-page__anchorwrap>
 <h2 id=controller--key-based-modes>
@@ -1137,7 +1150,7 @@ Future game types
 <a data-clipboard-text=https://outfox.wiki/user-guide/games/#future-game-types class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Future game types" href=#future-game-types><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><p>These are proposed and are scheduled on the road-map. Limitations or code problems may delay or change these modes, so there is no date or ETA given.</p><ul>
-<li><strong>karaoke</strong> - A <em>(&mldr;do i need to explain this?)</em> singing mode. Will happen if Squirrel gets off his butt.</li><li><strong>jam</strong> - A mode properly supporting <em>o2Jam</em> and its modes, with full .OJM loader support.</li><li><strong>piu</strong> - A major refactoring to make it more accurate to the mainline series.</li><li><strong>ppr</strong> - An obscure &lsquo;Plug in!&rsquo; TV based cartridge marble game from 2001.</li><li><strong>djh</strong> - A Hero isn&rsquo;t always needed, neither are the DJs</li><li><strong>cdj</strong> - The dj&rsquo;s are crackin&rsquo;!</li><li><strong>d86</strong> - Feet dance Station Radio 3 panel</li></ul><p><em>Written and Maintained with ♡ by Squirrel</em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
+<li><strong>jam</strong> - A mode properly supporting <em>o2Jam</em> and its modes, with full .OJM loader support.</li><li><strong>piu</strong> - A major refactoring to make it more accurate to the mainline series.</li><li><strong>ppr</strong> - An obscure &lsquo;Plug in!&rsquo; TV based cartridge marble game from 2001.</li><li><strong>djh</strong> - A Hero isn&rsquo;t always needed, neither are the DJs</li><li><strong>cdj</strong> - The dj&rsquo;s are crackin&rsquo;!</li><li><strong>d86</strong> - Feet dance Station Radio 3 panel</li></ul><p><em>Written and Maintained with ♡ by Squirrel</em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
 </div></div></main><footer class=gdoc-footer>
 <div class="container flex">
 <div class="flex flex-wrap">

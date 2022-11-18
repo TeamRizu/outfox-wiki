@@ -3,9 +3,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Chart Modifiers Chart modifiers affect the chart itself, meaning what has to be stepped changes. These cannot be called during gameplay, but can be called through attacks & course files. All of these are boolean modifiers. At the moment, some of these aren&rsquo;t properly set up for any game other than dance.
-&ldquo;Transform&rdquo; Modifiers Transform modifiers add or remove or alter notes from the chart, affecting how the chart has to be played.">
-<title>Chart modifiers | Project OutFox Wiki</title><link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
+<meta name=description content="Details about the `karaoke` game module supported by Project OutFox.">
+<title>Game Module: karaoke | Project OutFox Wiki</title><link rel=icon href=../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=../../../fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -45,7 +44,7 @@
 <div class="gdoc-search__spinner spinner hidden"></div><ul id=gdoc-search-results class=gdoc-search__list></ul></div><section class=gdoc-nav--main>
 <h2>Navigation</h2><ul class=gdoc-nav__list>
 <li>
-<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle>
+<input type=checkbox id=navtree-4d9830bf class=gdoc-nav__toggle checked>
 <label for=navtree-4d9830bf class="flex justify-between">
 <span class=flex>User Guide</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
@@ -206,7 +205,7 @@ Game Module: gh
 </span>
 </li><li>
 <span class=flex>
-<a href=../../../user-guide/games/karaoke/ class=gdoc-nav__entry>
+<a href=../../../user-guide/games/karaoke/ class="gdoc-nav__entry is-active">
 Game Module: karaoke
 </a>
 </span>
@@ -277,7 +276,7 @@ Game Module: techno
 </a>
 </span>
 </li></ul></li></ul></li><li>
-<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-6821e290 class=gdoc-nav__toggle>
 <label for=navtree-6821e290 class="flex justify-between">
 <span class=flex>
 <a href=../../../dev/ class=gdoc-nav__entry>
@@ -505,7 +504,7 @@ Modifier Files
 </a>
 </span>
 </li></ul></li><li>
-<input type=checkbox id=navtree-fb0e8f07 class=gdoc-nav__toggle checked>
+<input type=checkbox id=navtree-fb0e8f07 class=gdoc-nav__toggle>
 <label for=navtree-fb0e8f07 class="flex justify-between">
 <span class=flex>
 <a href=../../../dev/mods/ class=gdoc-nav__entry>
@@ -588,7 +587,7 @@ ModSplines
 </span>
 </li><li>
 <span class=flex>
-<a href=../../../dev/mods/Mods-12-Chart-Mods/ class="gdoc-nav__entry is-active">
+<a href=../../../dev/mods/Mods-12-Chart-Mods/ class=gdoc-nav__entry>
 Chart modifiers
 </a>
 </span>
@@ -935,173 +934,101 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mods/ href=../../../dev/mods/><span itemprop=name>Guide to Modifiers</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Chart modifiers</span><meta itemprop=position content="4"></li></ol></div></div><article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Chart modifiers</h1><div class=gdoc-page__anchorwrap>
-<h1 id=chart-modifiers>
-Chart Modifiers
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#chart-modifiers class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Chart Modifiers" href=#chart-modifiers><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/ href=../../../user-guide/><span itemprop=name>User Guide</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/games/ href=../../../user-guide/games/><span itemprop=name>Supported Game Modules</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Game Module: karaoke</span><meta itemprop=position content="4"></li></ol></div></div><article class="gdoc-markdown gdoc-markdown__align--left">
+<h1>Game Module: karaoke</h1><div class=gdoc-page__anchorwrap>
+<h2 id=this-mode-will-be-added-in-a-future-release-of-alpha-5-of-_project-outfox_>
+This mode will be added in a future release of alpha 5 of <em>Project OutFox</em>.
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#this-mode-will-be-added-in-a-future-release-of-alpha-5-of-_project-outfox_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor This mode will be added in a future release of alpha 5 of Project OutFox." href=#this-mode-will-be-added-in-a-future-release-of-alpha-5-of-_project-outfox_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1></div><p>Chart modifiers affect the chart itself, meaning what has to be stepped changes. These cannot be called during gameplay, but can be called through attacks & course files. All of these are boolean modifiers. At the moment, some of these aren&rsquo;t properly set up for any game other than dance.</p><div class=gdoc-page__anchorwrap>
-<h1 id=transform-modifiers>
-&ldquo;Transform&rdquo; Modifiers
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#transform-modifiers class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor &ldquo;Transform&rdquo; Modifiers" href=#transform-modifiers><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><div class=gdoc-page__anchorwrap>
+<h1 id=about>
+About
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#about class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor About" href=#about><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1></div><p>Transform modifiers add or remove or alter notes from the chart, affecting how the chart has to be played. Some of these might disqualify your score depending on what version of SM is played. The list is shown in application order, from first to apply to last. (With exception to the first one).</p><div class=gdoc-page__anchorwrap>
-<h2 id=attackmines-sm5-only>
-AttackMines (SM5 only)
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#attackmines-sm5-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AttackMines (SM5 only)" href=#attackmines-sm5-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h1></div><div class=gdoc-page__anchorwrap>
+<h2 id=history>
+History:
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#history class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor History:" href=#history><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: When active, all mines apply a random attack when hit, and all other effects that come with hitting mines still happens.</p><p>Quirks: Appears to be activatable mid-gameplay?</p><p>PlayerOptions format: AttackMines(<enable>)</p><p>Modstring format: <enable> attackmines</p><div class=gdoc-page__anchorwrap>
-<h2 id=little>
-Little
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#little class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Little" href=#little><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><p>There was a lot of code produced by Chris Danford for this mode back in 2008, that went seemingly completely unused until it&rsquo;s removal 2 years later. <em>OutFox</em> will use more modern techniques that what was written at the time, and we will restore the vision of the engine having a karaoke mode once again.</p><p>The parser support for the mode (<em>txt</em>) is currently in development as it requires a new parser system to be written from scratch. <em>.xml</em> files may be supported in the future depending on community demand.</p><p><em>OutFox</em> has no plans to support the legacy <code>#RELATIVE:YES</code> files that were written in the late 2000s, as these seem to be not used anymore by the wider community.</p><p>This mode is not selectable in the game select screen at the moment as it is not on any public builds.</p><div class=gdoc-page__anchorwrap>
+<h3 id=introduced>
+Introduced:
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#introduced class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Introduced:" href=#introduced><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: Removes all notes that aren&rsquo;t on 4ths.</p><p>Quirks: N/A</p><p>PlayerOptions format: Little(<enable>)</p><p>Modstring format: <enable> little</p><div class=gdoc-page__anchorwrap>
-<h2 id=norolls>
-NoRolls
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#norolls class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NoRolls" href=#norolls><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h3></div><div class=gdoc-page__anchorwrap>
+<h4 id=song-grid-midi-note-style>
+Song Grid MIDI note style:
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#song-grid-midi-note-style class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Song Grid MIDI note style:" href=#song-grid-midi-note-style><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: All rolls become normal holds.</p><p>Quirks: N/A</p><p>PlayerOptions format: NoRolls(<enable>)</p><p>Modstring format: <enable> norolls</p><div class=gdoc-page__anchorwrap>
-<h2 id=noholds>
-NoHolds
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#noholds class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NoHolds" href=#noholds><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h4></div><p>First Seen:</p><ul>
+<li>StepMania v4.0 CVS - <code>(karaoke)</code> (12 Mar 2008) (Non-Functional)</li></ul><p><strong>Removed</strong></p><ul>
+<li>sm-ssc v1.0 RC2 - <code>(karaoke)</code> (20 August 2010)</li></ul><div class=gdoc-page__anchorwrap>
+<h4 id=1-song-grid>
+1 Song Grid:
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#1-song-grid class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 1 Song Grid:" href=#1-song-grid><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: All holds are replaced with a single tap note where the hold would start. Has a modstring alias of &ldquo;nofreeze&rdquo;.</p><p>Quirks: N/A</p><p>PlayerOptions format: NoHolds(<enable>)</p><p>Modstring format: <enable> noholds</p><div class=gdoc-page__anchorwrap>
-<h2 id=nomines>
-NoMines
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#nomines class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NoMines" href=#nomines><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h4></div><p>First Seen:</p><ul>
+<li>Project OutFox alpha 5.0.0 - <code>(karaoke)</code> TBC</li></ul><div class=gdoc-page__anchorwrap>
+<h2 id=supported-parser-types>
+Supported Parser Types:
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#supported-parser-types class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Supported Parser Types:" href=#supported-parser-types><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: All mines are removed from the chart.</p><p>Quirks: N/A</p><p>PlayerOptions format: NoMines(<enable>)</p><p>Modstring format: <enable> nomines</p><div class=gdoc-page__anchorwrap>
-<h2 id=nojumps>
-NoJumps
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#nojumps class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NoJumps" href=#nojumps><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><p>This mode is <em>parser specific</em>. It will only load and parse items designed for the <code>UltraStar TXT</code> format(<em>txt</em>).</p><p>The table below lists the supported files and their types that <code>karaoke</code> supports, their key/button value and the original mode the parser is used for (if any). We can look at other formats in time.</p><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>File Type</th><th>Label</th><th>Original Mode</th><th>Key Values Supported</th><th>Notes</th></tr></thead><tbody>
+<tr>
+<td><code>.txt</code></td><td>TXT</td><td><code>karaoke</code></td><td>1 grid / duet grid</td><td>Solo / Duet Charts</td></tr></tbody></table></div><div class=gdoc-page__anchorwrap>
+<h2 id=game-play>
+Game play
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#game-play class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Game play" href=#game-play><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: All jumps are removed from the chart, meaning a single note would be left where a jump would have been. Also affects hands (3 notes at once) and quads (4 notes at once).</p><p>Quirks: N/A</p><p>PlayerOptions format: NoJumps(<enable>)</p><p>Modstring format: <enable> nojumps</p><div class=gdoc-page__anchorwrap>
-<h2 id=nolifts-sm5-only>
-NoLifts (SM5 only)
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#nolifts-sm5-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NoLifts (SM5 only)" href=#nolifts-sm5-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><p>This mode is played default in a left to right side scroll, where a singer needs to sing at the designated pitch to mark the &lsquo;word segments&rsquo; complete and score points. Depending on demand, the mode will auto adjust the octave the singer&rsquo;s range is within, in case of songs with high or low notes. Ping <em>Squirrel</em> about this if you want it added to the game!</p><div class=gdoc-page__anchorwrap>
+<h3 id=mechanics>
+Mechanics
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#mechanics class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Mechanics" href=#mechanics><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: Removes all lift notes from the chart.</p><p>Quirks: N/A</p><p>PlayerOptions format: NoLifts(<enable>)</p><p>Modstring format: <enable> nolifts</p><div class=gdoc-page__anchorwrap>
-<h2 id=nofakes-sm5-only>
-NoFakes (SM5 only)
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#nofakes-sm5-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NoFakes (SM5 only)" href=#nofakes-sm5-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h3></div><p><code>lyric snippets</code></p><p>The notes in this mode are based off of small syllables of words that make up the lyrics of the song. Depending on the sung notes, the &lsquo;completion&rsquo; of the syllable will be good or bad depending on pitch achieved and length of the syllable.</p><p><code>pitch detection</code></p><p>The system that simulators use is to measure the sung sound based on pitch, rather than the direct words. This allows for folks that do not fully know a song to hum the chorus or that troublesome second verse that is always forgotten!</p><p><code>golden notes</code></p><p>These &rsquo;notes&rsquo; are sung to gain points and bonuses through the song as it&rsquo;s played.</p><div class=gdoc-page__anchorwrap>
+<h2 id=play-styles>
+Play Styles
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#play-styles class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Play Styles" href=#play-styles><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: Removes all fake notes from the chart.</p><p>Quirks: N/A</p><p>PlayerOptions format: NoFakes(<enable>)</p><p>Modstring format: <enable> nofakes</p><div class=gdoc-page__anchorwrap>
-<h2 id=nohands>
-NoHands
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#nohands class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NoHands" href=#nohands><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><div class=gdoc-page__anchorwrap>
+<h2 id=grading--accuracy>
+Grading / Accuracy
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#grading--accuracy class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Grading / Accuracy" href=#grading--accuracy><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: Removes notes until there are no more than two columns being hit at a given time.</p><p>Quirks: N/A</p><p>PlayerOptions format: NoHands(<enable>)</p><p>Modstring format: <enable> nohands</p><div class=gdoc-page__anchorwrap>
-<h2 id=noquads>
-NoQuads
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#noquads class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NoQuads" href=#noquads><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><div class=gdoc-page__anchorwrap>
+<h2 id=scoring>
+Scoring
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#scoring class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Scoring" href=#scoring><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: Removes notes until there are no more than three columns being hit at a given time.</p><p>Quirks: N/A</p><p>PlayerOptions format: NoQuads(<enable>)</p><p>Modstring format: <enable> noquads</p><div class=gdoc-page__anchorwrap>
-<h2 id=nostretch>
-NoStretch
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#nostretch class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NoStretch" href=#nostretch><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><div class=gdoc-page__anchorwrap>
+<h2 id=health-bar>
+Health Bar
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#health-bar class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Health Bar" href=#health-bar><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: Eliminates jumps (2 notes at once) such that there&rsquo;s only one note left where there would be two. Does not affect hands (3 notes at once) or quads (4 notes at once).</p><p>Quirks: N/A</p><p>PlayerOptions format: NoStretch(<enable>)</p><p>Modstring format: <enable> nostretch</p><div class=gdoc-page__anchorwrap>
-<h2 id=big>
-Big
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#big class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Big" href=#big><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><p>There is no main functioning life bar in the basic karaoke mode. Other systems later on will use one, but that&rsquo;s in the future.</p><div class=gdoc-page__anchorwrap>
+<h2 id=modding>
+Modding
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#modding class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Modding" href=#modding><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: Adds 8th notes between the 4th notes when possible.</p><p>Quirks: N/A</p><p>PlayerOptions format: Big(<enable>)</p><p>Modstring format: <enable> big</p><div class=gdoc-page__anchorwrap>
-<h2 id=quick>
-Quick
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#quick class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Quick" href=#quick><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><div class=gdoc-page__anchorwrap>
+<h2 id=charting>
+Charting
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#charting class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Charting" href=#charting><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: Adds 16th notes between the 8th notes when possible.</p><p>Quirks: N/A</p><p>PlayerOptions format: Quick(<enable>)</p><p>Modstring format: <enable> quick</p><div class=gdoc-page__anchorwrap>
-<h2 id=bmrize>
-BMRize
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#bmrize class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor BMRize" href=#bmrize><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><div class=gdoc-page__anchorwrap>
+<h2 id=controls>
+Controls
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#controls class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Controls" href=#controls><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: Performs Big, then Quick on the chart, supposedly &ldquo;BMR-izing&rdquo; it.</p><p>Quirks: N/A</p><p>PlayerOptions format: BMRize(<enable>)</p><p>Modstring format: <enable> bmrize</p><div class=gdoc-page__anchorwrap>
-<h2 id=skippy>
-Skippy
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#skippy class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Skippy" href=#skippy><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</h2></div><p>This mode uses a microphone.</p><div class=gdoc-page__anchorwrap>
+<h2 id=trivia>
+Trivia
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/karaoke/#trivia class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Trivia" href=#trivia><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Desc: Adds 16th notes between 4th notes.</p><p>Quirks: N/A</p><p>PlayerOptions format: Skippy(<enable>)</p><p>Modstring format: <enable> skippy</p><div class=gdoc-page__anchorwrap>
-<h2 id=mines>
-Mines
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#mines class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Mines" href=#mines><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Adds more mines.</p><p>Quirks: N/A</p><p>PlayerOptions format: Mines(<enable>)</p><p>Modstring format: <enable> mines</p><div class=gdoc-page__anchorwrap>
-<h2 id=echo>
-Echo
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#echo class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Echo" href=#echo><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Adds 8th note &ldquo;echos&rdquo; after all tap notes.</p><p>Quirks: N/A</p><p>PlayerOptions format: Echo(<enable>)</p><p>Modstring format: <enable> echo</p><div class=gdoc-page__anchorwrap>
-<h2 id=wide>
-Wide
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#wide class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Wide" href=#wide><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Turns all single 4th notes into jumps.</p><p>Quirks: N/A</p><p>PlayerOptions format: Wide(<enable>)</p><p>Modstring format: <enable> wide</p><div class=gdoc-page__anchorwrap>
-<h2 id=stomp>
-Stomp
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#stomp class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Stomp" href=#stomp><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Turns all relatively isolated 4th notes into jumps.</p><p>Quirks: N/A</p><p>PlayerOptions format: Stomp(<enable>)</p><p>Modstring format: <enable> stomp</p><div class=gdoc-page__anchorwrap>
-<h2 id=planted>
-Planted
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#planted class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Planted" href=#planted><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Turns notes into holds such that there is at least one hold being held throughout the whole chart.</p><p>Quirks: N/A</p><p>PlayerOptions format: Planted(<enable>)</p><p>Modstring format: <enable> planted</p><div class=gdoc-page__anchorwrap>
-<h2 id=floored>
-Floored
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#floored class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Floored" href=#floored><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Turns notes into holds such that there is at least two holds being held throughout the whole chart.</p><p>Quirks: N/A</p><p>PlayerOptions format: Floored(<enable>)</p><p>Modstring format: <enable> floored</p><div class=gdoc-page__anchorwrap>
-<h2 id=twister>
-Twister
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#twister class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Twister" href=#twister><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Turns notes into holds such that there is at least three holds being held throughout the whole chart.</p><p>Quirks: N/A</p><p>PlayerOptions format: Twister(<enable>)</p><p>Modstring format: <enable> twister</p><div class=gdoc-page__anchorwrap>
-<h2 id=holdrolls>
-HoldRolls
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#holdrolls class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor HoldRolls" href=#holdrolls><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Turns all holds into rolls. Goes by &ldquo;holdstorolls&rdquo; in ITG.</p><p>Quirks: N/A</p><p>PlayerOptions format: HoldRolls(<enable>)</p><p>Modstring format: <enable> holdrolls</p><div class=gdoc-page__anchorwrap>
-<h1 id=turn-modifiers>
-&ldquo;Turn&rdquo; Modifiers
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#turn-modifiers class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor &ldquo;Turn&rdquo; Modifiers" href=#turn-modifiers><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h1></div><p>Turn modifiers shift around the chart, but do not add or remove any notes. These are applied after the transform modifiers, so inserted notes get affected as well. They can be turned off all at once by using this modstring: <code>0% turn</code></p><div class=gdoc-page__anchorwrap>
-<h2 id=mirror>
-Mirror
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#mirror class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Mirror" href=#mirror><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: The notes are mirrored across the field.</p><p>Quirks: N/A</p><p>PlayerOptions format: Mirror(<enable>)</p><p>Modstring format: <enable> mirror</p><div class=gdoc-page__anchorwrap>
-<h2 id=backwards-sm5-only>
-Backwards (SM5 only)
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#backwards-sm5-only class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Backwards (SM5 only)" href=#backwards-sm5-only><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: The chart is &lsquo;rotated&rsquo; 180 degrees, which may not be the same as &lsquo;mirror&rsquo;.</p><p>Quirks: N/A</p><p>PlayerOptions format: Backwards(<enable>)</p><p>Modstring format: <enable> backwards</p><div class=gdoc-page__anchorwrap>
-<h2 id=left>
-Left
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#left class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Left" href=#left><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: The chart is &lsquo;rotated&rsquo; 90 degrees to the left.</p><p>Quirks: N/A</p><p>PlayerOptions format: Left(<enable>)</p><p>Modstring format: <enable> left</p><div class=gdoc-page__anchorwrap>
-<h2 id=right>
-Right
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#right class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Right" href=#right><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: The chart is &lsquo;rotated&rsquo; 90 degrees to the right.</p><p>Quirks: N/A</p><p>PlayerOptions format: Right(<enable>)</p><p>Modstring format: <enable> right</p><div class=gdoc-page__anchorwrap>
-<h2 id=shuffle>
-Shuffle
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#shuffle class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Shuffle" href=#shuffle><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Mixes around where the notes are.</p><p>Quirks: N/A</p><p>PlayerOptions format: Shuffle(<enable>)</p><p>Modstring format: <enable> shuffle</p><div class=gdoc-page__anchorwrap>
-<h2 id=softshuffle>
-SoftShuffle
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#softshuffle class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SoftShuffle" href=#softshuffle><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Randomly performs either not shuffling, swapping of L+R, swapping of U+D or mirroring on every row.</p><p>Quirks: N/A</p><p>PlayerOptions format: SoftShuffle(<enable>)</p><p>Modstring format: <enable> softshuffle</p><div class=gdoc-page__anchorwrap>
-<h2 id=supershuffle>
-SuperShuffle
-<a data-clipboard-text=https://outfox.wiki/dev/mods/Mods-12-Chart-Mods/#supershuffle class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SuperShuffle" href=#supershuffle><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>Desc: Runs Shuffle, then performs an extra shuffle on the tap notes (includes normal taps, fakes, mines and lifts) alone.</p><p>Quirks: N/A</p><p>PlayerOptions format: SuperShuffle(<enable>)</p><p>Modstring format: <enable> supershuffle</p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
+</h2></div><p><em>Written and Maintained with ♡ by Squirrel</em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
 </div></div></main><footer class=gdoc-footer>
 <div class="container flex">
 <div class="flex flex-wrap">

@@ -205,6 +205,12 @@ Game Module: gh
 </span>
 </li><li>
 <span class=flex>
+<a href=../../../user-guide/games/karaoke/ class=gdoc-nav__entry>
+Game Module: karaoke
+</a>
+</span>
+</li><li>
+<span class=flex>
 <a href=../../../user-guide/games/kbm/ class=gdoc-nav__entry>
 Game Module: kbm
 </a>
@@ -930,32 +936,27 @@ hidden-mobile" itemprop=breadcrumb>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
 <li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/ href=../../../user-guide/><span itemprop=name>User Guide</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/user-guide/games/ href=../../../user-guide/games/><span itemprop=name>Supported Game Modules</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Game Module: bongo</span><meta itemprop=position content="4"></li></ol></div></div><article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>Game Module: bongo</h1><div class=gdoc-page__anchorwrap>
-<h2 id=this-mode-will-be-added-in-alpha-4180alpha-500-pre33-ish-of-_project-outfox_>
-This mode will be added in alpha 4.18.0/alpha 5.0.0-pre33-ish of <em>Project OutFox</em>.
-<a data-clipboard-text=https://outfox.wiki/user-guide/games/bongo/#this-mode-will-be-added-in-alpha-4180alpha-500-pre33-ish-of-_project-outfox_ class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor This mode will be added in alpha 4.18.0/alpha 5.0.0-pre33-ish of Project OutFox." href=#this-mode-will-be-added-in-alpha-4180alpha-500-pre33-ish-of-_project-outfox_><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><div class=gdoc-page__anchorwrap>
 <h2 id=about>
 About
 <a data-clipboard-text=https://outfox.wiki/user-guide/games/bongo/#about class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor About" href=#about><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>It parses files made for <em>taitai</em> into a dual lane mode to play on a bongo based controller, or bongo based midi controller. One must hit the inside or the outside of the bongo drum when it reaches the receptor. Scoring and timing windows are yet to be decided.</p><div class=gdoc-page__anchorwrap>
+</h2></div><p>It parses files made for <em>taitai</em> into a lane mode to play on a bongo based controller, or bongo based midi controller. One must hit the left or right bongo drum when it reaches the receptor, or clap your hands when the star appears. Scoring and timing windows are yet to be decided.</p><div class=gdoc-page__anchorwrap>
 <h2 id=history>
 History:
 <a data-clipboard-text=https://outfox.wiki/user-guide/games/bongo/#history class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor History:" href=#history><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>The parser support for the mode is currently actively developed, and the chart support will be aligned with the taiko simulator based parser support. We can parse .osu/.osz (Mode 1 taiko) and .tja files, although some of the scroll and time signature math needs to be concluded. As of alpha 4.16 the parsers are about 60% complete.</p><p>This mode is not selectable in the game select screen at the moment.</p><div class=gdoc-page__anchorwrap>
+</h2></div><p>The parser support for the mode is currently actively developed, and the chart support will be aligned with the taiko simulator based parser support. We can parse .osu/.osz (Mode 1 taiko) and .tja files, although some of the scroll and time signature math needs to be concluded. As of alpha 4.18 the parsers are about 60% complete.</p><div class=gdoc-page__anchorwrap>
 <h3 id=introduced>
 Introduced:
 <a data-clipboard-text=https://outfox.wiki/user-guide/games/bongo/#introduced class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Introduced:" href=#introduced><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3></div><div class=gdoc-page__anchorwrap>
-<h4 id=bongo-leftdrumouter-leftdruminner-rightdruminner-rightdrumouter>
-Bongo (LeftDrumOuter, LeftDrumInner, RightDrumInner, RightDrumOuter):
-<a data-clipboard-text=https://outfox.wiki/user-guide/games/bongo/#bongo-leftdrumouter-leftdruminner-rightdruminner-rightdrumouter class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Bongo (LeftDrumOuter, LeftDrumInner, RightDrumInner, RightDrumOuter):" href=#bongo-leftdrumouter-leftdruminner-rightdruminner-rightdrumouter><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h4 id=bongo-leftdrum-rightdrum-clap>
+Bongo (LeftDrum, RightDrum, clap):
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/bongo/#bongo-leftdrum-rightdrum-clap class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Bongo (LeftDrum, RightDrum, clap):" href=#bongo-leftdrum-rightdrum-clap><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h4></div><p>First Seen:</p><ul>
-<li>Project OutFox alpha 4.18.0 - <code>(bongo-single)</code> (October 2022)</li><li>Project OutFox alpha 4.18.0 - <code>(bongo-versus)</code> (October 2022)</li></ul><p>This mode is <em>parser specific</em>. It will only load and parse items designed for <code>taitai</code>.</p><p>The table below lists the supported files and their types that <code>bongo</code> supports, their key/button value and the original mode the parser is used for (if any).</p><div class=table-wrap> <table>
+<li>Project OutFox LTS 4.18.0 / alpha 5.0.0-pre21 - <code>(bongo-single)</code> (26th October 2022)</li><li>Project OutFox LTS 4.18.0 / alpha 5.0.0-pre21 - <code>(bongo-versus)</code> (26th October 2022)</li></ul><p>This mode is <em>parser specific</em>. It will only load and parse items designed for <code>taitai</code>.</p><p>The table below lists the supported files and their types that <code>bongo</code> supports, their key/button value and the original mode the parser is used for (if any).</p><div class=table-wrap> <table>
 <thead>
 <tr>
 <th>File Type</th><th>Label</th><th>Original Mode</th><th>Key Values Supported</th><th>Notes</th></tr></thead><tbody>
@@ -1006,7 +1007,7 @@ Charting
 Controls
 <a data-clipboard-text=https://outfox.wiki/user-guide/games/bongo/#controls class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Controls" href=#controls><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>This game can be played as a 4K layout, or on a drum based controller. There were several home based console drum controllers, as well as proper arcade style ones.</p><p>There are also notes which need to be hit a certain amount within a set time.</p><div class=gdoc-page__anchorwrap>
+</h2></div><p>There are also notes which need to be hit a certain amount within a set time.</p><div class=gdoc-page__anchorwrap>
 <h2 id=trivia>
 Trivia
 <a data-clipboard-text=https://outfox.wiki/user-guide/games/bongo/#trivia class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Trivia" href=#trivia><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>

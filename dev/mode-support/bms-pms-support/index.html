@@ -206,6 +206,12 @@ Game Module: gh
 </span>
 </li><li>
 <span class=flex>
+<a href=../../../user-guide/games/karaoke/ class=gdoc-nav__entry>
+Game Module: karaoke
+</a>
+</span>
+</li><li>
+<span class=flex>
 <a href=../../../user-guide/games/kbm/ class=gdoc-nav__entry>
 Game Module: kbm
 </a>
@@ -1139,7 +1145,7 @@ Channel 00 to 0F
 <td>14</td><td>P1 Key 4</td><td>✅</td><td>P1 Key 4</td><td>✅</td><td>P1 Left Blue / P1 Left Blue</td><td>✅</td><td>Supported</td></tr><tr>
 <td>15</td><td>P1 Key 5</td><td>✅</td><td>P1 Key 5</td><td>✅</td><td>P1 Red / P1 Red</td><td>✅</td><td>Supported</td></tr><tr>
 <td>16</td><td>P1 Turn/Scratch</td><td>✅</td><td>P1 Turn/Scratch</td><td>✅</td><td>Not Used / P1 Right Blue</td><td>✅</td><td>Supported</td></tr><tr>
-<td>17</td><td>P1 FootPedal</td><td>❌</td><td>P1 FootPedal</td><td>❌</td><td>Not Used / P1 Right Green</td><td>✅</td><td>Not Supported</td></tr><tr>
+<td>17</td><td>P1 FootPedal</td><td>✅</td><td>P1 FootPedal</td><td>✅</td><td>Not Used / P1 Right Green</td><td>✅</td><td>Supported in Alpha 4.16.0</td></tr><tr>
 <td>18</td><td>P1 Key 6</td><td>✅</td><td>P1 Key 6</td><td>✅</td><td>Not Used / P1 Right Yellow</td><td>✅</td><td>Supported</td></tr><tr>
 <td>19</td><td>P1 Key 7</td><td>✅</td><td>P1 Key 7</td><td>✅</td><td>Not Used / P1 Right White</td><td>✅</td><td>Supported</td></tr><tr>
 <td>1A</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td></tr><tr>
@@ -1166,7 +1172,7 @@ Channel 10 to 1F
 <td>24</td><td>P2 Key 4</td><td>✅</td><td>P2 Key 4</td><td>✅</td><td>P1 Right Yellow / P2 Left Green</td><td>✅</td><td>Supported</td></tr><tr>
 <td>25</td><td>P2 Key 5</td><td>✅</td><td>P2 Key 5</td><td>✅</td><td>P1 Right White / P2 Red</td><td>✅</td><td>Supported</td></tr><tr>
 <td>26</td><td>P2 Turn/Scratch</td><td>✅</td><td>P2 Turn/Scratch</td><td>✅</td><td>Not Used / P2 Right Blue</td><td>✅</td><td>Supported</td></tr><tr>
-<td>27</td><td>P2 FootPedal</td><td>❌</td><td>P2 FootPedal</td><td>❌</td><td>Not Used / P2 Right Green</td><td>✅</td><td>Not Supported</td></tr><tr>
+<td>27</td><td>P2 FootPedal</td><td>✅</td><td>P2 FootPedal</td><td>✅</td><td>Not Used / P2 Right Green</td><td>✅</td><td>Supported in Alpha 4.16.0</td></tr><tr>
 <td>28</td><td>P2 Key 6</td><td>✅</td><td>P2 Key 6</td><td>✅</td><td>Not Used / P2 Right Yellow</td><td>✅</td><td>Supported</td></tr><tr>
 <td>29</td><td>P2 Key 7</td><td>✅</td><td>P2 Key 7</td><td>✅</td><td>Not Used / P2 Right White</td><td>✅</td><td>Supported</td></tr><tr>
 <td>2A</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td><td>~</td><td>Not Used</td></tr><tr>
@@ -1463,13 +1469,13 @@ LandMine Sections #xxxD1-E9 - (BMS/PMS)
 Scroll #xxxSC / Speed #xxxSP Sections - (BMS/PMS)
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/bms-pms-support/#scroll-xxxsc--speed-xxxsp-sections---bmspms class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Scroll #xxxSC / Speed #xxxSP Sections - (BMS/PMS)" href=#scroll-xxxsc--speed-xxxsp-sections---bmspms><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>These two channels were recent additions to the specification used in the <em>beatoraja</em> and <em>bemuse</em> clients, and are done slightly differently to the specification. Rather than using one of the 30 spare channels in the lower ranges, these two options require full base 36 (00-ZZ) support to work as they use SC/SP instead of a Hex (00-FF) value. OutFox&rsquo;s BMS-like parsers were updated in 4.9.9 to support base 36 channel values even though not required by specification, so these channels were a trivial addition to our support.</p><p>Speed and Scroll segments replicate behaviour done with Channel 02/08/09, without relying on these channels changing. They were introduced in the SSC updates to StepMania and are natively supported in the engine in OutFox. These add a new layer of effects to be actioned without using #BPMxx or #STOPxx.</p><div class=table-wrap> <table>
+</h2></div><p>These two channels were recent additions to the specification used in the <em>beatoraja</em> and <em>bemuse</em> clients, and are done slightly differently to the specification. Rather than using one of the 30 spare channels in the lower ranges, these two options require full base 36 (00-ZZ) support to work as they use SC/SP instead of a Hex (00-FF) value. OutFox&rsquo;s BMS-like parsers were updated in 4.9.9 to support base 36 channel values even though not required by specification, so these channels were a trivial addition to our support.</p><p>Speed and Scroll segments replicate behaviour done with Channel 02/08/09, without relying on these channels changing. They were introduced in the SSC updates to StepMania and are natively supported in the engine in OutFox. These add a new layer of effects to be utlised without using #BPMxx or #STOPxx.</p><div class=table-wrap> <table>
 <thead>
 <tr>
 <th>BMS / BME / PMS Channel</th><th>BME Name</th><th>OutFox BME Support</th><th>PMS Name</th><th>OutFox PMS Support</th><th>OutFox BMS/PMS Status Comments</th></tr></thead><tbody>
 <tr>
-<td>SC</td><td>Scroll Adjustment</td><td>✅</td><td>Not Used</td><td>~</td><td>Added in 4.11.0</td></tr><tr>
-<td>SP</td><td>Speed Adjustment</td><td>✅</td><td>Not Used</td><td>~</td><td>Added in 4.11.0</td></tr></tbody></table></div><hr>
+<td>SC</td><td>Scroll Adjustment</td><td>❌</td><td>Not Used</td><td>~</td><td>Not Supported Yet</td></tr><tr>
+<td>SP</td><td>Speed Adjustment</td><td>❌</td><td>Not Used</td><td>~</td><td>Not Supported Yet</td></tr></tbody></table></div><hr>
 <p><em>Written and Maintained with ♡ by Squirrel, with thanks to the feeling-po-mu, BMS command memo, BMS Discord, and Japanese BMS/PMS community</em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
 </div></div></main><footer class=gdoc-footer>
 <div class="container flex">
