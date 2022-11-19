@@ -263,12 +263,188 @@ Usage Example:
 ```
 This value tells the game the time in _milliseconds_ to play the preview section of the song in the music wheel.
 
-Unlike SM/SSC there is no `#SAMPLELENGTH` in this format that tells the game to loop or reset the point of playback. It will fall back to the default 15 second length when parsing. Most simulators just play from the middle of the song until the end. 
+Unlike SM/SSC there is no `#SAMPLELENGTH` in this format that tells the game to loop or reset the point of playback. It will fall back to the default 15 second length when parsing. Most simulators just play from the middle of the song until the end.
 
 As this variable uses the _seconds_ value, it is usable as per the `#SAMPLESTART` SM/SSC variable.
 
 ---
+
+## ``#START:start [float]``
+``Status: ⌛ TBC``
+
+Usage Example:
+```
+#START:27.759
+```
+This value tells the game the time in _seconds_ when to begin the song playback. This is usually used in chart creation, as it can skip a long intro to jump straight to the lyrics/notes, or to test a specific part of the song. 
+
+---
+
+## ``#END:end [float]``
+``Status: ⌛ TBC``
+
+Usage Example:
+```
+#END:187.488
+```
+This value tells the game the time in _seconds_ when to end the song playback. This is usually used in chart creation, as it can stop playing at a specific part of the song. We haven't decided yet on this one, as many of the charts we have found do not use these commands, as we have the end data in the 'NoteData' section below. 
+
+---
+
+## ``#RELATIVE:relative [0/1]``
+``Status: ❌ Not Supported``
+
+Usage Example:
+```
+#RELATIVE:0
+```
+
+This value defaults to 0 if it is not added to the header part of the chart. _Project OutFox_ does not support this value, as it was used some time ago as an alternative method of charting. What this command does is it makes each line set _relative_ to itself. The _timestamp_ is reset to 0 for each line. The engine would need to keep a 'running tally' of the beats/time separately in this mode. We have spoken to a few people in regards to supporting this value, but most say it is deprecated/legacy and it is not used often enough to warrant adding the code for it.
+
+If the demand is there, we can look at supporting it, but for the first instance, we will not.
+
+Note data in this mode is also set up differently as it resets on each line as so:
+
+```
+: 0 2 2 Some
+: 3 3 2 body
+: 7 4 2  once
+: 12 3 4  told
+* 16 9 6  me
+- 36
+: 0 3 4 the  <-- Resets here to 0
+: 4 6 2  world
+: 12 7 4  is
+: 20 7 6  gon
+: 23 4 6 na
+```
+
+The timestamp resets to 0 on each line, rather than counting from the beginning of the song. These files are considered legacy in the community, and will be ignored by _Project OutFox_ when parsing. You will see a warning in the log about the file being unsupported, but the game will not crash like some other simulators.
+
+---
 ## NoteData
 ---
+
+Example NoteData:
+
+```
+: 0 2 2 Some
+: 3 3 2 body
+: 7 4 2  once
+: 12 3 4  told
+* 16 9 6  me
+- 36
+: 40 3 4 the
+: 44 6 2  world
+: 52 7 4  is
+: 60 7 6  gon
+: 63 4 6 na
+E
+```
+
+---
+
+### Lyric / Note Data Column Commands
+
+The note data is arranged in five columns for lyrics, but there are exceptions. When a new line is required, there are only two or three columns, and to set a player or end a song, there is only one. We will go through these below.
+
+For a lyric note it is typically arranged as so:
+Note Type|Beat start|Beat Length|Pitch / MIDI note|Lyrics
+-------|--------|--------|--------|--------|
+: |0 |2 |2 |Some
+
+---
+### Line Break Column Commands
+
+A Line break is arranged as so:
+
+Line Break|Beat start|(Beat End)|
+-------|--------|--------|
+ \- |36 |
+
+Note it is optional to include the beat end, as for the line break, the first number sets when the _previous_ line disappears and the second one when included, sets when the _next_ line appears. This is useful for controlling lyric lines on fast songs, or when you want to control slower lyrics that may disappear too soon, or too slowly. 
+
+
+Line Break|Beat start|(Beat End)|
+-------|--------|--------|
+ \- |132 |264|
+
+Line breaks with two numbers usually are used when there are songs which have a long instrumental or solo break where there are no lyrics for a time. This prevents the game placing up the next line of words too early, and allows the player to enjoy the solo/instrumental.
+
+---
+
+### Single Column Note Commands 
+
+Note Type|
+--------|
+P1|
+P2|
+
+These types are for player set lyrics in _duet_ mode. (See below)
+
+Note Type|
+--------|
+E|
+
+This command sets the ending of the track, placed at the very end of the file. Do not place anything after this, as your file will not be considered clean.
+
+## Column One 
+
+The first column is usually a single character, except for _duet_ mode (see below). They tell the game how to display the note, or if the note is freestyle, a bonus, or a line break. Every chart also has an 'ending note' which is placed at the end of the chart when the last lyric note is finished.
+
+The table below lists all the note types that _UltraStar_ commonly uses, and a definition of what those notes do in game. Do ensure you follow the correct layouts and setup for your chart, as the simulator will ignore it if there are any errors!
+
+### Karaoke "Note" Types
+
+The file uses line beginnings to set the 'note type' (lyric type) that the player will see on the screen. _UltraStar_ supports a range of these, and they will be detailed below.
+
+>* ``#`` = _Commands_ in the note data section are ignored. Some versions of _UltraStar_ will crash if this character is found, and your chart will not be considered a 'clean' txt with any of these characters at the beginning of a line.
+
+>* ``:`` = _Regular Note_. This is one of the most common things you will see in the chart, as it sets most of the song lyrics to be displayed on the screen. These lyrics can be assigned to either Player 1 or Player 2 if that note type is seen before a block, (see P1/P2 below).
+
+>* ``*`` = _Golden Note_. This note often has a sparkly or glow/shine affect around it in game to show the player it is a special note. The notes hit are set for 'pitch' accuracy and can account for up to 10% of the players' final score if hit correctly. It is worthwhile tuning those vocal chords (or humming chords)!
+
+>* ``F`` = _Freestyle Note_. This note (or syllable) is usually displayed without a 'pitch' value in game. This allows for songs which have 'spoken word' or normal 'dialogue' pieces, where the singer only needs to speak. These notes sometimes show up when a 'clap' is required in the song as well on some rarer charts.
+
+>* ``R`` = _Rap Note_. This note (or syllable) is usually displayed without a 'pitch' value in game. This allows for songs which have rapping or rhyming style sections, which need to finish on time (OutFox special mode), or the player can be punished. Most simulators do not follow the 'finish on time' rules, and just require the singer to reach a specific input loudness when rapping on per beat analysis.
+
+>* ``G`` = _Rap Golden Note_. This note (syllable) is displayed with a sparkly or glow/shine affect around it in game to show the player it is a special note. It has the affects of the _Rap Note_ above.
+
+>* ``-`` = _Line Break 'Note'_. See 'Line Break Column Commands' above for more details.
+
+>* ``P1`` = _Player 1 note_. Set Lyrics to Player 1 (Duet only). This allows for songs that require two singers to have distinct colours that signifies player 1 should be singing. This note sets the chart to a _duet_ (see below), which means it is more like a 'doubles' or 'couples' song in the _Project OutFox_ engine.
+
+>* ``P2`` = _Player 2 note_. Set Lyrics to Player 2 (Duet only). This allows for songs that require two singers to have distinct colours that signifies player 2 should be singing. This note sets the chart to a _duet_ (see below), which means it is more like a 'doubles' or 'couples' song in the _Project OutFox_ engine.
+
+>* ``P3`` = _Both Players note_. Set Lyrics to BOTH players (Duet only). This allows for songs that require two singers to have a distinct colour that signifies both player 1 and player 2 should be singing. This note sets the chart to a _duet_ (see below), which means it is more like a 'doubles' or 'couples' song in the _Project OutFox_ engine.
+
+>* ``E`` = _End Chart note_. This character is placed as the end of the chart to set the ending time of the song, and on some versions of _UltraStar_ can be overwritten by ``#END``, though this is uncommonly used by modern charters these days.
+
+---
+
+## Column Two
+
+This column value is in _beats_ and sets the time in the chart when the lyric or syllable appears. This is dependent on BPM, with higher BPM songs showing the note sooner, and lower BPM will take longer to show. Although _Project OutFox_ supports BPM changes and gimmicks, the format itself provides no options for this at all.
+
+---
+
+## Column Three
+
+```
+: 0 2 2 Some
+: 3 3 2 body
+: 7 4 2  once
+```
+
+This column value is in _beats_ and specifies the length of time the lyric or syllable lasts. In the example above, the syllable of 'Some' lasts for 2 beats, with 'body' coming in on beat 3. This is important to remember as technically you cannot sing two notes at the same time, and it will be impossible to score this. 
+
+Many simulators will either throw an error or crash on badly formed charts if syllables overlap, for example if 'Some' finished on beat 2, but 'body' started on beat 1, this would be considered an overlap. However, 'body' could start on beat 2 as 'Some' would be considered complete, this is accepted. Just ensure that you never overlap your syllables! 
+
+---
+
+## Column Four
+
+
+
 
 _Written and Maintained with ♡ by Squirrel, with thanks to My Little Karaoke and the UltraStar community, and Kokairu for their blog at https://thebrickyblog.wordpress.com_
