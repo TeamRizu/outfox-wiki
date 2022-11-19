@@ -360,14 +360,14 @@ A Line break is arranged as so:
 
 Line Break|Beat start|(Beat End)|
 -------|--------|--------|
- \- |36 |
+ _-_ |36 |
 
 Note it is optional to include the beat end, as for the line break, the first number sets when the _previous_ line disappears and the second one when included, sets when the _next_ line appears. This is useful for controlling lyric lines on fast songs, or when you want to control slower lyrics that may disappear too soon, or too slowly. 
 
 
 Line Break|Beat start|(Beat End)|
 -------|--------|--------|
- \- |132 |264|
+ _-_ |132 |264|
 
 Line breaks with two numbers usually are used when there are songs which have a long instrumental or solo break where there are no lyrics for a time. This prevents the game placing up the next line of words too early, and allows the player to enjoy the solo/instrumental.
 
@@ -379,6 +379,7 @@ Note Type|
 --------|
 P1|
 P2|
+P3|
 
 These types are for player set lyrics in _duet_ mode. (See below)
 
