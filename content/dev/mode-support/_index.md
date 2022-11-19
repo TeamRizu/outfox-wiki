@@ -8,13 +8,13 @@ This section lists the different types of NoteLoaders (file parsers that can loa
 
 Click on a button below to learn more about the parsers!
 
-{{< button size="medium" relref="/dev/mode-support/bms-pms-support/">}}BMS/BME/PMS{{< /button >}}
-{{< button size="medium" relref="/dev/mode-support/dtx-gda-support/">}}DTX/GDA/G2A{{< /button >}}
-{{< button size="medium" relref="/dev/mode-support/ksf-support/">}}KSF{{< /button >}}
-{{< button size="medium" relref="/dev/mode-support/sm-support/">}}SM{{< /button >}}
-{{< button size="medium" relref="/dev/mode-support/oto-support/">}}OSU/OTO{{< /button >}}
-{{< button size="medium" relref="/dev/mode-support/tja-support/">}}TJA{{< /button >}}
-{{< button size="medium" relref="/dev/mode-support/txt-support/">}}TXT{{< /button >}}
+{{< button size="medium" relref="/dev/mode-support/bms-pms-support">}}BMS/BME/PMS{{< /button >}}
+{{< button size="medium" relref="/dev/mode-support/dtx-gda-support">}}DTX/GDA/G2A{{< /button >}}
+{{< button size="medium" relref="/dev/mode-support/ksf-support">}}KSF{{< /button >}}
+{{< button size="medium" relref="/dev/mode-support/sm-support">}}SM{{< /button >}}
+{{< button size="medium" relref="/dev/mode-support/oto-support">}}OSU/OTO{{< /button >}}
+{{< button size="medium" relref="/dev/mode-support/tja-support">}}TJA{{< /button >}}
+{{< button size="medium" relref="/dev/mode-support/txt-support">}}TXT{{< /button >}}
 
 
 _Written and Maintained with ♡ by Squirrel_
