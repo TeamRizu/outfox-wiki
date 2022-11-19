@@ -351,7 +351,7 @@ The note data is arranged in five columns for lyrics, but there are exceptions. 
 For a lyric note it is typically arranged as so:
 Note Type|Beat start|Beat Length|Pitch / MIDI note|Lyrics
 -------|--------|--------|--------|--------|
-: |0 |2 |2 |Some
+_:_ |0 |2 |2 |Some
 
 ---
 ### Line Break Column Commands
