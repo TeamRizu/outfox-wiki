@@ -273,3 +273,4 @@ Sets the scroll segment at the current beat.
 
 Example: `|X3|` sets the scroll to 3x.
 
+_Written and Maintained with ♡ by MTK_

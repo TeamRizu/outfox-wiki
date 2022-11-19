@@ -596,8 +596,6 @@ Usage Example:
 OverallDifficulty:1.3
 ```
 
-
-
 ## ``ApproachRate:n.n [0.0-10.0]``
 ``Status: ❌ Ignored (Unsupported)``
 

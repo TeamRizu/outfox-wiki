@@ -9,7 +9,7 @@ Project OutFox contains parsers for the ``BMS`` and ``PMS`` chart formats, which
 ---
 # Introduction
 ---
-The ``BMS`` file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game _Beatmania_ by Konami. There have been several dozen interations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.
+The ``BMS`` file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game _Beatmania_ by Konami. There have been several dozen iterations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.
 
 _Project OutFox_ uses mostly BM98 (1998 to 2003) era definitions for this file standard, though it is improving all the time. The format is used to simulate most of the _'Down Scroll Rhythm Game Systems'_ and is known by several other derivatives which we are also slowly building support for. 
 
@@ -102,7 +102,7 @@ Usage Example:
 ```
 #TITLE Take (Bamboo) 
 ```
-The title command sets the SongTitle and this will be displayed on the song wheel to be selected, as well on the screen gameplay and evaluation screen. It will also be recorded in high scores and on your profile etc. Older charts used SHIFT-JIS. 
+The title command sets the SongTitle and this will be displayed on the song wheel to be selected, as well on the screen game-play and evaluation screen. It will also be recorded in high scores and on your profile etc. Older charts used SHIFT-JIS. 
 
 ---
 
