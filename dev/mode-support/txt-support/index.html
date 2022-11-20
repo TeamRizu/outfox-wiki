@@ -1282,12 +1282,47 @@ Column Four
       Column Four
 </code></pre><p>This column is responsible for the musical <em>pitch</em> of the syllable or lyric that the singer is expected to match or reproduce as the words are displayed on the screen.</p><p>Most <em>UltraStar</em> clients are limited to displaying a single <em>octave</em> on the screen that the singer can see.</p><p><img src=ultrastar.png alt="ultrastar client grid"></p><blockquote>
 <ul>
-<li>Without going into too much musical theory, that is usually C -> C. (If you remember the <em>doe ray me far so la tea doe</em> song from the <em>Sound of Music</em> These were the main notes of the <em>octave</em>.)</li></ul></blockquote><p>At this moment in time we haven&rsquo;t confirmed how our <em>pitch grid</em> will be constructed, as we do not have the limitations of <em>UltraStar</em> or it&rsquo;s derivatives. If you have any thoughts on this, do pop into the discord and give us them!</p><p><img src=pitchnotation.png alt="pitch notation C4"></p><div class=gdoc-page__anchorwrap>
+<li>Without going into too much musical theory, that is usually <code>C</code> -> <code>C</code>. (If you remember the <em><code>"doe ray me far so la tea doe"</code></em> song from the <em>Sound of Music</em> These were the main notes of the <em>octave</em>.)</li></ul></blockquote><p>At this moment in time we haven&rsquo;t confirmed how our <em>pitch grid</em> will be constructed, as we do not have the limitations of <em>UltraStar</em> or it&rsquo;s derivatives. If you have any thoughts on this, do pop into the discord and give us them!</p><p>The values used in the <em>UltraStar</em> karaoke files start at <code>0</code>. I have done a lot of research around the internet, and some people claim that this begins at <code>C3</code>, <code>C1</code>, <code>C0</code>, even <code>C5</code> in one case!</p><p>But balancing a midi file of several of some example tracks and then cross referencing those notes with the syllables / lyric notes provided in the karaoke file shows that the <code>0</code> almost always runs on <em><code>middle C</code></em> or <em><code>C4</code></em>. We have no confirmation if they actually <em>did</em> base <code>0</code> as <em><code>middle C</code></em> or not, as the documentation on this format is really scarce.</p><p>The following picture shows a standard piano 88 key layout. I have put this here to show how the format works out <em>pitch</em> and where to put the syllable layout on the screen.</p><p><img src=pitchnotation.png alt="pitch notation C4"></p><div class=gdoc-page__anchorwrap>
 <h6 id=a-common-layout-showing-c4-middle-c>
 A common layout showing C4 (Middle C)
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#a-common-layout-showing-c4-middle-c class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor A common layout showing C4 (Middle C)" href=#a-common-layout-showing-c4-middle-c><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h6></div><p><em>Written and Maintained with ♡ by Squirrel, with thanks to My Little Karaoke and the UltraStar community, and Kokairu for their blog at <a class=gdoc-markdown__link href=https://thebrickyblog.wordpress.com>https://thebrickyblog.wordpress.com</a></em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
+</h6></div><p>Let&rsquo;s take a few lines from an <em>UltraStar</em> file:</p><pre tabindex=0><code>: 0 5 4 Hey,
+: 9 6 4  hey,
+: 18 4 4  eve
+: 23 3 4 ry
+: 28 4 6 bo
+: 33 4 8 dy!
+</code></pre><p>Lets take the note values in column four:
+<code>4 4 4 4 6 8</code>.</p><p>Using the piano layout above, count right the number of piano keys to match the numbers, remembering to count the sharp <code>#</code> black keys as well!</p><p>Four notes on from <code>C4</code> is <code>E4</code>, six notes on from <code>C4</code> is <code>F4#</code>, and eight notes on from <code>C4</code> is <code>G4#</code>. So replacing the numbered notes in musical notation:
+<code>E E E E F4# G4#</code>. These are the values the game uses for pitch matching, and to display on the pitch grid on screen.</p><p>This notation also works for negative numbers, you simply count backwards from <code>C4</code> if the notes required are a lower pitch. Some songs do indeed have the whole base notes below 0, but this is often common with some genres.</p><p>Most songs that have been charted tend to be within a 6 to 12 note range, so the pitch grids are not massive, and also to prevent the issue on some <em>UltraStar</em> clients where a note from a higher <em>Octave</em>, for example if the chart starts at <code>G4</code> and there is a note for <code>G5</code> this higher note would be drawn in the same place as the lower note, as the note would be considered an &lsquo;overflow&rsquo;, and would just be in the normal <code>G4</code> row on screen.</p><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=column-five>
+Column Five
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#column-five class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Column Five" href=#column-five><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><pre tabindex=0><code>: 0 2 2 Some
+: 3 3 2 body
+: 7 4 2  once
+        ^
+        Column Five
+</code></pre><p>As I am sure you have realised by this point, there has been a glaring error in column 5 on this little example song code snippet! <code>body</code> has two syllables and should be on two different lines!</p><p>As you can probably tell by now, this column represents the syllable or &rsquo;lyrics&rsquo; that the player will sing in time to the music.</p><p>Each line in the chart specifies a syllable, it&rsquo;s duration, the pitch, and the time (in beats) it is meant to be sung. This format does not support &lsquo;pitch bending&rsquo; during a syllable, to &lsquo;support&rsquo; this, extra lines are often added which have simply a <code>~</code> for the syllable, to show that this is a &rsquo;long&rsquo; syllable to the singer. If we were to extend &lsquo;Some&rsquo; above, with a different pitch, the chart would be:</p><pre tabindex=0><code>: 0 2 2 Some
+: 2 2 4 ~
+: 4 3 2 body
+</code></pre><p>The game would show <code>Some~</code> which is used to tell the singer that there is a pitch change, and to sing it as a different pitch.</p><p>Another important thing to realise is that the words in column 5 will automatically be joined together. If you forget where your spaces are, you will end up having a sentence with no spaces!</p><p>Let&rsquo;s take this chart we used for the column four example:</p><pre tabindex=0><code>: 0 5 4 Hey,
+: 9 6 4  hey,
+: 18 4 4  eve
+: 23 3 4 ry
+: 28 4 6 bo
+: 33 4 8 dy!
+</code></pre><p>You can see that there are spaces added at the <em>beginning</em> of the lines for <code>" hey,"</code> this is by design; you must pick your space arrangement when making your charts, some editors use &lsquo;space first&rsquo;, and some use &lsquo;space last&rsquo;. &lsquo;Space last&rsquo; places a space after the syllable, so would not begin with one. In the example above, the game would show <code>"Hey, hey, everybody!"</code> in the lyric section.</p><p>If you are creating charts yourself and tend to leave spaces at the end of lines, or use windows a lot, do take care to see where these spaces are in the file. We will write the parser to support both spacing modes, as is commonly done by <em>UltraStar</em> clients.</p><hr>
+<div class=gdoc-page__anchorwrap>
+<h1 id=duet-mode>
+Duet Mode
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#duet-mode class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Duet Mode" href=#duet-mode><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1></div><hr>
+<p><em>Written and Maintained with ♡ by Squirrel, with thanks to My Little Karaoke and the UltraStar community, and Kokairu for their blog at <a class=gdoc-markdown__link href=https://thebrickyblog.wordpress.com>https://thebrickyblog.wordpress.com</a></em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
 </div></div></main><footer class=gdoc-footer>
 <div class="container flex">
 <div class="flex flex-wrap">
