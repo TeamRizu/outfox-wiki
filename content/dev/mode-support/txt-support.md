@@ -502,9 +502,6 @@ Many simulators will either throw an error or crash on badly formed charts if sy
 
 ---
 
-![pitch notation C4](pitchnotation.png)
-###### A common layout showing C4 (Middle C)
-
 ## Column Four
 
 ```
@@ -514,6 +511,26 @@ Many simulators will either throw an error or crash on badly formed charts if sy
       ^
       Column Four
 ```
+
+This column is responsible for the musical _pitch_ of the syllable or lyric that the singer is expected to match or reproduce as the words are displayed on the screen. 
+
+Most _UltraStar_ clients are limited to displaying a single _octave_ on the screen that the singer can see.
+
+
+![ultrastar client grid](ultrastar.png)
+
+
+>* Without going into too much musical theory, that is usually C -> C. (If you remember the _doe ray me far so la tea doe_ song from the _Sound of Music_ These were the main notes of the _octave_.)
+
+At this moment in time we haven't confirmed how our _pitch grid_ will be constructed, as we do not have the limitations of _UltraStar_ or it's derivatives. If you have any thoughts on this, do pop into the discord and give us them!
+
+
+![pitch notation C4](pitchnotation.png)
+###### A common layout showing C4 (Middle C)
+
+
+
+
 
 
 
