@@ -12,9 +12,7 @@ Project OutFox is working on support on the parser for the Karaoke TXT (UltraSta
 
 ---
 
-## Headers
-
----
+# Headers
 
 The mode uses a selection of headers to set up the song metadata, which appear to be based off of the old BMS style loading mechanisms. We'll list the known ones and whether or not Project OutFox supports them.
 
@@ -94,7 +92,13 @@ The value is in milliseconds, and a positive value will delay the lyrics, a nega
 
 If the value is not set to 0, then a formula must be used to set the actual time in seconds for the text to be displayed. Using an example line from the lyric (Notedata), we can work it out:
 
-```: 21 2 2 We've```
+```
+: 21 2 2 We've
+  ^^
+  Second Column
+```
+
+(We use the FIRST timestamp and the second column value for this calculation)
 
 The formula to use is:
 ```
@@ -223,7 +227,13 @@ The value is in seconds, and a positive value will delay the video, a negative v
 
 If the value is not set to 0, then a formula must be used to set the actual time in seconds for the text to be displayed. Using an example line from the lyric (Notedata), we can work it out:
 
-```: 21 2 2 We've```
+```
+: 21 2 2 We've
+  ^^
+  Second Column
+```
+
+(We use the FIRST timestamp and the second column value for this calculation)
 
 The formula to use is:
 ```
@@ -291,6 +301,35 @@ This value tells the game the time in _seconds_ when to end the song playback. T
 
 ---
 
+
+## ``#DUETSINGERP1:duetsingerp1 [string]``
+## ``#DUETSINGERP2:duetsingerp2 [string]``
+``Status: ⌛ TBC``
+
+Usage Example:
+```
+#DUETSINGERP1:Shrek
+#DUETSINGERP2:Donkey
+```
+These two values tell the game to change the name in _duet_ mode, so instead of just saying ``player1`` and ``player2`` it changes the name listed in that command. Used in charts for a bit of fun. Some _UltraStar_ versions do not support this and will crash, just be warned!
+
+
+---
+
+## ``#VOCALS:vocalsfile [string]``
+``Status: ⌛ TBC``
+
+Usage Example:
+```
+#VOCALS:song.ogg
+```
+
+This command tells the game where vocals version of the song is for the selected chart. I haven't been able to find many uses for this, as many songs seem to have song.ogg in the ``#MP3`` tag, and leave the instrumental (Karaoke) version not used. I guess this is to allow folks to have the vocals in the background when someone is learning the song, or provides an option in game to set either the 'song.ogg' or 'instrumental.ogg' versions.
+
+_Project OutFox_ will likely have an option to select which one to use in time at the music wheel, if these are found, but if you know any other information about the `#VOCALS` tag, please let Squirrel know via our Discord server!
+
+---
+
 ## ``#RELATIVE:relative [0/1]``
 ``Status: ❌ Not Supported``
 
@@ -299,7 +338,7 @@ Usage Example:
 #RELATIVE:0
 ```
 
-This value defaults to 0 if it is not added to the header part of the chart. _Project OutFox_ does not support this value, as it was used some time ago as an alternative method of charting. What this command does is it makes each line set _relative_ to itself. The _timestamp_ is reset to 0 for each line. The engine would need to keep a 'running tally' of the beats/time separately in this mode. We have spoken to a few people in regards to supporting this value, but most say it is deprecated/legacy and it is not used often enough to warrant adding the code for it.
+This value defaults to 0 if it is not added to the header part of the chart. _Project OutFox_ does not support this value, as it was used some time ago as an alternative method of charting. What this command does is it makes each line set _relative_ to itself. The _timestamp_ (Column 2) is reset to 0 for each line. The engine would need to keep a 'running tally' of the beats/time separately in this mode. We have spoken to a few people in regards to supporting this value, but most say it is deprecated/legacy and it is not used often enough to warrant adding the code for it.
 
 If the demand is there, we can look at supporting it, but for the first instance, we will not.
 
@@ -322,7 +361,7 @@ Note data in this mode is also set up differently as it resets on each line as s
 The timestamp resets to 0 on each line, rather than counting from the beginning of the song. These files are considered legacy in the community, and will be ignored by _Project OutFox_ when parsing. You will see a warning in the log about the file being unsupported, but the game will not crash like some other simulators.
 
 ---
-## NoteData
+# NoteData
 ---
 
 Example NoteData:
@@ -349,9 +388,10 @@ E
 The note data is arranged in five columns for lyrics, but there are exceptions. When a new line is required, there are only two or three columns, and to set a player or end a song, there is only one. We will go through these below.
 
 For a lyric note it is typically arranged as so:
-Note Type|Beat start|Beat Length|Pitch / MIDI note|Lyrics
--------|--------|--------|--------|--------|
-_:_ |0 |2 |2 |Some
+Column 1|Column 2|Column 3|Column 4|Column 5
+--------|--------|--------|--------|--------|
+Note Type|Beat Start TimeStamp|Beat Length TimeStamp|Pitch / MIDI note|Lyric / Syllable
+ `:` |0 |2 |2 |Some
 
 ---
 ### Line Break Column Commands
@@ -359,15 +399,15 @@ _:_ |0 |2 |2 |Some
 A Line break is arranged as so:
 
 Line Break|Beat start|(Beat End)|
--------|--------|--------|
- _-_ |36 |
+--------|--------|--------|
+ `-` |36 |
 
 Note it is optional to include the beat end, as for the line break, the first number sets when the _previous_ line disappears and the second one when included, sets when the _next_ line appears. This is useful for controlling lyric lines on fast songs, or when you want to control slower lyrics that may disappear too soon, or too slowly. 
 
 
 Line Break|Beat start|(Beat End)|
--------|--------|--------|
- _-_ |132 |264|
+--------|--------|--------|
+ `-` |132 |264|
 
 Line breaks with two numbers usually are used when there are songs which have a long instrumental or solo break where there are no lyrics for a time. This prevents the game placing up the next line of words too early, and allows the player to enjoy the solo/instrumental.
 
@@ -389,7 +429,16 @@ E|
 
 This command sets the ending of the track, placed at the very end of the file. Do not place anything after this, as your file will not be considered clean.
 
+---
 ## Column One 
+
+```
+: 0 2 2 Some
+: 3 3 2 body
+: 7 4 2  once
+^
+Column One
+```
 
 The first column is usually a single character, except for _duet_ mode (see below). They tell the game how to display the note, or if the note is freestyle, a bonus, or a line break. Every chart also has an 'ending note' which is placed at the end of the chart when the last lyric note is finished.
 
@@ -425,6 +474,14 @@ The file uses line beginnings to set the 'note type' (lyric type) that the playe
 
 ## Column Two
 
+```
+: 0 2 2 Some
+: 3 3 2 body
+: 7 4 2  once
+  ^
+  Column Two
+```
+
 This column value is in _beats_ and sets the time in the chart when the lyric or syllable appears. This is dependent on BPM, with higher BPM songs showing the note sooner, and lower BPM will take longer to show. Although _Project OutFox_ supports BPM changes and gimmicks, the format itself provides no options for this at all.
 
 ---
@@ -435,6 +492,8 @@ This column value is in _beats_ and sets the time in the chart when the lyric or
 : 0 2 2 Some
 : 3 3 2 body
 : 7 4 2  once
+    ^
+    Column Three
 ```
 
 This column value is in _beats_ and specifies the length of time the lyric or syllable lasts. In the example above, the syllable of 'Some' lasts for 2 beats, with 'body' coming in on beat 3. This is important to remember as technically you cannot sing two notes at the same time, and it will be impossible to score this. 
@@ -443,7 +502,20 @@ Many simulators will either throw an error or crash on badly formed charts if sy
 
 ---
 
+![pitch notation C4](/dev/mode-support/pitch notation.png)
+###### A common layout showing C4 (Middle C)
+
 ## Column Four
+
+```
+: 0 2 2 Some
+: 3 3 2 body
+: 7 4 2  once
+      ^
+      Column Four
+```
+
+
 
 
 
