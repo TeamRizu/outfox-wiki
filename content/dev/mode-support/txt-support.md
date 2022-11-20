@@ -516,25 +516,93 @@ This column is responsible for the musical _pitch_ of the syllable or lyric that
 
 Most _UltraStar_ clients are limited to displaying a single _octave_ on the screen that the singer can see.
 
-
 ![ultrastar client grid](ultrastar.png)
 
-
->* Without going into too much musical theory, that is usually C -> C. (If you remember the _doe ray me far so la tea doe_ song from the _Sound of Music_ These were the main notes of the _octave_.)
+>* Without going into too much musical theory, that is usually `C` -> `C`. (If you remember the _`"doe ray me far so la tea doe"`_ song from the _Sound of Music_ These were the main notes of the _octave_.)
 
 At this moment in time we haven't confirmed how our _pitch grid_ will be constructed, as we do not have the limitations of _UltraStar_ or it's derivatives. If you have any thoughts on this, do pop into the discord and give us them!
 
+The values used in the _UltraStar_ karaoke files start at `0`. I have done a lot of research around the internet, and some people claim that this begins at `C3`, `C1`, `C0`, even `C5` in one case!
+
+But balancing a midi file of several of some example tracks and then cross referencing those notes with the syllables / lyric notes provided in the karaoke file shows that the `0` almost always runs on _`middle C`_ or _`C4`_. We have no confirmation if they actually _did_ base `0` as _`middle C`_ or not, as the documentation on this format is really scarce.
+
+The following picture shows a standard piano 88 key layout. I have put this here to show how the format works out _pitch_ and where to put the syllable layout on the screen.
 
 ![pitch notation C4](pitchnotation.png)
 ###### A common layout showing C4 (Middle C)
 
+Let's take a few lines from an _UltraStar_ file:
+
+```
+: 0 5 4 Hey,
+: 9 6 4  hey,
+: 18 4 4  eve
+: 23 3 4 ry
+: 28 4 6 bo
+: 33 4 8 dy!
+```
+
+Lets take the note values in column four: 
+`` 4 4 4 4 6 8 ``.
+
+Using the piano layout above, count right the number of piano keys to match the numbers, remembering to count the sharp `#` black keys as well!
+
+Four notes on from `C4` is `E4`, six notes on from `C4` is `F4#`, and eight notes on from `C4` is `G4#`. So replacing the numbered notes in musical notation:
+`` E E E E F4# G4# ``. These are the values the game uses for pitch matching, and to display on the pitch grid on screen.
+
+This notation also works for negative numbers, you simply count backwards from `C4` if the notes required are a lower pitch. Some songs do indeed have the whole base notes below 0, but this is often common with some genres.
+
+Most songs that have been charted tend to be within a 6 to 12 note range, so the pitch grids are not massive, and also to prevent the issue on some _UltraStar_ clients where a note from a higher _Octave_, for example if the chart starts at `G4` and there is a note for `G5` this higher note would be drawn in the same place as the lower note, as the note would be considered an 'overflow', and would just be in the normal `G4` row on screen.
+
+---
+
+## Column Five
+
+```
+: 0 2 2 Some
+: 3 3 2 body
+: 7 4 2  once
+        ^
+        Column Five
+```
+
+As I am sure you have realised by this point, there has been a glaring error in column 5 on this little example song code snippet! ``body`` has two syllables and should be on two different lines!
+
+As you can probably tell by now, this column represents the syllable or 'lyrics' that the player will sing in time to the music.
+
+Each line in the chart specifies a syllable, it's duration, the pitch, and the time (in beats) it is meant to be sung. This format does not support 'pitch bending' during a syllable, to 'support' this, extra lines are often added which have simply a `~` for the syllable, to show that this is a 'long' syllable to the singer. If we were to extend 'Some' above, with a different pitch, the chart would be:
+
+```
+: 0 2 2 Some
+: 2 2 4 ~
+: 4 3 2 body
+```
+
+The game would show ``Some~`` which is used to tell the singer that there is a pitch change, and to sing it as a different pitch.
+
+Another important thing to realise is that the words in column 5 will automatically be joined together. If you forget where your spaces are, you will end up having a sentence with no spaces!
+
+Let's take this chart we used for the column four example:
+```
+: 0 5 4 Hey,
+: 9 6 4  hey,
+: 18 4 4  eve
+: 23 3 4 ry
+: 28 4 6 bo
+: 33 4 8 dy!
+```
+
+You can see that there are spaces added at the _beginning_ of the lines for `" hey,"` this is by design; you must pick your space arrangement when making your charts, some editors use 'space first', and some use 'space last'. 'Space last' places a space after the syllable, so would not begin with one. In the example above, the game would show ``"Hey, hey, everybody!"`` in the lyric section.
+
+If you are creating charts yourself and tend to leave spaces at the end of lines, or use windows a lot, do take care to see where these spaces are in the file. We will write the parser to support both spacing modes, as is commonly done by _UltraStar_ clients.
+
+---
+
+# Duet Mode
 
 
 
 
 
-
-
-
-
+---
 _Written and Maintained with ♡ by Squirrel, with thanks to My Little Karaoke and the UltraStar community, and Kokairu for their blog at https://thebrickyblog.wordpress.com_
