@@ -502,7 +502,7 @@ Many simulators will either throw an error or crash on badly formed charts if sy
 
 ---
 
-![pitch notation C4](dev/mode-support/pitchnotation.png)
+![pitch notation C4](pitchnotation.png)
 ###### A common layout showing C4 (Middle C)
 
 ## Column Four
