@@ -978,7 +978,7 @@ NOTE: The chart MUST have the following headers to be considered a valid karaoke
 </a>
 </h2></div><blockquote>
 <ul>
-<li><code>#TITLE</code></li><li><code>#ARTIST</code></li><li><code>#MP3</code></li><li><code>#GAP</code> (Offset)</li><li><code>#BPM</code></li></ul></blockquote><hr>
+<li><code>#TITLE</code></li><li><code>#ARTIST</code></li><li><code>#MP3</code></li><li><code>#GAP</code> (Offset) (Not all <em>UltraStar</em> versions need this.)</li><li><code>#BPM</code></li></ul></blockquote><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=common-header-commands>
 Common HEADER commands
@@ -1012,19 +1012,20 @@ Common HEADER commands
 </code></pre><p>so replacing this with numbers:</p><pre tabindex=0><code>21 / 140 / 4 * 60 + 0.121 = 2.371 seconds
 </code></pre><p>This means the lyrics will be displayed after 2.371 seconds of the song starting.</p><p>Relative files use <code>starttime=GAP</code> but <em>Project OutFox</em> does not support these files.</p><hr>
 <div class=gdoc-page__anchorwrap>
-<h2 id=bpmbpm-00-140000>
-<code>#BPM:bpm [0.0-1400.00]</code>
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#bpmbpm-00-140000 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #BPM:bpm [0.0-1400.00]" href=#bpmbpm-00-140000><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=bpmbpm-00-140000--0-1400>
+<code>#BPM:bpm [0.0-1400.00] / [0-1400]</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#bpmbpm-00-140000--0-1400 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #BPM:bpm [0.0-1400.00] / [0-1400]" href=#bpmbpm-00-140000--0-1400><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><p><code>Status: ✅ Supported</code></p><p>Usage Example:</p><pre tabindex=0><code>#BPM:140.000
-</code></pre><p>This setting allows the chart to specify the beginning (or starting) Beats per minute (BPM) of a song. This value will also be shown in the music wheel. This value used to require a whole number. <em>Project OutFox</em> allows for floats here - you are limited to 6 decimal places - so <code>143.000290</code> as an example.</p><p>This value sets the speed at which the lyrics will display, a high bpm means they will show quickly, and a lower bpm will be slower. Chart creators can use &lsquo;double&rsquo; or &lsquo;half&rsquo; bpm to adjust the lyric speed to help the singer, or to add a slightly different level of difficulty.</p><hr>
+#BPM:140
+</code></pre><p>This setting allows the chart to specify the beginning (or starting) Beats per minute (BPM) of a song. This value will also be shown in the music wheel. This value used to require a whole number. <em>Project OutFox</em> allows for floats here - you are limited to 6 decimal places - so <code>143.000290</code> as an example.</p><p>This value sets the speed at which the lyrics will display, a high bpm means they will show quickly, and a lower bpm will be slower. Chart creators can use &lsquo;double&rsquo; or &lsquo;half&rsquo; bpm to adjust the lyric speed to help the singer, or to add a slightly different level of difficulty.</p><p>In <em>UltraStar</em> there is sometimes strange behaviour when using <code>#BPM</code> values of under 120, with the notes moving faster than they should. Most chart creators use a &lsquo;double time&rsquo; BPM to work around this. Bear this in mind! We do not have this issue in <em>OutFox</em>, and not all versions of UltraStar have it, so check before you release.</p><p>Using floating point values in <code>#BPM</code> can cause issues with tools and features that work with the txt files, as they can sometimes misinterpret what the <code>.</code> or <code>,</code> can mean. If possible if you wish to maintain full <em>UltraStar</em> compatibility, use whole number <code>#BPM</code> values for major support.</p><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=mp3songfile-string>
 <code>#MP3:songfile [string]</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#mp3songfile-string class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #MP3:songfile [string]" href=#mp3songfile-string><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><p><code>Status: ✅ Supported</code></p><p>Usage Example:</p><pre tabindex=0><code>#MP3:Into My Dream.ogg
-</code></pre><p>The <code>#MP3</code> tag is a bit misleading here; it actually should just be <code>#SONG</code> as it can load several different formats. It will support ogg, .mp3, .m4a, .FLAC, and on OutFox .opus. If you plan to make your Karaoke file support other simulators, remember not all of them support opus!</p><hr>
+</code></pre><p>The <code>#MP3</code> tag is a bit misleading here; it actually should just be <code>#SONG</code> as it can load several different formats.</p><p><em>Project OutFox</em> is not limited in wave file bit depth, and supports the following file formats:</p><p>wav, ogg, .mp3, .m4a, .FLAC, and .opus. If you plan to make your Karaoke file support other simulators, remember not all of them support these, or have limits on bit depth and sample rates!</p><p>For <em>UltraStar</em>, if you use audio formats other than mp3, be prepared that those files won&rsquo;t work on all the different systems, and remember any audio format where FFMPEG doesn&rsquo;t need slow indexing for predictive frame access is supported.</p><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=genregenre-string>
 <code>#GENRE:genre [string]</code>
@@ -1059,14 +1060,14 @@ Common HEADER commands
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#covercover-string class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #COVER:cover [string]" href=#covercover-string><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><p><code>Status: ✅ Supported</code></p><p>Usage Example:</p><pre tabindex=0><code>#COVER:Into My Dream-bn.mp4
-</code></pre><p>This command is used to set an image for the song on the music selection screen of the simulator - when the song is scrolled to and is highlighted.</p><p>This can be most image formats, or a video, but remember the limitations, video covers may not work on other karaoke simulations.</p><p>In <em>Project OutFox</em> we call these files <em>banners</em>.</p><hr>
+</code></pre><p>This command is used to set an image for the song on the music selection screen of the simulator - when the song is scrolled to and is highlighted.</p><p>This can be most image formats, or a video, but remember the limitations, video covers may not work on other karaoke simulations.</p><p>These are usually square in Karaoke, and we will use a theme which uses square covers to ensure compatibility with already created content.</p><p>In <em>Project OutFox</em> we call these files <em>banners</em>.</p><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=videovideofile-string>
 <code>#VIDEO:videofile [string]</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#videovideofile-string class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #VIDEO:videofile [string]" href=#videovideofile-string><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><p><code>Status: ✅ Supported</code></p><p>Usage Example:</p><pre tabindex=0><code>#VIDEO:Into My Dream-bga.mp4
-</code></pre><p>This command is used to set a video to be played when the song starts on the game-play. It is similar to <code>#BACKGROUND</code> on SSC files. Remember, OutFox supports BGCHANGES which can be used to add effects and flair to your files, but this would need to be done within an SSC in the editor, when we have added support for karaoke in the future.</p><p>This can be most video formats, but remember the limitations, videos may not work on other karaoke simulations!</p><hr>
+</code></pre><p>This command is used to set a video to be played when the song starts on the game-play. It is similar to <code>#BACKGROUND</code> on SSC files. Remember, OutFox supports BGCHANGES which can be used to add effects and flair to your files, but this would need to be done within an SSC in the editor, when we have added support for karaoke in the future.</p><p>This can be most video formats, but remember the limitations, videos may not work on other karaoke simulations!</p><p>For <em>UltraStar</em>, if you use files with video, be prepared that those files won&rsquo;t work on all the different systems, and remember any video format where FFMPEG doesn&rsquo;t need slow indexing for predictive frame access is supported. It is common for chart creators to use one file for their video which contains the audio for the song within, and this is placed within both the <code>#MP3</code> and <code>#VIDEO</code> tags. We will need to add support for these charts in <em>Project OutFox</em>.</p><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=videogapvideogap-float>
 <code>#VIDEOGAP:videogap [float]</code>
@@ -1092,21 +1093,21 @@ Common HEADER commands
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#previewstartpreviewstart-float class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #PREVIEWSTART:previewstart [float]" href=#previewstartpreviewstart-float><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><p><code>Status: ✅ Supported</code></p><p>Usage Example:</p><pre tabindex=0><code>#PREVIEWSTART:17.488
-</code></pre><p>This value tells the game the time in <em>milliseconds</em> to play the preview section of the song in the music wheel.</p><p>Unlike SM/SSC there is no <code>#SAMPLELENGTH</code> in this format that tells the game to loop or reset the point of playback. It will fall back to the default 15 second length when parsing. Most simulators just play from the middle of the song until the end.</p><p>As this variable uses the <em>seconds</em> value, it is usable as per the <code>#SAMPLESTART</code> SM/SSC variable.</p><hr>
+</code></pre><p>This value tells the game the time in <em>seconds</em> to play the preview section of the song in the music wheel.</p><p>Unlike SM/SSC there is no <code>#SAMPLELENGTH</code> in this format that tells the game to loop or reset the point of playback. It will fall back to the default 15 second length when parsing. Most simulators just play from the middle of the song until the end.</p><p>As this variable uses the <em>seconds</em> value, it is usable as per the <code>#SAMPLESTART</code> SM/SSC variable.</p><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=startstart-float>
 <code>#START:start [float]</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#startstart-float class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #START:start [float]" href=#startstart-float><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><p><code>Status: ⌛ TBC</code></p><p>Usage Example:</p><pre tabindex=0><code>#START:27.759
-</code></pre><p>This value tells the game the time in <em>seconds</em> when to begin the song playback. This is usually used in chart creation, as it can skip a long intro to jump straight to the lyrics/notes, or to test a specific part of the song.</p><hr>
+</code></pre><p>This value tells the game the time in <em>seconds</em> when to begin the song playback. This is usually used in chart creation, as it can skip a long intro to jump straight to the lyrics/notes, or to test a specific part of the song.</p><p>These are used extensively on &lsquo;multi-song&rsquo; music files that have &lsquo;chapters&rsquo; (One file with different songs inside). These can also be &lsquo;parts&rsquo; of the song, like chorus or verses.</p><p>There will usually be one txt file for the complete file, with extra txt files for the &lsquo;chapters&rsquo;.</p><p>The main advantage for using this command is not having to create a dozen audio files for the same song, plus merging corrections from the main txt files to the chapter txt files is easier in this method.</p><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=endend-float>
 <code>#END:end [float]</code>
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#endend-float class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #END:end [float]" href=#endend-float><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p><code>Status: ⌛ TBC</code></p><p>Usage Example:</p><pre tabindex=0><code>#END:187.488
-</code></pre><p>This value tells the game the time in <em>seconds</em> when to end the song playback. This is usually used in chart creation, as it can stop playing at a specific part of the song. We haven&rsquo;t decided yet on this one, as many of the charts we have found do not use these commands, as we have the end data in the &lsquo;NoteData&rsquo; section below.</p><hr>
+</h2></div><p><code>Status: ⌛ TBC</code></p><p>Usage Example:</p><pre tabindex=0><code>#END:187488
+</code></pre><p>This value tells the game the time in <em>milliseconds</em> when to end the song playback. This is usually used in chart creation, as it can stop playing at a specific part of the song. We haven&rsquo;t decided yet on this one, as many of the charts we have found do not use these commands, as we have the end data in the &lsquo;NoteData&rsquo; section below.</p><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=duetsingerp1duetsingerp1-string>
 <code>#DUETSINGERP1:duetsingerp1 [string]</code>
@@ -1126,7 +1127,14 @@ Common HEADER commands
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#vocalsvocalsfile-string class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #VOCALS:vocalsfile [string]" href=#vocalsvocalsfile-string><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><p><code>Status: ⌛ TBC</code></p><p>Usage Example:</p><pre tabindex=0><code>#VOCALS:song.ogg
-</code></pre><p>This command tells the game where vocals version of the song is for the selected chart. I haven&rsquo;t been able to find many uses for this, as many songs seem to have song.ogg in the <code>#MP3</code> tag, and leave the instrumental (Karaoke) version not used. I guess this is to allow folks to have the vocals in the background when someone is learning the song, or provides an option in game to set either the &lsquo;song.ogg&rsquo; or &lsquo;instrumental.ogg&rsquo; versions.</p><p><em>Project OutFox</em> will likely have an option to select which one to use in time at the music wheel, if these are found, but if you know any other information about the <code>#VOCALS</code> tag, please let Squirrel know via our Discord server!</p><hr>
+</code></pre><p>This command tells the game where vocals version of the song is for the selected chart. I haven&rsquo;t been able to find many uses for this, as many songs seem to have song.ogg in the <code>#MP3</code> tag, and leave the instrumental (Karaoke) version not used. I guess this is to allow folks to have the vocals in the background when someone is learning the song, or provides an option in game to set either the &lsquo;song.ogg&rsquo; or &lsquo;instrumental.ogg&rsquo; versions.</p><p><em>Project OutFox</em> will likely have an option to select which one to use in time at the music wheel, if these are found, but if you know any other information about the <code>#VOCALS</code> tag, please let Squirrel know via our Discord server!</p><p>In earlier versions of <em>UltraStar</em> on older files, <code>#MP3</code> would have the instrumental version, and <code>#VOCALS</code> would contain an a cappella track with just the vocals, and the game would mix the two together when selected to play the full track.</p><hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=resolutionresolution-1-16>
+<code>#RESOLUTION:resolution [1-16]</code>
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#resolutionresolution-1-16 class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor #RESOLUTION:resolution [1-16]" href=#resolutionresolution-1-16><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p><code>Status: ❌ Not Supported</code></p><p>Usage Example:</p><pre tabindex=0><code>#RESOLUTION:4
+</code></pre><p>This command seems to be an <em>UltraStar</em> editor only value that affects the lines drawn on beats, with every <code>#RESOLUTION</code> beat being drawn black. It defaults to a value of <code>4</code>, and should not be set to <code>0</code> as it can make the game unstable.</p><p>We have no plans to support this in <em>Project OutFox</em>, as our editor is different.</p><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=relativerelative-01>
 <code>#RELATIVE:relative [0/1]</code>
@@ -1245,9 +1253,20 @@ Karaoke &ldquo;Note&rdquo; Types
 <ul>
 <li><code>P2</code> = <em>Player 2 note</em>. Set Lyrics to Player 2 (Duet only). This allows for songs that require two singers to have distinct colours that signifies player 2 should be singing. This note sets the chart to a <em>duet</em> (see below), which means it is more like a &lsquo;doubles&rsquo; or &lsquo;couples&rsquo; song in the <em>Project OutFox</em> engine.</li></ul></blockquote><blockquote>
 <ul>
-<li><code>P3</code> = <em>Both Players note</em>. Set Lyrics to BOTH players (Duet only). This allows for songs that require two singers to have a distinct colour that signifies both player 1 and player 2 should be singing. This note sets the chart to a <em>duet</em> (see below), which means it is more like a &lsquo;doubles&rsquo; or &lsquo;couples&rsquo; song in the <em>Project OutFox</em> engine.</li></ul></blockquote><blockquote>
+<li><code>P3</code> = <em>Both Players note</em>. Set Lyrics to BOTH players (Legacy Duet charts only). This allows for songs that require two singers to have a distinct colour that signifies both player 1 and player 2 should be singing. The use of <code>P3</code> is not common, and we want to use <code>P3</code> as a third player in a future <em>Harmony</em> option for <code>karaoke</code> mode.</li></ul></blockquote><blockquote>
 <ul>
-<li><code>E</code> = <em>End Chart note</em>. This character is placed as the end of the chart to set the ending time of the song, and on some versions of <em>UltraStar</em> can be overwritten by <code>#END</code>, though this is uncommonly used by modern charters these days.</li></ul></blockquote><hr>
+<li><code>E</code> = <em>End Chart note</em>. This character is placed as the end of the chart to set the ending time of the song, and on some versions of <em>UltraStar</em> can be overwritten by <code>#END</code>, though this is uncommonly used by modern charters these days.</li></ul></blockquote><div class=gdoc-page__anchorwrap>
+<h3 id=outfox-specific-player-blocks>
+OutFox Specific Player Blocks
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#outfox-specific-player-blocks class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor OutFox Specific Player Blocks" href=#outfox-specific-player-blocks><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><blockquote>
+<ul>
+<li><code>P3</code> = <em>Player 3 note</em>. Set Lyrics to Player 3 (Harmony only). This allows for songs that require three singers to have distinct colours that signifies player 3 should be singing. This note sets the chart to a <em>harmony</em> chart, and is only supported in <em>Project OutFox</em>.</li></ul></blockquote><blockquote>
+<ul>
+<li><code>P4</code> = <em>Player 4 note</em>. Set Lyrics to Player 4 (Harmony only). This allows for songs that require four singers to have distinct colours that signifies player 4 should be singing. This note sets the chart to a <em>harmony</em> chart, and is only supported in <em>Project OutFox</em>.</li></ul></blockquote><blockquote>
+<ul>
+<li><code>P5</code> = <em>Player 5 note</em>. Set Lyrics to Player 5 (Harmony only). This allows for songs that require five singers to have distinct colours that signifies player 5 should be singing. This note sets the chart to a <em>harmony</em> chart, and is only supported in <em>Project OutFox</em>.</li></ul></blockquote><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=column-two>
 Column Two
@@ -1282,7 +1301,7 @@ Column Four
       Column Four
 </code></pre><p>This column is responsible for the musical <em>pitch</em> of the syllable or lyric that the singer is expected to match or reproduce as the words are displayed on the screen.</p><p>Most <em>UltraStar</em> clients are limited to displaying a single <em>octave</em> on the screen that the singer can see.</p><p><img src=ultrastar.png alt="ultrastar client grid"></p><blockquote>
 <ul>
-<li>Without going into too much musical theory, that is usually <code>C</code> -> <code>C</code>. (If you remember the <em><code>"doe ray me far so la tea doe"</code></em> song from the <em>Sound of Music</em> These were the main notes of the <em>octave</em>.)</li></ul></blockquote><p>At this moment in time we haven&rsquo;t confirmed how our <em>pitch grid</em> will be constructed, as we do not have the limitations of <em>UltraStar</em> or it&rsquo;s derivatives. If you have any thoughts on this, do pop into the discord and give us them!</p><p>The values used in the <em>UltraStar</em> karaoke files start at <code>0</code>. I have done a lot of research around the internet, and some people claim that this begins at <code>C3</code>, <code>C1</code>, <code>C0</code>, even <code>C5</code> in one case!</p><p>But balancing a midi file of several of some example tracks and then cross referencing those notes with the syllables / lyric notes provided in the karaoke file shows that the <code>0</code> almost always runs on <em><code>middle C</code></em> or <em><code>C4</code></em>. We have no confirmation if they actually <em>did</em> base <code>0</code> as <em><code>middle C</code></em> or not, as the documentation on this format is really scarce.</p><p>The following picture shows a standard piano 88 key layout. I have put this here to show how the format works out <em>pitch</em> and where to put the syllable layout on the screen.</p><p><img src=pitchnotation.png alt="pitch notation C4"></p><div class=gdoc-page__anchorwrap>
+<li>Without going into too much musical theory, that is usually <code>C</code> -> <code>C</code>. (If you remember the <em><code>"doe ray me far so la tea doe"</code></em> song from the <em>Sound of Music</em> These were the main notes of the <em>octave</em>.)</li></ul></blockquote><p>At this moment in time we haven&rsquo;t confirmed how our <em>pitch grid</em> will be constructed, as we do not have the limitations of <em>UltraStar</em> or it&rsquo;s derivatives. If you have any thoughts on this, do pop into the discord and give us them!</p><p>The values used in the <em>UltraStar</em> karaoke files start at <code>0</code>. I have done a lot of research around the internet, and some people claim that this begins at <code>C3</code>, <code>C1</code>, <code>C0</code>, even <code>C5</code> in one case!</p><p>But balancing a midi file of several example tracks and then cross referencing those notes with the syllables / lyric notes provided in the karaoke file shows that the <code>0</code> almost always runs on <em><code>middle C</code></em> or <em><code>C4</code></em>. We have learned that the game shifts the notes by <code>60</code> (Middle C MIDI Note) and bases the chart parsing of <em><code>C0</code></em> = <code>0</code>.</p><p>The following picture shows a standard piano 88 key layout. I have put this here to show how the format works out <em>pitch</em> and where to put the syllable layout on the screen.</p><p><img src=pitchnotation.png alt="pitch notation C4"></p><div class=gdoc-page__anchorwrap>
 <h6 id=a-common-layout-showing-c4-middle-c>
 A common layout showing C4 (Middle C)
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#a-common-layout-showing-c4-middle-c class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor A common layout showing C4 (Middle C)" href=#a-common-layout-showing-c4-middle-c><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
@@ -1295,7 +1314,7 @@ A common layout showing C4 (Middle C)
 : 33 4 8 dy!
 </code></pre><p>Lets take the note values in column four:
 <code>4 4 4 4 6 8</code>.</p><p>Using the piano layout above, count right the number of piano keys to match the numbers, remembering to count the sharp <code>#</code> black keys as well!</p><p>Four notes on from <code>C4</code> is <code>E4</code>, six notes on from <code>C4</code> is <code>F4#</code>, and eight notes on from <code>C4</code> is <code>G4#</code>. So replacing the numbered notes in musical notation:
-<code>E E E E F4# G4#</code>. These are the values the game uses for pitch matching, and to display on the pitch grid on screen.</p><p>This notation also works for negative numbers, you simply count backwards from <code>C4</code> if the notes required are a lower pitch. Some songs do indeed have the whole base notes below 0, but this is often common with some genres.</p><p>Most songs that have been charted tend to be within a 6 to 12 note range, so the pitch grids are not massive, and also to prevent the issue on some <em>UltraStar</em> clients where a note from a higher <em>Octave</em>, for example if the chart starts at <code>G4</code> and there is a note for <code>G5</code> this higher note would be drawn in the same place as the lower note, as the note would be considered an &lsquo;overflow&rsquo;, and would just be in the normal <code>G4</code> row on screen.</p><hr>
+<code>E E E E F4# G4#</code>. These are the values the game uses for pitch matching, and to display on the pitch grid on screen.</p><p>This notation also works for negative numbers, you simply count backwards from <code>C4</code> if the notes required are a lower pitch. Some songs do indeed have the whole base notes below 0, but this is often common with some genres. Be warned not every <em>UltraStar</em> version supports this!</p><p>Most songs that have been charted tend to be within a 6 to 12 note range, so the pitch grids are not massive, and also to prevent the issue on some <em>UltraStar</em> clients where a note from a higher <em>Octave</em>, for example if the chart starts at <code>G4</code> and there is a note for <code>G5</code> this higher note would be drawn in the same place as the lower note, as the note would be considered an &lsquo;overflow&rsquo;, and would just be in the normal <code>G4</code> row on screen.</p><p>We will add support to shift key for singers in <em>Project OutFox</em> to make it easier for players to sing in their natural range.</p><hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=column-five>
 Column Five
@@ -1321,8 +1340,8 @@ Column Five
 Duet Mode
 <a data-clipboard-text=https://outfox.wiki/dev/mode-support/txt-support/#duet-mode class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Duet Mode" href=#duet-mode><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h1></div><hr>
-<p><em>Written and Maintained with ♡ by Squirrel, with thanks to My Little Karaoke and the UltraStar community, and Kokairu for their blog at <a class=gdoc-markdown__link href=https://thebrickyblog.wordpress.com>https://thebrickyblog.wordpress.com</a></em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
+</h1></div><p>This mode is available for songs which have two singers handling different parts of the song, and often singing the chorus together.</p><p>Each player sings their words, and are scored as normal on the words they sing only.</p><p>In txt files, these are split up with the use of <code>P1</code> and <code>P2</code> in the note section of the file, with many charts <em>repeating</em> words which are sung by both players, but there has been a few charts that use <code>P3</code> for this.</p><p>In <em>Project OutFox</em> we&rsquo;re planning to add a &lsquo;Harmony&rsquo; Mode which could support up to five or six singers at once, and this would require the availability of <code>P3</code> to P6, so it is likely where we will go on this, as <code>P3</code> usage does not seem common in almost all charts.</p><hr>
+<p><em>Written and Maintained with ♡ by Squirrel, with updates from barbeque, and support from Twilight from UltraStar Play, with thanks to My Little Karaoke and the UltraStar community, and Kokairu for their blog at <a class=gdoc-markdown__link href=https://thebrickyblog.wordpress.com>https://thebrickyblog.wordpress.com</a></em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
 </div></div></main><footer class=gdoc-footer>
 <div class="container flex">
 <div class="flex flex-wrap">
