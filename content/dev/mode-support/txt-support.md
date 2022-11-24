@@ -47,7 +47,7 @@ An Example Header Section
 >* ``#TITLE``
 >* ``#ARTIST``
 >* ``#MP3``
->* ``#GAP`` (Offset)
+>* ``#GAP`` (Offset) (Not all _UltraStar_ versions need this.)
 >* ``#BPM``
 
 ---
@@ -115,16 +115,21 @@ Relative files use ``starttime=GAP`` but _Project OutFox_ does not support these
 
 ---
 
-## ``#BPM:bpm [0.0-1400.00]``
+## ``#BPM:bpm [0.0-1400.00] / [0-1400]``
 ``Status: ✅ Supported``
 
 Usage Example:
 ```
 #BPM:140.000
+#BPM:140
 ```
 This setting allows the chart to specify the beginning (or starting) Beats per minute (BPM) of a song. This value will also be shown in the music wheel. This value used to require a whole number. _Project OutFox_ allows for floats here - you are limited to 6 decimal places - so ``143.000290`` as an example.
 
 This value sets the speed at which the lyrics will display, a high bpm means they will show quickly, and a lower bpm will be slower. Chart creators can use 'double' or 'half' bpm to adjust the lyric speed to help the singer, or to add a slightly different level of difficulty. 
+
+In _UltraStar_ there is sometimes strange behaviour when using ``#BPM`` values of under 120, with the notes moving faster than they should. Most chart creators use a 'double time' BPM to work around this. Bear this in mind! We do not have this issue in _OutFox_, and not all versions of UltraStar have it, so check before you release.
+
+Using floating point values in ``#BPM`` can cause issues with tools and features that work with the txt files, as they can sometimes misinterpret what the `.` or `,` can mean. If possible if you wish to maintain full _UltraStar_ compatibility, use whole number ``#BPM`` values for major support.
 
 ---
 
@@ -136,7 +141,14 @@ Usage Example:
 #MP3:Into My Dream.ogg
 ```
 
-The ``#MP3`` tag is a bit misleading here; it actually should just be ``#SONG`` as it can load several different formats. It will support ogg, .mp3, .m4a, .FLAC, and on OutFox .opus. If you plan to make your Karaoke file support other simulators, remember not all of them support opus!
+The ``#MP3`` tag is a bit misleading here; it actually should just be ``#SONG`` as it can load several different formats. 
+
+_Project OutFox_ is not limited in wave file bit depth, and supports the following file formats:
+
+wav, ogg, .mp3, .m4a, .FLAC, and .opus. If you plan to make your Karaoke file support other simulators, remember not all of them support these, or have limits on bit depth and sample rates!
+
+For _UltraStar_, if you use audio formats other than mp3, be prepared that those files won't work on all the different systems, and remember any audio format where FFMPEG doesn't need slow indexing for predictive frame access is supported.
+
 
 ---
 
@@ -196,6 +208,8 @@ This command is used to set an image for the song on the music selection screen 
 
 This can be most image formats, or a video, but remember the limitations, video covers may not work on other karaoke simulations. 
 
+These are usually square in Karaoke, and we will use a theme which uses square covers to ensure compatibility with already created content.
+
 In _Project OutFox_ we call these files _banners_.
 
 ---
@@ -210,6 +224,8 @@ Usage Example:
 This command is used to set a video to be played when the song starts on the game-play. It is similar to ``#BACKGROUND`` on SSC files. Remember, OutFox supports BGCHANGES which can be used to add effects and flair to your files, but this would need to be done within an SSC in the editor, when we have added support for karaoke in the future.
 
 This can be most video formats, but remember the limitations, videos may not work on other karaoke simulations!
+
+For _UltraStar_, if you use files with video, be prepared that those files won't work on all the different systems, and remember any video format where FFMPEG doesn't need slow indexing for predictive frame access is supported. It is common for chart creators to use one file for their video which contains the audio for the song within, and this is placed within both the ``#MP3`` and ``#VIDEO`` tags. We will need to add support for these charts in _Project OutFox_.
 
 ---
 
@@ -271,7 +287,7 @@ Usage Example:
 ```
 #PREVIEWSTART:17.488
 ```
-This value tells the game the time in _milliseconds_ to play the preview section of the song in the music wheel.
+This value tells the game the time in _seconds_ to play the preview section of the song in the music wheel.
 
 Unlike SM/SSC there is no `#SAMPLELENGTH` in this format that tells the game to loop or reset the point of playback. It will fall back to the default 15 second length when parsing. Most simulators just play from the middle of the song until the end.
 
@@ -288,6 +304,12 @@ Usage Example:
 ```
 This value tells the game the time in _seconds_ when to begin the song playback. This is usually used in chart creation, as it can skip a long intro to jump straight to the lyrics/notes, or to test a specific part of the song. 
 
+These are used extensively on 'multi-song' music files that have 'chapters' (One file with different songs inside). These can also be 'parts' of the song, like chorus or verses.
+
+There will usually be one txt file for the complete file, with extra txt files for the 'chapters'.
+
+The main advantage for using this command is not having to create a dozen audio files for the same song, plus merging corrections from the main txt files to the chapter txt files is easier in this method.
+
 ---
 
 ## ``#END:end [float]``
@@ -295,9 +317,9 @@ This value tells the game the time in _seconds_ when to begin the song playback.
 
 Usage Example:
 ```
-#END:187.488
+#END:187488
 ```
-This value tells the game the time in _seconds_ when to end the song playback. This is usually used in chart creation, as it can stop playing at a specific part of the song. We haven't decided yet on this one, as many of the charts we have found do not use these commands, as we have the end data in the 'NoteData' section below. 
+This value tells the game the time in _milliseconds_ when to end the song playback. This is usually used in chart creation, as it can stop playing at a specific part of the song. We haven't decided yet on this one, as many of the charts we have found do not use these commands, as we have the end data in the 'NoteData' section below. 
 
 ---
 
@@ -327,6 +349,22 @@ Usage Example:
 This command tells the game where vocals version of the song is for the selected chart. I haven't been able to find many uses for this, as many songs seem to have song.ogg in the ``#MP3`` tag, and leave the instrumental (Karaoke) version not used. I guess this is to allow folks to have the vocals in the background when someone is learning the song, or provides an option in game to set either the 'song.ogg' or 'instrumental.ogg' versions.
 
 _Project OutFox_ will likely have an option to select which one to use in time at the music wheel, if these are found, but if you know any other information about the `#VOCALS` tag, please let Squirrel know via our Discord server!
+
+In earlier versions of _UltraStar_ on older files, ``#MP3`` would have the instrumental version, and ``#VOCALS`` would contain an a cappella track with just the vocals, and the game would mix the two together when selected to play the full track.
+
+---
+
+## ``#RESOLUTION:resolution [1-16]``
+``Status: ❌ Not Supported``
+
+Usage Example:
+```
+#RESOLUTION:4
+```
+
+This command seems to be an _UltraStar_ editor only value that affects the lines drawn on beats, with every ``#RESOLUTION`` beat being drawn black. It defaults to a value of `4`, and should not be set to `0` as it can make the game unstable.
+
+We have no plans to support this in _Project OutFox_, as our editor is different.
 
 ---
 
@@ -466,9 +504,17 @@ The file uses line beginnings to set the 'note type' (lyric type) that the playe
 
 >* ``P2`` = _Player 2 note_. Set Lyrics to Player 2 (Duet only). This allows for songs that require two singers to have distinct colours that signifies player 2 should be singing. This note sets the chart to a _duet_ (see below), which means it is more like a 'doubles' or 'couples' song in the _Project OutFox_ engine.
 
->* ``P3`` = _Both Players note_. Set Lyrics to BOTH players (Duet only). This allows for songs that require two singers to have a distinct colour that signifies both player 1 and player 2 should be singing. This note sets the chart to a _duet_ (see below), which means it is more like a 'doubles' or 'couples' song in the _Project OutFox_ engine.
+>* ``P3`` = _Both Players note_. Set Lyrics to BOTH players (Legacy Duet charts only). This allows for songs that require two singers to have a distinct colour that signifies both player 1 and player 2 should be singing. The use of ``P3`` is not common, and we want to use ``P3`` as a third player in a future _Harmony_ option for ``karaoke`` mode.
 
 >* ``E`` = _End Chart note_. This character is placed as the end of the chart to set the ending time of the song, and on some versions of _UltraStar_ can be overwritten by ``#END``, though this is uncommonly used by modern charters these days.
+
+### OutFox Specific Player Blocks
+
+>* ``P3`` = _Player 3 note_. Set Lyrics to Player 3 (Harmony only). This allows for songs that require three singers to have distinct colours that signifies player 3 should be singing. This note sets the chart to a _harmony_ chart, and is only supported in _Project OutFox_.
+
+>* ``P4`` = _Player 4 note_. Set Lyrics to Player 4 (Harmony only). This allows for songs that require four singers to have distinct colours that signifies player 4 should be singing. This note sets the chart to a _harmony_ chart, and is only supported in _Project OutFox_.
+
+>* ``P5`` = _Player 5 note_. Set Lyrics to Player 5 (Harmony only). This allows for songs that require five singers to have distinct colours that signifies player 5 should be singing. This note sets the chart to a _harmony_ chart, and is only supported in _Project OutFox_.
 
 ---
 
@@ -524,7 +570,7 @@ At this moment in time we haven't confirmed how our _pitch grid_ will be constru
 
 The values used in the _UltraStar_ karaoke files start at `0`. I have done a lot of research around the internet, and some people claim that this begins at `C3`, `C1`, `C0`, even `C5` in one case!
 
-But balancing a midi file of several of some example tracks and then cross referencing those notes with the syllables / lyric notes provided in the karaoke file shows that the `0` almost always runs on _`middle C`_ or _`C4`_. We have no confirmation if they actually _did_ base `0` as _`middle C`_ or not, as the documentation on this format is really scarce.
+But balancing a midi file of several example tracks and then cross referencing those notes with the syllables / lyric notes provided in the karaoke file shows that the `0` almost always runs on _`middle C`_ or _`C4`_. We have learned that the game shifts the notes by `60` (Middle C MIDI Note) and bases the chart parsing of _`C0`_ = `0`.
 
 The following picture shows a standard piano 88 key layout. I have put this here to show how the format works out _pitch_ and where to put the syllable layout on the screen.
 
@@ -550,9 +596,11 @@ Using the piano layout above, count right the number of piano keys to match the 
 Four notes on from `C4` is `E4`, six notes on from `C4` is `F4#`, and eight notes on from `C4` is `G4#`. So replacing the numbered notes in musical notation:
 `` E E E E F4# G4# ``. These are the values the game uses for pitch matching, and to display on the pitch grid on screen.
 
-This notation also works for negative numbers, you simply count backwards from `C4` if the notes required are a lower pitch. Some songs do indeed have the whole base notes below 0, but this is often common with some genres.
+This notation also works for negative numbers, you simply count backwards from `C4` if the notes required are a lower pitch. Some songs do indeed have the whole base notes below 0, but this is often common with some genres. Be warned not every _UltraStar_ version supports this!
 
 Most songs that have been charted tend to be within a 6 to 12 note range, so the pitch grids are not massive, and also to prevent the issue on some _UltraStar_ clients where a note from a higher _Octave_, for example if the chart starts at `G4` and there is a note for `G5` this higher note would be drawn in the same place as the lower note, as the note would be considered an 'overflow', and would just be in the normal `G4` row on screen.
+
+We will add support to shift key for singers in _Project OutFox_ to make it easier for players to sing in their natural range.
 
 ---
 
@@ -600,9 +648,16 @@ If you are creating charts yourself and tend to leave spaces at the end of lines
 
 # Duet Mode
 
+This mode is available for songs which have two singers handling different parts of the song, and often singing the chorus together.
+
+Each player sings their words, and are scored as normal on the words they sing only.
+
+In txt files, these are split up with the use of ``P1`` and ``P2`` in the note section of the file, with many charts _repeating_ words which are sung by both players, but there has been a few charts that use ``P3`` for this. 
+
+In _Project OutFox_ we're planning to add a 'Harmony' Mode which could support up to five or six singers at once, and this would require the availability of ``P3`` to P6, so it is likely where we will go on this, as ``P3`` usage does not seem common in almost all charts.
 
 
 
 
 ---
-_Written and Maintained with ♡ by Squirrel, with thanks to My Little Karaoke and the UltraStar community, and Kokairu for their blog at https://thebrickyblog.wordpress.com_
+_Written and Maintained with ♡ by Squirrel, with updates from barbeque, and support from Twilight from UltraStar Play, with thanks to My Little Karaoke and the UltraStar community, and Kokairu for their blog at https://thebrickyblog.wordpress.com_
