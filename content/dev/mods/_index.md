@@ -133,7 +133,7 @@ Lots, actually!
 
 ### Mods Resources
  
- * **[FMS Cat's Flip-Invert site](http://fms-cat.com/flip-invert/)** helps give you combinations of various mods to move the note columns across the screen. Just drag the receptors where you want them on-screen!
+ * **[FMS Cat's Flip-Invert site](https://0b5vr.com/flip-invert/)** helps give you combinations of various mods to move the note columns across the screen. Just drag the receptors where you want them on-screen!
     * (You can alternatively use the `MoveX/Y/Zn` mods to move single note columns, like `MoveX1`, `MoveX2`, etc)
  
  * Check out **[WinDEU's Marathon Tutorial](https://www.youtube.com/watch?v=4cHCqwHcKPY&list=PL1joaptC-JIUphz_wcd8WrMCdeSylZmdw&index=3)** series - it focuses on older versions of StepMania (where some mods, like Drunk and Tipsy, have different names), but a lot of the info still applies to SM5/Outfox. The later videos in the series dive *really* deep into how some mods behave!
