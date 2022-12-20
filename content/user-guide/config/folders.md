@@ -5,8 +5,8 @@ weight: 0
 
 Project OutFox uses various folders to store content, such as songs, save data, themes, noteskins, etc. Content is stored in one of the three following locations;
 
-* **Global folders** are located within the Project OutFox installation directory. If you are on a multi-user operating system, content in these folders will be accessible to all users. When _Portable Mode_ is enabled, your save data (including profiles and preference files) will be placed in the installation directory.
-* **User folders** are where your save data is stored if _Portable Mode_ is disabled. They are created in your operating system's home/user directory. As of 0.4.14 (released 2022-03-25), they are located in:
+* **Global folders** are located within the Project OutFox installation directory. If you are on a multi-user operating system, content in these folders will be accessible to all users. When _Portable Mode_ is enabled by placing a blank file named ``Portable.ini`` at the root of the installation directory, save data (including profiles and preference files) will be place in a subfolder of the installation directory named "Save".
+* **User folders** are where user save data is stored if _Portable Mode_ is disabled. They are created in the operating system's home/user directory. As of 0.4.14 (released 2022-03-25), they are located in:
     * **~/Library/Preferences/Project OutFox/** on macOS
     * **~/.project-outfox/** on Linux
     * **%APPDATA%\Project OutFox** on Windows

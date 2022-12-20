@@ -1044,7 +1044,7 @@ Determines the detail of the log files.
 
 Possible values are ``0`` through ``5``, with 0 providing the most detail, and 5 providing the least detail.
 
-Default value: 2.
+Default value: 2
 
 ### LogSkips
 
