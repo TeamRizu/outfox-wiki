@@ -19,11 +19,16 @@ This is a helper function that can be used to dynamically load an actor based on
 {{<columns>}}
 {{< button size="large" relref="actor/" >}}Actor{{< /button >}}
 {{< button size="large" relref="actorframe/" >}}ActorFrame{{< /button >}}
+{{< button size="large" relref="actorframetexture/" >}}ActorFrameTexture{{< /button >}}
 {{< button size="large" relref="actormultivertex/" >}}ActorMultiVertex{{< /button >}}
 {{< button size="large" relref="sprite/" >}}Sprite{{< /button >}}
 {{< button size="large" relref="bitmaptext/" >}}BitmapText{{< /button >}}
 {{< button size="large" relref="sound/" >}}Sound{{< /button >}}
 {{< button size="large" relref="notefield/" >}}NoteField{{< /button >}}
+{{< button size="large" relref="helpdisplay/" >}}HelpDisplay{{< /button >}}
+{{< button size="large" relref="quad/" >}}Quad{{< /button >}}
+{{< button size="large" relref="songmeterdisplay/" >}}SongMeterDisplay{{< /button >}}
+{{< button size="large" relref="percentagedisplay/" >}}PercentageDisplay{{< /button >}}
 {{</columns>}}
 </center>
 
@@ -276,7 +281,17 @@ Def.GraphDisplay{
 ## GrooveRadar
 
 A recreation of the five-point "Groove Radar" from DDR. Can take arbitrary values as well as the song's radar values.
+Note that the visual aspect of the GrooveRadar depends on metrics set on the `GrooveRadar` metrics group, and the 
+GrooveRadar graphics set.
 <!--TODO: Do we mention what the radar values are?-->
+```lua
+Def.GrooveRadar {
+	InitCommand=function(self)
+		-- Let's use random values to fill the graph.
+		self:SetFromValues({1,0.5,0.8,0.4,1})
+	end
+}
+```
 
 ## HelpDisplay
 
@@ -303,11 +318,29 @@ The judgment that shows up on a column when dropping or clearing a hold & roll.
 
 There is an extra function to allow tracking the hold judgments from a MultiPlayer.
 
+```lua
+Def.HoldJudgment{
+	File=THEME:GetPathG("Hold","Judgment"),
+	InitCommand=function(self)
+		
+	end
+}
+```
+
 ## InputList
 
 Displays a list of inputs as they occur. Can show unmapped and mapped inputs.
 
 Functions like most other BitmapText actors.
+
+```lua
+Def.InputList {
+	Font="Common Normal",
+	InitCommand=function (self)
+		self:x(SCREEN_CENTER_X-250):y(SCREEN_CENTER_Y):halign(0):vertspacing(8)
+	end
+}
+```
 
 ## LogDisplay
 
@@ -330,6 +363,12 @@ Often used in gameplay screens. This shows how many more mistakes a player is al
 ## MemoryCardDisplay
 
 Shows the current state of a player's inserted memory card. Made of images, with one for each state.
+
+```lua
+Def.MemoryCardDisplay{
+	PlayerNumber=PLAYER_1
+}
+```
 
 ## MenuTimer
 
@@ -371,10 +410,6 @@ Often seen in options screens, this actor allows for picking and choosing variou
 Shows the number of steps, jumps, holds, rolls, mines, hands, lifts, fakes, the machine profile's highscore & name and the current profile's high score for a given chart.
 
 Settings must be defined through Metrics.
-
-## PercentageDisplay
-
-Shows a player's current percentage (Actual DancePoints divided by Possible DancePoints).
 
 ## Player
 
@@ -435,24 +470,6 @@ A screen the theme can go to. There are screens for gameplay, selecting music, p
 
 Shows the current BPM during gameplay. Does not appear to take split timing into account.
 
-## SongMeterDisplay
-
-A MeterDisplay that shows the current position of the song being played.
-
-
-```lua
-Def.SongMeterDisplay{
-	InitCommand=function(self)
-		-- This generates a 300 x [the height of your Stream texture] that will define the current progress of whatever song is currently being played.
-		-- The actor will automatically update progress for the Tip and the Stream.
-		self:SetStreamWidth( 300 )
-	end,
-	-- Both the Stream and Tip are AutoActors, so they can be any actor type.
-	Stream=Def.Sprite{ Texture="MyStreamBar" },
-	Tip=Def.Sprite{ Texture="MyTip" }
-}
-```
-
 ## StepsDisplay
 
 Displays the data for a given chart. Can show difficulty number, description, credit, if it's autogen and steps type.
@@ -483,6 +500,24 @@ A "Banner" that contains the song name, artist and subtitle.
 
 Usually seen in the CourseContentsList of ScreenSelectMusic or the ScrollerItem in ScreenHighScores.
 
+```lua
+-- This example uses this set from a CourseContentsList, hence the SetSong command.
+Def.TextBanner {
+	InitCommand=function(self)
+		self:Load("TextBannerCourse"):SetFromString("", "", "", "", "", "")
+	end,
+	SetSongCommand=function(self, params)
+		if params.Song then
+			self:SetFromSong( params.Song )
+			self:diffuse(color("#FFFFFF"))
+		else
+			self:SetFromString( "??????????", "??????????", "", "", "", "" )
+			self:diffuse( color("#FFFFFF") )
+		end
+	end
+}
+```
+
 ## WheelBase
 
 Cannot be created from lua.
@@ -498,3 +533,9 @@ A base class for items residing in wheels. MusicWheelItems inherit from this.
 ## WorkoutGraph
 
 A graph showing the calories burned over time during a workout.
+
+```lua
+Def.WorkoutGraph{
+	
+}
+```

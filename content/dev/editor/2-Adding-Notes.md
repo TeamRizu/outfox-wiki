@@ -1,8 +1,8 @@
 ---
-Title:Adding/Manipulating notes
+title: Adding/Manipulating notes
 ---
 
-Â<!-- TODO: Add images demonstrating each note type. -->
+ï¿½<!-- TODO: Add images demonstrating each note type. -->
 
 In the editor, you can add notes by using the 1-0 keys on the keyboard, which correspond to the column
 on the current mode you're in.
@@ -30,7 +30,7 @@ end of the hold/roll.
 These notes are purely visual, and do not affect score. They can be used to confuse the player or to construct visual gimmicks.
 Currently holds/rolls created in this mode will be transformed to regular holds/rolls from the Tap type.
 
-##Â The Alter Menu
+##ï¿½ The Alter Menu
 
 ### Beat
 This option allows you to either compress or expand a selected area in both notes

@@ -45,4 +45,4 @@ Def.NoteField{
 A NoteField starts with the chart the specified player used. However, SetNoteDataFromLua is usable on a Def.NoteField, allowing one to change the chart used. Unlike player, there is no SetNoteData function (for now), so the table format from GetNoteData has to be followed.
 
 ## Replicating Mini and Perspective
-Refer to the section `How a Player Manipulates its' NoteField`.
+Refer to the section [How a Player Manipulates its' NoteField](../NoteField-PlayerManipulation).

@@ -1,11 +1,11 @@
 ---
-Title:Defining Timing Data
+title: Defining Timing Data
 ---
 
 when playing a song, several aspects of the chart will be used for timing information. These are essential to have
 a nicely timed chart that people can enjoy.
 
-###Â Beat 0 offset
+### Beat 0 offset
 This determines the starting point of the audio file to begin counting beats. This should be on the very start of any indication of audio
 in the song. It is important that you consider changing this value if you notice your chart is off-sync, chances are the beat 0 offset is off.
 
@@ -42,4 +42,4 @@ Speed (Percentage)
 Scroll Factor
 Fake segment
 
--->.
+-->
