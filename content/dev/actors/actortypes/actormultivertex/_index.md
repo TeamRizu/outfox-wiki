@@ -123,11 +123,16 @@ For written examples, please check [Usage Examples](#usage-examples).
 | Strip | Suspiciously similar to DrawMode_QuadStrip. | ![](/actors/actormultivertex/drawmodes/DrawMode_QuadStrip.svg) |
 | Triangles | Draws a 3 point polygonal shape that is separated from any adjacent or subsequent point. | ![](/actors/actormultivertex/drawmodes/DrawMode_Triangle.svg) |
 | LineStrip | Draws a continous line based on the points given to the Polygon. Width of the line is scaled by the theme's internal height, plus the manual value assigned. | ![](/actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg) |
-| PolyLineStrip | todo | todo |
-| LineStripM | Modern implementation of LineStrip. Outputs the work to the GPU to perform operations. Line width limits here are defined by the GPU. | ![](/actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg) |
 | SymmetricQuadStrip | todo | todo |
-| Points | todo | todo |
-| Lines | todo | todo |
+
+The following are introduced for OutFox.
+
+| Name | Description | Image |
+| :---: | :---: | :------ |
+| LineStripM | Modern implementation of LineStrip. Outputs the work to the GPU to perform operations. Line width limits here are defined by the GPU. | ![](/actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg) |
+| PolyLineStrip | todo | todo |
+| Points | 1 vertex shapes, which are rendered by the GPU. Size can be defined using `SetPointSize`, and depends on the GPU. | ![](/actors/actormultivertex/drawmodes/DrawMode_Points.svg) |
+| Lines | A 2 point line that is separated on each group. | ![](/actors/actormultivertex/drawmodes/DrawMode_Line.svg) |
 
 ## Usage Examples
 
@@ -141,6 +146,7 @@ The examples here provide how to insert points for the polygon related to each D
 	{{0, 20, 0}, Color.Blue},
 	{{20, 20, 0}, Color.Green},
 	{{20, 0, 0}, Color.Yellow},
+	--
 	{{40, 0, 0}, Color.Orange},
 	{{40, 20, 0}, Color.Purple},
 	{{60, 20, 0}, Color.Black},
@@ -148,11 +154,7 @@ The examples here provide how to insert points for the polygon related to each D
 }
 ```
 
-### DrawMode_QuadStrip
-
-{{<hint info>}}
-(Also applies for DrawMode_Strip.)
-{{</hint>}}
+### DrawMode_QuadStrip / DrawMode_Strip
 
 ```lua
 {
@@ -160,6 +162,7 @@ The examples here provide how to insert points for the polygon related to each D
 	{{0, 20, 0}, Color.Blue},
 	{{20, 0, 0}, Color.Green},
 	{{20, 20, 0}, Color.Yellow},
+	--
 	{{40, 0, 0}, Color.Orange},
 	{{40, 20, 0}, Color.Purple},
 	{{60, 0, 0}, Color.Black},
@@ -200,30 +203,67 @@ The graphics being [DrawMode_Quad](#drawmode_quad) and [DrawMode_QuadStrip](#dra
 	{{0, 0, 0}, Color.Red},
 	{{10, -20, 0}, Color.Blue},
 	{{20, 0, 0}, Color.Green},
+	--
 	{{30, 0, 0}, Color.Yellow},
 	{{40, -20, 0}, Color.Orange},
 	{{50, 0, 0}, Color.Purple},
+	--
 	{{60, 20, 0}, Color.Black},
 	{{70, 0, 0}, Color.White},
 	{{80, 20, 0}, Color.Orange},
 }
 ```
 
-### DrawMode_LineStrip
+### DrawMode_LineStrip / DrawMode_LineStripM / DrawMode_Points
 
-{{<hint info>}}
-(Also applies to DrawMode_LineStripM.)
+{{<hint warning>}}
+{{<expand "Take a moment to notice that LineStrip and Points, while similar in nature, have a different layout.">}}
+The graphics being [DrawMode_LineStrip](#drawmode_linestrip) and [DrawMode_Points](#drawmode_points) respectively.
+{{<columns>}}
+![DrawMode_LineStrip](/actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg)
+<--->
+![DrawMode_Points](/actors/actormultivertex/drawmodes/DrawMode_Points.svg)
+{{</columns>}}
+{{</expand>}}
 {{</hint>}}
 
 ```lua
 {
 	{{-40, -40, 0}, Color.Red},
+	--
 	{{0, -40, 0}, Color.Blue},
+	--
 	{{40, -40, 0}, Color.Green},
+	--
 	{{40, 0, 0}, Color.Yellow},
+	--
 	{{40, 40, 0}, Color.Orange},
+	--
 	{{0, 40, 0}, Color.Purple},
+	--
 	{{-40, 40, 0}, Color.Black},
+	--
 	{{-40, 0, 0}, Color.White},
+}
+```
+
+### DrawMode_Lines
+
+```lua
+{
+	{{0, 0, 0}, Color.Red},
+	{{10, 0, 0}, Color.Blue},
+	--
+	{{20, 0, 0}, Color.Green},
+	{{30, 0, 0}, Color.Yellow},
+	--
+	{{40, 0, 0}, Color.Orange},
+	{{50, 0, 0}, Color.Purple},
+	--
+	{{60, 0, 0}, Color.Blue},
+	{{70, 0, 0}, Color.White},
+	--
+	{{80, 0, 0}, Color.Orange},
+	{{90, 0, 0}, Color.Orange},
 }
 ```
