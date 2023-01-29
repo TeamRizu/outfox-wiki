@@ -2,3 +2,4 @@
 .vscode/settings.json
 # Ignore vim swap files
 .swp
+.hugo_build.lock

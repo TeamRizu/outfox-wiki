@@ -1,0 +1,9 @@
+header:
+  - name: Project OutFox home
+    ref: https://projectoutfox.com
+    icon: outfox-sprite
+    external: true
+  - name: View the OutFox Wiki source on GitHub
+    ref: https://github.com/TeamRizu/outfox-wiki
+    icon: gdoc_github
+    external: true
