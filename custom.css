@@ -106,3 +106,8 @@ video {
 .gdoc-menu-header > * {
   margin-left: 0.5rem;
 }
+
+.img-comparison{
+  display: flex;
+  justify-content: space-around;
+}

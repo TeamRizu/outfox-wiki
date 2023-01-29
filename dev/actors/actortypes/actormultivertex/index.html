@@ -18,7 +18,7 @@
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ActorMultiVertex">
 <meta name=twitter:description content="Setting a Draw State List of DrawModes Usage Examples DrawMode_Quad DrawMode_QuadStrip / DrawMode_Strip DrawMode_Fan DrawMode_Triangles DrawMode_LineStrip / DrawMode_LineStripM / DrawMode_Points DrawMode_Lines Allows for arbitrary polygons to be created. Every vertex has a position on the xyz plane, a color formatted like diffuse values, and a uv coordinate for textures. In NotITG, this is known as “Polygon”, and the functions available are different, even though it achieves the same thing.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"ActorMultiVertex","url":"https://outfox.wiki/dev/actors/actortypes/actormultivertex/","headline":"ActorMultiVertex","description":"Setting a Draw State List of DrawModes Usage Examples DrawMode_Quad DrawMode_QuadStrip \/ DrawMode_Strip DrawMode_Fan DrawMode_Triangles DrawMode_LineStrip \/ DrawMode_LineStripM \/ DrawMode_Points DrawMode_Lines Allows for arbitrary polygons to be created. Every vertex has a position on the xyz plane, a color formatted like diffuse values, and a uv coordinate for textures. In NotITG, this is known as “Polygon”, and the functions available are different, even though it achieves the same thing.","wordCount":"1028","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/actormultivertex/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"ActorMultiVertex","url":"https://outfox.wiki/dev/actors/actortypes/actormultivertex/","headline":"ActorMultiVertex","description":"Setting a Draw State List of DrawModes Usage Examples DrawMode_Quad DrawMode_QuadStrip \/ DrawMode_Strip DrawMode_Fan DrawMode_Triangles DrawMode_LineStrip \/ DrawMode_LineStripM \/ DrawMode_Points DrawMode_Lines Allows for arbitrary polygons to be created. Every vertex has a position on the xyz plane, a color formatted like diffuse values, and a uv coordinate for textures. In NotITG, this is known as “Polygon”, and the functions available are different, even though it achieves the same thing.","wordCount":"1220","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/actormultivertex/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
 <script src=../../../../js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=../../../../js/main-56ca818c.bundle.min.js></script>
 <link rel=preload as=font href=../../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -1635,8 +1635,8 @@ Setting a Draw State
 <tr>
 <td style=text-align:center>Mode</td><td>Fetches the draw mode if provided, check <a class=gdoc-markdown__link href=#list-of-drawmodes>List of DrawModes</a> for a list of draw modes.</td></tr><tr>
 <td style=text-align:center>First</td><td>Which point will be the first to draw?</td></tr><tr>
-<td style=text-align:center>Num</td><td>How many polygons after <code>First</code> will be drawn? If set to -1 (default), it will be the rest of available polygons set.</td></tr></tbody></table></div><blockquote class="gdoc-hint note">
-<div class="gdoc-hint__title flex align-center"><i class="fa note" title=Note></i></div><div class=gdoc-hint__text>The <code>First</code> argument is 1-indexed, while the <code>Num</code> argument is not.</div></blockquote><div class=gdoc-page__anchorwrap>
+<td style=text-align:center>Num</td><td>How many polygons after <code>First</code> will be drawn? If set to -1 (default), it will be the rest of available polygons set.</td></tr></tbody></table></div><blockquote class="gdoc-hint important">
+<div class="gdoc-hint__title flex align-center"><i class="fa important" title=Important></i></div><div class=gdoc-hint__text>The <code>First</code> argument is 1-indexed, while the <code>Num</code> argument is not.</div></blockquote><div class=gdoc-page__anchorwrap>
 <h2 id=list-of-drawmodes>
 List of DrawModes
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#list-of-drawmodes class="gdoc-page__anchor clip flex align-center" title="Anchor to: List of DrawModes" aria-label="Anchor to: List of DrawModes" href=#list-of-drawmodes><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
@@ -1698,22 +1698,12 @@ DrawMode_QuadStrip / DrawMode_Strip
 </span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>60</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Black</span><span class=p>},</span>
 </span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>60</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.White</span><span class=p>},</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></div><blockquote class="gdoc-hint note">
-<div class="gdoc-hint__title flex align-center"><i class="fa note" title=Note></i></div><div class=gdoc-hint__text><div class=gdoc-expand>
-<label class="gdoc-expand__head flex justify-between" for=e02b4bc3-0>
-<span>Take a moment to notice that Quad and QuadStrip, while similar in nature, have a different order.</span>
-<span>↕</span>
-</label>
-<input id=e02b4bc3-0 type=checkbox class="gdoc-expand__control hidden">
-<div class="gdoc-markdown--nested gdoc-expand__content">
-<p>The graphics being <a class=gdoc-markdown__link href=#drawmode_quad>DrawMode_Quad</a> and <a class=gdoc-markdown__link href=#drawmode_quadstrip>DrawMode_QuadStrip</a> respectively.</p><div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
-<pre><code><div class="gdoc-columns__content gdoc-markdown--nested flex-even">
-  <img </code></pre><p>src="../../../../actors/actormultivertex/drawmodes/DrawMode_Quad.svg"
-alt=“DrawMode_Quad”</p><p>/>
-</div></p><pre><code><div class="gdoc-columns__content gdoc-markdown--nested flex-even">
-  <img </code></pre><p>src="../../../../actors/actormultivertex/drawmodes/DrawMode_QuadStrip.svg"
-alt=“DrawMode_QuadStrip”</p><p>/>
-</div></p></div></div></div></div></blockquote><div class=gdoc-page__anchorwrap>
+</span></span></code></pre></div><blockquote class="gdoc-hint important">
+<div class="gdoc-hint__title flex align-center"><i class="fa important" title=Important></i></div><div class=gdoc-hint__text><p>Take a moment to notice that Quad and QuadStrip, while similar in nature, have a different order.
+The graphics being <a class=gdoc-markdown__link href=#drawmode_quad>DrawMode_Quad</a> and <a class=gdoc-markdown__link href=#drawmode_quadstrip>DrawMode_QuadStrip</a> respectively.</p><div class=img-comparison>
+<img src=../../../../actors/actormultivertex/drawmodes/DrawMode_Quad.svg alt=DrawMode_Quad width=300>
+<img src=../../../../actors/actormultivertex/drawmodes/DrawMode_QuadStrip.svg alt=DrawMode_QuadStrip width=300>
+</div></div></blockquote><div class=gdoc-page__anchorwrap>
 <h3 id=drawmode_fan>
 DrawMode_Fan
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#drawmode_fan class="gdoc-page__anchor clip flex align-center" title="Anchor to: DrawMode_Fan" aria-label="Anchor to: DrawMode_Fan" href=#drawmode_fan><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
@@ -1751,22 +1741,12 @@ DrawMode_Triangles
 DrawMode_LineStrip / DrawMode_LineStripM / DrawMode_Points
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#drawmode_linestrip--drawmode_linestripm--drawmode_points class="gdoc-page__anchor clip flex align-center" title="Anchor to: DrawMode_LineStrip / DrawMode_LineStripM / DrawMode_Points" aria-label="Anchor to: DrawMode_LineStrip / DrawMode_LineStripM / DrawMode_Points" href=#drawmode_linestrip--drawmode_linestripm--drawmode_points><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h3></div><blockquote class="gdoc-hint note">
-<div class="gdoc-hint__title flex align-center"><i class="fa note" title=Note></i></div><div class=gdoc-hint__text><div class=gdoc-expand>
-<label class="gdoc-expand__head flex justify-between" for=a2068113-0>
-<span>Take a moment to notice that LineStrip and Points, while similar in nature, have a different layout.</span>
-<span>↕</span>
-</label>
-<input id=a2068113-0 type=checkbox class="gdoc-expand__control hidden">
-<div class="gdoc-markdown--nested gdoc-expand__content">
-<p>The graphics being <a class=gdoc-markdown__link href=#drawmode_linestrip>DrawMode_LineStrip</a> and <a class=gdoc-markdown__link href=#drawmode_points>DrawMode_Points</a> respectively.</p><div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
-<pre><code><div class="gdoc-columns__content gdoc-markdown--nested flex-even">
-  <img </code></pre><p>src="../../../../actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg"
-alt=“DrawMode_LineStrip”</p><p>/>
-</div></p><pre><code><div class="gdoc-columns__content gdoc-markdown--nested flex-even">
-  <img </code></pre><p>src="../../../../actors/actormultivertex/drawmodes/DrawMode_Points.svg"
-alt=“DrawMode_Points”</p><p>/>
-</div></p></div></div></div></div></blockquote><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=p>{</span>
+</h3></div><blockquote class="gdoc-hint important">
+<div class="gdoc-hint__title flex align-center"><i class="fa important" title=Important></i></div><div class=gdoc-hint__text><p>Take a moment to notice that LineStrip and Points, while similar in nature, have a different layout.
+The graphics being <a class=gdoc-markdown__link href=#drawmode_linestrip>DrawMode_LineStrip</a> and <a class=gdoc-markdown__link href=#drawmode_points>DrawMode_Points</a> respectively.</p><div class=img-comparison>
+<img src=../../../../actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg alt=DrawMode_LineStrip width=300>
+<img src=../../../../actors/actormultivertex/drawmodes/DrawMode_Points.svg alt=DrawMode_Points width=300>
+</div></div></blockquote><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=o>-</span><span class=mi>40</span><span class=p>,</span> <span class=o>-</span><span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Red</span><span class=p>},</span>
 </span></span><span class=line><span class=cl>	<span class=c1>--</span>
 </span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=o>-</span><span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Blue</span><span class=p>},</span>

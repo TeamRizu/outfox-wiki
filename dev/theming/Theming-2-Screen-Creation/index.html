@@ -1563,8 +1563,8 @@ Creation of screen definitions
 </span></span><span class=line><span class=cl><span class=c1># For this example, we&#39;ll use ScreenWithMenuElements.</span>
 </span></span><span class=line><span class=cl><span class=na>Fallback</span><span class=o>=</span><span class=s>&#34;ScreenWithMenuElements&#34;</span>
 </span></span></code></pre></div><p>As you notice, we&rsquo;re using the <code>Fallback</code> item. This is to have an existing screen as a fail-safe which makes the engine call existing elements that this new screen does not have at the moment, such as its screen overlays, sounds, graphics, etc. By using this, it also fetches its class.
-<blockquote class="gdoc-hint note">
-<div class="gdoc-hint__title flex align-center"><i class="fa note" title=Note></i></div><div class=gdoc-hint__text>Every single screen created <strong>must</strong> contain some kind of class, otherwise the engine will not know how to respond to it and crash or send out an error. If you are unsure which class to use, you can rely on <strong>ScreenWithMenuElements</strong>, as it is the most basic screen class type, and the skeleton for every other class.</div></blockquote></p><div class=gdoc-page__anchorwrap>
+<blockquote class="gdoc-hint warning">
+<div class="gdoc-hint__title flex align-center"><i class="fa warning" title=Warning></i></div><div class=gdoc-hint__text>Every single screen created <strong>must</strong> contain some kind of class, otherwise the engine will not know how to respond to it and crash or send out an error. If you are unsure which class to use, you can rely on <strong>ScreenWithMenuElements</strong>, as it is the most basic screen class type, and the skeleton for every other class.</div></blockquote></p><div class=gdoc-page__anchorwrap>
 <h2 id=acessing-the-screen>
 Acessing the screen
 <a data-clipboard-text=https://outfox.wiki/dev/theming/Theming-2-Screen-Creation/#acessing-the-screen class="gdoc-page__anchor clip flex align-center" title="Anchor to: Acessing the screen" aria-label="Anchor to: Acessing the screen" href=#acessing-the-screen><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
