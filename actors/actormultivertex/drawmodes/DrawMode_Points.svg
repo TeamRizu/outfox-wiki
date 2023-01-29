@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 257 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-549,-3)">
+        <g transform="matrix(1,0,0,1,549.044,3.08976)">
+            <rect id="DrawMode_Points" x="0" y="0" width="256" height="256" style="fill:none;"/>
+            <g id="DrawMode_Points1" serif:id="DrawMode_Points">
+                <g transform="matrix(1,0,0,1,-4.2102,52.6549)">
+                    <circle cx="47.862" cy="48.631" r="11.931" style="fill:rgb(107,198,209);"/>
+                    <g transform="matrix(0.640139,0,0,0.707426,12.9436,20.6364)">
+                        <g transform="matrix(24,0,0,24,61.9876,47.9486)">
+                        </g>
+                        <text x="47.588px" y="47.949px" style="font-family:'IBMPlexSans-MediumItalic', 'IBM Plex Sans', sans-serif;font-weight:500;font-style:italic;font-size:24px;fill:white;">1</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,45.1538,-20.8628)">
+                    <g transform="matrix(1,0,0,1,0,168.153)">
+                        <circle cx="47.862" cy="48.631" r="11.931" style="fill:rgb(107,198,209);"/>
+                    </g>
+                    <g transform="matrix(0.640139,0,0,0.707426,12.9436,188.789)">
+                        <g transform="matrix(24,0,0,24,61.9876,47.9486)">
+                        </g>
+                        <text x="47.588px" y="47.949px" style="font-family:'IBMPlexSans-MediumItalic', 'IBM Plex Sans', sans-serif;font-weight:500;font-style:italic;font-size:24px;fill:white;">2</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-50.3815,-152.642)">
+                    <g transform="matrix(1,0,0,1,167.831,168.153)">
+                        <circle cx="47.862" cy="48.631" r="11.931" style="fill:rgb(107,198,209);"/>
+                    </g>
+                    <g transform="matrix(0.640139,0,0,0.707426,180.744,188.789)">
+                        <g transform="matrix(24,0,0,24,61.9876,47.9486)">
+                        </g>
+                        <text x="47.588px" y="47.949px" style="font-family:'IBMPlexSans-MediumItalic', 'IBM Plex Sans', sans-serif;font-weight:500;font-style:italic;font-size:24px;fill:white;">3</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-21.0909,114.568)">
+                    <g transform="matrix(1,0,0,1,167.831,-2.84217e-14)">
+                        <circle cx="47.862" cy="48.631" r="11.931" style="fill:rgb(107,198,209);"/>
+                    </g>
+                    <g transform="matrix(0.640139,0,0,0.707426,180.775,20.6364)">
+                        <g transform="matrix(24,0,0,24,61.9876,47.9486)">
+                        </g>
+                        <text x="47.588px" y="47.949px" style="font-family:'IBMPlexSans-MediumItalic', 'IBM Plex Sans', sans-serif;font-weight:500;font-style:italic;font-size:24px;fill:white;">4</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=description content="ActorFrames can hold other actors. The Def. format is set up like any other lua table, allowing for creating actors in batches. Because of this, there are multiple ways to build an ActorFrame.
-Def.ActorFrame{ -- This sprite is now included inside of the ActorFrame. -- Any changes from the ActorFrame will affect the sprite, such as position, rotation, -- zoom and such. Def.Sprite{} } Inline building Concatenation Inline building Actors can be explicitly placed into an ActorFrame like this:">
+Def.ActorFrame{ -- This sprite is now included inside of the ActorFrame. -- Any changes from the ActorFrame will affect the sprite, such as position, rotation, -- zoom and such. Def.Sprite{} } Inline building Concatenation Method 1 (indexing) Method 2 (lua concatenation) Inline building Actors can be explicitly placed into an ActorFrame like this:">
 <title>ActorFrame | Project OutFox Wiki</title><link rel=icon href=../../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -351,6 +351,18 @@ Editor
 <ul class=gdoc-nav__list>
 <li>
 <span class=flex>
+<a href=../../../../dev/editor/2-Adding-Notes/ class=gdoc-nav__entry>
+Adding/Manipulating notes
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/editor/1-Defining-Timing-Data/ class=gdoc-nav__entry>
+Defining Timing Data
+</a>
+</span>
+</li><li>
+<span class=flex>
 <a href=../../../../dev/editor/0-Editor-Preferences/ class=gdoc-nav__entry>
 Editor Preferences
 </a>
@@ -432,6 +444,12 @@ Managing Frames
 </a>
 </span>
 </li></ul></li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/actorframetexture/ class=gdoc-nav__entry>
+ActorFrameTexture
+</a>
+</span>
+</li><li>
 <input type=checkbox id=navtree-6adb90e6 class=gdoc-nav__toggle>
 <label for=navtree-6adb90e6 class="flex justify-between">
 <span class=flex>
@@ -457,6 +475,120 @@ Inline-Text manipulation
 <span class=flex>
 <a href=../../../../dev/actors/actortypes/bitmaptext/Bitmap-Segments/ class=gdoc-nav__entry>
 Segments of a BitmapText
+</a>
+</span>
+</li></ul></li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/devicelist/ class=gdoc-nav__entry>
+DeviceList
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/helpdisplay/ class=gdoc-nav__entry>
+HelpDisplay
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/inputlist/ class=gdoc-nav__entry>
+InputList
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/memorycarddisplay/ class=gdoc-nav__entry>
+MemoryCardDisplay
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/meterdisplay/ class=gdoc-nav__entry>
+MeterDisplay
+</a>
+</span>
+</li><li>
+<input type=checkbox id=navtree-82a1f232 class=gdoc-nav__toggle>
+<label for=navtree-82a1f232 class="flex justify-between">
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/model/ class=gdoc-nav__entry>
+Model
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/model/Model-LoadingMoreBones/ class=gdoc-nav__entry>
+Loading Additional Bones
+</a>
+</span>
+</li></ul></li><li>
+<input type=checkbox id=navtree-750d7a3d class=gdoc-nav__toggle>
+<label for=navtree-750d7a3d class="flex justify-between">
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/notefield/ class=gdoc-nav__entry>
+NoteField
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/notefield/DefNoteField-RunningModifiers/ class=gdoc-nav__entry>
+Doing Mods with Def.NoteField
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/notefield/NoteField-HiddenRegions+NoteTypeMult/ class=gdoc-nav__entry>
+Hidden Regions & NoteType Multipliers
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/notefield/NoteField-PlayerManipulation/ class=gdoc-nav__entry>
+How a Player Manipulates its' NoteField
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/notefield/NoteField-InputManipulation/ class=gdoc-nav__entry>
+Input Manipulation
+</a>
+</span>
+</li></ul></li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/percentagedisplay/ class=gdoc-nav__entry>
+PercentageDisplay
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/quad/ class=gdoc-nav__entry>
+Quad
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/songmeterdisplay/ class=gdoc-nav__entry>
+SongMeterDisplay
+</a>
+</span>
+</li><li>
+<input type=checkbox id=navtree-fc882ffb class=gdoc-nav__toggle>
+<label for=navtree-fc882ffb class="flex justify-between">
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/sound/ class=gdoc-nav__entry>
+Sound
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/sound/Sound-ControllingSound/ class=gdoc-nav__entry>
+Controlling Sound
 </a>
 </span>
 </li></ul></li></ul></li><li>
@@ -637,6 +769,12 @@ Creating a custom screen
 <span class=flex>
 <a href=../../../../dev/theming/Theming-3-Anatomy-Screen/ class=gdoc-nav__entry>
 Anatomy of a screen
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/theming/tips/ class=gdoc-nav__entry>
+Theming tips and tricks
 </a>
 </span>
 </li><li>
@@ -950,7 +1088,9 @@ hidden-mobile" itemprop=breadcrumb>
 </span></span><span class=line><span class=cl>    <span class=n>Def.Sprite</span><span class=p>{}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><div class="gdoc-toc gdoc-toc__level--5"><nav id=TableOfContents><ul>
-<li><a href=#inline-building>Inline building</a></li><li><a href=#concatenation>Concatenation</a></li></ul></nav><hr></div><div class=gdoc-page__anchorwrap>
+<li><a href=#inline-building>Inline building</a></li><li><a href=#concatenation>Concatenation</a>
+<ul>
+<li><a href=#method-1-indexing>Method 1 (indexing)</a></li><li><a href=#method-2-lua-concatenation>Method 2 (lua concatenation)</a></li></ul></li></ul></nav><hr></div><div class=gdoc-page__anchorwrap>
 <h2 id=inline-building>
 Inline building
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actorframe/#inline-building class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Inline building" href=#inline-building><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
@@ -968,7 +1108,12 @@ Inline building
 Concatenation
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actorframe/#concatenation class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Concatenation" href=#concatenation><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Because lua tables can be concatenated (added) to each other, so can ActorFrames.</p><p>This can allow for programatically creating Actors in batches as needed.</p><p>However, if one does not plan on creating actors programmaticly, then a simple <code>return Def.ActorFrame{...</code> is all that&rsquo;s needed. Storing it into a local variable that gets returned will waste resources.</p><p>There are two ways to add onto an actorframe.</p><p>Method 1 (indexing):</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=kd>local</span> <span class=n>t</span> <span class=o>=</span> <span class=n>Def.ActorFrame</span><span class=p>{</span>
+</h2></div><p>Because lua tables can be concatenated (added) to each other, so can ActorFrames.</p><p>This can allow for programatically creating <a class=gdoc-markdown__link href=../actor/>Actors</a> in batches as needed.</p><p>However, if one does not plan on creating <a class=gdoc-markdown__link href=../actor/>Actors</a> programmaticly, then a simple <code>return Def.ActorFrame{...</code> is all that&rsquo;s needed. Storing it into a local variable that gets returned will waste resources.</p><p>There are two ways to add onto an ActorFrame.</p><div class=gdoc-page__anchorwrap>
+<h3 id=method-1-indexing>
+Method 1 (indexing)
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actorframe/#method-1-indexing class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Method 1 (indexing)" href=#method-1-indexing><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=kd>local</span> <span class=n>t</span> <span class=o>=</span> <span class=n>Def.ActorFrame</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>	<span class=n>Def.Sprite</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=c1>--commands &amp; stuff</span>
 </span></span><span class=line><span class=cl>	<span class=p>},</span>
@@ -981,7 +1126,12 @@ Concatenation
 </span></span><span class=line><span class=cl>	<span class=c1>--It&#39;s the third actor</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=kr>return</span> <span class=n>t</span>
-</span></span></code></pre></div><p>Method 2 (lua concatenation):</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=kr>return</span> <span class=n>Def.ActorFrame</span><span class=p>{</span>
+</span></span></code></pre></div><div class=gdoc-page__anchorwrap>
+<h3 id=method-2-lua-concatenation>
+Method 2 (lua concatenation)
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actorframe/#method-2-lua-concatenation class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Method 2 (lua concatenation)" href=#method-2-lua-concatenation><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=kr>return</span> <span class=n>Def.ActorFrame</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>	<span class=n>Def.Sprite</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=c1>--commands &amp; stuff</span>
 </span></span><span class=line><span class=cl>	<span class=p>},</span>

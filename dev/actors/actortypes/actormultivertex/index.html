@@ -3,8 +3,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=description content="Allows for arbitrary polygons to be created. Every vertex has a position on the xyz plane, a color formatted like diffuse values, and a uv coordinate for textures. In NotITG, this is known as &ldquo;Polygon&rdquo;, and the functions available are different, even though it achieves the same thing.
-return Def.ActorMultiVertex{ OnCommand=function(self) -- First, setup the kind of DrawMode is going to be performed. There are several kinds available. -- In this example, we'll use Lines, to use a two point example.">
+<meta name=description content="Setting a Draw State List of DrawModes Usage Examples DrawMode_Quad DrawMode_QuadStrip / DrawMode_Strip DrawMode_Fan DrawMode_Triangles DrawMode_LineStrip / DrawMode_LineStripM / DrawMode_Points DrawMode_Lines Allows for arbitrary polygons to be created. Every vertex has a position on the xyz plane, a color formatted like diffuse values, and a uv coordinate for textures. In NotITG, this is known as &ldquo;Polygon&rdquo;, and the functions available are different, even though it achieves the same thing.">
 <title>ActorMultiVertex | Project OutFox Wiki</title><link rel=icon href=../../../../favicon/favicon-32x32.png type=image/x-icon>
 <script src=../../../../js/darkmode-ce906ea916.min.js></script>
 <link rel=preload as=font href=../../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -351,6 +350,18 @@ Editor
 <ul class=gdoc-nav__list>
 <li>
 <span class=flex>
+<a href=../../../../dev/editor/2-Adding-Notes/ class=gdoc-nav__entry>
+Adding/Manipulating notes
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/editor/1-Defining-Timing-Data/ class=gdoc-nav__entry>
+Defining Timing Data
+</a>
+</span>
+</li><li>
+<span class=flex>
 <a href=../../../../dev/editor/0-Editor-Preferences/ class=gdoc-nav__entry>
 Editor Preferences
 </a>
@@ -432,6 +443,12 @@ Managing Frames
 </a>
 </span>
 </li></ul></li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/actorframetexture/ class=gdoc-nav__entry>
+ActorFrameTexture
+</a>
+</span>
+</li><li>
 <input type=checkbox id=navtree-6adb90e6 class=gdoc-nav__toggle>
 <label for=navtree-6adb90e6 class="flex justify-between">
 <span class=flex>
@@ -457,6 +474,120 @@ Inline-Text manipulation
 <span class=flex>
 <a href=../../../../dev/actors/actortypes/bitmaptext/Bitmap-Segments/ class=gdoc-nav__entry>
 Segments of a BitmapText
+</a>
+</span>
+</li></ul></li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/devicelist/ class=gdoc-nav__entry>
+DeviceList
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/helpdisplay/ class=gdoc-nav__entry>
+HelpDisplay
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/inputlist/ class=gdoc-nav__entry>
+InputList
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/memorycarddisplay/ class=gdoc-nav__entry>
+MemoryCardDisplay
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/meterdisplay/ class=gdoc-nav__entry>
+MeterDisplay
+</a>
+</span>
+</li><li>
+<input type=checkbox id=navtree-82a1f232 class=gdoc-nav__toggle>
+<label for=navtree-82a1f232 class="flex justify-between">
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/model/ class=gdoc-nav__entry>
+Model
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/model/Model-LoadingMoreBones/ class=gdoc-nav__entry>
+Loading Additional Bones
+</a>
+</span>
+</li></ul></li><li>
+<input type=checkbox id=navtree-750d7a3d class=gdoc-nav__toggle>
+<label for=navtree-750d7a3d class="flex justify-between">
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/notefield/ class=gdoc-nav__entry>
+NoteField
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/notefield/DefNoteField-RunningModifiers/ class=gdoc-nav__entry>
+Doing Mods with Def.NoteField
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/notefield/NoteField-HiddenRegions+NoteTypeMult/ class=gdoc-nav__entry>
+Hidden Regions & NoteType Multipliers
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/notefield/NoteField-PlayerManipulation/ class=gdoc-nav__entry>
+How a Player Manipulates its' NoteField
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/notefield/NoteField-InputManipulation/ class=gdoc-nav__entry>
+Input Manipulation
+</a>
+</span>
+</li></ul></li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/percentagedisplay/ class=gdoc-nav__entry>
+PercentageDisplay
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/quad/ class=gdoc-nav__entry>
+Quad
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/songmeterdisplay/ class=gdoc-nav__entry>
+SongMeterDisplay
+</a>
+</span>
+</li><li>
+<input type=checkbox id=navtree-fc882ffb class=gdoc-nav__toggle>
+<label for=navtree-fc882ffb class="flex justify-between">
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/sound/ class=gdoc-nav__entry>
+Sound
+</a>
+</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/sound/Sound-ControllingSound/ class=gdoc-nav__entry>
+Controlling Sound
 </a>
 </span>
 </li></ul></li></ul></li><li>
@@ -637,6 +768,12 @@ Creating a custom screen
 <span class=flex>
 <a href=../../../../dev/theming/Theming-3-Anatomy-Screen/ class=gdoc-nav__entry>
 Anatomy of a screen
+</a>
+</span>
+</li><li>
+<span class=flex>
+<a href=../../../../dev/theming/tips/ class=gdoc-nav__entry>
+Theming tips and tricks
 </a>
 </span>
 </li><li>
@@ -943,11 +1080,14 @@ hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
 <li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/ href=../../../../dev/actors/><span itemprop=name>Lua and Actors</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/actortypes/ href=../../../../dev/actors/actortypes/><span itemprop=name>Actor Types</span></a><meta itemprop=position content="4"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>ActorMultiVertex</span><meta itemprop=position content="5"></li></ol></div></div><article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>ActorMultiVertex</h1><p>Allows for arbitrary polygons to be created. Every vertex has a position on the xyz plane, a color formatted like diffuse values, and a uv coordinate for textures. In NotITG, this is known as &ldquo;Polygon&rdquo;, and the functions available are different, even though it achieves the same thing.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=kr>return</span> <span class=n>Def.ActorMultiVertex</span><span class=p>{</span>
+<h1>ActorMultiVertex</h1><div class="gdoc-toc gdoc-toc__level--5"><nav id=TableOfContents><ul>
+<li><a href=#setting-a-draw-state>Setting a Draw State</a></li><li><a href=#list-of-drawmodes>List of DrawModes</a></li><li><a href=#usage-examples>Usage Examples</a>
+<ul>
+<li><a href=#drawmode_quad>DrawMode_Quad</a></li><li><a href=#drawmode_quadstrip--drawmode_strip>DrawMode_QuadStrip / DrawMode_Strip</a></li><li><a href=#drawmode_fan>DrawMode_Fan</a></li><li><a href=#drawmode_triangles>DrawMode_Triangles</a></li><li><a href=#drawmode_linestrip--drawmode_linestripm--drawmode_points>DrawMode_LineStrip / DrawMode_LineStripM / DrawMode_Points</a></li><li><a href=#drawmode_lines>DrawMode_Lines</a></li></ul></li></ul></nav><hr></div><p>Allows for arbitrary polygons to be created. Every vertex has a position on the xyz plane, a color formatted like diffuse values, and a uv coordinate for textures. In NotITG, this is known as &ldquo;Polygon&rdquo;, and the functions available are different, even though it achieves the same thing.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=kr>return</span> <span class=n>Def.ActorMultiVertex</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>	<span class=n>OnCommand</span><span class=o>=</span><span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>		<span class=c1>-- First, setup the kind of DrawMode is going to be performed. There are several kinds available.</span>
 </span></span><span class=line><span class=cl>		<span class=c1>-- In this example, we&#39;ll use Lines, to use a two point example.</span>
-</span></span><span class=line><span class=cl>		<span class=n>self</span><span class=p>:</span><span class=n>SetDrawState</span><span class=p>{</span> <span class=n>Mode</span><span class=o>=</span><span class=s2>&#34;DrawMode_Lines&#34;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>		<span class=n>self</span><span class=p>:</span><span class=n>SetDrawState</span><span class=p>{</span> <span class=n>Mode</span><span class=o>=</span><span class=s2>&#34;Lines&#34;</span> <span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>		<span class=c1>-- Time to generate the vertices that will become the vertex map.</span>
 </span></span><span class=line><span class=cl>		<span class=kd>local</span> <span class=n>vertices</span> <span class=o>=</span> <span class=p>{</span>
@@ -968,7 +1108,7 @@ hidden-mobile" itemprop=breadcrumb>
 </span></span><span class=line><span class=cl>	<span class=kr>end</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p>Vertices from the ActorMultiVertex can also be tweened to create animations. This must be done by modifying an existing vertice already assigned on the table,
-otherwise, it won&rsquo;t be recognized and will just snap into the new position assigned.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=c1>-- Let&#39;s say this is your original vertex data, using DrawMode_Lines.</span>
+otherwise, it won&rsquo;t be recognized and will just snap into the new position assigned.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=c1>-- Let&#39;s say this is your original vertex data, using Lines.</span>
 </span></span><span class=line><span class=cl><span class=c1>-- This creates a line going from the topleft to bottom right by 15 pixels.</span>
 </span></span><span class=line><span class=cl><span class=kd>local</span> <span class=n>verts</span> <span class=o>=</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>	<span class=p>{</span> <span class=p>{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.White</span> <span class=p>},</span>
@@ -1001,6 +1141,199 @@ otherwise, it won&rsquo;t be recognized and will just snap into the new position
 </span></span></span><span class=line><span class=cl><span class=cm>]]</span>
 </span></span><span class=line><span class=cl><span class=c1>-- With this value now modified, generate the new set of vertices.</span>
 </span></span><span class=line><span class=cl><span class=n>self</span><span class=p>:</span><span class=n>SetVertices</span><span class=p>(</span><span class=n>verts</span><span class=p>)</span>
+</span></span></code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=setting-a-draw-state>
+Setting a Draw State
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#setting-a-draw-state class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Setting a Draw State" href=#setting-a-draw-state><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>The <code>SetDrawState</code> function requires a table with parameters to determine the current state of the polygon being drawn. The following is the list of parameters. All of them are optional, but some of them are needed when initializing to draw a polygon on screen.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=c1>-- Notice the curly braces here. That&#39;s because this function expects a table, rather than typical variables.</span>
+</span></span><span class=line><span class=cl><span class=n>self</span><span class=p>:</span><span class=n>SetDrawState</span><span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=n>Mode</span><span class=o>=</span><span class=s2>&#34;DrawMode_Quad&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=n>First</span><span class=o>=</span><span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=n>Num</span><span class=o>=-</span><span class=mi>1</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>-- It can also be inserted this way.</span>
+</span></span><span class=line><span class=cl><span class=n>self</span><span class=p>:</span><span class=n>SetDrawState</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>	<span class=n>Mode</span><span class=o>=</span><span class=s2>&#34;DrawMode_Quad&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=n>First</span><span class=o>=</span><span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=n>Num</span><span class=o>=-</span><span class=mi>1</span>
+</span></span><span class=line><span class=cl><span class=p>})</span>
+</span></span></code></pre></div><blockquote class="gdoc-hint info">
+For more information about how Lua handles functions, check out the <a class=gdoc-markdown__link href=https://www.lua.org/pil/5.html>Functions</a> page.
+</blockquote><div class=table-wrap> <table>
+<thead>
+<tr>
+<th style=text-align:center>Name</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td style=text-align:center>Mode</td><td>Fetches the draw mode if provided, check <a class=gdoc-markdown__link href=#list-of-drawmodes>List of DrawModes</a> for a list of draw modes.</td></tr><tr>
+<td style=text-align:center>First</td><td>Which point will be the first to draw?</td></tr><tr>
+<td style=text-align:center>Num</td><td>How many polygons after <code>First</code> will be drawn? If set to -1 (default), it will be the rest of available polygons set.</td></tr></tbody></table></div><blockquote class="gdoc-hint warning">
+The <code>First</code> argument is 1-indexed, while the <code>Num</code> argument is not.
+</blockquote><div class=gdoc-page__anchorwrap>
+<h2 id=list-of-drawmodes>
+List of DrawModes
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#list-of-drawmodes class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor List of DrawModes" href=#list-of-drawmodes><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>With an ActorMultiVertex, there are multiple kinds of Draw Modes that can be used to draw polygons on the screen. The following is a list of the modes currently available on OutFox (as of Alpha 4.18.1):
+These are assigned using the <code>SetDrawMode</code> command or via <code>SetDrawState</code>.</p><p>For written examples, please check <a class=gdoc-markdown__link href=#usage-examples>Usage Examples</a>.</p><div class=table-wrap> <table>
+<thead>
+<tr>
+<th style=text-align:center>Name</th><th style=text-align:center>Description</th><th style=text-align:left>Image</th></tr></thead><tbody>
+<tr>
+<td style=text-align:center>Quads</td><td style=text-align:center>Draws a 4 point polygonal shape that is separated from any adjacent or subsequent point.</td><td style=text-align:left><img src=../../../../actors/actormultivertex/drawmodes/DrawMode_Quad.svg alt></td></tr><tr>
+<td style=text-align:center>QuadStrip</td><td style=text-align:center>Draws a 4 point polygonal shape that connects to the next adjacent point at the end.</td><td style=text-align:left><img src=../../../../actors/actormultivertex/drawmodes/DrawMode_QuadStrip.svg alt></td></tr><tr>
+<td style=text-align:center>Fan</td><td style=text-align:center>Constructs an 8 polygonal shape that can be used to resemble a fan.</td><td style=text-align:left><img src=../../../../actors/actormultivertex/drawmodes/DrawMode_Fan.svg alt></td></tr><tr>
+<td style=text-align:center>Strip</td><td style=text-align:center>Suspiciously similar to DrawMode_QuadStrip.</td><td style=text-align:left><img src=../../../../actors/actormultivertex/drawmodes/DrawMode_QuadStrip.svg alt></td></tr><tr>
+<td style=text-align:center>Triangles</td><td style=text-align:center>Draws a 3 point polygonal shape that is separated from any adjacent or subsequent point.</td><td style=text-align:left><img src=../../../../actors/actormultivertex/drawmodes/DrawMode_Triangle.svg alt></td></tr><tr>
+<td style=text-align:center>LineStrip</td><td style=text-align:center>Draws a continous line based on the points given to the Polygon. Width of the line is scaled by the theme&rsquo;s internal height, plus the manual value assigned.</td><td style=text-align:left><img src=../../../../actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg alt></td></tr><tr>
+<td style=text-align:center>SymmetricQuadStrip</td><td style=text-align:center>todo</td><td style=text-align:left>todo</td></tr></tbody></table></div><p>The following are introduced for OutFox.</p><div class=table-wrap> <table>
+<thead>
+<tr>
+<th style=text-align:center>Name</th><th style=text-align:center>Description</th><th style=text-align:left>Image</th></tr></thead><tbody>
+<tr>
+<td style=text-align:center>LineStripM</td><td style=text-align:center>Modern implementation of LineStrip. Outputs the work to the GPU to perform operations. Line width limits here are defined by the GPU.</td><td style=text-align:left><img src=../../../../actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg alt></td></tr><tr>
+<td style=text-align:center>PolyLineStrip</td><td style=text-align:center>todo</td><td style=text-align:left>todo</td></tr><tr>
+<td style=text-align:center>Points</td><td style=text-align:center>1 vertex shapes, which are rendered by the GPU. Size can be defined using <code>SetPointSize</code>, and depends on the GPU.</td><td style=text-align:left><img src=../../../../actors/actormultivertex/drawmodes/DrawMode_Points.svg alt></td></tr><tr>
+<td style=text-align:center>Lines</td><td style=text-align:center>A 2 point line that is separated on each group.</td><td style=text-align:left><img src=../../../../actors/actormultivertex/drawmodes/DrawMode_Line.svg alt></td></tr></tbody></table></div><div class=gdoc-page__anchorwrap>
+<h2 id=usage-examples>
+Usage Examples
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#usage-examples class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Usage Examples" href=#usage-examples><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><p>The examples here provide how to insert points for the polygon related to each Draw Mode.</p><div class=gdoc-page__anchorwrap>
+<h3 id=drawmode_quad>
+DrawMode_Quad
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#drawmode_quad class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrawMode_Quad" href=#drawmode_quad><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Red</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Blue</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>20</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Green</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Yellow</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Orange</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>40</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Purple</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>60</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Black</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>60</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.White</span><span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><div class=gdoc-page__anchorwrap>
+<h3 id=drawmode_quadstrip--drawmode_strip>
+DrawMode_QuadStrip / DrawMode_Strip
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#drawmode_quadstrip--drawmode_strip class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrawMode_QuadStrip / DrawMode_Strip" href=#drawmode_quadstrip--drawmode_strip><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Red</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Blue</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Green</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>20</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Yellow</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Orange</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>40</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Purple</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>60</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Black</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>60</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.White</span><span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><blockquote class="gdoc-hint warning">
+<div class=gdoc-expand>
+<label class="gdoc-expand__head flex justify-between" for=21448c02-0>
+<span>Take a moment to notice that Quad and QuadStrip, while similar in nature, have a different order.</span>
+<span>↕</span>
+</label>
+<input id=21448c02-0 type=checkbox class="gdoc-expand__control hidden">
+<div class="gdoc-markdown--nested gdoc-expand__content">
+<p>The graphics being <a class=gdoc-markdown__link href=#drawmode_quad>DrawMode_Quad</a> and <a class=gdoc-markdown__link href=#drawmode_quadstrip>DrawMode_QuadStrip</a> respectively.</p><div class="gdoc-columns flex flex-wrap">
+<div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+<img src=../../../../actors/actormultivertex/drawmodes/DrawMode_Quad.svg alt=DrawMode_Quad>
+</div><div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+<img src=../../../../actors/actormultivertex/drawmodes/DrawMode_QuadStrip.svg alt=DrawMode_QuadStrip>
+</div></div></div></div></blockquote><div class=gdoc-page__anchorwrap>
+<h3 id=drawmode_fan>
+DrawMode_Fan
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#drawmode_fan class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrawMode_Fan" href=#drawmode_fan><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Red</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=o>-</span><span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Blue</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>20</span><span class=p>,</span> <span class=o>-</span><span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Green</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Yellow</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>20</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Orange</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Purple</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=o>-</span><span class=mi>20</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Black</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=o>-</span><span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.White</span><span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><div class=gdoc-page__anchorwrap>
+<h3 id=drawmode_triangles>
+DrawMode_Triangles
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#drawmode_triangles class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrawMode_Triangles" href=#drawmode_triangles><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Red</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>10</span><span class=p>,</span> <span class=o>-</span><span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Blue</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Green</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>30</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Yellow</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>40</span><span class=p>,</span> <span class=o>-</span><span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Orange</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>50</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Purple</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>60</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Black</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>70</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.White</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>80</span><span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Orange</span><span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><div class=gdoc-page__anchorwrap>
+<h3 id=drawmode_linestrip--drawmode_linestripm--drawmode_points>
+DrawMode_LineStrip / DrawMode_LineStripM / DrawMode_Points
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#drawmode_linestrip--drawmode_linestripm--drawmode_points class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrawMode_LineStrip / DrawMode_LineStripM / DrawMode_Points" href=#drawmode_linestrip--drawmode_linestripm--drawmode_points><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><blockquote class="gdoc-hint warning">
+<div class=gdoc-expand>
+<label class="gdoc-expand__head flex justify-between" for=8495eefe-0>
+<span>Take a moment to notice that LineStrip and Points, while similar in nature, have a different layout.</span>
+<span>↕</span>
+</label>
+<input id=8495eefe-0 type=checkbox class="gdoc-expand__control hidden">
+<div class="gdoc-markdown--nested gdoc-expand__content">
+<p>The graphics being <a class=gdoc-markdown__link href=#drawmode_linestrip>DrawMode_LineStrip</a> and <a class=gdoc-markdown__link href=#drawmode_points>DrawMode_Points</a> respectively.</p><div class="gdoc-columns flex flex-wrap">
+<div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+<img src=../../../../actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg alt=DrawMode_LineStrip>
+</div><div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+<img src=../../../../actors/actormultivertex/drawmodes/DrawMode_Points.svg alt=DrawMode_Points>
+</div></div></div></div></blockquote><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=o>-</span><span class=mi>40</span><span class=p>,</span> <span class=o>-</span><span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Red</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=o>-</span><span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Blue</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>40</span><span class=p>,</span> <span class=o>-</span><span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Green</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Yellow</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>40</span><span class=p>,</span> <span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Orange</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Purple</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=o>-</span><span class=mi>40</span><span class=p>,</span> <span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Black</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=o>-</span><span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.White</span><span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><div class=gdoc-page__anchorwrap>
+<h3 id=drawmode_lines>
+DrawMode_Lines
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actormultivertex/#drawmode_lines class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DrawMode_Lines" href=#drawmode_lines><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Red</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>10</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Blue</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>20</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Green</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>30</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Yellow</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>40</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Orange</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>50</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Purple</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>60</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Blue</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>70</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.White</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=c1>--</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>80</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Orange</span><span class=p>},</span>
+</span></span><span class=line><span class=cl>	<span class=p>{{</span><span class=mi>90</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>},</span> <span class=n>Color.Orange</span><span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div></article><div class="gdoc-page__footer flex flex-wrap justify-between">
 </div></div></main><footer class=gdoc-footer>
 <div class="container flex">

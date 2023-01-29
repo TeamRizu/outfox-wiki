@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 257 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-274,0)">
+        <g transform="matrix(1,0,0,1,274.135,0)">
+            <rect id="DrawMode_QuadStrip" x="0" y="0" width="256" height="256" style="fill:none;"/>
+            <g id="DrawMode_QuadStrip1" serif:id="DrawMode_QuadStrip">
+                <g>
+                    <circle cx="47.862" cy="48.631" r="11.931" style="fill:rgb(107,198,209);"/>
+                    <g transform="matrix(0.640139,0,0,0.707426,12.9436,20.6364)">
+                        <g transform="matrix(24,0,0,24,61.9876,47.9486)">
+                        </g>
+                        <text x="47.588px" y="47.949px" style="font-family:'IBMPlexSans-MediumItalic', 'IBM Plex Sans', sans-serif;font-weight:500;font-style:italic;font-size:24px;fill:white;">1</text>
+                    </g>
+                </g>
+                <g>
+                    <g transform="matrix(1,0,0,1,0,168.153)">
+                        <circle cx="47.862" cy="48.631" r="11.931" style="fill:rgb(107,198,209);"/>
+                    </g>
+                    <g transform="matrix(0.640139,0,0,0.707426,12.9436,188.789)">
+                        <g transform="matrix(24,0,0,24,61.9876,47.9486)">
+                        </g>
+                        <text x="47.588px" y="47.949px" style="font-family:'IBMPlexSans-MediumItalic', 'IBM Plex Sans', sans-serif;font-weight:500;font-style:italic;font-size:24px;fill:white;">2</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-61.7253,0)">
+                    <g transform="matrix(1,0,0,1,167.831,168.153)">
+                        <circle cx="47.862" cy="48.631" r="11.931" style="fill:rgb(107,198,209);"/>
+                    </g>
+                    <g id="DrawMode_Quad" transform="matrix(0.640139,0,0,0.707426,180.744,188.789)">
+                        <g transform="matrix(24,0,0,24,61.9876,47.9486)">
+                        </g>
+                        <text x="47.588px" y="47.949px" style="font-family:'IBMPlexSans-MediumItalic', 'IBM Plex Sans', sans-serif;font-weight:500;font-style:italic;font-size:24px;fill:white;">4</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-61.7253,0)">
+                    <g transform="matrix(1,0,0,1,167.831,-2.84217e-14)">
+                        <circle cx="47.862" cy="48.631" r="11.931" style="fill:rgb(107,198,209);"/>
+                    </g>
+                    <g transform="matrix(0.640139,0,0,0.707426,180.775,20.6364)">
+                        <text x="47.588px" y="47.949px" style="font-family:'IBMPlexSans-MediumItalic', 'IBM Plex Sans', sans-serif;font-weight:500;font-style:italic;font-size:24px;fill:white;">3</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,12.3349,-7.10543e-15)">
+                    <g transform="matrix(1,0,0,1,167.831,-2.84217e-14)">
+                        <circle cx="47.862" cy="48.631" r="11.931" style="fill:rgb(107,198,209);"/>
+                    </g>
+                    <g transform="matrix(0.572632,0,0,0.632823,184.44,23.5887)">
+                        <g transform="matrix(24,0,0,24,68.8636,47.9486)">
+                        </g>
+                        <text x="40.712px" y="47.949px" style="font-family:'IBMPlexSans-MediumItalic', 'IBM Plex Sans', sans-serif;font-weight:500;font-style:italic;font-size:24px;fill:white;">n1</text>
+                    </g>
+                </g>
+                <g transform="matrix(0.944853,-1.58801,0.859386,0.511328,-47.0527,288)">
+                    <path d="M68.164,51.207L68.164,45.983L152.841,45.983L152.841,41.131L156.88,48.595L152.841,56.059L152.841,51.207L68.164,51.207Z" style="fill:rgb(107,198,209);"/>
+                </g>
+                <g transform="matrix(9.35904e-17,-1.52845,1,6.12323e-17,105.373,305.883)">
+                    <path d="M73.048,51.207L73.048,56.059L68.164,48.595L73.048,41.131L73.048,45.983L156.88,45.983L156.88,51.207L73.048,51.207Z" style="fill:rgb(107,198,209);"/>
+                </g>
+                <g transform="matrix(-0.576294,1.51323,-0.934524,-0.3559,304.163,-19.7539)">
+                    <path d="M72.774,51.207L72.774,56.059L68.164,48.595L72.774,41.131L72.774,45.983L156.88,45.983L156.88,51.207L72.774,51.207Z" style="fill:rgb(107,198,209);"/>
+                </g>
+                <g transform="matrix(1.09161,0,0,1.55278,-96.8878,-425.455)">
+                    <path d="M206.015,319.478L146.241,319.478L146.241,392.166L206.015,319.478Z" style="fill:rgb(209,106,122);"/>
+                </g>
+                <g transform="matrix(0.761557,0,0,1.55278,50.846,-425.455)">
+                    <path d="M206.015,319.478L146.241,319.478L146.241,392.166L206.015,319.478Z" style="fill:rgb(209,106,122);"/>
+                </g>
+                <g transform="matrix(-1.11465,1.36505e-16,-1.89743e-16,-1.54937,307.044,687.343)">
+                    <path d="M206.015,319.478L146.241,319.478L146.241,392.166L206.015,319.478Z" style="fill:rgb(209,106,122);"/>
+                </g>
+                <g transform="matrix(9.35904e-17,1.52845,-1,6.12323e-17,96.4568,-38.0859)">
+                    <path d="M68.164,51.207L68.164,45.983L151.997,45.983L151.997,41.131L156.88,48.595L151.997,56.059L151.997,51.207L68.164,51.207Z" style="fill:rgb(107,198,209);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
