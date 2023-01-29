@@ -11,162 +11,44 @@ body {
 /* This is way too narrow. */
 .container {
     max-width: 95%;
-}
-
-/* Light mode theming */
+}/* Light mode theming */
 :root,
-:root[color-mode="light"] {
+:root[color-theme="light"] {
   --header-background: #144594;
   --header-font-color: #ffffff;
-
-  --body-background: #ffffff;
-  --body-font-color: #000000;
-
-  --button-background: #3357B5;
-  --button-border-color: #4E74C5;
-
-  --link-color: #C54906;
-  --link-color-visited: #C54906;
-
-  --code-background: #f5f6f8;
-  --code-accent-color: #e3e7eb;
-  --code-accent-color-lite: #eff1f3;
-
+  --button-background: #4C7BF5;
+  --button-border-color: #88A5FF;
   --accent-color: #4E78C5;
   --accent-color-lite: #EBF5FF;
-
-  --control-icons: #9CB3C7;
-
-  --footer-background: #144594;
-  --footer-font-color: #ffffff;
-  --footer-link-color: #ffcc5c;
-  --footer-link-color-visited: #ffcc5c;
-
-  --gdoc-hint-danger-border: #d50000;
-  --gdoc-hint-warning-border: #ffab00;
-  --gdoc-hint-info-border: #0091ea;
-
-  --gdoc-hint-danger-background: #fdf2f2;
-  --gdoc-hint-warning-background: #fdfaf4;
-  --gdoc-hint-info-background: #f3f9fd;
-
-  --gdoc-hint-text-color: var(--body-font-color);
 }
 @media (prefers-color-scheme: light) {
   :root {
     --header-background: #144594;
     --header-font-color: #ffffff;
-
-    --body-background: #ffffff;
-    --body-font-color: #000000;
-
-    --button-background: #3357B5;
-    --button-border-color: #4E74C5;
-
-    --link-color: #C54906;
-    --link-color-visited: #C54906;
-
-    --code-background: #f5f6f8;
-    --code-accent-color: #e3e7eb;
-    --code-accent-color-lite: #eff1f3;
-
+    --button-background: #4C7BF5;
+    --button-border-color: #88A5FF;
     --accent-color: #4E78C5;
     --accent-color-lite: #EBF5FF;
-
-    --control-icons: #b2bac1;
-
-    --footer-background: #144594;
-    --footer-font-color: #ffffff;
-    --footer-link-color: #ffcc5c;
-    --footer-link-color-visited: #ffcc5c;
-
-    --gdoc-hint-danger-border: #d50000;
-    --gdoc-hint-warning-border: #ffab00;
-    --gdoc-hint-info-border: #0091ea;
-
-    --gdoc-hint-danger-background: #fdf2f2;
-    --gdoc-hint-warning-background: #fdfaf4;
-    --gdoc-hint-info-background: #f3f9fd;
-
-    --gdoc-hint-text-color: var(--body-font-color);
   }
 }
 
 /* Dark mode theming */
-:root[color-mode="dark"] {
+:root[color-theme="dark"] {
   --header-background: #002C73;
   --header-font-color: #ffffff;
-
-  --body-background: #0F1621;
-  --body-font-color: #D5D9F5;
-
   --button-background: #4C7BF5;
   --button-border-color: #88A5FF;
-
-  --link-color: #FFD3A5;
-  --link-color-visited: #FFD3A5;
-
-  --code-background: #2f353a;
-  --code-accent-color: #262b2f;
-  --code-accent-color-lite: #2b3035;
-
-  --accent-color: #2b3035;
-  --accent-color-lite: #14315E;
-
-  --control-icons: #b2bac1;
-
-  --footer-background: #002C73;
-  --footer-font-color: #D5D9F5;
-  --footer-link-color: #ffcc5c;
-  --footer-link-color-visited: #ffcc5c;
-
-  --gdoc-hint-danger-border: rgb(156, 20, 16); 
-  --gdoc-hint-warning-border: rgb(174, 127, 34);
-  --gdoc-hint-info-border: rgb(37, 113, 155);
-
-  --gdoc-hint-danger-background: rgb(45, 13, 11);
-  --gdoc-hint-warning-background: rgb(50, 38, 17);
-  --gdoc-hint-info-background: rgb(40, 40, 40);
-
-  --gdoc-hint-text-color: var(--body-font-color);
+  --accent-color: #181a1d;
+  --accent-color-lite: #24282c;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-  --header-background: #002C73;
-  --header-font-color: #ffffff;
-
-  --body-background: #0F1621;
-  --body-font-color: #D5D9F5;
-
-  --button-background: #4C7BF5;
-  --button-border-color: #88A5FF;
-
-  --link-color: #FFD3A5;
-  --link-color-visited: #FFD3A5;
-
-  --code-background: #2f353a;
-  --code-accent-color: #262b2f;
-  --code-accent-color-lite: #2b3035;
-
-  --accent-color: #2b3035;
-  --accent-color-lite: #14315E;
-
-  --control-icons: #b2bac1;
-
-  --footer-background: #002C73;
-  --footer-font-color: #D5D9F5;
-  --footer-link-color: #ffcc5c;
-  --footer-link-color-visited: #ffcc5c;
-
-  --gdoc-hint-danger-border: rgb(156, 20, 16); 
-  --gdoc-hint-warning-border: rgb(174, 127, 34);
-  --gdoc-hint-info-border: rgb(37, 113, 155);
-
-  --gdoc-hint-danger-background: rgb(45, 13, 11);
-  --gdoc-hint-warning-background: rgb(50, 38, 17);
-  --gdoc-hint-info-background: rgb(40, 40, 40);
-
-  --gdoc-hint-text-color: var(--body-font-color);
+    --header-background: #002C73;
+    --header-font-color: #ffffff;
+    --button-background: #4C7BF5;
+    --button-border-color: #88A5FF;
+    --accent-color: #181a1d;
+    --accent-color-lite: #24282c;
   }
 }
 
