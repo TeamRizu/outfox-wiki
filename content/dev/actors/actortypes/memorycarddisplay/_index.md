@@ -4,7 +4,7 @@ weight: 3
 geekdocCollapseSection: true
 ---
 
-Creates an ActorFrame that contains the current status for a Player's MemoryCard.
+Creates an [ActorFrame](../actorframe/) that contains a [Sprite](../sprite/) with the current status for a Player's MemoryCard.
 
 ```lua
 Def.MemoryCardDisplay{

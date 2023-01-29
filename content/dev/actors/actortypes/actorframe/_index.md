@@ -34,14 +34,14 @@ Def.ActorFrame{
 
 Because lua tables can be concatenated (added) to each other, so can ActorFrames.
 
-This can allow for programatically creating Actors in batches as needed.
+This can allow for programatically creating [Actors](../actor/) in batches as needed.
 
-However, if one does not plan on creating actors programmaticly, then a simple `return Def.ActorFrame{...` is all that's needed. Storing it into a local variable that gets returned will waste resources.
+However, if one does not plan on creating [Actors](../actor/) programmaticly, then a simple `return Def.ActorFrame{...` is all that's needed. Storing it into a local variable that gets returned will waste resources.
 
-There are two ways to add onto an actorframe.
+There are two ways to add onto an ActorFrame.
 
 <!-- TODO: There's probably better ways to show this. -->
-Method 1 (indexing):
+### Method 1 (indexing)
 ```lua
 local t = Def.ActorFrame{
 	Def.Sprite{
@@ -58,7 +58,7 @@ t[#t+1] = Def.Actor{
 return t
 ```
 
-Method 2 (lua concatenation):
+### Method 2 (lua concatenation)
 ```lua
 return Def.ActorFrame{
 	Def.Sprite{

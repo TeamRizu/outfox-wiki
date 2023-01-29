@@ -3,13 +3,13 @@ title: Obtaining Childs and ActorFrame Levels
 weight: 1
 ---
 
-When using Actors, you can use `self:GetParent()` and `self:GetChild()` to get elements from other ActorFrames or actors.
+When using [Actors](../), you can use `self:GetParent()` and `self:GetChild()` to get elements from other [ActorFrames](../../actorframe/) or [Actors](../).
 {{< hint warning >}}
-`self:GetChild()` can only be used by ActorFrames.
+`self:GetChild()` can only be used by [ActorFrames](../../actorframe/).
 {{< /hint >}}
 
-You can think of an ActorFrame as a tree of objects.
-This is the original table. And now you've called GetParent on the ActorProxy.
+You can think of an [ActorFrame](../../actorframe/) as a tree of objects.
+This is the original table. And now you've called GetParent on the [ActorProxy](../actorproxy/).
 {{< columns >}}
 ```lua
 Def.ActorFrame{
@@ -31,10 +31,8 @@ graph LR
 {{< /mermaid >}}
 {{< /columns >}}
 {{< columns >}}
-<div class="text-center">
 When calling it, you go back up a level, which in this case,
-it will become ActorFrame.
-</div>
+it will become [ActorFrame](../../actorframe/).
 <--->
 {{< mermaid class="text-center">}}
 graph LR
@@ -45,7 +43,7 @@ graph LR
 {{< /mermaid >}}
 {{< /columns >}}
 
-In this new location, we get the MyText actor, which can be achieved by calling the GetChild command, and can also return back to the ActorProxy, as we're now in a level that can get both actors _(shown in orange)_.
+In this new location, we get the `MyText` actor, which can be achieved by calling the GetChild command, and can also return back to the [ActorProxy](../actorproxy/), as we're now in a level that can get both actors _(shown in orange)_.
 {{< columns >}}
 ```lua
 Def.ActorFrame{
@@ -66,8 +64,8 @@ graph LR
 	style AP fill:#585,color:#fff,stroke-width:4px
 {{< /mermaid >}}
 {{< /columns >}}
-The command uses a String argument, but can also grab from nested tables in case of an ActorFrame not having
-actors with names assigned. On those cases, actors are just indexed on that ActorFrame set.
+The command uses a String argument, but can also grab from nested tables in case of an [ActorFrame](../../actorframe/) not having
+actors with names assigned. On those cases, actors are just indexed on that [ActorFrame](../../actorframe/) set.
 
 {{<columns>}}
 ### Example Without Names

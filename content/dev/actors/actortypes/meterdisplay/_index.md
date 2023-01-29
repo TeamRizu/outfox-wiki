@@ -7,7 +7,7 @@ geekdocCollapseSection: true
 The base for [SongMeterDisplay](../songmeterdisplay/), which uses two [Actors](../../actortypes/) to render the progress of a given value.
 
 {{<hint warning>}}
-Unlike [SongMeterDisplay](../songmeterdisplay/), MeterDisplay by itself doesn't update by itself. In order to perform updates, you have to
+Unlike [SongMeterDisplay](../songmeterdisplay/), MeterDisplay doesn't update by itself. In order to perform updates, you have to
 manually set a new width and position value for **Stream** and **Tip**.
 {{</hint>}}
 

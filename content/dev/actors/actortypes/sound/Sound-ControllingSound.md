@@ -3,11 +3,11 @@ title: Controlling Sound
 weight: 1
 ---
 
-The Def.Sound actor is part of RageSound, another component in the engine that deal with audio, and they both work
+The [Def.Sound](../) actor is part of RageSound, another component in the engine that deals with audio, and they both work
 together to provide playback of said sounds. That said, in order to control specific elements from them, you must
 understand how to access them.
 
-Only using commands directly inside Def.Sound will provide commands related to the sound actor; to use commands
+Only using commands directly inside [Def.Sound](../) will provide commands related to the sound actor; to use commands
 related to its RageSound component, you must `get()` the component.
 
 ```lua
