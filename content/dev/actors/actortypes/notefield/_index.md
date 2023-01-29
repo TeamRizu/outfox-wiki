@@ -38,7 +38,7 @@ In the above example, The resulting NoteField is relatively close to what a Note
 
 Because Player is set to PLAYER_1, it will also grab the Chart that Player 1 selected and read from Player 1's input.
 
-{{<hint danger>}}
+{{<hint type="warning">}}
 Because this NoteField is not drawn by an actual Player actor, Mini won't zoom the NoteField, and perspective modifiers will do nothing. Those will have to be replicated manually. Check [How a Player Manipulates its' NoteField](./NoteField-PlayerManipulation) for more information on how to recreate it.
 {{</hint>}}
 

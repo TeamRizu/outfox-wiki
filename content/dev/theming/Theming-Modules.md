@@ -6,7 +6,7 @@ weight: 5
 Introduced in [OutFox Alpha 4](/releases/A4.0/), Modules are Lua files that provide snippet-like functions, tables, and metatables that can be quickly used and unloaded from memory when done.
 These can be loaded by using the `LoadModule` function. Depending on the return methodology from the module, it can be called in several ways.
 
-{{< hint warning >}}
+{{< hint type="important" >}}
 Given the loading nature of modules, it is not recommended to use LoadModule directly if the function
 that will load it is called too quickly (like calling the module inside of a JudgmentMessageCommand),
 specially with modules that require file loading/saving. For that, it is recommended to cache the value

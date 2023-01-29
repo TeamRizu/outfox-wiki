@@ -5,7 +5,7 @@ weight: 1
 
 The frames in a sprite are composed of an array containing arrays of two values, **Frame** and **Delay**. These describe what frame in a spritesheet the actor should focus on and for how long in seconds.
 
-{{<hint warning>}}
+{{<hint type="important">}}
 Sprites that use a video file do not apply for this guide, as the sprite only recognizes it as a single frame, given it's now using FFMpeg to handle playback of said video. For this, you'll need to obtain the Sprite's RageTexture and use the `position` function, which handles its value in seconds.
 
 ```lua

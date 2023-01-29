@@ -4,7 +4,7 @@ weight: 1
 ---
 
 When using [Actors](../), you can use `self:GetParent()` and `self:GetChild()` to get elements from other [ActorFrames](../../actorframe/) or [Actors](../).
-{{< hint warning >}}
+{{< hint type="important" >}}
 `self:GetChild()` can only be used by [ActorFrames](../../actorframe/).
 {{< /hint >}}
 

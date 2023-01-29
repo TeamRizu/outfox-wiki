@@ -29,7 +29,7 @@ Def.Model{
 
 In the above example, all three attributes used the same filepath; all the necessary data was contained within a single file. It is possible to configure the MilkShape 3D software to output distinct files for meshes, materials, and bones, and set each Def.Model attribute accordingly, but that is outside the scope of this lesson.
 
-{{<hint danger>}}
+{{<hint type="caution">}}
 All three attributes must be provided within Def.Model as paths to resources that can be loaded or the game will crash.
 {{</hint>}}
 

@@ -16,6 +16,6 @@ This actor is used on the Test Input screen to showcase which buttons are being 
 
 Attributes for this actor can be found on [BitmapText](../bitmaptext/).
 
-{{<hint warning>}}
+{{<hint type="important">}}
 Text application to this actor is ignored as the game automatically updates it with the current buttons.
 {{</hint>}}

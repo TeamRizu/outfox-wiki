@@ -17,7 +17,7 @@ Fallback="ScreenWithMenuElements"
 ```
 
 As you notice, we're using the `Fallback` item. This is to have an existing screen as a fail-safe which makes the engine call existing elements that this new screen does not have at the moment, such as its screen overlays, sounds, graphics, etc. By using this, it also fetches its class.
-{{< hint danger >}}
+{{< hint type="warning" >}}
 Every single screen created **must** contain some kind of class, otherwise the engine will not know how to respond to it and crash or send out an error. If you are unsure which class to use, you can rely on **ScreenWithMenuElements**, as it is the most basic screen class type, and the skeleton for every other class.
 {{< /hint >}}
 

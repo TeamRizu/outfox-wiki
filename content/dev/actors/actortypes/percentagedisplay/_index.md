@@ -49,6 +49,6 @@ PercentRemainder | [BitmapText](../bitmaptext) | The text that will draw the dec
 
 Loads the player information so the PercentageDisplay can update based on the player data.
 
-{{<hint warning>}}
+{{<hint type="important">}}
 If **AutoRefresh** is off, this data won't be updated automatically and the function will need to be called again manually to perform the same thing.
 {{</hint>}}

@@ -20,7 +20,7 @@ ScreenTitleMenu overlay.lua
 
 An important thing to mention with screen layers is: every layer ***MUST*** return a table. This is needed so the screen manager can create the screen, so either an empty table or an ActorFrame with any kind of content will do. For in-depth information on how to create an ActorFrame base, check [ActorFrames and how to build them](/dev/actors/actortypes/actorframe).
 
-{{< hint warning >}}
+{{< hint type="important" >}}
 Due to this draw order, keep in mind that **objects created on higher levels will always be shown first before the others.**
 {{</hint>}}
 
