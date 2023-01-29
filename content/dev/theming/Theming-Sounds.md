@@ -30,6 +30,6 @@ end
 return THEME:GetPathS("",mySound)
 ```
 
-{{< hint warning >}}
+{{< hint type="important" >}}
 The value requested by this file is an **absolute path**, which is why `THEME:GetPathS` has been included, as it fills the path directory to the current theme's Sounds folder.
 {{</hint>}}

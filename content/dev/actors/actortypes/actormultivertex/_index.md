@@ -104,7 +104,7 @@ For more information about how Lua handles functions, check out the [Functions](
 | First | Which point will be the first to draw?
 | Num | How many polygons after `First` will be drawn? If set to -1 (default), it will be the rest of available polygons set.
 
-{{<hint warning>}}
+{{<hint type="important">}}
 The `First` argument is 1-indexed, while the `Num` argument is not.
 {{</hint>}}
 
@@ -170,15 +170,16 @@ The examples here provide how to insert points for the polygon related to each D
 }
 ```
 
-{{<hint warning>}}
-{{<expand "Take a moment to notice that Quad and QuadStrip, while similar in nature, have a different order.">}}
+{{<hint type="important">}}
+
+Take a moment to notice that Quad and QuadStrip, while similar in nature, have a different order.
 The graphics being [DrawMode_Quad](#drawmode_quad) and [DrawMode_QuadStrip](#drawmode_quadstrip) respectively.
-{{<columns>}}
-![DrawMode_Quad](/actors/actormultivertex/drawmodes/DrawMode_Quad.svg)
-<--->
-![DrawMode_QuadStrip](/actors/actormultivertex/drawmodes/DrawMode_QuadStrip.svg)
-{{</columns>}}
-{{</expand>}}
+
+<div class="img-comparison">
+	<img src="/actors/actormultivertex/drawmodes/DrawMode_Quad.svg" alt="DrawMode_Quad" width="300">
+	<img src="/actors/actormultivertex/drawmodes/DrawMode_QuadStrip.svg" alt="DrawMode_QuadStrip" width="300">
+</div>
+
 {{</hint>}}
 
 ### DrawMode_Fan
@@ -216,15 +217,15 @@ The graphics being [DrawMode_Quad](#drawmode_quad) and [DrawMode_QuadStrip](#dra
 
 ### DrawMode_LineStrip / DrawMode_LineStripM / DrawMode_Points
 
-{{<hint warning>}}
-{{<expand "Take a moment to notice that LineStrip and Points, while similar in nature, have a different layout.">}}
+{{<hint type="important">}}
+Take a moment to notice that LineStrip and Points, while similar in nature, have a different layout.
 The graphics being [DrawMode_LineStrip](#drawmode_linestrip) and [DrawMode_Points](#drawmode_points) respectively.
-{{<columns>}}
-![DrawMode_LineStrip](/actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg)
-<--->
-![DrawMode_Points](/actors/actormultivertex/drawmodes/DrawMode_Points.svg)
-{{</columns>}}
-{{</expand>}}
+
+<div class="img-comparison">
+	<img src="/actors/actormultivertex/drawmodes/DrawMode_LineStrip.svg" alt="DrawMode_LineStrip" width="300">
+	<img src="/actors/actormultivertex/drawmodes/DrawMode_Points.svg" alt="DrawMode_Points" width="300">
+</div>
+
 {{</hint>}}
 
 ```lua

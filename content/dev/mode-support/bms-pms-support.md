@@ -9,7 +9,7 @@ Project OutFox contains parsers for the ``BMS`` and ``PMS`` chart formats, which
 ---
 # Introduction
 ---
-The ``BMS`` file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game _Beatmania_ by Konami. There have been several dozen interations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.
+The ``BMS`` file standard was devised by Urao Yane in 1998. It was originally created to be a format to simulate the game _Beatmania_ by Konami. There have been several dozen iterations over the years, and we will talk about some of them here in one easy to contain and read page. Do not be afraid of this format, it is incredibly versatile and have been used to simulate a variety of games.
 
 _Project OutFox_ uses mostly BM98 (1998 to 2003) era definitions for this file standard, though it is improving all the time. The format is used to simulate most of the _'Down Scroll Rhythm Game Systems'_ and is known by several other derivatives which we are also slowly building support for. 
 
@@ -102,7 +102,7 @@ Usage Example:
 ```
 #TITLE Take (Bamboo) 
 ```
-The title command sets the SongTitle and this will be displayed on the song wheel to be selected, as well on the screen gameplay and evaluation screen. It will also be recorded in high scores and on your profile etc. Older charts used SHIFT-JIS. 
+The title command sets the SongTitle and this will be displayed on the song wheel to be selected, as well on the screen game-play and evaluation screen. It will also be recorded in high scores and on your profile etc. Older charts used SHIFT-JIS. 
 
 ---
 
@@ -251,8 +251,6 @@ If your notes were moving at ``130BPM``, but you did not wish to edit the ``BPM`
 The channel command to action #SCROLL values are a Base36 value which are ``#xxxSC``. There are several benefits to using this system as legacy BMS use items you need to name on each measure, whereas #xxxSC can last beyond this restriction. You need to be aware, not many clients support this system, so it is not backwards compatible if you are making your chart available to other simulators.
 
 
-
-
 ---
 
 ### Key:
@@ -266,6 +264,11 @@ _PMSX listed below on some channels, is the wider 2 player mode that outfox supp
 
 ## BMS / BME / PMS Channel Support Table
 
+The earlier versions of BMS were based on a 0-9 supported channel value, being ``00`` to ``99``. Over time, it was extended to _base16_ (``00`` to ``FF``), and then to _base36_. I won't list the tables in full base 36, as those extra channels are mostly used for player notes and keysounds, so it would be very long and hard to read. This table takes the most common layout which is base 16 based, and is also the most common supported by most of the other simulators. There are parts where ``*0`` to ``*Z`` can be used, and those will be noted.
+
+This table will be updated and modified as information is found out or addenda needed to fix mistakes. If you notice anything on this page that needs correcting, do let Squirrel know, or make a PR to the wiki's repo!
+
+---
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 01|Background Music|✅|Background Music|✅|Background Music|✅|Supported
@@ -286,6 +289,16 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 
 ---
 
+### Channel 00 to 0F
+
+The lower channels on a BMS / PMS file mostly set up the specifics of the musical side of the chart, enabling BPM, backgrounds, and special effects like Stops and BGA (background) changes and selection.
+
+The most important channel on this table is ``01`` which sets the 'backing' track or 'master keysound' of this track as created by some users. Most of the community do not use a completed file here however, it is better practice for the chart author to create keysounded files, as charting for a 'single' file is often thought of as lazy.
+
+On PMS files, the BGA transparency settings are set here as well for effects and 'cool/miss' events that happen during the song if the user triggers those. On OutFox we support this mechanic, but as of yet we have not seen any files or have had any reported bugs with this, so it is a low priority option. Do reach out to us if you spot a pack or a song which has these channels within them so we can see what they are and how the effects work.
+
+---
+
 BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|PMS / PMSX Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 10|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -295,7 +308,7 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 14|P1 Key 4|✅|P1 Key 4|✅|P1 Left Blue / P1 Left Blue |✅|Supported
 15|P1 Key 5|✅|P1 Key 5|✅|P1 Red / P1 Red|✅|Supported
 16|P1 Turn/Scratch|✅|P1 Turn/Scratch|✅|Not Used / P1 Right Blue|✅|Supported
-17|P1 FootPedal|❌|P1 FootPedal|❌|Not Used / P1 Right Green|✅|Not Supported
+17|P1 FootPedal|✅|P1 FootPedal|✅|Not Used / P1 Right Green|✅|Supported in Alpha 4.16.0
 18|P1 Key 6|✅|P1 Key 6|✅|Not Used / P1 Right Yellow|✅|Supported
 19|P1 Key 7|✅|P1 Key 7|✅|Not Used / P1 Right White|✅|Supported
 1A|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -304,6 +317,13 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 1D|Not Used|~|Not Used|~|Not Used|~|Not Used
 1E|Not Used|~|Not Used|~|Not Used|~|Not Used
 1F|Not Used|~|Not Used|~|Not Used|~|Not Used
+---
+
+### Channel 10 to 1F
+
+This block of channels is used for _visible_ player notes for player 1. This selection of channels from ``10`` to ``19`` is ordered and swapped around depending on the game chosen. This is why in the early 2000s there were arrangements made for ``pomu`` / ``PMS`` to be split into it's own file name, as it reused a lot of notes which on some simulators were loaded as ``BMS`` files. Do remember your target mode/game/style when you create your chart! This is especially important if you plan to have support with other simulators as they will not be as relaxed and 'wide supporting' as OutFox is.
+
+The pomu-extended mode which is very common in ``BME`` files is one such example. It uses ``11`` to ``19`` which on some simulations are incorrectly loaded. This type of chart was common in _nanasi_ and we have aligned our support to this as it seems to be more common for the extended options than other 'formats'.
 
 ---
 
@@ -316,7 +336,7 @@ BMS / BME / PMS Channel|BMS Name|OutFox BMS Support|BME Name|OutFox BME Support|
 24|P2 Key 4|✅|P2 Key 4|✅|P1 Right Yellow / P2 Left Green|✅|Supported
 25|P2 Key 5|✅|P2 Key 5|✅|P1 Right White / P2 Red|✅|Supported
 26|P2 Turn/Scratch|✅|P2 Turn/Scratch|✅|Not Used / P2 Right Blue|✅|Supported
-27|P2 FootPedal|❌|P2 FootPedal|❌|Not Used / P2 Right Green|✅|Not Supported
+27|P2 FootPedal|✅|P2 FootPedal|✅|Not Used / P2 Right Green|✅|Supported in Alpha 4.16.0
 28|P2 Key 6|✅|P2 Key 6|✅|Not Used / P2 Right Yellow|✅|Supported
 29|P2 Key 7|✅|P2 Key 7|✅|Not Used / P2 Right White|✅|Supported
 2A|Not Used|~|Not Used|~|Not Used|~|Not Used
@@ -619,12 +639,12 @@ FF|Not Used|~|Not Used|~|Not Used|~|Not Used
 
 These two channels were recent additions to the specification used in the _beatoraja_ and _bemuse_ clients, and are done slightly differently to the specification. Rather than using one of the 30 spare channels in the lower ranges, these two options require full base 36 (00-ZZ) support to work as they use SC/SP instead of a Hex (00-FF) value. OutFox's BMS-like parsers were updated in 4.9.9 to support base 36 channel values even though not required by specification, so these channels were a trivial addition to our support.
 
-Speed and Scroll segments replicate behaviour done with Channel 02/08/09, without relying on these channels changing. They were introduced in the SSC updates to StepMania and are natively supported in the engine in OutFox. These add a new layer of effects to be actioned without using #BPMxx or #STOPxx.
+Speed and Scroll segments replicate behaviour done with Channel 02/08/09, without relying on these channels changing. They were introduced in the SSC updates to StepMania and are natively supported in the engine in OutFox. These add a new layer of effects to be utlised without using #BPMxx or #STOPxx.
 
 BMS / BME / PMS Channel|BME Name|OutFox BME Support|PMS Name|OutFox PMS Support|OutFox BMS/PMS Status Comments
 ------------|-------------|-------------|-------------|-------------|-------------
-SC|Scroll Adjustment|✅|Not Used|~|Added in 4.11.0
-SP|Speed Adjustment|✅|Not Used|~|Added in 4.11.0
+SC|Scroll Adjustment|❌|Not Used|~|Not Supported Yet
+SP|Speed Adjustment|❌|Not Used|~|Not Supported Yet
 
 ---
 

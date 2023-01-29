@@ -21,7 +21,7 @@ weight: 2
 
 This mode was added in StepMania 5. It was designed to be a fitness based punch and kick mode commissioned by a member of the community.
 
-It has always been considered obscure, but it does have a functioning autogen system, and is functional again in _Project OutFox_ 4.10.0. 
+It has always been considered obscure, but it does have a functioning autogen system, and is functional again from _Project OutFox_ 4.10.0. 
 
 You need to ensure you click the 'use SM5 noteskins' on the windows installer to allow yourself access to this mode if you are using _Project OutFox_.
 

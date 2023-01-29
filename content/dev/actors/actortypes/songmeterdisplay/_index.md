@@ -34,7 +34,7 @@ StartFromZero | bool | New to OutFox: Allows the SongMeterDisplay to start from 
 
 The **Stream** is the background of the meter, which denotes how far you are in the song, while the **Tip** is the current position.
 
-{{<hint warning>}}
+{{<hint type="important">}}
 The **Stream** attribute is required for the SongMeterDisplay to be created. Otherwise it will return an empty [Actor](../actor/).
 {{</hint>}}
 

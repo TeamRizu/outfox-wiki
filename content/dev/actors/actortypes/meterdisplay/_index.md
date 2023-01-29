@@ -6,7 +6,7 @@ geekdocCollapseSection: true
 
 The base for [SongMeterDisplay](../songmeterdisplay/), which uses two [Actors](../../actortypes/) to render the progress of a given value.
 
-{{<hint warning>}}
+{{<hint type="important">}}
 Unlike [SongMeterDisplay](../songmeterdisplay/), MeterDisplay doesn't update by itself. In order to perform updates, you have to
 manually set a new width and position value for **Stream** and **Tip**.
 {{</hint>}}
@@ -34,7 +34,7 @@ StreamWidth | number | The width the MeterDisplay. Can be adjusted later with [S
 Stream | [Actor](../../actortypes/) | The actor that will represent the progress of the song.
 Tip | [Actor](../../actortypes/) | The actor that will represent the current position of the song.
 
-{{<hint warning>}}
+{{<hint type="important">}}
 The **Stream** attribute is required for the SongMeterDisplay to be created. Otherwise it will return an empty [Actor](../actor/).
 {{</hint>}}
 

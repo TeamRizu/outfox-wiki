@@ -27,3 +27,8 @@ geekdocToC = 5
 geekdocCollapseSection = true
 geekdocBreadcrumb = true
 geekdocLogo = "logo.png"
+
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = true

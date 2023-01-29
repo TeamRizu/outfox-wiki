@@ -14,7 +14,7 @@ insert picture of gameplay
 
 This mode was added in alpha 4.9.9HF of _Project OutFox_. In its' original form, it was a five-column mode with each note type having its' own column. Later, within the same alpha (July 11 2021), it was redone to have the notes be different note types instead of notes in columns, with only one column being needed.
 
-Right now, this mode can only be played with auto-gen charts, however the parser support for the mode is being actively developed, and the support will be aligned with other taiko based simulators to provide parity and coherence for the community.
+In this mode the parser support for the mode is being actively developed, and the chart support will be aligned with other taiko based simulators to provide parity and coherence for the community. We can parse .osu/.osz (Mode 1 taiko) and .tja files, although some of the scroll and time signature math needs to be concluded. As of alpha 4.15 the parsers are about 60% complete.
 
 This mode is selectable in the game select screen.
 
@@ -69,6 +69,24 @@ Are notes that require you to hit the edge of the drum (katsu) on both sides at 
 
 ## Controls
 
+This game can be played as a 4K layout, or on a drum based controller. There were several home based console drum controllers, as well as proper arcade style ones. 
+
+The drums normally have 4 sections; a outer left, inner left (up until the centre of the drum, down the middle) inner right, and outer right.
+
+The inner notes are often red or orange coloured, with the outer being blue. The smaller orange or blue notes can be hit by one of their respective sides, and the large notes should be hit by both the outer for big blue, or both the inner for big red. Hitting the big notes with 1 side gives half the points.
+
+There are also _drum rolls_ which allow the user to hit the drum to gain score if they hit the yellow 'hold' as much as possible.
+
+There are also notes which need to be hit a certain amount within a set time.
+
 ## Trivia
+
+This mode had a prototype back in _FoxMania_ in the early days of the project (Pre Alpha 1).
+
+It is the first horizontal scroll game we support in _Project OutFox_.
+
+This mode also introduced the concept of 'count holds'. This is effectively to set how the counted hit notes (balloons) are measured and scored.
+
+This mode introduced the concept of a non-tick/non-beat based roll hold, which needed a lot of new code added to _Outfox_ to implement.
 
 _Written and Maintained with ♡ by Squirrel_

@@ -1038,6 +1038,14 @@ Possible values are ``0`` or ``1``. 0 is disabled and 1 is enabled.
 
 Default value: 1
 
+### LogLevel
+
+Determines the detail of the log files.
+
+Possible values are ``0`` through ``5``, with 0 providing the most detail, and 5 providing the least detail.
+
+Default value: 2
+
 ### LogSkips
 
 **This preference is obsolete.**
