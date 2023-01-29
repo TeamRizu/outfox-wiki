@@ -44,7 +44,7 @@ Alias of [settips](#settips). Splits the text using the `::` flag. Check [Format
 `( table<string> text, table<string> textAlt )`
 
 Using a table of strings, it formats the text to contain the help information.
-```
+```lua
 -- Using the example from above, 'I am <split> Help Text`.
 local myHelpText = {
     "I am",
@@ -57,7 +57,7 @@ self:settips(myHelpText)
 
 ### gettips()
 Returns two tables which contain the help text currently being displayed on the HelpDisplay.
-```
+```lua
 local helpText, helpTextAit = self:gettips()
 -- Now you can obtain the help text.
 for data in ivalues(helpText) do
