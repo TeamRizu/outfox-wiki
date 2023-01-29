@@ -3,7 +3,7 @@ title: Ensuring string compatiblity
 weight: 1
 ---
 
-When applying text on a BitmapText actor, depending on the font, some glyphs might not present themselves properly and will show two possible cases, depending on the situation. Let's take the following example, which attempts to load a text with the value `H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶`, which is `Headgrinder` with some special unicode to add non-spacing strikes in the text.
+When applying text on a [BitmapText](../) actor, depending on the font, some glyphs might not present themselves properly and will show two possible cases, depending on the situation. Let's take the following example, which attempts to load a text with the value `H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶`, which is `Headgrinder` with some special unicode to add non-spacing strikes in the text.
 
 {{<columns>}}
 ![](/theming/bitmap/textBrokenGlyph.png)

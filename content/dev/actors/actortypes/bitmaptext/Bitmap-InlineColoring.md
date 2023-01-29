@@ -3,7 +3,7 @@ title: Inline-Text manipulation
 weight: 1
 ---
 
-Starting from SM5 Preview 1, BitmapText actors can include special instructions to manipulate separate glyphs with things like color. Operations from this use the `AddAttribute` function to insert these instructions.
+Starting from SM5 Preview 1, [BitmapText](../) actors can include special instructions to manipulate separate glyphs with things like color. Operations from this use the `AddAttribute` function to insert these instructions.
 
 ```lua
 -- This adds an attribute to the BitmapText. These are stacked.

@@ -17,83 +17,21 @@ This is a helper function that can be used to dynamically load an actor based on
 
 <center>
 {{<columns>}}
-{{< button size="large" relref="actormultivertex/" >}}ActorMultiVertex{{< /button >}}
-{{< button size="large" relref="sprite/" >}}Sprite{{< /button >}}
-{{< button size="large" relref="bitmaptext/" >}}BitmapText{{< /button >}}
+{{< button size="large" relref="actor/" >}}Def.Actor{{< /button >}}
+{{< button size="large" relref="actorframe/" >}}Def.ActorFrame{{< /button >}}
+{{< button size="large" relref="actorframetexture/" >}}Def.ActorFrameTexture{{< /button >}}
+{{< button size="large" relref="actormultivertex/" >}}Def.ActorMultiVertex{{< /button >}}
+{{< button size="large" relref="sprite/" >}}Def.Sprite{{< /button >}}
+{{< button size="large" relref="bitmaptext/" >}}Def.BitmapText{{< /button >}}
+{{< button size="large" relref="sound/" >}}Def.Sound{{< /button >}}
+{{< button size="large" relref="notefield/" >}}Def.NoteField{{< /button >}}
+{{< button size="large" relref="helpdisplay/" >}}Def.HelpDisplay{{< /button >}}
+{{< button size="large" relref="quad/" >}}Def.Quad{{< /button >}}
+{{< button size="large" relref="songmeterdisplay/" >}}Def.SongMeterDisplay{{< /button >}}
+{{< button size="large" relref="meterdisplay/" >}}Def.MeterDisplay{{< /button >}}
+{{< button size="large" relref="percentagedisplay/" >}}Def.PercentageDisplay{{< /button >}}
 {{</columns>}}
 </center>
-
-## ActorFrame
-
-An Actor that can contain one or more Actors. Think of it as a box that can hold as many objects as it can.
-
-Example:
-```lua
-Def.ActorFrame{
-    -- This sprite is now included inside of the ActorFrame.
-    -- Any changes from the ActorFrame will affect the sprite, such as position, rotation,
-    -- zoom and such.
-    Def.Sprite{}
-}
-```
-
-ActorFrames can hold other actors. The ``Def.`` format is set up like any other lua table, allowing for creating actors in batches. Because of this, there are multiple ways to build an ActorFrame.
-
-### Inline building
-
-Actors can be explicitly placed into an ActorFrame like this:
-```lua
-Def.ActorFrame{
-	Def.Actor{
-		--Commands and stuff go here.
-	},
-	Def.Sprite{
-		--More commands and stuff go here.
-	}
-}
-```
-
-### Concatenation
-
-Because lua tables can be concatenated (added) to each other, so can ActorFrames.
-
-This can allow for programatically creating Actors in batches as needed.
-
-However, if one does not plan on creating actors programmaticly, then a simple `return Def.ActorFrame{...` is all that's needed. Storing it into a local variable that gets returned will waste resources.
-
-There are two ways to add onto an actorframe.
-
-<!-- TODO: There's probably better ways to show this. -->
-Method 1 (indexing):
-```lua
-local t = Def.ActorFrame{
-	Def.Sprite{
-		--commands & stuff
-	},
-	Def.BitmapText{
-		--who even knows
-	},
-}
-
-t[#t+1] = Def.Actor{
-	--It's the third actor
-}
-return t
-```
-
-Method 2 (lua concatenation):
-```lua
-return Def.ActorFrame{
-	Def.Sprite{
-		--commands & stuff
-	},
-	Def.BitmapText{
-		--who even knows
-	},
-} .. Def.Actor{
-	--It's the third actor
-}
-```
 
 ## ActorFrameTexture
 
@@ -344,7 +282,17 @@ Def.GraphDisplay{
 ## GrooveRadar
 
 A recreation of the five-point "Groove Radar" from DDR. Can take arbitrary values as well as the song's radar values.
+Note that the visual aspect of the GrooveRadar depends on metrics set on the `GrooveRadar` metrics group, and the 
+GrooveRadar graphics set.
 <!--TODO: Do we mention what the radar values are?-->
+```lua
+Def.GrooveRadar {
+	InitCommand=function(self)
+		-- Let's use random values to fill the graph.
+		self:SetFromValues({1,0.5,0.8,0.4,1})
+	end
+}
+```
 
 ## HelpDisplay
 
@@ -371,11 +319,29 @@ The judgment that shows up on a column when dropping or clearing a hold & roll.
 
 There is an extra function to allow tracking the hold judgments from a MultiPlayer.
 
+```lua
+Def.HoldJudgment{
+	File=THEME:GetPathG("Hold","Judgment"),
+	InitCommand=function(self)
+		
+	end
+}
+```
+
 ## InputList
 
 Displays a list of inputs as they occur. Can show unmapped and mapped inputs.
 
 Functions like most other BitmapText actors.
+
+```lua
+Def.InputList {
+	Font="Common Normal",
+	InitCommand=function (self)
+		self:x(SCREEN_CENTER_X-250):y(SCREEN_CENTER_Y):halign(0):vertspacing(8)
+	end
+}
+```
 
 ## LogDisplay
 
@@ -399,6 +365,12 @@ Often used in gameplay screens. This shows how many more mistakes a player is al
 
 Shows the current state of a player's inserted memory card. Made of images, with one for each state.
 
+```lua
+Def.MemoryCardDisplay{
+	PlayerNumber=PLAYER_1
+}
+```
+
 ## MenuTimer
 
 Cannot be created from lua, but is a part of every screen that inherits from ScreenWithMenuElements.
@@ -409,45 +381,6 @@ A Timer that counts down and proceeds to the next screen when it reaches 0.
 
 Shows the current progress of an operation. It appears to only show the progress as 50%.
 <!--TODO: Is there a way to set the percentage?-->
-
-## Model
-
-Allows one to display MilkShape3D ASCII models, having separate attributes for materials, bones and meshes.
-
-```lua
-Def.Model{
-	Meshes="MyModel.txt",
-	Materials="MyModel.txt",
-	Bones="MyModel.txt",
-	OnCommand=function(self)
-		self:Center()
-
-		-- When a model begins its animation, it will loop indefinitely. To stop that, use the loop command to
-		-- set the flag to false.
-		self:loop(false)
-	end
-}
-```
-
-Meshes are the composition and structure of the Model. This data represents the vertices that make the Model take shape.
-
-Materials are the textures that the model will use. These can be any of the image formats listed in the Supported File Extensions page. They can also be .ini files that define animated textures on a Def.Sprite.
-
-Bones make the model come to life. They can be defined within the primary model file, or, in the case of dancing characters, be controlled via a separate file that only contains the bones.
-
-In the above example, all three attributes used the same filepath; all the necessary data was contained within a single file. It is possible to configure the MilkShape 3D software to output distinct files for meshes, materials, and bones, and set each Def.Model attribute accordingly, but that is outside the scope of this lesson.
-
-***NOTE: All three attributes must be provided within Def.Model as paths to resources that can be loaded or the game will crash.***
-
-With OutFox, you can store several types of animations on the same model and call them at any moment.
-```lua
--- Let's load a animation called WarmUp, located on a file called "Warm1.txt".
-self:LoadBones( "WarmUp", "Warm1.txt" )
-
--- Now the model has an animation called "WarmUp", and can be called at any time with playanimation.
--- The second value is optional, and sets the rate of the animation's speed.
-self:playanimation( "WarmUp", 1 )
-```
 
 ## ModIconRow
 
@@ -467,12 +400,6 @@ Cannot be created from lua, but can be grabbed from NoteField.
 
 This is a dedicated actor for a column in the notefield, and can be treated like any other actor.
 
-## NoteField
-
-Cannot be created from lua, but resides in Player.
-
-Contains the receptors and notes as seen in gameplay.
-
 ## OptionRow
 
 Cannot be created from lua.
@@ -484,10 +411,6 @@ Often seen in options screens, this actor allows for picking and choosing variou
 Shows the number of steps, jumps, holds, rolls, mines, hands, lifts, fakes, the machine profile's highscore & name and the current profile's high score for a given chart.
 
 Settings must be defined through Metrics.
-
-## PercentageDisplay
-
-Shows a player's current percentage (Actual DancePoints divided by Possible DancePoints).
 
 ## Player
 
@@ -548,63 +471,6 @@ A screen the theme can go to. There are screens for gameplay, selecting music, p
 
 Shows the current BPM during gameplay. Does not appear to take split timing into account.
 
-## SongMeterDisplay
-
-A MeterDisplay that shows the current position of the song being played.
-
-
-```lua
-Def.SongMeterDisplay{
-	InitCommand=function(self)
-		-- This generates a 300 x [the height of your Stream texture] that will define the current progress of whatever song is currently being played.
-		-- The actor will automatically update progress for the Tip and the Stream.
-		self:SetStreamWidth( 300 )
-	end,
-	-- Both the Stream and Tip are AutoActors, so they can be any actor type.
-	Stream=Def.Sprite{ Texture="MyStreamBar" },
-	Tip=Def.Sprite{ Texture="MyTip" }
-}
-```
-
-## Sound
-
-Used to play sound files outside of the common theme sound effects and the simfile's song itself.
-
-Removes the need to use `SOUND:PlayOnce()`, as it allows for pre-loading the sound file at the start instead of loading (possibly many times) and playing the sound mid-screen.
-
-```lua
-Def.Sound{
-	-- Load the audio called MySound, which is a ogg file in this example.
-	File="MySound.ogg",
-	-- Lets the audio pane from side to side. Useful for audios that need to play on a specific player side.
-	SupportPan=true,
-	-- Allows the audio to change rate and pitch.
-	SupportRateChanging=false,
-	-- this assigns the audio to be an Action, which is a flag for sounds that allows it to be muted by the player,
-	-- with the use of the Mute Actions key (Default to "Pause").
-	IsAction=true,
-	OnCommand=function(self)
-		-- When creating the actor, sound will not play automatically, so you need to use the play command
-		-- to perform such action.
-		self:play()
-
-		-- If the audio has the "(loop)" flag set on its filename, it will loop infinetly. So to top it, use the
-		-- appropiate command.
-		self:stop()
-
-		-- If the sound needs to be paused on a particular frame, and not to reset, use the pause command.
-		self:pause( true ) -- Use false to resume it.
-
-		-- To control actions like volume, you need to access the ActorSound's RageSound, by using the get function.
-		local MyRageSound = self:get()
-
-		MyRageSound:volume(0.5) -- Changes volume (0 to 1).
-		MyRageSound:pitch( 1.2 ) -- Requires SupportRateChanging to work.
-		MyRageSound:speed( 1.4 ) -- Requires SupportRateChanging to work.
-	end
-}
-```
-
 ## StepsDisplay
 
 Displays the data for a given chart. Can show difficulty number, description, credit, if it's autogen and steps type.
@@ -635,6 +501,24 @@ A "Banner" that contains the song name, artist and subtitle.
 
 Usually seen in the CourseContentsList of ScreenSelectMusic or the ScrollerItem in ScreenHighScores.
 
+```lua
+-- This example uses this set from a CourseContentsList, hence the SetSong command.
+Def.TextBanner {
+	InitCommand=function(self)
+		self:Load("TextBannerCourse"):SetFromString("", "", "", "", "", "")
+	end,
+	SetSongCommand=function(self, params)
+		if params.Song then
+			self:SetFromSong( params.Song )
+			self:diffuse(color("#FFFFFF"))
+		else
+			self:SetFromString( "??????????", "??????????", "", "", "", "" )
+			self:diffuse( color("#FFFFFF") )
+		end
+	end
+}
+```
+
 ## WheelBase
 
 Cannot be created from lua.
@@ -650,3 +534,9 @@ A base class for items residing in wheels. MusicWheelItems inherit from this.
 ## WorkoutGraph
 
 A graph showing the calories burned over time during a workout.
+
+```lua
+Def.WorkoutGraph{
+	
+}
+```

@@ -3,7 +3,6 @@ title: "Miscellaneous Modifiers"
 weight: 4
 ---
 
-# Miscellaneous Modifiers
 These modifiers don't really fit into any of the above categories, so they're here instead.
 
 ## "clearall"

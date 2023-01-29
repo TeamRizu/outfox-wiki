@@ -1,2 +1,4 @@
 .DS_Store
 .vscode/settings.json
+# Ignore vim swap files
+.swp
