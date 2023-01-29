@@ -3,9 +3,11 @@ title: How a Player Manipulates its' NoteField
 weight: 1
 ---
 
-Some modifiers require the Player to perform some adjustments to the NoteField. This page documents what gets affected and how.
+Some modifiers require the Player to perform some adjustments to the [NoteField](../). This page documents what gets affected and how.
 
-(Note that this is useful knowledge if trying to replicate some modifiers on a Def.NoteField by itself or if you need something to follow what a Player does)
+{{<hint info>}}
+Note that this is useful knowledge if trying to replicate some modifiers on a Def.NoteField by itself or if you need something to follow what a Player does.
+{{</hint>}}
 
 Any part that relies in reverse/downscroll only takes effect when the **first column** is more than 50% towards downscroll.
 
