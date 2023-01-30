@@ -120,7 +120,7 @@ Open `Judgments`, drop the judgment image there. **Do not change the name of the
 
 Open `Toasties`, drop the game Toasty folder there. (The game can come with 2 toasties in the installer options)
 
-## Q: I have an ancient Intel Card and the game does nothing but crash!
+## I have an ancient Intel Card and the game does nothing but crash!
 
 If your log shows `WDDM1.0` or `WDDM1.1` at the end of the graphics card name:
 
