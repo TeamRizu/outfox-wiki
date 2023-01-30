@@ -5,7 +5,7 @@ geekdocCollapseSection: true
 ---
 
 The HelpDisplay is an actor which relies on [BitmapText](../bitmaptext) to draw text meant to guide the player in interacting with the interface with
-helpful text that flips to segments in a given ammount of time.
+helpful text that flips to segments in a given amount of time.
 
 By default it uses the `[HelpDisplay]` metrics group to get information about the [OnCommand](../../ActorsLua-CommandList/#commands), time to how the tip (`TipShowTime`) and how often it needs to switch the help block (`TipSwitchTime`).
 
@@ -25,7 +25,7 @@ Please check the [BitmapText](../bitmaptext) page for the list of attributes.
 
 ## Formatting Help Text (SetTipsColonSeparated)
 
-Help text in HelpDisplay can be just regular text, but the actor allows for this text to be in "pages", which splits the text into multiple segments that will be shown in a determined ammount of time. These are separated using the `::` (two [Colon](https://en.wikipedia.org/wiki/Colon_(punctuation)) characters) sequence.
+Help text in HelpDisplay can be just regular text, but the actor allows for this text to be in "pages", which splits the text into multiple segments that will be shown in a determined amount of time. These are separated using the `::` (two [Colon](https://en.wikipedia.org/wiki/Colon_(punctuation)) characters) sequence.
 
 For example, if my HelpDisplay has a interval time of 5 seconds and a help text of `"I am::Help Text"`, the following will happen:
 

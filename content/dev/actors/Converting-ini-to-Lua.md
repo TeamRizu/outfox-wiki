@@ -103,7 +103,7 @@ Frames= {
 ```
 
 {{< hint info >}}
-If all frames from the animation are the same and in order, you can use the `Sprite.LinearFrames` function helper to alieviate the ammount of lines.
+If all frames from the animation are the same and in order, you can use the `Sprite.LinearFrames` function helper to alieviate the amount of lines.
 {{< /hint >}}
 ```lua
 -- This will tell the function to create a frame table that goes through

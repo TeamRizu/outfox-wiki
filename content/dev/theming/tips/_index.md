@@ -33,7 +33,7 @@ build will not report the message given it's not available on the Profile namesp
 
 You can also use this search when assigning values to provide a failsafe value in the case the function is not available via a ternary operator.
 ```lua
--- If the operator passes, it will return the ammount of scores from the Tier01 grade, otherwise it'll return 0.
+-- If the operator passes, it will return the amount of scores from the Tier01 grade, otherwise it'll return 0.
 local GradedScores = myProfile.GetTotalScoresWithGrade and myProfile:GetTotalScoresWithGrade("Grade_Tier01") or 0
 ```
 

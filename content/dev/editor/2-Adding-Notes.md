@@ -2,7 +2,7 @@
 title: Adding/Manipulating notes
 ---
 
-�<!-- TODO: Add images demonstrating each note type. -->
+<!-- TODO: Add images demonstrating each note type. -->
 
 In the editor, you can add notes by using the 1-0 keys on the keyboard, which correspond to the column
 on the current mode you're in.
@@ -30,7 +30,7 @@ end of the hold/roll.
 These notes are purely visual, and do not affect score. They can be used to confuse the player or to construct visual gimmicks.
 Currently holds/rolls created in this mode will be transformed to regular holds/rolls from the Tap type.
 
-##� The Alter Menu
+## The Alter Menu
 
 ### Beat
 This option allows you to either compress or expand a selected area in both notes
@@ -59,6 +59,4 @@ Converts the selected area into a stop, by compressing the area and placing a st
 ### Convert selection to delay
 Converts the selected area into a delay, by compressing the area and placing a delay with the duration of the selection. Keep in mind however that any notes that are included inside the area will be deleted.
 
-For information about the difference between stops and delays, check out [Defining Timing Data](./1-Defining-Timing-Data.md).
-
-### :
+For information about the difference between stops and delays, check out [Defining Timing Data](../1-Defining-Timing-Data).
