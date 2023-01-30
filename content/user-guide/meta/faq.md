@@ -20,7 +20,7 @@ Yes. Our installer on Windows also defaults to portable mode, so user profile da
 
 If you would like to have a shared song library between multiple builds, you can use the AdditionalSongFolders preference in ``Save/Preferences.ini`` to specify a path. [Learn how to here](/user-guide/config/preferences/#additionalsongfolders)
 
-## Q: Where should I report Bugs, request features and post game crashes?
+## Where should I report Bugs, request features and post game crashes?
 
 If you can, do those in our [Issue Tracker Repository](https://github.com/TeamRizu/OutFox), by creating an issue it'll give you those exact options that I mentioned in the question.
 
@@ -36,7 +36,7 @@ You can also use [our forum](https://discourse.projectmoon.dance/)
 - You can report bugs and make feature suggestions on our Discord server.
 - [TinyFoxes](https://github.com/Tiny-Foxes) is coordinating and hosting community-produced content for Project OutFox, such as translations and other add-ons.
 
-## Q: How do I get logs?
+## How do I get logs?
 
 Go into your game folder and check if there's a file called `portable.ini` (or just `portable` if your system doesn't display file extensions). If there's a `portable.ini` in your game folder then all you need to do is open the `Logs` folder and you'll find all logs, the most important one being `log.txt`. (Try to do this after closing the game)
 
@@ -46,13 +46,13 @@ If there's no `portable.ini` in your game folder, then you need to go into a spe
 - Mac: `~/Library/Logs/OutFox/`
 - Linux: `/home/user/.OutFox`
 
-## Q: Why do I have to configure my pad while older versions of StepMania could work with no problem?
+## Why do I have to configure my pad while older versions of StepMania could work with no problem?
 
 Project OutFox uses XInput, it means controllers need to get mapped first and then never again. _It means every single controller should work with Project OutFox_
 
 The game doesn't even try to auto-map things yet, there's a [tutorial step-by-step how to map](https://projectoutfox.com/help/controllers)
 
-## Q: I'm new to this community and I don't understand many terms, could you explain what they mean?
+## I'm new to this community and I don't understand many terms, could you explain what they mean?
 
 - Chart: How we call Songs that you can play in OutFox. (osu! players calls them Maps)
 - Mods: Modded charts that uses Lua to change how the game operates.
@@ -66,7 +66,7 @@ The game doesn't even try to auto-map things yet, there's a [tutorial step-by-st
 - Playfield/Notefield/Receptors/PlayerBoards: The targets that notes are going to reach. In dance, the 4 notes that are always at the top. In pump, the 5 notes that are always at the top.
 - Lifts: Note that you have to stop holding the moment they reach the play field.
 
-## Q: Will Project OutFox go open source?
+## Will Project OutFox go open source?
 
 _Yes, in the future_.
 
@@ -86,7 +86,7 @@ From the Team:
 
 Currently the game features two modes: a HIDAPI-based "Legacy" input system, similar in behaviour to the input system seen in StepMania 5.0, and an XInput-compliant input system (additional configuration is needed to use unrecognized controllers in this mode, see here for more information). If you are unable to map any buttons to the game, try switching modes to Legacy, available as an option in the Experimental Settings menu, or follow the guide mentioned above on how to map your controller with XInput.
 
-## Q: Is online mode available yet? If not, is it coming?
+## Is online mode available yet? If not, is it coming?
 
 Short answer: no it's not available, yes it's coming. Long answer: It'll take a while, the engine is still being optimised and the online system is still in development (being done by Cube). 
 
@@ -94,7 +94,7 @@ This doesn't mean Online isn't important for us, it's a lot, it was one of Team 
 
 Resume: As your read this, both the game engine and online mode are still in development.
 
-## Q: How do I insert Noteskins/Themes/Avatars/Judgments/Toasties into Project OutFox?
+## How do I insert Noteskins/Themes/Avatars/Judgments/Toasties into Project OutFox?
 
 In the game folder there's a folder called `Appearance`, where you'll find a folder for each of those mentioned features.
 
@@ -154,7 +154,7 @@ Also see https://fdossena.com/?p=mesa/index.frag for a windows working solution.
 And for a detailed guide for intel users:  (Some computer literacy needed)
 https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1
 
-## Q: How can I know who works on OutFox and who to trust?
+## How can I know who works on OutFox and who to trust?
 
 Everyone on this list is part of OutFox Team and works on OutFox: [see list](/user-guide/meta/about/#project-outfox-teams)
 
