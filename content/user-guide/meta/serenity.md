@@ -148,7 +148,7 @@ Make sure to check any of the socials you provided to us, if we are considering 
 
 Those are special as they use a license that doesn't allow us to publicly host them on Github, they are still bundled with our release zips.
 
-## Which authors have had their music released with OutFox Serenity?
+## Which artists have had their music released with OutFox Serenity?
 
 - Matduke
     - Low End Theory **(Volume I Winter Update)**
@@ -195,7 +195,7 @@ Those are special as they use a license that doesn't allow us to publicly host t
     - Technological ≠ Emotional **(Volume II)**
     - B-Happy **(Volume II)**
 
-## Which StepArtists have had their charts released with OutFox Serenity?
+## Which charters have had their charts released with OutFox Serenity?
 
 
 | Author | Charts |
@@ -227,7 +227,7 @@ Those are special as they use a license that doesn't allow us to publicly host t
 | Sevish | 1 |
 | Ario | 1 |
 
-## Which Graphic Makers have had their graphic released with OutFox Serenity?
+## Which graphic makers have had their artwork released with OutFox Serenity?
 
 - Lirodon
     - Plasma (Background, Jacket, Banner)
@@ -266,6 +266,7 @@ Those are special as they use a license that doesn't allow us to publicly host t
     - CRUSH THE DEVIL (IN MY BRAIN) (Background, Jacket, Banner)
 - Kaimaruz
     - B-Happy (Background, Jacket, Banner)
+
 ## Who organizes the project?
 
 Most of the work is handled by OutFox Community Team with occasional help from OutFox Design Team and feedback from OutFox Development Team. In Specific:
