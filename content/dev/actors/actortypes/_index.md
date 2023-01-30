@@ -19,17 +19,22 @@ This is a helper function that can be used to dynamically load an actor based on
 {{<columns>}}
 {{< button size="large" relref="actor/" >}}Def.Actor{{< /button >}}
 {{< button size="large" relref="actorframe/" >}}Def.ActorFrame{{< /button >}}
-{{< button size="large" relref="actorframetexture/" >}}Def.ActorFrameTexture{{< /button >}}
 {{< button size="large" relref="actormultivertex/" >}}Def.ActorMultiVertex{{< /button >}}
+{{< button size="large" relref="actorscroller/" >}}Def.ActorScroller{{< /button >}}
 {{< button size="large" relref="sprite/" >}}Def.Sprite{{< /button >}}
+{{< button size="large" relref="actorframetexture/" >}}Def.ActorFrameTexture{{< /button >}}
 {{< button size="large" relref="bitmaptext/" >}}Def.BitmapText{{< /button >}}
-{{< button size="large" relref="sound/" >}}Def.Sound{{< /button >}}
-{{< button size="large" relref="notefield/" >}}Def.NoteField{{< /button >}}
+{{< button size="large" relref="devicelist/" >}}Def.DeviceList{{< /button >}}
 {{< button size="large" relref="helpdisplay/" >}}Def.HelpDisplay{{< /button >}}
+{{< button size="large" relref="inputlist/" >}}Def.InputList{{< /button >}}
+{{< button size="large" relref="memorycarddisplay/" >}}Def.MemoryCardDisplay{{< /button >}}
+{{< button size="large" relref="meterdisplay/" >}}Def.MeterDisplay{{< /button >}}
+{{< button size="large" relref="model/" >}}Def.Model{{< /button >}}
+{{< button size="large" relref="notefield/" >}}Def.NoteField{{< /button >}}
+{{< button size="large" relref="percentagedisplay/" >}}Def.PercentageDisplay{{< /button >}}
 {{< button size="large" relref="quad/" >}}Def.Quad{{< /button >}}
 {{< button size="large" relref="songmeterdisplay/" >}}Def.SongMeterDisplay{{< /button >}}
-{{< button size="large" relref="meterdisplay/" >}}Def.MeterDisplay{{< /button >}}
-{{< button size="large" relref="percentagedisplay/" >}}Def.PercentageDisplay{{< /button >}}
+{{< button size="large" relref="sound/" >}}Def.Sound{{< /button >}}
 {{</columns>}}
 </center>
 

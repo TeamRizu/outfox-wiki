@@ -42,7 +42,7 @@ In this example, we're creating an animation of 4 frames (these are 0-indexed), 
 
 ## Utilizing Sprite.LinearFrames
 
-This is a helper function inside the Sprite namespace that facilitates the creation of the Frames table, by automating the creation of the table with just 2 arguments, the ammount of frames to use, and how long in general the animation will be.
+This is a helper function inside the Sprite namespace that facilitates the creation of the Frames table, by automating the creation of the table with just 2 arguments, the amount of frames to use, and how long in general the animation will be.
 
 {{<columns>}}
 ```lua
@@ -69,7 +69,7 @@ Frames = Sprite.LinearFrames( 4, 2 )
 
 ## Utilizing SetAllStateDelays on existing frames
 
-This function can be utilized to update all delay ammounts of the current frames in the sprite on the fly.
+This function can be utilized to update all delay amounts of the current frames in the sprite on the fly.
 
 In the example, I have a sprite that already loads a sprite that has 4 frames, and plays on 0.1 second delays, making the animation on the top of the page, but now we want to make it slightly slower.
 

@@ -10,20 +10,20 @@ This determines the starting point of the audio file to begin counting beats. Th
 in the song. It is important that you consider changing this value if you notice your chart is off-sync, chances are the beat 0 offset is off.
 
 ### BPM
-Beats per Minute, or BPM are the measurement for how many beats will ammount on 60 seconds. This is used to calculate the speed of the chart
+Beats per Minute, or BPM are the measurement for how many beats will amount on 60 seconds. This is used to calculate the speed of the chart
 at a given point in time. A chart can contain many BPM segments, that can vary the speed.
 
 ### Stops
-Stops will pause the chart for the given ammount of time. Scrolling resumes once the time assigned has passed.
+Stops will pause the chart for the given amount of time. Scrolling resumes once the time assigned has passed.
 
 ### Delays (SSC)
-Delays will also pause the chart for the given ammount of time. Scrolling resumes once the time has passed.
+Delays will also pause the chart for the given amount of time. Scrolling resumes once the time has passed.
 
 ### Difference between Stops and Delays
 Given the previous descriptions of Stops and Delays, they do seem to behave the exact same, and they do; the difference is how notes
 interact on their start and end segments.
 Stops let you hit notes at the very start of the segment, while Delays let you hit notes at the very end of the segment.
-This is important to note in case you'd want to create segments that stop the chart for a given ammount of time, to then
+This is important to note in case you'd want to create segments that stop the chart for a given amount of time, to then
 make the player hit a note to the timing of the song picking back up to then resume scrolling.
 
 ### Time Signatures

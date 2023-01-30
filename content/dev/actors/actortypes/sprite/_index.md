@@ -9,7 +9,7 @@ Allows one to display images on screen. These images can be a png, jpeg, gif or 
 ```lua
 Def.Sprite{
 	Texture="MyTexture.png", -- The Texture is optional, you can start a sprite without a texture.
-	-- You can manipulate the ammount of frames that a sprite can use using the Sprite argument.
+	-- You can manipulate the amount of frames that a sprite can use using the Sprite argument.
 	Frames={
 		-- The structure for the Frame is as follows:
 		--{ Frame = int, Delay = float , {float,float}, {float,float} }
@@ -36,7 +36,7 @@ Def.Sprite{
 		-- setstate jumps to a frame of the animation assigned. Animation states are 0-indexed.
 		self:setstate( 2 ) -- Jumps to the third frame of the animation.
 		-- If an out-of-range value is assigned ( < 0 or > #Frames ), an error is displayed
-		-- displaying the total ammount of frames available on the current sprite.
+		-- displaying the total amount of frames available on the current sprite.
 
 		-- The Frames set can also be manipulated during runtime, by using the SetStateProperties
 		-- function. This example now inverts the animation.
