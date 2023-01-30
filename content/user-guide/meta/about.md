@@ -38,6 +38,7 @@ Design |
 :------------ |
 [Jose Varela](https://github.com/JoseVarelaP)
 [Lirodon](https://github.com/ListenerJubatus)
+[dj505](https://github.com/dj505)
 
 <---> <!-- magic separator, between columns -->
 
