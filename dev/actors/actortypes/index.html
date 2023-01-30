@@ -21,7 +21,7 @@ Because everything is an actor, there are many types of actors, which are descri
 <meta name=twitter:title content="Actor Types">
 <meta name=twitter:description content="StepMania (and it’s many forks) use what’s known as the Actor model. OutFox inherits this behaviour. Everything in the engine is an Actor at its’ very core.
 Because everything is an actor, there are many types of actors, which are described below. Not everything listed is able to be created in Lua. Those that aren’t will be noted as such. However, all of these can be found in the Lua environment.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Actor Types","url":"https://outfox.wiki/dev/actors/actortypes/","headline":"Actor Types","description":"StepMania (and it’s many forks) use what’s known as the Actor model. OutFox inherits this behaviour. Everything in the engine is an Actor at its’ very core.\nBecause everything is an actor, there are many types of actors, which are described below. Not everything listed is able to be created in Lua. Those that aren’t will be noted as such. However, all of these can be found in the Lua environment.","wordCount":"2250","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Actor Types","url":"https://outfox.wiki/dev/actors/actortypes/","headline":"Actor Types","description":"StepMania (and it’s many forks) use what’s known as the Actor model. OutFox inherits this behaviour. Everything in the engine is an Actor at its’ very core.\nBecause everything is an actor, there are many types of actors, which are described below. Not everything listed is able to be created in Lua. Those that aren’t will be noted as such. However, all of these can be found in the Lua environment.","wordCount":"2255","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
 <script src=../../../js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=../../../js/main-56ca818c.bundle.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -619,6 +619,15 @@ ActorFrame
 <span class=flex>
 <a href=../../../dev/actors/actortypes/actormultivertex/ class=gdoc-nav__entry>
 ActorMultiVertex
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/actorscroller/ class=gdoc-nav__entry>
+ActorScroller
 </a>
 </span>
 </label>
@@ -1568,13 +1577,13 @@ Def.ActorFrame
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
-<a class=gdoc-button__link href=../../../dev/actors/actortypes/actorframetexture/>
-Def.ActorFrameTexture
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/actormultivertex/>
+Def.ActorMultiVertex
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
-<a class=gdoc-button__link href=../../../dev/actors/actortypes/actormultivertex/>
-Def.ActorMultiVertex
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/actorscroller/>
+Def.ActorScroller
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
@@ -1583,13 +1592,43 @@ Def.Sprite
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/actorframetexture/>
+Def.ActorFrameTexture
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
 <a class=gdoc-button__link href=../../../dev/actors/actortypes/bitmaptext/>
 Def.BitmapText
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
-<a class=gdoc-button__link href=../../../dev/actors/actortypes/sound/>
-Def.Sound
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/devicelist/>
+Def.DeviceList
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/helpdisplay/>
+Def.HelpDisplay
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/inputlist/>
+Def.InputList
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/memorycarddisplay/>
+Def.MemoryCardDisplay
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/meterdisplay/>
+Def.MeterDisplay
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/model/>
+Def.Model
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
@@ -1598,8 +1637,8 @@ Def.NoteField
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
-<a class=gdoc-button__link href=../../../dev/actors/actortypes/helpdisplay/>
-Def.HelpDisplay
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/percentagedisplay/>
+Def.PercentageDisplay
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
@@ -1613,13 +1652,8 @@ Def.SongMeterDisplay
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
-<a class=gdoc-button__link href=../../../dev/actors/actortypes/meterdisplay/>
-Def.MeterDisplay
-</a>
-</span>
-<span class="gdoc-button gdoc-button--large">
-<a class=gdoc-button__link href=../../../dev/actors/actortypes/percentagedisplay/>
-Def.PercentageDisplay
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/sound/>
+Def.Sound
 </a>
 </span>
 </div></div></center>

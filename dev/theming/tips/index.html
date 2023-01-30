@@ -623,6 +623,15 @@ ActorMultiVertex
 </span>
 </label>
 </li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/actorscroller/ class=gdoc-nav__entry>
+ActorScroller
+</a>
+</span>
+</label>
+</li><li>
 <input type=checkbox class=gdoc-nav__toggle id=navtree-86ad643b>
 <label for=navtree-86ad643b class="flex justify-between align-center">
 <span class=flex>
@@ -1568,7 +1577,7 @@ That command is not available on previous versions nor in StepMania, so you can 
 </span></span><span class=line><span class=cl>	<span class=n>SCREENMAN</span><span class=p>:</span><span class=n>SystemMessage</span><span class=p>(</span><span class=s2>&#34;Command Available!&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=kr>end</span> 
 </span></span></code></pre></div><p>When running OutFox Alpha 4.15 or higher, you&rsquo;ll recieve the message &ldquo;Command Available!&rdquo; when executed; while any other
-build will not report the message given it&rsquo;s not available on the Profile namespace.</p><p>You can also use this search when assigning values to provide a failsafe value in the case the function is not available via a ternary operator.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=c1>-- If the operator passes, it will return the ammount of scores from the Tier01 grade, otherwise it&#39;ll return 0.</span>
+build will not report the message given it&rsquo;s not available on the Profile namespace.</p><p>You can also use this search when assigning values to provide a failsafe value in the case the function is not available via a ternary operator.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=c1>-- If the operator passes, it will return the amount of scores from the Tier01 grade, otherwise it&#39;ll return 0.</span>
 </span></span><span class=line><span class=cl><span class=kd>local</span> <span class=n>GradedScores</span> <span class=o>=</span> <span class=n>myProfile.GetTotalScoresWithGrade</span> <span class=ow>and</span> <span class=n>myProfile</span><span class=p>:</span><span class=n>GetTotalScoresWithGrade</span><span class=p>(</span><span class=s2>&#34;Grade_Tier01&#34;</span><span class=p>)</span> <span class=ow>or</span> <span class=mi>0</span>
 </span></span></code></pre></div><div class=gdoc-page__anchorwrap>
 <h2 id=make-sure-to-cover-edge-cases-for-commands>

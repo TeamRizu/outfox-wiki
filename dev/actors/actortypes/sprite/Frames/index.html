@@ -623,6 +623,15 @@ ActorMultiVertex
 </span>
 </label>
 </li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../../dev/actors/actortypes/actorscroller/ class=gdoc-nav__entry>
+ActorScroller
+</a>
+</span>
+</label>
+</li><li>
 <input type=checkbox class=gdoc-nav__toggle id=navtree-86ad643b checked>
 <label for=navtree-86ad643b class="flex justify-between align-center">
 <span class=flex>
@@ -1576,7 +1585,7 @@ Standard format
 Utilizing Sprite.LinearFrames
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/sprite/Frames/#utilizing-spritelinearframes class="gdoc-page__anchor clip flex align-center" title="Anchor to: Utilizing Sprite.LinearFrames" aria-label="Anchor to: Utilizing Sprite.LinearFrames" href=#utilizing-spritelinearframes><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>This is a helper function inside the Sprite namespace that facilitates the creation of the Frames table, by automating the creation of the table with just 2 arguments, the ammount of frames to use, and how long in general the animation will be.</p><div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+</h2></div><p>This is a helper function inside the Sprite namespace that facilitates the creation of the Frames table, by automating the creation of the table with just 2 arguments, the amount of frames to use, and how long in general the animation will be.</p><div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
 <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=n>Frames</span> <span class=o>=</span> <span class=n>Sprite.LinearFrames</span><span class=p>(</span> <span class=mi>4</span><span class=p>,</span> <span class=mi>2</span> <span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=c1>-- Will return</span>
@@ -1597,7 +1606,7 @@ Utilizing Sprite.LinearFrames
 Utilizing SetAllStateDelays on existing frames
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/sprite/Frames/#utilizing-setallstatedelays-on-existing-frames class="gdoc-page__anchor clip flex align-center" title="Anchor to: Utilizing SetAllStateDelays on existing frames" aria-label="Anchor to: Utilizing SetAllStateDelays on existing frames" href=#utilizing-setallstatedelays-on-existing-frames><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>This function can be utilized to update all delay ammounts of the current frames in the sprite on the fly.</p><p>In the example, I have a sprite that already loads a sprite that has 4 frames, and plays on 0.1 second delays, making the animation on the top of the page, but now we want to make it slightly slower.</p><div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+</h2></div><p>This function can be utilized to update all delay amounts of the current frames in the sprite on the fly.</p><p>In the example, I have a sprite that already loads a sprite that has 4 frames, and plays on 0.1 second delays, making the animation on the top of the page, but now we want to make it slightly slower.</p><div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
 <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=n>Frames</span> <span class=o>=</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>	<span class=p>{</span> <span class=n>Frame</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span> <span class=n>Delay</span> <span class=o>=</span> <span class=mf>0.1</span> <span class=p>},</span>

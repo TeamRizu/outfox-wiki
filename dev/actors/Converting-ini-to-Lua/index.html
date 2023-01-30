@@ -626,6 +626,15 @@ ActorMultiVertex
 </span>
 </label>
 </li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/actorscroller/ class=gdoc-nav__entry>
+ActorScroller
+</a>
+</span>
+</label>
+</li><li>
 <input type=checkbox class=gdoc-nav__toggle id=navtree-86ad643b>
 <label for=navtree-86ad643b class="flex justify-between align-center">
 <span class=flex>
@@ -1625,7 +1634,7 @@ Other ini-style files (.sprite, .model)
 </span></span><span class=line><span class=cl>	<span class=p>{</span><span class=n>Frame</span><span class=o>=</span> <span class=mi>3</span><span class=p>,</span> <span class=n>Delay</span><span class=o>=</span> <span class=mf>0.25</span><span class=p>},</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><blockquote class="gdoc-hint note">
-<div class="gdoc-hint__title flex align-center"><i class="fa note" title=Note></i></div><div class=gdoc-hint__text>If all frames from the animation are the same and in order, you can use the <code>Sprite.LinearFrames</code> function helper to alieviate the ammount of lines.</div></blockquote><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=c1>-- This will tell the function to create a frame table that goes through</span>
+<div class="gdoc-hint__title flex align-center"><i class="fa note" title=Note></i></div><div class=gdoc-hint__text>If all frames from the animation are the same and in order, you can use the <code>Sprite.LinearFrames</code> function helper to alieviate the amount of lines.</div></blockquote><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=c1>-- This will tell the function to create a frame table that goes through</span>
 </span></span><span class=line><span class=cl><span class=c1>-- 5 frames within 1 second.</span>
 </span></span><span class=line><span class=cl><span class=n>Frames</span> <span class=o>=</span> <span class=n>Sprite.LinearFrames</span><span class=p>(</span> <span class=mi>5</span><span class=p>,</span> <span class=mi>1</span> <span class=p>)</span>
 </span></span></code></pre></div><p>.model files have extra attributes to define bones, meshes and materials. These translate almost-1:1 into lua.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-ini data-lang=ini><span class=line><span class=cl><span class=k>[Model]</span>
