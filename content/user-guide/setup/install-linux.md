@@ -42,7 +42,7 @@ This should create a directory that holds the install of *Project OutFox*.
 ## Portable vs Non-portable mode
 When booting, the game looks for a file in its' root directory called `portable.ini`. If this file is found, the game switches to "portable" mode, which has all save data placed in the program's root directory.
 
-Otherwise, the save data will be placed in `.stepmania-5.3` in the user's home directory.
+Otherwise, the save data will be placed in `.project-outfox` in the user's home directory.
 
 ## Running the game
 {{< tabs "Running the game" >}}
@@ -57,7 +57,7 @@ Create a file on the desktop with this name and base the contents on the section
 Type=Application
 Name=Project OutFox
 Icon=/home/mtk/Desktop/Icons/dance_icon.png
-Exec=/home/mtk/Desktop/OutFox/stepmania
+Exec=/home/mtk/Desktop/OutFox/outfox
 ```
 Note that the Exec line is a full path to the *OutFox* executable, while the Icon line can be a full path to any png on the system.
 
@@ -66,13 +66,13 @@ Once created, the launcher can be double-clicked to run the game.
 {{< tab "Through the terminal" >}}
 In the game's root directory, type this into the terminal and press enter:
 ```
-./stepmania
+./outfox
 ```
 This will start the game and have some extra output in the terminal that is usually seen in the logs.
 
 To force a theme, run the following, replacing the theme name with the desired theme's directory name.
 ```
-./stepmania --theme=SM5-GrooveNights
+./outfox --theme=SM5-GrooveNights
 ```
 
 {{< /tab >}}
@@ -88,7 +88,7 @@ The game might not launch if libraries are missing. `ldd` can be used to help de
 
 Run this in the game's directory from a terminal to find what libraries are missing:
 ```
-ldd stepmania
+ldd outfox
 ```
 Here is example output from ldd:
 
@@ -129,7 +129,7 @@ A wrapper program called `pasuspender` can be used to temporarilly disable pulse
 
 In the terminal, it would be used like this:
 ```
-pasuspender ./stepmania
+pasuspender ./outfox
 ```
 
 ---
@@ -159,9 +159,9 @@ Create a FIFO file that Outfox will write to:
 
 Ensure this FIFO file has the proper read/write permissions as the same account running Outfox.
 
-Next, navigate to the Outfox save folder. In most cases, this will be in your home directory and be something like `.stepmania-5.3`:
+Next, navigate to the Outfox save folder. In most cases, this will be in your home directory and be something like `.project-outfox`:
 
-`cd /home/pi/.stepmania-5.3`
+`cd /home/pi/.project-outfox`
 
 Open up "Preferences.ini":
 
@@ -199,7 +199,7 @@ When nano opens, put the following into the text file:
 [Desktop Entry]
 Type=Application
 Name=Project OutFox
-Exec=/home/pi/Desktop/OutFox/stepmania
+Exec=/home/pi/Desktop/OutFox/outfox
 ```
 
 `Ctrl+o`, `return`, `ctrl+x` to save and exit the file. Make sure you also give it executable permission:

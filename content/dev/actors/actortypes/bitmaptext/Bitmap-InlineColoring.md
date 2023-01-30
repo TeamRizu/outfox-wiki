@@ -7,7 +7,7 @@ Starting from SM5 Preview 1, [BitmapText](../) actors can include special instru
 
 ```lua
 -- This adds an attribute to the BitmapText. These are stacked.
-self:AddAttribute( [starting point], [attribute to add] )
+self:AddAttribute( [starting point], {[attribute to add]} )
 
 -- This removes all attributes applied on the BitmapText.
 self:ClearAttributes()

@@ -84,7 +84,7 @@ These shortcuts only work in the edit screens. <!--When the editor gets revamped
 
 **Esc** / **Start** / **Enter** / **Back**: Exit the play mode (When practicing / recording / playing the chart)
 
-### Pactice Mode
+### Practice Mode
 
 **Up**: Scroll up one measure (Overrides all other modes)
 
@@ -242,9 +242,11 @@ These shortcuts only work in the music wheel screen.
 
 **F9**: Toggle between actual titles and transliterated titles.
 
-**Shift+Ctrl+r**: reload the currently selected song
+**Ctrl+Shift+r**: reload the currently selected song
 
 **Ctrl+a-z**: Sort the songs by letter and go to the group of all songs that start with that letter.
 
 **Ctrl+Backspace**: Delete the song from the system. (Actually deletes from the drive!)
+
+**Ctrl+Shift+Backspace**: Delete the selected chart from the system.
 

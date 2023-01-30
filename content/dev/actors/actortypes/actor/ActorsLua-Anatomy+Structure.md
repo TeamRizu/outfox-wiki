@@ -31,10 +31,7 @@ Commands come in two variants: "Commands" and "Messages".
 
 Commands are usually isolated to a single actor, with a few exceptions. Messages are commands that are meant to be in multiple actors and can be invoked at around the same time on all actors with a "Broadcast".
 
-{{<hint info>}}
-### Example
-<br>
-
+{{<hint title="Example">}}
 ```lua
 MESSAGEMAN:Broadcast("SpecialMove", {funnymove = 10, absolute = false})
 ```

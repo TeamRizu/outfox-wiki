@@ -24,4 +24,4 @@ Def.BitmapText{
 Font | string | The font to be utilized for this BitmapText. If it's not available, `Common Normal` will be utilized instead.
 File | string | Alternative alias to `Font`.
 Text | string | The text to show to the BitmapText.
-AltText | string | An alternative version of `Text` that will be used if there's a missing glyph (or a glyph that the game doesn't recognize or can't render) in `Text`. For more information, see [Ensuring string compatiblity](Bitmap-EnsuringStringComp).
+AltText | string | An alternative version of `Text` that will be used if there's a missing glyph (or a glyph that the game doesn't recognize or can't render) in `Text`. For more information, see [Ensuring string compatibility](Bitmap-EnsuringStringComp).
