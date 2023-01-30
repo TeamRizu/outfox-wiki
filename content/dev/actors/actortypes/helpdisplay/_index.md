@@ -53,7 +53,7 @@ local myHelpText = {
 self:settips(myHelpText)
 ```
 
-`textAlt` is an optional table to have text in case there are missing glyphs on the current font. Check [Ensuring string compatiblity](../bitmaptext/Bitmap-EnsuringStringComp) for more information.
+`textAlt` is an optional table to have text in case there are missing glyphs on the current font. Check [Ensuring string compatibility](../bitmaptext/Bitmap-EnsuringStringComp) for more information.
 
 ### gettips()
 Returns two tables which contain the help text currently being displayed on the HelpDisplay.
