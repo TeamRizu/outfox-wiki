@@ -1595,7 +1595,7 @@ Using 'tar'
 Portable vs Non-portable mode
 <a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#portable-vs-non-portable-mode class="gdoc-page__anchor clip flex align-center" title="Anchor to: Portable vs Non-portable mode" aria-label="Anchor to: Portable vs Non-portable mode" href=#portable-vs-non-portable-mode><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>When booting, the game looks for a file in its&rsquo; root directory called <code>portable.ini</code>. If this file is found, the game switches to &ldquo;portable&rdquo; mode, which has all save data placed in the program&rsquo;s root directory.</p><p>Otherwise, the save data will be placed in <code>.stepmania-5.3</code> in the user&rsquo;s home directory.</p><div class=gdoc-page__anchorwrap>
+</h2></div><p>When booting, the game looks for a file in its&rsquo; root directory called <code>portable.ini</code>. If this file is found, the game switches to &ldquo;portable&rdquo; mode, which has all save data placed in the program&rsquo;s root directory.</p><p>Otherwise, the save data will be placed in <code>.project-outfox</code> in the user&rsquo;s home directory.</p><div class=gdoc-page__anchorwrap>
 <h2 id=running-the-game>
 Running the game
 <a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#running-the-game class="gdoc-page__anchor clip flex align-center" title="Anchor to: Running the game" aria-label="Anchor to: Running the game" href=#running-the-game><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
@@ -1612,14 +1612,14 @@ Through a Launcher
 Type=Application
 Name=Project OutFox
 Icon=/home/mtk/Desktop/Icons/dance_icon.png
-Exec=/home/mtk/Desktop/OutFox/stepmania
+Exec=/home/mtk/Desktop/OutFox/outfox
 </code></pre><p>Note that the Exec line is a full path to the <em>OutFox</em> executable, while the Icon line can be a full path to any png on the system.</p><p>Once created, the launcher can be double-clicked to run the game.</p></div><input type=radio class="gdoc-tabs__control hidden" name="tabs-Running the game" id="tabs-Running the game-1">
 <label for="tabs-Running the game-1" class=gdoc-tabs__label>
 Through the terminal
 </label>
 <div class="gdoc-markdown--nested gdoc-tabs__content">
-<p>In the game&rsquo;s root directory, type this into the terminal and press enter:</p><pre tabindex=0><code>./stepmania
-</code></pre><p>This will start the game and have some extra output in the terminal that is usually seen in the logs.</p><p>To force a theme, run the following, replacing the theme name with the desired theme&rsquo;s directory name.</p><pre tabindex=0><code>./stepmania --theme=SM5-GrooveNights
+<p>In the game&rsquo;s root directory, type this into the terminal and press enter:</p><pre tabindex=0><code>./outfox
+</code></pre><p>This will start the game and have some extra output in the terminal that is usually seen in the logs.</p><p>To force a theme, run the following, replacing the theme name with the desired theme&rsquo;s directory name.</p><pre tabindex=0><code>./outfox --theme=SM5-GrooveNights
 </code></pre></div></div><div class=gdoc-page__anchorwrap>
 <h2 id=extra-noteskins>
 Extra NoteSkins
@@ -1635,7 +1635,7 @@ Common problems
 Missing libraries
 <a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#missing-libraries class="gdoc-page__anchor clip flex align-center" title="Anchor to: Missing libraries" aria-label="Anchor to: Missing libraries" href=#missing-libraries><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h3></div><p>The game might not launch if libraries are missing. <code>ldd</code> can be used to help determine what packages need to be installed without having to run the game multiple times.</p><p>Run this in the game&rsquo;s directory from a terminal to find what libraries are missing:</p><pre tabindex=0><code>ldd stepmania
+</h3></div><p>The game might not launch if libraries are missing. <code>ldd</code> can be used to help determine what packages need to be installed without having to run the game multiple times.</p><p>Run this in the game&rsquo;s directory from a terminal to find what libraries are missing:</p><pre tabindex=0><code>ldd outfox
 </code></pre><p>Here is example output from ldd:</p><p><img src=../../../getting-started/linuxinstall-ldd.png alt="Screenshot of output from ldd."></p><p>In this example, <code>libbz2.so.1.0</code> is missing.</p><p>Here&rsquo;s a list of what libraries it looks for and what Debian/Ubuntu/Fedora package it corresponds to. Most systems should have most of these already.</p><div class=table-wrap> <table>
 <thead>
 <tr>
@@ -1665,7 +1665,7 @@ Audio not playing / going to the wrong device
 Needing to force ALSA instead of PulseAudio.
 <a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#needing-to-force-alsa-instead-of-pulseaudio class="gdoc-page__anchor clip flex align-center" title="Anchor to: Needing to force ALSA instead of PulseAudio." aria-label="Anchor to: Needing to force ALSA instead of PulseAudio." href=#needing-to-force-alsa-instead-of-pulseaudio><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h3></div><p>A wrapper program called <code>pasuspender</code> can be used to temporarilly disable pulseaudio and make OutFox use the ALSA drivers.</p><p>In the terminal, it would be used like this:</p><pre tabindex=0><code>pasuspender ./stepmania
+</h3></div><p>A wrapper program called <code>pasuspender</code> can be used to temporarilly disable pulseaudio and make OutFox use the ALSA drivers.</p><p>In the terminal, it would be used like this:</p><pre tabindex=0><code>pasuspender ./outfox
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
 <h3 id=needing-to-force-a-different-audio-driver>
@@ -1691,12 +1691,12 @@ Arcade Machine Conversion With Pi
 LITBoard/Arduino Instructions
 <a data-clipboard-text=https://outfox.wiki/user-guide/setup/install-linux/#litboardarduino-instructions class="gdoc-page__anchor clip flex align-center" title="Anchor to: LITBoard/Arduino Instructions" aria-label="Anchor to: LITBoard/Arduino Instructions" href=#litboardarduino-instructions><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>In the terminal, navigate to the <code>/Data</code> folder of your Outfox installation.</p><p>example: <code>cd /home/pi/Desktop/OutFox/Data</code></p><p>Create a FIFO file that Outfox will write to:</p><p><code>mkfifo "StepMania-Lights-SextetStream.out"</code></p><p>Ensure this FIFO file has the proper read/write permissions as the same account running Outfox.</p><p>Next, navigate to the Outfox save folder. In most cases, this will be in your home directory and be something like <code>.stepmania-5.3</code>:</p><p><code>cd /home/pi/.stepmania-5.3</code></p><p>Open up &ldquo;Preferences.ini&rdquo;:</p><p><code>nano Preferences.ini</code></p><p>Scroll down to find a line that starts with <code>LightsDriver=</code> and change it to:</p><p><code>LightsDriver=SextetStreamToFile</code></p><p>Press <code>crtl+o</code> and hit <code>return</code>, then press <code>ctrl+x</code> to save the file and exit nano. We need to now make sure that something is going to use that file, otherwise you&rsquo;ll find your system will eventually crash as that file fills up without getting emptied.</p><p>Make sure that <code>socat</code> is installed on your pi:</p><p><code>sudo apt install socat</code></p><p>Next open up cron to have socat start at reboot by typing:</p><p><code>crontab -e</code></p><p>At the end of that window, add this line (replacing the path with the path to you FIFO file):</p><p><code>@reboot socat "/home/pi/Desktop/OutFox/Data/StepMania-Lights-SextetStream.out" /dev/ttyUSB0,raw,echo=0,b155200 &</code></p><p>Press <code>crtl+o</code>, <code>return</code>, <code>ctrl+x</code> to save and exit crontab. Notice the <code>&</code> at the end of the line. That&rsquo;s important to let it run in the background. Otherwise your system will just sit there waiting for it to quit&mldr;</p><p>Next, create a launcher file that will run on startup. In order to do this, it should reside in the autostart folder of xdg. Easy way to do this is:</p><p><code>nano /etc/xdg/autostart/OutFox.desktop</code></p><p>When nano opens, put the following into the text file:</p><pre tabindex=0><code>#!/usr/bin/env xdg-open
+</h2></div><p>In the terminal, navigate to the <code>/Data</code> folder of your Outfox installation.</p><p>example: <code>cd /home/pi/Desktop/OutFox/Data</code></p><p>Create a FIFO file that Outfox will write to:</p><p><code>mkfifo "StepMania-Lights-SextetStream.out"</code></p><p>Ensure this FIFO file has the proper read/write permissions as the same account running Outfox.</p><p>Next, navigate to the Outfox save folder. In most cases, this will be in your home directory and be something like <code>.project-outfox</code>:</p><p><code>cd /home/pi/.project-outfox</code></p><p>Open up &ldquo;Preferences.ini&rdquo;:</p><p><code>nano Preferences.ini</code></p><p>Scroll down to find a line that starts with <code>LightsDriver=</code> and change it to:</p><p><code>LightsDriver=SextetStreamToFile</code></p><p>Press <code>crtl+o</code> and hit <code>return</code>, then press <code>ctrl+x</code> to save the file and exit nano. We need to now make sure that something is going to use that file, otherwise you&rsquo;ll find your system will eventually crash as that file fills up without getting emptied.</p><p>Make sure that <code>socat</code> is installed on your pi:</p><p><code>sudo apt install socat</code></p><p>Next open up cron to have socat start at reboot by typing:</p><p><code>crontab -e</code></p><p>At the end of that window, add this line (replacing the path with the path to you FIFO file):</p><p><code>@reboot socat "/home/pi/Desktop/OutFox/Data/StepMania-Lights-SextetStream.out" /dev/ttyUSB0,raw,echo=0,b155200 &</code></p><p>Press <code>crtl+o</code>, <code>return</code>, <code>ctrl+x</code> to save and exit crontab. Notice the <code>&</code> at the end of the line. That&rsquo;s important to let it run in the background. Otherwise your system will just sit there waiting for it to quit&mldr;</p><p>Next, create a launcher file that will run on startup. In order to do this, it should reside in the autostart folder of xdg. Easy way to do this is:</p><p><code>nano /etc/xdg/autostart/OutFox.desktop</code></p><p>When nano opens, put the following into the text file:</p><pre tabindex=0><code>#!/usr/bin/env xdg-open
 
 [Desktop Entry]
 Type=Application
 Name=Project OutFox
-Exec=/home/pi/Desktop/OutFox/stepmania
+Exec=/home/pi/Desktop/OutFox/outfox
 </code></pre><p><code>Ctrl+o</code>, <code>return</code>, <code>ctrl+x</code> to save and exit the file. Make sure you also give it executable permission:</p><p><code>chmod a+x /etc/xdg/autostart/OutFox.desktop</code></p><p>Now if you reboot the pi, it should automatically load socat and OutFox for a session of great fun.</p><p><em>(thanks to Random Hajile for the PiCab information)</em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
 </div></div></main><footer class=gdoc-footer>
 <nav class="container flex">
