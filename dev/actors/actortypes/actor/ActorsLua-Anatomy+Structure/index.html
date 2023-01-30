@@ -21,7 +21,7 @@ General layout Commands General layout Def.Actor { Name= &#34;Example Actor&#34;
 <meta name=twitter:title content="Anatomy of an Actor">
 <meta name=twitter:description content="Every actor in SM5 follows a standart general structure, with ActorFrames being more flexible in how they’re constructed.
 General layout Commands General layout Def.Actor { Name= &#34;Example Actor&#34;, InitCommand= function(self) self:zoom(100) end, OnCommand= function(self) self:linear(2):x(30) end, } Every actor starts with a Def. prefix, followed by the actor type itself. An actor can have a name and commands. These commands could be anything, as long as it’s suffixed with a Command or MessageCommand, depending on the type of commands needed.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Anatomy of an Actor","url":"https://outfox.wiki/dev/actors/actortypes/actor/ActorsLua-Anatomy+Structure/","headline":"Anatomy of an Actor","description":"Every actor in SM5 follows a standart general structure, with ActorFrames being more flexible in how they’re constructed.\nGeneral layout Commands General layout Def.Actor { Name= \u0022Example Actor\u0022, InitCommand= function(self) self:zoom(100) end, OnCommand= function(self) self:linear(2):x(30) end, } Every actor starts with a Def. prefix, followed by the actor type itself. An actor can have a name and commands. These commands could be anything, as long as it’s suffixed with a Command or MessageCommand, depending on the type of commands needed.","wordCount":"378","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/actor/ActorsLua-Anatomy+Structure/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Anatomy of an Actor","url":"https://outfox.wiki/dev/actors/actortypes/actor/ActorsLua-Anatomy+Structure/","headline":"Anatomy of an Actor","description":"Every actor in SM5 follows a standart general structure, with ActorFrames being more flexible in how they’re constructed.\nGeneral layout Commands General layout Def.Actor { Name= \u0022Example Actor\u0022, InitCommand= function(self) self:zoom(100) end, OnCommand= function(self) self:linear(2):x(30) end, } Every actor starts with a Def. prefix, followed by the actor type itself. An actor can have a name and commands. These commands could be anything, as long as it’s suffixed with a Command or MessageCommand, depending on the type of commands needed.","wordCount":"377","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/actor/ActorsLua-Anatomy+Structure/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
 <script src=../../../../../js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=../../../../../js/main-56ca818c.bundle.min.js></script>
 <link rel=preload as=font href=../../../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -632,6 +632,15 @@ ActorScroller
 </span>
 </label>
 </li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../../dev/actors/actortypes/dynamicactorscroller/ class=gdoc-nav__entry>
+DynamicActorScroller
+</a>
+</span>
+</label>
+</li><li>
 <input type=checkbox class=gdoc-nav__toggle id=navtree-86ad643b>
 <label for=navtree-86ad643b class="flex justify-between align-center">
 <span class=flex>
@@ -674,7 +683,7 @@ BitmapText
 <label>
 <span class=flex>
 <a href=../../../../../dev/actors/actortypes/bitmaptext/Bitmap-EnsuringStringComp/ class=gdoc-nav__entry>
-Ensuring string compatiblity
+Ensuring string compatibility
 </a>
 </span>
 </label>
@@ -1577,13 +1586,7 @@ Commands
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actor/ActorsLua-Anatomy+Structure/#commands class="gdoc-page__anchor clip flex align-center" title="Anchor to: Commands" aria-label="Anchor to: Commands" href=#commands><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><p>Commands come in two variants: &ldquo;Commands&rdquo; and &ldquo;Messages&rdquo;.</p><p>Commands are usually isolated to a single actor, with a few exceptions. Messages are commands that are meant to be in multiple actors and can be invoked at around the same time on all actors with a &ldquo;Broadcast&rdquo;.</p><blockquote class="gdoc-hint note">
-<div class="gdoc-hint__title flex align-center"><i class="fa note" title=Note></i></div><div class=gdoc-hint__text><div class=gdoc-page__anchorwrap>
-<h3 id=example>
-Example
-<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actor/ActorsLua-Anatomy+Structure/#example class="gdoc-page__anchor clip flex align-center" title="Anchor to: Example" aria-label="Anchor to: Example" href=#example><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3></div><br>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=n>MESSAGEMAN</span><span class=p>:</span><span class=n>Broadcast</span><span class=p>(</span><span class=s2>&#34;SpecialMove&#34;</span><span class=p>,</span> <span class=p>{</span><span class=n>funnymove</span> <span class=o>=</span> <span class=mi>10</span><span class=p>,</span> <span class=n>absolute</span> <span class=o>=</span> <span class=kc>false</span><span class=p>})</span>
+<div class="gdoc-hint__title flex align-center"><i class="fa note" title=Example></i></div><div class=gdoc-hint__text><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=n>MESSAGEMAN</span><span class=p>:</span><span class=n>Broadcast</span><span class=p>(</span><span class=s2>&#34;SpecialMove&#34;</span><span class=p>,</span> <span class=p>{</span><span class=n>funnymove</span> <span class=o>=</span> <span class=mi>10</span><span class=p>,</span> <span class=n>absolute</span> <span class=o>=</span> <span class=kc>false</span><span class=p>})</span>
 </span></span></code></pre></div><p><em>This would run &ldquo;SpecialMoveMessageCommand&rdquo; on all actors that have this command defined, with a parameter table being passed in. Not all actors might use this table, even though they might have the command defined.</em></p></div></blockquote><p>If one needs to manually queue a command or message, the <code>queuecommand</code> or <code>queuemessage</code> functions can be used.</p><p>These queued commands run only after all previous tweens have finished.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=n>self</span><span class=p>:</span><span class=n>queuecommand</span><span class=p>(</span><span class=s2>&#34;Action&#34;</span><span class=p>):</span><span class=n>queuecommand</span><span class=p>(</span><span class=s2>&#34;AnotherOne&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>-- The actor itself</span>

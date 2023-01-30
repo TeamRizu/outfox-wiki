@@ -5,23 +5,23 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.110.0">
-<meta name=description content="When applying text on a BitmapText actor, depending on the font, some glyphs might not present themselves properly and will show two possible cases, depending on the situation. Let&rsquo;s take the following example, which attempts to load a text with the value H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶, which is Headgrinder with some special unicode to add non-spacing strikes in the text.
-In this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show ?">
-<title>Ensuring string compatiblity | Project OutFox Wiki</title><link rel=icon type=image/svg+xml href=../../../../../favicon/favicon.svg>
+<meta name=description content="When applying text on a BitmapText actor, depending on the font, some glyphs might not present themselves properly. Let&rsquo;s take the following example, which attempts to load a text with the value H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶, which is Headgrinder with some special unicode to add non-spacing strikes in the text.
+In this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show ? symbols instead (from the Common default glyph image list), to indicate the missing element.">
+<title>Ensuring string compatibility | Project OutFox Wiki</title><link rel=icon type=image/svg+xml href=../../../../../favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=../../../../../favicon/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=../../../../../favicon/favicon-16x16.png>
-<meta property="og:title" content="Ensuring string compatiblity">
+<meta property="og:title" content="Ensuring string compatibility">
 <meta property="og:site_name" content="Project OutFox Wiki">
-<meta property="og:description" content="When applying text on a BitmapText actor, depending on the font, some glyphs might not present themselves properly and will show two possible cases, depending on the situation. Let’s take the following example, which attempts to load a text with the value H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶, which is Headgrinder with some special unicode to add non-spacing strikes in the text.
-In this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show ?">
+<meta property="og:description" content="When applying text on a BitmapText actor, depending on the font, some glyphs might not present themselves properly. Let’s take the following example, which attempts to load a text with the value H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶, which is Headgrinder with some special unicode to add non-spacing strikes in the text.
+In this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show ? symbols instead (from the Common default glyph image list), to indicate the missing element.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://outfox.wiki/dev/actors/actortypes/bitmaptext/Bitmap-EnsuringStringComp/">
 <meta property="article:section" content="Dev">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Ensuring string compatiblity">
-<meta name=twitter:description content="When applying text on a BitmapText actor, depending on the font, some glyphs might not present themselves properly and will show two possible cases, depending on the situation. Let’s take the following example, which attempts to load a text with the value H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶, which is Headgrinder with some special unicode to add non-spacing strikes in the text.
-In this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show ?">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Ensuring string compatiblity","url":"https://outfox.wiki/dev/actors/actortypes/bitmaptext/Bitmap-EnsuringStringComp/","headline":"Ensuring string compatiblity","description":"When applying text on a BitmapText actor, depending on the font, some glyphs might not present themselves properly and will show two possible cases, depending on the situation. Let’s take the following example, which attempts to load a text with the value H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶, which is Headgrinder with some special unicode to add non-spacing strikes in the text.\nIn this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show ?","wordCount":"194","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/bitmaptext/Bitmap-EnsuringStringComp/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
+<meta name=twitter:title content="Ensuring string compatibility">
+<meta name=twitter:description content="When applying text on a BitmapText actor, depending on the font, some glyphs might not present themselves properly. Let’s take the following example, which attempts to load a text with the value H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶, which is Headgrinder with some special unicode to add non-spacing strikes in the text.
+In this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show ? symbols instead (from the Common default glyph image list), to indicate the missing element.">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Ensuring string compatibility","url":"https://outfox.wiki/dev/actors/actortypes/bitmaptext/Bitmap-EnsuringStringComp/","headline":"Ensuring string compatibility","description":"When applying text on a BitmapText actor, depending on the font, some glyphs might not present themselves properly. Let’s take the following example, which attempts to load a text with the value H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶, which is Headgrinder with some special unicode to add non-spacing strikes in the text.\nIn this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show ? symbols instead (from the Common default glyph image list), to indicate the missing element.","wordCount":"184","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/bitmaptext/Bitmap-EnsuringStringComp/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
 <script src=../../../../../js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=../../../../../js/main-56ca818c.bundle.min.js></script>
 <link rel=preload as=font href=../../../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -632,6 +632,15 @@ ActorScroller
 </span>
 </label>
 </li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../../dev/actors/actortypes/dynamicactorscroller/ class=gdoc-nav__entry>
+DynamicActorScroller
+</a>
+</span>
+</label>
+</li><li>
 <input type=checkbox class=gdoc-nav__toggle id=navtree-86ad643b>
 <label for=navtree-86ad643b class="flex justify-between align-center">
 <span class=flex>
@@ -674,7 +683,7 @@ BitmapText
 <label>
 <span class=flex>
 <a href=../../../../../dev/actors/actortypes/bitmaptext/Bitmap-EnsuringStringComp/ class="gdoc-nav__entry is-active">
-Ensuring string compatiblity
+Ensuring string compatibility
 </a>
 </span>
 </label>
@@ -1557,8 +1566,8 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/ href=../../../../../dev/actors/><span itemprop=name>Lua and Actors</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/actortypes/ href=../../../../../dev/actors/actortypes/><span itemprop=name>Actor Types</span></a><meta itemprop=position content="4"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/actortypes/bitmaptext/ href=../../../../../dev/actors/actortypes/bitmaptext/><span itemprop=name>BitmapText</span></a><meta itemprop=position content="5"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Ensuring string compatiblity</span><meta itemprop=position content="6"></li></ol></div></div><article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Ensuring string compatiblity</h1><p>When applying text on a <a class=gdoc-markdown__link href=../>BitmapText</a> actor, depending on the font, some glyphs might not present themselves properly and will show two possible cases, depending on the situation. Let&rsquo;s take the following example, which attempts to load a text with the value <code>H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶</code>, which is <code>Headgrinder</code> with some special unicode to add non-spacing strikes in the text.</p><div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/ href=../../../../../dev/actors/><span itemprop=name>Lua and Actors</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/actortypes/ href=../../../../../dev/actors/actortypes/><span itemprop=name>Actor Types</span></a><meta itemprop=position content="4"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/actors/actortypes/bitmaptext/ href=../../../../../dev/actors/actortypes/bitmaptext/><span itemprop=name>BitmapText</span></a><meta itemprop=position content="5"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Ensuring string compatibility</span><meta itemprop=position content="6"></li></ol></div></div><article class="gdoc-markdown gdoc-markdown__align--left">
+<h1>Ensuring string compatibility</h1><p>When applying text on a <a class=gdoc-markdown__link href=../>BitmapText</a> actor, depending on the font, some glyphs might not present themselves properly. Let&rsquo;s take the following example, which attempts to load a text with the value <code>H̶e̵a̶d̸g̷r̴i̸n̶d̴e̴r̶</code>, which is <code>Headgrinder</code> with some special unicode to add non-spacing strikes in the text.</p><div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
 <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
 <img src=../../../../../theming/bitmap/textBrokenGlyph.png alt>
 In this example, the glyphs representing the special unicode symbols are not found in this custom font, so they show <code>?</code> symbols instead (from the <code>Common default</code> glyph image list), to indicate the missing element.
