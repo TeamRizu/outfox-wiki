@@ -25,6 +25,7 @@ This is a helper function that can be used to dynamically load an actor based on
 {{< button size="large" relref="actorframetexture/" >}}Def.ActorFrameTexture{{< /button >}}
 {{< button size="large" relref="bitmaptext/" >}}Def.BitmapText{{< /button >}}
 {{< button size="large" relref="devicelist/" >}}Def.DeviceList{{< /button >}}
+{{< button size="large" relref="gradedisplay/" >}}Def.GradeDisplay{{< /button >}}
 {{< button size="large" relref="helpdisplay/" >}}Def.HelpDisplay{{< /button >}}
 {{< button size="large" relref="inputlist/" >}}Def.InputList{{< /button >}}
 {{< button size="large" relref="memorycarddisplay/" >}}Def.MemoryCardDisplay{{< /button >}}

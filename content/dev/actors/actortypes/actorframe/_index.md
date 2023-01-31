@@ -30,6 +30,8 @@ Lighting | bool | Enables lighting for the ActorFrame (unused).
 The following require Lighting to be enabled. However, only the ambient color seems to work. This bug has been present since sm-ssc.
 {{</hint>}}
 
+| Name | Type | Action |
+| :--- | :--- | :----- |
 AmbientColor | color | Ambient coloring for the ActorFrame.
 DiffuseColor | color | Diffuse coloring for the ActorFrame.
 SpecularColor | color | Specular coloring for the ActorFrame.
