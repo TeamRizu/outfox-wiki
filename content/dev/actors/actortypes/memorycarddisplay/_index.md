@@ -37,4 +37,4 @@ The graphics used to update this actor are located in `Graphics/MemoryCardDispla
 
 | Name | Type | Action |
 | :--- | :--- | :----- |
-PlayerNumber | PlayerNumber | The player to check its current MemoryCard state.
+PlayerNumber |  PlayerNumber | The player to check its current MemoryCard state.

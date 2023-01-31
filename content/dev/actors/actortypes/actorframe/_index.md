@@ -16,6 +16,25 @@ Def.ActorFrame{
 
 {{<toc>}}
 
+## Attributes
+| Name | Type | Action |
+| :--- | :--- | :----- |
+UpdateRate | number | Defines the update rate for the actorframe to update.
+FOV | number | The Field of View value for the items inside of the ActorFrame.
+VanishX | number | Sets the X vanish for the ActorFrame.
+VanishY | number | Sets the X vanish for the ActorFrame.
+FarDistZ | number | Sets the Z draw distance for the ActorFrame.
+Lighting | bool | Enables lighting for the ActorFrame (unused).
+
+{{<hint>}}
+The following require Lighting to be enabled. However, only the ambient color seems to work. This bug has been present since sm-ssc.
+{{</hint>}}
+
+AmbientColor | color | Ambient coloring for the ActorFrame.
+DiffuseColor | color | Diffuse coloring for the ActorFrame.
+SpecularColor | color | Specular coloring for the ActorFrame.
+LightDirection | {0,0,0} | The direction of the lighting for the ActorFrame.
+
 ## Inline building
 
 Actors can be explicitly placed into an ActorFrame like this:

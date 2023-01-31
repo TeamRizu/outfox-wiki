@@ -36,16 +36,16 @@ The attributes for DynamicActorScroller are the same as [ActorScroller](../actor
 
 | Name | Type | Action |
 | :--- | :--- | :----- |
-LoadFunction | function | **New to DynamicActorScroller**, determines the ammount of items to be generated. provides two arguments which are nil.
+LoadFunction |  function |  **New to DynamicActorScroller**, determines the ammount of items to be generated. provides two arguments which are nil.
 NumItemsToDraw | number | How many items will be drawn at once on the ActorScroller.
 SecondsPerItem | number | How long will the scroller take before moving to the next item.
-TransformFunction | function | The function that positions every item in the ActorScroller. For more information, check [Transforming the Scroller](../actorscroller/#transforming-the-scroller).
-Subdivisions | number | How many subdivisions should there be between each item? This allows for smoother movement for scrollers that contain any mathematical curve.
+TransformFunction |  function | The function that positions every item in the ActorScroller. For more information, check [Transforming the Scroller](../actorscroller/#transforming-the-scroller).
+Subdivisions |  number |  How many subdivisions should there be between each item? This allows for smoother movement for scrollers that contain any mathematical curve.
 UseMask | bool | Toggles a mask on the top and bottom of the ActorScroller.
 MaskHeight | number | Height of the mask present on the top and bottom of the ActorScroller. Requires `UseMask` to be `true`.
 MaskWidth | number | Width of the mask present on the top and bottom of the ActorScroller. Requires `UseMask` to be `true`.
-LoopScroller | bool | Loops the **selection** of the scroller to wrap around.
-WrapScroller | bool | Wraps the items of the scroller to attempt a seamless transition back.
+LoopScroller |  bool | Loops the **selection** of the scroller to wrap around.
+WrapScroller |  bool | Wraps the items of the scroller to attempt a seamless transition back.
 
 ## Utilization
 

@@ -36,7 +36,7 @@ There are no special atributes for this actor class. It inherits the atributes f
 When using the [`load`](#load) function, it will requests multiple metrics from the theme.
 
 ```ini
-[TextBanner] # The name of the group can be different depending on the group that you want.
+[TextBanner] #  The name of the group can be different depending on the group that you want.
 TitleOnCommand=function
 SubtitleOnCommand=function
 ArtistOnCommand=function
