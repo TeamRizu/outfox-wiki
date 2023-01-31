@@ -1,6 +1,6 @@
 ---
 title: ScoreDisplayAliveTime
-weight: 3
+weight: 0
 ---
 
 A [BitmapText](../bitmaptext/) that provides the amount of time the player has survived throughout the current session.

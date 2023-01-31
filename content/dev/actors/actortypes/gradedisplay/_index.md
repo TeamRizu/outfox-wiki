@@ -1,6 +1,6 @@
 ---
 title: GradeDisplay
-weight: 3
+weight: 0
 ---
 
 An [ActorFrame](../actorframe) containing [AutoActors](../_index.md) based on the number of grades available that are assigned by the theme (`PlayerStageStats::NumGradeTiersUsed`).

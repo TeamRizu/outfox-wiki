@@ -1,6 +1,6 @@
 ---
 title: SongMeterDisplay
-weight: 3
+weight: 0
 geekdocCollapseSection: true
 ---
 

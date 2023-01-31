@@ -37,6 +37,8 @@ DiffuseColor | color | Diffuse coloring for the ActorFrame.
 SpecularColor | color | Specular coloring for the ActorFrame.
 LightDirection | {0,0,0} | The direction of the lighting for the ActorFrame.
 
+This actor inherits attributes from [Actor](../actor/#attributes).
+
 ## Inline building
 
 Actors can be explicitly placed into an ActorFrame like this:

@@ -1,6 +1,6 @@
 ---
 title: ScoreDisplayCalories
-weight: 3
+weight: 0
 ---
 
 A [BitmapText](../bitmaptext/) that provides the amount of calories burned throughout the session.
