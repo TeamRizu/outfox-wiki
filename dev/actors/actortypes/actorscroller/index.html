@@ -709,8 +709,26 @@ Segments of a BitmapText
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=../../../../dev/actors/actortypes/bpmdisplay/ class=gdoc-nav__entry>
+BPMDisplay
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
 <a href=../../../../dev/actors/actortypes/devicelist/ class=gdoc-nav__entry>
 DeviceList
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/gradedisplay/ class=gdoc-nav__entry>
+GradeDisplay
 </a>
 </span>
 </label>
@@ -837,6 +855,33 @@ Quad
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=../../../../dev/actors/actortypes/scoredisplayalivetime/ class=gdoc-nav__entry>
+ScoreDisplayAliveTime
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/scoredisplaycalories/ class=gdoc-nav__entry>
+ScoreDisplayCalories
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/songbpmdisplay/ class=gdoc-nav__entry>
+SongBPMDisplay
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
 <a href=../../../../dev/actors/actortypes/songmeterdisplay/ class=gdoc-nav__entry>
 SongMeterDisplay
 </a>
@@ -861,7 +906,16 @@ Controlling Sound
 </a>
 </span>
 </label>
-</li></ul></li></ul></li><li>
+</li></ul></li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/textbanner/ class=gdoc-nav__entry>
+TextBanner
+</a>
+</span>
+</label>
+</li></ul></li><li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
@@ -1598,13 +1652,13 @@ Attributes
 <tr>
 <td style=text-align:left>NumItemsToDraw</td><td style=text-align:left>number</td><td style=text-align:left>How many items will be drawn at once on the ActorScroller.</td></tr><tr>
 <td style=text-align:left>SecondsPerItem</td><td style=text-align:left>number</td><td style=text-align:left>How long will the scroller take before moving to the next item.</td></tr><tr>
-<td style=text-align:left>TransformFunction</td><td style=text-align:left> function</td><td style=text-align:left>The function that positions every item in the ActorScroller. For more information, check <a class=gdoc-markdown__link href=#transforming-the-scroller>Transforming the Scroller</a>.</td></tr><tr>
-<td style=text-align:left>Subdivisions</td><td style=text-align:left> number</td><td style=text-align:left> How many subdivisions should there be between each item? This allows for smoother movement for scrollers that contain any mathematical curve.</td></tr><tr>
+<td style=text-align:left>TransformFunction</td><td style=text-align:left>function</td><td style=text-align:left>The function that positions every item in the ActorScroller. For more information, check <a class=gdoc-markdown__link href=#transforming-the-scroller>Transforming the Scroller</a>.</td></tr><tr>
+<td style=text-align:left>Subdivisions</td><td style=text-align:left>number</td><td style=text-align:left>How many subdivisions should there be between each item? This allows for smoother movement for scrollers that contain any mathematical curve.</td></tr><tr>
 <td style=text-align:left>UseMask</td><td style=text-align:left>bool</td><td style=text-align:left>Toggles a mask on the top and bottom of the ActorScroller.</td></tr><tr>
 <td style=text-align:left>MaskHeight</td><td style=text-align:left>number</td><td style=text-align:left>Height of the mask present on the top and bottom of the ActorScroller. Requires <code>UseMask</code> to be <code>true</code>.</td></tr><tr>
 <td style=text-align:left>MaskWidth</td><td style=text-align:left>number</td><td style=text-align:left>Width of the mask present on the top and bottom of the ActorScroller. Requires <code>UseMask</code> to be <code>true</code>.</td></tr><tr>
-<td style=text-align:left>LoopScroller</td><td style=text-align:left> bool</td><td style=text-align:left>Loops the <strong>selection</strong> of the scroller to wrap around.</td></tr><tr>
-<td style=text-align:left>WrapScroller</td><td style=text-align:left> bool</td><td style=text-align:left>Wraps the items of the scroller to attempt a seamless transition back.</td></tr></tbody></table></div><div class=gdoc-page__anchorwrap>
+<td style=text-align:left>LoopScroller</td><td style=text-align:left>bool</td><td style=text-align:left>Loops the <strong>selection</strong> of the scroller to wrap around.</td></tr><tr>
+<td style=text-align:left>WrapScroller</td><td style=text-align:left>bool</td><td style=text-align:left>Wraps the items of the scroller to attempt a seamless transition back.</td></tr></tbody></table></div><div class=gdoc-page__anchorwrap>
 <h2 id=adding-actors>
 Adding actors
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actorscroller/#adding-actors class="gdoc-page__anchor clip flex align-center" title="Anchor to: Adding actors" aria-label="Anchor to: Adding actors" href=#adding-actors><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
