@@ -62,5 +62,5 @@ Def.Sprite{
 | :--- | :--- | :----- |
 Texture | string | Path to the texture to use for this sprite actor.
 Frames | table | The table containing the frame per frame information to be interpreted by the actor. For more information, see [Managing Frames](Frames).
-Frame[NNNN] | number | Alternative method for Frames's version of { Frame = `number` }, used for backwards compatibility with older actors.
-Delay[NNNN] | number | Alternative method for Frames's version of { Delay = `number` }, used for backwards compatibility with older actors.
+Frame[NNNN] |  number |  Alternative method for Frames's version of { Frame = `number` }, used for backwards compatibility with older actors.
+Delay[NNNN] |  number |  Alternative method for Frames's version of { Delay = `number` }, used for backwards compatibility with older actors.
