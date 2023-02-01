@@ -16,10 +16,11 @@ This is a helper function that can be used to dynamically load an actor based on
 <!--{{<toc>}}-->
 
 <center>
-{{<columns>}}
 {{< button size="large" relref="actor/" >}}Def.Actor{{< /button >}}
 {{< button size="large" relref="actorframe/" >}}Def.ActorFrame{{< /button >}}
+{{< button size="large" relref="actorframetexture/" >}}Def.ActorFrameTexture{{< /button >}}
 {{< button size="large" relref="actormultivertex/" >}}Def.ActorMultiVertex{{< /button >}}
+{{< button size="large" relref="actorproxy/" >}}Def.ActorProxy{{< /button >}}
 {{< button size="large" relref="actorscroller/" >}}Def.ActorScroller{{< /button >}}
 {{< button size="large" relref="bitmaptext/" >}}Def.BitmapText{{< /button >}}
 {{< button size="large" relref="bpmdisplay/" >}}Def.BPMDisplay{{< /button >}}
@@ -41,9 +42,8 @@ This is a helper function that can be used to dynamically load an actor based on
 {{< button size="large" relref="sound/" >}}Def.Sound{{< /button >}}
 {{< button size="large" relref="sprite/" >}}Def.Sprite{{< /button >}}
 {{< button size="large" relref="stepsdisplay/" >}}Def.StepsDisplay{{< /button >}}
-{{< button size="large" relref="actorframetexture/" >}}Def.ActorFrameTexture{{< /button >}}
 {{< button size="large" relref="textbanner/" >}}Def.TextBanner{{< /button >}}
-{{</columns>}}
+{{< button size="large" relref="workoutgraph/" >}}Def.WorkoutGraph{{< /button >}}
 </center>
 
 ## ActorFrameTexture

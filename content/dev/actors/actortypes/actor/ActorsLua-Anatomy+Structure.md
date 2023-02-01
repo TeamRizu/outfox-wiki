@@ -5,7 +5,7 @@ weight: 0
 
 <!-- TODO: This is just getting started. If you've got ideas for this, please help out! -->
 
-Every actor in SM5 follows a standart general structure, with [ActorFrames](../../actorframe/) being more flexible in how they're constructed.
+Every actor in SM5 follows a standard general structure, with [ActorFrames](../../actorframe/) being more flexible in how they're constructed.
 
 {{<toc>}}
 

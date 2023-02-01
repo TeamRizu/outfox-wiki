@@ -4,6 +4,8 @@ weight: 0
 geekdocCollapseSection: true
 ---
 
+Displays the data for a given chart. Can show difficulty number, description, credit, if it’s autogen and steps type. Currently, all setings are done through metrics.
+
 ```lua
 Def.StepsDisplay{}
 ```
