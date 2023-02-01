@@ -1,6 +1,6 @@
 ---
 title: TextBanner
-weight: 3
+weight: 0
 ---
 
 TextBanner is an automated [ActorFrame](../actorframe/) that processes information from a Song or Course to fill in data to several included [BitmapText](../bitmaptext/) actors.

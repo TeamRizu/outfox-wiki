@@ -1,6 +1,6 @@
 ---
 title: HelpDisplay
-weight: 3
+weight: 0
 geekdocCollapseSection: true
 ---
 

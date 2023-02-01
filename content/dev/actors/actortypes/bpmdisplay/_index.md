@@ -1,6 +1,6 @@
 ---
 title: BPMDisplay
-weight: 3
+weight: 0
 ---
 
 A general-purpose BPM display. Can cycle between two states of values in a rolling motion.

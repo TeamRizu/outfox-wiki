@@ -1,6 +1,6 @@
 ---
 title: SongBPMDisplay
-weight: 3
+weight: 0
 ---
 
 A slightly automated version of [BPMDisplay](../bpmdisplay/) that automatically updates the text to the BPM range from a given player.
