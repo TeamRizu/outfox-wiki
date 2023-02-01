@@ -21,7 +21,7 @@
 <meta name=twitter:title content="Actor">
 <meta name=twitter:description content="This is the base that everything derives from. Whatever an Actor can do, everything else can as well. It can be useful for creating control variables without creating something visible on screen.
 -- Actors can be very useful as variable controllers since it does not perform any kind of -- overhead to the draw pipe. local Value = 2 Def.Actor{ InitCommand=function(self) Value = Value + 2 Trace(&#34;My Value is now &#34;.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Actor","url":"https://outfox.wiki/dev/actors/actortypes/actor/","headline":"Actor","description":"This is the base that everything derives from. Whatever an Actor can do, everything else can as well. It can be useful for creating control variables without creating something visible on screen.\n-- Actors can be very useful as variable controllers since it does not perform any kind of -- overhead to the draw pipe. local Value = 2 Def.Actor{ InitCommand=function(self) Value = Value \u002b 2 Trace(\u0022My Value is now \u0022.","wordCount":"86","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/actor/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Actor","url":"https://outfox.wiki/dev/actors/actortypes/actor/","headline":"Actor","description":"This is the base that everything derives from. Whatever an Actor can do, everything else can as well. It can be useful for creating control variables without creating something visible on screen.\n-- Actors can be very useful as variable controllers since it does not perform any kind of -- overhead to the draw pipe. local Value = 2 Def.Actor{ InitCommand=function(self) Value = Value \u002b 2 Trace(\u0022My Value is now \u0022.","wordCount":"249","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/actor/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
 <script src=../../../../js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=../../../../js/main-56ca818c.bundle.min.js></script>
 <link rel=preload as=font href=../../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -617,6 +617,15 @@ ActorFrame
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=../../../../dev/actors/actortypes/actorframetexture/ class=gdoc-nav__entry>
+ActorFrameTexture
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
 <a href=../../../../dev/actors/actortypes/actormultivertex/ class=gdoc-nav__entry>
 ActorMultiVertex
 </a>
@@ -626,45 +635,17 @@ ActorMultiVertex
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=../../../../dev/actors/actortypes/actorproxy/ class=gdoc-nav__entry>
+ActorProxy
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
 <a href=../../../../dev/actors/actortypes/actorscroller/ class=gdoc-nav__entry>
 ActorScroller
-</a>
-</span>
-</label>
-</li><li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=../../../../dev/actors/actortypes/dynamicactorscroller/ class=gdoc-nav__entry>
-DynamicActorScroller
-</a>
-</span>
-</label>
-</li><li>
-<input type=checkbox class=gdoc-nav__toggle id=navtree-86ad643b>
-<label for=navtree-86ad643b class="flex justify-between align-center">
-<span class=flex>
-<a href=../../../../dev/actors/actortypes/sprite/ class=gdoc-nav__entry>
-Sprite
-</a>
-</span><svg class="gdoc-icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="gdoc-icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
-</label>
-<ul class=gdoc-nav__list>
-<li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=../../../../dev/actors/actortypes/sprite/Frames/ class=gdoc-nav__entry>
-Managing Frames
-</a>
-</span>
-</label>
-</li></ul></li><li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=../../../../dev/actors/actortypes/actorframetexture/ class=gdoc-nav__entry>
-ActorFrameTexture
 </a>
 </span>
 </label>
@@ -727,8 +708,26 @@ DeviceList
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=../../../../dev/actors/actortypes/dynamicactorscroller/ class=gdoc-nav__entry>
+DynamicActorScroller
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
 <a href=../../../../dev/actors/actortypes/gradedisplay/ class=gdoc-nav__entry>
 GradeDisplay
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/grooveradar/ class=gdoc-nav__entry>
+GrooveRadar
 </a>
 </span>
 </label>
@@ -907,11 +906,48 @@ Controlling Sound
 </span>
 </label>
 </li></ul></li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-86ad643b>
+<label for=navtree-86ad643b class="flex justify-between align-center">
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/sprite/ class=gdoc-nav__entry>
+Sprite
+</a>
+</span><svg class="gdoc-icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="gdoc-icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/sprite/Frames/ class=gdoc-nav__entry>
+Managing Frames
+</a>
+</span>
+</label>
+</li></ul></li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/stepsdisplay/ class=gdoc-nav__entry>
+StepsDisplay
+</a>
+</span>
+</label>
+</li><li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
 <a href=../../../../dev/actors/actortypes/textbanner/ class=gdoc-nav__entry>
 TextBanner
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../../dev/actors/actortypes/workoutgraph/ class=gdoc-nav__entry>
+WorkoutGraph
 </a>
 </span>
 </label>
@@ -1632,6 +1668,23 @@ hidden-mobile" itemprop=breadcrumb>
 </span></span><span class=line><span class=cl>    <span class=kr>end</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=attributes>
+Attributes
+<a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actor/#attributes class="gdoc-page__anchor clip flex align-center" title="Anchor to: Attributes" aria-label="Anchor to: Attributes" href=#attributes><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2></div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th style=text-align:left>Name</th><th style=text-align:left>Type</th><th> Description</th></tr></thead><tbody>
+<tr>
+<td style=text-align:left>[Name]Command</td><td style=text-align:left>function</td><td>The basis for any command. Check <a class=gdoc-markdown__link href=./ActorsLua-Anatomy+Structure/#commands>Commands</a> for more information.</td></tr><tr>
+<td style=text-align:left>Name</td><td style=text-align:left> string</td><td>The name for the actor. Giving this a value allows this actor to be obtain by its name by any other actor. Check <a class=gdoc-markdown__link href=./obtainlevels>Obtaining Childs and ActorFrame Levels</a> for more information.</td></tr><tr>
+<td style=text-align:left>BaseRotationX</td><td style=text-align:left>number</td><td>The base rotation for the X axis. Any rotation value is added ON TOP of this value.</td></tr><tr>
+<td style=text-align:left>BaseRotationY</td><td style=text-align:left>number</td><td>The base rotation for the Y axis. Any rotation value is added ON TOP of this value.</td></tr><tr>
+<td style=text-align:left>BaseRotationZ</td><td style=text-align:left>number</td><td>The base rotation for the Z axis. Any rotation value is added ON TOP of this value.</td></tr><tr>
+<td style=text-align:left>BaseZoomX</td><td style=text-align:left>number</td><td>The base zoom for the X axis. Any zoom value is added ON TOP of this value.</td></tr><tr>
+<td style=text-align:left>BaseZoomY</td><td style=text-align:left>number</td><td>The base zoom for the Y axis. Any zoom value is added ON TOP of this value.</td></tr><tr>
+<td style=text-align:left>BaseZoomZ</td><td style=text-align:left>number</td><td>The base zoom for the Z axis. Any zoom value is added ON TOP of this value.</td></tr></tbody></table></div><div class=gdoc-page__anchorwrap>
 <h2 id=table-of-contents>
 Table of Contents
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/actor/#table-of-contents class="gdoc-page__anchor clip flex align-center" title="Anchor to: Table of Contents" aria-label="Anchor to: Table of Contents" href=#table-of-contents><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>

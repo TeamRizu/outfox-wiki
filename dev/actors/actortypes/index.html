@@ -21,7 +21,7 @@ Because everything is an actor, there are many types of actors, which are descri
 <meta name=twitter:title content="Actor Types">
 <meta name=twitter:description content="StepMania (and it’s many forks) use what’s known as the Actor model. OutFox inherits this behaviour. Everything in the engine is an Actor at its’ very core.
 Because everything is an actor, there are many types of actors, which are described below. Not everything listed is able to be created in Lua. Those that aren’t will be noted as such. However, all of these can be found in the Lua environment.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Actor Types","url":"https://outfox.wiki/dev/actors/actortypes/","headline":"Actor Types","description":"StepMania (and it’s many forks) use what’s known as the Actor model. OutFox inherits this behaviour. Everything in the engine is an Actor at its’ very core.\nBecause everything is an actor, there are many types of actors, which are described below. Not everything listed is able to be created in Lua. Those that aren’t will be noted as such. However, all of these can be found in the Lua environment.","wordCount":"2260","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Actor Types","url":"https://outfox.wiki/dev/actors/actortypes/","headline":"Actor Types","description":"StepMania (and it’s many forks) use what’s known as the Actor model. OutFox inherits this behaviour. Everything in the engine is an Actor at its’ very core.\nBecause everything is an actor, there are many types of actors, which are described below. Not everything listed is able to be created in Lua. Those that aren’t will be noted as such. However, all of these can be found in the Lua environment.","wordCount":"2265","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/actors/actortypes/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
 <script src=../../../js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=../../../js/main-56ca818c.bundle.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -617,6 +617,15 @@ ActorFrame
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=../../../dev/actors/actortypes/actorframetexture/ class=gdoc-nav__entry>
+ActorFrameTexture
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
 <a href=../../../dev/actors/actortypes/actormultivertex/ class=gdoc-nav__entry>
 ActorMultiVertex
 </a>
@@ -626,45 +635,17 @@ ActorMultiVertex
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=../../../dev/actors/actortypes/actorproxy/ class=gdoc-nav__entry>
+ActorProxy
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
 <a href=../../../dev/actors/actortypes/actorscroller/ class=gdoc-nav__entry>
 ActorScroller
-</a>
-</span>
-</label>
-</li><li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=../../../dev/actors/actortypes/dynamicactorscroller/ class=gdoc-nav__entry>
-DynamicActorScroller
-</a>
-</span>
-</label>
-</li><li>
-<input type=checkbox class=gdoc-nav__toggle id=navtree-86ad643b>
-<label for=navtree-86ad643b class="flex justify-between align-center">
-<span class=flex>
-<a href=../../../dev/actors/actortypes/sprite/ class=gdoc-nav__entry>
-Sprite
-</a>
-</span><svg class="gdoc-icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="gdoc-icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
-</label>
-<ul class=gdoc-nav__list>
-<li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=../../../dev/actors/actortypes/sprite/Frames/ class=gdoc-nav__entry>
-Managing Frames
-</a>
-</span>
-</label>
-</li></ul></li><li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=../../../dev/actors/actortypes/actorframetexture/ class=gdoc-nav__entry>
-ActorFrameTexture
 </a>
 </span>
 </label>
@@ -727,8 +708,26 @@ DeviceList
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=../../../dev/actors/actortypes/dynamicactorscroller/ class=gdoc-nav__entry>
+DynamicActorScroller
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
 <a href=../../../dev/actors/actortypes/gradedisplay/ class=gdoc-nav__entry>
 GradeDisplay
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/grooveradar/ class=gdoc-nav__entry>
+GrooveRadar
 </a>
 </span>
 </label>
@@ -907,11 +906,48 @@ Controlling Sound
 </span>
 </label>
 </li></ul></li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-86ad643b>
+<label for=navtree-86ad643b class="flex justify-between align-center">
+<span class=flex>
+<a href=../../../dev/actors/actortypes/sprite/ class=gdoc-nav__entry>
+Sprite
+</a>
+</span><svg class="gdoc-icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="gdoc-icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/sprite/Frames/ class=gdoc-nav__entry>
+Managing Frames
+</a>
+</span>
+</label>
+</li></ul></li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/stepsdisplay/ class=gdoc-nav__entry>
+StepsDisplay
+</a>
+</span>
+</label>
+</li><li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
 <a href=../../../dev/actors/actortypes/textbanner/ class=gdoc-nav__entry>
 TextBanner
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../dev/actors/actortypes/workoutgraph/ class=gdoc-nav__entry>
+WorkoutGraph
 </a>
 </span>
 </label>
@@ -1627,8 +1663,6 @@ A note on LoadActor()
 <a data-clipboard-text=https://outfox.wiki/dev/actors/actortypes/#a-note-on-loadactor class="gdoc-page__anchor clip flex align-center" title="Anchor to: A note on LoadActor()" aria-label="Anchor to: A note on LoadActor()" href=#a-note-on-loadactor><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><p>This is a helper function that can be used to dynamically load an actor based on the file type. However, this should not be used as it is more resource intensive and can be easily avoided when the filetype is known. For loading external lua files, <code>loadfile(path)()</code> can be used, though the full path is required.</p><center>
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
-<div class="gdoc-columns__content gdoc-markdown--nested flex-even">
 <span class="gdoc-button gdoc-button--large">
 <a class=gdoc-button__link href=../../../dev/actors/actortypes/actor/>
 Def.Actor
@@ -1640,8 +1674,18 @@ Def.ActorFrame
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/actorframetexture/>
+Def.ActorFrameTexture
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
 <a class=gdoc-button__link href=../../../dev/actors/actortypes/actormultivertex/>
 Def.ActorMultiVertex
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/actorproxy/>
+Def.ActorProxy
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
@@ -1650,23 +1694,23 @@ Def.ActorScroller
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
-<a class=gdoc-button__link href=../../../dev/actors/actortypes/sprite/>
-Def.Sprite
-</a>
-</span>
-<span class="gdoc-button gdoc-button--large">
-<a class=gdoc-button__link href=../../../dev/actors/actortypes/actorframetexture/>
-Def.ActorFrameTexture
-</a>
-</span>
-<span class="gdoc-button gdoc-button--large">
 <a class=gdoc-button__link href=../../../dev/actors/actortypes/bitmaptext/>
 Def.BitmapText
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/bpmdisplay/>
+Def.BPMDisplay
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
 <a class=gdoc-button__link href=../../../dev/actors/actortypes/devicelist/>
 Def.DeviceList
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/dynamicactorscroller/>
+Def.DynamicActorScroller
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
@@ -1740,11 +1784,26 @@ Def.Sound
 </a>
 </span>
 <span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/sprite/>
+Def.Sprite
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/stepsdisplay/>
+Def.StepsDisplay
+</a>
+</span>
+<span class="gdoc-button gdoc-button--large">
 <a class=gdoc-button__link href=../../../dev/actors/actortypes/textbanner/>
 Def.TextBanner
 </a>
 </span>
-</div></div></center>
+<span class="gdoc-button gdoc-button--large">
+<a class=gdoc-button__link href=../../../dev/actors/actortypes/workoutgraph/>
+Def.WorkoutGraph
+</a>
+</span>
+</center>
 <div class=gdoc-page__anchorwrap>
 <h2 id=actorframetexture>
 ActorFrameTexture
