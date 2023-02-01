@@ -2,7 +2,9 @@
 title: WorkoutGraph
 ---
 
-A graph showing the calories burned over time during a workout.
+A graph showing the difficulty meter values of each entry on a course. **Despite its name, it doesn't actually calculate anything about calories or workout**.
+
+The graph has a hardcoded ceiling of 35, being tied to the maximum difficulty value allowed in legacy SM.
 
 {{<hint type="important">}}
 This actor will only work on Course Mode!
