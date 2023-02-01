@@ -22,8 +22,10 @@ This is a helper function that can be used to dynamically load an actor based on
 {{< button size="large" relref="actormultivertex/" >}}Def.ActorMultiVertex{{< /button >}}
 {{< button size="large" relref="actorproxy/" >}}Def.ActorProxy{{< /button >}}
 {{< button size="large" relref="actorscroller/" >}}Def.ActorScroller{{< /button >}}
+{{< button size="large" relref="bganimation/" >}}Def.BGAnimation{{< /button >}}
 {{< button size="large" relref="bitmaptext/" >}}Def.BitmapText{{< /button >}}
 {{< button size="large" relref="bpmdisplay/" >}}Def.BPMDisplay{{< /button >}}
+{{< button size="large" relref="controllerstatedisplay/" >}}Def.ControllerStateDisplay{{< /button >}}
 {{< button size="large" relref="devicelist/" >}}Def.DeviceList{{< /button >}}
 {{< button size="large" relref="dynamicactorscroller/" >}}Def.DynamicActorScroller{{< /button >}}
 {{< button size="large" relref="gradedisplay/" >}}Def.GradeDisplay{{< /button >}}
