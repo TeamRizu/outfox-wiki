@@ -46,9 +46,7 @@ Volume 3 will work very different from past volumes, but to make it simple:
 
 - We will reveal 3 songs with SSC Templates and that will be a season.
 - Contributors can contribute with charts and graphics.
-- After 1 month from the season reveal, we will release that season package.
-- Every other month after the season package that package will get updated.
-- After 3 months another season will be revealed and the same steps as above will apply.
+- After 3 month from the season reveal, we will release that season package and start development of the next season.
 
 Important: 
 
