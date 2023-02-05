@@ -20,15 +20,7 @@ During Project OutFox Alpha 4.8.0 development, we started to release many modes,
 
 - If you have **music** that follows our **Music guidelines**, then please submit it using [our online form](https://projectoutfox.com/community-pack-submissions), once you submit you have agreed that we have permission to store/share your content with members of our team to organize the selection of future volumes of OutFox Serenity and that the public has permission to Stream/Record and Upload Videos playing Project OutFox with your songs, our channel will upload your song to Project OutFox Youtube Channel and that your song can be featured in arcades, as long as your song is selected.
 
-- If you want to contribute with charts for:
-    - Old volumes ([Volume I](https://github.com/TeamRizu/OutFox-Serenity/tree/main/OutFox%20Serenity%20Volume%201)), you have two options:
-        - Join our [OutFox Serenity Discord Server](https://discord.gg/mNcFU67mK7) to get feedback and submit directly to our team.
-        - Make a Pull Request on our [OutFox Serenity Github Repository](https://github.com/TeamRizu/OutFox-Serenity). Remember to follow **Chart Guidelines**.
-    - Future Volumes: You need to join our [OutFox Serenity Discord Server](https://discord.gg/mNcFU67mK7) and use "chart-discussion" and "chart-feedback" channels.
-
-    In both options, we will request you to use our templates which can be found on our [OutFox Serenity Discord Server](https://discord.gg/mNcFU67mK7). Make sure to check the pinned messages as they include each game mode scaling.
-
-- If you want to contribute with graphics, then follow the same steps given to chart contribution. But instead, use the "graphics" channels on our Discord server.
+- We will request you to use our templates which can be found on the [Project OutFox Discord Server](https://discord.gg/mNcFU67mK7). Make sure to check the pinned messages as they include each game mode scaling.
 
 ## Does OutFox Serenity work with other StepMania forks?
 
@@ -38,7 +30,12 @@ Contributors and the Serenity Team prepare the pack with Project OutFox performa
 
 ## How do I update my packs?
 
-We will notify everwhere possible that a new version has come out and we will also include a "New X Only" and "All In One" Package, you can choose which package to update your current install.
+When a new version comes out, we release multiple packages, usually it will be like this:
+
+ - All in One, this package will include all content from all volumes
+ - X Volume Only, this package will include only the new volume and its content. (It **WON'T** include new content for older volumes that were produced during the development of the new volume)
+
+ We recommend you to download the "All in One", delete the content inside your local OutFox Serenity groups and replace with what is inside the new All in One package, this way you avoid losing scores (Unless the chart has been updated), the general idea is to keep everything with the same directory path. It is not recommened to just add an replace content this can introduce problems in the future.
 
 ## How will Volume 3 work?
 
@@ -155,7 +152,7 @@ Released September 4, 2022, Serenity Volume II features music by Ace of Beat, Fi
 
 Yes. But make sure its gimmicks only work with your specific chart/difficulty, no chart should impact other's charts in any way.
 
-## I submitted music but it wasn't featured on the next volume, why?
+## I submitted music but it wasn't featured on the next volume/season, why?
 
 Our team has a list of music submitted by members of the community, we try to select a safe amount of music that guarantees a healthy amount of charts will be made for each one since chart and graphic submissions are made purely by the interest of the authors and at the moment of writing this document, Project OutFox has no dedicated Chart Creation Team.
 
@@ -220,6 +217,12 @@ Those are special as they use a license that doesn't allow us to publicly host t
 - Ace of Beat
     - Technological ≠ Emotional **(Volume II)**
     - B-Happy **(Volume II)**
+- Akako Hinami
+    - Summer Overload **(Volume II Winter Update)**
+    - Halcyon **(Volume II Winter Update)**
+- Zenth
+    - Relaxation Piece of Conclusion **(Volume II Winter Update)**
+
 
 ## Which charters have had their charts released with OutFox Serenity?
 
@@ -265,6 +268,8 @@ Those are special as they use a license that doesn't allow us to publicly host t
     - Sweetners (Background, Jacket, Banner)
     - Phycietiia (Background, Jacket, Banner)
     - Technological ≠ Emotional (Background, Jacket, Banner)
+    - Summer Overload (Background, Jacket, Banner)
+    - Halcyon (Background, Jacket, Banner)
 - Daniel Rotwind
     - Umi's Secret (Chiptune Mix) (Background, Jacket, Banner) *Art commissioned from  [Trinitoid](https://twitter.com/Trinitroid/status/1465752223439228931)
     - Low End Theory (Background, Jacket, Banner) *Art commissioned from  [Khayos](https://twitter.com/Khayos_Rave)
@@ -292,6 +297,8 @@ Those are special as they use a license that doesn't allow us to publicly host t
     - CRUSH THE DEVIL (IN MY BRAIN) (Background, Jacket, Banner)
 - Kaimaruz
     - B-Happy (Background, Jacket, Banner)
+- Melone
+    - Relaxation Piece of Conclusion (Background, Jacket, Banner)
 
 ## Who organizes the project?
 
