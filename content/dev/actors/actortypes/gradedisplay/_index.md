@@ -3,7 +3,7 @@ title: GradeDisplay
 weight: 0
 ---
 
-An [ActorFrame](../actorframe) containing [AutoActors](../_index.md) based on the number of grades available that are assigned by the theme (`PlayerStageStats::NumGradeTiersUsed`).
+An [ActorFrame](../actorframe) containing [AutoActors](../) based on the number of grades available that are assigned by the theme (`PlayerStageStats::NumGradeTiersUsed`).
 
 ```lua
 Def.GradeDisplay{

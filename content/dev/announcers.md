@@ -8,7 +8,7 @@ Announcers are a set of folders containing audio data for various kinds of situa
 
 # Location of Announcers
 
-The default location for courses are in `Project OutFox/Announcers`, with the following structure:
+The default location for announcers are in `Project OutFox/Announcers`, with the following structure:
 
 ```
 Project OutFox/Announcers/

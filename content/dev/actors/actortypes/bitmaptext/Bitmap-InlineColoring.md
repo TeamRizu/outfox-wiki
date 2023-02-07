@@ -13,6 +13,10 @@ self:AddAttribute( [starting point], {[attribute to add]} )
 self:ClearAttributes()
 ```
 
+{{<hint type="important">}}
+Any time the [BitmapText](../) calls `settext` or its own text changes, all attributes assigned to it will be cleared and will need to be reapplied.
+{{</hint>}}
+
 {{<toc>}}
 
 # The Attributes table
