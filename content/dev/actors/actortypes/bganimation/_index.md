@@ -16,7 +16,7 @@ Def.BGAnimation{
 | Name | Type | Description |
 | ---- | ---- | :---------- |
 AniDir | string | The directory to find the animation data from.
-LengthSeconds | number | Backwards-Comatibility: If this is given, it will create a dummy actor that sleeps for the given amount of time.
+LengthSeconds | number | Backwards-Compatibility: If this is given, it will create a dummy actor that sleeps for the given amount of time.
 
 It inherits attributes from [ActorFrame](../actorframe/#attributes).
 
