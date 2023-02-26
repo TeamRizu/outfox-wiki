@@ -10243,7 +10243,10 @@
     },
     {
       "name": "shockdude",
-      "pretags": ["SERENITY_TEAM"]
+      "pretags": ["SERENITY_TEAM"],
+      "socials": {
+        "youtube": "https://youtube.com/@shockdudeX"
+      }
     },
     {
       "name": "Jack5",
