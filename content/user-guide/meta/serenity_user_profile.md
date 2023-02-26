@@ -53,7 +53,7 @@ geekdocAlign: center
 
 <label for="user-select">Select User:</label>
 
-<select name="users" id="user-select" style="width: 30%; padding: 16px 20px; border: none; border-radius: 4px; background-color: #24282c;">
+<select name="users" id="user-select" style="min-width: 260px; width: 30%; padding: 16px 20px; border: none; border-radius: 4px; background-color: #24282c;">
     <option value="">Select an option</option>
 </select>
 
