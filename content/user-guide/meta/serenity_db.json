@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1-alpha",
+  "version": "0.0.2-alpha",
   "volumes": [
     {
       "title": "OutFox Serenity Volume 1",
@@ -6073,7 +6073,7 @@
         "Marukomuru",
         "kals",
         "Kawafumi",
-        "Kurio Prokos",
+        "Timo Kitsune",
         "DJGRS",
         "Chriszo",
         "Telperion",
@@ -6457,7 +6457,7 @@
           "graphic_authors": ["Jose Varela"],
           "chart_authors": [
             "Daniel Rotwind",
-            "Kurio Prokos",
+            "Timo Kitsune",
             "Chriszo",
             "Marukomuru",
             "DJGRS",
@@ -6484,7 +6484,7 @@
                   }
                 },
                 {
-                  "author": "Kurio Prokos",
+                  "author": "Timo Kitsune",
                   "meter": 3,
                   "difficulty": "Easy",
                   "is_modchart": false,
@@ -6501,7 +6501,7 @@
                   }
                 },
                 {
-                  "author": "Kurio Prokos",
+                  "author": "Timo Kitsune",
                   "meter": 7,
                   "difficulty": "Medium",
                   "is_modchart": false,
@@ -6535,7 +6535,7 @@
                   }
                 },
                 {
-                  "author": "Kurio Prokos",
+                  "author": "Timo Kitsune",
                   "meter": 11,
                   "difficulty": "Expert",
                   "is_modchart": false,
