@@ -10614,13 +10614,13 @@
     },
     {
       "tag": "DANCE_GOD",
-      "name": "Dance God",
+      "name": "dance God",
       "rarity": "unique",
       "explanation": "Has the most charts for dance gamemode"
     },
     {
       "tag": "PUMP_GOD",
-      "name": "Pump God",
+      "name": "pump God",
       "rarity": "unique",
       "explanation": "Has the most charts for pump gamemode"
     },
@@ -10644,19 +10644,19 @@
     },
     {
       "tag": "GH_GOD",
-      "name": "GH God",
+      "name": "gh God",
       "rarity": "unique",
       "explanation": "Has the most charts for gh gamemode"
     },
     {
       "tag": "TECHNO_GOD",
-      "name": "TECHNO God",
+      "name": "techno God",
       "rarity": "unique",
       "explanation": "Has the most charts for techno gamemode"
     },
     {
       "tag": "SMX_GOD",
-      "name": "SMX God",
+      "name": "smx God",
       "rarity": "unique",
       "explanation": "Has the most charts for smx gamemode"
     },
