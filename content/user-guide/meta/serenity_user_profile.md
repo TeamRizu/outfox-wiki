@@ -301,7 +301,7 @@ const main = async () => {
     }
 
     const serenityVolumes = serenityDb.volumes.length
-    if (userData.contributedToVolumes === serenityVolumes) {
+    if (userData.contributedToVolumes.length === serenityVolumes) {
       addTag('CONSTANT_VISIT')
     }
 
@@ -314,7 +314,7 @@ const main = async () => {
       addTag('SERENITY_VOICE')
 
       userData.songContributions.forEach((song) => {
-        if (song.author.length > 1) {
+        if (Array.isArray(song.author) && song.author.length > 1) {
           addTag('VOICE_TO_SHARE')
         }
       })
@@ -326,12 +326,34 @@ const main = async () => {
 
     if (userData.chartContributions.length > 0) {
       addTag('CHART_ARTIST')
+
+      userData.contributedToModes.forEach((mode) => {
+        const modeChartCount = userData.chartContributions.filter((chart) => chart.mode === mode).length
+        let hasHigherChartCount = false
+  
+        users.forEach((userNameFromList) => {
+          if (hasHigherChartCount) return
+          if (userNameFromList === userData.name) return
+          const userFromList = collectUserData(userNameFromList)
+          if (!userFromList.contributedToModes.includes(mode)) return
+
+          const modeChartCountFromUser =  userFromList.chartContributions.filter((chartFromUser) => chartFromUser.mode === mode).length
+
+          if (modeChartCountFromUser > modeChartCount) {
+            hasHigherChartCount = true
+          }
+        })
+
+        if (!hasHigherChartCount) {
+          addTag(`${mode.toUpperCase()}_GOD`)
+        }
+      })
     }
 
-    if (['CHART_ARTIST', 'SERENITY_LOOK', 'SERENITY_VOICE'].every(e => tagsList.includes(e))) {
+    if (['CHART_ARTIST', 'SERENITY_ARTIST', 'SERENITY_VOICE'].every(e => tagsList.includes(e))) {
       addTag('SUPREME')
     }
-
+    console.log(tagsList)
     return tagsList
   }
 
