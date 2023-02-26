@@ -9027,7 +9027,7 @@
           },
           "genre": "Dubstep",
           "license": "CC BY 3.0",
-          "music_authors": "Jack5",
+          "music_authors": ["Jack5"],
           "graphic_authors": ["Lirodon"],
           "chart_authors": ["Daniel Rotwind", "Jack5", "Marukomuru"],
           "charts": {
@@ -10253,7 +10253,8 @@
       "socials": {
         "twitch": "https://www.twitch.tv/Jack5Official",
         "youtube": "https://www.youtube.com/@Jack5Official"
-      }
+      },
+      "pretags": ["SERENITY_TO_FOXES"]
     },
     {
       "name": "SHRMP0",
@@ -10404,7 +10405,8 @@
       "socials": {
         "youtube": "https://www.youtube.com/user/raoulwb",
         "twitter": "https://twitter.com/RaoulWB"
-      }
+      },
+      "pretags": ["SERENITY_TO_FOXES"]
     },
     {
       "name": "Lagoona",
@@ -10578,7 +10580,7 @@
       "tag": "SERENITY_TO_FOXES",
       "name": "Serenity to Foxes",
       "rarity": "unique",
-      "explanation": "Has a song in OutFox Serenity made for it."
+      "explanation": "Has a song in OutFox Serenity made or with edit for it."
     },
     {
       "tag": "VOICE_TO_SHARE",
@@ -10609,6 +10611,96 @@
       "name": "Constant Visit",
       "rarity": "rare",
       "explanation": "Has contributed to all serenity volumes."
+    },
+    {
+      "tag": "DANCE_GOD",
+      "name": "Dance God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for dance gamemode"
+    },
+    {
+      "tag": "PUMP_GOD",
+      "name": "Pump God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for pump gamemode"
+    },
+    {
+      "tag": "BEMU_GOD",
+      "name": "be-mu God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for be-mu gamemode"
+    },
+    {
+      "tag": "POMU_GOD",
+      "name": "po-mu God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for po-mu gamemode"
+    },
+    {
+      "tag": "GDDM_GOD",
+      "name": "gddm God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for gddm gamemode"
+    },
+    {
+      "tag": "GH_GOD",
+      "name": "GH God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for gh gamemode"
+    },
+    {
+      "tag": "TECHNO_GOD",
+      "name": "TECHNO God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for techno gamemode"
+    },
+    {
+      "tag": "SMX_GOD",
+      "name": "SMX God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for smx gamemode"
+    },
+    {
+      "tag": "GDGF_GOD",
+      "name": "gdgf God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for gdgf gamemode"
+    },
+    {
+      "tag": "KB6_GOD",
+      "name": "kb6 God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for kb6 gamemode"
+    },
+    {
+      "tag": "DS3DDX_GOD",
+      "name": "ds3ddx God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for ds3ddx gamemode"
+    },
+    {
+      "tag": "EZ2_GOD",
+      "name": "ez2 God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for ez2 gamemode"
+    },
+    {
+      "tag": "MANIAX_GOD",
+      "name": "maniax God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for maniax gamemode"
+    },
+    {
+      "tag": "KB4_GOD",
+      "name": "kb4 God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for kb4 gamemode"
+    },
+    {
+      "tag": "KICKBOX_GOD",
+      "name": "kickbox God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for kickbox gamemode"
     }
   ]
 }
