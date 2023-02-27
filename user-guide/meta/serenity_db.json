@@ -1,5 +1,5 @@
 {
-  "version": "0.0.2-alpha",
+  "version": "0.0.3-alpha",
   "volumes": [
     {
       "title": "OutFox Serenity Volume 1",
@@ -10204,6 +10204,13 @@
   ],
   "user_hall": [
     {
+      "name": "Xiddy",
+      "socials": {
+        "youtube": "https://www.youtube.com/@nokotarou",
+        "tumblr": "https://nokotarou.tumblr.com/"
+      }
+    },
+    {
       "name": "Daniel Rotwind",
       "socials": {
         "twitter": "https://twitter.com/Teufelstruhe264",
@@ -10616,91 +10623,109 @@
       "tag": "DANCE_GOD",
       "name": "dance God",
       "rarity": "unique",
-      "explanation": "Has the most charts for dance gamemode"
+      "explanation": "Has the most charts for dance gamemode."
     },
     {
       "tag": "PUMP_GOD",
       "name": "pump God",
       "rarity": "unique",
-      "explanation": "Has the most charts for pump gamemode"
+      "explanation": "Has the most charts for pump gamemode."
     },
     {
       "tag": "BEMU_GOD",
       "name": "be-mu God",
       "rarity": "unique",
-      "explanation": "Has the most charts for be-mu gamemode"
+      "explanation": "Has the most charts for be-mu gamemode."
     },
     {
       "tag": "POMU_GOD",
       "name": "po-mu God",
       "rarity": "unique",
-      "explanation": "Has the most charts for po-mu gamemode"
+      "explanation": "Has the most charts for po-mu gamemode."
     },
     {
       "tag": "GDDM_GOD",
       "name": "gddm God",
       "rarity": "unique",
-      "explanation": "Has the most charts for gddm gamemode"
+      "explanation": "Has the most charts for gddm gamemode."
     },
     {
       "tag": "GH_GOD",
       "name": "gh God",
       "rarity": "unique",
-      "explanation": "Has the most charts for gh gamemode"
+      "explanation": "Has the most charts for gh gamemode."
     },
     {
       "tag": "TECHNO_GOD",
       "name": "techno God",
       "rarity": "unique",
-      "explanation": "Has the most charts for techno gamemode"
+      "explanation": "Has the most charts for techno gamemode."
     },
     {
       "tag": "SMX_GOD",
       "name": "smx God",
       "rarity": "unique",
-      "explanation": "Has the most charts for smx gamemode"
+      "explanation": "Has the most charts for smx gamemode."
     },
     {
       "tag": "GDGF_GOD",
       "name": "gdgf God",
       "rarity": "unique",
-      "explanation": "Has the most charts for gdgf gamemode"
+      "explanation": "Has the most charts for gdgf gamemode."
     },
     {
       "tag": "KB6_GOD",
       "name": "kb6 God",
       "rarity": "unique",
-      "explanation": "Has the most charts for kb6 gamemode"
+      "explanation": "Has the most charts for kb6 gamemode."
     },
     {
       "tag": "DS3DDX_GOD",
       "name": "ds3ddx God",
       "rarity": "unique",
-      "explanation": "Has the most charts for ds3ddx gamemode"
+      "explanation": "Has the most charts for ds3ddx gamemode."
     },
     {
       "tag": "EZ2_GOD",
       "name": "ez2 God",
       "rarity": "unique",
-      "explanation": "Has the most charts for ez2 gamemode"
+      "explanation": "Has the most charts for ez2 gamemode."
     },
     {
       "tag": "MANIAX_GOD",
       "name": "maniax God",
       "rarity": "unique",
-      "explanation": "Has the most charts for maniax gamemode"
+      "explanation": "Has the most charts for maniax gamemode."
     },
     {
       "tag": "KB4_GOD",
       "name": "kb4 God",
       "rarity": "unique",
-      "explanation": "Has the most charts for kb4 gamemode"
+      "explanation": "Has the most charts for kb4 gamemode."
+    },
+    {
+      "tag": "KB8_GOD",
+      "name": "kb8 God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for kb8 gamemode."
     },
     {
       "tag": "KICKBOX_GOD",
       "name": "kickbox God",
       "rarity": "unique",
-      "explanation": "Has the most charts for kickbox gamemode"
+      "explanation": "Has the most charts for kickbox gamemode."
+    },
+    {
+      "tag": "VOICE_RETURN",
+      "name": "Voice Return",
+      "rarity": "rare",
+      "explanation": "Has a song present in more than one Serenity Volume."
+    },
+    {
+      "tag": "COLOR_MARK",
+      "name": "Color Mark",
+      "rarity": "rare",
+      "explanation": "Has contributed with graphic for 3 songs or more."
     }
   ]
 }
