@@ -499,8 +499,8 @@ const main = async () => {
     const modesChartCount = Object.values(modeChartCount)
     const modeWithMostChart = modesWithCharts[modesChartCount.indexOf(Math.max(...modesChartCount))]
 
-    userMostChartsForSong.innerText = `Most Charted Song: ${songWithMostChart + ` (${Math.max(...songsChartCount)} charts)` || 'None'}`
-    userMostChartsForMode.innerText = `Most Charted Mode: ${modeWithMostChart + ` (${Math.max(...modesChartCount)} charts)`|| 'None'}`
+    userMostChartsForSong.innerText = `Most Charted Song: ${songWithMostChart ? songWithMostChart + ` (${Math.max(...songsChartCount)} charts)` : 'None'}`
+    userMostChartsForMode.innerText = `Most Charted Mode: ${modeWithMostChart ? modeWithMostChart + ` (${Math.max(...modesChartCount)} charts)`: 'None'}`
 
     // Songs Submission
     if (1 > userContributionData.songContributions.length) {
