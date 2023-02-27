@@ -101,6 +101,8 @@ geekdocAlign: center
 </div>
 </div>
 
+If you want a social add/removed from your profile then join the [Project OutFox Discord Server](https://discord.gg/cN4TjgQdcA) and contact the moderator team.
+
 <script src="https://unpkg.com/@popperjs/core@2">
 
 </script>
@@ -470,8 +472,8 @@ const main = async () => {
     const modesChartCount = Object.values(modeChartCount)
     const modeWithMostChart = modesWithCharts[modesChartCount.indexOf(Math.max(...modesChartCount))]
 
-    userMostChartsForSong.innerText = `Most Charted Song: ${songWithMostChart || 'None'}`
-    userMostChartsForMode.innerText = `Most Charted Mode: ${modeWithMostChart || 'None'}`
+    userMostChartsForSong.innerText = `Most Charted Song: ${songWithMostChart + ` (${Math.max(...songsChartCount)} charts)` || 'None'}`
+    userMostChartsForMode.innerText = `Most Charted Mode: ${modeWithMostChart + ` (${Math.max(...modesChartCount)} charts)`|| 'None'}`
 
     // Songs Submission
     if (1 > userContributionData.songContributions.length) {
