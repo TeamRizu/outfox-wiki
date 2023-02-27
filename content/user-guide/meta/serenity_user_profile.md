@@ -103,6 +103,17 @@ geekdocAlign: center
 
 If you want a social add/removed from your profile then join the [Project OutFox Discord Server](https://discord.gg/cN4TjgQdcA) and contact the moderator team.
 
+<div id="copyData" style="display: none;">
+Want the data that we have stored for this profile? Click the button bellow and the JSON Object will be copied to your clipboard. (Tags not included!)
+<div>
+  <span class="gdoc-button gdoc-button--large">
+    <a class="gdoc-button__link">
+      Copy Data to Clipboard
+    </a>
+  </span>
+</div>
+</div>
+
 <script src="https://unpkg.com/@popperjs/core@2">
 
 </script>
@@ -122,7 +133,7 @@ const userGraphicSubmissionDiv = document.getElementById('userGraphicSubmissionD
 const userChartSubmissionDiv = document.getElementById('userChartSubmissionDiv')
 const socialsDiv = document.getElementById('socials')
 const socialsOuterDiv = document.getElementById('socialsOuterDiv')
-
+const copyData = document.getElementById('copyData')
 const dbURL = document.documentURI.split('meta')[0] + 'meta/serenity_db.json'
 const main = async () => {
   const req = await fetch(dbURL)
@@ -195,6 +206,7 @@ const main = async () => {
 
         if (song.music_authors.includes(user)) {
           const songInfo = {
+            volume,
             author: song.music_authors,
             title: song.title,
             length: song.length,
@@ -315,15 +327,30 @@ const main = async () => {
     if (userData.songContributions.length > 0) {
       addTag('SERENITY_VOICE')
 
+      const songInVolumes = []
       userData.songContributions.forEach((song) => {
+
+        if (!songInVolumes.includes(song.volume)) {
+          songInVolumes.push(song.volume)
+        }
+
         if (Array.isArray(song.author) && song.author.length > 1) {
           addTag('VOICE_TO_SHARE')
         }
       })
+
+      if (songInVolumes.length > 1) {
+        addTag('VOICE_RETURN')
+      }
     }
 
-    if (Object.keys(userData.graphicContributions).length > 0) {
+    const songsContributed = Object.keys(userData.graphicContributions)
+    if (songsContributed.length > 0) {
       addTag('SERENITY_ARTIST')
+
+      if (songsContributed.length > 2) {
+        addTag('COLOR_MARK')
+      }
     }
 
     if (userData.chartContributions.length > 0) {
@@ -355,7 +382,7 @@ const main = async () => {
     if (['CHART_ARTIST', 'SERENITY_ARTIST', 'SERENITY_VOICE'].every(e => tagsList.includes(e))) {
       addTag('SUPREME')
     }
-    console.log(tagsList)
+
     return tagsList
   }
 
@@ -364,7 +391,9 @@ const main = async () => {
   users.forEach((user) => {
     const optionElement = document.createElement('option')
     optionElement.setAttribute('value', user)
-    optionElement.innerText = user
+
+    const thisUserTags = collectUserTags(collectUserData(user))
+    optionElement.innerText = thisUserTags.length > 0 ? `${user} - ${thisUserTags.length} Tags`: user
 
     form.appendChild(optionElement)
   })
@@ -404,8 +433,6 @@ const main = async () => {
     if (!userName) return
     const userContributionData = collectUserData(userName)
     const userTags = collectUserTags(userContributionData)
-
-    console.log(userContributionData)
 
     userNameHeading.innerText = userName
     // Tags
@@ -735,6 +762,12 @@ const main = async () => {
       socialsDiv.innerHTML = ''
       socialsOuterDiv.setAttribute('style', 'display: none;')
     }
+
+    // Copy to Clipboard
+    copyData.setAttribute('style', '')
+    copyData.addEventListener('click', () => {
+      navigator.clipboard.writeText(JSON.stringify(userContributionData))
+    })
   })
 }
 
