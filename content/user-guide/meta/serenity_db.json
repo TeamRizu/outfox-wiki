@@ -9790,6 +9790,22 @@
                 }
               ]
             },
+            "kb5": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 8,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 7.00,
+                  "chart_info": {
+                    "notes": 551,
+                    "holds": 98,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
             "kb6": {
               "single": [
                 {
@@ -9797,7 +9813,7 @@
                   "meter": 2,
                   "difficulty": "Easy",
                   "is_modchart": false,
-                  "peak_nps": 2.5,
+                  "peak_nps": 2.50,
                   "chart_info": {
                     "notes": 234,
                     "holds": 14,
