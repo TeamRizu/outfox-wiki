@@ -1,5 +1,5 @@
 {
-  "version": "0.0.3-alpha",
+  "version": "0.0.4-alpha",
   "volumes": [
     {
       "title": "OutFox Serenity Volume 1",
@@ -10694,6 +10694,12 @@
       "name": "kb6 God",
       "rarity": "unique",
       "explanation": "Has the most charts for kb6 gamemode."
+    },
+    {
+      "tag": "KB5_GOD",
+      "name": "kb5 God",
+      "rarity": "unique",
+      "explanation": "Has the most charts for kb5 gamemode."
     },
     {
       "tag": "DS3DDX_GOD",
