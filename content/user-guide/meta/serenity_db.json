@@ -9325,7 +9325,7 @@
     {
       "title": "OutFox Serenity Volume 2 Winter Update",
       "abrev": "v2.5",
-      "description": "TBD.",
+      "description": "Released February 21, 2023, the Winter Update (version 2.5) adds three new songs by Akako Hinami and Zenth, as well as new charts for other songs from previous versions.",
       "charts_for_modes": ["dance", "pump", "bemu", "pomu", "kb6"],
       "music_authors": ["Akako Hinami", "Jose Varela"],
       "graphic_authors": ["Lirodon", "Melone"],
@@ -10216,6 +10216,93 @@
           }
         }
       ]
+    },
+    {
+      "title": "OutFox Serenity Volume 3",
+      "abrev": "v3",
+      "description": "TBD.",
+      "charts_for_modes": ["pump"],
+      "music_authors": ["DeBisco", "SiLiS", "Sevish"],
+      "graphic_authors": ["DeBisco"],
+      "chart_authors": [
+        "Rippy Ripster"
+      ],
+      "songs": [
+        {
+          "title": "Run 4 Cover",
+          "length": "2:02",
+          "bpm": 135,
+          "graphics": {
+            "background": {
+              "author": "DeBisco",
+              "license": "CC BY-NC-ND 3.0"
+            },
+            "jacket": {
+              "author": "DeBisco",
+              "license": "CC BY-NC-ND 3.0"
+            },
+            "banner": {
+              "author": "DeBisco",
+              "license": "CC BY-NC-ND 3.0"
+            },
+            "bga": null
+          },
+          "genre": "Bass House",
+          "license": "CC BY-NC-ND 3.0",
+          "music_authors": ["DeBisco"],
+          "graphic_authors": ["DeBisco"],
+          "chart_authors": [
+            "Rippy Ripster"
+          ],
+          "charts": {
+            "pump": {
+              "double": [
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 9,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 3.94,
+                  "chart_info": {
+                    "notes": 363,
+                    "jumps": 75,
+                    "holds": 12,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "PLANETES",
+          "length": "2:28",
+          "bpm": 200,
+          "graphics": {},
+          "genre": "Artcore",
+          "license": "CC-BY-SA 4.0",
+          "music_authors": ["SiLiS"],
+          "graphic_authors": [],
+          "chart_authors": [],
+          "charts": {}
+        },
+        {
+          "title": "What Year Is This",
+          "length": "1:58",
+          "bpm": 134,
+          "graphics": {},
+          "genre": "Microtonal",
+          "license": "CC BY 3.0",
+          "music_authors": ["Sevish"],
+          "graphic_authors": [],
+          "chart_authors": [],
+          "charts": {}
+        }
+      ]
     }
   ],
   "user_hall": [
@@ -10358,7 +10445,7 @@
         "youtube": "https://www.youtube.com/channel/UCmq2yMo-lTfC7BQLth_PqOw",
         "website": "https://sevish.com/"
       },
-      "pretags": ["SERENITY_TEAM"]
+      "pretags": ["SERENITY_TEAM", "SERENITY_TO_FOXES"]
     },
     {
       "name": "-YOSEFU-",
