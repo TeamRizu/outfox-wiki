@@ -1,10 +1,27 @@
 {
-  "version": "0.0.4-alpha",
+  "version": "0.1.0-alpha",
   "volumes": [
     {
       "title": "OutFox Serenity Volume 1",
       "abrev": "v1",
       "description": "Released August 27, 2021, Serenity Volume I is the first installment of the OutFox Serenity project, the official community simfile pack of Project OutFox. It features music by Aspid Cat, Drazil, Jack5, Matduke, mmry, Daniel Rotwind, Seo, and Sevish. Alongside 4-panel (dance) and 5-panel (pump) charts, some of its songs also have Be-Mu, Po-Mu, techno (8- and 9-panel), gddm, and gdgf, and gh charts.",
+      "graphics": {
+        "background": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/bg.png"
+        },
+        "banner": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/banner.png"
+        },
+        "jacket": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/jacket.png"
+        }
+      },
       "charts_for_modes": [
         "dance",
         "bemu",
@@ -72,15 +89,18 @@
           "graphics": {
             "background": {
               "author": "Aqui",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Aspid%20Cat%20-%20Abandoned%20Doll/Abandoned%20Doll-bg.png"
             },
             "jacket": {
               "author": "Aqui",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Aspid%20Cat%20-%20Abandoned%20Doll/Abandoned%20Doll-jk.png"
             },
             "banner": {
               "author": "Aqui",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Aspid%20Cat%20-%20Abandoned%20Doll/Abandoned%20Doll-bn.png"
             },
             "bga": null
           },
@@ -579,15 +599,18 @@
           "graphics": {
             "background": {
               "author": "Jousway",
-              "license": null
+              "license": null,
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/mmry%20-%20After%20The%20Ending/BG/BG.png"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/mmry%20-%20After%20The%20Ending/JK.png"
             },
             "banner": {
               "author": "Jousway",
-              "license": null
+              "license": null,
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/mmry%20-%20After%20The%20Ending/BN.png"
             },
             "bga": null
           },
@@ -1124,15 +1147,18 @@
           "graphics": {
             "background": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Matduke%20-%20Broken/broken-bg.jpg"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Matduke%20-%20Broken/broken-jk.jpg"
             },
             "banner": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Matduke%20-%20Broken/broken-bn.jpg"
             },
             "bga": null
           },
@@ -1600,15 +1626,18 @@
           "graphics": {
             "background": {
               "author": ["Daniel Rotwind"],
-              "license": ["CC BY 2.0", "CC BY-SA 2.0"]
+              "license": ["CC BY 2.0", "CC BY-SA 2.0"],
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Seo%20-%20brokenHeart%20resurrection%20_estelle_/FractalHeart-bg.png"
             },
             "jacket": {
               "author": ["Daniel Rotwind"],
-              "license": ["CC BY 2.0", "CC BY-SA 2.0"]
+              "license": ["CC BY 2.0", "CC BY-SA 2.0"],
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Seo%20-%20brokenHeart%20resurrection%20_estelle_/FractalHeart-jk.png"
             },
             "banner": {
               "author": ["Daniel Rotwind"],
-              "license": ["CC BY 2.0", "CC BY-SA 2.0"]
+              "license": ["CC BY 2.0", "CC BY-SA 2.0"],
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Seo%20-%20brokenHeart%20resurrection%20_estelle_/FractalHeart-bn.png"
             },
             "bga": null
           },
@@ -2201,15 +2230,18 @@
           "graphics": {
             "background": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Aspid%20Cat%20-%20Conflicting%20Revenge/cr-bg.jpg"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Aspid%20Cat%20-%20Conflicting%20Revenge/cr-jk.jpg"
             },
             "banner": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Aspid%20Cat%20-%20Conflicting%20Revenge/cr-bn.jpg"
             },
             "bga": null
           },
@@ -2642,19 +2674,23 @@
           "graphics": {
             "background": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Matduke%20-%20Heartbeat/heartbeat-bg.png"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Matduke%20-%20Heartbeat/heartbeat-jk.png"
             },
             "banner": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Matduke%20-%20Heartbeat/heartbeat-bn.png"
             },
             "bga": {
               "author": ["Lirodon", "Jose Varela"],
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "../heartbeat-bga.gif"
             }
           },
           "genre": "Freeform",
@@ -3448,15 +3484,18 @@
           "graphics": {
             "background": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Matduke%20-%20Let%20Me%20See%20You/let%20me%20see%20you-bg.png"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Matduke%20-%20Let%20Me%20See%20You/let%20me%20see%20you-jk.png"
             },
             "banner": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Matduke%20-%20Let%20Me%20See%20You/let%20me%20see%20you-bn.png"
             },
             "bga": null
           },
@@ -3845,15 +3884,18 @@
           "graphics": {
             "background": {
               "author": "Jack5",
-              "license": "CC BY 3.0"
+              "license": "CC BY 3.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Jack5%20-%20Nexen%20II%20(Phase%20Two)/jack5-bg.png"
             },
             "jacket": {
               "author": "Jack5",
-              "license": "CC BY 3.0"
+              "license": "CC BY 3.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Jack5%20-%20Nexen%20II%20(Phase%20Two)/jack5-jk.png"
             },
             "banner": {
               "author": "Jack5",
-              "license": "CC BY 3.0"
+              "license": "CC BY 3.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Jack5%20-%20Nexen%20II%20(Phase%20Two)/nexen-ii-p2-bn.png"
             },
             "bga": null
           },
@@ -4165,15 +4207,18 @@
           "graphics": {
             "background": {
               "author": "Jack5",
-              "license": "CC BY 3.0"
+              "license": "CC BY 3.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Sevish%20-%20Some%20Things%20Must%20(OutFox%20Edit)/sevish-bg.png"
             },
             "jacket": {
               "author": "Jack5",
-              "license": "CC BY 3.0"
+              "license": "CC BY 3.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Sevish%20-%20Some%20Things%20Must%20(OutFox%20Edit)/sevish-jk.png"
             },
             "banner": {
               "author": "Jack5",
-              "license": "CC BY 3.0"
+              "license": "CC BY 3.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/Sevish%20-%20Some%20Things%20Must%20(OutFox%20Edit)/sevish-bn.png"
             },
             "bga": null
           },
@@ -4515,15 +4560,18 @@
           "graphics": {
             "background": {
               "author": "Drazil",
-              "license": "CC BY-SA 2.0"
+              "license": "CC BY-SA 2.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/spirai%20project%20-drazil-%20-%20synthborn%20lovebirds/synthborn-bg.png"
             },
             "jacket": {
               "author": "Drazil",
-              "license": "CC BY-SA 2.0"
+              "license": "CC BY-SA 2.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/spirai%20project%20-drazil-%20-%20synthborn%20lovebirds/synthborn-jk.png"
             },
             "banner": {
               "author": "Drazil",
-              "license": "CC BY-SA 2.0"
+              "license": "CC BY-SA 2.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/spirai%20project%20-drazil-%20-%20synthborn%20lovebirds/synthborn-bn.png"
             },
             "bga": null
           },
@@ -4692,19 +4740,23 @@
           "graphics": {
             "background": {
               "author": ["Daniel Rotwind", "ARTPhantom17"],
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/PizeroFox%20-%20Tagebuch%20der%20vergangenen%20Erinnerungen/Tagebuch-bg.png"
             },
             "jacket": {
               "author": ["Daniel Rotwind", "ARTPhantom17"],
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/PizeroFox%20-%20Tagebuch%20der%20vergangenen%20Erinnerungen/Tagebuch-jk.png"
             },
             "banner": {
               "author": ["Daniel Rotwind", "ARTPhantom17"],
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201/PizeroFox%20-%20Tagebuch%20der%20vergangenen%20Erinnerungen/Tagebuch-bn.png"
             },
             "bga": {
               "author": ["Daniel Rotwind", "ARTPhantom17"],
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/main/OutFox%20Serenity%20Volume%201/PizeroFox%20-%20Tagebuch%20der%20vergangenen%20Erinnerungen/Tagebuch-bga-p.mp4?raw=true"
             }
           },
           "genre": "Calm Disturbance",
@@ -5117,6 +5169,23 @@
         "-YOSEFU-",
         "Kawafumi"
       ],
+      "graphics": {
+        "background": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/bg.png"
+        },
+        "banner": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/banner.png"
+        },
+        "jacket": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/jacket.png"
+        }
+      },
       "songs": [
         {
           "title": "Low End Theory",
@@ -5125,15 +5194,18 @@
           "graphics": {
             "background": {
               "author": ["Daniel Rotwind", "Khayos"],
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/Matduke%20-%20Low%20End%20Theory/Low%20End%20Theory-bg.png"
             },
             "jacket": {
               "author": ["Daniel Rotwind", "Khayos"],
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/Matduke%20-%20Low%20End%20Theory/Low%20End%20Theory-jk.png"
             },
             "banner": {
               "author": ["Daniel Rotwind", "Khayos"],
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/Matduke%20-%20Low%20End%20Theory/Low%20End%20Theory-bn.png"
             },
             "bga": null
           },
@@ -5483,15 +5555,18 @@
           "graphics": {
             "background": {
               "author": "Lirodon",
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/DJ%20Megas%20-%20Plasma/plasma-bg.png"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/DJ%20Megas%20-%20Plasma/plasma-jk.png"
             },
             "banner": {
               "author": "Lirodon",
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/DJ%20Megas%20-%20Plasma/plasma-bn.png"
             },
             "bga": null
           },
@@ -5744,15 +5819,18 @@
           "graphics": {
             "background": {
               "author": ["Daniel Rotwind", "Trinitroid"],
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/Pekoneko%20-%20Umi's%20Secret%20(Chiptune%20Mix)/Umi's%20Secret-bg.png"
             },
             "jacket": {
               "author": ["Daniel Rotwind", "Trinitroid"],
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/Pekoneko%20-%20Umi's%20Secret%20(Chiptune%20Mix)/Umi's%20Secret-jk.png"
             },
             "banner": {
               "author": ["Daniel Rotwind", "Trinitroid"],
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%201.5/Pekoneko%20-%20Umi's%20Secret%20(Chiptune%20Mix)/Umi's%20Secret-bn.png"
             },
             "bga": null
           },
@@ -6084,6 +6162,23 @@
         "K.TURN",
         "48productions"
       ],
+      "graphics": {
+        "background": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/bg.png"
+        },
+        "banner": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/banner.png"
+        },
+        "jacket": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/jacket.png"
+        }
+      },
       "songs": [
         {
           "title": "B-Happy",
@@ -6092,15 +6187,18 @@
           "graphics": {
             "background": {
               "author": "Kaimaruz",
-              "license": "CC BY-NC-SA 3.0 ES"
+              "license": "CC BY-NC-SA 3.0 ES",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Ace%20of%20Beat%20-%20B-Happy/background.png"
             },
             "jacket": {
               "author": "Kaimaruz",
-              "license": "CC BY-NC-SA 3.0 ES"
+              "license": "CC BY-NC-SA 3.0 ES",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Ace%20of%20Beat%20-%20B-Happy/jacket.png"
             },
             "banner": {
               "author": "Kaimaruz",
-              "license": "CC BY-NC-SA 3.0 ES"
+              "license": "CC BY-NC-SA 3.0 ES",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Ace%20of%20Beat%20-%20B-Happy/banner.png"
             },
             "bga": null
           },
@@ -6439,15 +6537,18 @@
           "graphics": {
             "background": {
               "author": "Jose Varela",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Kurio%20Prokos%20-%20Beatucada/Background.png"
             },
             "jacket": {
               "author": "Jose Varela",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Kurio%20Prokos%20-%20Beatucada/Jacket.png"
             },
             "banner": {
               "author": "Jose Varela",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Kurio%20Prokos%20-%20Beatucada/Banner.png"
             },
             "bga": null
           },
@@ -6763,15 +6864,18 @@
           "graphics": {
             "background": {
               "author": ["Daniel Rotwind", "Axl_fox"],
-              "license": "CC BY-NC-SA 4.0"
+              "license": "CC BY-NC-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/SiLiS%20vs%20Finite%20Limit%20-%20Bounded%20Quietude/bg.jpg"
             },
             "jacket": {
               "author": ["Daniel Rotwind", "Axl_fox"],
-              "license": "CC BY-NC-SA 4.0"
+              "license": "CC BY-NC-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/SiLiS%20vs%20Finite%20Limit%20-%20Bounded%20Quietude/jacket.jpg"
             },
             "banner": {
               "author": ["Daniel Rotwind", "Axl_fox"],
-              "license": "CC BY-NC-SA 4.0"
+              "license": "CC BY-NC-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/SiLiS%20vs%20Finite%20Limit%20-%20Bounded%20Quietude/banner.jpg"
             },
             "bga": null
           },
@@ -7131,15 +7235,18 @@
           "graphics": {
             "background": {
               "author": "Dramis",
-              "license": null
+              "license": null,
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Rilliam%20-%20chop%20chop/Background.png"
             },
             "jacket": {
               "author": "Dramis",
-              "license": null
+              "license": null,
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Rilliam%20-%20chop%20chop/Jacket.png"
             },
             "banner": {
               "author": "Dramis",
-              "license": null
+              "license": null,
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Rilliam%20-%20chop%20chop/Banner.png"
             },
             "bga": null
           },
@@ -7501,15 +7608,18 @@
           "graphics": {
             "background": {
               "author": "Telperion",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Thomas%20Dingwall%20a.k.a.%20td%20-%20CRUSH%20THE%20DEVIL%20(IN%20MY%20BRAIN)/background.png"
             },
             "jacket": {
               "author": "Telperion",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Thomas%20Dingwall%20a.k.a.%20td%20-%20CRUSH%20THE%20DEVIL%20(IN%20MY%20BRAIN)/jacket.png"
             },
             "banner": {
               "author": "Telperion",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Thomas%20Dingwall%20a.k.a.%20td%20-%20CRUSH%20THE%20DEVIL%20(IN%20MY%20BRAIN)/banner.png"
             },
             "bga": null
           },
@@ -7962,17 +8072,24 @@
           "graphics": {
             "background": {
               "author": ["K.TURN", "Step Revolution"],
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Lagoona%20-%20Into%20My%20Dream/Into%20My%20Dream-bg.png"
             },
             "jacket": {
               "author": ["K.TURN", "Step Revolution"],
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Lagoona%20-%20Into%20My%20Dream/Into%20My%20Dream-jk.png"
             },
             "banner": {
               "author": ["K.TURN", "Step Revolution"],
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/main/OutFox%20Serenity%20Volume%202/Lagoona%20-%20Into%20My%20Dream/Into%20My%20Dream-bn.mp4?raw=true"
             },
-            "bga": null
+            "bga": {
+              "author": ["K.TURN", "Step Revolution"],
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/main/OutFox%20Serenity%20Volume%202/Lagoona%20-%20Into%20My%20Dream/Into%20My%20Dream-bga.mp4?raw=true"
+            }
           },
           "genre": "Trance",
           "license": "CC BY 4.0",
@@ -8341,15 +8458,18 @@
           "graphics": {
             "background": {
               "author": ["Daniel Rotwind", "Zeta-Neubourn"],
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/SiLiS%20-%20Neutralize%20(PTB10%20Mix)/Background.png"
             },
             "jacket": {
               "author": ["Daniel Rotwind", "Zeta-Neubourn"],
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/SiLiS%20-%20Neutralize%20(PTB10%20Mix)/Jacket.png"
             },
             "banner": {
               "author": ["Daniel Rotwind", "Zeta-Neubourn"],
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/SiLiS%20-%20Neutralize%20(PTB10%20Mix)/BannerA.png"
             },
             "bga": null
           },
@@ -8509,15 +8629,18 @@
           "graphics": {
             "background": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/rN%20%26%20SiLiS%20-%20Phycietiia/phycietiia-bg.jpg"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/rN%20%26%20SiLiS%20-%20Phycietiia/phycietiia-jk.jpg"
             },
             "banner": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/rN%20%26%20SiLiS%20-%20Phycietiia/phycietiia-bn.jpg"
             },
             "bga": null
           },
@@ -9013,15 +9136,18 @@
           "graphics": {
             "background": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Jack5%20-%20Sweeteners/background.jpg"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Jack5%20-%20Sweeteners/jacket.jpg"
             },
             "banner": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Jack5%20-%20Sweeteners/banner.jpg"
             },
             "bga": null
           },
@@ -9194,15 +9320,18 @@
           "graphics": {
             "background": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Ace%20of%20Beat%20-%20Technological%20Emotional/te-bg.jpg"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Ace%20of%20Beat%20-%20Technological%20Emotional/te-jk.jpg"
             },
             "banner": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202/Ace%20of%20Beat%20-%20Technological%20Emotional/te-bn.jpg"
             },
             "bga": null
           },
@@ -9340,6 +9469,23 @@
         "Chriszo",
         "Xiddy"
       ],
+      "graphics": {
+        "background": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/bg.png"
+        },
+        "banner": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/banner.png"
+        },
+        "jacket": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/jacket.png"
+        }
+      },
       "songs": [
         {
           "title": "Halcyon",
@@ -9348,15 +9494,18 @@
           "graphics": {
             "background": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/Akako%20Hinami%20-%20Halcyon/background.jpg"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/Akako%20Hinami%20-%20Halcyon/jacket.png"
             },
             "banner": {
               "author": "Lirodon",
-              "license": "CC BY 4.0"
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/Akako%20Hinami%20-%20Halcyon/banner.png"
             },
             "bga": null
           },
@@ -9621,15 +9770,18 @@
           "graphics": {
             "background": {
               "author": "Melone",
-              "license": "CC BY-NC 4.0"
+              "license": "CC BY-NC 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/Zenth%20-%20Relaxation%20Piece%20of%20Conclusion/background.png"
             },
             "jacket": {
               "author": "Melone",
-              "license": "CC BY-NC 4.0"
+              "license": "CC BY-NC 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/Zenth%20-%20Relaxation%20Piece%20of%20Conclusion/jacket.png"
             },
             "banner": {
               "author": "Melone",
-              "license": "CC BY-NC 4.0"
+              "license": "CC BY-NC 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/Zenth%20-%20Relaxation%20Piece%20of%20Conclusion/banner.png"
             },
             "bga": null
           },
@@ -9867,15 +10019,18 @@
           "graphics": {
             "background": {
               "author": "Lirodon",
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/Akako%20Hinami%20-%20Summer%20Overload/background.png"
             },
             "jacket": {
               "author": "Lirodon",
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/Akako%20Hinami%20-%20Summer%20Overload/jacket.png"
             },
             "banner": {
               "author": "Lirodon",
-              "license": "CC BY-SA 4.0"
+              "license": "CC BY-SA 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/main/OutFox%20Serenity%20Volume%202.5/Akako%20Hinami%20-%20Summer%20Overload/banner.png"
             },
             "bga": null
           },
@@ -10223,10 +10378,28 @@
       "description": "TBD.",
       "charts_for_modes": ["pump"],
       "music_authors": ["DeBisco", "SiLiS", "Sevish"],
-      "graphic_authors": ["DeBisco"],
+      "graphic_authors": ["DeBisco", "Melone"],
       "chart_authors": [
-        "Rippy Ripster"
+        "Rippy Ripster",
+        "Colin"
       ],
+      "graphics": {
+        "background": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/bg.png"
+        },
+        "banner": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/banner.png"
+        },
+        "jacket": {
+          "author": "Lirodon",
+          "license": "CC BY 4.0",
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/jacket.png"
+        }
+      },
       "songs": [
         {
           "title": "Run 4 Cover",
@@ -10235,15 +10408,18 @@
           "graphics": {
             "background": {
               "author": "DeBisco",
-              "license": "CC BY-NC-ND 3.0"
+              "license": "CC BY-NC-ND 3.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/DeBisco%20-%20Run%204%20Cover/background.png"
             },
             "jacket": {
               "author": "DeBisco",
-              "license": "CC BY-NC-ND 3.0"
+              "license": "CC BY-NC-ND 3.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/DeBisco%20-%20Run%204%20Cover/jacket.png"
             },
             "banner": {
               "author": "DeBisco",
-              "license": "CC BY-NC-ND 3.0"
+              "license": "CC BY-NC-ND 3.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/DeBisco%20-%20Run%204%20Cover/banner.png"
             },
             "bga": null
           },
@@ -10252,7 +10428,8 @@
           "music_authors": ["DeBisco"],
           "graphic_authors": ["DeBisco"],
           "chart_authors": [
-            "Rippy Ripster"
+            "Rippy Ripster",
+            "Colin"
           ],
           "charts": {
             "pump": {
@@ -10275,6 +10452,58 @@
                   }
                 }
               ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Colin",
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.69,
+                  "chart_info": {
+                    "notes": 183,
+                    "holds": 1,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 7,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.81,
+                  "chart_info": {
+                    "notes": 260,
+                    "holds": 1,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 7,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 5.62,
+                  "chart_info": {
+                    "notes": 498,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 10.12,
+                  "chart_info": {
+                    "notes": 725,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -10294,11 +10523,28 @@
           "title": "What Year Is This",
           "length": "1:58",
           "bpm": 134,
-          "graphics": {},
+          "graphics": {
+            "background": {
+              "author": "Melone",
+              "license": "CC BY-NC 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/Sevish%20-%20What%20Year%20Is%20This/bg.png"
+            },
+            "banner": {
+              "author": "Melone",
+              "license": "CC BY-NC 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/Sevish%20-%20What%20Year%20Is%20This/banner.png"
+            },
+            "jacket": {
+              "author": "Melone",
+              "license": "CC BY-NC 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/Sevish%20-%20What%20Year%20Is%20This/jacket.png"
+            },
+            "bga": null
+          },
           "genre": "Microtonal",
           "license": "CC BY 3.0",
           "music_authors": ["Sevish"],
-          "graphic_authors": [],
+          "graphic_authors": ["Melone"],
           "chart_authors": [],
           "charts": {}
         }
@@ -10835,6 +11081,12 @@
       "name": "Color Mark",
       "rarity": "rare",
       "explanation": "Has contributed with graphic for 3 songs or more."
+    },
+    {
+      "tag": "TAIKO_GOD",
+      "name": "taiko GOD",
+      "rarity": "unique",
+      "explanation": "Has the most charts for taiko gamemode."
     }
   ]
 }
