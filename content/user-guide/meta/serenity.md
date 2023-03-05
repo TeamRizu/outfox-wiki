@@ -3,10 +3,27 @@ title: OutFox Serenity
 weight: 3
 ---
 
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <p>Hey! There are new pages with more info about OutFox Serenity, check them out!</p>
+    <div style="flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
+        <span class="gdoc-button gdoc-button--large" href="../serenity_user_profile.md">
+            <a class="gdoc-button__link" href="../serenity_user_profile/">
+                Serenity User Profiles
+            </a>
+        </span>
+        <span class="gdoc-button gdoc-button--large" href="../serenity_volume_resume.md">
+            <a class="gdoc-button__link" href="../serenity_volume_resume/">
+                Serenity Volume Resume
+            </a>
+        </span>
+    </div>
+</div>
+
 
 ## What is OutFox Serenity?
 
 OutFox Serenity is the official community song pack project **made primarily for Project OutFox**. Its purpose is to produce packs of "libre" songs for the game that can be freely redistributed (including as part of its default, bundled songs), and to showcase the functionality of Project Outfox by offering charts for multiple game types beyond just 4-key/dance.
+
 
 ## How was OutFox Serenity created?
 

@@ -114,6 +114,8 @@ Want the data that we have stored for this profile? Click the button bellow and 
 </div>
 </div>
 
+_Written and Maintained by Moru Zerinho6_
+
 <script src="https://unpkg.com/@popperjs/core@2">
 
 </script>
