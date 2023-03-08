@@ -7449,7 +7449,7 @@
               "5key": [
                 {
                   "author": "Daniel Rotwind",
-                  "meter": 12,
+                  "meter": 10,
                   "difficulty": "Novice",
                   "is_modchart": false,
                   "peak_nps": 3.15,
@@ -7461,37 +7461,13 @@
                 },
                 {
                   "author": "Daniel Rotwind",
-                  "meter": 7,
+                  "meter": 16,
                   "difficulty": "Easy",
                   "is_modchart": false,
                   "peak_nps": 3.15,
                   "chart_info": {
                     "notes": 186,
                     "holds": 0,
-                    "mines": 0
-                  }
-                },
-                {
-                  "author": "Daniel Rotwind",
-                  "meter": 25,
-                  "difficulty": "Medium",
-                  "is_modchart": false,
-                  "peak_nps": 6.42,
-                  "chart_info": {
-                    "notes": 377,
-                    "holds": 0,
-                    "mines": 0
-                  }
-                },
-                {
-                  "author": "Telperion",
-                  "meter": 49,
-                  "difficulty": "Expert",
-                  "is_modchart": false,
-                  "peak_nps": 22.05,
-                  "chart_info": {
-                    "notes": 731,
-                    "holds": 4,
                     "mines": 0
                   }
                 }
