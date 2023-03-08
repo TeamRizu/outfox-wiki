@@ -3,6 +3,7 @@ title: Serenity User Profile
 weight: 5
 geekdocAlign: center
 ---
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -49,6 +50,167 @@ geekdocAlign: center
 .glow-difficulty-edit {
   text-shadow: 0 0 2px grey;
 }
+
+.chart-detail {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
+
+.chart-detail-name {
+  align-self: start;
+  flex-basis: 90%;
+}
+
+.chart-detail-name-disabled {
+  align-self: start;
+  flex-basis: 90%;
+  color: #3f4142;
+}
+
+.chart-detail-value {
+  align-self: end;
+}
+
+.chart-detail-value-disabled {
+  align-self: end;
+  color: #3f4142;
+}
+
+.chart-detail-div-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.chart-header-section-novice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #094c6d;
+}
+
+.chart-section-novice {
+  display: flex;
+  width: 262px;
+  border: 1px solid #0c91d5;
+  background-color: #043049;
+  flex-direction: column;
+}
+
+.chart-header-section-easy {
+  display: flex;
+  height: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #046557;
+}
+
+.chart-section-easy {
+  display: flex;
+  width: 262px;
+  border: 1px solid  #00d5a5;
+  background-color: #004636;
+  flex-direction: column;
+}
+
+.chart-header-section-medium {
+  display: flex;
+  height: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #57401a;
+}
+
+.chart-section-medium {
+  display: flex;
+  width: 262px;
+  border: 1px solid #d57100;
+  background-color: #492500;
+  flex-direction: column;
+}
+
+.chart-header-section-hard {
+  display: flex;
+  height: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #541926;
+}
+
+.chart-section-hard {
+  display: flex;
+  width: 262px;
+  border: 1px solid #d50721;
+  background-color: #47020b;
+  flex-direction: column;
+}
+
+.chart-header-section-expert {
+  display: flex;
+  height: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #3b186d;
+}
+
+.chart-section-expert {
+  display: flex;
+  width: 262px;
+  border: 1px solid #9406d5;
+  background-color: #300249;
+  flex-direction: column;
+}
+
+.chart-header-section-edit {
+  display: flex;
+  height: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #33475f;
+}
+
+.chart-section-edit {
+  display: flex;
+  width: 262px;
+  border: 1px solid #7f86b9;
+  background-color: #2a2c3d;
+  flex-direction: column;
+}
+
+.mode-charts-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chart-header-span-section {
+  display: flex;
+  flex-basis: 70%;
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+.glow {
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6
+  }
+}
 </style>
 
 <label for="user-select">Select User:</label>
@@ -89,7 +251,6 @@ geekdocAlign: center
 <div style="overflow-x:auto; display: none;" id="userGraphicSubmissionDiv">
 <h2>Graphic Submissions</h2>
 </div>
-
 
 <div style="overflow-x:auto; display: none;" id="userChartSubmissionDiv">
 <h2>Chart Submission</h2>
@@ -181,7 +342,7 @@ const main = async () => {
       users.push(user.name)
     })
 
-    return users
+    return users.sort((a, b) => a.localeCompare(b))
   }
 
   const collectUserData = (user) => {
@@ -452,7 +613,7 @@ const main = async () => {
         const tagObj = serenityDb.honor_tags.find((t) => t.tag === tag)
 
         a.innerText = tagObj.name
-        span.setAttribute('class', `gdoc-button gdoc-button--large glow-${tagObj.rarity}`)
+        span.setAttribute('class', `gdoc-button gdoc-button--large glow-${tagObj.rarity}${tagObj.rarity === 'unique' ? ' glow' : ''}`)
 
         span.appendChild(a)
         tagsRow.appendChild(span)
@@ -663,6 +824,123 @@ const main = async () => {
       const chartSubmissionsHeading2 = document.createElement('h2')
       chartSubmissionsHeading2.innerText = 'Chart Submissions'
 
+      const songsChartDiv = document.createElement('div')
+      const songsCharted = userContributionData.chartContributions.reduce((accumulator, currentChart) => {
+        if (!accumulator.find((e) => e === currentChart.song)) {
+          accumulator.push(currentChart.song)
+        }
+        
+        return accumulator
+      }, [])
+
+      songsCharted.forEach((songName) => {
+        const songHeading = document.createElement('h3')
+        songHeading.innerText = songName
+
+        const modesChartedForThisSong = userContributionData.chartContributions.reduce((accumulator, currentChart) => {
+          if (currentChart.song === songName && !accumulator.find((e) => e === currentChart.mode)) {
+            accumulator.push(currentChart.mode)
+          }
+          return accumulator
+        }, [])
+
+        songsChartDiv.appendChild(songHeading)
+        modesChartedForThisSong.forEach((modeName) => {
+          const modeHeading = document.createElement('h4')
+          modeHeading.innerText = modeName
+          songsChartDiv.appendChild(modeHeading)
+
+          const modeChartsSectionDiv = document.createElement('div')
+          modeChartsSectionDiv.setAttribute('class', 'mode-charts-section')
+
+          const chartsForThisModeAndSong = userContributionData.chartContributions.filter((chart) => {
+            if (chart.song === songName && chart.mode === modeName) {
+              return chart
+            }
+          })
+
+          chartsForThisModeAndSong.forEach((chart) => {
+            const chartSectionDiv = document.createElement('div')
+            chartSectionDiv.setAttribute('class', `chart-section-${chart.chart_data.difficulty.toLowerCase()}`)
+            chartSectionDiv.setAttribute('style', 'margin-bottom: 20px;')
+
+            const chartHeaderSectionDiv = document.createElement('div')
+            chartHeaderSectionDiv.setAttribute('class', `chart-header-section-${chart.chart_data.difficulty.toLowerCase()}`)
+
+            const chartHeaderSpan = document.createElement('span')
+            chartHeaderSpan.setAttribute('class', 'chart-header-span-section')
+
+            const difficultyNameHeading = document.createElement('h3')
+            difficultyNameHeading.setAttribute('style', 'padding-left: 15px; margin-bottom: -25px;')
+            difficultyNameHeading.innerText = chart.chart_data.difficulty
+
+            const styleNameHeading = document.createElement('h4')
+            styleNameHeading.setAttribute('style', 'padding-left: 15px;')
+            styleNameHeading.innerText = chart.style
+
+            chartHeaderSpan.appendChild(difficultyNameHeading)
+            chartHeaderSpan.appendChild(styleNameHeading)
+
+            const meterHeading = document.createElement('h1')
+            meterHeading.setAttribute('style', 'padding-right: 15px;')
+            meterHeading.innerText = chart.chart_data.meter
+
+            chartHeaderSectionDiv.appendChild(chartHeaderSpan)
+            chartHeaderSectionDiv.appendChild(meterHeading)
+
+            chartSectionDiv.appendChild(chartHeaderSectionDiv)
+
+            //// - Details
+
+            const chartDetailSectionDiv = document.createElement('div')
+            chartDetailSectionDiv.setAttribute('class', 'chart-detail-div-section')
+
+            const chartData = chart.chart_data.chart_info
+            const [
+              taps, hands, jumps, rolls, 
+              holds, lifts, mines, fakes
+            ] = 
+            [
+              chartData.notes, chartData.hands, chartData.jumps, chartData.rolls,
+              chartData.holds, chartData.lifts, chartData.mines, chartData.fakes
+            ]
+            const detailNames = ['TAPS', 'HANDS', 'JUMPS', 'ROLLS', 'HOLDS', 'LIFTS', 'MINES', 'FAKES']
+            const detailValues = [taps, hands, jumps, rolls, holds, lifts, mines, fakes]
+
+            for (let i = 0; i < detailNames.length; i++) {
+              const chartDetail = document.createElement('div')
+              chartDetail.setAttribute('class', 'chart-detail')
+
+              const valueMatters = !!detailValues[i]
+              const detailNameHeading = document.createElement('h4')
+              detailNameHeading.setAttribute('class', `chart-detail-name${valueMatters ? '' : '-disabled'}`)
+              detailNameHeading.innerText = detailNames[i] + ':'
+
+              const detailValueHeading = document.createElement('h4')
+              detailValueHeading.setAttribute('class', `chart-detail-value${valueMatters ? '' : '-disabled'}`)
+              detailValueHeading.innerText = detailValues[i] || 0
+
+              chartDetail.appendChild(detailNameHeading)
+              chartDetail.appendChild(detailValueHeading)
+              chartDetailSectionDiv.appendChild(chartDetail)
+            }
+
+            chartSectionDiv.appendChild(chartDetailSectionDiv)
+            modeChartsSectionDiv.appendChild(chartSectionDiv)
+          })
+
+          songsChartDiv.appendChild(modeChartsSectionDiv)
+        })
+      })
+
+      /*
+        song: song.title,
+        mode,
+        style,
+        chart_data: chart
+      */
+
+      /*
       const table = document.createElement('table')
       table.setAttribute('class', 'tg')
 
@@ -697,8 +975,9 @@ const main = async () => {
       thead.appendChild(theadTr)
 
       const tbody = document.createElement('tbody')
-      
+
       userContributionData.chartContributions.forEach((chart) => {
+        
         const chartTr = document.createElement('tr')
         const songTd = document.createElement('td')
         const modeTd = document.createElement('td')
@@ -736,6 +1015,11 @@ const main = async () => {
       userChartSubmissionDiv.appendChild(chartSubmissionsHeading2)
       userChartSubmissionDiv.appendChild(table)
       userChartSubmissionDiv.setAttribute('style', 'overflow-x:auto;')
+      */
+
+      userChartSubmissionDiv.appendChild(chartSubmissionsHeading2)
+      userChartSubmissionDiv.appendChild(songsChartDiv)
+      userChartSubmissionDiv.setAttribute('style', '')
     }
 
     // Socials
