@@ -5154,7 +5154,7 @@
       "title": "OutFox Serenity Volume 1 Winter Update",
       "abrev": "v1.5",
       "description": "The Winter Update (version 1.5) adds three new songs by DJ Megas, Matduke and Pekoneko (ペコネコ), keysounded versions of selected songs for be-mu, po-mu, and gh mode, as well as more new charts—including Serenity's first ez2 (simulating ez2Dancer), maniax (simulating Dance ManiaX), and smx charts.",
-      "charts_for_modes": ["dance", "pump", "bemu", "pomu", "gh"],
+      "charts_for_modes": ["dance", "pump", "bemu", "pomu", "gh", "kb6"],
       "music_authors": ["DJ Megas", "Matduke", "Sudospective"],
       "graphic_authors": ["Lirodon", "Daniel Rotwind", "Khayos", "Trinitroid"],
       "chart_authors": [
@@ -5167,7 +5167,8 @@
         "shockdude",
         "Chriszo",
         "-YOSEFU-",
-        "Kawafumi"
+        "Kawafumi",
+        "Melone"
       ],
       "graphics": {
         "background": {
@@ -5220,7 +5221,8 @@
             "Marukomuru",
             "Xiddy",
             "Telperion",
-            "shockdude"
+            "shockdude",
+            "Melone"
           ],
           "charts": {
             "dance": {
@@ -5534,10 +5536,46 @@
               "single": [
                 {
                   "author": "Melone",
+                  "meter": 7,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 7.50,
+                  "chart_info": {
+                    "notes": 581,
+                    "holds": 29,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 10,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 10.00,
+                  "chart_info": {
+                    "notes": 680,
+                    "holds": 29,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 13,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 13.33,
+                  "chart_info": {
+                    "notes": 775,
+                    "holds": 45,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
                   "meter": 17,
                   "difficulty": "Expert",
                   "is_modchart": false,
-                  "peak_nps": 17.5,
+                  "peak_nps": 17.50,
                   "chart_info": {
                     "notes": 796,
                     "holds": 127,
@@ -10352,12 +10390,14 @@
       "title": "OutFox Serenity Volume 3",
       "abrev": "v3",
       "description": "TBD.",
-      "charts_for_modes": ["pump"],
+      "charts_for_modes": ["pump", "dance", "kb6"],
       "music_authors": ["DeBisco", "SiLiS", "Sevish"],
       "graphic_authors": ["DeBisco", "Melone"],
       "chart_authors": [
         "Rippy Ripster",
-        "Colin"
+        "Colin",
+        "Marukomuru",
+        "Melone"
       ],
       "graphics": {
         "background": {
@@ -10492,8 +10532,25 @@
           "license": "CC-BY-SA 4.0",
           "music_authors": ["SiLiS"],
           "graphic_authors": [],
-          "chart_authors": [],
-          "charts": {}
+          "chart_authors": ["Melone"],
+          "charts": {
+            "kb6": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 18,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 19.17,
+                  "chart_info": {
+                    "notes": 844,
+                    "holds": 94,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
         },
         {
           "title": "What Year Is This",
@@ -10522,7 +10579,64 @@
           "music_authors": ["Sevish"],
           "graphic_authors": ["Melone"],
           "chart_authors": [],
-          "charts": {}
+          "charts": {
+            "dance": {
+              "single": [
+                {
+                  "author": "Marukomuru",
+                  "meter": 2,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 0.56,
+                  "chart_info": {
+                    "notes": 63,
+                    "jumps": 0,
+                    "holds": 7,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ],
+              "double": [
+                {
+                  "author": "Marukomuru",
+                  "meter": 2,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 0.56,
+                  "chart_info": {
+                    "notes": 63,
+                    "jumps": 0,
+                    "holds": 7,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ]
+            },
+            "kb6": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 2,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 10.05,
+                  "chart_info": {
+                    "notes": 541,
+                    "holds": 96,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
         }
       ]
     }
