@@ -10624,7 +10624,7 @@
               "single": [
                 {
                   "author": "Melone",
-                  "meter": 2,
+                  "meter": 10,
                   "difficulty": "Expert",
                   "is_modchart": false,
                   "peak_nps": 10.05,
