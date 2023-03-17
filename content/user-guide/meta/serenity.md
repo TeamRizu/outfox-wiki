@@ -3,10 +3,27 @@ title: OutFox Serenity
 weight: 3
 ---
 
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <p>Hey! There are new pages with more info about OutFox Serenity, check them out!</p>
+    <div style="flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
+        <span class="gdoc-button gdoc-button--large" href="../serenity_user_profile.md">
+            <a class="gdoc-button__link" href="../serenity_user_profile/">
+                Serenity User Profiles
+            </a>
+        </span>
+        <span class="gdoc-button gdoc-button--large" href="../serenity_volume_resume.md">
+            <a class="gdoc-button__link" href="../serenity_volume_resume/">
+                Serenity Volume Resume
+            </a>
+        </span>
+    </div>
+</div>
+
 
 ## What is OutFox Serenity?
 
 OutFox Serenity is the official community song pack project **made primarily for Project OutFox**. Its purpose is to produce packs of "libre" songs for the game that can be freely redistributed (including as part of its default, bundled songs), and to showcase the functionality of Project Outfox by offering charts for multiple game types beyond just 4-key/dance.
+
 
 ## How was OutFox Serenity created?
 
@@ -63,34 +80,94 @@ Yes! In case you want to be extra secure, each song folder in our package includ
 
 # OutFox Serenity Volume I
 
-Released August 27, 2021, OutFox Serenity Volume I features music by Aspid Cat, Drazil, Jack5, Matduke, mmry, PizeroFox, Seo, and Sevish. Alongside 4-panel (dance) and 5-panel (pump) charts, some of its songs also have be-mu, po-mu, techno (8- and 9-panel), gddm, and gdgf, and gh charts. Comes with:
+Released August 27, 2021, OutFox Serenity Volume I features music by Aspid Cat, Drazil, Jack5, Matduke, mmry, PizeroFox, Seo, and Sevish. Alongside 4-panel (dance) and 5-panel (pump) charts, some of its songs also have be-mu, po-mu, techno (8- and 9-panel), gddm, and gdgf, and gh charts.
 
 <details>
 <summary>View Chart Table</summary>
 
 | Mode | Charts |
 |---|---|
-| dance | 84 |
-| pump | 58 |
-| be-mu | 28 |
-| po-mu | 26 |
-| gh | 20 |
+| dance | 110 |
+| pump | 59 |
+| gh | 28 |
 | gddm | 18 |
-| techno | 8 |
+| po-mu | 16 |
+| smx | 16 |
+| be-mu | 14 |
+| techno | 10 |
 | gdgf | 8 |
+| maniax | 2 |
+| kb6 | 1 |
+| ds3ddx | 1 |
+| ez2 | 1 |
 
 </details>
 
-250 Charts have been created for 11 songs. Volume I StepArtists had 97 days of development.
+There are a total of 284 charts available to play in 11 songs for OutFox Serenity Volume 1.
 
 - Watch video [here](https://youtu.be/YAgVL2GPp3c)
-- Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.1).
 {{< /tab >}}
 
 {{< tab "Volume 1.5" >}} 
 # OutFox Serenity Volume I Winter Update
 
-The Winter Update to OutFox Serenity Volume I features three new songs by DJ Megas, Matduke and Pekoneko (ペコネコ). It also includes changes to some of the existing songs from Volume 1, including additional charts, and key sounded be-mu/po-mu and gh charts for selected songs. Comes with:
+The Winter Update to OutFox Serenity Volume I features three new songs by DJ Megas, Matduke and Pekoneko (ペコネコ). It also includes changes to some of the existing songs from Volume 1, including additional charts, and key sounded be-mu/po-mu and gh charts for selected songs.
+
+<details>
+<summary>View Chart Table</summary>
+
+| Mode | Charts |
+|---|---|
+| dance | 26 |
+| gh | 8 |
+| bemu | 8 |
+| pump | 5 |
+| pomu | 2 |
+| kb6 | 1
+
+</details>
+
+There are a total of 50 charts available to play in 3 songs from OutFox Serenity Volume 1 Winter Update.
+
+- Watch video [here](https://youtu.be/tyeeItPfbzc)
+
+{{< /tab >}}
+
+{{< tab "Volume 2" >}} 
+# OutFox Serenity Volume II
+
+Released September 4, 2022, Serenity Volume II features music by Ace of Beat, Finite Limit, Jack5, Kurio Prokos, Lagoona, Rilliam, rN, SiLiS, and td.
+
+<details>
+<summary>View Chart Table</summary>
+
+| Mode | Charts |
+|---|---|
+| dance | 66 |
+| gh | 33 |
+| pump | 25 |
+| bemu | 15 |
+| pomu | 14 |
+| smx | 9 |
+| ds3ddx | 5 |
+| kb4 | 4 |
+| kickbox | 4 |
+| kb8 | 3 |
+| ez2 | 1 |
+| kb6 | 1 |
+
+</details>
+
+There are a total of 180 charts available to play in 10 songs for OutFox Serenity Volume 2.
+
+- Watch video [here](https://youtu.be/yVsGkWDPfWY)
+
+{{< /tab >}}
+
+{{< tab "Volume 2.5" >}} 
+# OutFox Serenity Volume II Winter Update
+
+Released February 21, 2023, the Winter Update (version 2.5) adds three new songs by Akako Hinami and Zenth, as well as new charts for other songs from previous versions.
 
 <details>
 <summary>View Chart Table</summary>
@@ -98,51 +175,16 @@ The Winter Update to OutFox Serenity Volume I features three new songs by DJ Meg
 | Mode | Charts |
 |---|---|
 | dance | 28 |
-| smx | 16 |
-| gh | 11 |
-| be-mu | 9 |
-| pump | 5 |
-| maniax | 2 |
-| po-mu | 2 |
-| techno | 2 |
-| ez2 | 1 |
+| kb6 | 8 |
+| pump | 4 |
+| pomu | 3 |
+| bomu | 3 |
 
 </details>
 
-76 Charts have been created for 3 songs. Volume I Winter Update StepArtists had 50 days of development.
+There are a total of 46 charts available to play in 3 songs from OutFox Serenity Volume 2 Winter Update.
 
-- Watch video [here](https://youtu.be/tyeeItPfbzc)
-- Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v1.5)
-
-{{< /tab >}}
-
-{{< tab "Volume 2" >}} 
-# OutFox Serenity Volume II
-
-Released September 4, 2022, Serenity Volume II features music by Ace of Beat, Finite Limit, Jack5, Kurio Prokos, Lagoona, Rilliam, rN, SiLiS, and td. Comes with:
-
-<details>
-<summary>View Chart Table</summary>
-
-| Mode | Charts |
-|---|---|
-| dance | 59 |
-| gh | 25 |
-| pump | 19 |
-| be-mu | 12 |
-| po-mu | 12 |
-| smx | 9 |
-| kbx | 8 |
-| ds3ddx | 6 |
-| kickbox | 4 |
-| ez2 | 1 |
-
-</details>
-
-155 Charts have been created for 10 songs. Volume II StepArtists had 111 days of development.
-
-- Watch video [here](https://youtu.be/yVsGkWDPfWY)
-- Download [now](https://github.com/TeamRizu/OutFox-Serenity/releases/tag/v2.0)
+- Watch video [here](https://youtu.be/f-E9SczUmdg)
 
 {{< /tab >}}
 
@@ -229,32 +271,39 @@ Those are special as they use a license that doesn't allow us to publicly host t
 
 | Author | Charts |
 |---|---|
-| Daniel Rotwind | 91 |
-| shockdude | 58 |
-| Chriszo | 58 |
+| Daniel Rotwind | 89 |
+| Chriszo | 70 |
+| shockdude | 69 |
+| Marukomuru | 62 |
 | Jack5 | 56 |
-| Marukomuru | 44 |
-| Xiddy | 22 |
-| K.TURN | 21 |
-| Yosefu | 19 |
+| Yosefu | 33 |
+| Xiddy | 25 |
+| K.TURN | 23 |
 | Fingy | 18 |
-| Telperion | 15 |
-| 48productions | 14 |
-| Kawafumi | 10 |
-| Dancing Maractus | 8 |
+| 48productions | 16 |
+| Rippy Ripster | 15 |
+| Melone | 11 |
+| Telperion | 11 |
+| Kawafumi | 9 |
+| A Dancing Maractus | 8 |
 | Gr00txD | 8 |
 | Kaede | 7 |
-| Snil4 | 5 |
-| dj505 | 5 |
+| Homeee | 5 |
+| dj505 | 4 |
 | kals | 4 |
 | DJGRS | 4 |
-| Homeee | 4 |
 | Drazil | 3 |
+| Snil4 | 3 |
 | SHRMP0 | 3 |
+| Kurio Prokos | 3 |
 | Timo Kitsune | 2 |
 | Jose_Varela | 1 |
 | Sevish | 1 |
 | Ario | 1 |
+| Jose Varela | 1 |
+| Sevish | 1 |
+| Sudospective | 1 |
+| PCBoyGames | 1 |
 
 ## Which graphic makers have had their artwork released with OutFox Serenity?
 

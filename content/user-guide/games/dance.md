@@ -18,7 +18,7 @@ This mode was added from the very beginning of the history of the StepMania proj
 ---
 ### Introduced:
 
-This history does not include the original years before the project was announced and given to the community. If you know of any builds or information missing, do let us know! you can find some of these earlier builds at the archive here https://josevarela.xyz/SMArchive/Builds/index.html 
+This history does not include the original years before the project was announced and given to the community. If you know of any builds or information missing, do let us know! you can find some of these earlier builds at the archive here https://josevarela.net/SMArchive/Builds/
 
 #### 4 Panel (Up/Down/Left/Right):
 
