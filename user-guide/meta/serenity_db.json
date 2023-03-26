@@ -10397,7 +10397,8 @@
         "Rippy Ripster",
         "Colin",
         "Marukomuru",
-        "Melone"
+        "Melone",
+        "-YOSEFU-"
       ],
       "graphics": {
         "background": {
@@ -10445,9 +10446,31 @@
           "graphic_authors": ["DeBisco"],
           "chart_authors": [
             "Rippy Ripster",
-            "Colin"
+            "Colin",
+            "-YOSEFU-"
           ],
           "charts": {
+            "dance": {
+              "single": [
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 16,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 8.44,
+                  "chart_info": {
+                    "notes": 627,
+                    "jumps": 32,
+                    "holds": 45,
+                    "mines": 23,
+                    "hands": 3,
+                    "rolls": 16,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ]
+            },
             "pump": {
               "double": [
                 {
@@ -10532,8 +10555,29 @@
           "license": "CC-BY-SA 4.0",
           "music_authors": ["SiLiS"],
           "graphic_authors": [],
-          "chart_authors": ["Melone"],
+          "chart_authors": ["Melone", "-YOSEFU-"],
           "charts": {
+            "dance": {
+              "single": [
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 17,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 13.33,
+                  "chart_info": {
+                    "notes": 779,
+                    "jumps": 40,
+                    "holds": 56,
+                    "mines": 14,
+                    "hands": 1,
+                    "rolls": 0,
+                    "lifts": 5,
+                    "fakes": 0
+                  }
+                }
+              ]
+            },
             "kb6": {
               "single": [
                 {
