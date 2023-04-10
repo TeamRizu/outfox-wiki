@@ -369,7 +369,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Kawafumi",
                   "meter": 3,
@@ -421,7 +421,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 12,
@@ -435,7 +435,7 @@
                   }
                 }
               ],
-              "9key": [
+              "nine": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 17,
@@ -933,7 +933,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 1,
@@ -1566,7 +1566,7 @@
               ]
             },
             "gdgf": {
-              "6frets": [
+              "six": [
                 {
                   "author": "Jack5",
                   "meter": 3,
@@ -2081,7 +2081,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -2638,7 +2638,7 @@
               ]
             },
             "pomu": {
-              "9key": [
+              "nine": [
                 {
                   "author": "Jack5",
                   "meter": 44,
@@ -3283,7 +3283,7 @@
                   }
                 }
               ],
-              "dual": [
+              "double6": [
                 {
                   "author": "K.TURN",
                   "meter": 18,
@@ -3302,7 +3302,7 @@
                   }
                 }
               ],
-              "full": [
+              "double10": [
                 {
                   "author": "K.TURN",
                   "meter": 24,
@@ -3784,7 +3784,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -3812,7 +3812,7 @@
               ]
             },
             "pomu": {
-              "9key": [
+              "nine": [
                 {
                   "author": "Jack5",
                   "meter": 18,
@@ -4031,7 +4031,7 @@
               ]
             },
             "pomu": {
-              "4key": [
+              "four": [
                 {
                   "author": "Jack5",
                   "meter": 11,
@@ -4147,7 +4147,7 @@
               ]
             },
             "gdgf": {
-              "5frets": [
+              "five": [
                 {
                   "author": "Jack5",
                   "meter": 3,
@@ -5425,7 +5425,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -5453,7 +5453,7 @@
               ]
             },
             "pomu": {
-              "9key": [
+              "nine": [
                 {
                   "author": "Telperion",
                   "meter": 43,
@@ -6063,7 +6063,7 @@
               ]
             },
             "bemu": {
-              "5key": [
+              "single5": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -6101,7 +6101,7 @@
                   }
                 }
               ],
-              "7key": [
+              "single7": [
                 {
                   "author": "Kawafumi",
                   "meter": 4,
@@ -6433,7 +6433,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 1,
@@ -6485,7 +6485,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 9,
@@ -6788,7 +6788,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 1,
@@ -6828,7 +6828,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 4,
@@ -6854,7 +6854,7 @@
                   }
                 }
               ],
-              "9key": [
+              "nine": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 9,
@@ -7444,7 +7444,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 1,
@@ -7484,7 +7484,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 10,
@@ -7814,7 +7814,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -7854,7 +7854,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 5,
@@ -7868,7 +7868,7 @@
                   }
                 }
               ],
-              "7key": [
+              "seven": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 8,
@@ -9418,7 +9418,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -9446,7 +9446,7 @@
               ]
             },
             "pomu": {
-              "9key": [
+              "nine": [
                 {
                   "author": "Telperion",
                   "meter": 47,
@@ -9694,7 +9694,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -9734,7 +9734,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 10,
@@ -9748,7 +9748,7 @@
                   }
                 }
               ],
-              "9key": [
+              "nine": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 12,
@@ -9958,6 +9958,42 @@
             },
             "kb5": {
               "single": [
+                {
+                  "author": "Melone",
+                  "meter": 2,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 3.00,
+                  "chart_info": {
+                    "notes": 234,
+                    "holds": 14,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 4,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 5.00,
+                  "chart_info": {
+                    "notes": 445,
+                    "holds": 15,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 6,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 6.00,
+                  "chart_info": {
+                    "notes": 510,
+                    "holds": 30,
+                    "mines": 0
+                  }
+                },
                 {
                   "author": "Melone",
                   "meter": 8,
@@ -10392,7 +10428,7 @@
       "description": "TBD.",
       "charts_for_modes": ["pump", "dance", "kb6"],
       "music_authors": ["DeBisco", "SiLiS", "Sevish"],
-      "graphic_authors": ["DeBisco", "Melone"],
+      "graphic_authors": ["DeBisco", "Melone", "art.horizon"],
       "chart_authors": [
         "Rippy Ripster",
         "Colin",
@@ -10447,7 +10483,8 @@
           "chart_authors": [
             "Rippy Ripster",
             "Colin",
-            "-YOSEFU-"
+            "-YOSEFU-",
+            "Melone"
           ],
           "charts": {
             "dance": {
@@ -10543,6 +10580,38 @@
                   }
                 }
               ]
+            },
+            "kb6": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 11,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 11.81,
+                  "chart_info": {
+                    "notes": 776,
+                    "holds": 22,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "bemu": {
+              "single5": [
+                {
+                  "author": "Melone",
+                  "meter": 7,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 7.31,
+                  "chart_info": {
+                    "notes": 475,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -10550,12 +10619,28 @@
           "title": "PLANETES",
           "length": "2:28",
           "bpm": 200,
-          "graphics": {},
+          "graphics": {
+            "background": {
+              "author": "art.horizon",
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/SiLiS%20-%20PLANETES/background.png"
+            },
+            "banner": {
+              "author": "art.horizon",
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/SiLiS%20-%20PLANETES/banner.png"
+            },
+            "jacket": {
+              "author": "art.horizon",
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/SiLiS%20-%20PLANETES/jacket.png"
+            }
+          },
           "genre": "Artcore",
           "license": "CC-BY-SA 4.0",
           "music_authors": ["SiLiS"],
-          "graphic_authors": [],
-          "chart_authors": ["Melone", "-YOSEFU-"],
+          "graphic_authors": ["art.horizon"],
+          "chart_authors": ["Melone", "-YOSEFU-", "Marukomuru"],
           "charts": {
             "dance": {
               "single": [
@@ -10573,6 +10658,25 @@
                     "hands": 1,
                     "rolls": 0,
                     "lifts": 5,
+                    "fakes": 0
+                  }
+                }
+              ],
+              "double": [
+                {
+                  "author": "Marukomuru",
+                  "meter": 2,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.67,
+                  "chart_info": {
+                    "notes": 96,
+                    "jumps": 8,
+                    "holds": 4,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
                     "fakes": 0
                   }
                 }
@@ -10628,14 +10732,14 @@
               "single": [
                 {
                   "author": "Marukomuru",
-                  "meter": 2,
+                  "meter": 1,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 0.56,
+                  "peak_nps": 1.67,
                   "chart_info": {
                     "notes": 63,
                     "jumps": 0,
-                    "holds": 7,
+                    "holds": 8,
                     "mines": 0,
                     "hands": 0,
                     "rolls": 0,
@@ -10647,17 +10751,85 @@
               "double": [
                 {
                   "author": "Marukomuru",
-                  "meter": 2,
+                  "meter": 1,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 0.56,
+                  "peak_nps": 1.67,
                   "chart_info": {
                     "notes": 63,
                     "jumps": 0,
-                    "holds": 7,
+                    "holds": 8,
                     "mines": 0,
                     "hands": 0,
                     "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.23,
+                  "chart_info": {
+                    "notes": 140,
+                    "jumps": 0,
+                    "holds": 49,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 1,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 7,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 4.47,
+                  "chart_info": {
+                    "notes": 257,
+                    "jumps": 11,
+                    "holds": 43,
+                    "mines": 1,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 13,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 7.82,
+                  "chart_info": {
+                    "notes": 442,
+                    "jumps": 12,
+                    "holds": 54,
+                    "mines": 0,
+                    "hands": 1,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 17,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 8.93,
+                  "chart_info": {
+                    "notes": 612,
+                    "jumps": 15,
+                    "holds": 64,
+                    "mines": 19,
+                    "hands": 9,
+                    "rolls": 1,
                     "lifts": 0,
                     "fakes": 0
                   }
