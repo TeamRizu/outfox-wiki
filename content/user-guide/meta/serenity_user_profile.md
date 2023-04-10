@@ -244,6 +244,12 @@ geekdocAlign: center
 
 </div>
 
+<div id="socialsOuterDiv" style='display: none'>
+  <h2>Socials</h2>
+  <div id='socials' style="display: flex; flex-wrap: wrap; justify-items: center; justify-content: center; gap: 30px;">
+  </div>
+</div>
+
 <div style="overflow-x:auto; display: none;" id="userSongSubmissionDiv">
 <h2>Song Submissions</h2>
 </div>
@@ -254,12 +260,6 @@ geekdocAlign: center
 
 <div style="overflow-x:auto; display: none;" id="userChartSubmissionDiv">
 <h2>Chart Submission</h2>
-</div>
-
-<div id="socialsOuterDiv" style='display: none'>
-<h2>Socials</h2>
-<div id='socials' style="display: flex; flex-wrap: wrap; justify-items: center; justify-content: center; gap: 30px;">
-</div>
 </div>
 
 If you want a social add/removed from your profile then join the [Project OutFox Discord Server](https://discord.gg/cN4TjgQdcA) and contact the moderator team.
