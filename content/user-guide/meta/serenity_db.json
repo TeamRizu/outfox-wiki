@@ -10925,8 +10925,7 @@
         "youtube": "https://www.youtube.com/channel/UCY6xD8ir6C_cx7KKMjYFYQQ",
         "twitch": "https://www.twitch.tv/shrmp0",
         "github": "https://github.com/SHRMP0"
-      },
-      "pretags": ["SERENITY_TEAM"]
+      }
     },
     {
       "name": "A Dancing Maractus",
@@ -10955,7 +10954,17 @@
         "twitch": "https://www.twitch.tv/meione1",
         "twitter": "https://twitter.com/exibiIiA",
         "youtube": "https://youtube.com/@exibilia9040"
-      }
+      },
+      "pretags": ["SERENITY_TEAM"]
+    },
+    {
+      "name": "Colin",
+      "socials": {
+        "twitter": "https://twitter.com/colinmcguire_",
+        "youtube": "https://www.youtube.com/channel/UCojjVpl_ovkwVJp6lhG1BmQ",
+        "twitch": "https://www.twitch.tv/colinmcguire_"
+      },
+      "pretags": ["SERENITY_TEAM"]
     },
     {
       "name": "Gr00txD",
@@ -11183,9 +11192,10 @@
       "name": "Moru Zerinho6",
       "socials": {
         "twitter": "https://twitter.com/Moru_zerinho6",
-        "github": "https://github.com/moruzerinho6"
+        "github": "https://github.com/moruzerinho6",
+        "youtube": "https://www.youtube.com/channel/UCb9LtrgoGq0mRC3FwcZRtiQ"
       },
-      "pretags": ["SERENITY_TEAM"]
+      "pretags": ["SERENITY_LEAD", "SERENITY_TEAM"]
     },
     {
       "name": "Moneko",
@@ -11261,6 +11271,12 @@
       "name": "Serenity Team Member",
       "rarity": "leaf",
       "explanation": "Is member of the Serenity Team."
+    },
+    {
+      "tag": "SERENITY_LEAD",
+      "name": "Serenity Team Lead",
+      "rarity": "leaf",
+      "explanation": "Is the lead of the Serenity Team."
     },
     {
       "tag": "SUPREME",

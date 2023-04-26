@@ -353,14 +353,17 @@ Those are special as they use a license that doesn't allow us to publicly host t
 
 Most of the work is handled by OutFox Community Team with occasional help from OutFox Design Team and feedback from OutFox Development Team. In Specific:
 
-- SHRMP0: Serenity Server Organization, Music Selection, Pack Organization, Serenity Sheet Organization, Simfile Templates, Chart Feedback.
+- Moru Zerinho6: Serenity Project Lead, Serenity Server Organization, Music Selection, Pack Organization, Serenity Website Section, Serenity Wiki, Simfile Templates.
 - Lirodon: Pack Assets, Serenity Trailer, Serenity Website Section, Guidelines Rules, Pack Advertisement.
-- Moru Zerinho6: Serenity Server Organization, Music Selection, Pack Organization, Serenity Website Section, Serenity Wiki.
 - Daniel Rotwind: Creation of templates for be-mu/po-mu game modes, Pack Assets, Chart Creation.
 - shockdude: Creation of GH game mode templates, Chart Creation.
 - Sevish: Sound Normalization, Music Feedback, Chart Creation.
-- Moneko: Music Selection.
-- dj505: Chart Creation and Feedback.
+- Melone: Chart Creation, Chart Feedback, Music Selection.
 - Jose_Varela: Chart Creation, Pack Assets.
+- Colin: Chart Creation, Music Feedback.
+- dj505: Chart Creation and Feedback.
+- Moneko: Music Selection.
+
+We're looking for people to join the serenity team to help with the creation of simfile templates, by defining song metadata such as BPM, Artist, Stops...etc, if you're interested then join the [Project OutFox Discord Server](https://discord.gg/cN4TjgQdcA) and contact the moderators.
 
 _Written and Maintained by Moru Zerinho6_

@@ -45,7 +45,6 @@ Design |
 Community |
 :------------ |
 [Moru Zerinho6](https://github.com/moruzerinho6)
-[SHRMP0](https://github.com/SHRMP0)
 [Moneko](https://github.com/JustMoneko)
 [Hanubeki](https://github.com/hanubeki)
 [Gabrimax98](https://github.com/Gabrimax98)
@@ -58,6 +57,8 @@ Serenity |
 [Daniel Rotwind](https://github.com/DanielRotwind)
 [shockdude](https://github.com/shockdude)
 [Sevish](https://sevish.com/)
+[Melone](https://twitter.com/exibiIiA)
+[Colin](https://twitter.com/colinmcguire_)
 
 {{< /columns >}}
 
