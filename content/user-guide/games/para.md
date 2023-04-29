@@ -83,8 +83,98 @@ The original ``para`` games worked more on the replication of the dance moves an
 
 ## Controls
 
+Setting up the _Para_ controller is different depending on the operating system you are using. We will be working with the Pink _PlayStation 2_ controller in this guide, as it is much much more common and we have yet to have anyone ask about the DC version.
+
+**Before** you start _Project OutFox_, you must make sure you have laid out the controller on the floor, within a suitable distance from your screen, and away from any shelving or things which could be knocked off from swinging arms, ensure good clearance as well from the second player, as you do not want to be hitting each other as you play the game!
+
+![Two player layout from PlayStation 2 (2010) - Thanks https://www.tomshw.it/](/user-guide/paraps2-2p-layout.jpg)
+
+
+The example above shows a two-player layout at a convention from 2010, with the PS2 game running on it's actual hardware. For the first time _Project OutFox_ now supports up to 4 simultaneous controllers, (though more than 2 player is not available yet!). It is recommended to use the provided template to place on the floor so the controllers are correctly spaced and you are aware of the space required.
+
+![Floor Layout of PPP controller](/user-guide/parafloorlayout.jpg)
+
+Plug in the controller(s) into a spare USB slot on your computer, or the dock of the Mac/Steam Deck once you are happy with your placement.
+
+You need to run the game once to generate the file we will be editing to set up the controller.
+
+Run the game as per your Operating system and then find the /Save/Preferences.ini file, that usually is edited for your specific choices. In the future we won't need to do this step, but for now, we rely on it to configure things.
+
+**You MUST always plug in the controllers BEFORE running the game! This is because the hardware was designed for the PS2, and needs a special routine in the code to function correctly, and this is done as the game starts up!**
+
+### The following controls are only available on Alpha V 041 or later (May 2023)
+
+Scroll down the preferences file until you find the section that begins with Input and set up your system as follows depending on your operating system:
+
+Windows: 7+
+
+```
+InputSetArcade=0
+InputSetDInput=1
+InputSetHIDAPI=0
+InputSetJSDeadzoneValue=3200
+InputSetLinuxJSEndpoint=0
+InputSetRAWAPI=0
+InputSetXInput=0
+```
+
+Linux: (Desktop - Arch/Ubuntu/Debian etc)
+```
+InputSetArcade=0
+InputSetDInput=0
+InputSetHIDAPI=0
+InputSetJSDeadzoneValue=3200
+InputSetLinuxJSEndpoint=0
+InputSetRAWAPI=0
+InputSetXInput=1
+```
+
+Linux: (Steam Deck)
+```
+InputSetArcade=1
+InputSetDInput=0
+InputSetHIDAPI=0
+InputSetJSDeadzoneValue=3200
+InputSetLinuxJSEndpoint=0
+InputSetRAWAPI=0
+InputSetXInput=1
+```
+
+Linux: (Raspberry Pi / RockPi / Arm Generic)
+```
+InputSetArcade=0
+InputSetDInput=0
+InputSetHIDAPI=0
+InputSetJSDeadzoneValue=3200
+InputSetLinuxJSEndpoint=0
+InputSetRAWAPI=0
+InputSetXInput=1
+```
+
+MacOS
+```
+InputSetArcade=0
+InputSetDInput=0
+InputSetHIDAPI=0
+InputSetJSDeadzoneValue=3200
+InputSetLinuxJSEndpoint=0
+InputSetRAWAPI=0
+InputSetXInput=1
+```
+
+_Please Note:_ If you are running a _hardened_ version of Linux, (SELinux/Gentoo/Some Arch variants), OutFox should set up and initialise your controller automatically. If it does not work, you probably have restrictive udev rules for input devices by default. Quit OutFox and try placing the following udev rule in `/etc/udev/rules.d` (in a file such as `99-ppp.rules`):
+
+```KERNEL=="hidraw*", ATTRS{idVendor}=="0507", ATTRS{idProduct}=="0011", TAG+="uaccess", MODE="0666"```
+##### _Thanks to MrCarter for contributing this information_
+
+The Para Driver will be set up to init automatically from Alpha V pre-041, so you do not need to change anything else in the system for this.
+
+For calibrating and setup, we recommend watching the video from our friends at _EKS-D ParaMania_, which have provided a great tutorial here: https://www.youtube.com/watch?v=u-cpsnGrFXQ 
+
 ## Trivia
 
-The old official _Konami_ controller used to have a bug on non Windows based systems until alpha 4.12.0 which prevented the device waking up correctly on those systems. 
+The old official _Konami_ controller used to have a bug on non Windows based systems until alpha 4.12.0 which prevented the device waking up correctly on those systems.
+
+Although _Project OutFox_ has had two player support for some time, it has only recently been able to utilise two controllers being plugged in at once. You will need to wait until Alpha V 041 is available to use this feature, it is NOT available on Alpha 4 / LTS 4. 
 
 _Written and Maintained with ♡ by Squirrel_
