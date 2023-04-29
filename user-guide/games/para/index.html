@@ -18,7 +18,7 @@
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Game Module: para">
 <meta name=twitter:description content="Details about the `para` mode supported by Project OutFox.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"User Guide","name":"Game Module: para","url":"https://outfox.wiki/user-guide/games/para/","headline":"Game Module: para","description":"Details about the `para` mode supported by Project OutFox.","wordCount":"547","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/user-guide/games/para/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"User Guide","name":"Game Module: para","url":"https://outfox.wiki/user-guide/games/para/","headline":"Game Module: para","description":"Details about the `para` mode supported by Project OutFox.","wordCount":"1121","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/user-guide/games/para/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
 <script src=../../../js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=../../../js/main-56ca818c.bundle.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -1772,12 +1772,57 @@ Charting
 Controls
 <a data-clipboard-text=https://outfox.wiki/user-guide/games/para/#controls class="gdoc-page__anchor clip flex align-center" title="Anchor to: Controls" aria-label="Anchor to: Controls" href=#controls><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><div class=gdoc-page__anchorwrap>
+</h2></div><p>Setting up the <em>Para</em> controller is different depending on the operating system you are using. We will be working with the Pink <em>PlayStation 2</em> controller in this guide, as it is much much more common and we have yet to have anyone ask about the DC version.</p><p><strong>Before</strong> you start <em>Project OutFox</em>, you must make sure you have laid out the controller on the floor, within a suitable distance from your screen, and away from any shelving or things which could be knocked off from swinging arms, ensure good clearance as well from the second player, as you do not want to be hitting each other as you play the game!</p><p><img src=../../../user-guide/paraps2-2p-layout.jpg alt="Two player layout from PlayStation 2 (2010) - Thanks https://www.tomshw.it/"></p><p>The example above shows a two-player layout at a convention from 2010, with the PS2 game running on it&rsquo;s actual hardware. For the first time <em>Project OutFox</em> now supports up to 4 simultaneous controllers, (though more than 2 player is not available yet!). It is recommended to use the provided template to place on the floor so the controllers are correctly spaced and you are aware of the space required.</p><p><img src=../../../user-guide/parafloorlayout.jpg alt="Floor Layout of PPP controller"></p><p>Plug in the controller(s) into a spare USB slot on your computer, or the dock of the Mac/Steam Deck once you are happy with your placement.</p><p>You need to run the game once to generate the file we will be editing to set up the controller.</p><p>Run the game as per your Operating system and then find the /Save/Preferences.ini file, that usually is edited for your specific choices. In the future we won&rsquo;t need to do this step, but for now, we rely on it to configure things.</p><p><strong>You MUST always plug in the controllers BEFORE running the game! This is because the hardware was designed for the PS2, and needs a special routine in the code to function correctly, and this is done as the game starts up!</strong></p><div class=gdoc-page__anchorwrap>
+<h3 id=the-following-controls-are-only-available-on-alpha-v-041-or-later-may-2023>
+The following controls are only available on Alpha V 041 or later (May 2023)
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/para/#the-following-controls-are-only-available-on-alpha-v-041-or-later-may-2023 class="gdoc-page__anchor clip flex align-center" title="Anchor to: The following controls are only available on Alpha V 041 or later (May 2023)" aria-label="Anchor to: The following controls are only available on Alpha V 041 or later (May 2023)" href=#the-following-controls-are-only-available-on-alpha-v-041-or-later-may-2023><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><p>Scroll down the preferences file until you find the section that begins with Input and set up your system as follows depending on your operating system:</p><p>Windows: 7+</p><pre tabindex=0><code>InputSetArcade=0
+InputSetDInput=1
+InputSetHIDAPI=0
+InputSetJSDeadzoneValue=3200
+InputSetLinuxJSEndpoint=0
+InputSetRAWAPI=0
+InputSetXInput=0
+</code></pre><p>Linux: (Desktop - Arch/Ubuntu/Debian etc)</p><pre tabindex=0><code>InputSetArcade=0
+InputSetDInput=0
+InputSetHIDAPI=0
+InputSetJSDeadzoneValue=3200
+InputSetLinuxJSEndpoint=0
+InputSetRAWAPI=0
+InputSetXInput=1
+</code></pre><p>Linux: (Steam Deck)</p><pre tabindex=0><code>InputSetArcade=1
+InputSetDInput=0
+InputSetHIDAPI=0
+InputSetJSDeadzoneValue=3200
+InputSetLinuxJSEndpoint=0
+InputSetRAWAPI=0
+InputSetXInput=1
+</code></pre><p>Linux: (Raspberry Pi / RockPi / Arm Generic)</p><pre tabindex=0><code>InputSetArcade=0
+InputSetDInput=0
+InputSetHIDAPI=0
+InputSetJSDeadzoneValue=3200
+InputSetLinuxJSEndpoint=0
+InputSetRAWAPI=0
+InputSetXInput=1
+</code></pre><p>MacOS</p><pre tabindex=0><code>InputSetArcade=0
+InputSetDInput=0
+InputSetHIDAPI=0
+InputSetJSDeadzoneValue=3200
+InputSetLinuxJSEndpoint=0
+InputSetRAWAPI=0
+InputSetXInput=1
+</code></pre><p><em>Please Note:</em> If you are running a <em>hardened</em> version of Linux, (SELinux/Gentoo/Some Arch variants), OutFox should set up and initialise your controller automatically. If it does not work, you probably have restrictive udev rules for input devices by default. Quit OutFox and try placing the following udev rule in <code>/etc/udev/rules.d</code> (in a file such as <code>99-ppp.rules</code>):</p><p><code>KERNEL=="hidraw*", ATTRS{idVendor}=="0507", ATTRS{idProduct}=="0011", TAG+="uaccess", MODE="0666"</code></p><div class=gdoc-page__anchorwrap>
+<h5 id=_thanks-to-mrcarter-for-contributing-this-information_>
+<em>Thanks to MrCarter for contributing this information</em>
+<a data-clipboard-text=https://outfox.wiki/user-guide/games/para/#_thanks-to-mrcarter-for-contributing-this-information_ class="gdoc-page__anchor clip flex align-center" title="Anchor to: Thanks to MrCarter for contributing this information" aria-label="Anchor to: Thanks to MrCarter for contributing this information" href=#_thanks-to-mrcarter-for-contributing-this-information_><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h5></div><p>The Para Driver will be set up to init automatically from Alpha V pre-041, so you do not need to change anything else in the system for this.</p><p>For calibrating and setup, we recommend watching the video from our friends at <em>EKS-D ParaMania</em>, which have provided a great tutorial here: <a class=gdoc-markdown__link href="https://www.youtube.com/watch?v=u-cpsnGrFXQ">https://www.youtube.com/watch?v=u-cpsnGrFXQ</a></p><div class=gdoc-page__anchorwrap>
 <h2 id=trivia>
 Trivia
 <a data-clipboard-text=https://outfox.wiki/user-guide/games/para/#trivia class="gdoc-page__anchor clip flex align-center" title="Anchor to: Trivia" aria-label="Anchor to: Trivia" href=#trivia><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>The old official <em>Konami</em> controller used to have a bug on non Windows based systems until alpha 4.12.0 which prevented the device waking up correctly on those systems.</p><p><em>Written and Maintained with ♡ by Squirrel</em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
+</h2></div><p>The old official <em>Konami</em> controller used to have a bug on non Windows based systems until alpha 4.12.0 which prevented the device waking up correctly on those systems.</p><p>Although <em>Project OutFox</em> has had two player support for some time, it has only recently been able to utilise two controllers being plugged in at once. You will need to wait until Alpha V 041 is available to use this feature, it is NOT available on Alpha 4 / LTS 4.</p><p><em>Written and Maintained with ♡ by Squirrel</em></p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
 </div></div></main><footer class=gdoc-footer>
 <nav class="container flex">
 <div>
