@@ -162,9 +162,11 @@ InputSetRAWAPI=0
 InputSetXInput=1
 ```
 
-_Please Note:_ If you are running a _hardened_ version of Linux, (SELinux/Gentoo/Some Arch variants), OutFox should set up and initialise your controller automatically. If it does not work, you probably have restrictive udev rules for input devices by default. Quit OutFox and try placing the following udev rule in `/etc/udev/rules.d` (in a file such as `99-ppp.rules`):
+_Please Note:_ If you are running a _hardened_ version of Linux, (SELinux/Gentoo/Some Arch variants), OutFox should set up and initialise your controller automatically. If it does not work, you probably have restrictive udev rules for input devices by default. Quit OutFox and try placing the following udev rule in `/etc/udev/rules.d` (in a file such as `70-ppp.rules`):
 
-```KERNEL=="hidraw*", ATTRS{idVendor}=="0507", ATTRS{idProduct}=="0011", TAG+="uaccess", MODE="0666"```
+```KERNEL=="hidraw*", ATTRS{idVendor}=="0507", ATTRS{idProduct}=="0011", TAG+="uaccess"```
+
+Note that the file name must come before `73-seat-late.rules`, as this is where `uaccess` is applied.
 ##### _Thanks to MrCarter for contributing this information_
 
 The Para Driver will be set up to init automatically from Alpha V pre-041, so you do not need to change anything else in the system for this.
