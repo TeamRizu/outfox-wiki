@@ -626,7 +626,8 @@
             "Chriszo",
             "Daniel Rotwind",
             "Jack5",
-            "shockdude"
+            "shockdude",
+            "Melone"
           ],
           "charts": {
             "dance": {
@@ -1133,6 +1134,22 @@
                   "chart_info": {
                     "notes": 128,
                     "holds": 60,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "kb6": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 15,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 15.00,
+                  "chart_info": {
+                    "notes": 662,
+                    "holds": 24,
                     "mines": 0
                   }
                 }
@@ -2258,11 +2275,11 @@
                   "meter": 3,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 0.77,
+                  "peak_nps": 2.31,
                   "chart_info": {
-                    "notes": 119,
+                    "notes": 124,
                     "jumps": 6,
-                    "holds": 14,
+                    "holds": 17,
                     "mines": 0,
                     "hands": 0,
                     "rolls": 3,
@@ -2277,11 +2294,11 @@
                   "is_modchart": false,
                   "peak_nps": 3.85,
                   "chart_info": {
-                    "notes": 210,
-                    "jumps": 14,
-                    "holds": 21,
+                    "notes": 200,
+                    "jumps": 11,
+                    "holds": 24,
                     "mines": 0,
-                    "hands": 0,
+                    "hands": 1,
                     "rolls": 3,
                     "lifts": 0,
                     "fakes": 0
@@ -2292,14 +2309,14 @@
                   "meter": 11,
                   "difficulty": "Medium",
                   "is_modchart": false,
-                  "peak_nps": 5.4,
+                  "peak_nps": 6.17,
                   "chart_info": {
-                    "notes": 337,
+                    "notes": 338,
                     "jumps": 11,
                     "holds": 32,
                     "mines": 17,
                     "hands": 0,
-                    "rolls": 3,
+                    "rolls": 4,
                     "lifts": 0,
                     "fakes": 0
                   }
@@ -2309,14 +2326,14 @@
                   "meter": 15,
                   "difficulty": "Hard",
                   "is_modchart": false,
-                  "peak_nps": 8.48,
+                  "peak_nps": 9.25,
                   "chart_info": {
-                    "notes": 498,
+                    "notes": 516,
                     "jumps": 22,
-                    "holds": 30,
-                    "mines": 12,
-                    "hands": 1,
-                    "rolls": 4,
+                    "holds": 38,
+                    "mines": 11,
+                    "hands": 3,
+                    "rolls": 1,
                     "lifts": 0,
                     "fakes": 0
                   }
@@ -2326,9 +2343,9 @@
                   "meter": 19,
                   "difficulty": "Expert",
                   "is_modchart": false,
-                  "peak_nps": 13.1,
+                  "peak_nps": 15.42,
                   "chart_info": {
-                    "notes": 679,
+                    "notes": 690,
                     "jumps": 18,
                     "holds": 33,
                     "mines": 22,
@@ -2343,7 +2360,7 @@
                   "meter": 18,
                   "difficulty": "Edit",
                   "is_modchart": false,
-                  "peak_nps": 11.56,
+                  "peak_nps": 12.33,
                   "chart_info": {
                     "notes": 590,
                     "jumps": 18,
@@ -2362,11 +2379,11 @@
                   "meter": 3,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 0.77,
+                  "peak_nps": 2.31,
                   "chart_info": {
-                    "notes": 117,
+                    "notes": 124,
                     "jumps": 6,
-                    "holds": 13,
+                    "holds": 17,
                     "mines": 0,
                     "hands": 0,
                     "rolls": 3,
@@ -2381,11 +2398,11 @@
                   "is_modchart": false,
                   "peak_nps": 3.85,
                   "chart_info": {
-                    "notes": 208,
-                    "jumps": 15,
-                    "holds": 21,
+                    "notes": 200,
+                    "jumps": 11,
+                    "holds": 24,
                     "mines": 0,
-                    "hands": 0,
+                    "hands": 1,
                     "rolls": 3,
                     "lifts": 0,
                     "fakes": 0
@@ -2393,10 +2410,10 @@
                 },
                 {
                   "author": "Marukomuru",
-                  "meter": 11,
+                  "meter": 12,
                   "difficulty": "Medium",
                   "is_modchart": false,
-                  "peak_nps": 5.4,
+                  "peak_nps": 6.17,
                   "chart_info": {
                     "notes": 336,
                     "jumps": 15,
@@ -2413,9 +2430,9 @@
                   "meter": 15,
                   "difficulty": "Hard",
                   "is_modchart": false,
-                  "peak_nps": 11.56,
+                  "peak_nps": 12.33,
                   "chart_info": {
-                    "notes": 468,
+                    "notes": 464,
                     "jumps": 24,
                     "holds": 35,
                     "mines": 3,
@@ -2430,9 +2447,9 @@
                   "meter": 20,
                   "difficulty": "Expert",
                   "is_modchart": false,
-                  "peak_nps": 13.1,
+                  "peak_nps": 15.42,
                   "chart_info": {
-                    "notes": 669,
+                    "notes": 680,
                     "jumps": 42,
                     "holds": 107,
                     "mines": 40,
@@ -2447,7 +2464,7 @@
                   "meter": 19,
                   "difficulty": "Edit",
                   "is_modchart": false,
-                  "peak_nps": 11.56,
+                  "peak_nps": 12.33,
                   "chart_info": {
                     "notes": 587,
                     "jumps": 14,
@@ -10484,7 +10501,9 @@
             "Rippy Ripster",
             "Colin",
             "-YOSEFU-",
-            "Melone"
+            "Melone",
+            "Marukomuru",
+            "Telperion"
           ],
           "charts": {
             "dance": {
@@ -10502,6 +10521,25 @@
                     "mines": 23,
                     "hands": 3,
                     "rolls": 16,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ],
+              "double": [
+                {
+                  "author": "Marukomuru",
+                  "meter": 3,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.25,
+                  "chart_info": {
+                    "notes": 125,
+                    "jumps": 9,
+                    "holds": 7,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
                     "lifts": 0,
                     "fakes": 0
                   }
@@ -10607,6 +10645,20 @@
                   "peak_nps": 7.31,
                   "chart_info": {
                     "notes": 475,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ],
+              "single10": [
+                {
+                  "author": "Telperion",
+                  "meter": 46,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 18.00,
+                  "chart_info": {
+                    "notes": 756,
                     "holds": 0,
                     "mines": 0
                   }
