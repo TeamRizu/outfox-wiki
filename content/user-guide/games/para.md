@@ -98,7 +98,7 @@ Plug in the controller(s) into a spare USB slot on your computer, or the dock of
 
 You need to run the game once to generate the file we will be editing to set up the controller.
 
-Run the game as per your Operating system and then find the /Save/Preferences.ini file, that usually is edited for your specific choices. In the future we won't need to do this step, but for now, we rely on it to configure things.
+Run the game as per your Operating system and then find the `/Save/Preferences.ini` file, that usually is edited for your specific choices. In the future we won't need to do this step, but for now, we rely on it to configure things.
 
 **You MUST always plug in the controllers BEFORE running the game! This is because the hardware was designed for the PS2, and needs a special routine in the code to function correctly, and this is done as the game starts up!**
 
@@ -108,7 +108,8 @@ Scroll down the preferences file until you find the section that begins with Inp
 
 Windows: 7+
 
-```
+```ini
+InputDrivers=para,legacy,minisdl
 InputSetArcade=0
 InputSetDInput=1
 InputSetHIDAPI=0
@@ -119,7 +120,9 @@ InputSetXInput=0
 ```
 
 Linux: (Desktop - Arch/Ubuntu/Debian etc)
-```
+
+```ini
+InputDrivers=para,SDL
 InputSetArcade=0
 InputSetDInput=0
 InputSetHIDAPI=0
@@ -130,7 +133,9 @@ InputSetXInput=1
 ```
 
 Linux: (Steam Deck)
-```
+
+```ini
+InputDrivers=para,SDL
 InputSetArcade=1
 InputSetDInput=0
 InputSetHIDAPI=0
@@ -141,7 +146,9 @@ InputSetXInput=1
 ```
 
 Linux: (Raspberry Pi / RockPi / Arm Generic)
-```
+
+```ini
+InputDrivers=para,SDL
 InputSetArcade=0
 InputSetDInput=0
 InputSetHIDAPI=0
@@ -152,8 +159,10 @@ InputSetXInput=1
 ```
 
 MacOS
-```
-InputSetArcade=0
+
+```ini
+InputDrivers=para,SDL
+InputSetArcade=1
 InputSetDInput=0
 InputSetHIDAPI=0
 InputSetJSDeadzoneValue=3200
@@ -162,12 +171,13 @@ InputSetRAWAPI=0
 InputSetXInput=1
 ```
 
-_Please Note:_ If you are running a _hardened_ version of Linux, (SELinux/Gentoo/Some Arch variants), OutFox should set up and initialise your controller automatically. If it does not work, you probably have restrictive udev rules for input devices by default. Quit OutFox and try placing the following udev rule in `/etc/udev/rules.d` (in a file such as `70-ppp.rules`):
+_Please Note:_ If you are running a _hardened_ version of Linux (SELinux/Gentoo/Some Arch variants), OutFox may not set up and initialise your controller automatically. If so you probably have restrictive udev rules for unknown input devices. Quit OutFox and try placing the following udev rule in `/etc/udev/rules.d` (in a file such as `70-ppp.rules`):
 
 ```KERNEL=="hidraw*", ATTRS{idVendor}=="0507", ATTRS{idProduct}=="0011", TAG+="uaccess"```
 
 Note that the file name must come before `73-seat-late.rules`, as this is where `uaccess` is applied.
-##### _Thanks to MrCarter for contributing this information_
+
+##### _Thanks to [@Tatsh](https://github.com/Tatsh) and [@TheNathannator](https://github.com/TheNathannator) for contributing this information_
 
 The Para Driver will be set up to init automatically from Alpha V pre-041, so you do not need to change anything else in the system for this.
 
