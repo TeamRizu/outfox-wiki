@@ -280,6 +280,7 @@ geekdocAlign: center
 .chart-detail-name {
   align-self: start;
   flex-basis: 90%;
+  color: white;
 }
 
 .chart-detail-name-disabled {
@@ -290,6 +291,7 @@ geekdocAlign: center
 
 .chart-detail-value {
   align-self: end;
+  color: white;
 }
 
 .chart-detail-value-disabled {
@@ -624,18 +626,18 @@ const main = async () => {
               chartHeaderSpan.setAttribute('class', 'chart-header-span-section')
 
               const difficultyNameHeading = document.createElement('h3')
-              difficultyNameHeading.setAttribute('style', 'padding-left: 15px; margin-bottom: -25px;')
+              difficultyNameHeading.setAttribute('style', 'padding-left: 15px; margin-bottom: -25px; color: white;')
               difficultyNameHeading.innerText = chart.difficulty
 
               const authorNameHeading = document.createElement('h4')
-              authorNameHeading.setAttribute('style', 'padding-left: 15px;')
+              authorNameHeading.setAttribute('style', 'padding-left: 15px; color: white;')
               authorNameHeading.innerText = chart.author
 
               chartHeaderSpan.appendChild(difficultyNameHeading)
               chartHeaderSpan.appendChild(authorNameHeading)
 
               const meterHeading = document.createElement('h1')
-              meterHeading.setAttribute('style', 'padding-right: 15px;')
+              meterHeading.setAttribute('style', 'padding-right: 15px; color: white;')
               meterHeading.innerText = chart.meter
 
               chartHeaderSectionDiv.appendChild(chartHeaderSpan)
