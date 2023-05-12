@@ -5,13 +5,48 @@ geekdocAlign: center
 ---
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+.tg td {
+  border-color: #019d83;
+  border-style:solid;
+  border-width:1px;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  overflow: hidden;
+  padding:10px 5px;
+  word-break:normal;
+}
+
+.tg th {
+  border-color: #019d83;
+  border-style:solid;
+  border-width: 2px;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+  color: white;
+  background-color: #00261f;
+}
+
+.tg .tg-0pky {
+  border-color: #019d83;
+  text-align: left;
+  vertical-align: top;
+  background-color: #004237;
+  color: white;
+}
+
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
+}
 
 .glow-unique {
   text-shadow: 0 0 5px purple;
@@ -211,11 +246,28 @@ geekdocAlign: center
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6
   }
 }
+
+.letter-button {
+  display: inline-block;
+  background-color: #002e27;
+  border: 3px solid #01a085;
+  border-radius: .15rem;
+  margin: .5rem 0;
+  font-size: 1.25rem;
+}
+
+.letter-button-text {
+  color: white !important;
+  padding: .5rem .5rem;
+  line-height: normal;
+  display: inline-block;  
+}
+
 </style>
 
 <label for="user-select">Select User:</label>
 
-<select name="users" id="user-select" style="min-width: 260px; width: 30%; padding: 16px 20px; border: none; border-radius: 4px; background-color: #24282c;">
+<select name="users" id="user-select" style="min-width: 260px; width: 30%; padding: 16px 20px; border-color: #019b81; border: solid; border-width: 2px; border-radius: 8px; background-color: #003028;">
     <option value="">Select an option</option>
 </select>
 
@@ -267,8 +319,8 @@ If you want a social add/removed from your profile then join the [Project OutFox
 <div id="copyData" style="display: none;">
 Want the data that we have stored for this profile? Click the button bellow and the JSON Object will be copied to your clipboard. (Tags not included!)
 <div>
-  <span class="gdoc-button gdoc-button--large">
-    <a class="gdoc-button__link">
+  <span class="letter-button">
+    <a class="letter-button-text" style="cursor: pointer;">
       Copy Data to Clipboard
     </a>
   </span>
@@ -608,12 +660,12 @@ const main = async () => {
         span.setAttribute('id', tag)
 
         const a = document.createElement('a')
-        a.setAttribute('class', 'gdoc-button__link')
+        a.setAttribute('class', 'letter-button-text')
         
         const tagObj = serenityDb.honor_tags.find((t) => t.tag === tag)
 
         a.innerText = tagObj.name
-        span.setAttribute('class', `gdoc-button gdoc-button--large glow-${tagObj.rarity}${tagObj.rarity === 'unique' ? ' glow' : ''}`)
+        span.setAttribute('class', `letter-button glow-${tagObj.rarity}${tagObj.rarity === 'unique' ? ' glow' : ''}`)
 
         span.appendChild(a)
         tagsRow.appendChild(span)
@@ -862,7 +914,7 @@ const main = async () => {
           chartsForThisModeAndSong.forEach((chart) => {
             const chartSectionDiv = document.createElement('div')
             chartSectionDiv.setAttribute('class', `chart-section-${chart.chart_data.difficulty.toLowerCase()}`)
-            chartSectionDiv.setAttribute('style', 'margin-bottom: 20px;')
+            chartSectionDiv.setAttribute('style', 'margin-bottom: 20px; color: white;')
 
             const chartHeaderSectionDiv = document.createElement('div')
             chartHeaderSectionDiv.setAttribute('class', `chart-header-section-${chart.chart_data.difficulty.toLowerCase()}`)
@@ -871,18 +923,18 @@ const main = async () => {
             chartHeaderSpan.setAttribute('class', 'chart-header-span-section')
 
             const difficultyNameHeading = document.createElement('h3')
-            difficultyNameHeading.setAttribute('style', 'padding-left: 15px; margin-bottom: -25px;')
+            difficultyNameHeading.setAttribute('style', 'padding-left: 15px; margin-bottom: -25px; color: white;')
             difficultyNameHeading.innerText = chart.chart_data.difficulty
 
             const styleNameHeading = document.createElement('h4')
-            styleNameHeading.setAttribute('style', 'padding-left: 15px;')
+            styleNameHeading.setAttribute('style', 'padding-left: 15px; color: white;')
             styleNameHeading.innerText = chart.style
 
             chartHeaderSpan.appendChild(difficultyNameHeading)
             chartHeaderSpan.appendChild(styleNameHeading)
 
             const meterHeading = document.createElement('h1')
-            meterHeading.setAttribute('style', 'padding-right: 15px;')
+            meterHeading.setAttribute('style', 'padding-right: 15px; color: white;')
             meterHeading.innerText = chart.chart_data.meter
 
             chartHeaderSectionDiv.appendChild(chartHeaderSpan)
@@ -1032,10 +1084,10 @@ const main = async () => {
       socials.forEach((social) => {
         const capitalizeSocial = social[0].toUpperCase() + social.slice(1, social.length)
         const span = document.createElement('span')
-        span.setAttribute('class', 'gdoc-button gdoc-button--large')
+        span.setAttribute('class', 'letter-button')
 
         const a = document.createElement('a')
-        a.setAttribute('class', 'gdoc-button__link')
+        a.setAttribute('class', 'letter-button-text')
         a.setAttribute('href', userHall.socials[social])
         a.setAttribute('target', '_blank')
         a.innerText = capitalizeSocial

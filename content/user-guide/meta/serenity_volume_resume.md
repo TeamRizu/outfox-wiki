@@ -34,15 +34,18 @@ geekdocAlign: center
   color: white;
   background-color: #00261f;
 }
+
 .tg .tg-0pky {
   border-color: #019d83;
   text-align:left;
-  vertical-align:top
+  vertical-align:top;
 }
+
 .tg .tg-0lax {
   text-align:left;
-  vertical-align:top
+  vertical-align:top;
 }
+
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   border: solid;
