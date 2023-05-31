@@ -1199,6 +1199,42 @@
               "single": [
                 {
                   "author": "Melone",
+                  "meter": 1,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.92,
+                  "chart_info": {
+                    "notes": 199,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 5,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 5.83,
+                  "chart_info": {
+                    "notes": 332,
+                    "holds": 39,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 9,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 8.75,
+                  "chart_info": {
+                    "notes": 471,
+                    "holds": 32,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
                   "meter": 15,
                   "difficulty": "Expert",
                   "is_modchart": false,
@@ -11128,7 +11164,7 @@
           "license": "CC BY 3.0",
           "music_authors": ["Sevish"],
           "graphic_authors": ["Melone"],
-          "chart_authors": [],
+          "chart_authors": ["Melone", "Marukomuru"],
           "charts": {
             "dance": {
               "single": [
@@ -11310,13 +11346,37 @@
               "single": [
                 {
                   "author": "Melone",
-                  "meter": 10,
-                  "difficulty": "Expert",
+                  "meter": 7,
+                  "difficulty": "Medium",
                   "is_modchart": false,
-                  "peak_nps": 10.05,
+                  "peak_nps": 8.37,
+                  "chart_info": {
+                    "notes": 458,
+                    "holds": 46,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 10.61,
                   "chart_info": {
                     "notes": 541,
-                    "holds": 96,
+                    "holds": 91,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 12,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 12.84,
+                  "chart_info": {
+                    "notes": 778,
+                    "holds": 47,
                     "mines": 0
                   }
                 }
