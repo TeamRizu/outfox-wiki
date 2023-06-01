@@ -7878,7 +7878,8 @@
             "Marukomuru",
             "Rippy Ripster",
             "shockdude",
-            "Telperion"
+            "Telperion",
+            "Colin"
           ],
           "charts": {
             "dance": {
@@ -8303,6 +8304,58 @@
                   "chart_info": {
                     "notes": 186,
                     "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Colin",
+                  "meter": 4,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.67,
+                  "chart_info": {
+                    "notes": 125,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 4.17,
+                  "chart_info": {
+                    "notes": 204,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 5,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 4.17,
+                  "chart_info": {
+                    "notes": 371,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 5,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 507,
+                    "holds": 2,
                     "mines": 0
                   }
                 }
