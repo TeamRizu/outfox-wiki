@@ -10818,7 +10818,7 @@
       "abrev": "v3",
       "description": "TBD.",
       "charts_for_modes": ["pump", "dance", "kb6"],
-      "music_authors": ["DeBisco", "SiLiS", "Sevish"],
+      "music_authors": ["DeBisco", "SiLiS", "Sevish", "mrcool909090", "Mintorment"],
       "graphic_authors": ["DeBisco", "Melone", "art.horizon"],
       "chart_authors": [
         "Rippy Ripster",
@@ -11436,6 +11436,167 @@
               ]
             }
           }
+        },
+        {
+          "title": "CHEER",
+          "length": "2:43",
+          "bpm": 200,
+          "graphics": {
+          },
+          "genre": "Rock",
+          "license": "All Rights Reserved",
+          "music_authors": ["Thomas Dingwall a.k.a td"],
+          "graphic_authors": [],
+          "chart_authors": ["Rippy Ripster"],
+          "charts": {
+            "gddm": {
+              "real": [
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 3,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 5.00,
+                  "chart_info": {
+                    "notes": 485,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 4,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 512,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 5,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 10.00,
+                  "chart_info": {
+                    "notes": 634,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 6,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 10.83,
+                  "chart_info": {
+                    "notes": 717,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Eradication of Light",
+          "length": "2:17",
+          "bpm": 200,
+          "graphics": {
+          },
+          "genre": "Eneretic Hardcore",
+          "license": "CC BY 4.0",
+          "music_authors": ["Mintorment"],
+          "graphic_authors": [],
+          "chart_authors": ["Melone", "Colin"],
+          "charts": {
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Colin",
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.33,
+                  "chart_info": {
+                    "notes": 184,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 7,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 4.17,
+                  "chart_info": {
+                    "notes": 293,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 7,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 8.33,
+                  "chart_info": {
+                    "notes": 512,
+                    "holds": 3,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 13.33,
+                  "chart_info": {
+                    "notes": 946,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "kb6": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 18,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 18.33,
+                  "chart_info": {
+                    "notes": 878,
+                    "holds": 28,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Frenzied Serenity",
+          "length": "2:44",
+          "bpm": [80, 225],
+          "graphics": {
+          },
+          "genre": "Frenzied",
+          "license": "CC BY 4.0",
+          "music_authors": ["mrcool909090"],
+          "graphic_authors": [],
+          "chart_authors": [],
+          "charts": {}
         }
       ]
     }
@@ -11794,6 +11955,23 @@
         "github": "https://github.com/JustMoNeko"
       },
       "pretags": ["SERENITY_TEAM"]
+    },
+    {
+      "name": "mrcool909090",
+      "socials": {
+        "twitter": "https://twitter.com/mrcool909090",
+        "twitch": "https://www.twitch.tv/mrcool909090"
+      },
+      "pretags": ["SERENITY_TO_FOXES"]
+    },
+    {
+      "name": "Mintorment",
+      "socials": {
+        "twitter": "https://twitter.com/Mintorment",
+        "bandcamp": "https://mintorment.bandcamp.com/track/grandiose-nightmare",
+        "youtube": "https://www.youtube.com/mintorment",
+        "soundcloud": "https://soundcloud.com/mintorment"
+      }
     }
   ],
   "honor_tags": [
