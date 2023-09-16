@@ -106,8 +106,8 @@ of the Song folder in question. {{< /hint >}}
 {{< columns size="large" >}} <!-- begin columns block -->
 
 Project OutFox supports a wide variety of controllers and even arcade hardware.
-To configure your button mappings, go to **Options > Input & Calibration >
-Config Key/Joy Mappings**.
+To configure your button mappings, go to
+<u> **Options > Input & Calibration > Config Key/Joy Mappings**</u>.
 
 Use the arrow keys to select an item to map, press Enter, and then press the
 button on the keyboard or controller you want to use. You can have multiple
@@ -122,8 +122,8 @@ often referred to as the "index" playstyle).
 ### Controller not working?
 
 If your controller does not perform as well or function as expected, you can
-switch to the alternate XInput input mode from **Options > Experimental
-Settings**.
+switch to the alternate XInput input mode from <u> **Options > Experimental
+Settings**</u>.
 
 ![The "Use Legacy Input System" setting, with HIDAPI highlighted.](/getting-started/enable-hidapi.jpg)
 
@@ -131,7 +131,8 @@ XInput will sometimes also require you to map your controller to the input
 engine's virtual gamepad, allowing the game to properly interface with the
 device.
 
-This menu can be found at **Options > Input & Calibration > Map Controller**.
+This menu can be found at <u> **Options > Input & Calibration > Map
+Controller**</u>.
 
 <---> <!-- magic separator, between columns -->
 
@@ -149,17 +150,13 @@ In a rhythm game, timing is everything. But latency produced by your audio
 outputs can affect your accuracy. If you feel like the game is not judging your
 timing accurately, you can interactively adjust the audio offset.
 
-**Options > Input & Calibration > Calibrate Audio Sync**
-
-{{< hint type="caution" >}} Interactive calibration only works under the `dance`
-game type. If you are using a differtent game type, temporarily switch to
-`dance`, and switch back when you are done. {{< /hint >}}
-
-{{< hint type="important" >}} Tap the notes based on what you HEAR, not what you
-SEE. {{< /hint >}}
+<u> **Options > Input & Calibration > Calibrate Audio Sync**</u>
 
 A song will play with a pattern of alternating notes; in the `dance` game type,
 they will be left and right arrows.
+
+{{< hint type="important" >}} Tap the notes based on what you HEAR, not what you
+SEE. {{< /hint >}}
 
 This calibration will repeat continuously. Every 24 notes, your inputs will be
 used to calculate a new offset. Once you feel the judgment has been set
@@ -205,8 +202,8 @@ By default, OutFox saves data to a global "machine profile". However, there is
 certain data that will not persist between sessions, such as high scores and
 player settings.
 
-You can manage profiles from **Options > Profiles**. From here you can create a
-profile, and edit existing profiles.
+You can manage profiles from <u> **Options > Profiles**</u>. From here you can
+create a profile, and edit existing profiles.
 
 From the profile editor (highlight a profile and press Start, and then select
 "Edit profile"), you can input fitness-related information, change the layout of
