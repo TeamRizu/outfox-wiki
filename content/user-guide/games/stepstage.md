@@ -41,3 +41,4 @@ First Seen:
 
 ## Trivia
 
+_Written and Maintained with ♡ by Squirrel_

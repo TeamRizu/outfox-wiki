@@ -140,7 +140,7 @@ File Type|Label|Original Mode|Key Values Supported|Notes
  ``.sm/.ssc`` | SM | ``dance`` / ``pump`` / ``para`` / ``techno`` / ``smx`` / ``ds3ddx`` / ``maniax`` / ``ez2``  | 3k / 4k / 5k / 6k / 8k / 9k / 10k / 12k / 16k / 18k | main format of _stepmania_ covering a lot of game types and lanes
 ``.tja`` | TJA | ``taitai`` | 1k | _taikojira_ charts
 
-This mode needs no _autogen_ to be configured! There is a setting in the preferences that enables or disables the precaching when the game loads.
+This mode needs no _autogen_ to be configured! There is a setting in the preferences that enables or disables the pre-caching when the game loads.
 
  ---
 ## Game play

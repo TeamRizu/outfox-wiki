@@ -51,6 +51,15 @@ First Seen:
 Replaced by:
  * Project OutFox alpha 4.9.7.2 - ``(solo-versus6)`` (26 March 2021) (renamed from ``group6``)
 
+## Supported Parser Types:
+This mode is _parser specific_. It will only load and parse items designed for the `gh` series of simulations.
+
+The table below lists the supported files and their types that ``gh`` supports, their key/button value and the original mode the parser is used for (if any).
+
+File Type|Label|Original Mode|Key Values Supported|Notes 
+------------|-------------|-------------|-------------|-------------|
+ ``.chart`` | CHART | ``gh`` | easy/normal/pro | parser based on the 'gh' era up until around 2014.
+ ``.midi`` | MIDI | ``gh`` | easy/normal/normal5/pro |
 
 ## Gameplay
 
@@ -69,3 +78,5 @@ Replaced by:
 ## Controls
 
 ## Trivia
+
+_Written and Maintained with ♡ by Squirrel_

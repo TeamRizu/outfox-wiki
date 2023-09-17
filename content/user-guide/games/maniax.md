@@ -39,3 +39,5 @@ First Seen:
 ## Controls
 
 ## Trivia
+
+_Written and Maintained with ♡ by Squirrel_
