@@ -6,7 +6,7 @@ geekdocCollapseSection: true
 
 Project OutFox is working on support on the parser for the TJA (Taikojiro) chart format, which is the standard format used in conjunction with the ``taiko`` game types. The following page contains details on the Taiko parsing options that Project OutFox currently supports. This is a living document - it will be incomplete as Squirrel finds time to update and confirm/clarify items that are missing or unknown.
 
-## TJA Notedata support as of Alpha 4.14.0 - ``Partial``!
+## TJA Notedata support as of Alpha 4.19.0 - ``60% Complete``!
 ---
 ## Headers
 ---
@@ -81,7 +81,7 @@ This header sets the file name of the song you wish to play. You do need to bear
 >* ``OPUS``
 >* ``FLAC``
 
-This header is similar to the ``#WAVzz`` header used in BMS, except we're only calling the one for this mode. Do ensure your file is encoded to 44.1kHz (44,100) as some older OGG encoders can do weird things to your file. If you're ever unsure, use the program MediaInfo which is a handy little program for mediafile information. Most simulators will not play bad or slightly corrupted files, so this is something to take into consideration when creating your chart, so take a moment to check the file is good.
+This header is similar to the ``#WAVzz`` header used in BMS, except we're only calling the one for this mode. Do ensure your file is encoded to 44.1kHz (44,100) as some older OGG encoders can do weird things to your file. If you're ever unsure, use the program MediaInfo which is a handy little program for media file information. Most simulators will not play bad or slightly corrupted files, so this is something to take into consideration when creating your chart, so take a moment to check the file is good.
 
 Example
 ```
@@ -308,6 +308,9 @@ The table below shows the 'alternative' note types used by the bongo mode. These
 >* ``G`` = Pink Note
 >* ``H`` = Clap Note Roll - Ends with an ``8`` (Proposed)
 >* ``I`` = Yellow Left Roll - Ends with an ``8`` (Proposed)
+
+
+
 
 
 _Written and Maintained with ♡ by Squirrel, with thanks to OpenTaiko, Taiko-web, and members of the TJADB and Taiko international community_

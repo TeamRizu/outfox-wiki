@@ -47,10 +47,10 @@ Replaced by:
 
 **Removed:**
 
- * ~~StepMania v3.0 beta 6 - ``(singleHard)`` (29 September 2002)~~
- * ~~StepMania v3.0 beta 6 - ``(versusHard)`` (29 September 2002)~~
+ * StepMania v3.0 beta 6 - ``(singleHard)`` (29 September 2002)
+ * StepMania v3.0 beta 6 - ``(versusHard)`` (29 September 2002)
 
-Replaced by:
+Renamed:
  * OutFox Alpha 4.10.0 - ``(ez2d)`` (23 September 2021)
 
 
@@ -72,3 +72,5 @@ Replaced by:
 ## Controls
 
 ## Trivia
+
+_Written and Maintained with ♡ by Squirrel_

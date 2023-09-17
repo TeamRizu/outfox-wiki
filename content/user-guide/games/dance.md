@@ -139,3 +139,5 @@ _Project OutFox_ added ``double`` and ``versus`` modes to solo and threepanel at
 ## Controls
 
 ## Trivia
+
+_Written and Maintained with ♡ by Squirrel_
