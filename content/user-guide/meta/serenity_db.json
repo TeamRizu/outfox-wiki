@@ -10826,7 +10826,8 @@
         "Marukomuru",
         "Melone",
         "-YOSEFU-",
-        "Komi"
+        "Komi",
+        "Daniel Rotwind"
       ],
       "graphics": {
         "background": {
@@ -11035,6 +11036,36 @@
                   "chart_info": {
                     "notes": 756,
                     "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "pomu": {
+              "five": [
+                {
+                  "author": "Daniel Rotwind",
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.25,
+                  "chart_info": {
+                    "notes": 71,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ],
+              "nine": [
+                {
+                  "author": "Daniel Rotwind",
+                  "meter": 20,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 3.94,
+                  "chart_info": {
+                    "notes": 212,
+                    "holds": 22,
                     "mines": 0
                   }
                 }
@@ -11512,8 +11543,8 @@
           "genre": "Eneretic Hardcore",
           "license": "CC BY 4.0",
           "music_authors": ["Mintorment"],
-          "graphic_authors": [],
-          "chart_authors": ["Melone", "Colin"],
+          "graphic_authors": ["Lirodon"],
+          "chart_authors": ["Melone", "Colin", "Mintorment"],
           "charts": {
             "taiko": {
               "taiko": [
@@ -11567,6 +11598,58 @@
                 }
               ]
             },
+            "gh": {
+              "solo": [
+                {
+                  "author": "Mintorment",
+                  "meter": 2,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 3.33,
+                  "chart_info": {
+                    "notes": 288,
+                    "holds": 18,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Mintorment",
+                  "meter": 4,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 460,
+                    "holds": 33,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Mintorment",
+                  "meter": 7,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 10.83,
+                  "chart_info": {
+                    "notes": 649,
+                    "holds": 39,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Mintorment",
+                  "meter": 9,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 15.00,
+                  "chart_info": {
+                    "notes": 852,
+                    "holds": 39,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
             "kb6": {
               "single": [
                 {
@@ -11576,9 +11659,98 @@
                   "is_modchart": false,
                   "peak_nps": 18.33,
                   "chart_info": {
-                    "notes": 878,
+                    "notes": 881,
                     "holds": 28,
                     "mines": 0
+                  }
+                }
+              ]
+            },
+            "dance": {
+              "single": [
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.25,
+                  "chart_info": {
+                    "notes": 172,
+                    "jumps": 23,
+                    "holds": 15,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 10,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.00,
+                  "chart_info": {
+                    "notes": 356,
+                    "jumps": 36,
+                    "holds": 53,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 14,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 2.50,
+                  "chart_info": {
+                    "notes": 508,
+                    "jumps": 48,
+                    "holds": 49,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 16,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 3.00,
+                  "chart_info": {
+                    "notes": 599,
+                    "jumps": 36,
+                    "holds": 47,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 2,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 18,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 4.00,
+                  "chart_info": {
+                    "notes": 764,
+                    "jumps": 33,
+                    "holds": 41,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 2,
+                    "lifts": 0,
+                    "fakes": 0
                   }
                 }
               ]
@@ -11595,8 +11767,98 @@
           "license": "CC BY 4.0",
           "music_authors": ["mrcool909090"],
           "graphic_authors": [],
-          "chart_authors": [],
-          "charts": {}
+          "chart_authors": ["Rippy Ripster"],
+          "charts": {
+            "dance": {
+              "single": [
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 6,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.75,
+                  "chart_info": {
+                    "notes": 189,
+                    "jumps": 11,
+                    "holds": 19,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 11,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 6.56,
+                  "chart_info": {
+                    "notes": 446,
+                    "jumps": 32,
+                    "holds": 27,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 14,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 7.50,
+                  "chart_info": {
+                    "notes": 664,
+                    "jumps": 42,
+                    "holds": 40,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 17,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 14.06,
+                  "chart_info": {
+                    "notes": 956,
+                    "jumps": 23,
+                    "holds": 48,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 8,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 18,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 16.87,
+                  "chart_info": {
+                    "notes": 1052,
+                    "jumps": 53,
+                    "holds": 54,
+                    "mines": 0,
+                    "hands": 12,
+                    "rolls": 6,
+                    "lifts": 8,
+                    "fakes": 0
+                  }
+                }
+              ]
+            }
+          }
         }
       ]
     }
@@ -11758,7 +12020,7 @@
         "youtube": "https://www.youtube.com/channel/UCmq2yMo-lTfC7BQLth_PqOw",
         "website": "https://sevish.com/"
       },
-      "pretags": ["SERENITY_TEAM", "SERENITY_TO_FOXES"]
+      "pretags": ["SERENITY_TO_FOXES"]
     },
     {
       "name": "-YOSEFU-",
