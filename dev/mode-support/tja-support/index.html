@@ -21,7 +21,7 @@ TJA Notedata support as of Alpha 4.">
 <meta name=twitter:title content="TJA Compatibility">
 <meta name=twitter:description content="Project OutFox is working on support on the parser for the TJA (Taikojiro) chart format, which is the standard format used in conjunction with the taiko game types. The following page contains details on the Taiko parsing options that Project OutFox currently supports. This is a living document - it will be incomplete as Squirrel finds time to update and confirm/clarify items that are missing or unknown.
 TJA Notedata support as of Alpha 4.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"TJA Compatibility","url":"https://outfox.wiki/dev/mode-support/tja-support/","headline":"TJA Compatibility","description":"Project OutFox is working on support on the parser for the TJA (Taikojiro) chart format, which is the standard format used in conjunction with the taiko game types. The following page contains details on the Taiko parsing options that Project OutFox currently supports. This is a living document - it will be incomplete as Squirrel finds time to update and confirm\/clarify items that are missing or unknown.\nTJA Notedata support as of Alpha 4.","wordCount":"2814","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/mode-support/tja-support/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"TJA Compatibility","url":"https://outfox.wiki/dev/mode-support/tja-support/","headline":"TJA Compatibility","description":"Project OutFox is working on support on the parser for the TJA (Taikojiro) chart format, which is the standard format used in conjunction with the taiko game types. The following page contains details on the Taiko parsing options that Project OutFox currently supports. This is a living document - it will be incomplete as Squirrel finds time to update and confirm\/clarify items that are missing or unknown.\nTJA Notedata support as of Alpha 4.","wordCount":"2816","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/mode-support/tja-support/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
 <script src=../../../js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=../../../js/main-56ca818c.bundle.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -406,6 +406,15 @@ Game Module: po-mu
 <span class=flex>
 <a href=../../../user-guide/games/pump/ class=gdoc-nav__entry>
 Game Module: pump
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=../../../user-guide/games/rb/ class=gdoc-nav__entry>
+Game Module: rb
 </a>
 </span>
 </label>
@@ -1712,9 +1721,9 @@ hidden-mobile" itemprop=breadcrumb>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
 <li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=../../../><span itemprop=name>Project OutFox Wiki</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/ href=../../../dev/><span itemprop=name>Developers and Creators</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/dev/mode-support/ href=../../../dev/mode-support/><span itemprop=name>NoteLoader support</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>TJA Compatibility</span><meta itemprop=position content="4"></li></ol></div></div><article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>TJA Compatibility</h1><p>Project OutFox is working on support on the parser for the TJA (Taikojiro) chart format, which is the standard format used in conjunction with the <code>taiko</code> game types. The following page contains details on the Taiko parsing options that Project OutFox currently supports. This is a living document - it will be incomplete as Squirrel finds time to update and confirm/clarify items that are missing or unknown.</p><div class=gdoc-page__anchorwrap>
-<h2 id=tja-notedata-support-as-of-alpha-4140---partial>
-TJA Notedata support as of Alpha 4.14.0 - <code>Partial</code>!
-<a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#tja-notedata-support-as-of-alpha-4140---partial class="gdoc-page__anchor clip flex align-center" title="Anchor to: TJA Notedata support as of Alpha 4.14.0 - Partial!" aria-label="Anchor to: TJA Notedata support as of Alpha 4.14.0 - Partial!" href=#tja-notedata-support-as-of-alpha-4140---partial><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=tja-notedata-support-as-of-alpha-4190---60-complete>
+TJA Notedata support as of Alpha 4.19.0 - <code>60% Complete</code>!
+<a data-clipboard-text=https://outfox.wiki/dev/mode-support/tja-support/#tja-notedata-support-as-of-alpha-4190---60-complete class="gdoc-page__anchor clip flex align-center" title="Anchor to: TJA Notedata support as of Alpha 4.19.0 - 60% Complete!" aria-label="Anchor to: TJA Notedata support as of Alpha 4.19.0 - 60% Complete!" href=#tja-notedata-support-as-of-alpha-4190---60-complete><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2></div><hr>
 <div class=gdoc-page__anchorwrap>
@@ -1764,7 +1773,7 @@ Headers
 </h2></div><p>This header sets the file name of the song you wish to play. You do need to bear in mind, this is case sensitive. On Linux and Mac OS specifically, you must ensure that this entry matches the file name on the disc EXACTLY, or you will be greeted with silence when in game. For OutFox, you have the choice of the following supported file formats:</p><blockquote>
 <ul>
 <li><code>OGG</code> <br>
-(Recommended if you wish to make your <code>.tja</code> compatible with other simulators)</li><li><code>MP3</code></li><li><code>WAV</code></li><li><code>OPUS</code></li><li><code>FLAC</code></li></ul></blockquote><p>This header is similar to the <code>#WAVzz</code> header used in BMS, except we&rsquo;re only calling the one for this mode. Do ensure your file is encoded to 44.1kHz (44,100) as some older OGG encoders can do weird things to your file. If you&rsquo;re ever unsure, use the program MediaInfo which is a handy little program for mediafile information. Most simulators will not play bad or slightly corrupted files, so this is something to take into consideration when creating your chart, so take a moment to check the file is good.</p><p>Example</p><pre tabindex=0><code>WAVE:Iliketodrum.ogg
+(Recommended if you wish to make your <code>.tja</code> compatible with other simulators)</li><li><code>MP3</code></li><li><code>WAV</code></li><li><code>OPUS</code></li><li><code>FLAC</code></li></ul></blockquote><p>This header is similar to the <code>#WAVzz</code> header used in BMS, except we&rsquo;re only calling the one for this mode. Do ensure your file is encoded to 44.1kHz (44,100) as some older OGG encoders can do weird things to your file. If you&rsquo;re ever unsure, use the program MediaInfo which is a handy little program for media file information. Most simulators will not play bad or slightly corrupted files, so this is something to take into consideration when creating your chart, so take a moment to check the file is good.</p><p>Example</p><pre tabindex=0><code>WAVE:Iliketodrum.ogg
 </code></pre><p>or</p><pre tabindex=0><code>WAVE:HitMeinmyFace.flac
 </code></pre><hr>
 <div class=gdoc-page__anchorwrap>
