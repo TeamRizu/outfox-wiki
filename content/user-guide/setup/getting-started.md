@@ -4,89 +4,228 @@ description: First-time setup tasks for Project OutFox.
 weight: 2
 ---
 
-To obtain the best experience, there are a few things you should do after installing Project OutFox. Some of these instructions assume usage of the included default theme (Soundwaves).
+There are a few things you should do after installing Project OutFox.
+
+Some of these instructions assume usage of the included default theme
+(Soundwaves).
+
+<br />
 
 ## Selecting a game type
 
-When launching Project OutFox for the first time or without save data present, you will be prompted to select which **game type** you would like to begin with. Project OutFox supports a variety of game types, which you can learn about [here](/user-guide/games/), which simulate different types of rhythm games (including button layouts and, where applicable, gameplay behaviours specific to the game type). Game types are further divided into **styles**, which include chart types such as single, double, etc.
+{{< columns size="large" >}} <!-- begin columns block -->
 
-![Screenshot of the Project OutFox game selection screen.](/getting-started/select-game-type.png)
+When launching Project OutFox for the first time (or without save data present),
+you will be prompted to select which **game type** you would like to begin with.
 
-{{< hint info>}}
-**Tip:** You can switch between game types at any time using the "Select Game" button on the main menu.
-{{< /hint >}}
+Project OutFox supports a variety of [game types](/user-guide/games/), which
+simulate the button layouts and game mechanics of different types of rhythm
+games. Game types are further divided into **styles**, which are permutations
+such as alternate controller usage.
 
-## Configuring your controls
+The most popular game type, `dance`, is placed at the top. If this is your first
+time playing OutFox, this is a straightforward and easy-to-understand game mode
+with plenty of content readily available for download.
 
-Each game type has its own default keyboard configuration; dance, for example, maps the first player to the arrow keys (when playing on keyboard, this is often referred to as the "index" playstyle). To configure your button mappings, go to **Options > Input & Calibration > Config Key/Joy Mappings**. 
+{{< hint type="important" >}} Songs that do not support the currently selected
+game mode will not display in the song list. Please ensure you are using the
+correct game mode for the content you are trying to play.
 
-![Navigating to the Config Key/Joy Mappings screen.](/getting-started/gotoconfigjoy.jpg)
+**Tip:** You can switch between game types at any time using the "Select Game"
+button on the main menu.{{</hint>}}
 
-Use the arrow keys to select an item to map, press Enter, and then press the button on the keyboard or controller you want to use. You can have multiple button assignments for each command.
+<---> <!-- magic separator, between columns -->
 
-![The Config Key/Joy Mappings screen.](/getting-started/config-joy.png)
+<img src="/getting-started/select-game-type.png" alt="Screenshot of the Project OutFox game selection screen." style="object-fit: contain;" />
 
-Project OutFox supports a wide variety of controllers and even arcade hardware. By default, the game operates with a HIDAPI and XInput-compliant input engine. If your controller does not perform as well or function as expected, you can switch to the alternate XInput input mode from the **Experimental Options** menu. XInput will sometimes also require you to map your controller to the input engine's virtual gamepad, allowing the game to properly interface with the device. The **Map Controller** screen is available from the **Input & Calibration** menu.
+{{< /columns >}}
 
-![The Exerimental Options screen. Input mode selector is highlighted.](/getting-started/enable-hidapi.jpg)
-
-## Calibrate your audio sync
-
-!> **Notice:** Interactive calibration only works under the ``dance`` game type. If you are using a differtent game type, temporarily switch to ``dance``, and switch back when you are done.
-
-In a rhythm game, timing is everything. But latency produced by your audio outputs can affect your accuracy. You can interactively adjust the audio **offset** using the **Calibrate Audio Sync** option in the **Input & Calibration** menu.
-
-![Navigating to the Calibration screen.](/getting-started/calibrate-sync.jpg)
-
-A song will play with a pattern of alternating notes; in the dance game type, they will be left and right arrows. Tap them to the rhythm **based on what you hear**. Every 24 notes, your inputs will be used to calculate a new offset; watch for "Perfect" and "Flawless" judgements.
-
-![Audio calibration screen.](/getting-started/sync-screen.jpg)
-
-The song will continue playing on a loop until you exit with the ``Back`` button (mapped to Escape by default), after which you will be given an opportunity to save the changes. If you wish to calibrate in-game with your song of choice, you can press ``F6`` twice during gameplay to enable **AutoSync Machine**, which will last until the end of the song or when exited with the ``Back`` button. A message will appear asking to confirm your changes and if you wish to apply them or not.
-
-## Create a profile
-
-While Project OutFox can save some data to a global "machine profile", it is recommended that you create a local profile so you can save personal high scores, as well as player settings (such as modifiers) that can persist between sessions.
-
-You can manage profiles from **Options > Profiles**. From here you can create a profile, and edit existing profiles.
-
-From the profile editor (highlight a profile and press Start, and then select "Edit profile"), you can input fitness-related information, change the layout of the optional "Detailed Stats" pane during gameplay, and add an avatar to your profile (avatars are loaded from the Appearance/Avatars directory).
-
-![Navigating to the Profiles screen and selecting to create a profile.](/getting-started/create-profile.jpg)
+<br /><br />
 
 ## Install songs
 
-While Project OutFox does include a few sample songs, you will probably want to add more. We support a number of formats, including SM, SSC, SMA, DWI, BMS, DTX, .CHART, and KSF. 
+{{< columns size="large" >}} <!-- begin columns block -->
 
-The Songs [folder](/user-guide/config/folders/) in Project OutFox is divided into **Groups**  (also sometimes known as "packs"). Groups, in turn, contain folders for each song.
+While Project OutFox does include a few sample songs, you will probably want to
+add more. We support a number of formats, including SM, SSC, SMA, DWI, BMS, DTX,
+.CHART, and KSF.
+
+There are countless community resources for song packs. A great appetizer is our
+own project, [OutFox Serenity](https://projectoutfox.com/outfox-serenity).
+
+Place downloaded songs into the [Songs folder](/user-guide/config/folders/)
+inside the game's **installation directory**, or alternatively in the **User
+folder**.
+
+- `~/Library/Preferences/Project OutFox/` on macOS
+- `~/.project-outfox/` on Linux
+- `%APPDATA%\Project OutFox` on Windows
+
+This folder is divided into **Groups** (also sometimes known as "packs").
+Groups, in turn, contain folders for each song.
+
+Here is an example of how the folder structure would look for the song
+highlighted in the example screenshot.
 
 ```
 Songs
 │
-└───My Group
+└───Club Fantastic Season 1 (GROUP)
 │   │   
-│   └───My Song
-│       │   mysong.ssc
-│       │   mysong.ogg
-│       │   mysong-bg.png
-│       │   mysong-bn.png
-│       │   mysong-jk.png
+│   └───COOL_EXCEPTION (SONG)
+│       │   
+│       │   COOL_EXCEPTION.ssc
+│       │   COOL_EXCEPTION.ogg
+│       │   COOL_EXCEPTION-bg.png
+│       │   COOL_EXCEPTION-bn.png
+│       │   COOL_EXCEPTION-jk.png
 ```
 
-Packs are typically distributed as ZIP files. Extract the archive with your preferred software, and copy the group folder containing the song directories to the Songs folder like so.
+Packs are typically distributed as ZIP files. Extract the archive with your
+preferred software, and copy the group folder containing the song directories to
+the Songs folder, matching the structure above.
+
+<---> <!-- magic separator, between columns -->
 
 ![Pack appearing on song selection menu.](/getting-started/songsonwheel.jpg)
 
-{{< hint info>}}
-**Note:** If the songs do not appear, be sure to check if the group folder actually containing the song folders is too deep in the folder hierarchy.
-{{< /hint >}}
+{{< hint info>}} **Note:** If the songs do not appear, be sure to check that you
+have not accidentally nested your folders too deep inside a redundant folder.
+{{</hint>}}
 
-{{< hint info>}}
- **Note:** If a song is not contained inside a group folder, but instead on the root Songs directory, the game will stop loading to let you know of the Song folder in question.
-{{< /hint >}}
+{{< hint info>}} **Note:** If a song is not contained inside a group folder, but
+instead on the root Songs directory, the game will stop loading to let you know
+of the Song folder in question. {{< /hint >}}
+
+{{< /columns >}}
+
+<br /><br />
+
+## Configuring your controls
+
+{{< columns size="large" >}} <!-- begin columns block -->
+
+Project OutFox supports a wide variety of controllers and even arcade hardware.
+To configure your button mappings, go to **Options > Input & Calibration >
+Config Key/Joy Mappings**.
+
+Use the arrow keys to select an item to map, press Enter, and then press the
+button on the keyboard or controller you want to use. You can have multiple
+button assignments for each command.
+
+Each game type has its own default keyboard configuration. For example, `dance`
+maps the first player to the arrow keys. (when playing on keyboard, this is
+often referred to as the "index" playstyle).
+
+<br />
+
+### Controller not working?
+
+If your controller does not perform as well or function as expected, you can
+switch to the alternate XInput input mode from **Options > Experimental
+Settings**.
+
+![The "Use Legacy Input System" setting, with HIDAPI highlighted.](/getting-started/enable-hidapi.jpg)
+
+XInput will sometimes also require you to map your controller to the input
+engine's virtual gamepad, allowing the game to properly interface with the
+device.
+
+This menu can be found at **Options > Input & Calibration > Map Controller**.
+
+<---> <!-- magic separator, between columns -->
+
+![The Config Key/Joy Mappings screen.](/getting-started/config-joy.png)
+
+{{< /columns >}}
+
+<br /><br />
+
+## Calibrate your audio sync
+
+{{< columns size="large" >}} <!-- begin columns block -->
+
+In a rhythm game, timing is everything. But latency produced by your audio
+outputs can affect your accuracy. If you feel like the game is not judging your
+timing accurately, you can interactively adjust the audio offset.
+
+**Options > Input & Calibration > Calibrate Audio Sync**
+
+{{< hint type="caution" >}} Interactive calibration only works under the `dance`
+game type. If you are using a differtent game type, temporarily switch to
+`dance`, and switch back when you are done. {{< /hint >}}
+
+{{< hint type="important" >}} Tap the notes based on what you HEAR, not what you
+SEE. {{< /hint >}}
+
+A song will play with a pattern of alternating notes; in the `dance` game type,
+they will be left and right arrows.
+
+This calibration will repeat continuously. Every 24 notes, your inputs will be
+used to calculate a new offset. Once you feel the judgment has been set
+correctly, press the `Back` button (mapped to Escape by default). It will ask
+you for confirmation in setting the new offset.
+
+<---> <!-- magic separator, between columns -->
+
+![Audio calibration screen.](/getting-started/sync-screen.jpg)
+
+{{< /columns >}}
+
+Alternatively, if you wish to automatically calibrate in-game while playing your
+song of choice, you can press `F6` twice during gameplay to enable **AutoSync
+Machine**, which will last until the end of the song or when exited with the
+`Back` button. A message will appear asking to confirm your changes.
+
+<br /><br />
+
+## Audio Latency
+
+If something still feels off, you might be playing a gamemode with
+**keysounds**, which means the user's button inputs will trigger a sound when
+pressed.
+
+Audio latency is a massive problem for these game modes, because there will be a
+delay between the user's button press and the sound that is played. Merely
+calibrating the judgment window will not improve latency.
+
+On Windows, it is strongly recommended to use an **ASIO** driver to ensure
+lowest possible latency. Mac and Linux users should already obtain low latency
+output without any special configuration.
+
+{{< hint info>}} **TODO:** Realtek ASIO tutorial {{< /hint >}}
+
+<br /><br />
+
+## Create a profile
+
+{{< columns size="large" >}} <!-- begin columns block -->
+
+By default, OutFox saves data to a global "machine profile". However, there is
+certain data that will not persist between sessions, such as high scores and
+player settings.
+
+You can manage profiles from **Options > Profiles**. From here you can create a
+profile, and edit existing profiles.
+
+From the profile editor (highlight a profile and press Start, and then select
+"Edit profile"), you can input fitness-related information, change the layout of
+the optional "Detailed Stats" pane during gameplay, and add an avatar to your
+profile (avatars are loaded from the Appearance/Avatars directory).
+
+<---> <!-- magic separator, between columns -->
+
+![Navigating to the Profiles screen and selecting to create a profile.](/getting-started/create-profile.jpg)
+
+{{< /columns >}}
+
+<br /><br />
 
 # Next steps
 
-The only thing left to do is have fun! If you need more help with Project OutFox, check out the other pages in our wiki documentation, and join other members of our community on our [Discord server](https://discord.gg/cN4TjgQdcA) or [forum](https://discourse.projectmoon.dance/).
+The only thing left to do is have fun! If you need more help with Project
+OutFox, check out the other pages in our wiki documentation, and join other
+members of our community on our [Discord server](https://discord.gg/cN4TjgQdcA)
+or [forum](https://discourse.projectmoon.dance/).
 
 Thank you for supporting Project OutFox!

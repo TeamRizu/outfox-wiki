@@ -88,3 +88,13 @@ Up=Joy1_Button 3</pre>
 Make sure that you close the game. You can now navigate to your save folder, and look for your key-maps.ini file and set the buttons manually, so you can basically ignore the axis values given by the x-pad driver. you need to add the mapping before the ::: as shown below: ![](/controller-guide/guide_6.png)
 
 You can save this, and then start the game again, and your pad will be mapped.
+
+---
+## Steam Deck Layout
+
+We have added a quick guide for the layout of the Deck on default buttons. They are set up for 4 panel, so you can then remap them.
+
+On some themes which only use the 'Arcade' glyphs, (red/green/grey buttons) we have added these as well so you know which is which.
+
+![](/controller-guide/steamdecklayout.jpg)
+

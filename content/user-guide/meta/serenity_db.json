@@ -79,7 +79,9 @@
         "Ario",
         "Kaede",
         "Sudospective",
-        "Sevish"
+        "Sevish",
+        "Ryuto Setsujin",
+        "Colin"
       ],
       "songs": [
         {
@@ -117,7 +119,9 @@
             "Kawafumi",
             "shockdude",
             "Jack5",
-            "Telperion"
+            "Telperion",
+            "Ryuto Setsujin",
+            "Colin"
           ],
           "charts": {
             "dance": {
@@ -369,7 +373,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Kawafumi",
                   "meter": 3,
@@ -421,7 +425,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 12,
@@ -435,7 +439,7 @@
                   }
                 }
               ],
-              "9key": [
+              "nine": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 17,
@@ -589,6 +593,58 @@
                   }
                 }
               ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Ryuto Setsujin",
+                  "meter": 2,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.10,
+                  "chart_info": {
+                    "notes": 119,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Ryuto Setsujin",
+                  "meter": 4,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 3.83,
+                  "chart_info": {
+                    "notes": 231,
+                    "holds": 3,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Ryuto Setsujin",
+                  "meter": 6,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 5.50,
+                  "chart_info": {
+                    "notes": 339,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 22.00,
+                  "chart_info": {
+                    "notes": 777,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -626,7 +682,8 @@
             "Chriszo",
             "Daniel Rotwind",
             "Jack5",
-            "shockdude"
+            "shockdude",
+            "Melone"
           ],
           "charts": {
             "dance": {
@@ -933,7 +990,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 1,
@@ -1133,6 +1190,58 @@
                   "chart_info": {
                     "notes": 128,
                     "holds": 60,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "kb6": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 1,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.92,
+                  "chart_info": {
+                    "notes": 199,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 5,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 5.83,
+                  "chart_info": {
+                    "notes": 332,
+                    "holds": 39,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 9,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 8.75,
+                  "chart_info": {
+                    "notes": 471,
+                    "holds": 32,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 15,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 15.00,
+                  "chart_info": {
+                    "notes": 662,
+                    "holds": 24,
                     "mines": 0
                   }
                 }
@@ -1566,7 +1675,7 @@
               ]
             },
             "gdgf": {
-              "6frets": [
+              "six": [
                 {
                   "author": "Jack5",
                   "meter": 3,
@@ -2081,7 +2190,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -2191,10 +2300,10 @@
                   "meter": 20,
                   "difficulty": "Expert",
                   "is_modchart": false,
-                  "peak_nps": 21.88,
+                  "peak_nps": 21.04,
                   "chart_info": {
-                    "notes": 1299,
-                    "holds": 222,
+                    "notes": 1280,
+                    "holds": 136,
                     "mines": 0
                   }
                 }
@@ -2258,11 +2367,11 @@
                   "meter": 3,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 0.77,
+                  "peak_nps": 2.31,
                   "chart_info": {
-                    "notes": 119,
+                    "notes": 124,
                     "jumps": 6,
-                    "holds": 14,
+                    "holds": 17,
                     "mines": 0,
                     "hands": 0,
                     "rolls": 3,
@@ -2277,11 +2386,11 @@
                   "is_modchart": false,
                   "peak_nps": 3.85,
                   "chart_info": {
-                    "notes": 210,
-                    "jumps": 14,
-                    "holds": 21,
+                    "notes": 200,
+                    "jumps": 11,
+                    "holds": 24,
                     "mines": 0,
-                    "hands": 0,
+                    "hands": 1,
                     "rolls": 3,
                     "lifts": 0,
                     "fakes": 0
@@ -2292,14 +2401,14 @@
                   "meter": 11,
                   "difficulty": "Medium",
                   "is_modchart": false,
-                  "peak_nps": 5.4,
+                  "peak_nps": 6.17,
                   "chart_info": {
-                    "notes": 337,
+                    "notes": 338,
                     "jumps": 11,
                     "holds": 32,
                     "mines": 17,
                     "hands": 0,
-                    "rolls": 3,
+                    "rolls": 4,
                     "lifts": 0,
                     "fakes": 0
                   }
@@ -2309,14 +2418,14 @@
                   "meter": 15,
                   "difficulty": "Hard",
                   "is_modchart": false,
-                  "peak_nps": 8.48,
+                  "peak_nps": 9.25,
                   "chart_info": {
-                    "notes": 498,
+                    "notes": 516,
                     "jumps": 22,
-                    "holds": 30,
-                    "mines": 12,
-                    "hands": 1,
-                    "rolls": 4,
+                    "holds": 38,
+                    "mines": 11,
+                    "hands": 3,
+                    "rolls": 1,
                     "lifts": 0,
                     "fakes": 0
                   }
@@ -2326,9 +2435,9 @@
                   "meter": 19,
                   "difficulty": "Expert",
                   "is_modchart": false,
-                  "peak_nps": 13.1,
+                  "peak_nps": 15.42,
                   "chart_info": {
-                    "notes": 679,
+                    "notes": 690,
                     "jumps": 18,
                     "holds": 33,
                     "mines": 22,
@@ -2343,7 +2452,7 @@
                   "meter": 18,
                   "difficulty": "Edit",
                   "is_modchart": false,
-                  "peak_nps": 11.56,
+                  "peak_nps": 12.33,
                   "chart_info": {
                     "notes": 590,
                     "jumps": 18,
@@ -2362,11 +2471,11 @@
                   "meter": 3,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 0.77,
+                  "peak_nps": 2.31,
                   "chart_info": {
-                    "notes": 117,
+                    "notes": 124,
                     "jumps": 6,
-                    "holds": 13,
+                    "holds": 17,
                     "mines": 0,
                     "hands": 0,
                     "rolls": 3,
@@ -2381,11 +2490,11 @@
                   "is_modchart": false,
                   "peak_nps": 3.85,
                   "chart_info": {
-                    "notes": 208,
-                    "jumps": 15,
-                    "holds": 21,
+                    "notes": 200,
+                    "jumps": 11,
+                    "holds": 24,
                     "mines": 0,
-                    "hands": 0,
+                    "hands": 1,
                     "rolls": 3,
                     "lifts": 0,
                     "fakes": 0
@@ -2393,10 +2502,10 @@
                 },
                 {
                   "author": "Marukomuru",
-                  "meter": 11,
+                  "meter": 12,
                   "difficulty": "Medium",
                   "is_modchart": false,
-                  "peak_nps": 5.4,
+                  "peak_nps": 6.17,
                   "chart_info": {
                     "notes": 336,
                     "jumps": 15,
@@ -2413,9 +2522,9 @@
                   "meter": 15,
                   "difficulty": "Hard",
                   "is_modchart": false,
-                  "peak_nps": 11.56,
+                  "peak_nps": 12.33,
                   "chart_info": {
-                    "notes": 468,
+                    "notes": 464,
                     "jumps": 24,
                     "holds": 35,
                     "mines": 3,
@@ -2430,9 +2539,9 @@
                   "meter": 20,
                   "difficulty": "Expert",
                   "is_modchart": false,
-                  "peak_nps": 13.1,
+                  "peak_nps": 15.42,
                   "chart_info": {
-                    "notes": 669,
+                    "notes": 680,
                     "jumps": 42,
                     "holds": 107,
                     "mines": 40,
@@ -2447,7 +2556,7 @@
                   "meter": 19,
                   "difficulty": "Edit",
                   "is_modchart": false,
-                  "peak_nps": 11.56,
+                  "peak_nps": 12.33,
                   "chart_info": {
                     "notes": 587,
                     "jumps": 14,
@@ -2638,7 +2747,7 @@
               ]
             },
             "pomu": {
-              "9key": [
+              "nine": [
                 {
                   "author": "Jack5",
                   "meter": 44,
@@ -3283,7 +3392,7 @@
                   }
                 }
               ],
-              "dual": [
+              "double6": [
                 {
                   "author": "K.TURN",
                   "meter": 18,
@@ -3302,7 +3411,7 @@
                   }
                 }
               ],
-              "full": [
+              "double10": [
                 {
                   "author": "K.TURN",
                   "meter": 24,
@@ -3784,7 +3893,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -3812,7 +3921,7 @@
               ]
             },
             "pomu": {
-              "9key": [
+              "nine": [
                 {
                   "author": "Jack5",
                   "meter": 18,
@@ -4031,7 +4140,7 @@
               ]
             },
             "pomu": {
-              "4key": [
+              "four": [
                 {
                   "author": "Jack5",
                   "meter": 11,
@@ -4147,7 +4256,7 @@
               ]
             },
             "gdgf": {
-              "5frets": [
+              "five": [
                 {
                   "author": "Jack5",
                   "meter": 3,
@@ -5168,7 +5277,8 @@
         "Chriszo",
         "-YOSEFU-",
         "Kawafumi",
-        "Melone"
+        "Melone",
+        "yokoyoko*27"
       ],
       "graphics": {
         "background": {
@@ -5425,7 +5535,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -5453,7 +5563,7 @@
               ]
             },
             "pomu": {
-              "9key": [
+              "nine": [
                 {
                   "author": "Telperion",
                   "meter": 43,
@@ -5881,7 +5991,8 @@
             "-YOSEFU-",
             "Marukomuru",
             "48productions",
-            "Kawafumi"
+            "Kawafumi",
+            "yokoyoko*27"
           ],
           "charts": {
             "dance": {
@@ -6063,7 +6174,7 @@
               ]
             },
             "bemu": {
-              "5key": [
+              "single5": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -6101,7 +6212,7 @@
                   }
                 }
               ],
-              "7key": [
+              "single7": [
                 {
                   "author": "Kawafumi",
                   "meter": 4,
@@ -6135,6 +6246,58 @@
                   "chart_info": {
                     "notes": 442,
                     "holds": 45,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "yokoyoko*27",
+                  "meter": 4,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.01,
+                  "chart_info": {
+                    "notes": 220,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "yokoyoko*27",
+                  "meter": 7,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 4.52,
+                  "chart_info": {
+                    "notes": 330,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "yokoyoko*27",
+                  "meter": 8,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 8.29,
+                  "chart_info": {
+                    "notes": 220,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "yokoyoko*27",
+                  "meter": 8,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 9.79,
+                  "chart_info": {
+                    "notes": 557,
+                    "holds": 0,
                     "mines": 0
                   }
                 }
@@ -6198,7 +6361,9 @@
         "Rippy Ripster",
         "Jack5",
         "K.TURN",
-        "48productions"
+        "48productions",
+        "bol",
+        "Komi"
       ],
       "graphics": {
         "background": {
@@ -6433,7 +6598,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 1,
@@ -6485,7 +6650,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 9,
@@ -6788,7 +6953,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 1,
@@ -6828,7 +6993,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 4,
@@ -6854,7 +7019,7 @@
                   }
                 }
               ],
-              "9key": [
+              "nine": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 9,
@@ -6927,7 +7092,9 @@
             "Xiddy",
             "shockdude",
             "Chriszo",
-            "Telperion"
+            "Telperion",
+            "bol",
+            "Komi"
           ],
           "charts": {
             "dance": {
@@ -7263,6 +7430,70 @@
                   }
                 }
               ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": ["bol", "Komi"],
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.50,
+                  "chart_info": {
+                    "notes": 239,
+                    "holds": 13,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["bol", "Komi"],
+                  "meter": 7,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 5.83,
+                  "chart_info": {
+                    "notes": 409,
+                    "holds": 13,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["Bol", "Komi"],
+                  "meter": 8,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 9.33,
+                  "chart_info": {
+                    "notes": 662,
+                    "holds": 9,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["Bol", "Komi"],
+                  "meter": 9,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 11.67,
+                  "chart_info": {
+                    "notes": 851,
+                    "holds": 5,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["Bol", "Komi"],
+                  "meter": 10,
+                  "difficulty": "Edit",
+                  "is_modchart": false,
+                  "peak_nps": 14.00,
+                  "chart_info": {
+                    "notes": 951,
+                    "holds": 3,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -7444,7 +7675,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 1,
@@ -7484,7 +7715,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 10,
@@ -7647,7 +7878,8 @@
             "Marukomuru",
             "Rippy Ripster",
             "shockdude",
-            "Telperion"
+            "Telperion",
+            "Colin"
           ],
           "charts": {
             "dance": {
@@ -7814,7 +8046,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -7854,7 +8086,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 5,
@@ -7868,7 +8100,7 @@
                   }
                 }
               ],
-              "7key": [
+              "seven": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 8,
@@ -8072,6 +8304,58 @@
                   "chart_info": {
                     "notes": 186,
                     "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Colin",
+                  "meter": 4,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.67,
+                  "chart_info": {
+                    "notes": 125,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 4.17,
+                  "chart_info": {
+                    "notes": 204,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 5,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 4.17,
+                  "chart_info": {
+                    "notes": 371,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 5,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 507,
+                    "holds": 2,
                     "mines": 0
                   }
                 }
@@ -9418,7 +9702,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -9446,7 +9730,7 @@
               ]
             },
             "pomu": {
-              "9key": [
+              "nine": [
                 {
                   "author": "Telperion",
                   "meter": 47,
@@ -9481,7 +9765,8 @@
         "48productions",
         "-YOSEFU-",
         "Chriszo",
-        "Xiddy"
+        "Xiddy",
+        "bol"
       ],
       "graphics": {
         "background": {
@@ -9531,7 +9816,8 @@
             "Daniel Rotwind",
             "Rippy Ripster",
             "Marukomuru",
-            "PCBoyGames"
+            "PCBoyGames",
+            "bol"
           ],
           "charts": {
             "dance": {
@@ -9694,7 +9980,7 @@
               ]
             },
             "bemu": {
-              "7key": [
+              "single7": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 2,
@@ -9734,7 +10020,7 @@
               ]
             },
             "pomu": {
-              "5key": [
+              "five": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 10,
@@ -9748,7 +10034,7 @@
                   }
                 }
               ],
-              "9key": [
+              "nine": [
                 {
                   "author": "Daniel Rotwind",
                   "meter": 12,
@@ -9770,6 +10056,58 @@
                   "chart_info": {
                     "notes": 250,
                     "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "bol",
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 4.17,
+                  "chart_info": {
+                    "notes": 268,
+                    "holds": 8,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "bol",
+                  "meter": 7,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 468,
+                    "holds": 9,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "bol",
+                  "meter": 8,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 10.00,
+                  "chart_info": {
+                    "notes": 669,
+                    "holds": 4,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "bol",
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 20.00,
+                  "chart_info": {
+                    "notes": 1069,
+                    "holds": 7,
                     "mines": 0
                   }
                 }
@@ -9960,6 +10298,42 @@
               "single": [
                 {
                   "author": "Melone",
+                  "meter": 2,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 3.00,
+                  "chart_info": {
+                    "notes": 234,
+                    "holds": 14,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 4,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 5.00,
+                  "chart_info": {
+                    "notes": 445,
+                    "holds": 15,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 6,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 6.00,
+                  "chart_info": {
+                    "notes": 510,
+                    "holds": 30,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
                   "meter": 8,
                   "difficulty": "Expert",
                   "is_modchart": false,
@@ -10060,7 +10434,8 @@
             "Marukomuru",
             "Chriszo",
             "Xiddy",
-            "Melone"
+            "Melone",
+            "bol"
           ],
           "charts": {
             "dance": {
@@ -10381,6 +10756,58 @@
                   }
                 }
               ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "bol",
+                  "meter": 4,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.75,
+                  "chart_info": {
+                    "notes": 276,
+                    "holds": 14,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "bol",
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 4.50,
+                  "chart_info": {
+                    "notes": 449,
+                    "holds": 15,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "bol",
+                  "meter": 7,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 9.00,
+                  "chart_info": {
+                    "notes": 633,
+                    "holds": 6,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "bol",
+                  "meter": 9,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 12.00,
+                  "chart_info": {
+                    "notes": 1002,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         }
@@ -10391,29 +10818,32 @@
       "abrev": "v3",
       "description": "TBD.",
       "charts_for_modes": ["pump", "dance", "kb6"],
-      "music_authors": ["DeBisco", "SiLiS", "Sevish"],
-      "graphic_authors": ["DeBisco", "Melone"],
+      "music_authors": ["DeBisco", "SiLiS", "Sevish", "mrcool909090", "Mintorment"],
+      "graphic_authors": ["DeBisco", "Melone", "art.horizon"],
       "chart_authors": [
         "Rippy Ripster",
         "Colin",
         "Marukomuru",
-        "Melone"
+        "Melone",
+        "-YOSEFU-",
+        "Komi",
+        "Daniel Rotwind"
       ],
       "graphics": {
         "background": {
           "author": "Lirodon",
           "license": "CC BY 4.0",
-          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/bg.png"
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s2/OutFox%20Serenity%20Volume%203/bg.png"
         },
         "banner": {
           "author": "Lirodon",
           "license": "CC BY 4.0",
-          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/banner.png"
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s2/OutFox%20Serenity%20Volume%203/banner.png"
         },
         "jacket": {
           "author": "Lirodon",
           "license": "CC BY 4.0",
-          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/jacket.png"
+          "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s2/OutFox%20Serenity%20Volume%203/jacket.png"
         }
       },
       "songs": [
@@ -10445,9 +10875,53 @@
           "graphic_authors": ["DeBisco"],
           "chart_authors": [
             "Rippy Ripster",
-            "Colin"
+            "Colin",
+            "-YOSEFU-",
+            "Melone",
+            "Marukomuru",
+            "Telperion"
           ],
           "charts": {
+            "dance": {
+              "single": [
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 16,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 8.44,
+                  "chart_info": {
+                    "notes": 627,
+                    "jumps": 32,
+                    "holds": 45,
+                    "mines": 23,
+                    "hands": 3,
+                    "rolls": 16,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ],
+              "double": [
+                {
+                  "author": "Marukomuru",
+                  "meter": 3,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.25,
+                  "chart_info": {
+                    "notes": 125,
+                    "jumps": 9,
+                    "holds": 7,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ]
+            },
             "pump": {
               "double": [
                 {
@@ -10520,6 +10994,82 @@
                   }
                 }
               ]
+            },
+            "kb6": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 11,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 11.81,
+                  "chart_info": {
+                    "notes": 776,
+                    "holds": 22,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "bemu": {
+              "single5": [
+                {
+                  "author": "Melone",
+                  "meter": 7,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 7.31,
+                  "chart_info": {
+                    "notes": 475,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ],
+              "single10": [
+                {
+                  "author": "Telperion",
+                  "meter": 46,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 18.00,
+                  "chart_info": {
+                    "notes": 756,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "pomu": {
+              "five": [
+                {
+                  "author": "Daniel Rotwind",
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.25,
+                  "chart_info": {
+                    "notes": 71,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ],
+              "nine": [
+                {
+                  "author": "Daniel Rotwind",
+                  "meter": 20,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 3.94,
+                  "chart_info": {
+                    "notes": 212,
+                    "holds": 22,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -10527,13 +11077,69 @@
           "title": "PLANETES",
           "length": "2:28",
           "bpm": 200,
-          "graphics": {},
+          "graphics": {
+            "background": {
+              "author": "art.horizon",
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/SiLiS%20-%20PLANETES/background.png"
+            },
+            "banner": {
+              "author": "art.horizon",
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/SiLiS%20-%20PLANETES/banner.png"
+            },
+            "jacket": {
+              "author": "art.horizon",
+              "license": "CC BY 4.0",
+              "link": "https://raw.githubusercontent.com/TeamRizu/OutFox-Serenity/v3.0s1/OutFox%20Serenity%20Volume%203/SiLiS%20-%20PLANETES/jacket.png"
+            }
+          },
           "genre": "Artcore",
           "license": "CC-BY-SA 4.0",
           "music_authors": ["SiLiS"],
-          "graphic_authors": [],
-          "chart_authors": ["Melone"],
+          "graphic_authors": ["art.horizon"],
+          "chart_authors": ["Melone", "-YOSEFU-", "Marukomuru", "Komi"],
           "charts": {
+            "dance": {
+              "single": [
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 17,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 13.33,
+                  "chart_info": {
+                    "notes": 779,
+                    "jumps": 40,
+                    "holds": 56,
+                    "mines": 14,
+                    "hands": 1,
+                    "rolls": 0,
+                    "lifts": 5,
+                    "fakes": 0
+                  }
+                }
+              ],
+              "double": [
+                {
+                  "author": "Marukomuru",
+                  "meter": 2,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.67,
+                  "chart_info": {
+                    "notes": 96,
+                    "jumps": 8,
+                    "holds": 4,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ]
+            },
             "kb6": {
               "single": [
                 {
@@ -10545,6 +11151,70 @@
                   "chart_info": {
                     "notes": 844,
                     "holds": 94,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Komi",
+                  "meter": 2,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.67,
+                  "chart_info": {
+                    "notes": 136,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 4,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 3.33,
+                  "chart_info": {
+                    "notes": 277,
+                    "holds": 4,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 6,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 546,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 7,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 8.33,
+                  "chart_info": {
+                    "notes": 713,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 10,
+                  "difficulty": "Edit",
+                  "is_modchart": false,
+                  "peak_nps": 16.67,
+                  "chart_info": {
+                    "notes": 936,
+                    "holds": 0,
                     "mines": 0
                   }
                 }
@@ -10578,23 +11248,91 @@
           "license": "CC BY 3.0",
           "music_authors": ["Sevish"],
           "graphic_authors": ["Melone"],
-          "chart_authors": [],
+          "chart_authors": ["Melone", "Marukomuru"],
           "charts": {
             "dance": {
               "single": [
                 {
                   "author": "Marukomuru",
-                  "meter": 2,
+                  "meter": 1,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 0.56,
+                  "peak_nps": 1.67,
                   "chart_info": {
-                    "notes": 63,
+                    "notes": 64,
                     "jumps": 0,
-                    "holds": 7,
+                    "holds": 8,
                     "mines": 0,
                     "hands": 0,
                     "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.23,
+                  "chart_info": {
+                    "notes": 142,
+                    "jumps": 0,
+                    "holds": 47,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 1,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 8,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 4.47,
+                  "chart_info": {
+                    "notes": 258,
+                    "jumps": 13,
+                    "holds": 47,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 14,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 8.37,
+                  "chart_info": {
+                    "notes": 464,
+                    "jumps": 13,
+                    "holds": 48,
+                    "mines": 0,
+                    "hands": 3,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 17,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 8.93,
+                  "chart_info": {
+                    "notes": 619,
+                    "jumps": 17,
+                    "holds": 45,
+                    "mines": 24,
+                    "hands": 6,
+                    "rolls": 1,
                     "lifts": 0,
                     "fakes": 0
                   }
@@ -10603,17 +11341,85 @@
               "double": [
                 {
                   "author": "Marukomuru",
-                  "meter": 2,
+                  "meter": 1,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 0.56,
+                  "peak_nps": 1.67,
                   "chart_info": {
-                    "notes": 63,
+                    "notes": 64,
                     "jumps": 0,
-                    "holds": 7,
+                    "holds": 9,
                     "mines": 0,
                     "hands": 0,
                     "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.23,
+                  "chart_info": {
+                    "notes": 142,
+                    "jumps": 0,
+                    "holds": 50,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 1,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 8,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 4.47,
+                  "chart_info": {
+                    "notes": 258,
+                    "jumps": 11,
+                    "holds": 44,
+                    "mines": 1,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 14,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 7.82,
+                  "chart_info": {
+                    "notes": 442,
+                    "jumps": 12,
+                    "holds": 55,
+                    "mines": 0,
+                    "hands": 2,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 17,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 8.93,
+                  "chart_info": {
+                    "notes": 612,
+                    "jumps": 15,
+                    "holds": 41,
+                    "mines": 28,
+                    "hands": 10,
+                    "rolls": 1,
                     "lifts": 0,
                     "fakes": 0
                   }
@@ -10624,14 +11430,430 @@
               "single": [
                 {
                   "author": "Melone",
-                  "meter": 10,
-                  "difficulty": "Expert",
+                  "meter": 7,
+                  "difficulty": "Medium",
                   "is_modchart": false,
-                  "peak_nps": 10.05,
+                  "peak_nps": 8.37,
+                  "chart_info": {
+                    "notes": 458,
+                    "holds": 46,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 10.61,
                   "chart_info": {
                     "notes": 541,
-                    "holds": 96,
+                    "holds": 91,
                     "mines": 0
+                  }
+                },
+                {
+                  "author": "Melone",
+                  "meter": 12,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 12.84,
+                  "chart_info": {
+                    "notes": 778,
+                    "holds": 47,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "CHEER",
+          "length": "2:43",
+          "bpm": 200,
+          "graphics": {
+          },
+          "genre": "Rock",
+          "license": "All Rights Reserved",
+          "music_authors": ["Thomas Dingwall a.k.a td"],
+          "graphic_authors": [],
+          "chart_authors": ["Rippy Ripster"],
+          "charts": {
+            "gddm": {
+              "real": [
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 3,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 5.00,
+                  "chart_info": {
+                    "notes": 485,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 4,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 512,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 5,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 10.00,
+                  "chart_info": {
+                    "notes": 634,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 6,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 10.83,
+                  "chart_info": {
+                    "notes": 717,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Eradication of Light",
+          "length": "2:17",
+          "bpm": 200,
+          "graphics": {
+          },
+          "genre": "Eneretic Hardcore",
+          "license": "CC BY 4.0",
+          "music_authors": ["Mintorment"],
+          "graphic_authors": ["Lirodon"],
+          "chart_authors": ["Melone", "Colin", "Mintorment"],
+          "charts": {
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Colin",
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.33,
+                  "chart_info": {
+                    "notes": 184,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 7,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 4.17,
+                  "chart_info": {
+                    "notes": 293,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 7,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 8.33,
+                  "chart_info": {
+                    "notes": 512,
+                    "holds": 3,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 13.33,
+                  "chart_info": {
+                    "notes": 946,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "gh": {
+              "solo": [
+                {
+                  "author": "Mintorment",
+                  "meter": 2,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 3.33,
+                  "chart_info": {
+                    "notes": 288,
+                    "holds": 18,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Mintorment",
+                  "meter": 4,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 460,
+                    "holds": 33,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Mintorment",
+                  "meter": 7,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 10.83,
+                  "chart_info": {
+                    "notes": 649,
+                    "holds": 39,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Mintorment",
+                  "meter": 9,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 15.00,
+                  "chart_info": {
+                    "notes": 852,
+                    "holds": 39,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "kb6": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 18,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 18.33,
+                  "chart_info": {
+                    "notes": 881,
+                    "holds": 28,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "dance": {
+              "single": [
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.25,
+                  "chart_info": {
+                    "notes": 172,
+                    "jumps": 23,
+                    "holds": 15,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 10,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.00,
+                  "chart_info": {
+                    "notes": 356,
+                    "jumps": 36,
+                    "holds": 53,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 14,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 2.50,
+                  "chart_info": {
+                    "notes": 508,
+                    "jumps": 48,
+                    "holds": 49,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 16,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 3.00,
+                  "chart_info": {
+                    "notes": 599,
+                    "jumps": 36,
+                    "holds": 47,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 2,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 18,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 4.00,
+                  "chart_info": {
+                    "notes": 764,
+                    "jumps": 33,
+                    "holds": 41,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 2,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Frenzied Serenity",
+          "length": "2:44",
+          "bpm": [80, 225],
+          "graphics": {
+          },
+          "genre": "Frenzied",
+          "license": "CC BY 4.0",
+          "music_authors": ["mrcool909090"],
+          "graphic_authors": [],
+          "chart_authors": ["Rippy Ripster"],
+          "charts": {
+            "dance": {
+              "single": [
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 6,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.75,
+                  "chart_info": {
+                    "notes": 189,
+                    "jumps": 11,
+                    "holds": 19,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 11,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 6.56,
+                  "chart_info": {
+                    "notes": 446,
+                    "jumps": 32,
+                    "holds": 27,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 14,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 7.50,
+                  "chart_info": {
+                    "notes": 664,
+                    "jumps": 42,
+                    "holds": 40,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 17,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 14.06,
+                  "chart_info": {
+                    "notes": 956,
+                    "jumps": 23,
+                    "holds": 48,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 8,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Rippy Ripster",
+                  "meter": 18,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 16.87,
+                  "chart_info": {
+                    "notes": 1052,
+                    "jumps": 53,
+                    "holds": 54,
+                    "mines": 0,
+                    "hands": 12,
+                    "rolls": 6,
+                    "lifts": 8,
+                    "fakes": 0
                   }
                 }
               ]
@@ -10642,6 +11864,14 @@
     }
   ],
   "user_hall": [
+    {
+      "name": "Ryuto Setsujin",
+      "socials": {
+        "youtube": "https://www.youtube.com/channel/UCXbK9OCf12r35FLkr6IUaGg",
+        "twitter": "https://twitter.com/RyutoSetsujin",
+        "twitch": "https://twitch.tv/ryutosetsujin"
+      }
+    },
     {
       "name": "Xiddy",
       "socials": {
@@ -10709,8 +11939,7 @@
         "youtube": "https://www.youtube.com/channel/UCY6xD8ir6C_cx7KKMjYFYQQ",
         "twitch": "https://www.twitch.tv/shrmp0",
         "github": "https://github.com/SHRMP0"
-      },
-      "pretags": ["SERENITY_TEAM"]
+      }
     },
     {
       "name": "A Dancing Maractus",
@@ -10739,7 +11968,17 @@
         "twitch": "https://www.twitch.tv/meione1",
         "twitter": "https://twitter.com/exibiIiA",
         "youtube": "https://youtube.com/@exibilia9040"
-      }
+      },
+      "pretags": ["SERENITY_TEAM"]
+    },
+    {
+      "name": "Colin",
+      "socials": {
+        "twitter": "https://twitter.com/colinmcguire_",
+        "youtube": "https://www.youtube.com/channel/UCojjVpl_ovkwVJp6lhG1BmQ",
+        "twitch": "https://www.twitch.tv/colinmcguire_"
+      },
+      "pretags": ["SERENITY_TEAM"]
     },
     {
       "name": "Gr00txD",
@@ -10781,7 +12020,7 @@
         "youtube": "https://www.youtube.com/channel/UCmq2yMo-lTfC7BQLth_PqOw",
         "website": "https://sevish.com/"
       },
-      "pretags": ["SERENITY_TEAM", "SERENITY_TO_FOXES"]
+      "pretags": ["SERENITY_TO_FOXES"]
     },
     {
       "name": "-YOSEFU-",
@@ -10967,9 +12206,10 @@
       "name": "Moru Zerinho6",
       "socials": {
         "twitter": "https://twitter.com/Moru_zerinho6",
-        "github": "https://github.com/moruzerinho6"
+        "github": "https://github.com/moruzerinho6",
+        "youtube": "https://www.youtube.com/channel/UCb9LtrgoGq0mRC3FwcZRtiQ"
       },
-      "pretags": ["SERENITY_TEAM"]
+      "pretags": ["SERENITY_LEAD", "SERENITY_TEAM"]
     },
     {
       "name": "Moneko",
@@ -10977,6 +12217,23 @@
         "github": "https://github.com/JustMoNeko"
       },
       "pretags": ["SERENITY_TEAM"]
+    },
+    {
+      "name": "mrcool909090",
+      "socials": {
+        "twitter": "https://twitter.com/mrcool909090",
+        "twitch": "https://www.twitch.tv/mrcool909090"
+      },
+      "pretags": ["SERENITY_TO_FOXES"]
+    },
+    {
+      "name": "Mintorment",
+      "socials": {
+        "twitter": "https://twitter.com/Mintorment",
+        "bandcamp": "https://mintorment.bandcamp.com/track/grandiose-nightmare",
+        "youtube": "https://www.youtube.com/mintorment",
+        "soundcloud": "https://soundcloud.com/mintorment"
+      }
     }
   ],
   "honor_tags": [
@@ -11045,6 +12302,12 @@
       "name": "Serenity Team Member",
       "rarity": "leaf",
       "explanation": "Is member of the Serenity Team."
+    },
+    {
+      "tag": "SERENITY_LEAD",
+      "name": "Serenity Team Lead",
+      "rarity": "leaf",
+      "explanation": "Is the lead of the Serenity Team."
     },
     {
       "tag": "SUPREME",

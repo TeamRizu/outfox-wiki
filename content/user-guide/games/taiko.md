@@ -12,13 +12,22 @@ insert picture of gameplay
 
 ## History:
 
-This mode was added in alpha 4.9.9HF of _Project OutFox_. In its' original form, it was a five-column mode with each note type having its' own column. Later, within the same alpha (July 11 2021), it was redone to have the notes be different note types instead of notes in columns, with only one column being needed.
+This mode was re-added in alpha 4.9.9HF of _Project OutFox_. In its' original form, it was a five-column mode with each note type having its' own column. Later, within the same alpha (July 11 2021), it was redone to have the notes be different note types instead of notes in columns, with only one column being needed.
 
 In this mode the parser support for the mode is being actively developed, and the chart support will be aligned with other taiko based simulators to provide parity and coherence for the community. We can parse .osu/.osz (Mode 1 taiko) and .tja files, although some of the scroll and time signature math needs to be concluded. As of alpha 4.15 the parsers are about 60% complete.
 
 This mode is selectable in the game select screen.
 
-### Introduced:
+It began life on our original base development back in 2018, when the project was codenamed _FoxMania_. 
+
+### Introduced (FoxMania):
+#### Drum (LeftOuter, LeftInner, RightInner, RightOuter):
+
+First Seen:
+* FoxMania 1c - ``(taitai-single)`` (15 April 2018)
+**Lost**
+
+### Introduced (Project OutFox):
 #### Drum (LeftOuter, LeftInner, RightInner, RightOuter):
 
 First Seen:
@@ -81,12 +90,14 @@ There are also notes which need to be hit a certain amount within a set time.
 
 ## Trivia
 
-This mode had a prototype back in _FoxMania_ in the early days of the project (Pre Alpha 1).
-
 It is the first horizontal scroll game we support in _Project OutFox_.
 
 This mode also introduced the concept of 'count holds'. This is effectively to set how the counted hit notes (balloons) are measured and scored.
 
 This mode introduced the concept of a non-tick/non-beat based roll hold, which needed a lot of new code added to _Outfox_ to implement.
+
+This mode had a prototype back in _FoxMania_ in the early days of the project (Pre Alpha 1).
+
+Due to a massive corruption issue on the gitlab server that hosted our work, we lost several months of development time, and had to restart the project when we were still using the _FoxMania_ codename. The version written back then does not reflect the current implementation, so it has to be considered replaced.
 
 _Written and Maintained with ♡ by Squirrel_

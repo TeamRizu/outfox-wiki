@@ -148,9 +148,9 @@ The original PSX/PS2 era controllers can be unusually difficult to use, so be mi
 
 ## Trivia
 
-BMS charts originally were used for DDR and SOLO mapping in 1999 for dance style simulations, and had some obscure channel mapping long since lost to the known world - (no-one uses this older methodology anymore). However, the notesloaders can still load the common layouts, when the BMS load was expanded, it was decided to keep this legacy in the code. This functionality was broken for a short time in alpha 4.12 and restored in 4.15 due to Squirrel making an oopsie.
+BMS charts originally were used for DDR and SOLO mapping in 1999 for dance style simulations, and had some obscure channel mapping long since lost to the known world - (no-one uses this older methodology anymore). However, the notes-loaders can still load the common layouts, when the BMS load was expanded, it was decided to keep this legacy in the code. This functionality was broken for a short time in alpha 4.12 and restored in 4.15 due to Squirrel making an oopsie.
 
-``be-mu`` once incorporated loadng all of the BMS type charts, including PMS, this unfortuanately caused a lot of charts to break and not load correctly in older builds of SM5 so this behaviour was removed.
+``be-mu`` once incorporated loading all of the BMS type charts, including PMS, this unfortunately caused a lot of charts to break and not load correctly in older builds of SM5 so this behaviour was removed.
 
 The old ``kb7`` mode used a custom channel methodology built into BMS in the early SSC builds. This behaviour was also maintained in the rewrite so those old charts work, however the mode style is different in _Project OutFox_ now.
 
