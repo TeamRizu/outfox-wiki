@@ -106,8 +106,8 @@ of the Song folder in question. {{< /hint >}}
 {{< columns size="large" >}} <!-- begin columns block -->
 
 Project OutFox supports a wide variety of controllers and even arcade hardware.
-To configure your button mappings, go to **Options > Input & Calibration >
-Config Key/Joy Mappings**.
+To configure your button mappings, go to
+<u> **Options > Input & Calibration > Config Key/Joy Mappings**</u>.
 
 Use the arrow keys to select an item to map, press Enter, and then press the
 button on the keyboard or controller you want to use. You can have multiple
@@ -122,8 +122,8 @@ often referred to as the "index" playstyle).
 ### Controller not working?
 
 If your controller does not perform as well or function as expected, you can
-switch to the alternate XInput input mode from **Options > Experimental
-Settings**.
+switch to the alternate XInput input mode from <u> **Options > Experimental
+Settings**</u>.
 
 ![The "Use Legacy Input System" setting, with HIDAPI highlighted.](/getting-started/enable-hidapi.jpg)
 
@@ -131,7 +131,8 @@ XInput will sometimes also require you to map your controller to the input
 engine's virtual gamepad, allowing the game to properly interface with the
 device.
 
-This menu can be found at **Options > Input & Calibration > Map Controller**.
+This menu can be found at <u> **Options > Input & Calibration > Map
+Controller**</u>.
 
 <---> <!-- magic separator, between columns -->
 
@@ -149,17 +150,13 @@ In a rhythm game, timing is everything. But latency produced by your audio
 outputs can affect your accuracy. If you feel like the game is not judging your
 timing accurately, you can interactively adjust the audio offset.
 
-**Options > Input & Calibration > Calibrate Audio Sync**
-
-{{< hint type="caution" >}} Interactive calibration only works under the `dance`
-game type. If you are using a differtent game type, temporarily switch to
-`dance`, and switch back when you are done. {{< /hint >}}
-
-{{< hint type="important" >}} Tap the notes based on what you HEAR, not what you
-SEE. {{< /hint >}}
+<u> **Options > Input & Calibration > Calibrate Audio Sync**</u>
 
 A song will play with a pattern of alternating notes; in the `dance` game type,
 they will be left and right arrows.
+
+{{< hint type="important" >}} Tap the notes based on what you HEAR, not what you
+SEE. {{< /hint >}}
 
 This calibration will repeat continuously. Every 24 notes, your inputs will be
 used to calculate a new offset. Once you feel the judgment has been set
@@ -179,11 +176,13 @@ Machine**, which will last until the end of the song or when exited with the
 
 <br /><br />
 
-## Audio Latency
+## Audio Latency / ASIO
 
 If something still feels off, you might be playing a gamemode with
 **keysounds**, which means the user's button inputs will trigger a sound when
 pressed.
+
+Examples of keysounded gamemodes: `kbm`, `po-mu`, `be-mu`
 
 Audio latency is a massive problem for these game modes, because there will be a
 delay between the user's button press and the sound that is played. Merely
@@ -193,7 +192,59 @@ On Windows, it is strongly recommended to use an **ASIO** driver to ensure
 lowest possible latency. Mac and Linux users should already obtain low latency
 output without any special configuration.
 
-{{< hint info>}} **TODO:** Realtek ASIO tutorial {{< /hint >}}
+{{< hint type="note" >}} If you are only interested in `dance` mode, you can
+ignore this section. ASIO provides no particular benefit for non-keysounded
+modes, if you have calibrated correctly.
+
+{{< /hint >}}
+
+{{< hint type="important" >}} Windows does not include any ASIO drivers, because
+these are dependent on your specific audio hardware. Do not enable this unless
+you have an ASIO driver present on your system. {{< /hint >}}
+
+To enable the ASIO driver in Outfox, edit your
+[Preferences.ini](/user-guide/config/preferences) (located in the Save folder)
+and set `SoundDrivers` to `asio`, like so:
+
+> `SoundDrivers=asio`
+
+<br />
+
+{{< columns size="large" >}} <!-- begin columns block -->
+
+### Realtek ASIO
+
+If your computer uses Realtek-based audio hardware, there is a native
+implementation of ASIO made by Realtek.
+
+First, install the official Realtek audio driver (this is **NOT** the Windows
+built-in driver). This is usually available from your motherboard's driver
+download page. Reboot your computer after installing this driver, and before
+installing the ASIO module.
+
+[Realtek ASIO Driver](https://drive.google.com/file/d/1kAN4RjJsHjEva3YInTAbetnu_fWAs5YU/view?usp=sharing)
+
+<br />
+
+### FL Studio ASIO
+
+If your audio hardware does not have a native ASIO implementation, FL Studio
+provides a wrapper that can "simulate" ASIO support and achieve lower latency,
+however this is not ideal as it is not a proper native implementation.
+
+The free demo of FL Studio includes FL Studio ASIO. All other optional
+components can be un-checked. Do note that this requires installation of the
+full FL Studio software.
+
+No license is required to utilize FL Studio ASIO.
+
+[FL Studio](https://www.image-line.com/fl-studio-download/)
+
+<---> <!-- magic separator, between columns -->
+
+![FL Studio install screen with FL Studio ASIO enabled.](/getting-started/fl-asio.png)
+
+{{< /columns >}}
 
 <br /><br />
 
@@ -205,8 +256,8 @@ By default, OutFox saves data to a global "machine profile". However, there is
 certain data that will not persist between sessions, such as high scores and
 player settings.
 
-You can manage profiles from **Options > Profiles**. From here you can create a
-profile, and edit existing profiles.
+You can manage profiles from <u> **Options > Profiles**</u>. From here you can
+create a profile, and edit existing profiles.
 
 From the profile editor (highlight a profile and press Start, and then select
 "Edit profile"), you can input fitness-related information, change the layout of
