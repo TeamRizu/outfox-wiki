@@ -29,12 +29,13 @@
         "gddm",
         "gdgf",
         "gh",
-        "kbx",
+        "kb6",
         "maniax",
         "pomu",
         "pump",
         "smx",
-        "techno"
+        "techno",
+        "taiko"
       ],
       "music_authors": [
         "Aspid Cat",
@@ -1764,7 +1765,8 @@
             "shockdude",
             "Jack5",
             "Telperion",
-            "Melone"
+            "Melone",
+            "Komi"
           ],
           "charts": {
             "dance": {
@@ -2329,6 +2331,58 @@
                   }
                 }
               ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Komi",
+                  "meter": 4,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.37,
+                  "chart_info": {
+                    "notes": 173,
+                    "holds": 3,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 7,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 5.89,
+                  "chart_info": {
+                    "notes": 416,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 8,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 10.10,
+                  "chart_info": {
+                    "notes": 648,
+                    "holds": 3,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 20.20,
+                  "chart_info": {
+                    "notes": 819,
+                    "holds": 3,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -2811,7 +2865,8 @@
             "Gr00txD",
             "Jack5",
             "K.TURN",
-            "shockdude"
+            "shockdude",
+            "Melone"
           ],
           "charts": {
             "dance": {
@@ -3580,6 +3635,22 @@
                     "rolls": 2,
                     "lifts": 0,
                     "fakes": 0
+                  }
+                }
+              ]
+            },
+            "kb6": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 18,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 19.12,
+                  "chart_info": {
+                    "notes": 820,
+                    "holds": 32,
+                    "mines": 0
                   }
                 }
               ]
@@ -6414,7 +6485,8 @@
             "-YOSEFU-",
             "Marukomuru",
             "kals",
-            "Kawafumi"
+            "Kawafumi",
+            "Komi"
           ],
           "charts": {
             "dance": {
@@ -6726,6 +6798,74 @@
                   "chart_info": {
                     "notes": 754,
                     "holds": 109,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "kb2": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 2,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 3.35,
+                  "chart_info": {
+                    "notes": 269,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Komi",
+                  "meter": 3,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.68,
+                  "chart_info": {
+                    "notes": 131,
+                    "holds": 8,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.79,
+                  "chart_info": {
+                    "notes": 220,
+                    "holds": 7,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 5,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 3.91,
+                  "chart_info": {
+                    "notes": 397,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 7,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 6.70,
+                  "chart_info": {
+                    "notes": 622,
+                    "holds": 0,
                     "mines": 0
                   }
                 }
@@ -8773,7 +8913,7 @@
           },
           "genre": "Techno Dance",
           "license": "CC BY 4.0",
-          "music_authors": "SiLiS",
+          "music_authors": ["SiLiS"],
           "graphic_authors": ["Daniel Rotwind"],
           "chart_authors": ["Daniel Rotwind", "-YOSEFU-", "Marukomuru"],
           "charts": {
@@ -9753,7 +9893,7 @@
       "title": "OutFox Serenity Volume 2 Winter Update",
       "abrev": "v2.5",
       "description": "Released February 21, 2023, the Winter Update (version 2.5) adds three new songs by Akako Hinami and Zenth, as well as new charts for other songs from previous versions.",
-      "charts_for_modes": ["dance", "pump", "bemu", "pomu", "kb6"],
+      "charts_for_modes": ["dance", "pump", "bemu", "pomu", "kb5", "kb6", "taiko"],
       "music_authors": ["Akako Hinami", "Jose Varela"],
       "graphic_authors": ["Lirodon", "Melone"],
       "chart_authors": [
@@ -9766,7 +9906,9 @@
         "-YOSEFU-",
         "Chriszo",
         "Xiddy",
-        "bol"
+        "bol",
+        "DiamondN1nja",
+        "Komi"
       ],
       "graphics": {
         "background": {
@@ -10145,7 +10287,9 @@
             "Daniel Rotwind",
             "Rippy Ripster",
             "Marukomuru",
-            "Melone"
+            "Melone",
+            "DiamondN1nja",
+            "Komi"
           ],
           "charts": {
             "dance": {
@@ -10393,6 +10537,58 @@
                   "chart_info": {
                     "notes": 554,
                     "holds": 104,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "DiamondN1nja",
+                  "meter": 1,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.00,
+                  "chart_info": {
+                    "notes": 86,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 2,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.00,
+                  "chart_info": {
+                    "notes": 168,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 5,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 4.00,
+                  "chart_info": {
+                    "notes": 328,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 6,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 4.50,
+                  "chart_info": {
+                    "notes": 432,
+                    "holds": 0,
                     "mines": 0
                   }
                 }
@@ -10817,8 +11013,8 @@
       "title": "OutFox Serenity Volume 3",
       "abrev": "v3",
       "description": "TBD.",
-      "charts_for_modes": ["pump", "dance", "kb6"],
-      "music_authors": ["DeBisco", "SiLiS", "Sevish", "mrcool909090", "Mintorment"],
+      "charts_for_modes": ["pump", "dance", "kb6", "smx", "pomu", "taiko", "gddm", "gh"],
+      "music_authors": ["DeBisco", "SiLiS", "Sevish", "mrcool909090", "Mintorment", "Kurio Prokos", "AAquatek", "Team COWCOW", "Sukima Altera", "SenPi", "H888"],
       "graphic_authors": ["DeBisco", "Melone", "art.horizon"],
       "chart_authors": [
         "Rippy Ripster",
@@ -10827,7 +11023,13 @@
         "Melone",
         "-YOSEFU-",
         "Komi",
-        "Daniel Rotwind"
+        "Daniel Rotwind",
+        "Mintorment",
+        "Slammin",
+        "DashyDesu",
+        "bol",
+        "DragonRatTiger",
+        "Shoxk"
       ],
       "graphics": {
         "background": {
@@ -10879,7 +11081,8 @@
             "-YOSEFU-",
             "Melone",
             "Marukomuru",
-            "Telperion"
+            "Telperion",
+            "Daniel Rotwind"
           ],
           "charts": {
             "dance": {
@@ -11465,6 +11668,70 @@
                   }
                 }
               ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "sadkay",
+                  "meter": 3,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.23,
+                  "chart_info": {
+                    "notes": 84,
+                    "holds": 14,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "sadkay",
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 3.35,
+                  "chart_info": {
+                    "notes": 190,
+                    "holds": 13,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "sadkay",
+                  "meter": 6,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 6.14,
+                  "chart_info": {
+                    "notes": 419,
+                    "holds": 4,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "sadkay",
+                  "meter": 8,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 8.37,
+                  "chart_info": {
+                    "notes": 613,
+                    "holds": 4,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "sadkay",
+                  "meter": 10,
+                  "difficulty": "Edit",
+                  "is_modchart": false,
+                  "peak_nps": 1.68,
+                  "chart_info": {
+                    "notes": 713,
+                    "holds": 3,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -11473,11 +11740,27 @@
           "length": "2:43",
           "bpm": 200,
           "graphics": {
+            "background": {
+              "author": "art.horizon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3s3/OutFox%20Serenity%20Volume%203/Thomas%20Dingwall%20a.k.a%20td%20-%20CHEER/background.png?raw=true"
+            },
+            "jacket": {
+              "author": "art.horizon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3s3/OutFox%20Serenity%20Volume%203/Thomas%20Dingwall%20a.k.a%20td%20-%20CHEER/jacket.png?raw=true"
+            },
+            "banner": {
+              "author": "art.horizon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3s3/OutFox%20Serenity%20Volume%203/Thomas%20Dingwall%20a.k.a%20td%20-%20CHEER/banner.png?raw=true"
+            },
+            "bga": null
           },
           "genre": "Rock",
           "license": "All Rights Reserved",
           "music_authors": ["Thomas Dingwall a.k.a td"],
-          "graphic_authors": [],
+          "graphic_authors": ["art.horizon"],
           "chart_authors": ["Rippy Ripster"],
           "charts": {
             "gddm": {
@@ -11539,12 +11822,28 @@
           "length": "2:17",
           "bpm": 200,
           "graphics": {
+            "background": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3s3/OutFox%20Serenity%20Volume%203/Mintorment%20-%20Eradication%20of%20Light/background.jpg?raw=true"
+            },
+            "jacket": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3s3/OutFox%20Serenity%20Volume%203/Mintorment%20-%20Eradication%20of%20Light/jacket.jpg?raw=true"
+            },
+            "banner": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3s3/OutFox%20Serenity%20Volume%203/Mintorment%20-%20Eradication%20of%20Light/banner.jpg?raw=true"
+            },
+            "bga": null
           },
           "genre": "Eneretic Hardcore",
           "license": "CC BY 4.0",
           "music_authors": ["Mintorment"],
           "graphic_authors": ["Lirodon"],
-          "chart_authors": ["Melone", "Colin", "Mintorment"],
+          "chart_authors": ["Melone", "Colin", "Mintorment", "-YOSEFU-", "Slammin"],
           "charts": {
             "taiko": {
               "taiko": [
@@ -11555,7 +11854,7 @@
                   "is_modchart": false,
                   "peak_nps": 3.33,
                   "chart_info": {
-                    "notes": 184,
+                    "notes": 183,
                     "holds": 0,
                     "mines": 0
                   }
@@ -11567,7 +11866,7 @@
                   "is_modchart": false,
                   "peak_nps": 4.17,
                   "chart_info": {
-                    "notes": 293,
+                    "notes": 291,
                     "holds": 0,
                     "mines": 0
                   }
@@ -11579,7 +11878,7 @@
                   "is_modchart": false,
                   "peak_nps": 8.33,
                   "chart_info": {
-                    "notes": 512,
+                    "notes": 508,
                     "holds": 3,
                     "mines": 0
                   }
@@ -11754,6 +12053,116 @@
                   }
                 }
               ]
+            },
+            "pump": {
+              "single": [
+                {
+                  "author": "Slammin",
+                  "meter": 6,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 311,
+                    "jumps": 22,
+                    "holds": 32,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Slammin",
+                  "meter": 13,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 8.33,
+                  "chart_info": {
+                    "notes": 558,
+                    "jumps": 69,
+                    "holds": 151,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Slammin",
+                  "meter": 19,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 13.33,
+                  "chart_info": {
+                    "notes": 781,
+                    "jumps": 79,
+                    "holds": 217,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ],
+              "half-double": [
+                {
+                  "author": "Slammin",
+                  "meter": 14,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 10.00,
+                  "chart_info": {
+                    "notes": 580,
+                    "jumps": 69,
+                    "holds": 161,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ],
+              "double": [
+                {
+                  "author": "Slammin",
+                  "meter": 12,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 7.50,
+                  "chart_info": {
+                    "notes": 524,
+                    "jumps": 37,
+                    "holds": 164,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Slammin",
+                  "meter": 21,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 13.33,
+                  "chart_info": {
+                    "notes": 773,
+                    "jumps": 70,
+                    "holds": 269,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -11859,11 +12268,517 @@
               ]
             }
           }
+        },
+        {
+          "title": "Like a Dream",
+          "length": "1:47",
+          "bpm": 170,
+          "graphics": {
+          },
+          "genre": "Rock",
+          "license": "CC BY-SA 4.0",
+          "music_authors": ["Kurio Prokos"],
+          "graphic_authors": [],
+          "chart_authors": ["Melone"],
+          "charts": {
+            "smx": {
+              "single": [
+                {
+                  "author": "Melone",
+                  "meter": 6,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.12,
+                  "chart_info": {
+                    "notes": 118,
+                    "jumps": 0,
+                    "holds": 2,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "TR1CKST3RZ",
+          "length": "1:49",
+          "bpm": 160,
+          "graphics": {
+          },
+          "genre": "Partyhouse",
+          "license": "CC BY-SA 4.0",
+          "music_authors": ["AAquatek"],
+          "graphic_authors": [],
+          "chart_authors": ["-YOSEFU-"],
+          "charts": {
+            "dance": {
+              "single": [
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 18,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 14.00,
+                  "chart_info": {
+                    "notes": 898,
+                    "jumps": 49,
+                    "holds": 43,
+                    "mines": 20,
+                    "hands": 0,
+                    "rolls": 1,
+                    "lifts": 4,
+                    "fakes": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Mango Mangroove",
+          "length": "2:39",
+          "bpm": 200,
+          "graphics": {
+          },
+          "genre": "Rave",
+          "license": "CC BY-SA 4.0",
+          "music_authors": ["Team COWCOW"],
+          "graphic_authors": [],
+          "chart_authors": [],
+          "charts": {}
+        },
+        {
+          "title": "FunkBoi",
+          "length": "2:05",
+          "bpm": 185,
+          "graphics": {
+          },
+          "genre": "Party",
+          "license": "OpenTaiko Default License",
+          "music_authors": ["SenPi"],
+          "graphic_authors": [],
+          "chart_authors": ["Komi", "Colin", "DragonRatTiger", "Shoxk"],
+          "charts": {
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "DragonRatTiger",
+                  "meter": 2,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 1.54,
+                  "chart_info": {
+                    "notes": 101,
+                    "holds": 6,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 6,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 6.17,
+                  "chart_info": {
+                    "notes": 325,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Shoxk",
+                  "meter": 7,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 7.71,
+                  "chart_info": {
+                    "notes": 583,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Colin",
+                  "meter": 9,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 11.56,
+                  "chart_info": {
+                    "notes": 894,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 10,
+                  "difficulty": "Edit",
+                  "is_modchart": false,
+                  "peak_nps": 15.42,
+                  "chart_info": {
+                    "notes": 1017,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Re:Collapse",
+          "length": "2:20",
+          "bpm": 215,
+          "graphics": {
+          },
+          "genre": "Apøcalypse",
+          "license": "OpenTaiko Default License",
+          "music_authors": ["H888"],
+          "graphic_authors": [],
+          "chart_authors": ["DashyDesu", "bol"],
+          "charts": {
+            "taiko": {
+              "taiko": [
+                {
+                  "author": ["DashyDesu", "bol"],
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 4.48,
+                  "chart_info": {
+                    "notes": 392,
+                    "holds": 19,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["DashyDesu", "bol"],
+                  "meter": 8,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 8.06,
+                  "chart_info": {
+                    "notes": 554,
+                    "holds": 10,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["DashyDesu", "bol"],
+                  "meter": 8,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 10.75,
+                  "chart_info": {
+                    "notes": 887,
+                    "holds": 1,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["DashyDesu", "bol"],
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 21.50,
+                  "chart_info": {
+                    "notes": 1151,
+                    "holds": 11,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["DashyDesu", "bol"],
+                  "meter": 11,
+                  "difficulty": "Edit",
+                  "is_modchart": false,
+                  "peak_nps": 18.81,
+                  "chart_info": {
+                    "notes": 1211,
+                    "holds": 1,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "ΣxilƎ",
+          "length": "2:05",
+          "bpm": 320,
+          "graphics": {
+          },
+          "genre": "Synth",
+          "license": "OpenTaiko Default License",
+          "music_authors": ["mrcool909090"],
+          "graphic_authors": [],
+          "chart_authors": ["Komi", "bol"],
+          "charts": {
+            "taiko": {
+              "taiko": [
+                {
+                  "author": ["Komi", "bol"],
+                  "meter": 6,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 5.33,
+                  "chart_info": {
+                    "notes": 280,
+                    "holds": 21,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["Komi", "bol"],
+                  "meter": 6,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 4.00,
+                  "chart_info": {
+                    "notes": 310,
+                    "holds": 20,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["Komi", "bol"],
+                  "meter": 9,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 12.00,
+                  "chart_info": {
+                    "notes": 629,
+                    "holds": 67,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["Komi", "bol"],
+                  "meter": 9,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 10.67,
+                  "chart_info": {
+                    "notes": 862,
+                    "holds": 19,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["Komi", "bol"],
+                  "meter": 11,
+                  "difficulty": "Edit",
+                  "is_modchart": false,
+                  "peak_nps": 21.33,
+                  "chart_info": {
+                    "notes": 1244,
+                    "holds": 17,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Liar Prison",
+          "length": "2:45",
+          "bpm": 160,
+          "graphics": {
+          },
+          "genre": "Synth Vocal",
+          "license": "OpenTaiko Default License",
+          "music_authors": ["SiLiS"],
+          "graphic_authors": [],
+          "chart_authors": ["Komi"],
+          "charts": {
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Komi",
+                  "meter": 2,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.67,
+                  "chart_info": {
+                    "notes": 154,
+                    "holds": 4,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 4,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 4.00,
+                  "chart_info": {
+                    "notes": 313,
+                    "holds": 14,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 6,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 5.33,
+                  "chart_info": {
+                    "notes": 502,
+                    "holds": 18,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 8,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 8.00,
+                  "chart_info": {
+                    "notes": 648,
+                    "holds": 14,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 10,
+                  "difficulty": "Edit",
+                  "is_modchart": false,
+                  "peak_nps": 13.33,
+                  "chart_info": {
+                    "notes": 1101,
+                    "holds": 0,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "RUiNED GLORY",
+          "length": "2:49",
+          "bpm": 200,
+          "graphics": {
+          },
+          "genre": "Hardcore",
+          "license": "OpenTaiko Default License",
+          "music_authors": ["Sukima Altera"],
+          "graphic_authors": [],
+          "chart_authors": ["DashyDesu", "bol"],
+          "charts": {
+            "taiko": {
+              "taiko": [
+                {
+                  "author": ["DashyDesu", "bol"],
+                  "meter": 4,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.33,
+                  "chart_info": {
+                    "notes": 313,
+                    "holds": 16,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["DashyDesu", "bol"],
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 5.00,
+                  "chart_info": {
+                    "notes": 478,
+                    "holds": 11,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["DashyDesu", "bol"],
+                  "meter": 8,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 10.00,
+                  "chart_info": {
+                    "notes": 849,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": ["DashyDesu", "bol"],
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 13.33,
+                  "chart_info": {
+                    "notes": 1049,
+                    "holds": 7,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
         }
       ]
     }
   ],
   "user_hall": [
+    {
+      "name": "DashyDesu",
+      "socials": {
+        "youtube": "https://www.youtube.com/channel/UCNqRcr0Ar5E7UeH7DriFB2A"
+      }
+    },
+    {
+      "name": "H888",
+      "socials": {
+        "H5 twitter": "https://twitter.com/guageHHH5",
+        "DashyDesu youtube": "https://www.youtube.com/channel/UCNqRcr0Ar5E7UeH7DriFB2A"
+      },
+      "pretags": ["VOICE_TO_SHARE"]
+    },
+    {
+      "name": "SenPi",
+      "socials": {
+        "youtube": "https://www.youtube.com/channel/UCgxTGqeL0hb45_ZcN6msMqw",
+        "soundcloud": "https://soundcloud.com/senpimusic"
+      }
+    },
+    {
+      "name": "Sukima Altera",
+      "socials": {
+        "youtube": "https://www.youtube.com/channel/UC0WQwYcO2gcjYIqUfhL9ZcA",
+        "soundcloud": "https://soundcloud.com/sukima-altera",
+        "bandcamp": "https://yokaicore.bandcamp.com/"
+      }
+    },
+    {
+      "name": "art.horizon",
+      "socials": {
+        "github": "https://github.com/Arthorization",
+        "twitch": "https://www.twitch.tv/arthorization",
+        "youtube": "https://www.youtube.com/channel/UCK8VrO4QsATuit-H1Y1b5Sw"
+      }
+    },
+    {
+      "name": "TEAM COWCOW",
+      "socials": {
+        "moo moo twitter": "https://twitter.com/Mrmoomooc0w",
+        "Wyvren twitter": "https://twitter.com/NokoniPuro"
+      },
+      "pretags": ["VOICE_TO_SHARE"]
+    },
     {
       "name": "Ryuto Setsujin",
       "socials": {
