@@ -4,7 +4,7 @@
 <meta name=referrer content="no-referrer">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=generator content="Hugo 0.120.4">
+<meta name=generator content="Hugo 0.121.1">
 <meta name=description content="Every actor in SM5 follows a standard general structure, with ActorFrames being more flexible in how they&rsquo;re constructed.
 General layout Commands General layout Def.Actor { Name= &#34;Example Actor&#34;, InitCommand= function(self) self:zoom(100) end, OnCommand= function(self) self:linear(2):x(30) end, } Every actor starts with a Def. prefix, followed by the actor type itself. An actor can have a name and commands. These commands could be anything, as long as it&rsquo;s suffixed with a Command or MessageCommand, depending on the type of commands needed.">
 <title>Anatomy of an Actor | Project OutFox Wiki</title>
@@ -1977,8 +1977,7 @@ Commands
 <blockquote class="gdoc-hint note">
 <div class="gdoc-hint__title flex align-center"><i class="fa note" title=Example></i></div>
 <div class=gdoc-hint__text><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=n>MESSAGEMAN</span><span class=p>:</span><span class=n>Broadcast</span><span class=p>(</span><span class=s2>&#34;SpecialMove&#34;</span><span class=p>,</span> <span class=p>{</span><span class=n>funnymove</span> <span class=o>=</span> <span class=mi>10</span><span class=p>,</span> <span class=n>absolute</span> <span class=o>=</span> <span class=kc>false</span><span class=p>})</span>
-</span></span></code></pre></div><p><em>This would run &ldquo;SpecialMoveMessageCommand&rdquo; on all actors that have this command defined, with a parameter table being passed in. Not all actors might use this table, even though they might have the command defined.</em></p>
-</div>
+</span></span></code></pre></div><p><em>This would run &ldquo;SpecialMoveMessageCommand&rdquo; on all actors that have this command defined, with a parameter table being passed in. Not all actors might use this table, even though they might have the command defined.</em></p></div>
 </blockquote>
 <p>If one needs to manually queue a command or message, the <code>queuecommand</code> or <code>queuemessage</code> functions can be used.</p>
 <p>These queued commands run only after all previous tweens have finished.</p>

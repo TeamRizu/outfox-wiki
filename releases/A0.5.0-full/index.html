@@ -4,7 +4,7 @@
 <meta name=referrer content="no-referrer">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=generator content="Hugo 0.120.4">
+<meta name=generator content="Hugo 0.121.1">
 <meta name=description content="Release Date: From 2022 &ldquo;Full Alpha V Changelog&rdquo; Upcoming Alpha V Play Test Build pre042 - October 2023 Last &lsquo;Stable&rsquo; Release Date: 1st May 2023 Alpha V Playtest Public Build pre041 - 1st Anniversary Celebration (Incorporates Internal Builds 0.5.0-000 to 0.5.0-041) (Incorporates Internal Builds alpha5-silver A0 to A19) These builds continue to stabilise and work on fixes we had begun to work on in 040, which was our last update.">
 <title>OutFox Alpha 0.5.0 Full Changelog Build | Project OutFox Wiki</title>
 <link rel=icon type=image/svg+xml href=../../favicon/favicon.svg>
@@ -19,7 +19,7 @@
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="OutFox Alpha 0.5.0 Full Changelog Build">
 <meta name=twitter:description content="Release Date: From 2022 “Full Alpha V Changelog” Upcoming Alpha V Play Test Build pre042 - October 2023 Last ‘Stable’ Release Date: 1st May 2023 Alpha V Playtest Public Build pre041 - 1st Anniversary Celebration (Incorporates Internal Builds 0.5.0-000 to 0.5.0-041) (Incorporates Internal Builds alpha5-silver A0 to A19) These builds continue to stabilise and work on fixes we had begun to work on in 040, which was our last update.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Releases","name":"OutFox Alpha 0.5.0 Full Changelog Build","url":"https://outfox.wiki/releases/A0.5.0-full/","headline":"OutFox Alpha 0.5.0 Full Changelog Build","description":"Release Date: From 2022 “Full Alpha V Changelog” Upcoming Alpha V Play Test Build pre042 - October 2023 Last ‘Stable’ Release Date: 1st May 2023 Alpha V Playtest Public Build pre041 - 1st Anniversary Celebration (Incorporates Internal Builds 0.5.0-000 to 0.5.0-041) (Incorporates Internal Builds alpha5-silver A0 to A19) These builds continue to stabilise and work on fixes we had begun to work on in 040, which was our last update.","wordCount":"14282","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/releases/A0.5.0-full/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Releases","name":"OutFox Alpha 0.5.0 Full Changelog Build","url":"https://outfox.wiki/releases/A0.5.0-full/","headline":"OutFox Alpha 0.5.0 Full Changelog Build","description":"Release Date: From 2022 “Full Alpha V Changelog” Upcoming Alpha V Play Test Build pre042 - October 2023 Last ‘Stable’ Release Date: 1st May 2023 Alpha V Playtest Public Build pre041 - 1st Anniversary Celebration (Incorporates Internal Builds 0.5.0-000 to 0.5.0-041) (Incorporates Internal Builds alpha5-silver A0 to A19) These builds continue to stabilise and work on fixes we had begun to work on in 040, which was our last update.","wordCount":"15450","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/releases/A0.5.0-full/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
 <script src=../../js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=../../js/main-56ca818c.bundle.min.js></script>
 <link rel=preload as=font href=../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -2007,6 +2007,217 @@ OutFox 042 is in progress!
 </h1>
 </div>
 <p>Please be patient while we work on this new build for you all!</p>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=outfox-050-pre-release-candidate-042-a35-sse3-main-pretest-playtest-build-december-14th-2023>
+OutFox 0.5.0 Pre-Release Candidate 042-a35 SSE3 (Main PRETEST PlayTest Build) December 14th 2023
+<a data-clipboard-text=https://outfox.wiki/releases/A0.5.0-full/#outfox-050-pre-release-candidate-042-a35-sse3-main-pretest-playtest-build-december-14th-2023 class="gdoc-page__anchor clip flex align-center" title="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a35 SSE3 (Main PRETEST PlayTest Build) December 14th 2023" aria-label="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a35 SSE3 (Main PRETEST PlayTest Build) December 14th 2023" href=#outfox-050-pre-release-candidate-042-a35-sse3-main-pretest-playtest-build-december-14th-2023>
+<svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a>
+</h2>
+</div>
+<ul>
+<li>❕✅ Fixed step error on ScreenSelectMusic in legacy theme</li>
+<li>❕✅ Fixed math on linestrip drawing on GLAD</li>
+<li>❕✅ Fixed scaling on linestrip drawing on GLAD</li>
+<li>❕✅ Fixed rtaudio buffer generation on rtAudio</li>
+<li>❕✅ Fixed device selection and probing on rtAudio</li>
+<li>❕✅ Fixed buffer initialisation on rtAudio</li>
+<li>❕✅ Fixed sanity checking on ImageCache</li>
+<li>❕✅ Added newer board support to InputHandler_LXIO</li>
+<li>❕✅ Fixed debug build missing types</li>
+<li>❕✅ Fixed missing legacy openGL pipe calls that we added to GLAD</li>
+<li>❕✅ Fixed calculation of fake lift notes in player</li>
+<li>❕✅ Fixed crash on recursive folders greater than 4</li>
+<li>❕✅ Added new recursive search/song folder support! This allows for ese/tjadb packs, osu packs, other mode folder support. There is no grouping yet, this will be coming. The folder the chart/map is in will be the group that shows in the wheel, so bear in mind.</li>
+<li>❕✅ Fixed courses not showing up on SelectCourse</li>
+<li>❕✅ Fixed extension checking on new recursive</li>
+<li>❕✅ Added new driver system for MacOS and Linux that adds stability to device detection, if you do not see SDL2 if stats are showing, delete whatever InputDrivers= has in it in your prefs</li>
+<li>❕✅ Fixed linux detection on Fedora 33+</li>
+<li>❕✅ Fixed missing information when using /event on screen stats</li>
+<li>❕✅ Added LYRICS stub for tja, which will be done shortly</li>
+<li>❕✅ Fixed unnecessary copy in music play</li>
+<li>❕✅ Fixed arm compiler warnings for armv8</li>
+<li>❕✅ Fixed LXIO class variable being shadowed</li>
+<li>❕✅ Synched alpha v dance theme to 1187</li>
+<li>❕✅ Fixed sound crunchy buffer sizes for linux and MacOS</li>
+<li>❕✅ Fixed missing length and tap notes from not being parsed in curly brackets</li>
+<li>❕✅ Fixed taiko balloons needing the head to be hit first</li>
+<li>❕✅ Fixed taiko drum rolls needing the head to be hit first</li>
+<li>❕✅ Fixed smx holdcounts needing the head to be hit first</li>
+<li>❕✅ Fixed GLAD crash on 14.04</li>
+<li>❕✅ Deprecated OpenGL renderer as GLAD is out of beta and stable</li>
+</ul>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=outfox-050-pre-release-candidate-042-a34-sse3-main-pretest-playtest-build-december-10th-2023>
+OutFox 0.5.0 Pre-Release Candidate 042-a34 SSE3 (Main PRETEST PlayTest Build) December 10th 2023
+<a data-clipboard-text=https://outfox.wiki/releases/A0.5.0-full/#outfox-050-pre-release-candidate-042-a34-sse3-main-pretest-playtest-build-december-10th-2023 class="gdoc-page__anchor clip flex align-center" title="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a34 SSE3 (Main PRETEST PlayTest Build) December 10th 2023" aria-label="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a34 SSE3 (Main PRETEST PlayTest Build) December 10th 2023" href=#outfox-050-pre-release-candidate-042-a34-sse3-main-pretest-playtest-build-december-10th-2023>
+<svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a>
+</h2>
+</div>
+<ul>
+<li>❕✅ Fixed ARM/RPi build and compile</li>
+<li>❕✅ Fixed BGA skewing/corruption on videos</li>
+<li>❕✅ Fixed lag with textures for now on GLAD</li>
+<li>❕✅ Fixed bad audio on MacOS 14 Sonoma when using the RTAudio driver</li>
+<li>❕✅ Fixed lua hook issues with MacOS 14 and newer GCC (11+) builds</li>
+<li>❕✅ Added new PandaEnum system to simplify old enumeration system used in SM5</li>
+<li>❕✅ Fixed PandaEnum when using Localised Strings</li>
+<li>❕✅ Fixed SMA file parser module compile</li>
+<li>❕✅ po-mu: Fixed Extended Channel support, we are fully nanasi compliant.</li>
+<li>❕✅ po-mu: Fixed missing transform channels</li>
+<li>❕✅ po-mu: Fixed occasional missing POOR BGA trigger on MacOS 12+</li>
+<li>❕✅ po-mu/be-mu: Added new header fixes which now show the titles and extra information on the wheel, and speed up the title generation.</li>
+<li>❕✅ po-mu/be-mu: Fixed legacy SM3.9 language for the modes, as we don&rsquo;t need to use bm/pnm anymore on OutFox</li>
+<li>❕✅ Fixed odd discrepancies in naming in our mode system</li>
+<li>❕✅ Added new main/sub/title settings for multi-chart modes</li>
+<li>❕✅ Fixed EnumToString to be simpler and use the new system</li>
+<li>❕✅ po-mu: Fixed mode strings on graphics</li>
+<li>❕✅ po-mu: Added new chart genre support</li>
+<li>❕✅ po-mu/be-mu: added new log output for bad channel calls/unsupported channel calls</li>
+<li>❕✅ po-mu: Fixed a few tweaks for Krazy notskin</li>
+<li>❕✅ Fixed crash when loading bad fileobjects</li>
+<li>❕✅ Fixed crash with sound loader on empty/bad audio files</li>
+<li>❕✅ Fixed crash with unhandled bad UTF16 / BOM files</li>
+<li>❕✅ Fixed crash with filedb</li>
+<li>❕✅ Optimised textbanners</li>
+<li>❕✅ Added new getchartartist lua command</li>
+<li>❕✅ Changed cache variation to OutFox.cache to no longer clash with SM/ITGM</li>
+<li>❕✅ Optimised BMSHeader, and removed its pref from the game.</li>
+</ul>
+<div class=gdoc-page__anchorwrap>
+<h3 id=theme-updates>
+Theme Updates:
+<a data-clipboard-text=https://outfox.wiki/releases/A0.5.0-full/#theme-updates class="gdoc-page__anchor clip flex align-center" title="Anchor to: Theme Updates:" aria-label="Anchor to: Theme Updates:" href=#theme-updates>
+<svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a>
+</h3>
+</div>
+<p>Dance Alpha V:</p>
+<ul>
+<li>
+<p>Redone the Fitness menu to have a better display for one player
+interaction, specifically with touch users.</p>
+</li>
+<li>
+<p>You can now select a goal to start a fitness session.</p>
+</li>
+<li>
+<p>Graphs in DetailedStats are now properly reset when in Course mode.</p>
+</li>
+<li>
+<p>Reworked FadeSlide module for more understandable implementation.
+This now allows for precise application of actors and smoother motion
+as it is no longer tied to tweens. This new version is stored in
+Text.NewFadeSlide.lua, and the original one will be deprecated.</p>
+</li>
+<li>
+<p>Join button during attract now goes to Select Profile.</p>
+</li>
+<li>
+<p>TotalTimer now updates when changing a song.</p>
+</li>
+<li>
+<p>Added options to go to the wiki and the OutFox discord server.</p>
+</li>
+<li>
+<p>OptionList now supports URLs.</p>
+</li>
+<li>
+<p>Removed approximate difficulties from DiffSelector.
+While they&rsquo;re neat looking to see what difficulties are ahead, I can&rsquo;t
+deny that they can be disorienting; specially when both areas were
+implemented, so I scrapped it and made the parts where you cannot
+scroll more obvious.</p>
+</li>
+<li>
+<p>SongInfoBox&rsquo;s Title now updates like a scroller.
+Given the new updated I did for FadeSlide, this now has better control
+when scrolling through songs with long titles, even groups.</p>
+</li>
+<li>
+<p>Discord module now just says Attract Screen if its in demonstration.</p>
+</li>
+<li>
+<p>Discord module can now track when the player has paused the game,
+and show how long have they paused the game, and reapply the remaining
+time when resuming.</p>
+</li>
+</ul>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=outfox-050-pre-release-candidate-042-a33-sse3-main-pretest-playtest-build-december-3rd-2023>
+OutFox 0.5.0 Pre-Release Candidate 042-a33 SSE3 (Main PRETEST PlayTest Build) December 3rd 2023
+<a data-clipboard-text=https://outfox.wiki/releases/A0.5.0-full/#outfox-050-pre-release-candidate-042-a33-sse3-main-pretest-playtest-build-december-3rd-2023 class="gdoc-page__anchor clip flex align-center" title="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a33 SSE3 (Main PRETEST PlayTest Build) December 3rd 2023" aria-label="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a33 SSE3 (Main PRETEST PlayTest Build) December 3rd 2023" href=#outfox-050-pre-release-candidate-042-a33-sse3-main-pretest-playtest-build-december-3rd-2023>
+<svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a>
+</h2>
+</div>
+<ul>
+<li>❕✅ Fixed AFT creation on MacOS on GLAD</li>
+<li>❕✅ Fixed Missing Chinese support on installer</li>
+<li>❕✅ Fixed gimmick settings</li>
+<li>❕✅ Added new AFT/AST clipping and depth support for GLAD</li>
+<li>❕✅ Fixed Geometry draw modes in GLAD</li>
+</ul>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=outfox-050-pre-release-candidate-042-a32-sse3-main-pretest-playtest-build-december-2nd-2023>
+OutFox 0.5.0 Pre-Release Candidate 042-a32 SSE3 (Main PRETEST PlayTest Build) December 2nd 2023
+<a data-clipboard-text=https://outfox.wiki/releases/A0.5.0-full/#outfox-050-pre-release-candidate-042-a32-sse3-main-pretest-playtest-build-december-2nd-2023 class="gdoc-page__anchor clip flex align-center" title="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a32 SSE3 (Main PRETEST PlayTest Build) December 2nd 2023" aria-label="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a32 SSE3 (Main PRETEST PlayTest Build) December 2nd 2023" href=#outfox-050-pre-release-candidate-042-a32-sse3-main-pretest-playtest-build-december-2nd-2023>
+<svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a>
+</h2>
+</div>
+<ul>
+<li>❕✅ Fixed compiler guards for discord, so it doesn&rsquo;t crash on linux now</li>
+<li>❕✅ Fixed gcc issues on newer versions</li>
+<li>❕✅ Fixed NSIS languages</li>
+<li>❕✅ Fixed issue with nsis</li>
+<li>❕✅ Update GLAD Rendering pipe by forcing opengl 2.1, but opening it to mac and linux as well</li>
+<li>❕✅ Optimise GLAD Rendering pipe functions</li>
+<li>❕✅ Fix MESA 22.2.x+ support</li>
+</ul>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=outfox-050-pre-release-candidate-042-a31-sse3-main-pretest-playtest-build-november-25th-2023>
+OutFox 0.5.0 Pre-Release Candidate 042-a31 SSE3 (Main PRETEST PlayTest Build) November 25th 2023
+<a data-clipboard-text=https://outfox.wiki/releases/A0.5.0-full/#outfox-050-pre-release-candidate-042-a31-sse3-main-pretest-playtest-build-november-25th-2023 class="gdoc-page__anchor clip flex align-center" title="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a31 SSE3 (Main PRETEST PlayTest Build) November 25th 2023" aria-label="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a31 SSE3 (Main PRETEST PlayTest Build) November 25th 2023" href=#outfox-050-pre-release-candidate-042-a31-sse3-main-pretest-playtest-build-november-25th-2023>
+<svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a>
+</h2>
+</div>
+<ul>
+<li>❕✅ Use Foxclock for Sound Position</li>
+<li>❕✅ Fix a few errors in mutex locking</li>
+<li>❕✅ Add new mainloop limiter</li>
+<li>❕✅ Fix single argument tweens in pandatemplate</li>
+<li>❕✅ Fix linking issue in GCC</li>
+<li>❕✅ Added new Populate Message function for actors</li>
+<li>❕✅ Added new Actor:AddMessage()</li>
+<li>❕✅ Fix optimised math no longer being optimised on CLang/MSVC</li>
+<li>❕✅ Added new Version of the pandaTemplate for gimmicks (V1.2)</li>
+</ul>
+<hr>
+<div class=gdoc-page__anchorwrap>
+<h2 id=outfox-050-pre-release-candidate-042-a30-sse3-main-pretest-playtest-build-november-17th-2023>
+OutFox 0.5.0 Pre-Release Candidate 042-a30 SSE3 (Main PRETEST PlayTest Build) November 17th 2023
+<a data-clipboard-text=https://outfox.wiki/releases/A0.5.0-full/#outfox-050-pre-release-candidate-042-a30-sse3-main-pretest-playtest-build-november-17th-2023 class="gdoc-page__anchor clip flex align-center" title="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a30 SSE3 (Main PRETEST PlayTest Build) November 17th 2023" aria-label="Anchor to: OutFox 0.5.0 Pre-Release Candidate 042-a30 SSE3 (Main PRETEST PlayTest Build) November 17th 2023" href=#outfox-050-pre-release-candidate-042-a30-sse3-main-pretest-playtest-build-november-17th-2023>
+<svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a>
+</h2>
+</div>
+<ul>
+<li>❕✅ Use a better buffer setup for rtAudio on Linux and Mac</li>
+<li>❕✅ Fix 2007 era Memory heap corruption</li>
+<li>❕✅ Fix gcc slowdowns</li>
+<li>❕✅ Fixed rtAudio device creation, stops RPi crashes</li>
+<li>❕✅ Removed workaround for sound drivers</li>
+<li>❕✅ Updated docker with new cmake rules</li>
+<li>❕✅ Added new channel types for BMS</li>
+<li>❕✅ Added new Modern Mode (22.04+ build for linux)</li>
+<li>❕✅ Lets not set non-interleaved on audio just yet&mldr; fixes garbage audio noise on Linux and Mac</li>
+<li>❕✅ Break StdString.h and RageUtil circular dependencies</li>
+<li>❕✅ New namespaces for RageUtil/RageMath</li>
+<li>❕✅ Fix dead code in PosMap</li>
+<li>❕✅ Remove inputloop to be redone in individual handlers</li>
+<li>❕✅ New NoteSkin mod fixes and changes</li>
+</ul>
 <hr>
 <div class=gdoc-page__anchorwrap>
 <h2 id=outfox-050-pre-release-candidate-042-a29hf-sse3-main-pretest-playtest-build-november-13th-2023>
