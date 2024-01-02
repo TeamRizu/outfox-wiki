@@ -12349,8 +12349,61 @@
           "license": "CC BY-SA 4.0",
           "music_authors": ["Team COWCOW"],
           "graphic_authors": [],
-          "chart_authors": [],
-          "charts": {}
+          "chart_authors": ["Komi"],
+          "charts": {
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Komi",
+                  "meter": 5,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.33,
+                  "chart_info": {
+                    "notes": 270,
+                    "holds": 4,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 7,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 5.00,
+                  "chart_info": {
+                    "notes": 466,
+                    "holds": 17,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 8,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 10.00,
+                  "chart_info": {
+                    "notes": 691,
+                    "holds": 15,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 20.00,
+                  "chart_info": {
+                    "notes": 1062,
+                    "holds": 16,
+                    "mines": 0
+                  }
+                }
+              ]
+            }
+          }
         },
         {
           "title": "FunkBoi",
