@@ -11083,7 +11083,7 @@
       "description": "TBD.",
       "charts_for_modes": ["pump", "dance", "kb6", "smx", "pomu", "taiko", "gddm", "gh"],
       "music_authors": ["DeBisco", "SiLiS", "Sevish", "mrcool909090", "Mintorment", "Kurio Prokos", "AAquatek", "Team COWCOW", "Sukima Altera", "SenPi", "H888"],
-      "graphic_authors": ["DeBisco", "Melone", "art.horizon"],
+      "graphic_authors": ["DeBisco", "Melone", "art.horizon", "Lirodon"],
       "chart_authors": [
         "Rippy Ripster",
         "Colin",
@@ -12378,11 +12378,26 @@
           "length": "1:49",
           "bpm": 160,
           "graphics": {
+            "background": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/AAquatek%20-%20TR1CKST3RZ/tricksterz-bg.jpg?raw=true"
+            },
+            "banner": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/AAquatek%20-%20TR1CKST3RZ/tricksterz-bn.jpg?raw=true"
+            },
+            "jacket": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/AAquatek%20-%20TR1CKST3RZ/tricksterz-jk.jpg?raw=true"
+            }
           },
           "genre": "HI-Tech",
           "license": "CC BY-SA 4.0",
           "music_authors": ["AAquatek"],
-          "graphic_authors": [],
+          "graphic_authors": ["Lirodon"],
           "chart_authors": ["-YOSEFU-"],
           "charts": {
             "dance": {
@@ -12479,11 +12494,26 @@
           "length": "2:05",
           "bpm": 185,
           "graphics": {
+            "background": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/SenPi%20-%20FunkBoi/background.jpg?raw=true"
+            },
+            "banner": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/SenPi%20-%20FunkBoi/banner.jpg?raw=true"
+            },
+            "jacket": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/SenPi%20-%20FunkBoi/jacket.jpg?raw=true"
+            }
           },
           "genre": "Party",
           "license": "OpenTaiko Default License",
           "music_authors": ["SenPi"],
-          "graphic_authors": [],
+          "graphic_authors": ["Lirodon"],
           "chart_authors": ["Komi", "Colin", "DragonRatTiger", "Shoxk"],
           "charts": {
             "taiko": {
@@ -12651,6 +12681,21 @@
           "length": "2:05",
           "bpm": 320,
           "graphics": {
+            "background": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/mrcool909090%20-%20%CE%A3xil%C6%8E/background.jpg?raw=true"
+            },
+            "banner": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/mrcool909090%20-%20%CE%A3xil%C6%8E/banner.jpg?raw=true"
+            },
+            "jacket": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/mrcool909090%20-%20%CE%A3xil%C6%8E/jacket.jpg?raw=true"
+            }
           },
           "genre": "Synth",
           "license": "OpenTaiko Default License",
@@ -12896,11 +12941,26 @@
           "length": "2:49",
           "bpm": 200,
           "graphics": {
+            "background": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/Sukima%20Altera%20-%20RUiNED%20GLORY/ruinedglory-bg.jpg?raw=true"
+            },
+            "banner": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/Sukima%20Altera%20-%20RUiNED%20GLORY/ruinedglory-bn.jpg?raw=true"
+            },
+            "jacket": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/Sukima%20Altera%20-%20RUiNED%20GLORY/ruinedglory-jk.jpg?raw=true"
+            }
           },
           "genre": "Hardcore",
           "license": "OpenTaiko Default License",
           "music_authors": ["Sukima Altera"],
-          "graphic_authors": [],
+          "graphic_authors": ["Lirodon"],
           "chart_authors": ["DashyDesu", "bol"],
           "charts": {
             "taiko": {
