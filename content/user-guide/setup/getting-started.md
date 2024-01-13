@@ -57,7 +57,7 @@ Place downloaded songs into the [Songs folder](/user-guide/config/folders/)
 inside the game's **installation directory**, or alternatively in the **User
 folder**.
 
-- `~/Library/Preferences/Project OutFox/` on macOS
+- `~/Library/Application Support/Project OutFox/` on macOS
 - `~/.project-outfox/` on Linux
 - `%APPDATA%\Project OutFox` on Windows
 
