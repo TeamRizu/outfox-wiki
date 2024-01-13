@@ -1863,16 +1863,16 @@
                   "meter": 5,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 3.37,
+                  "peak_nps": 4.21,
                   "chart_info": {
-                    "notes": 221,
+                    "notes": 223,
                     "jumps": 3,
-                    "holds": 32,
-                    "mines": 13,
-                    "hands": 0,
+                    "holds": 58,
+                    "mines": 79,
+                    "hands": 1,
                     "rolls": 12,
                     "lifts": 0,
-                    "fakes": 0
+                    "fakes": 15
                   }
                 },
                 {
@@ -1880,16 +1880,16 @@
                   "meter": 9,
                   "difficulty": "Easy",
                   "is_modchart": false,
-                  "peak_nps": 3.37,
+                  "peak_nps": 6.73,
                   "chart_info": {
-                    "notes": 328,
+                    "notes": 325,
                     "jumps": 20,
-                    "holds": 60,
-                    "mines": 23,
+                    "holds": 66,
+                    "mines": 68,
                     "hands": 2,
                     "rolls": 0,
                     "lifts": 0,
-                    "fakes": 23
+                    "fakes": 31
                   }
                 },
                 {
@@ -1897,13 +1897,13 @@
                   "meter": 15,
                   "difficulty": "Medium",
                   "is_modchart": false,
-                  "peak_nps": 9.26,
+                  "peak_nps": 10.10,
                   "chart_info": {
                     "notes": 627,
                     "jumps": 25,
                     "holds": 87,
-                    "mines": 12,
-                    "hands": 15,
+                    "mines": 16,
+                    "hands": 14,
                     "rolls": 4,
                     "lifts": 0,
                     "fakes": 2
@@ -1911,15 +1911,15 @@
                 },
                 {
                   "author": "Marukomuru",
-                  "meter": 18,
+                  "meter": 19,
                   "difficulty": "Hard",
                   "is_modchart": false,
-                  "peak_nps": 14.31,
+                  "peak_nps": 15.15,
                   "chart_info": {
                     "notes": 882,
                     "jumps": 82,
                     "holds": 69,
-                    "mines": 6,
+                    "mines": 12,
                     "hands": 6,
                     "rolls": 5,
                     "lifts": 0,
@@ -1931,16 +1931,16 @@
                   "meter": 20,
                   "difficulty": "Expert",
                   "is_modchart": false,
-                  "peak_nps": 19.36,
+                  "peak_nps": 20.20,
                   "chart_info": {
-                    "notes": 1186,
+                    "notes": 1171,
                     "jumps": 102,
-                    "holds": 83,
-                    "mines": 9,
-                    "hands": 83,
+                    "holds": 84,
+                    "hands": 87,
+                    "mines": 251,
                     "rolls": 10,
                     "lifts": 0,
-                    "fakes": 5
+                    "fakes": 6
                   }
                 },
                 {
@@ -1948,12 +1948,12 @@
                   "meter": 4,
                   "difficulty": "Edit",
                   "is_modchart": false,
-                  "peak_nps": 0.84,
+                  "peak_nps": 2.53,
                   "chart_info": {
-                    "notes": 139,
+                    "notes": 149,
                     "jumps": 0,
-                    "holds": 30,
-                    "mines": 4,
+                    "holds": 31,
+                    "mines": 15,
                     "hands": 0,
                     "rolls": 1,
                     "lifts": 0,
@@ -3805,14 +3805,82 @@
                   "meter": 2,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 0.51,
+                  "peak_nps": 1.02,
                   "chart_info": {
                     "notes": 62,
                     "jumps": 3,
-                    "holds": 12,
+                    "holds": 21,
                     "mines": 0,
                     "hands": 0,
                     "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 2.54,
+                  "chart_info": {
+                    "notes": 121,
+                    "jumps": 9,
+                    "holds": 35,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 8,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 3.56,
+                  "chart_info": {
+                    "notes": 241,
+                    "jumps": 6,
+                    "holds": 56,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 23,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 12,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 6.61,
+                  "chart_info": {
+                    "notes": 383,
+                    "jumps": 10,
+                    "holds": 79,
+                    "mines": 7,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 17,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 8.13,
+                  "chart_info": {
+                    "notes": 490,
+                    "jumps": 19,
+                    "holds": 68,
+                    "mines": 3,
+                    "hands": 0,
+                    "rolls": 82,
                     "lifts": 0,
                     "fakes": 0
                   }
@@ -11029,7 +11097,8 @@
         "DashyDesu",
         "bol",
         "DragonRatTiger",
-        "Shoxk"
+        "Shoxk",
+        "Ryuto Setsujin"
       ],
       "graphics": {
         "background": {
@@ -12310,7 +12379,7 @@
           "bpm": 160,
           "graphics": {
           },
-          "genre": "Partyhouse",
+          "genre": "HI-Tech",
           "license": "CC BY-SA 4.0",
           "music_authors": ["AAquatek"],
           "graphic_authors": [],
@@ -12493,7 +12562,7 @@
           "license": "OpenTaiko Default License",
           "music_authors": ["H888"],
           "graphic_authors": [],
-          "chart_authors": ["DashyDesu", "bol"],
+          "chart_authors": ["DashyDesu", "bol", "Ryuto Setsujin"],
           "charts": {
             "taiko": {
               "taiko": [
@@ -12558,6 +12627,22 @@
                   }
                 }
               ]
+            },
+            "kb4": {
+              "single": [
+                {
+                  "author": "Ryuto Setsujin",
+                  "meter": 20,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 22.40,
+                  "chart_info": {
+                    "notes": 1322,
+                    "holds": 85,
+                    "mines": 4
+                  }
+                }
+              ]
             }
           }
         },
@@ -12570,9 +12655,98 @@
           "genre": "Synth",
           "license": "OpenTaiko Default License",
           "music_authors": ["mrcool909090"],
-          "graphic_authors": [],
-          "chart_authors": ["Komi", "bol"],
+          "graphic_authors": ["Lirodon"],
+          "chart_authors": ["Komi", "bol", "-YOSEFU-"],
           "charts": {
+            "dance": {
+              "single": [
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 6,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.67,
+                  "chart_info": {
+                    "notes": 212,
+                    "jumps": 24,
+                    "holds": 5,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 12,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 448,
+                    "jumps": 33,
+                    "holds": 24,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 16,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 10.67,
+                  "chart_info": {
+                    "notes": 698,
+                    "jumps": 40,
+                    "holds": 7,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 18,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 10.67,
+                  "chart_info": {
+                    "notes": 885,
+                    "jumps": 32,
+                    "holds": 36,
+                    "mines": 0,
+                    "hands": 0,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "-YOSEFU-",
+                  "meter": 19,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 16.00,
+                  "chart_info": {
+                    "notes": 973,
+                    "jumps": 30,
+                    "holds": 32,
+                    "mines": 37,
+                    "hands": 2,
+                    "rolls": 0,
+                    "lifts": 1,
+                    "fakes": 0
+                  }
+                }
+              ]
+            },
             "taiko": {
               "taiko": [
                 {

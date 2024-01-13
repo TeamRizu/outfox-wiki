@@ -4,7 +4,7 @@
 <meta name=referrer content="no-referrer">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=generator content="Hugo 0.121.1">
+<meta name=generator content="Hugo 0.121.2">
 <meta name=description content="When using Actors, you can use self:GetParent() and self:GetChild() to get elements from other ActorFrames or Actors. self:GetChild() can only be used by ActorFrames. You can think of an ActorFrame as a tree of objects. This is the original table. And now you&rsquo;ve called GetParent on the ActorProxy. Def.ActorFrame{ Def.BitmapText{ Name=&#34;MyText&#34; }, * Def.ActorProxy{ OnCommand=function(self) self:GetParent() end }, } graph LR AF[Def.ActorFrame] --- BT(Def.BitmapText) & AP(Def.ActorProxy) style AF stroke-width:4px style BT stroke-width:4px style AP fill:#585,color:#fff,stroke-width:4px When calling it, you go back up a level, which in this case, it will become ActorFrame.">
 <title>Obtaining Childs and ActorFrame Levels | Project OutFox Wiki</title>
 <link rel=icon type=image/svg+xml href=../../../../../favicon/favicon.svg>

@@ -4,7 +4,7 @@
 <meta name=referrer content="no-referrer">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
-<meta name=generator content="Hugo 0.121.1">
+<meta name=generator content="Hugo 0.121.2">
 <meta name=description content="Contains the receptors and notes that are seen in gameplay. Normally seen in Player actors.
 Def.NoteField through lua allows one to create extra NoteFields that aren&rsquo;t bound to a Player actor.
 local receptposnorm = THEME:GetMetric(&#34;Player&#34;,&#34;ReceptorArrowsYStandard&#34;) local receptposreve = THEME:GetMetric(&#34;Player&#34;,&#34;ReceptorArrowsYReverse&#34;) local yoffset = receptposreve-receptposnorm local notefieldmid = (receptposnorm + receptposreve)/2 local def_dda = THEME:GetMetric(&#34;Player&#34;,&#34;DrawDistanceAfterTargetsPixels&#34;) local def_ddb = THEME:GetMetric(&#34;Player&#34;,&#34;DrawDistanceBeforeTargetsPixels&#34;) Def.ActorFrame{ FOV=45, InitCommand= function(self) self:zoom(SCREEN_HEIGHT/480):Center() end, Def.NoteField{ Player= PLAYER_1, NoteSkin= &#34;Exact3D&#34;, DrawDistanceAfterTargetsPixels= def_dda, DrawDistanceBeforeTargetsPixels= def_ddb, YReverseOffsetPixels= yoffset, FieldID= 3, InitCommand= function(self) self:y(notefieldmid) end, } } In the above example, The resulting NoteField is relatively close to what a NoteField in a Player would be like.">
