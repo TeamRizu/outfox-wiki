@@ -10356,8 +10356,7 @@
             "Rippy Ripster",
             "Marukomuru",
             "Melone",
-            "DiamondN1nja",
-            "Komi"
+            "DiamondN1nja"
           ],
           "charts": {
             "dance": {
@@ -10625,7 +10624,7 @@
                   }
                 },
                 {
-                  "author": "Komi",
+                  "author": "DiamondN1nja",
                   "meter": 2,
                   "difficulty": "Easy",
                   "is_modchart": false,
@@ -10637,7 +10636,7 @@
                   }
                 },
                 {
-                  "author": "Komi",
+                  "author": "DiamondN1nja",
                   "meter": 5,
                   "difficulty": "Medium",
                   "is_modchart": false,
@@ -10649,7 +10648,7 @@
                   }
                 },
                 {
-                  "author": "Komi",
+                  "author": "DiamondN1nja",
                   "meter": 6,
                   "difficulty": "Hard",
                   "is_modchart": false,
@@ -12348,8 +12347,60 @@
           "license": "CC BY-SA 4.0",
           "music_authors": ["Kurio Prokos"],
           "graphic_authors": [],
-          "chart_authors": ["Melone"],
+          "chart_authors": ["Melone", "Komi"],
           "charts": {
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Komi",
+                  "meter": 3,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.83,
+                  "chart_info": {
+                    "notes": 134,
+                    "holds": 3,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 4,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 3.54,
+                  "chart_info": {
+                    "notes": 238,
+                    "holds": 7,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 5,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 5.67,
+                  "chart_info": {
+                    "notes": 349,
+                    "holds": 8,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 7,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 11.33,
+                  "chart_info": {
+                    "notes": 577,
+                    "holds": 4,
+                    "mines": 0
+                  }
+                }
+              ]
+            },
             "smx": {
               "single": [
                 {
@@ -12966,7 +13017,7 @@
             "taiko": {
               "taiko": [
                 {
-                  "author": ["DashyDesu", "bol"],
+                  "author": ["bol"],
                   "meter": 4,
                   "difficulty": "Novice",
                   "is_modchart": false,
@@ -12978,7 +13029,7 @@
                   }
                 },
                 {
-                  "author": ["DashyDesu", "bol"],
+                  "author": ["bol"],
                   "meter": 5,
                   "difficulty": "Easy",
                   "is_modchart": false,
@@ -12990,7 +13041,7 @@
                   }
                 },
                 {
-                  "author": ["DashyDesu", "bol"],
+                  "author": ["bol"],
                   "meter": 8,
                   "difficulty": "Medium",
                   "is_modchart": false,
@@ -13002,7 +13053,7 @@
                   }
                 },
                 {
-                  "author": ["DashyDesu", "bol"],
+                  "author": ["DashyDesu"],
                   "meter": 10,
                   "difficulty": "Hard",
                   "is_modchart": false,
