@@ -11132,7 +11132,7 @@
       "abrev": "v3",
       "description": "TBD.",
       "charts_for_modes": ["pump", "dance", "kb6", "smx", "pomu", "taiko", "gddm", "gh"],
-      "music_authors": ["DeBisco", "SiLiS", "Sevish", "mrcool909090", "Mintorment", "Kurio Prokos", "AAquatek", "Team COWCOW", "Sukima Altera", "SenPi", "H888"],
+      "music_authors": ["DeBisco", "SiLiS", "Sevish", "mrcool909090", "Mintorment", "Kurio Prokos", "AAquatek", "TEAM COWCOW", "Sukima Altera", "SenPi", "H888"],
       "graphic_authors": ["DeBisco", "Melone", "art.horizon", "Lirodon"],
       "chart_authors": [
         "Rippy Ripster",
@@ -12637,7 +12637,7 @@
           },
           "genre": "Rave",
           "license": "CC BY-SA 4.0",
-          "music_authors": ["Team COWCOW"],
+          "music_authors": ["TEAM COWCOW"],
           "graphic_authors": [],
           "chart_authors": ["Komi"],
           "charts": {
