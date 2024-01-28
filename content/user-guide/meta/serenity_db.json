@@ -2302,10 +2302,10 @@
                   "meter": 20,
                   "difficulty": "Expert",
                   "is_modchart": false,
-                  "peak_nps": 21.04,
+                  "peak_nps": 26.93,
                   "chart_info": {
-                    "notes": 1280,
-                    "holds": 136,
+                    "notes": 1318,
+                    "holds": 128,
                     "mines": 0
                   }
                 }
@@ -4244,15 +4244,15 @@
               "double": [
                 {
                   "author": "Marukomuru",
-                  "meter": 3,
+                  "meter": 6,
                   "difficulty": "Novice",
                   "is_modchart": false,
-                  "peak_nps": 0.75,
+                  "peak_nps": 3.00,
                   "chart_info": {
-                    "notes": 151,
-                    "jumps": 1,
-                    "holds": 15,
-                    "mines": 0,
+                    "notes": 380,
+                    "jumps": 3,
+                    "holds": 54,
+                    "mines": 25,
                     "hands": 0,
                     "rolls": 0,
                     "lifts": 0,
@@ -4261,17 +4261,68 @@
                 },
                 {
                   "author": "Marukomuru",
-                  "meter": 5,
+                  "meter": 9,
                   "difficulty": "Easy",
                   "is_modchart": false,
-                  "peak_nps": 2.25,
+                  "peak_nps": 4.50,
                   "chart_info": {
-                    "notes": 281,
-                    "jumps": 4,
-                    "holds": 34,
-                    "mines": 0,
+                    "notes": 504,
+                    "jumps": 5,
+                    "holds": 57,
+                    "mines": 26,
                     "hands": 0,
                     "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 12,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 6.00,
+                  "chart_info": {
+                    "notes": 650,
+                    "jumps": 30,
+                    "holds": 112,
+                    "mines": 52,
+                    "hands": 0,
+                    "rolls": 1,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 15,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 9.00,
+                  "chart_info": {
+                    "notes": 770,
+                    "jumps": 45,
+                    "holds": 162,
+                    "mines": 103,
+                    "hands": 4,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
+                  "author": "Marukomuru",
+                  "meter": 18,
+                  "difficulty": "Expert",
+                  "is_modchart": false,
+                  "peak_nps": 9.00,
+                  "chart_info": {
+                    "notes": 1062,
+                    "jumps": 25,
+                    "holds": 166,
+                    "mines": 228,
+                    "hands": 8,
+                    "rolls": 1,
                     "lifts": 0,
                     "fakes": 0
                   }
@@ -11882,6 +11933,58 @@
                   }
                 }
               ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Komi",
+                  "meter": 2,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.50,
+                  "chart_info": {
+                    "notes": 229,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 4,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 4.17,
+                  "chart_info": {
+                    "notes": 392,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 6,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 6.67,
+                  "chart_info": {
+                    "notes": 666,
+                    "holds": 2,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 8,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 13.33,
+                  "chart_info": {
+                    "notes": 985,
+                    "holds": 1,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -12471,6 +12574,58 @@
                   }
                 }
               ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Komi",
+                  "meter": 2,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 2.67,
+                  "chart_info": {
+                    "notes": 138,
+                    "holds": 17,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 4,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 4.00,
+                  "chart_info": {
+                    "notes": 264,
+                    "holds": 17,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 6,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 5.33,
+                  "chart_info": {
+                    "notes": 418,
+                    "holds": 17,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 9,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 2.67,
+                  "chart_info": {
+                    "notes": 979,
+                    "holds": 8,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -13012,7 +13167,7 @@
           "license": "OpenTaiko Default License",
           "music_authors": ["Sukima Altera"],
           "graphic_authors": ["Lirodon"],
-          "chart_authors": ["DashyDesu", "bol"],
+          "chart_authors": ["Komi", "bol"],
           "charts": {
             "taiko": {
               "taiko": [
@@ -13053,8 +13208,8 @@
                   }
                 },
                 {
-                  "author": ["DashyDesu"],
-                  "meter": 10,
+                  "author": ["Komi"],
+                  "meter": 9,
                   "difficulty": "Hard",
                   "is_modchart": false,
                   "peak_nps": 13.33,
