@@ -11133,7 +11133,7 @@
       "description": "TBD.",
       "charts_for_modes": ["pump", "dance", "kb6", "smx", "pomu", "taiko", "gddm", "gh"],
       "music_authors": ["DeBisco", "SiLiS", "Sevish", "mrcool909090", "Mintorment", "Kurio Prokos", "AAquatek", "TEAM COWCOW", "Sukima Altera", "SenPi", "H888"],
-      "graphic_authors": ["DeBisco", "Melone", "art.horizon", "Lirodon"],
+      "graphic_authors": ["DeBisco", "Melone", "art.horizon", "Lirodon", "Zeta-Neubourn"],
       "chart_authors": [
         "Rippy Ripster",
         "Colin",
@@ -11148,7 +11148,8 @@
         "bol",
         "DragonRatTiger",
         "Shoxk",
-        "Ryuto Setsujin"
+        "Ryuto Setsujin",
+        "A Dancing Maractus"
       ],
       "graphics": {
         "background": {
@@ -12347,7 +12348,7 @@
           "license": "CC BY 4.0",
           "music_authors": ["mrcool909090"],
           "graphic_authors": [],
-          "chart_authors": ["Rippy Ripster"],
+          "chart_authors": ["Rippy Ripster", "Komi"],
           "charts": {
             "dance": {
               "single": [
@@ -12437,6 +12438,58 @@
                   }
                 }
               ]
+            },
+            "taiko": {
+              "taiko": [
+                {
+                  "author": "Komi",
+                  "meter": 3,
+                  "difficulty": "Novice",
+                  "is_modchart": false,
+                  "peak_nps": 3.75,
+                  "chart_info": {
+                    "notes": 224,
+                    "holds": 10,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 5,
+                  "difficulty": "Easy",
+                  "is_modchart": false,
+                  "peak_nps": 5.62,
+                  "chart_info": {
+                    "notes": 224,
+                    "holds": 381,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 7,
+                  "difficulty": "Medium",
+                  "is_modchart": false,
+                  "peak_nps": 7.50,
+                  "chart_info": {
+                    "notes": 598,
+                    "holds": 10,
+                    "mines": 0
+                  }
+                },
+                {
+                  "author": "Komi",
+                  "meter": 10,
+                  "difficulty": "Hard",
+                  "is_modchart": false,
+                  "peak_nps": 16.88,
+                  "chart_info": {
+                    "notes": 926,
+                    "holds": 6,
+                    "mines": 0
+                  }
+                }
+              ]
             }
           }
         },
@@ -12445,11 +12498,27 @@
           "length": "1:47",
           "bpm": 170,
           "graphics": {
+            "background": {
+              "author": "Zeta-Neubourn",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/Kurio%20Prokos%20-%20Like%20a%20Dream/background.png?raw=true"
+            },
+            "jacket": {
+              "author": "Zeta-Neubourn",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/Kurio%20Prokos%20-%20Like%20a%20Dream/jacket.png?raw=true"
+            },
+            "banner": {
+              "author": "Zeta-Neubourn",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/Kurio%20Prokos%20-%20Like%20a%20Dream/banner.png?raw=true"
+            },
+            "bga": null
           },
           "genre": "Rock",
           "license": "CC BY-SA 4.0",
           "music_authors": ["Kurio Prokos"],
-          "graphic_authors": [],
+          "graphic_authors": ["Zeta-Neubourn"],
           "chart_authors": ["Melone", "Komi"],
           "charts": {
             "taiko": {
