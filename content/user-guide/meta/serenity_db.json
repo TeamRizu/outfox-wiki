@@ -12343,11 +12343,26 @@
           "length": "2:44",
           "bpm": [80, 225],
           "graphics": {
+            "background": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/mrcool909090%20-%20Frenzied%20Serenity/background.jpg?raw=true"
+            },
+            "jacket": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/mrcool909090%20-%20Frenzied%20Serenity/jacket.jpg?raw=true"
+            },
+            "banner": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/mrcool909090%20-%20Frenzied%20Serenity/banner.jpg?raw=true"
+            }
           },
           "genre": "Frenzied",
           "license": "CC BY 4.0",
           "music_authors": ["mrcool909090"],
-          "graphic_authors": [],
+          "graphic_authors": ["Lirodon"],
           "chart_authors": ["Rippy Ripster", "Komi"],
           "charts": {
             "dance": {
@@ -12862,11 +12877,26 @@
           "length": "2:20",
           "bpm": 215,
           "graphics": {
+            "background": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/H888%20(H5%20+%20DashyDesu)%20-%20ReCollapse/background.jpg?raw=true"
+            },
+            "banner": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/H888%20(H5%20+%20DashyDesu)%20-%20ReCollapse/banner.jpg?raw=true"
+            },
+            "jacket": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/H888%20(H5%20+%20DashyDesu)%20-%20ReCollapse/jacket.jpg?raw=true"
+            }
           },
           "genre": "Apøcalypse",
           "license": "OpenTaiko Default License",
           "music_authors": ["H888"],
-          "graphic_authors": [],
+          "graphic_authors": ["Lirodon"],
           "chart_authors": ["DashyDesu", "bol", "Ryuto Setsujin"],
           "charts": {
             "taiko": {
