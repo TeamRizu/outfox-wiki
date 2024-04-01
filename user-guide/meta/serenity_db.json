@@ -11130,7 +11130,7 @@
     {
       "title": "OutFox Serenity Volume 3",
       "abrev": "v3",
-      "description": "TBD.",
+      "description": "Released in 2024, OutFox Serenity Volume 3 is the first massive pack to come with 12 new songs and features a collab with Open Taiko, bringing a total of 150 new charts to both new and old songs.",
       "charts_for_modes": ["pump", "dance", "kb6", "smx", "pomu", "taiko", "gddm", "gh"],
       "music_authors": ["DeBisco", "SiLiS", "Sevish", "mrcool909090", "Mintorment", "Kurio Prokos", "AAquatek", "TEAM COWCOW", "Sukima Altera", "SenPi", "H888"],
       "graphic_authors": ["DeBisco", "Melone", "art.horizon", "Lirodon", "Zeta-Neubourn"],
@@ -12718,11 +12718,26 @@
           "length": "2:39",
           "bpm": 200,
           "graphics": {
+            "background": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/Team%20COWCOW%20-%20Mango%20Mangrove/background.jpg?raw=true"
+            },
+            "banner": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/Team%20COWCOW%20-%20Mango%20Mangrove/banner.jpg?raw=true"
+            },
+            "jacket": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/Team%20COWCOW%20-%20Mango%20Mangrove/jacket.jpg?raw=true"
+            }
           },
           "genre": "Rave",
           "license": "CC BY-SA 4.0",
           "music_authors": ["TEAM COWCOW"],
-          "graphic_authors": [],
+          "graphic_authors": ["Lirodon"],
           "chart_authors": ["Komi"],
           "charts": {
             "taiko": {
@@ -13168,11 +13183,26 @@
           "length": "2:45",
           "bpm": 160,
           "graphics": {
+            "background": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/SiLiS%20ft.%20Karin%20Natsuki%20-%20Liar%20Prison/background.jpg?raw=true"
+            },
+            "banner": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/SiLiS%20ft.%20Karin%20Natsuki%20-%20Liar%20Prison/banner.jpg?raw=true"
+            },
+            "jacket": {
+              "author": "Lirodon",
+              "license": "CC BY 4.0",
+              "link": "https://github.com/TeamRizu/OutFox-Serenity/blob/v3.0s4/OutFox%20Serenity%20Volume%203/SiLiS%20ft.%20Karin%20Natsuki%20-%20Liar%20Prison/jacket.jpg?raw=true"
+            }
           },
           "genre": "Synth Vocal",
           "license": "OpenTaiko Default License",
           "music_authors": ["SiLiS"],
-          "graphic_authors": [],
+          "graphic_authors": ["Lirodon"],
           "chart_authors": ["Komi"],
           "charts": {
             "taiko": {
