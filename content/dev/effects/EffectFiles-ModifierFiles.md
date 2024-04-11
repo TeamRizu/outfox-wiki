@@ -3,6 +3,8 @@ title: Modifier Files
 weight: 3
 ---
 
+<!-- TODO: replace "mod" with "gimmick" i think? -->
+
 These simfiles have modifiers that are scripted to happen at various points of the song. The difficulty can range between "trivial to read" to "may as well memorize the chart".
 
 Often called "Modfiles" or "Modcharts".
@@ -88,13 +90,35 @@ local po = {GAMESTATE:GetPlayerState(0):GetPlayerOptions('ModsLevel_Song'), GAME
 po[1]:FromString("*0.5 420 beat")
 ```
 
+### Def.PandaTemplate (Project OutFox Alpha V)
+
+Def.PandaTemplate is an Actor that provides an easy interface for adding eased mods as well as set mods. If you are familiar with the ease template, the Def.PandaTemplate Actor should be straightforward to use.
+
+```lua
+local mods = {
+	{0, 3, '*1 flip', 'len'}
+}
+local eases = {
+	{4, 4, 0, 100, 'drunk', 'len', Tweens.easeInOutSine}
+}
+return Def.ActorFrame {
+	Def.PandaTemplate {
+		OnCommand = function(self)
+			self:PopulateBeatMods(mods)
+			self:PopulateEases(eases)
+			self:sleep(math.huge)
+		end,
+	}
+}
+```
+
 ## Modfile templates
 
 Starting to make a modfile can seem really daunting if one does not know how to begin. Luckilly, there are many templates out there to help with creating modfiles.
 
-Ones made for Open/NotITG and SM3.95 are usually done with .xml files, and some rare .lua files.
+Ones made for SM3.95 and Open/NotITG are usually done with .xml files, and some rare .lua files.
 
-Ones made for SM5 are almost always .lua files.
+Ones made for SM5 and Project OutFox are almost always .lua files.
 
 <!--
 
@@ -102,24 +126,33 @@ TODO: I'm gonna need everyone else's help from the mods community when we start 
 
 -->
 
-### StepMania 5-Based templates
+### Project OutFox templates
 
-- MTK's OutFox port of Exschwasion's easing template
-	- https://drive.google.com/open?id=1HfCFvTHZUI4dO_eAk4iN5mO3H61caHzE
-	- Lost of local variables used up in the main scope to preserve syntax.
-	- The place to put the actual calls is a little different.
-
-- XeroOl's port of the "Mirin" template
-	- https://github.com/XeroOl/sm5-mirin
-	- Unknown if up to date.
+- Sudospective's Ichigo Template
+	- https://github.com/Sudospective/ichigo-template
+	- Allows easy creation of classes
+	- Fully compatible with the new tween system
+	- Uses the new Def.PandaTemplate modreader
+	- Object oriented
+	- Some parts similar to Kitsu, some similar to Mirin
 
 - Sudospective's Kitsu Template
 	- https://github.com/Tiny-Foxes/kitsu-template
 	- Up to date: fully supports Project OutFox
 	- Fully compatible with the new tween system
-	- Object Orientated Template
+	- Object oriented template
 	- Easy to find update loop
 
+- MTK's OutFox port of Exschwasion's easing template
+	- https://drive.google.com/open?id=1HfCFvTHZUI4dO_eAk4iN5mO3H61caHzE
+	- Lots of local variables used up in the main scope to preserve syntax.
+	- The place to put the actual calls is a little different.
+
+### StepMania 5 templates
+
+- XeroOl's port of the "Mirin" template
+	- https://github.com/XeroOl/sm5-mirin
+	- Unknown if up to date.
 
 ### OpenITG/NotITG/SM3.95 templates
 
@@ -147,6 +180,12 @@ TODO: I'm gonna need everyone else's help from the mods community when we start 
 	- Cannot use modstrings? \[citation needed\]
 	- difficulty to use vs ease template \[citations needed\]
 
+- Sudospective's Lunar Template
+	- https://github.com/Sudospective/lunar-template
+	- Based off of XeroOl's Mirin template
+	- Meant to provide support with "porting" modfiles between NotITG and Project OutFox
+	- Closest to providing a 1:1 porting experience
+
 - TaroNuke's "Wow! It's Made" template
 	- Used during TaroNuke's "Wow! It's Made" streams where he wrote a modfile live.
 		- https://www.twitch.tv/videos/321383917
@@ -158,6 +197,7 @@ TODO: I'm gonna need everyone else's help from the mods community when we start 
 	<!-- TODO: is this different from what taro usually uses? -->
 
 - Daikyi's simple template
+	<!-- TODO: get a new link, this ones bad -->
 	- https://cdn.discordapp.com/attachments/227819834480656384/493515557216452638/default.xml
 	- Super simple & basic. (So, might be good for beginners)
 	- Modstrings are fully usable via mods table.
