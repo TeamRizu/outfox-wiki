@@ -28,7 +28,7 @@ Disclaimer: Make sure you’ve got making a chart down before starting to make m
 Often called “Modfiles” or “Modcharts”.
 These usually use the FGCHANGES or BGCHANGES of a simfile to load the lua files (if any are used).
 Disclaimer: Make sure you’ve got making a chart down before starting to make modcharts! Good mods can’t save a bad chart!">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Modifier Files","url":"https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/","headline":"Modifier Files","description":"These simfiles have modifiers that are scripted to happen at various points of the song. The difficulty can range between “trivial to read” to “may as well memorize the chart”.\nOften called “Modfiles” or “Modcharts”.\nThese usually use the FGCHANGES or BGCHANGES of a simfile to load the lua files (if any are used).\nDisclaimer: Make sure you’ve got making a chart down before starting to make modcharts! Good mods can’t save a bad chart!","wordCount":"913","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki/","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Dev","name":"Modifier Files","url":"https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/","headline":"Modifier Files","description":"These simfiles have modifiers that are scripted to happen at various points of the song. The difficulty can range between “trivial to read” to “may as well memorize the chart”.\nOften called “Modfiles” or “Modcharts”.\nThese usually use the FGCHANGES or BGCHANGES of a simfile to load the lua files (if any are used).\nDisclaimer: Make sure you’ve got making a chart down before starting to make modcharts! Good mods can’t save a bad chart!","wordCount":"1055","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/"},"copyrightHolder":"Project OutFox Wiki","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"Project OutFox Wiki","url":"https://outfox.wiki/","logo":{"@type":"ImageObject","url":"https://outfox.wiki/brand.svg","width":"32","height":"32"}}}</script>
 <script src=../../../js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=../../../js/main-56ca818c.bundle.min.js></script>
 <link rel=preload as=font href=../../../fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -2102,6 +2102,30 @@ FromString (SM5.1 and onwards)
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=kd>local</span> <span class=n>po</span> <span class=o>=</span> <span class=p>{</span><span class=n>GAMESTATE</span><span class=p>:</span><span class=n>GetPlayerState</span><span class=p>(</span><span class=mi>0</span><span class=p>):</span><span class=n>GetPlayerOptions</span><span class=p>(</span><span class=s1>&#39;ModsLevel_Song&#39;</span><span class=p>),</span> <span class=n>GAMESTATE</span><span class=p>:</span><span class=n>GetPlayerState</span><span class=p>(</span><span class=mi>1</span><span class=p>):</span><span class=n>GetPlayerOptions</span><span class=p>(</span><span class=s1>&#39;ModsLevel_Song&#39;</span><span class=p>)}</span>
 </span></span><span class=line><span class=cl><span class=n>po</span><span class=p>[</span><span class=mi>1</span><span class=p>]:</span><span class=n>FromString</span><span class=p>(</span><span class=s2>&#34;*0.5 420 beat&#34;</span><span class=p>)</span>
 </span></span></code></pre></div><div class=gdoc-page__anchorwrap>
+<h3 id=defpandatemplate-project-outfox-alpha-v>
+Def.PandaTemplate (Project OutFox Alpha V)
+<a data-clipboard-text=https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/#defpandatemplate-project-outfox-alpha-v class="gdoc-page__anchor clip flex align-center" title="Anchor to: Def.PandaTemplate (Project OutFox Alpha V)" aria-label="Anchor to: Def.PandaTemplate (Project OutFox Alpha V)" href=#defpandatemplate-project-outfox-alpha-v>
+<svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div>
+<p>Def.PandaTemplate is an Actor that provides an easy interface for adding eased mods as well as set mods. If you are familiar with the ease template, the Def.PandaTemplate Actor should be straightforward to use.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=kd>local</span> <span class=n>mods</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>{</span><span class=mi>0</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=s1>&#39;*1 flip&#39;</span><span class=p>,</span> <span class=s1>&#39;len&#39;</span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=kd>local</span> <span class=n>eases</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>{</span><span class=mi>4</span><span class=p>,</span> <span class=mi>4</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>100</span><span class=p>,</span> <span class=s1>&#39;drunk&#39;</span><span class=p>,</span> <span class=s1>&#39;len&#39;</span><span class=p>,</span> <span class=n>Tweens.easeInOutSine</span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=kr>return</span> <span class=n>Def.ActorFrame</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=n>Def.PandaTemplate</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=n>OnCommand</span> <span class=o>=</span> <span class=kr>function</span><span class=p>(</span><span class=n>self</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>			<span class=n>self</span><span class=p>:</span><span class=n>PopulateBeatMods</span><span class=p>(</span><span class=n>mods</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>			<span class=n>self</span><span class=p>:</span><span class=n>PopulateEases</span><span class=p>(</span><span class=n>eases</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>			<span class=n>self</span><span class=p>:</span><span class=n>sleep</span><span class=p>(</span><span class=n>math.huge</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>		<span class=kr>end</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><div class=gdoc-page__anchorwrap>
 <h2 id=modfile-templates>
 Modfile templates
 <a data-clipboard-text=https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/#modfile-templates class="gdoc-page__anchor clip flex align-center" title="Anchor to: Modfile templates" aria-label="Anchor to: Modfile templates" href=#modfile-templates>
@@ -2110,30 +2134,26 @@ Modfile templates
 </h2>
 </div>
 <p>Starting to make a modfile can seem really daunting if one does not know how to begin. Luckilly, there are many templates out there to help with creating modfiles.</p>
-<p>Ones made for Open/NotITG and SM3.95 are usually done with .xml files, and some rare .lua files.</p>
-<p>Ones made for SM5 are almost always .lua files.</p>
+<p>Ones made for SM3.95 and Open/NotITG are usually done with .xml files, and some rare .lua files.</p>
+<p>Ones made for SM5 and Project OutFox are almost always .lua files.</p>
 <div class=gdoc-page__anchorwrap>
-<h3 id=stepmania-5-based-templates>
-StepMania 5-Based templates
-<a data-clipboard-text=https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/#stepmania-5-based-templates class="gdoc-page__anchor clip flex align-center" title="Anchor to: StepMania 5-Based templates" aria-label="Anchor to: StepMania 5-Based templates" href=#stepmania-5-based-templates>
+<h3 id=project-outfox-templates>
+Project OutFox templates
+<a data-clipboard-text=https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/#project-outfox-templates class="gdoc-page__anchor clip flex align-center" title="Anchor to: Project OutFox templates" aria-label="Anchor to: Project OutFox templates" href=#project-outfox-templates>
 <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
 <ul>
 <li>
-<p>MTK&rsquo;s OutFox port of Exschwasion&rsquo;s easing template</p>
+<p>Sudospective&rsquo;s Ichigo Template</p>
 <ul>
-<li><a class=gdoc-markdown__link href="https://drive.google.com/open?id=1HfCFvTHZUI4dO_eAk4iN5mO3H61caHzE">https://drive.google.com/open?id=1HfCFvTHZUI4dO_eAk4iN5mO3H61caHzE</a></li>
-<li>Lost of local variables used up in the main scope to preserve syntax.</li>
-<li>The place to put the actual calls is a little different.</li>
-</ul>
-</li>
-<li>
-<p>XeroOl&rsquo;s port of the &ldquo;Mirin&rdquo; template</p>
-<ul>
-<li><a class=gdoc-markdown__link href=https://github.com/XeroOl/sm5-mirin>https://github.com/XeroOl/sm5-mirin</a></li>
-<li>Unknown if up to date.</li>
+<li><a class=gdoc-markdown__link href=https://github.com/Sudospective/ichigo-template>https://github.com/Sudospective/ichigo-template</a></li>
+<li>Allows easy creation of classes</li>
+<li>Fully compatible with the new tween system</li>
+<li>Uses the new Def.PandaTemplate modreader</li>
+<li>Object oriented</li>
+<li>Some parts similar to Kitsu, some similar to Mirin</li>
 </ul>
 </li>
 <li>
@@ -2142,8 +2162,32 @@ StepMania 5-Based templates
 <li><a class=gdoc-markdown__link href=https://github.com/Tiny-Foxes/kitsu-template>https://github.com/Tiny-Foxes/kitsu-template</a></li>
 <li>Up to date: fully supports Project OutFox</li>
 <li>Fully compatible with the new tween system</li>
-<li>Object Orientated Template</li>
+<li>Object oriented template</li>
 <li>Easy to find update loop</li>
+</ul>
+</li>
+<li>
+<p>MTK&rsquo;s OutFox port of Exschwasion&rsquo;s easing template</p>
+<ul>
+<li><a class=gdoc-markdown__link href="https://drive.google.com/open?id=1HfCFvTHZUI4dO_eAk4iN5mO3H61caHzE">https://drive.google.com/open?id=1HfCFvTHZUI4dO_eAk4iN5mO3H61caHzE</a></li>
+<li>Lots of local variables used up in the main scope to preserve syntax.</li>
+<li>The place to put the actual calls is a little different.</li>
+</ul>
+</li>
+</ul>
+<div class=gdoc-page__anchorwrap>
+<h3 id=stepmania-5-templates>
+StepMania 5 templates
+<a data-clipboard-text=https://outfox.wiki/dev/effects/EffectFiles-ModifierFiles/#stepmania-5-templates class="gdoc-page__anchor clip flex align-center" title="Anchor to: StepMania 5 templates" aria-label="Anchor to: StepMania 5 templates" href=#stepmania-5-templates>
+<svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div>
+<ul>
+<li>XeroOl&rsquo;s port of the &ldquo;Mirin&rdquo; template
+<ul>
+<li><a class=gdoc-markdown__link href=https://github.com/XeroOl/sm5-mirin>https://github.com/XeroOl/sm5-mirin</a></li>
+<li>Unknown if up to date.</li>
 </ul>
 </li>
 </ul>
@@ -2193,6 +2237,15 @@ OpenITG/NotITG/SM3.95 templates
 <li>Aims to not leave behind global variables. [citation needed]</li>
 <li>Cannot use modstrings? [citation needed]</li>
 <li>difficulty to use vs ease template [citations needed]</li>
+</ul>
+</li>
+<li>
+<p>Sudospective&rsquo;s Lunar Template</p>
+<ul>
+<li><a class=gdoc-markdown__link href=https://github.com/Sudospective/lunar-template>https://github.com/Sudospective/lunar-template</a></li>
+<li>Based off of XeroOl&rsquo;s Mirin template</li>
+<li>Meant to provide support with &ldquo;porting&rdquo; modfiles between NotITG and Project OutFox</li>
+<li>Closest to providing a 1:1 porting experience</li>
 </ul>
 </li>
 <li>
