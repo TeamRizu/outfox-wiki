@@ -131,6 +131,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 3,
                   "difficulty": "Novice",
+                  "chartkey": "X769bd147b3bd0f66f0169f56144f4a735df21219",
                   "is_modchart": false,
                   "peak_nps": 1.23,
                   "chart_info": {
@@ -148,6 +149,7 @@
                   "author": "48productions",
                   "meter": 6,
                   "difficulty": "Easy",
+                  "chartkey": "X0bda8d1859b70896304a4c8a06a5c0d01a6006dd",
                   "is_modchart": false,
                   "peak_nps": 1.9,
                   "chart_info": {
@@ -165,6 +167,7 @@
                   "author": "48productions",
                   "meter": 9,
                   "difficulty": "Medium",
+                  "chartkey": "Xb320c15b97d26af4ef7b5a6f8ad4709d9f396e74",
                   "is_modchart": false,
                   "peak_nps": 4.53,
                   "chart_info": {
@@ -182,6 +185,7 @@
                   "author": "48productions",
                   "meter": 14,
                   "difficulty": "Hard",
+                  "chartkey": "X189f6d85c92337125780171c5346ab3dff2ae98f",
                   "is_modchart": false,
                   "peak_nps": 8.93,
                   "chart_info": {
@@ -199,6 +203,7 @@
                   "author": "Drazil",
                   "meter": 16,
                   "difficulty": "Expert",
+                  "chartkey": "Xb75761ae09497733b1a03da35ee22d1622932103",
                   "is_modchart": false,
                   "peak_nps": 9.35,
                   "chart_info": {
@@ -693,6 +698,7 @@
                   "author": "Homeee",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "X027c7af3381a8780e546584abbbcd2f3b635c4ad",
                   "is_modchart": false,
                   "peak_nps": 1.25,
                   "chart_info": {
@@ -710,6 +716,7 @@
                   "author": "Homeee",
                   "meter": 5,
                   "difficulty": "Easy",
+                  "chartkey": "X401562a587cac5e585283e466426f4f4195ffe70",
                   "is_modchart": false,
                   "peak_nps": 2.5,
                   "chart_info": {
@@ -727,6 +734,7 @@
                   "author": "Homeee",
                   "meter": 8,
                   "difficulty": "Medium",
+                  "chartkey": "X7f5376e641b82093cc4dd5e82ba40e89a493c9d5",
                   "is_modchart": false,
                   "peak_nps": 3.75,
                   "chart_info": {
@@ -744,6 +752,7 @@
                   "author": "Homeee",
                   "meter": 13,
                   "difficulty": "Hard",
+                  "chartkey": "X860df41b3e6de36bbf48bee3a6817709c03e9904",
                   "is_modchart": false,
                   "peak_nps": 6.25,
                   "chart_info": {
@@ -761,6 +770,7 @@
                   "author": "Homeee",
                   "meter": 18,
                   "difficulty": "Expert",
+                  "chartkey": "Xb426b85acea6cb815607bfbcb5ddf7ba555d9d69",
                   "is_modchart": false,
                   "peak_nps": 11.67,
                   "chart_info": {
@@ -1291,6 +1301,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "X2bfb39b7f24a3230152b3c2347f5a421d72e4f24",
                   "is_modchart": false,
                   "peak_nps": 1.07,
                   "chart_info": {
@@ -1308,6 +1319,7 @@
                   "author": "48productions",
                   "meter": 4,
                   "difficulty": "Easy",
+                  "chartkey": "X5adc99ffca1e5461901e6da3562edc1f50839495",
                   "is_modchart": false,
                   "peak_nps": 1.6,
                   "chart_info": {
@@ -1325,6 +1337,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 8,
                   "difficulty": "Medium",
+                  "chartkey": "X2bd543a627fbfa93b9041f08e3c1ed607f1f369a",
                   "is_modchart": false,
                   "peak_nps": 2.67,
                   "chart_info": {
@@ -1342,6 +1355,7 @@
                   "author": "48productions",
                   "meter": 12,
                   "difficulty": "Hard",
+                  "chartkey": "X0b78b03e44d45683d60e6f06afb96870d6b9701f",
                   "is_modchart": false,
                   "peak_nps": 3.73,
                   "chart_info": {
@@ -1359,6 +1373,7 @@
                   "author": "A Dancing Maractus",
                   "meter": 13,
                   "difficulty": "Expert",
+                  "chartkey": "X8c2fcfbe83ba8ca1db7b84358513450b16fa824a",
                   "is_modchart": false,
                   "peak_nps": 4.8,
                   "chart_info": {
@@ -1376,6 +1391,7 @@
                   "author": "A Dancing Maractus",
                   "meter": 13,
                   "difficulty": "Edit",
+                  "chartkey": "Xbaa1b502ec3d31b0b3d67f45acdf716957a0a390",
                   "is_modchart": false,
                   "peak_nps": 5.33,
                   "chart_info": {
@@ -1775,6 +1791,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 4,
                   "difficulty": "Novice",
+                  "chartkey": "X256d354cc771197c6cd61c965e62a77f0ea8c9af",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -1792,6 +1809,7 @@
                   "author": "48productions",
                   "meter": 9,
                   "difficulty": "Easy",
+                  "chartkey": "X2fcdc5fc5f3762b628bde520b6bc26f77970c2e5",
                   "is_modchart": false,
                   "peak_nps": 4.21,
                   "chart_info": {
@@ -1809,6 +1827,7 @@
                   "author": "-YOSEFU-",
                   "meter": 14,
                   "difficulty": "Medium",
+                  "chartkey": "X7797b3e50bb52b69333ec6b84995da91765feba4",
                   "is_modchart": false,
                   "peak_nps": 9.26,
                   "chart_info": {
@@ -1826,6 +1845,7 @@
                   "author": ["A Dancing Maractus", "-YOSEFU-"],
                   "meter": 18,
                   "difficulty": "Hard",
+                  "chartkey": "X3bcce3f75e5ff57bd631a1a5d629fb1168dd9a6d",
                   "is_modchart": false,
                   "peak_nps": 12.63,
                   "chart_info": {
@@ -1843,6 +1863,7 @@
                   "author": "Telperion",
                   "meter": 20,
                   "difficulty": "Expert",
+                  "chartkey": "X91e8444f0fcac042c211ffabea63777c2442327a",
                   "is_modchart": false,
                   "peak_nps": 14.31,
                   "chart_info": {
@@ -2420,6 +2441,7 @@
                   "author": "Marukomuru",
                   "meter": 3,
                   "difficulty": "Novice",
+                  "chartkey": "X52ffdbd81bee53d8c9e05ae62dc177a272bb82dc",
                   "is_modchart": false,
                   "peak_nps": 2.31,
                   "chart_info": {
@@ -2437,6 +2459,7 @@
                   "author": "Marukomuru",
                   "meter": 6,
                   "difficulty": "Easy",
+                  "chartkey": "Xa16a2eb478cfe2fa2fa3fb879ad551627e363a80",
                   "is_modchart": false,
                   "peak_nps": 3.85,
                   "chart_info": {
@@ -2454,6 +2477,7 @@
                   "author": "Marukomuru",
                   "meter": 11,
                   "difficulty": "Medium",
+                  "chartkey": "X346a795a901bb6913e7a62106b2a4bfe82469ddd",
                   "is_modchart": false,
                   "peak_nps": 6.17,
                   "chart_info": {
@@ -2471,6 +2495,7 @@
                   "author": "Marukomuru",
                   "meter": 15,
                   "difficulty": "Hard",
+                  "chartkey": "Xf85aff679ea526e24f0c167cc1a4cb69eb13bf60",
                   "is_modchart": false,
                   "peak_nps": 9.25,
                   "chart_info": {
@@ -2488,6 +2513,7 @@
                   "author": "Marukomuru",
                   "meter": 19,
                   "difficulty": "Expert",
+                  "chartkey": "Xbe696a9aed2bb9b15712f3496f920c1a35c1adad",
                   "is_modchart": false,
                   "peak_nps": 15.42,
                   "chart_info": {
@@ -2505,6 +2531,7 @@
                   "author": "Marukomuru",
                   "meter": 18,
                   "difficulty": "Edit",
+                  "chartkey": "X0b64d9005dc2676cf8c285d864822c5c251fff90",
                   "is_modchart": false,
                   "peak_nps": 12.33,
                   "chart_info": {
@@ -2875,6 +2902,7 @@
                   "author": "Chriszo",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "Xc4ec86b7aa7fe22c54d985dceccc67017d121379",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -2892,6 +2920,7 @@
                   "author": "Gr00txD",
                   "meter": 3,
                   "difficulty": "Novice",
+                  "chartkey": "Xef3c096cc07bafd25d4acaa82cc886ca08ee32d1",
                   "is_modchart": false,
                   "peak_nps": 0.77,
                   "chart_info": {
@@ -2909,6 +2938,7 @@
                   "author": "Chriszo",
                   "meter": 4,
                   "difficulty": "Easy",
+                  "chartkey": "X0691111ff01c177fb448affc118bbeee6e68ccc1",
                   "is_modchart": false,
                   "peak_nps": 2.13,
                   "chart_info": {
@@ -2926,6 +2956,7 @@
                   "author": "Gr00txD",
                   "meter": 5,
                   "difficulty": "Easy",
+                  "chartkey": "X140c5502f63db18d7878d9315d165ee060ecd3ee",
                   "is_modchart": false,
                   "peak_nps": 2.82,
                   "chart_info": {
@@ -2943,6 +2974,7 @@
                   "author": "Chriszo",
                   "meter": 8,
                   "difficulty": "Medium",
+                  "chartkey": "X0cb21608e01389d297b7f221e1fc1f02098be931",
                   "is_modchart": false,
                   "peak_nps": 3.54,
                   "chart_info": {
@@ -2960,6 +2992,7 @@
                   "author": "Gr00txD",
                   "meter": 9,
                   "difficulty": "Medium",
+                  "chartkey": "X65b2fecd623746d6fcb292d261dd9d2b46f044ca",
                   "is_modchart": false,
                   "peak_nps": 4.96,
                   "chart_info": {
@@ -2977,6 +3010,7 @@
                   "author": "Chriszo",
                   "meter": 13,
                   "difficulty": "Hard",
+                  "chartkey": "X84e2074e2432aceedb659b30563a4d132d9d59c3",
                   "is_modchart": false,
                   "peak_nps": 4.96,
                   "chart_info": {
@@ -2994,6 +3028,7 @@
                   "author": "Gr00txD",
                   "meter": 14,
                   "difficulty": "Hard",
+                  "chartkey": "Xe417d8d55722cdeb2f2cf419c352553a61182e2d",
                   "is_modchart": false,
                   "peak_nps": 7.79,
                   "chart_info": {
@@ -3011,6 +3046,7 @@
                   "author": "Gr00txD",
                   "meter": 17,
                   "difficulty": "Expert",
+                  "chartkey": "X1d64bf472f6236054e42f444f861a6c29682368e",
                   "is_modchart": false,
                   "peak_nps": 0.77,
                   "chart_info": {
@@ -3028,6 +3064,7 @@
                   "author": "Gr00txD",
                   "meter": 19,
                   "difficulty": "Edit",
+                  "chartkey": "Xdb0dfe2b5c7ff000913e1165c05e21bb3db0d80b",
                   "is_modchart": false,
                   "peak_nps": 11.33,
                   "chart_info": {
@@ -3700,6 +3737,7 @@
                   "author": "48productions",
                   "meter": 1,
                   "difficulty": "Novice",
+                  "chartkey": "X57aa1f16238051f38c262715a10dcbc17be807f1",
                   "is_modchart": false,
                   "peak_nps": 0.51,
                   "chart_info": {
@@ -3717,6 +3755,7 @@
                   "author": "48productions",
                   "meter": 4,
                   "difficulty": "Easy",
+                  "chartkey": "X85470361fcc687cc8b7c9692a02c993caa7e48fb",
                   "is_modchart": false,
                   "peak_nps": 2.03,
                   "chart_info": {
@@ -3734,6 +3773,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 6,
                   "difficulty": "Medium",
+                  "chartkey": "X29e0008bb788b39bc1b9a24a740f83ad85a544fc",
                   "is_modchart": false,
                   "peak_nps": 3.56,
                   "chart_info": {
@@ -3751,6 +3791,7 @@
                   "author": "A Dancing Maractus",
                   "meter": 7,
                   "difficulty": "Medium",
+                  "chartkey": "Xd19b5540757f02a4cae655a444014380655dfb20",
                   "is_modchart": false,
                   "peak_nps": 3.56,
                   "chart_info": {
@@ -3768,6 +3809,7 @@
                   "author": "A Dancing Maractus",
                   "meter": 12,
                   "difficulty": "Hard",
+                  "chartkey": "Xec82ca1ca478218d1eb2e9af5a3dd0c336f23552",
                   "is_modchart": false,
                   "peak_nps": 5.08,
                   "chart_info": {
@@ -3785,6 +3827,7 @@
                   "author": ["Jose Varela", "A Dancing Maractus"],
                   "meter": 14,
                   "difficulty": "Expert",
+                  "chartkey": "X5783d4620011e86ce9b71804c2598d01ba00dc8f",
                   "is_modchart": false,
                   "peak_nps": 8.68,
                   "chart_info": {
@@ -4159,6 +4202,7 @@
                   "author": "Jack5",
                   "meter": 9,
                   "difficulty": "Novice",
+                  "chartkey": "Xcbab6402d60d5cebe82726a0adb3d85a26e4d136",
                   "is_modchart": false,
                   "peak_nps": 2.25,
                   "chart_info": {
@@ -4176,6 +4220,7 @@
                   "author": "Jack5",
                   "meter": 11,
                   "difficulty": "Easy",
+                  "chartkey": "Xefafaa32e1d1956fb2c2bc26988f0bec27e8a6b0",
                   "is_modchart": false,
                   "peak_nps": 3.0,
                   "chart_info": {
@@ -4193,6 +4238,7 @@
                   "author": "Jack5",
                   "meter": 13,
                   "difficulty": "Medium",
+                  "chartkey": "Xcbdd43e2b8ef4ea648a7cd2dcf1ed93c0c5f384c",
                   "is_modchart": false,
                   "peak_nps": 5.25,
                   "chart_info": {
@@ -4210,6 +4256,7 @@
                   "author": "-YOSEFU-",
                   "meter": 15,
                   "difficulty": "Hard",
+                  "chartkey": "Xf5523024b0f110d653c4a4dada21446c95157bb2",
                   "is_modchart": false,
                   "peak_nps": 6.75,
                   "chart_info": {
@@ -4227,6 +4274,7 @@
                   "author": "-YOSEFU-",
                   "meter": 16,
                   "difficulty": "Expert",
+                  "chartkey": "X495cd1a8396cd69b82b15be0216e0b6460a1aadb",
                   "is_modchart": false,
                   "peak_nps": 7.5,
                   "chart_info": {
@@ -4542,6 +4590,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "X9ce2de08b90fd95412fe145f6a592bc093103b32",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -4559,6 +4608,7 @@
                   "author": "Sevish",
                   "meter": 9,
                   "difficulty": "Easy",
+                  "chartkey": "X4f5f2230552fd43fb089885cb4fcfa9e3b4a1e5c",
                   "is_modchart": false,
                   "peak_nps": 4.67,
                   "chart_info": {
@@ -4576,6 +4626,7 @@
                   "author": "-YOSEFU-",
                   "meter": 10,
                   "difficulty": "Medium",
+                  "chartkey": "X46cb0e52e58c33e6fa20eb41ff8a7bc00070a99a",
                   "is_modchart": false,
                   "peak_nps": 4.0,
                   "chart_info": {
@@ -4593,6 +4644,7 @@
                   "author": "-YOSEFU-",
                   "meter": 13,
                   "difficulty": "Hard",
+                  "chartkey": "X9b6fb9980ff990d3a2a97c85e1b41b80c6b8bb87",
                   "is_modchart": false,
                   "peak_nps": 4.67,
                   "chart_info": {
@@ -4610,6 +4662,7 @@
                   "author": "Sudospective",
                   "meter": 9,
                   "difficulty": "Expert",
+                  "chartkey": "Xec134c357ebc87e149f0931eaa2b2659001b1489",
                   "is_modchart": false,
                   "peak_nps": 10.0,
                   "chart_info": {
@@ -4891,6 +4944,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 3,
                   "difficulty": "Novice",
+                  "chartkey": "X585c6bde4091482fc83ae8a0f61afbebd22d12fc",
                   "is_modchart": false,
                   "peak_nps": 0.46,
                   "chart_info": {
@@ -4908,6 +4962,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 5,
                   "difficulty": "Easy",
+                  "chartkey": "X75346e1eb30390caceebbf4ff8bb493baa5aa271",
                   "is_modchart": false,
                   "peak_nps": 0.92,
                   "chart_info": {
@@ -4925,6 +4980,7 @@
                   "author": "Drazil",
                   "meter": 11,
                   "difficulty": "Hard",
+                  "chartkey": "X8af6b88837203e6c1a8277c5d479b33976bef2e4",
                   "is_modchart": true,
                   "modchart_difficulty": 3,
                   "peak_nps": 3.21,
@@ -4943,6 +4999,7 @@
                   "author": "Drazil",
                   "meter": 13,
                   "difficulty": "Expert",
+                  "chartkey": "Xc4af6a3ed356491cd9e5e894dda08204efc0c410",
                   "is_modchart": true,
                   "modchart_difficulty": 3,
                   "peak_nps": 4.58,
@@ -5077,6 +5134,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "X41b9ee1c5c752b24a90785590f78fb90ca4a7d13",
                   "is_modchart": false,
                   "peak_nps": 0.79,
                   "chart_info": {
@@ -5094,6 +5152,7 @@
                   "author": "Chriszo",
                   "meter": 5,
                   "difficulty": "Easy",
+                  "chartkey": "Xf4edfa901fe70216aa5b4b89714c094d0f86491d",
                   "is_modchart": false,
                   "peak_nps": 1.19,
                   "chart_info": {
@@ -5111,6 +5170,7 @@
                   "author": "Chriszo",
                   "meter": 9,
                   "difficulty": "Medium",
+                  "chartkey": "X8925c724497daca728563346dca5eecf7d164308",
                   "is_modchart": false,
                   "peak_nps": 2.77,
                   "chart_info": {
@@ -5128,6 +5188,7 @@
                   "author": "-YOSEFU-",
                   "meter": 12,
                   "difficulty": "Hard",
+                  "chartkey": "X19e3fe5756539f6b5fd499083ea8e9554e8105f9",
                   "is_modchart": false,
                   "peak_nps": 4.75,
                   "chart_info": {
@@ -5145,6 +5206,7 @@
                   "author": "Marukomuru",
                   "meter": 15,
                   "difficulty": "Expert",
+                  "chartkey": "X16857bd559f61ca51fb636f54369be3a6de2b84d",
                   "is_modchart": false,
                   "peak_nps": 0.46,
                   "chart_info": {
@@ -5531,6 +5593,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 3,
                   "difficulty": "Novice",
+                  "chartkey": "Xd744ed1a67abc482a4c7afb492cfe27c5ace40ba",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -5548,6 +5611,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 7,
                   "difficulty": "Easy",
+                  "chartkey": "Xd0c48682fb7bf1d999bf54f1ddade939954a1b8f",
                   "is_modchart": false,
                   "peak_nps": 3.33,
                   "chart_info": {
@@ -5565,6 +5629,7 @@
                   "author": "48productions",
                   "meter": 12,
                   "difficulty": "Medium",
+                  "chartkey": "X1032b3b962aa559c1fe93f1cf02466c93adbdde6",
                   "is_modchart": false,
                   "peak_nps": 5.83,
                   "chart_info": {
@@ -5582,6 +5647,7 @@
                   "author": "A Dancing Maractus",
                   "meter": 16,
                   "difficulty": "Hard",
+                  "chartkey": "X7a16a8b1c8c64e75a27a5895f5f2234fe74705d3",
                   "is_modchart": false,
                   "peak_nps": 10.83,
                   "chart_info": {
@@ -5599,6 +5665,7 @@
                   "author": "A Dancing Maractus",
                   "meter": 18,
                   "difficulty": "Expert",
+                  "chartkey": "X9eccd7ef3e8e72c59a248f55048fa94c24996358",
                   "is_modchart": false,
                   "peak_nps": 15.0,
                   "chart_info": {
@@ -5926,6 +5993,7 @@
                   "author": "48productions",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "Xce64461dd5ead714f68bdf0bf3abace6a1c31673",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -5943,6 +6011,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 5,
                   "difficulty": "Easy",
+                  "chartkey": "Xe7da635456b9731b72d1f09bd97d1242770ff2ec",
                   "is_modchart": false,
                   "peak_nps": 1.67,
                   "chart_info": {
@@ -5960,6 +6029,7 @@
                   "author": "Chriszo",
                   "meter": 7,
                   "difficulty": "Easy",
+                  "chartkey": "X4d016d30b1df40acdb0fbcbda64e274dca998917",
                   "is_modchart": false,
                   "peak_nps": 2.5,
                   "chart_info": {
@@ -5977,6 +6047,7 @@
                   "author": "Chriszo",
                   "meter": 10,
                   "difficulty": "Medium",
+                  "chartkey": "X6ca279a5daee98b3172faae222af6d571e01fd57",
                   "is_modchart": false,
                   "peak_nps": 5.0,
                   "chart_info": {
@@ -5994,6 +6065,7 @@
                   "author": "48productions",
                   "meter": 14,
                   "difficulty": "Hard",
+                  "chartkey": "Xb360f78b65e3bec885cb2c92d8f18446c6182dc3",
                   "is_modchart": false,
                   "peak_nps": 5.83,
                   "chart_info": {
@@ -6191,6 +6263,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 1,
                   "difficulty": "Novice",
+                  "chartkey": "X494de2b9040c1f150c3ad0e40b873758c2e6d176",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -6208,6 +6281,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 2,
                   "difficulty": "Easy",
+                  "chartkey": "X2058705438fc52a64b803b24bdd019b10cda3040",
                   "is_modchart": false,
                   "peak_nps": 0.75,
                   "chart_info": {
@@ -6225,6 +6299,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 4,
                   "difficulty": "Medium",
+                  "chartkey": "X3a94f8d134cf96e135864953e0063b6eb004a542",
                   "is_modchart": false,
                   "peak_nps": 2.26,
                   "chart_info": {
@@ -6242,6 +6317,7 @@
                   "author": "-YOSEFU-",
                   "meter": 8,
                   "difficulty": "Hard",
+                  "chartkey": "X2ec21e91a5cb074ed3e2239df7483870e62fe658",
                   "is_modchart": false,
                   "peak_nps": 5.27,
                   "chart_info": {
@@ -6614,6 +6690,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "Xf2e9b5fe48d3a8a5e2310ff14a82f4cceae25c5f",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -6631,6 +6708,7 @@
                   "author": "-YOSEFU-",
                   "meter": 6,
                   "difficulty": "Easy",
+                  "chartkey": "Xfc63b3865ffed5f9896134c3443f1574fe26a215",
                   "is_modchart": false,
                   "peak_nps": 2.23,
                   "chart_info": {
@@ -6648,6 +6726,7 @@
                   "author": "-YOSEFU-",
                   "meter": 10,
                   "difficulty": "Medium",
+                  "chartkey": "Xc39c9669eba7ad16017575878ef3ebbdbc75c79e",
                   "is_modchart": false,
                   "peak_nps": 3.91,
                   "chart_info": {
@@ -6665,6 +6744,7 @@
                   "author": "-YOSEFU-",
                   "meter": 13,
                   "difficulty": "Hard",
+                  "chartkey": "X9ea2ce2d3ffdf82b5e75bc8de2f1919cba81d0bc",
                   "is_modchart": false,
                   "peak_nps": 5.03,
                   "chart_info": {
@@ -6682,6 +6762,7 @@
                   "author": "-YOSEFU-",
                   "meter": 14,
                   "difficulty": "Edit",
+                  "chartkey": "X429d1b41032994bebc915f2668a04de7f90f69dd",
                   "is_modchart": false,
                   "peak_nps": 6.14,
                   "chart_info": {
@@ -7033,6 +7114,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 1,
                   "difficulty": "Novice",
+                  "chartkey": "X3ff4b64f38a34304a7524df3dca0773cacb5ced2",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -7050,6 +7132,7 @@
                   "author": "Timo Kitsune",
                   "meter": 3,
                   "difficulty": "Easy",
+                  "chartkey": "X042b49ce9443798c3562b8b387374b95c4c9ee66",
                   "is_modchart": false,
                   "peak_nps": 1.52,
                   "chart_info": {
@@ -7067,6 +7150,7 @@
                   "author": "Timo Kitsune",
                   "meter": 7,
                   "difficulty": "Medium",
+                  "chartkey": "Xfa559ed7066fe31ca9bb180e97801000955733bd",
                   "is_modchart": false,
                   "peak_nps": 3.56,
                   "chart_info": {
@@ -7084,6 +7168,7 @@
                   "author": "Chriszo",
                   "meter": 11,
                   "difficulty": "Hard",
+                  "chartkey": "X70c3916342b9ae28b3162c1c4599f78b2992cdb1",
                   "is_modchart": false,
                   "peak_nps": 6.61,
                   "chart_info": {
@@ -7101,6 +7186,7 @@
                   "author": "Timo Kitsune",
                   "meter": 11,
                   "difficulty": "Expert",
+                  "chartkey": "Xb53ea3b661ae0ec6df3f13d1f96184ef25c02722",
                   "is_modchart": false,
                   "peak_nps": 6.61,
                   "chart_info": {
@@ -7362,6 +7448,7 @@
                   "author": "-YOSEFU-",
                   "meter": 6,
                   "difficulty": "Novice",
+                  "chartkey": "X9d2651495b5a98f4f142614b65848e9778131344",
                   "is_modchart": false,
                   "peak_nps": 3.5,
                   "chart_info": {
@@ -7379,6 +7466,7 @@
                   "author": "-YOSEFU-",
                   "meter": 9,
                   "difficulty": "Easy",
+                  "chartkey": "Xea997427a8801858ebc55f1c7d3f25681098a1a6",
                   "is_modchart": false,
                   "peak_nps": 4.67,
                   "chart_info": {
@@ -7396,6 +7484,7 @@
                   "author": "-YOSEFU-",
                   "meter": 13,
                   "difficulty": "Medium",
+                  "chartkey": "Xca9f978302b7edf9a3068edb321e1cc42209d4b3",
                   "is_modchart": false,
                   "peak_nps": 7.0,
                   "chart_info": {
@@ -7413,6 +7502,7 @@
                   "author": "-YOSEFU-",
                   "meter": 16,
                   "difficulty": "Hard",
+                  "chartkey": "Xc9f7fa6be6806025c8d87d82b5bfa014b81ceb19",
                   "is_modchart": false,
                   "peak_nps": 9.33,
                   "chart_info": {
@@ -7430,6 +7520,7 @@
                   "author": "-YOSEFU-",
                   "meter": 19,
                   "difficulty": "Expert",
+                  "chartkey": "X64564b328f619327a4258dda14b0ecbc322e8635",
                   "is_modchart": false,
                   "peak_nps": 17.5,
                   "chart_info": {
@@ -7797,6 +7888,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 3,
                   "difficulty": "Novice",
+                  "chartkey": "X7d9f005a597653b9a5f3c5484c136e2091f0bb4c",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -7814,6 +7906,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 5,
                   "difficulty": "Easy",
+                  "chartkey": "Xa1dd438e1c4aecd7d6037cf83b664adaab05d25a",
                   "is_modchart": false,
                   "peak_nps": 1.42,
                   "chart_info": {
@@ -7831,6 +7924,7 @@
                   "author": "Chriszo",
                   "meter": 7,
                   "difficulty": "Easy",
+                  "chartkey": "X02d31187e45626a34370a7ed93ce14f1e6fb3040",
                   "is_modchart": false,
                   "peak_nps": 2.13,
                   "chart_info": {
@@ -7848,6 +7942,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 9,
                   "difficulty": "Medium",
+                  "chartkey": "X817427daed31f404c08580fc900f40b34ac42ad9",
                   "is_modchart": false,
                   "peak_nps": 3.54,
                   "chart_info": {
@@ -7865,6 +7960,7 @@
                   "author": "Chriszo",
                   "meter": 9,
                   "difficulty": "Medium",
+                  "chartkey": "X79e5d61dae892c0b79adfe71f7e7721f59633450",
                   "is_modchart": false,
                   "peak_nps": 4.96,
                   "chart_info": {
@@ -7882,6 +7978,7 @@
                   "author": "-YOSEFU-",
                   "meter": 14,
                   "difficulty": "Hard",
+                  "chartkey": "X2d59383661a675a6b24367b762e6768610b44841",
                   "is_modchart": false,
                   "peak_nps": 7.08,
                   "chart_info": {
@@ -7899,6 +7996,7 @@
                   "author": "-YOSEFU-",
                   "meter": 17,
                   "difficulty": "Expert",
+                  "chartkey": "X5283329f39657b2c612fec3bfb633837c4892f81",
                   "is_modchart": false,
                   "peak_nps": 8.5,
                   "chart_info": {
@@ -8147,6 +8245,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "Xfa9d317fc5965eb0b7712cd9d4aa48ec627fa3e4",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -8164,6 +8263,7 @@
                   "author": "-YOSEFU-",
                   "meter": 14,
                   "difficulty": "Hard",
+                  "chartkey": "Xdd9a9e080b6bcebc3fd02a31f7ab1a90ccf2bffd",
                   "is_modchart": false,
                   "peak_nps": 7.5,
                   "chart_info": {
@@ -8667,6 +8767,7 @@
                   "author": "48productions",
                   "meter": 1,
                   "difficulty": "Novice",
+                  "chartkey": "X2c6a0504b73991c9db8696710d0930d475280d3c",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -8684,6 +8785,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "Xb67bbd10951ce4a4d495e884473c6a21236d3ba3",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -8701,6 +8803,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 3,
                   "difficulty": "Easy",
+                  "chartkey": "Xc5862914828e2350e7bc1caa599f760a4d9fed04",
                   "is_modchart": false,
                   "peak_nps": 0.58,
                   "chart_info": {
@@ -8718,6 +8821,7 @@
                   "author": "48productions",
                   "meter": 7,
                   "difficulty": "Medium",
+                  "chartkey": "X8dd38ede01e91ce196b22b5eac440160dc1d11f1",
                   "is_modchart": false,
                   "peak_nps": 2.33,
                   "chart_info": {
@@ -8735,6 +8839,7 @@
                   "author": "-YOSEFU-",
                   "meter": 12,
                   "difficulty": "Hard",
+                  "chartkey": "X99e98ff304e29dda13e3cfb55bbca57b02f836ba",
                   "is_modchart": false,
                   "peak_nps": 4.08,
                   "chart_info": {
@@ -8752,6 +8857,7 @@
                   "author": "-YOSEFU-",
                   "meter": 15,
                   "difficulty": "Expert",
+                  "chartkey": "X8f90b30d22937af04ab915010d38f7de4566ac89",
                   "is_modchart": false,
                   "peak_nps": 8.75,
                   "chart_info": {
@@ -9042,6 +9148,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 3,
                   "difficulty": "Novice",
+                  "chartkey": "X30e74a83a1deeaf6ac35be7980eb74f6f12aa9dc",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -9059,6 +9166,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 5,
                   "difficulty": "Easy",
+                  "chartkey": "Xf105f7fa2d812705661a2812936afa4eb7c3570f",
                   "is_modchart": false,
                   "peak_nps": 2.19,
                   "chart_info": {
@@ -9076,6 +9184,7 @@
                   "author": "-YOSEFU-",
                   "meter": 10,
                   "difficulty": "Medium",
+                  "chartkey": "Xd8053fefc1ef29abab40a6a5c84332e763e20851",
                   "is_modchart": false,
                   "peak_nps": 5.1,
                   "chart_info": {
@@ -9093,6 +9202,7 @@
                   "author": "-YOSEFU-",
                   "meter": 12,
                   "difficulty": "Hard",
+                  "chartkey": "X80f26c51c276d0d9226cab2b5e31b5c7ae66b3aa",
                   "is_modchart": false,
                   "peak_nps": 8.02,
                   "chart_info": {
@@ -9110,6 +9220,7 @@
                   "author": "-YOSEFU-",
                   "meter": 15,
                   "difficulty": "Expert",
+                  "chartkey": "X28b4164885a145a455b0c4040a9b75c571b191d2",
                   "is_modchart": false,
                   "peak_nps": 10.94,
                   "chart_info": {
@@ -9220,6 +9331,7 @@
                   "author": "Chriszo",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "Xcdb138dedcec2b7c75f4792391e82096042fbb97",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -9237,6 +9349,7 @@
                   "author": "Chriszo",
                   "meter": 4,
                   "difficulty": "Easy",
+                  "chartkey": "Xe018b174b66f7cf4afd824c45039b09c46a2f620",
                   "is_modchart": false,
                   "peak_nps": 1.5,
                   "chart_info": {
@@ -9254,6 +9367,7 @@
                   "author": "Chriszo",
                   "meter": 7,
                   "difficulty": "Medium",
+                  "chartkey": "X044a0e1f69f7f8d29781cf0a41a9ce0b7934444b",
                   "is_modchart": false,
                   "peak_nps": 2.25,
                   "chart_info": {
@@ -9271,6 +9385,7 @@
                   "author": "Chriszo",
                   "meter": 11,
                   "difficulty": "Hard",
+                  "chartkey": "Xc559bdc75a3ce476a8fbf1cb9352e11ecb4a69b0",
                   "is_modchart": false,
                   "peak_nps": 4.5,
                   "chart_info": {
@@ -9285,9 +9400,28 @@
                   }
                 },
                 {
+                  "author": "Daniel Rotwind",
+                  "meter": 15,
+                  "difficulty": "Hard",
+                  "chartkey": "X823c5d27fc821a62826fb8c6c07593a9a0c3c81f",
+                  "is_modchart": false,
+                  "peak_nps": 9.00,
+                  "chart_info": {
+                    "notes": 520,
+                    "jumps": 47,
+                    "holds": 14,
+                    "mines": 50,
+                    "hands": 1,
+                    "rolls": 0,
+                    "lifts": 0,
+                    "fakes": 0
+                  }
+                },
+                {
                   "author": "-YOSEFU-",
                   "meter": 16,
                   "difficulty": "Expert",
+                  "chartkey": "X63bf933712b6e4e3d4847132d925355e370a3f3f",
                   "is_modchart": false,
                   "peak_nps": 10.5,
                   "chart_info": {
@@ -9305,6 +9439,7 @@
                   "author": "-YOSEFU-",
                   "meter": 18,
                   "difficulty": "Edit",
+                  "chartkey": "X33a82acbc03fabef5ce9e95040e3b3dac35e2c07",
                   "is_modchart": false,
                   "peak_nps": 11.25,
                   "chart_info": {
@@ -9687,7 +9822,7 @@
           }
         },
         {
-          "title": "Sweetners",
+          "title": "Sweeteners",
           "length": "2.36",
           "bpm": 153,
           "graphics": {
@@ -9720,6 +9855,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 3,
                   "difficulty": "Novice",
+                  "chartkey": "Xe0156ce00b54a14e9fa262fb5539f8a605ba4fca",
                   "is_modchart": false,
                   "peak_nps": 0.64,
                   "chart_info": {
@@ -9737,6 +9873,7 @@
                   "author": ["Jack5", "Daniel Rotwind"],
                   "meter": 10,
                   "difficulty": "Medium",
+                  "chartkey": "X64ba1152125fe0cf7571ce937a7262b4fc048667",
                   "is_modchart": false,
                   "peak_nps": 3.19,
                   "chart_info": {
@@ -9754,6 +9891,7 @@
                   "author": ["Jack5", "Daniel Rotwind"],
                   "meter": 13,
                   "difficulty": "Hard",
+                  "chartkey": "X30fb59ff61aaba33926fe598419d120912742d0f",
                   "is_modchart": false,
                   "peak_nps": 5.1,
                   "chart_info": {
@@ -9909,6 +10047,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 3,
                   "difficulty": "Novice",
+                  "chartkey": "X7d9a31af111a834322e3f3caceca97bf18c94e9f",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -9926,6 +10065,7 @@
                   "author": "-YOSEFU-",
                   "meter": 18,
                   "difficulty": "Expert",
+                  "chartkey": "Xe0f626f9aaafcbb8c3e18a19502a94cb474d8656",
                   "is_modchart": false,
                   "peak_nps": 9.74,
                   "chart_info": {
@@ -10087,6 +10227,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 3,
                   "difficulty": "Novice",
+                  "chartkey": "Xb7420bce84c36eb655ff4188b411a31b9e44c9c3",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -10104,6 +10245,7 @@
                   "author": "Rippy Ripster",
                   "meter": 18,
                   "difficulty": "Hard",
+                  "chartkey": "X8b15dc0bf3762cff8bb4c558f7e8de564fd47664",
                   "is_modchart": false,
                   "peak_nps": 12.5,
                   "chart_info": {
@@ -10416,6 +10558,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 1,
                   "difficulty": "Novice",
+                  "chartkey": "X9b493548a46508e4c31efed57abb5efa2b04a615",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -10433,6 +10576,7 @@
                   "author": "Rippy Ripster",
                   "meter": 1,
                   "difficulty": "Novice",
+                  "chartkey": "Xb7abd7ddcb3b054034c77677d187e0c8032d4f61",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -10450,6 +10594,7 @@
                   "author": "Rippy Ripster",
                   "meter": 3,
                   "difficulty": "Easy",
+                  "chartkey": "X4dc869fa157e58d5d583e5eee52311f0a6271209",
                   "is_modchart": false,
                   "peak_nps": 1.5,
                   "chart_info": {
@@ -10467,6 +10612,7 @@
                   "author": "Rippy Ripster",
                   "meter": 6,
                   "difficulty": "Medium",
+                  "chartkey": "X6dabad10be83431531a0ace0bb64355e732a104d",
                   "is_modchart": false,
                   "peak_nps": 2.5,
                   "chart_info": {
@@ -10484,6 +10630,7 @@
                   "author": "Rippy Ripster",
                   "meter": 9,
                   "difficulty": "Hard",
+                  "chartkey": "Xb17dbdc0e00ca307307ff0dceb9e5727c010fb46",
                   "is_modchart": false,
                   "peak_nps": 3.5,
                   "chart_info": {
@@ -10501,6 +10648,7 @@
                   "author": "Rippy Ripster",
                   "meter": 11,
                   "difficulty": "Expert",
+                  "chartkey": "X457f02e61881d2eb846998d98d89257022ffd1f8",
                   "is_modchart": false,
                   "peak_nps": 4.5,
                   "chart_info": {
@@ -10758,6 +10906,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 2,
                   "difficulty": "Novice",
+                  "chartkey": "X3e542735d16429da7e26c5f9ece5a16d22705476",
                   "is_modchart": false,
                   "peak_nps": 0.0,
                   "chart_info": {
@@ -10775,6 +10924,7 @@
                   "author": "Rippy Ripster",
                   "meter": 7,
                   "difficulty": "Easy",
+                  "chartkey": "X3f5bf28ad991687b99af0833580b17703f19eec9",
                   "is_modchart": false,
                   "peak_nps": 3.75,
                   "chart_info": {
@@ -10792,6 +10942,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 8,
                   "difficulty": "Medium",
+                  "chartkey": "X0554906f8e4b3dddb24b286ea2af48152d1e7f55",
                   "is_modchart": false,
                   "peak_nps": 3.0,
                   "chart_info": {
@@ -10809,6 +10960,7 @@
                   "author": "48productions",
                   "meter": 9,
                   "difficulty": "Hard",
+                  "chartkey": "X4bfceecfd377ed6ae1e7b982f3f45c79cef5708f",
                   "is_modchart": false,
                   "peak_nps": 5.25,
                   "chart_info": {
@@ -10826,6 +10978,7 @@
                   "author": "Daniel Rotwind",
                   "meter": 13,
                   "difficulty": "Hard",
+                  "chartkey": "Xec2b1120f226ea3aa7f20cf9e0a96465d7be7721",
                   "is_modchart": false,
                   "peak_nps": 5.25,
                   "chart_info": {
@@ -10843,6 +10996,7 @@
                   "author": "-YOSEFU-",
                   "meter": 15,
                   "difficulty": "Expert",
+                  "chartkey": "Xf505b690d488ab942975d9e1b4a19bbf5374224d",
                   "is_modchart": false,
                   "peak_nps": 11.25,
                   "chart_info": {
@@ -11211,6 +11365,7 @@
                   "author": "-YOSEFU-",
                   "meter": 16,
                   "difficulty": "Expert",
+                  "chartkey": "X046f88c02c336cf5c6f6e81b25bf4a1515f4eae6",
                   "is_modchart": false,
                   "peak_nps": 8.44,
                   "chart_info": {
@@ -11429,6 +11584,7 @@
                   "author": "-YOSEFU-",
                   "meter": 17,
                   "difficulty": "Expert",
+                  "chartkey": "Xa127b423ddafae4227dd6f326de8a58a3a4c7f3d",
                   "is_modchart": false,
                   "peak_nps": 13.33,
                   "chart_info": {
@@ -11579,6 +11735,7 @@
                   "author": "Marukomuru",
                   "meter": 1,
                   "difficulty": "Novice",
+                  "chartkey": "X40fd3d68c0d1544553ac08b3c6fde0b92fcf2178",
                   "is_modchart": false,
                   "peak_nps": 1.67,
                   "chart_info": {
@@ -11596,6 +11753,7 @@
                   "author": "Marukomuru",
                   "meter": 5,
                   "difficulty": "Easy",
+                  "chartkey": "X8feedb63c180aed108838abb14522df2c4fffec0",
                   "is_modchart": false,
                   "peak_nps": 2.23,
                   "chart_info": {
@@ -11613,6 +11771,7 @@
                   "author": "Marukomuru",
                   "meter": 8,
                   "difficulty": "Medium",
+                  "chartkey": "Xe3e1a6958e25a08dad2ca44f6b7ae67b906dc9b7",
                   "is_modchart": false,
                   "peak_nps": 4.47,
                   "chart_info": {
@@ -11630,6 +11789,7 @@
                   "author": "Marukomuru",
                   "meter": 14,
                   "difficulty": "Hard",
+                  "chartkey": "Xa2febf9d1e69e6ad8140c4f695e7576d5bfada8f",
                   "is_modchart": false,
                   "peak_nps": 8.37,
                   "chart_info": {
@@ -11647,6 +11807,7 @@
                   "author": "Marukomuru",
                   "meter": 17,
                   "difficulty": "Expert",
+                  "chartkey": "Xf52e1a225be5dfbc0d6270c8c3bfd6deb693e9aa",
                   "is_modchart": false,
                   "peak_nps": 8.93,
                   "chart_info": {
@@ -12143,6 +12304,7 @@
                   "author": "-YOSEFU-",
                   "meter": 5,
                   "difficulty": "Novice",
+                  "chartkey": "X8dc5924b105e1192b910da6098a8d000183d256e",
                   "is_modchart": false,
                   "peak_nps": 1.25,
                   "chart_info": {
@@ -12160,6 +12322,7 @@
                   "author": "-YOSEFU-",
                   "meter": 10,
                   "difficulty": "Easy",
+                  "chartkey": "X81e25852e0ba8a57f49e0a0690f2031c5377c377",
                   "is_modchart": false,
                   "peak_nps": 2.00,
                   "chart_info": {
@@ -12177,6 +12340,7 @@
                   "author": "-YOSEFU-",
                   "meter": 14,
                   "difficulty": "Medium",
+                  "chartkey": "X3720edfc2d94df0130c094cdfbc63ee54ed21f78",
                   "is_modchart": false,
                   "peak_nps": 2.50,
                   "chart_info": {
@@ -12194,6 +12358,7 @@
                   "author": "-YOSEFU-",
                   "meter": 16,
                   "difficulty": "Hard",
+                  "chartkey": "X42d55d360f2d5a0218e08d6fa0303bbc23756b63",
                   "is_modchart": false,
                   "peak_nps": 3.00,
                   "chart_info": {
@@ -12211,6 +12376,7 @@
                   "author": "-YOSEFU-",
                   "meter": 18,
                   "difficulty": "Expert",
+                  "chartkey": "X4fc77dae7f5f7acf608b3db399ed464d01a77a3c",
                   "is_modchart": false,
                   "peak_nps": 4.00,
                   "chart_info": {
@@ -12371,6 +12537,7 @@
                   "author": "Rippy Ripster",
                   "meter": 6,
                   "difficulty": "Novice",
+                  "chartkey": "X1e87ca6ffcc45c012cbfd7a1c1d5252a4333a604",
                   "is_modchart": false,
                   "peak_nps": 3.75,
                   "chart_info": {
@@ -12388,6 +12555,7 @@
                   "author": "Rippy Ripster",
                   "meter": 11,
                   "difficulty": "Easy",
+                  "chartkey": "X495bf2fdcfab8d9bed416b58c2a66734289950c5",
                   "is_modchart": false,
                   "peak_nps": 6.56,
                   "chart_info": {
@@ -12405,6 +12573,7 @@
                   "author": "Rippy Ripster",
                   "meter": 14,
                   "difficulty": "Medium",
+                  "chartkey": "Xa5e7cd99bd425090c26f1837b6215132b18f400f",
                   "is_modchart": false,
                   "peak_nps": 7.50,
                   "chart_info": {
@@ -12422,6 +12591,7 @@
                   "author": "Rippy Ripster",
                   "meter": 17,
                   "difficulty": "Hard",
+                  "chartkey": "Xc0d3f2473cf3bce1b779c49de4503c48d87e4775",
                   "is_modchart": false,
                   "peak_nps": 14.06,
                   "chart_info": {
@@ -12439,6 +12609,7 @@
                   "author": "Rippy Ripster",
                   "meter": 18,
                   "difficulty": "Expert",
+                  "chartkey": "X66f9ca3aa0a6324ca1128062a28b7cd18eceef73",
                   "is_modchart": false,
                   "peak_nps": 16.87,
                   "chart_info": {
@@ -12644,6 +12815,7 @@
                   "author": "-YOSEFU-",
                   "meter": 18,
                   "difficulty": "Expert",
+                  "chartkey": "Xc2819a4100ba7d4f50059ced999a3a80fe3b0d2e",
                   "is_modchart": false,
                   "peak_nps": 14.00,
                   "chart_info": {
@@ -13029,6 +13201,7 @@
                   "author": "-YOSEFU-",
                   "meter": 6,
                   "difficulty": "Novice",
+                  "chartkey": "X7e9851169b4787f13eb1d4fd2b1881c12261fbd5",
                   "is_modchart": false,
                   "peak_nps": 2.67,
                   "chart_info": {
@@ -13046,6 +13219,7 @@
                   "author": "-YOSEFU-",
                   "meter": 12,
                   "difficulty": "Easy",
+                  "chartkey": "X202e96b1cfedd791fd1fc711d5327a0a25f23b75",
                   "is_modchart": false,
                   "peak_nps": 6.67,
                   "chart_info": {
@@ -13062,7 +13236,8 @@
                 {
                   "author": "-YOSEFU-",
                   "meter": 16,
-                  "difficulty": "Novice",
+                  "difficulty": "Medium",
+                  "chartkey": "Xdb9613978fb369d48283f0509f30cb56fa58082a",
                   "is_modchart": false,
                   "peak_nps": 10.67,
                   "chart_info": {
@@ -13080,6 +13255,7 @@
                   "author": "-YOSEFU-",
                   "meter": 18,
                   "difficulty": "Hard",
+                  "chartkey": "X8a63e36817c3b8f696a63c33cde7d13e73e3d25f",
                   "is_modchart": false,
                   "peak_nps": 10.67,
                   "chart_info": {
@@ -13097,6 +13273,7 @@
                   "author": "-YOSEFU-",
                   "meter": 19,
                   "difficulty": "Expert",
+                  "chartkey": "X307eed12cf2d25d11ae0dad893ccac7c91b8fdf0",
                   "is_modchart": false,
                   "peak_nps": 16.00,
                   "chart_info": {
