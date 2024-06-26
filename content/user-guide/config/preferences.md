@@ -908,7 +908,7 @@ Mac: ``portmidi,SDL``
 
 Linux: ``SDL``
 
-The possible values are ``Rtio`` (Windows-only), ``legacy`` (Windows-only), ``SDL``, ``Reflex``, ``rtmidi``, ``Python23IO``, ``portmidi``, ``para`` and ``minisdl``
+The possible values are ``Rtio`` (Windows-only), ``legacy`` (Windows-only), ``SDL``, ``Reflex``, ``rtmidi``, ``Python23IO``, ``portmidi``, ``para``, ``minisdl`` and ``ps3ddr`` (alpha5-only)
 
 Default value: nothing
 
